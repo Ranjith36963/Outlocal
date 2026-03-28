@@ -5,7 +5,8 @@ daily counter resets, IMAP polling, batch enrichment.
 """
 
 import logging
-from typing import Any, Callable, Coroutine
+from collections.abc import Callable, Coroutine
+from typing import Any
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 

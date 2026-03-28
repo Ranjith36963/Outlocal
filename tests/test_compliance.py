@@ -1,8 +1,6 @@
 """Tests for GDPR and CAN-SPAM compliance engine (F019)."""
 
 import pytest
-from datetime import datetime, timezone
-
 from src.outlocal.compliance.engine import ComplianceEngine
 from src.outlocal.core.database import Database
 

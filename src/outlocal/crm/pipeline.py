@@ -84,17 +84,12 @@ class LeadPipeline:
                 (lead_id,),
             )
             rows = await cursor.fetchall()
-            return [
-                {"action": row[0], "details": row[1], "timestamp": row[2]}
-                for row in rows
-            ]
+            return [{"action": row[0], "details": row[1], "timestamp": row[2]} for row in rows]
 
     async def get_pipeline_counts(self) -> dict[str, int]:
         """Get count of leads in each status."""
         async with self._db.connection() as conn:
-            cursor = await conn.execute(
-                "SELECT status, COUNT(*) FROM leads GROUP BY status"
-            )
+            cursor = await conn.execute("SELECT status, COUNT(*) FROM leads GROUP BY status")
             rows = await cursor.fetchall()
             return {row[0]: row[1] for row in rows}
 

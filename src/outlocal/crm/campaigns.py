@@ -32,7 +32,7 @@ class CampaignManager:
                 (name, json.dumps(target_criteria), template),
             )
             await conn.commit()
-            return cursor.lastrowid
+            return cursor.lastrowid or 0
 
     async def get_campaign(self, campaign_id: int) -> dict[str, Any] | None:
         """Get campaign by ID."""
@@ -106,9 +106,7 @@ class CampaignManager:
 
             return stats
 
-    async def assign_leads(
-        self, campaign_id: int, criteria: dict[str, Any]
-    ) -> list[int]:
+    async def assign_leads(self, campaign_id: int, criteria: dict[str, Any]) -> list[int]:
         """Find leads matching criteria and return their IDs."""
         conditions: list[str] = []
         params: list[Any] = []
@@ -126,8 +124,6 @@ class CampaignManager:
         where = " AND ".join(conditions) if conditions else "1=1"
 
         async with self._db.connection() as conn:
-            cursor = await conn.execute(
-                f"SELECT id FROM leads WHERE {where}", params
-            )
+            cursor = await conn.execute(f"SELECT id FROM leads WHERE {where}", params)
             rows = await cursor.fetchall()
             return [row[0] for row in rows]

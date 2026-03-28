@@ -40,7 +40,7 @@ class ABTestManager:
                 (campaign_id, json.dumps(variant_a), json.dumps(variant_b), "active"),
             )
             await conn.commit()
-            return cursor.lastrowid
+            return cursor.lastrowid or 0
 
     async def assign_variant(self, test_id: int, lead_id: int) -> str:
         """Randomly assign a lead to variant A or B. Returns 'A' or 'B'."""
@@ -72,7 +72,8 @@ class ABTestManager:
                     "SELECT COUNT(*) FROM ab_assignments WHERE test_id = ? AND variant = ?",
                     (test_id, variant),
                 )
-                total = (await cursor.fetchone())[0]
+                row = await cursor.fetchone()
+                total = row[0] if row else 0
 
                 cursor = await conn.execute(
                     "SELECT COUNT(*) FROM ab_assignments a "
@@ -80,7 +81,8 @@ class ABTestManager:
                     "WHERE a.test_id = ? AND a.variant = ? AND e.opened_at IS NOT NULL",
                     (test_id, variant),
                 )
-                opened = (await cursor.fetchone())[0]
+                row = await cursor.fetchone()
+                opened = row[0] if row else 0
 
                 cursor = await conn.execute(
                     "SELECT COUNT(DISTINCT r.email_id) FROM ab_assignments a "
@@ -89,7 +91,8 @@ class ABTestManager:
                     "WHERE a.test_id = ? AND a.variant = ?",
                     (test_id, variant),
                 )
-                replied = (await cursor.fetchone())[0]
+                row = await cursor.fetchone()
+                replied = row[0] if row else 0
 
                 results[f"variant_{variant.lower()}"] = {
                     "total": total,

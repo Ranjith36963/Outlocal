@@ -5,22 +5,38 @@ validates syntax and MX records, filters disposable domains.
 """
 
 import logging
-import re
 from typing import Any
 
 import dns.resolver
-from email_validator import validate_email, EmailNotValidError
+from email_validator import EmailNotValidError, validate_email
 
 logger = logging.getLogger(__name__)
 
 # Common disposable email domains
-_DISPOSABLE_DOMAINS = frozenset({
-    "mailinator.com", "guerrillamail.com", "tempmail.com", "throwaway.email",
-    "yopmail.com", "sharklasers.com", "guerrillamailblock.com", "grr.la",
-    "dispostable.com", "trashmail.com", "fakeinbox.com", "maildrop.cc",
-    "10minutemail.com", "temp-mail.org", "getnada.com", "mohmal.com",
-    "burnermail.io", "mailnesia.com", "tempr.email", "discard.email",
-})
+_DISPOSABLE_DOMAINS = frozenset(
+    {
+        "mailinator.com",
+        "guerrillamail.com",
+        "tempmail.com",
+        "throwaway.email",
+        "yopmail.com",
+        "sharklasers.com",
+        "guerrillamailblock.com",
+        "grr.la",
+        "dispostable.com",
+        "trashmail.com",
+        "fakeinbox.com",
+        "maildrop.cc",
+        "10minutemail.com",
+        "temp-mail.org",
+        "getnada.com",
+        "mohmal.com",
+        "burnermail.io",
+        "mailnesia.com",
+        "tempr.email",
+        "discard.email",
+    }
+)
 
 
 class EmailFinder:
@@ -43,22 +59,26 @@ class EmailFinder:
         if last_name:
             last = last_name.lower().strip()
             first_initial = first[0] if first else ""
-            permutations.extend([
-                f"{first}.{last}@{domain}",
-                f"{first}{last}@{domain}",
-                f"{first_initial}.{last}@{domain}",
-                f"{first_initial}{last}@{domain}",
-                f"{last}@{domain}",
-                f"{last}.{first}@{domain}",
-                f"{first}_{last}@{domain}",
-                f"{first}-{last}@{domain}",
-            ])
+            permutations.extend(
+                [
+                    f"{first}.{last}@{domain}",
+                    f"{first}{last}@{domain}",
+                    f"{first_initial}.{last}@{domain}",
+                    f"{first_initial}{last}@{domain}",
+                    f"{last}@{domain}",
+                    f"{last}.{first}@{domain}",
+                    f"{first}_{last}@{domain}",
+                    f"{first}-{last}@{domain}",
+                ]
+            )
         else:
-            permutations.extend([
-                f"info@{domain}",
-                f"contact@{domain}",
-                f"hello@{domain}",
-            ])
+            permutations.extend(
+                [
+                    f"info@{domain}",
+                    f"contact@{domain}",
+                    f"hello@{domain}",
+                ]
+            )
 
         return list(dict.fromkeys(permutations))  # Deduplicate preserving order
 
@@ -110,10 +130,7 @@ class EmailFinder:
             }
 
         # Filter valid syntax and non-disposable
-        valid = [
-            e for e in permutations
-            if self.validate_syntax(e) and not self.is_disposable(e)
-        ]
+        valid = [e for e in permutations if self.validate_syntax(e) and not self.is_disposable(e)]
 
         if not valid:
             return {

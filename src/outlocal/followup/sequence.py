@@ -6,7 +6,7 @@ timing and conditions. Skips leads that replied or unsubscribed.
 
 import logging
 from dataclasses import dataclass
-from datetime import datetime, timezone, timedelta
+from datetime import UTC, datetime
 from typing import Any
 
 from src.outlocal.core.database import Database
@@ -14,9 +14,15 @@ from src.outlocal.core.database import Database
 logger = logging.getLogger(__name__)
 
 # Statuses that should NOT receive follow-ups
-_SKIP_STATUSES = frozenset({
-    "replied", "interested", "converted", "lost", "unsubscribed",
-})
+_SKIP_STATUSES = frozenset(
+    {
+        "replied",
+        "interested",
+        "converted",
+        "lost",
+        "unsubscribed",
+    }
+)
 
 
 @dataclass
@@ -73,15 +79,14 @@ class FollowUpEngine:
                 email_id = row[0]
                 lead_id = row[1]
                 sent_at_str = row[4]
-                lead_status = row[7]
 
                 if not sent_at_str:
                     continue
 
                 sent_at = datetime.fromisoformat(sent_at_str)
                 if sent_at.tzinfo is None:
-                    sent_at = sent_at.replace(tzinfo=timezone.utc)
-                now = datetime.now(timezone.utc)
+                    sent_at = sent_at.replace(tzinfo=UTC)
+                now = datetime.now(UTC)
 
                 # Check how many follow-ups already sent
                 followup_count = await self.count_followups_for_email(email_id)
@@ -103,16 +108,18 @@ class FollowUpEngine:
                     if has_reply:
                         continue
 
-                    due.append({
-                        "email_id": email_id,
-                        "lead_id": lead_id,
-                        "lead_email": row[6],
-                        "business_name": row[8],
-                        "original_subject": row[2],
-                        "original_body": row[3],
-                        "campaign_id": row[5],
-                        "followup_number": followup_count + 1,
-                    })
+                    due.append(
+                        {
+                            "email_id": email_id,
+                            "lead_id": lead_id,
+                            "lead_email": row[6],
+                            "business_name": row[8],
+                            "original_subject": row[2],
+                            "original_body": row[3],
+                            "campaign_id": row[5],
+                            "followup_number": followup_count + 1,
+                        }
+                    )
 
         return due
 

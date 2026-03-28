@@ -1,8 +1,8 @@
 """Tests for FreeAIEngine with multi-provider failover (F008)."""
 
-import pytest
-from unittest.mock import AsyncMock, patch, MagicMock
+from unittest.mock import AsyncMock, MagicMock, patch
 
+import pytest
 from src.outlocal.ai_engine.engine import FreeAIEngine
 
 
@@ -60,8 +60,22 @@ class TestFreeAIEngineInit:
 
     def test_engine_skips_providers_without_keys(self):
         providers = [
-            {"name": "groq", "base_url": "x", "api_key": None, "model": "x", "daily_limit": 10, "rpm": 5},
-            {"name": "gemini", "base_url": "x", "api_key": "key", "model": "x", "daily_limit": 10, "rpm": 5},
+            {
+                "name": "groq",
+                "base_url": "x",
+                "api_key": None,
+                "model": "x",
+                "daily_limit": 10,
+                "rpm": 5,
+            },
+            {
+                "name": "gemini",
+                "base_url": "x",
+                "api_key": "key",
+                "model": "x",
+                "daily_limit": 10,
+                "rpm": 5,
+            },
         ]
         engine = FreeAIEngine(providers)
         available = engine._get_available_provider()
@@ -74,7 +88,9 @@ class TestEmailGeneration:
     @pytest.mark.asyncio
     async def test_generate_email_returns_subject_and_body(self, engine):
         with patch.object(engine, "_call_provider", new_callable=AsyncMock) as mock_call:
-            mock_call.return_value = "SUBJECT: Website Fix for Joe's\nBODY: Hi Joe, noticed your site..."
+            mock_call.return_value = (
+                "SUBJECT: Website Fix for Joe's\nBODY: Hi Joe, noticed your site..."
+            )
             result = await engine.generate_email(
                 business_name="Joe's Fish & Chips",
                 owner_name="Joe",

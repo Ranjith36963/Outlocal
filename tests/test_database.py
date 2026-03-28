@@ -1,8 +1,6 @@
 """Tests for database initialisation and table schema (F001)."""
 
 import pytest
-import aiosqlite
-
 from src.outlocal.core.database import Database
 
 

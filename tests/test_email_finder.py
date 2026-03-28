@@ -1,8 +1,8 @@
 """Tests for email finder and validation (F006)."""
 
-import pytest
 from unittest.mock import AsyncMock, patch
 
+import pytest
 from src.outlocal.enrichment.email_finder import EmailFinder
 
 

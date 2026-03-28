@@ -1,7 +1,6 @@
 """Tests for A/B testing (F018)."""
 
 import pytest
-
 from src.outlocal.analytics.ab_testing import ABTestManager
 from src.outlocal.core.database import Database
 

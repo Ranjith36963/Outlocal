@@ -1,11 +1,10 @@
 """Tests for follow-up sequence engine (F012)."""
 
-import pytest
-from datetime import datetime, timezone, timedelta
-from unittest.mock import AsyncMock, patch
+from datetime import UTC, datetime, timedelta
 
-from src.outlocal.followup.sequence import FollowUpEngine, FollowUpStep
+import pytest
 from src.outlocal.core.database import Database
+from src.outlocal.followup.sequence import FollowUpEngine, FollowUpStep
 
 
 @pytest.fixture
@@ -26,8 +25,15 @@ async def db(tmp_path):
         await conn.execute(
             "INSERT INTO emails (lead_id, campaign_id, subject, body, provider, status, sent_at) "
             "VALUES (?, ?, ?, ?, ?, ?, ?)",
-            (1, 1, "Original Email", "Hi there", "groq", "sent",
-             (datetime.now(timezone.utc) - timedelta(days=4)).isoformat()),
+            (
+                1,
+                1,
+                "Original Email",
+                "Hi there",
+                "groq",
+                "sent",
+                (datetime.now(UTC) - timedelta(days=4)).isoformat(),
+            ),
         )
         await conn.commit()
     yield database

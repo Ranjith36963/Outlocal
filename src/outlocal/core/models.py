@@ -5,7 +5,7 @@ These define the data contract — all data flowing through the pipeline
 must conform to these models.
 """
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from enum import StrEnum
 from typing import Any
 
@@ -68,8 +68,8 @@ class Lead(BaseModel):
     source: str
     score: int | None = Field(default=None, ge=0, le=100)
     status: LeadStatus = LeadStatus.NEW
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
-    updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
+    updated_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
 
 class Campaign(BaseModel):
@@ -80,7 +80,7 @@ class Campaign(BaseModel):
     status: CampaignStatus = CampaignStatus.DRAFT
     template: str | None = None
     target_criteria: dict[str, Any] = Field(default_factory=dict)
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
 
 class Email(BaseModel):
@@ -96,7 +96,7 @@ class Email(BaseModel):
     sent_at: datetime | None = None
     opened_at: datetime | None = None
     clicked_at: datetime | None = None
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
 
 class Reply(BaseModel):
@@ -107,7 +107,7 @@ class Reply(BaseModel):
     raw_text: str
     classification: ReplyClassification | None = None
     classified_at: datetime | None = None
-    received_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    received_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
 
 class AuditLogEntry(BaseModel):
@@ -118,4 +118,4 @@ class AuditLogEntry(BaseModel):
     entity_id: int
     action: str
     details: str | None = None
-    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(UTC))

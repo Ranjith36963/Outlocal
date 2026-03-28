@@ -2,8 +2,6 @@
 
 import random
 
-import pytest
-
 
 def pytest_addoption(parser):
     """Add --fast flag for 10% random subsample of tests."""

@@ -1,7 +1,6 @@
 """Tests for configuration management (F002)."""
 
 import os
-import pytest
 from unittest.mock import patch
 
 from src.outlocal.core.config import Settings, get_settings

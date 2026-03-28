@@ -5,7 +5,6 @@ and audit trails.
 """
 
 import logging
-from datetime import datetime, timezone
 from typing import Any
 
 from src.outlocal.core.database import Database

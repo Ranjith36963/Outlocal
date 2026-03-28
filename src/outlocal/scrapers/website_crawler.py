@@ -4,7 +4,6 @@ Crawls business websites to enrich lead data with contact info
 and technology detection.
 """
 
-import asyncio
 import logging
 import re
 from typing import Any
@@ -90,14 +89,16 @@ class WebsiteCrawler:
         result["pages_crawled"] += 1
 
         try:
-            async with aiohttp.ClientSession(timeout=self._timeout) as session:
-                async with session.get(url, ssl=False) as response:
-                    if response.status != 200:
-                        return
-                    content_type = response.headers.get("content-type", "")
-                    if "text/html" not in content_type:
-                        return
-                    html = await response.text()
+            async with (
+                aiohttp.ClientSession(timeout=self._timeout) as session,
+                session.get(url, ssl=False) as response,
+            ):
+                if response.status != 200:
+                    return
+                content_type = response.headers.get("content-type", "")
+                if "text/html" not in content_type:
+                    return
+                html = await response.text()
         except Exception as e:
             logger.debug("Failed to fetch %s: %s", url, e)
             return
@@ -123,16 +124,16 @@ class WebsiteCrawler:
         # Detect tech stack
         html_lower = page_html.lower()
         for tech, signatures in _TECH_SIGNATURES.items():
-            if any(sig in html_lower for sig in signatures):
-                if tech not in result["tech_stack"]:
-                    result["tech_stack"].append(tech)
+            if any(sig in html_lower for sig in signatures) and tech not in result["tech_stack"]:
+                result["tech_stack"].append(tech)
 
         # Follow internal links (next depth)
         if depth < self._max_depth - 1:
             links = soup.find_all("a", href=True)
             internal_links = []
             for link in links[:10]:  # Limit to 10 links per page
-                href = urljoin(url, link["href"])
+                href_val = str(link["href"])
+                href = urljoin(url, href_val)
                 if urlparse(href).netloc == domain and href not in visited:
                     internal_links.append(href)
 
@@ -144,13 +145,14 @@ class WebsiteCrawler:
         parsed = urlparse(url)
         robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
         try:
-            async with aiohttp.ClientSession(timeout=self._timeout) as session:
-                async with session.get(robots_url, ssl=False) as response:
-                    if response.status == 200:
-                        text = await response.text()
-                        # Basic check: if Disallow: / for all agents, skip
-                        if "Disallow: /" in text and "User-agent: *" in text:
-                            return False
+            async with (
+                aiohttp.ClientSession(timeout=self._timeout) as session,
+                session.get(robots_url, ssl=False) as response,
+            ):
+                if response.status == 200:
+                    text = await response.text()
+                    if "Disallow: /" in text and "User-agent: *" in text:
+                        return False
             return True
         except Exception:
             return True  # If robots.txt fails, assume allowed

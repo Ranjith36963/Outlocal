@@ -42,7 +42,9 @@ class DomainAuthChecker:
         if not dkim.get("exists"):
             advice.append("Configure DKIM signing with your email provider")
         if not dmarc.get("exists"):
-            advice.append("Add DMARC record: v=DMARC1; p=quarantine; rua=mailto:dmarc@yourdomain.com")
+            advice.append(
+                "Add DMARC record: v=DMARC1; p=quarantine; rua=mailto:dmarc@yourdomain.com"
+            )
 
         return {
             "domain": domain,

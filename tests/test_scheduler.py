@@ -1,7 +1,6 @@
 """Tests for background scheduler (F024)."""
 
 import pytest
-
 from src.outlocal.core.scheduler import PipelineScheduler
 
 

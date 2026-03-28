@@ -64,9 +64,7 @@ class GoogleMapsScraper:
                 results_panel = page.locator('[role="feed"]')
                 if await results_panel.count() > 0:
                     for _ in range(3):  # Scroll 3 times
-                        await results_panel.evaluate(
-                            "el => el.scrollTop = el.scrollHeight"
-                        )
+                        await results_panel.evaluate("el => el.scrollTop = el.scrollHeight")
                         await asyncio.sleep(self._delay)
 
                 # Extract business cards

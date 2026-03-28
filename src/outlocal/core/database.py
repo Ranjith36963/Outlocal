@@ -4,11 +4,10 @@ Async SQLite database with raw parameterised queries.
 No ORM — simpler, faster, no magic.
 """
 
+from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
-from typing import AsyncIterator
 
 import aiosqlite
-
 
 _SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS leads (

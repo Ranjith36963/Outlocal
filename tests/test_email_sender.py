@@ -1,9 +1,9 @@
 """Tests for async SMTP email sender (F010)."""
 
-import pytest
-from unittest.mock import AsyncMock, patch, MagicMock
-from datetime import datetime, timezone
+from datetime import UTC, datetime
+from unittest.mock import AsyncMock, patch
 
+import pytest
 from src.outlocal.email_sender.sender import EmailSender, SendResult
 
 
@@ -62,7 +62,9 @@ class TestEmailSender:
 
     @pytest.mark.asyncio
     async def test_send_includes_unsubscribe_header(self, sender):
-        with patch("src.outlocal.email_sender.sender.aiosmtplib.send", new_callable=AsyncMock) as mock_send:
+        with patch(
+            "src.outlocal.email_sender.sender.aiosmtplib.send", new_callable=AsyncMock
+        ) as mock_send:
             await sender.send(
                 to_email="recipient@example.com",
                 subject="Test",
@@ -75,7 +77,9 @@ class TestEmailSender:
 
     @pytest.mark.asyncio
     async def test_send_includes_physical_address_in_body(self, sender):
-        with patch("src.outlocal.email_sender.sender.aiosmtplib.send", new_callable=AsyncMock) as mock_send:
+        with patch(
+            "src.outlocal.email_sender.sender.aiosmtplib.send", new_callable=AsyncMock
+        ) as mock_send:
             await sender.send(
                 to_email="recipient@example.com",
                 subject="Test",
@@ -109,7 +113,7 @@ class TestRateLimiting:
     def test_send_result_has_required_fields(self):
         result = SendResult(
             status="sent",
-            sent_at=datetime.now(timezone.utc),
+            sent_at=datetime.now(UTC),
         )
         assert result.status == "sent"
         assert result.sent_at is not None

@@ -1,8 +1,8 @@
 """Tests for website crawler (F005)."""
 
-import pytest
 from unittest.mock import AsyncMock, patch
 
+import pytest
 from src.outlocal.scrapers.website_crawler import WebsiteCrawler
 
 
@@ -36,20 +36,40 @@ class TestWebsiteCrawler:
 
     @pytest.mark.asyncio
     async def test_ssl_detection(self, crawler):
-        with patch.object(crawler, "crawl", new_callable=AsyncMock, return_value={
-            "url": "https://secure.com", "has_ssl": True,
-            "emails": [], "phones": [], "social_links": {}, "tech_stack": [], "pages_crawled": 0,
-        }):
+        with patch.object(
+            crawler,
+            "crawl",
+            new_callable=AsyncMock,
+            return_value={
+                "url": "https://secure.com",
+                "has_ssl": True,
+                "emails": [],
+                "phones": [],
+                "social_links": {},
+                "tech_stack": [],
+                "pages_crawled": 0,
+            },
+        ):
             result = await crawler.crawl("https://secure.com")
         assert result["has_ssl"] is True
 
     @pytest.mark.asyncio
     async def test_handles_invalid_url(self, crawler):
-        with patch.object(crawler, "crawl", new_callable=AsyncMock, return_value={
-            "url": "https://invalid", "error": "Connection failed",
-            "emails": [], "phones": [], "social_links": {}, "tech_stack": [],
-            "has_ssl": True, "pages_crawled": 0,
-        }):
+        with patch.object(
+            crawler,
+            "crawl",
+            new_callable=AsyncMock,
+            return_value={
+                "url": "https://invalid",
+                "error": "Connection failed",
+                "emails": [],
+                "phones": [],
+                "social_links": {},
+                "tech_stack": [],
+                "has_ssl": True,
+                "pages_crawled": 0,
+            },
+        ):
             result = await crawler.crawl("https://invalid")
         assert isinstance(result, dict)
 
@@ -63,6 +83,7 @@ class TestWebsiteCrawler:
     async def test_extracts_emails_from_html(self, crawler):
         """Test email extraction regex."""
         from src.outlocal.scrapers.website_crawler import _EMAIL_REGEX
+
         text = "Contact us at info@example.com or sales@test.co.uk"
         emails = _EMAIL_REGEX.findall(text)
         assert "info@example.com" in emails
@@ -71,6 +92,7 @@ class TestWebsiteCrawler:
     @pytest.mark.asyncio
     async def test_extracts_uk_phones(self, crawler):
         from src.outlocal.scrapers.website_crawler import _UK_PHONE_REGEX
+
         text = "Call us on +44 20 7123 4567 or 0117 123 4567"
         phones = _UK_PHONE_REGEX.findall(text)
         assert len(phones) >= 2
@@ -78,6 +100,7 @@ class TestWebsiteCrawler:
     @pytest.mark.asyncio
     async def test_detects_wordpress(self, crawler):
         from src.outlocal.scrapers.website_crawler import _TECH_SIGNATURES
+
         html = '<link rel="stylesheet" href="/wp-content/themes/test/style.css">'
         html_lower = html.lower()
         is_wp = any(sig in html_lower for sig in _TECH_SIGNATURES["wordpress"])

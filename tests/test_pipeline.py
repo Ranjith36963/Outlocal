@@ -1,9 +1,8 @@
 """Tests for end-to-end pipeline (F025)."""
 
 import pytest
-
-from src.outlocal.core.pipeline import OutlocalPipeline
 from src.outlocal.core.database import Database
+from src.outlocal.core.pipeline import OutlocalPipeline
 
 
 @pytest.fixture
@@ -15,8 +14,16 @@ async def db(tmp_path):
         await conn.execute(
             "INSERT INTO leads (business_name, owner_name, email, phone, website, town, source, status) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-            ("Pipeline Test Biz", "Jane", "jane@test.co.uk", "+44 117 123 4567",
-             "https://test.co.uk", "Bristol", "google_maps", "new"),
+            (
+                "Pipeline Test Biz",
+                "Jane",
+                "jane@test.co.uk",
+                "+44 117 123 4567",
+                "https://test.co.uk",
+                "Bristol",
+                "google_maps",
+                "new",
+            ),
         )
         await conn.commit()
     yield database

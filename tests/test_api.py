@@ -1,8 +1,7 @@
 """Tests for FastAPI REST API (F003, F021, F023)."""
 
 import pytest
-from httpx import AsyncClient, ASGITransport
-
+from httpx import ASGITransport, AsyncClient
 from src.outlocal.api.main import app, db
 
 
@@ -54,11 +53,14 @@ class TestLeadsCRUD:
 
     @pytest.mark.asyncio
     async def test_create_lead(self, client):
-        response = await client.post("/api/v1/leads", json={
-            "business_name": "Test Pub",
-            "town": "Bristol",
-            "source": "manual",
-        })
+        response = await client.post(
+            "/api/v1/leads",
+            json={
+                "business_name": "Test Pub",
+                "town": "Bristol",
+                "source": "manual",
+            },
+        )
         assert response.status_code == 201
         data = response.json()
         assert "id" in data
@@ -76,11 +78,14 @@ class TestLeadsCRUD:
 
     @pytest.mark.asyncio
     async def test_create_and_get_lead(self, client):
-        create = await client.post("/api/v1/leads", json={
-            "business_name": "Crown Inn",
-            "town": "Bath",
-            "email": "info@crowninn.co.uk",
-        })
+        create = await client.post(
+            "/api/v1/leads",
+            json={
+                "business_name": "Crown Inn",
+                "town": "Bath",
+                "email": "info@crowninn.co.uk",
+            },
+        )
         lead_id = create.json()["id"]
 
         get = await client.get(f"/api/v1/leads/{lead_id}")
@@ -89,23 +94,32 @@ class TestLeadsCRUD:
 
     @pytest.mark.asyncio
     async def test_update_lead(self, client):
-        create = await client.post("/api/v1/leads", json={
-            "business_name": "Update Test",
-            "town": "London",
-        })
+        create = await client.post(
+            "/api/v1/leads",
+            json={
+                "business_name": "Update Test",
+                "town": "London",
+            },
+        )
         lead_id = create.json()["id"]
 
-        update = await client.put(f"/api/v1/leads/{lead_id}", json={
-            "email": "new@example.com",
-        })
+        update = await client.put(
+            f"/api/v1/leads/{lead_id}",
+            json={
+                "email": "new@example.com",
+            },
+        )
         assert update.status_code == 200
 
     @pytest.mark.asyncio
     async def test_delete_lead_soft(self, client):
-        create = await client.post("/api/v1/leads", json={
-            "business_name": "Delete Test",
-            "town": "London",
-        })
+        create = await client.post(
+            "/api/v1/leads",
+            json={
+                "business_name": "Delete Test",
+                "town": "London",
+            },
+        )
         lead_id = create.json()["id"]
 
         delete = await client.delete(f"/api/v1/leads/{lead_id}")
@@ -117,10 +131,13 @@ class TestCampaignsCRUD:
 
     @pytest.mark.asyncio
     async def test_create_campaign(self, client):
-        response = await client.post("/api/v1/campaigns", json={
-            "name": "Bristol Q1",
-            "target_criteria": {"town": "Bristol"},
-        })
+        response = await client.post(
+            "/api/v1/campaigns",
+            json={
+                "name": "Bristol Q1",
+                "target_criteria": {"town": "Bristol"},
+            },
+        )
         assert response.status_code == 201
         assert "id" in response.json()
 
@@ -142,9 +159,12 @@ class TestComplianceEndpoints:
 
     @pytest.mark.asyncio
     async def test_erasure_endpoint(self, client):
-        response = await client.post("/api/v1/compliance/erasure", json={
-            "email": "erase@example.com",
-        })
+        response = await client.post(
+            "/api/v1/compliance/erasure",
+            json={
+                "email": "erase@example.com",
+            },
+        )
         assert response.status_code == 200
 
     @pytest.mark.asyncio

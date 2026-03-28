@@ -1,8 +1,8 @@
 """Tests for Google Maps scraper (F004)."""
 
-import pytest
-from unittest.mock import AsyncMock, patch, MagicMock
+from unittest.mock import AsyncMock, patch
 
+import pytest
 from src.outlocal.scrapers.google_maps import GoogleMapsScraper
 
 
@@ -35,9 +35,19 @@ class TestGoogleMapsScraper:
     @pytest.mark.asyncio
     async def test_scrape_returns_list(self, scraper):
         """Scrape should return a list (mocked — no real browser needed)."""
-        with patch.object(scraper, "scrape", new_callable=AsyncMock, return_value=[
-            {"business_name": "Test Biz", "town": "Bristol", "rating": 4.5, "source": "google_maps"}
-        ]):
+        with patch.object(
+            scraper,
+            "scrape",
+            new_callable=AsyncMock,
+            return_value=[
+                {
+                    "business_name": "Test Biz",
+                    "town": "Bristol",
+                    "rating": 4.5,
+                    "source": "google_maps",
+                }
+            ],
+        ):
             results = await scraper.scrape("restaurants", "Bristol", max_results=5)
         assert isinstance(results, list)
         assert len(results) == 1

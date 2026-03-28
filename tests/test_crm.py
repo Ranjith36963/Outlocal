@@ -1,10 +1,9 @@
 """Tests for lead pipeline and CRM (F015)."""
 
 import pytest
-
-from src.outlocal.crm.pipeline import LeadPipeline
 from src.outlocal.core.database import Database
 from src.outlocal.core.models import LeadStatus
+from src.outlocal.crm.pipeline import LeadPipeline
 
 
 @pytest.fixture
@@ -82,7 +81,7 @@ class TestLeadPipeline:
 
         leads = await pipeline.filter_leads(status="scored")
         assert len(leads) >= 1
-        assert all(l["status"] == "scored" for l in leads)
+        assert all(lead["status"] == "scored" for lead in leads)
 
     @pytest.mark.asyncio
     async def test_filter_leads_by_town(self, pipeline, db):
@@ -95,7 +94,7 @@ class TestLeadPipeline:
 
         leads = await pipeline.filter_leads(town="Oxford")
         assert len(leads) >= 1
-        assert all(l["town"] == "Oxford" for l in leads)
+        assert all(lead["town"] == "Oxford" for lead in leads)
 
     @pytest.mark.asyncio
     async def test_log_activity(self, pipeline, sample_lead):

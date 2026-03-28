@@ -1,16 +1,16 @@
 """Tests for core data models and database schema (F001)."""
 
-import pytest
-from datetime import datetime, timezone
-from pydantic import ValidationError
+from datetime import UTC, datetime
 
+import pytest
+from pydantic import ValidationError
 from src.outlocal.core.models import (
-    Lead,
-    LeadStatus,
     Campaign,
     CampaignStatus,
     Email,
     EmailStatus,
+    Lead,
+    LeadStatus,
     Reply,
     ReplyClassification,
 )
@@ -137,7 +137,7 @@ class TestEmailModel:
         assert email.status == EmailStatus.DRAFT
 
     def test_email_with_timestamps(self):
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         email = Email(
             lead_id=1,
             campaign_id=1,
@@ -180,7 +180,7 @@ class TestReplyModel:
         assert reply.classified_at is None
 
     def test_reply_with_classification(self):
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         reply = Reply(
             email_id=1,
             raw_text="Not interested, thanks.",

@@ -26,21 +26,24 @@ class CampaignAnalytics:
                 "SELECT COUNT(*) FROM emails WHERE campaign_id = ? AND status = 'sent'",
                 (campaign_id,),
             )
-            total_sent = (await cursor.fetchone())[0]
+            row = await cursor.fetchone()
+            total_sent = row[0] if row else 0
 
             # Opens
             cursor = await conn.execute(
                 "SELECT COUNT(*) FROM emails WHERE campaign_id = ? AND opened_at IS NOT NULL",
                 (campaign_id,),
             )
-            total_opened = (await cursor.fetchone())[0]
+            row = await cursor.fetchone()
+            total_opened = row[0] if row else 0
 
             # Clicks
             cursor = await conn.execute(
                 "SELECT COUNT(*) FROM emails WHERE campaign_id = ? AND clicked_at IS NOT NULL",
                 (campaign_id,),
             )
-            total_clicked = (await cursor.fetchone())[0]
+            row = await cursor.fetchone()
+            total_clicked = row[0] if row else 0
 
             # Replies
             cursor = await conn.execute(
@@ -49,7 +52,8 @@ class CampaignAnalytics:
                 "WHERE e.campaign_id = ?",
                 (campaign_id,),
             )
-            total_replied = (await cursor.fetchone())[0]
+            row = await cursor.fetchone()
+            total_replied = row[0] if row else 0
 
             # Interested (from classification)
             cursor = await conn.execute(
@@ -58,7 +62,8 @@ class CampaignAnalytics:
                 "WHERE e.campaign_id = ? AND r.classification = 'interested'",
                 (campaign_id,),
             )
-            total_interested = (await cursor.fetchone())[0]
+            row = await cursor.fetchone()
+            total_interested = row[0] if row else 0
 
         open_rate = (total_opened / total_sent * 100) if total_sent > 0 else 0
         click_rate = (total_clicked / total_sent * 100) if total_sent > 0 else 0
@@ -92,11 +97,12 @@ class CampaignAnalytics:
             )
             rows = await cursor.fetchall()
             return [
-                {"day": row[0], "sent": row[1], "opened": row[2], "clicked": row[3]}
-                for row in rows
+                {"day": row[0], "sent": row[1], "opened": row[2], "clicked": row[3]} for row in rows
             ]
 
-    async def get_best_subject_lines(self, campaign_id: int, limit: int = 5) -> list[dict[str, Any]]:
+    async def get_best_subject_lines(
+        self, campaign_id: int, limit: int = 5
+    ) -> list[dict[str, Any]]:
         """Get best-performing subject lines by open rate."""
         async with self._db.connection() as conn:
             cursor = await conn.execute(

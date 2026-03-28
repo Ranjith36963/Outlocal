@@ -1,20 +1,19 @@
 """FastAPI application for OUTLOCAL."""
 
-import json
+from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
-from typing import Any, AsyncIterator
+from typing import Any
 
-from fastapi import FastAPI, APIRouter, HTTPException, Query
+from fastapi import APIRouter, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from src.outlocal import __version__
+from src.outlocal.compliance.engine import ComplianceEngine
 from src.outlocal.core.config import get_settings
 from src.outlocal.core.database import Database
-from src.outlocal.core.models import LeadStatus, CampaignStatus
-from src.outlocal.crm.pipeline import LeadPipeline
 from src.outlocal.crm.campaigns import CampaignManager
-from src.outlocal.compliance.engine import ComplianceEngine
+from src.outlocal.crm.pipeline import LeadPipeline
 
 db = Database()
 
@@ -58,6 +57,7 @@ async def health_check() -> dict:
 
 # === Request/Response Models ===
 
+
 class LeadCreate(BaseModel):
     business_name: str
     town: str
@@ -95,6 +95,7 @@ api_v1 = APIRouter(prefix="/api/v1")
 
 # --- Leads ---
 
+
 @api_v1.post("/leads", status_code=201)
 async def create_lead(lead: LeadCreate) -> dict:
     """Create a new lead."""
@@ -102,8 +103,15 @@ async def create_lead(lead: LeadCreate) -> dict:
         cursor = await conn.execute(
             "INSERT INTO leads (business_name, owner_name, email, phone, website, town, source) "
             "VALUES (?, ?, ?, ?, ?, ?, ?)",
-            (lead.business_name, lead.owner_name, lead.email, lead.phone,
-             lead.website, lead.town, lead.source),
+            (
+                lead.business_name,
+                lead.owner_name,
+                lead.email,
+                lead.phone,
+                lead.website,
+                lead.town,
+                lead.source,
+            ),
         )
         await conn.commit()
         return {"id": cursor.lastrowid, "status": "created"}
@@ -120,8 +128,11 @@ async def list_leads(
     """List leads with optional filters."""
     pipeline = LeadPipeline(db)
     return await pipeline.filter_leads(
-        status=status, town=town, min_score=min_score,
-        limit=limit, offset=offset,
+        status=status,
+        town=town,
+        min_score=min_score,
+        limit=limit,
+        offset=offset,
     )
 
 
@@ -169,6 +180,7 @@ async def delete_lead(lead_id: int) -> dict:
 
 # --- Campaigns ---
 
+
 @api_v1.post("/campaigns", status_code=201)
 async def create_campaign(campaign: CampaignCreate) -> dict:
     """Create a new campaign."""
@@ -200,6 +212,7 @@ async def campaign_stats(campaign_id: int) -> dict:
 
 
 # --- Compliance ---
+
 
 @api_v1.post("/compliance/unsubscribe/{token}")
 async def unsubscribe(token: str) -> dict:

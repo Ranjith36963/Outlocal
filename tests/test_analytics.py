@@ -1,7 +1,6 @@
 """Tests for campaign analytics (F017)."""
 
 import pytest
-
 from src.outlocal.analytics.metrics import CampaignAnalytics
 from src.outlocal.core.database import Database
 
@@ -14,8 +13,14 @@ async def db(tmp_path):
     # Seed test data
     async with database.connection() as conn:
         await conn.execute("INSERT INTO campaigns (name, status) VALUES (?, ?)", ("Test", "active"))
-        await conn.execute("INSERT INTO leads (business_name, town, source) VALUES (?, ?, ?)", ("A", "London", "manual"))
-        await conn.execute("INSERT INTO leads (business_name, town, source) VALUES (?, ?, ?)", ("B", "London", "manual"))
+        await conn.execute(
+            "INSERT INTO leads (business_name, town, source) VALUES (?, ?, ?)",
+            ("A", "London", "manual"),
+        )
+        await conn.execute(
+            "INSERT INTO leads (business_name, town, source) VALUES (?, ?, ?)",
+            ("B", "London", "manual"),
+        )
         # 2 sent emails, 1 opened, 1 clicked
         await conn.execute(
             "INSERT INTO emails (lead_id, campaign_id, subject, body, provider, status, sent_at, opened_at) "

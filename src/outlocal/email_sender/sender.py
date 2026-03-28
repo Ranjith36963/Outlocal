@@ -5,8 +5,8 @@ and error handling.
 """
 
 import logging
-from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from dataclasses import dataclass
+from datetime import UTC, datetime
 from email.message import EmailMessage
 
 import aiosmtplib
@@ -70,11 +70,7 @@ class EmailSender:
         msg["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click"
 
         # CAN-SPAM: Physical address in footer
-        footer = (
-            f"\n\n---\n"
-            f"{self._business_address}\n"
-            f"Unsubscribe: {unsub_url}"
-        )
+        footer = f"\n\n---\n{self._business_address}\nUnsubscribe: {unsub_url}"
         full_body = body + footer
         msg.set_content(full_body)
 
@@ -95,7 +91,7 @@ class EmailSender:
 
         try:
             await aiosmtplib.send(
-                message=msg,
+                msg,
                 hostname=self._host,
                 port=self._port,
                 username=self._username,
@@ -107,7 +103,7 @@ class EmailSender:
 
             return SendResult(
                 status="sent",
-                sent_at=datetime.now(timezone.utc),
+                sent_at=datetime.now(UTC),
             )
         except Exception as e:
             logger.error("Failed to send to %s: %s", to_email, e)

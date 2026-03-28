@@ -72,11 +72,11 @@ class FreeAIEngine:
         client = self._get_client(provider)
         response = await client.chat.completions.create(
             model=provider["model"],
-            messages=messages,
+            messages=messages,  # type: ignore[arg-type]
             max_tokens=max_tokens,
             temperature=temperature,
         )
-        return response.choices[0].message.content
+        return response.choices[0].message.content or ""
 
     async def generate_email(
         self,
@@ -144,9 +144,7 @@ class FreeAIEngine:
         ]
 
         try:
-            result = await self._call_provider(
-                provider, messages, max_tokens=20, temperature=0.0
-            )
+            result = await self._call_provider(provider, messages, max_tokens=20, temperature=0.0)
             self._daily_counts[provider["name"]] += 1
             return result.strip().upper()
         except Exception as e:
