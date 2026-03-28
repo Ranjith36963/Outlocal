@@ -111,7 +111,7 @@
       "Returns provider name and model used with each generation",
       "Email output parsed into subject and body"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F009",
