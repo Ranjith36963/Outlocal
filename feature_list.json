@@ -395,5 +395,83 @@
       "All environment variables documented in .env.example"
     ],
     "passes": true
+  },
+  {
+    "id": "F029",
+    "category": "frontend",
+    "description": "Next.js project setup with Tailwind and API client",
+    "steps": [
+      "Next.js 15 app initialised with TypeScript and Tailwind",
+      "API client module connects to FastAPI backend at localhost:8000",
+      "Root layout with sidebar navigation between all pages",
+      "CORS working between frontend :3000 and backend :8000",
+      "Dark mode theme applied globally"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F030",
+    "category": "frontend",
+    "description": "Dashboard home page with overview stats and hot leads",
+    "steps": [
+      "4 stat cards: total leads, emails sent, replies, interested",
+      "Active campaigns list with status badges",
+      "Hot leads section showing INTERESTED replies with preview",
+      "Data loads from FastAPI endpoints on page load"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F031",
+    "category": "frontend",
+    "description": "Campaign launcher and management page",
+    "steps": [
+      "Campaign creation form: search query, location, min score, max emails",
+      "Service offering field loaded from settings",
+      "List of all campaigns with per-campaign stats",
+      "Campaign status badges: draft, active, paused, completed",
+      "Form submits to POST /api/v1/campaigns"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F032",
+    "category": "frontend",
+    "description": "Leads CRM pipeline page with status columns",
+    "steps": [
+      "Lead cards grouped by status columns",
+      "Each card shows: business name, town, score, email, last action",
+      "Filter leads by campaign, town, score range",
+      "Click lead card to see full detail with activity log",
+      "Status change buttons: mark as converted, mark as lost",
+      "Interested leads highlighted with reply text"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F033",
+    "category": "frontend",
+    "description": "Analytics page with charts and A/B test results",
+    "steps": [
+      "Campaign metrics cards: open rate, reply rate, conversion rate",
+      "Daily send volume bar chart",
+      "Best subject lines table ranked by open rate",
+      "A/B test results with winner indicator",
+      "Per-campaign comparison"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F034",
+    "category": "frontend",
+    "description": "Settings page with service config and system status",
+    "steps": [
+      "Service description input (what you offer)",
+      "Business name and contact info fields",
+      "API key status indicators (Groq, OpenRouter, Gemini)",
+      "Domain auth check results (SPF, DKIM, DMARC)",
+      "Suppression list count display"
+    ],
+    "passes": false
   }
 ]
