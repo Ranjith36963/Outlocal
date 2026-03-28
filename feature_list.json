@@ -37,7 +37,7 @@
       "API versioning under /api/v1",
       "OpenAPI docs available at /docs"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F004",
