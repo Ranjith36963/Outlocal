@@ -95,6 +95,35 @@ CREATE TABLE IF NOT EXISTS consent_log (
 
 CREATE INDEX IF NOT EXISTS idx_suppression_email ON suppression_list(email);
 CREATE INDEX IF NOT EXISTS idx_consent_email ON consent_log(email);
+
+CREATE TABLE IF NOT EXISTS ab_tests (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    campaign_id INTEGER NOT NULL REFERENCES campaigns(id),
+    variant_a TEXT NOT NULL,
+    variant_b TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT 'active',
+    winner TEXT,
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS ab_assignments (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    test_id INTEGER NOT NULL REFERENCES ab_tests(id),
+    lead_id INTEGER NOT NULL,
+    variant TEXT NOT NULL CHECK(variant IN ('A', 'B')),
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS scrape_jobs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    query TEXT NOT NULL,
+    location TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT 'pending',
+    results_count INTEGER DEFAULT 0,
+    error TEXT,
+    created_at TEXT NOT NULL DEFAULT (datetime('now')),
+    completed_at TEXT
+);
 """
 
 

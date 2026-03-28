@@ -51,7 +51,7 @@
       "Saves scraped businesses to database as leads",
       "Deduplicates by business name + postcode"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F005",
@@ -251,7 +251,7 @@
       "Auto-select winner after minimum sample size reached",
       "Apply winning variant to remaining unsent leads"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F019",
@@ -338,7 +338,7 @@
       "Scheduler status visible via API",
       "Graceful shutdown on app exit"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F025",
