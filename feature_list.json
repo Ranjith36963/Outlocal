@@ -195,7 +195,7 @@
       "UNSUBSCRIBE triggers automatic opt-out",
       "Classification accuracy target: >90% on clear-cut replies"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F015",
@@ -279,7 +279,7 @@
       "Legitimate interest basis documented per lead source",
       "Processing records maintained per GDPR Article 30"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F021",
