@@ -167,7 +167,7 @@
       "Scheduler checks for due follow-ups and queues them",
       "Follow-up emails reference original email naturally"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F013",
