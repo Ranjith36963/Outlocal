@@ -76,6 +76,25 @@ CREATE INDEX IF NOT EXISTS idx_emails_campaign_id ON emails(campaign_id);
 CREATE INDEX IF NOT EXISTS idx_emails_status ON emails(status);
 CREATE INDEX IF NOT EXISTS idx_replies_email_id ON replies(email_id);
 CREATE INDEX IF NOT EXISTS idx_audit_entity ON audit_log(entity_type, entity_id);
+
+CREATE TABLE IF NOT EXISTS suppression_list (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL UNIQUE,
+    reason TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS consent_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL,
+    action TEXT NOT NULL,
+    source TEXT,
+    details TEXT,
+    timestamp TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_suppression_email ON suppression_list(email);
+CREATE INDEX IF NOT EXISTS idx_consent_email ON consent_log(email);
 """
 
 

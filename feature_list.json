@@ -266,7 +266,7 @@
       "Data retention: auto-delete lead data after configurable days (default 365)",
       "Right to erasure: delete all data for a given email on request"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F020",
