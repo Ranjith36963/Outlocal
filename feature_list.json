@@ -140,7 +140,7 @@
       "Supports HTML and plain text",
       "Includes required CAN-SPAM headers (unsubscribe link, physical address)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F011",
