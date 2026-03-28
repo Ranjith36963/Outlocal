@@ -125,7 +125,7 @@
       "Body under 80 words, UK English, no corporate AI slop phrases",
       "CTA: book a call OR reply YES"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F010",
@@ -237,7 +237,7 @@
       "Daily/weekly trend data",
       "Best-performing subject lines and templates"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F018",
