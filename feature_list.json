@@ -208,7 +208,7 @@
       "Pipeline view: count of leads in each status",
       "Filter leads by status, score range, campaign, town"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F016",
