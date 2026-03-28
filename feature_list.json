@@ -222,7 +222,7 @@
       "Batch send with rate limiting",
       "Campaign-level stats: sent, opened, replied, interested"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F017",
@@ -297,7 +297,7 @@
       "POST /api/v1/campaigns/{id}/send — send campaign emails",
       "GET /api/v1/campaigns/{id}/stats — campaign analytics"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F022",
@@ -324,7 +324,7 @@
       "GET /api/v1/compliance/suppression — suppression list export",
       "GET /api/v1/compliance/domain-check — check SPF/DKIM/DMARC"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F024",
