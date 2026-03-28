@@ -95,7 +95,7 @@
       "Negative signals: no website, very low rating, closed business",
       "Score stored on lead record, recalculated on enrichment updates"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F008",
