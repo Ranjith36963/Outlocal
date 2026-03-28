@@ -81,7 +81,7 @@
       "Filters disposable email domains",
       "Returns best candidate with confidence score"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F007",
