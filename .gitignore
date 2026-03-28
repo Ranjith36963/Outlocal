@@ -1,3 +1,12 @@
+# OUTLOCAL-specific
+*.db
+*.sqlite
+*.sqlite3
+agent_logs/
+/tmp/research/
+test-results/
+.claude/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

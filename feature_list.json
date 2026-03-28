@@ -1,0 +1,399 @@
+[
+  {
+    "id": "F001",
+    "category": "core",
+    "description": "Database schema and core data models for leads, campaigns, emails, and replies",
+    "steps": [
+      "SQLite database initialises with all required tables",
+      "Lead model stores: business_name, owner_name, email, phone, website, town, source, score, status",
+      "Campaign model stores: name, status, template, target_criteria, created_at",
+      "Email model stores: lead_id, campaign_id, subject, body, provider, status, sent_at, opened_at, clicked_at",
+      "Reply model stores: email_id, raw_text, classification, classified_at",
+      "All models use Pydantic validation with proper types"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F002",
+    "category": "core",
+    "description": "Configuration management with .env loading and provider configs",
+    "steps": [
+      "Settings class loads all env vars with defaults",
+      "Provider configs (Groq, OpenRouter, Gemini) load from env",
+      "SMTP config loads from env",
+      "Missing required vars raise clear errors at startup",
+      "Config is importable as a singleton"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F003",
+    "category": "core",
+    "description": "FastAPI application skeleton with health check and CORS",
+    "steps": [
+      "FastAPI app starts on configured port",
+      "GET /health returns 200 with status and version",
+      "CORS configured for development",
+      "API versioning under /api/v1",
+      "OpenAPI docs available at /docs"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F004",
+    "category": "scraping",
+    "description": "Google Maps business scraper for UK local businesses",
+    "steps": [
+      "Accepts search query and location (e.g. 'restaurants in Bristol')",
+      "Extracts: business_name, address, phone, website, rating, review_count",
+      "Handles pagination to scrape multiple pages of results",
+      "Rate limiting to avoid detection (configurable delay)",
+      "Saves scraped businesses to database as leads",
+      "Deduplicates by business name + postcode"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F005",
+    "category": "scraping",
+    "description": "Website crawler extracting emails, phones, social links, and tech stack",
+    "steps": [
+      "Crawls a given URL up to configurable depth (default 3 pages)",
+      "Extracts emails via regex from page content",
+      "Extracts phone numbers (UK format)",
+      "Extracts social media links (Facebook, Instagram, Twitter, LinkedIn)",
+      "Detects basic tech stack (WordPress, Wix, Squarespace, Shopify, custom)",
+      "Handles JS-rendered pages via Playwright",
+      "Respects robots.txt",
+      "Returns structured enrichment data"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F006",
+    "category": "enrichment",
+    "description": "Email finder generating and validating email candidates from name + domain",
+    "steps": [
+      "Generates email permutations from owner name + domain (e.g. john@, j.doe@, john.doe@)",
+      "Validates email syntax",
+      "Checks MX records exist for domain",
+      "SMTP verification where possible (catch-all detection)",
+      "Filters disposable email domains",
+      "Returns best candidate with confidence score"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F007",
+    "category": "scoring",
+    "description": "Lead scoring engine with rule-based and signal-based scoring",
+    "steps": [
+      "Scores leads 0-100 based on configurable criteria",
+      "Website quality signals: has SSL, mobile-friendly, load speed, outdated design",
+      "Business signals: review count, rating, has website, has social media",
+      "Contact signals: email found, phone found, owner name found",
+      "Negative signals: no website, very low rating, closed business",
+      "Score stored on lead record, recalculated on enrichment updates"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F008",
+    "category": "ai",
+    "description": "FreeAIEngine with multi-provider failover (Groq → OpenRouter → Gemini)",
+    "steps": [
+      "Initialises with provider configs from settings",
+      "generate_email() produces personalised cold email under 80 words",
+      "Falls over to next provider when current hits daily limit",
+      "Falls over to next provider on API error",
+      "Tracks daily usage counts per provider",
+      "reset_daily_counts() clears all counters",
+      "Returns provider name and model used with each generation",
+      "Email output parsed into subject and body"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F009",
+    "category": "ai",
+    "description": "Email template system with personalisation variables",
+    "steps": [
+      "Template supports variables: {business_name}, {owner_name}, {town}, {pain_point}, {service}",
+      "AI generates unique email per lead, not just template fill",
+      "Pain points derived from website crawl data (no SSL, slow load, no mobile, outdated)",
+      "Subject line under 60 chars, mentions business or town",
+      "Body under 80 words, UK English, no corporate AI slop phrases",
+      "CTA: book a call OR reply YES"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F010",
+    "category": "sending",
+    "description": "Async SMTP email sender with rate limiting and error handling",
+    "steps": [
+      "Sends emails via configured SMTP server",
+      "Rate limiting: configurable emails per minute (default 2/min for cold outreach)",
+      "Handles SMTP errors gracefully (bounce, reject, timeout)",
+      "Tracks send status per email (pending, sent, failed, bounced)",
+      "Stores sent_at timestamp",
+      "Supports HTML and plain text",
+      "Includes required CAN-SPAM headers (unsubscribe link, physical address)"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F011",
+    "category": "sending",
+    "description": "Domain authentication checker (SPF, DKIM, DMARC)",
+    "steps": [
+      "Checks SPF record exists and is valid for sending domain",
+      "Checks DKIM record exists",
+      "Checks DMARC record exists and policy",
+      "Returns pass/fail per check with remediation advice",
+      "Warns if authentication is missing before first send"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F012",
+    "category": "followup",
+    "description": "Follow-up sequence engine with configurable timing and conditions",
+    "steps": [
+      "Defines follow-up sequences: delay_days, condition (no_reply/no_open), max_followups",
+      "Default sequence: 3 follow-ups at day 3, day 7, day 14",
+      "Generates unique follow-up content via AI (not just resend)",
+      "Skips follow-up if lead replied or unsubscribed",
+      "Scheduler checks for due follow-ups and queues them",
+      "Follow-up emails reference original email naturally"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F013",
+    "category": "followup",
+    "description": "IMAP reply detection polling for incoming email replies",
+    "steps": [
+      "Connects to IMAP inbox to check for replies",
+      "Matches replies to sent emails by In-Reply-To or subject line",
+      "Extracts reply body text (strips quoted content)",
+      "Triggers classification pipeline on new reply",
+      "Polls at configurable interval (default every 5 min)",
+      "Handles connection errors gracefully"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F014",
+    "category": "classifier",
+    "description": "Reply classification using free LLM (interested/not_interested/ooo/unsubscribe)",
+    "steps": [
+      "Classifies replies into: INTERESTED, NOT_INTERESTED, OUT_OF_OFFICE, WRONG_PERSON, UNSUBSCRIBE",
+      "Uses FreeAIEngine.classify_reply() with provider failover",
+      "Classification stored on reply record",
+      "INTERESTED replies flagged for immediate human attention",
+      "UNSUBSCRIBE triggers automatic opt-out",
+      "Classification accuracy target: >90% on clear-cut replies"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F015",
+    "category": "crm",
+    "description": "Lead pipeline with status tracking and activity log",
+    "steps": [
+      "Lead statuses: new, enriched, scored, contacted, replied, interested, converted, lost, unsubscribed",
+      "Status transitions tracked with timestamps",
+      "Activity log per lead: scraped, enriched, emailed, followed_up, replied, classified",
+      "Pipeline view: count of leads in each status",
+      "Filter leads by status, score range, campaign, town"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F016",
+    "category": "crm",
+    "description": "Campaign management with target criteria and batch operations",
+    "steps": [
+      "Create campaign with name, target criteria (town, business type, min score)",
+      "Assign leads to campaign based on criteria",
+      "Campaign statuses: draft, active, paused, completed",
+      "Batch generate emails for all leads in campaign",
+      "Batch send with rate limiting",
+      "Campaign-level stats: sent, opened, replied, interested"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F017",
+    "category": "analytics",
+    "description": "Campaign analytics dashboard with key metrics",
+    "steps": [
+      "Open rate tracking via tracking pixel",
+      "Click rate tracking via redirect links",
+      "Reply rate calculation",
+      "Conversion rate (interested / total sent)",
+      "Per-campaign breakdown of all metrics",
+      "Daily/weekly trend data",
+      "Best-performing subject lines and templates"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F018",
+    "category": "analytics",
+    "description": "A/B testing for subject lines and email body variants",
+    "steps": [
+      "Create A/B test with 2 variants per campaign",
+      "Random split of leads into A and B groups",
+      "Track open rate and reply rate per variant",
+      "Statistical significance check before declaring winner",
+      "Auto-select winner after minimum sample size reached",
+      "Apply winning variant to remaining unsent leads"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F019",
+    "category": "compliance",
+    "description": "GDPR and CAN-SPAM compliance engine",
+    "steps": [
+      "Every email includes unsubscribe link",
+      "Every email includes physical business address",
+      "Unsubscribe link immediately opts out lead (one-click)",
+      "Unsubscribed leads never receive further emails",
+      "Suppression list checked before every send",
+      "Data retention: auto-delete lead data after configurable days (default 365)",
+      "Right to erasure: delete all data for a given email on request"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F020",
+    "category": "compliance",
+    "description": "Consent tracking and audit trail",
+    "steps": [
+      "Log all consent events: opt-in source, opt-out timestamp, erasure requests",
+      "Audit trail searchable by email address",
+      "Export consent records as CSV for compliance review",
+      "Legitimate interest basis documented per lead source",
+      "Processing records maintained per GDPR Article 30"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F021",
+    "category": "api",
+    "description": "REST API endpoints for all CRUD operations",
+    "steps": [
+      "POST /api/v1/leads — create lead",
+      "GET /api/v1/leads — list leads with filters and pagination",
+      "GET /api/v1/leads/{id} — get lead detail with activity log",
+      "PUT /api/v1/leads/{id} — update lead",
+      "DELETE /api/v1/leads/{id} — delete lead (soft delete)",
+      "POST /api/v1/campaigns — create campaign",
+      "GET /api/v1/campaigns — list campaigns",
+      "POST /api/v1/campaigns/{id}/generate — generate emails for campaign",
+      "POST /api/v1/campaigns/{id}/send — send campaign emails",
+      "GET /api/v1/campaigns/{id}/stats — campaign analytics"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F022",
+    "category": "api",
+    "description": "Scraping and enrichment API endpoints",
+    "steps": [
+      "POST /api/v1/scrape — trigger Google Maps scrape with query + location",
+      "GET /api/v1/scrape/{job_id} — check scrape job status",
+      "POST /api/v1/enrich/{lead_id} — trigger website crawl + email finding for lead",
+      "POST /api/v1/enrich/batch — enrich all unenriched leads",
+      "POST /api/v1/score/{lead_id} — recalculate lead score",
+      "POST /api/v1/score/batch — score all unscored leads"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F023",
+    "category": "api",
+    "description": "Compliance API endpoints",
+    "steps": [
+      "POST /api/v1/compliance/unsubscribe/{token} — one-click unsubscribe",
+      "POST /api/v1/compliance/erasure — right to erasure by email",
+      "GET /api/v1/compliance/audit/{email} — consent audit trail",
+      "GET /api/v1/compliance/suppression — suppression list export",
+      "GET /api/v1/compliance/domain-check — check SPF/DKIM/DMARC"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F024",
+    "category": "scheduler",
+    "description": "Background scheduler for automated pipeline operations",
+    "steps": [
+      "APScheduler runs follow-up checks every 5 minutes",
+      "Daily midnight job resets AI provider counters",
+      "Hourly IMAP poll for reply detection",
+      "Configurable batch enrichment schedule",
+      "Scheduler status visible via API",
+      "Graceful shutdown on app exit"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F025",
+    "category": "integration",
+    "description": "End-to-end pipeline: scrape → enrich → score → email → follow-up → classify",
+    "steps": [
+      "Full pipeline runs for a single lead from scrape to classification",
+      "Pipeline steps execute in correct order with data flowing between them",
+      "Failures at any step are logged and don't break the pipeline",
+      "Lead status updates at each pipeline stage",
+      "Activity log captures every pipeline action",
+      "Pipeline can be triggered per-lead or per-campaign"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F026",
+    "category": "deployment",
+    "description": "Docker containerisation with docker-compose",
+    "steps": [
+      "Dockerfile builds the application",
+      "docker-compose.yml runs app with correct env vars",
+      "Container starts and passes health check",
+      "Database persists via volume mount",
+      "Logs accessible via docker logs",
+      "Configurable via environment variables"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F027",
+    "category": "testing",
+    "description": "Comprehensive test suite with >80% coverage",
+    "steps": [
+      "Unit tests for all core models and validation",
+      "Unit tests for AI engine with mocked providers",
+      "Unit tests for lead scoring logic",
+      "Integration tests for API endpoints",
+      "Integration tests for database operations",
+      "Test fixtures and factories for test data",
+      "Coverage report shows >80% on business logic"
+    ],
+    "passes": false
+  },
+  {
+    "id": "F028",
+    "category": "docs",
+    "description": "Complete project documentation",
+    "steps": [
+      "README.md with project overview, quick start, and architecture",
+      "SETUP.md with detailed setup instructions",
+      "API documentation auto-generated from FastAPI",
+      "Architecture document in docs/architecture/current.md",
+      "All environment variables documented in .env.example"
+    ],
+    "passes": false
+  }
+]
