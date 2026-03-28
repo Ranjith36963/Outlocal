@@ -150,19 +150,27 @@ async def get_lead(lead_id: int) -> dict:
 @api_v1.put("/leads/{lead_id}")
 async def update_lead(lead_id: int, update: LeadUpdate) -> dict:
     """Update lead fields."""
+    allowed_columns = frozenset(LeadUpdate.model_fields.keys())
     fields = {k: v for k, v in update.model_dump().items() if v is not None}
     if not fields:
         raise HTTPException(status_code=400, detail="No fields to update")
+
+    # Validate column names against allowlist to prevent SQL injection
+    for col in fields:
+        if col not in allowed_columns:
+            raise HTTPException(status_code=400, detail=f"Invalid field: {col}")
 
     set_clause = ", ".join(f"{k} = ?" for k in fields)
     values = list(fields.values()) + [lead_id]
 
     async with db.connection() as conn:
-        await conn.execute(
+        cursor = await conn.execute(
             f"UPDATE leads SET {set_clause}, updated_at = datetime('now') WHERE id = ?",
             values,
         )
         await conn.commit()
+        if cursor.rowcount == 0:
+            raise HTTPException(status_code=404, detail="Lead not found")
     return {"id": lead_id, "status": "updated"}
 
 
@@ -170,11 +178,13 @@ async def update_lead(lead_id: int, update: LeadUpdate) -> dict:
 async def delete_lead(lead_id: int) -> dict:
     """Soft delete a lead by setting status to 'lost'."""
     async with db.connection() as conn:
-        await conn.execute(
+        cursor = await conn.execute(
             "UPDATE leads SET status = 'lost', updated_at = datetime('now') WHERE id = ?",
             (lead_id,),
         )
         await conn.commit()
+        if cursor.rowcount == 0:
+            raise HTTPException(status_code=404, detail="Lead not found")
     return {"id": lead_id, "status": "deleted"}
 
 
@@ -214,12 +224,14 @@ async def campaign_stats(campaign_id: int) -> dict:
 # --- Compliance ---
 
 
-@api_v1.post("/compliance/unsubscribe/{token}")
-async def unsubscribe(token: str) -> dict:
-    """One-click unsubscribe."""
+@api_v1.post("/compliance/unsubscribe/{email}")
+async def unsubscribe(email: str) -> dict:
+    """One-click unsubscribe. Email address must contain @."""
+    if "@" not in email:
+        raise HTTPException(status_code=400, detail="Invalid email address")
     compliance = ComplianceEngine(db)
-    await compliance.add_suppression(token, "unsubscribe")
-    return {"status": "unsubscribed", "email": token}
+    await compliance.add_suppression(email, "unsubscribe")
+    return {"status": "unsubscribed", "email": email}
 
 
 @api_v1.post("/compliance/erasure")

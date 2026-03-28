@@ -111,7 +111,7 @@ class LeadPipeline:
             conditions.append("status = ?")
             params.append(status)
         if town:
-            conditions.append("town = ?")
+            conditions.append("LOWER(town) = LOWER(?)")
             params.append(town)
         if min_score is not None:
             conditions.append("score >= ?")

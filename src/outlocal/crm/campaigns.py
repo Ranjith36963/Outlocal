@@ -108,6 +108,7 @@ class CampaignManager:
 
     async def assign_leads(self, campaign_id: int, criteria: dict[str, Any]) -> list[int]:
         """Find leads matching criteria and return their IDs."""
+        # Column names are hardcoded below — not from user input. Values use ? placeholders.
         conditions: list[str] = []
         params: list[Any] = []
 

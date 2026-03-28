@@ -171,4 +171,35 @@ class TestComplianceEndpoints:
     async def test_audit_trail_endpoint(self, client):
         response = await client.get("/api/v1/compliance/audit/test@example.com")
         assert response.status_code == 200
-        assert isinstance(response.json(), list)
+
+
+class TestQABugRegressions:
+    """Regression tests for bugs found during QA."""
+
+    @pytest.mark.asyncio
+    async def test_put_nonexistent_lead_returns_404(self, client):
+        """BUG-001: PUT on nonexistent lead should 404, not silent 200."""
+        response = await client.put("/api/v1/leads/99999", json={"email": "x@y.com"})
+        assert response.status_code == 404
+
+    @pytest.mark.asyncio
+    async def test_delete_nonexistent_lead_returns_404(self, client):
+        """BUG-002: DELETE on nonexistent lead should 404, not silent 200."""
+        response = await client.delete("/api/v1/leads/99999")
+        assert response.status_code == 404
+
+    @pytest.mark.asyncio
+    async def test_town_filter_case_insensitive(self, client):
+        """BUG-003: Town filter should match case-insensitively."""
+        await client.post("/api/v1/leads", json={
+            "business_name": "Case Test", "town": "Bristol",
+        })
+        response = await client.get("/api/v1/leads?town=bristol")
+        assert response.status_code == 200
+        assert len(response.json()) >= 1
+
+    @pytest.mark.asyncio
+    async def test_unsubscribe_rejects_non_email(self, client):
+        """BUG-004: Unsubscribe should reject non-email strings."""
+        response = await client.post("/api/v1/compliance/unsubscribe/not-an-email")
+        assert response.status_code == 400

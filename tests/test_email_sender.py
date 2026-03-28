@@ -13,7 +13,7 @@ def sender():
         host="smtp.test.com",
         port=587,
         username="test@test.com",
-        password="secret",
+        password="test_smtp_placeholder",  # noqa: S106 — not a real credential
         from_email="sender@test.com",
         from_name="Test Sender",
         unsubscribe_url="https://test.com/unsubscribe",
