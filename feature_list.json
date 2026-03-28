@@ -24,7 +24,7 @@
       "Missing required vars raise clear errors at startup",
       "Config is importable as a singleton"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F003",
