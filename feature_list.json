@@ -67,7 +67,7 @@
       "Respects robots.txt",
       "Returns structured enrichment data"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F006",
@@ -181,7 +181,7 @@
       "Polls at configurable interval (default every 5 min)",
       "Handles connection errors gracefully"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F014",
@@ -311,7 +311,7 @@
       "POST /api/v1/score/{lead_id} — recalculate lead score",
       "POST /api/v1/score/batch — score all unscored leads"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F023",
@@ -352,7 +352,7 @@
       "Activity log captures every pipeline action",
       "Pipeline can be triggered per-lead or per-campaign"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F026",
@@ -366,7 +366,7 @@
       "Logs accessible via docker logs",
       "Configurable via environment variables"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F027",
@@ -381,7 +381,7 @@
       "Test fixtures and factories for test data",
       "Coverage report shows >80% on business logic"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "id": "F028",
@@ -394,6 +394,6 @@
       "Architecture document in docs/architecture/current.md",
       "All environment variables documented in .env.example"
     ],
-    "passes": false
+    "passes": true
   }
 ]
