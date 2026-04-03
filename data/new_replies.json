@@ -1,0 +1,56 @@
+[
+  {
+    "reply_id": 1,
+    "email_id": 3,
+    "lead_id": 3,
+    "business_name": "Westfield Hair & Beauty",
+    "town": "Leeds",
+    "received_at": "2026-04-02T14:23:00Z",
+    "raw_text": "Hi there, thanks for reaching out. Yes this is something we've been meaning to look at — our website is a bit outdated. Would you be able to give us a call this week? Best, Claire"
+  },
+  {
+    "reply_id": 2,
+    "email_id": 7,
+    "lead_id": 7,
+    "business_name": "Moorlands Accountancy",
+    "town": "Keighley",
+    "received_at": "2026-04-02T09:41:00Z",
+    "raw_text": "Thanks for your email but we're not interested in any marketing services at this time. Please don't contact us again."
+  },
+  {
+    "reply_id": 3,
+    "email_id": 12,
+    "lead_id": 12,
+    "business_name": "Bronte Country Cottages",
+    "town": "Haworth",
+    "received_at": "2026-04-01T16:07:00Z",
+    "raw_text": "Thanks for your message. I'm currently on annual leave until 7th April. For urgent enquiries please contact my colleague on info@brontecottages.co.uk. Best wishes, David"
+  },
+  {
+    "reply_id": 4,
+    "email_id": 15,
+    "lead_id": 15,
+    "business_name": "Valley View Garage",
+    "town": "Todmorden",
+    "received_at": "2026-04-02T11:55:00Z",
+    "raw_text": "I'm afraid you have the wrong person — this email goes to the workshop, not the owner. Try ringing the office on the number from the website. Cheers"
+  },
+  {
+    "reply_id": 5,
+    "email_id": 19,
+    "lead_id": 19,
+    "business_name": "Summit Fitness Studio",
+    "town": "Otley",
+    "received_at": "2026-04-03T07:12:00Z",
+    "raw_text": "Please remove me from your mailing list. I do not wish to receive further emails."
+  },
+  {
+    "reply_id": 6,
+    "email_id": 22,
+    "lead_id": 22,
+    "business_name": "Pennine Print & Design",
+    "town": "Sowerby Bridge",
+    "received_at": "2026-04-02T16:44:00Z",
+    "raw_text": "Hi — actually this is really timely, we've just been talking about getting the site sorted. Can you send us some info on what you do and pricing? We might be looking to get going within the next month. Ta, Rob"
+  }
+]

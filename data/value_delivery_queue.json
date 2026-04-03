@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-04-03T08:15:00Z",
+  "date": "2026-04-03",
+  "note": "BRAIN layer — value delivery queue for INTERESTED leads. HANDS layer executes: runs audits, attaches PDFs, sends reply emails. Priority order listed below.",
+  "items": [
+    {
+      "queue_id": "vd_001",
+      "lead_id": 3,
+      "business_name": "Westfield Hair & Beauty",
+      "owner_name": "Claire",
+      "lead_email": "claire@westfieldhair.co.uk",
+      "town": "Leeds",
+      "classification": "INTERESTED",
+      "original_pain_point": "Website could be improved to attract more local customers",
+      "reply_summary": "Asked for a call this week — website is outdated",
+      "priority": 1,
+      "urgency": "high",
+      "value_delivery_type": "website_audit_then_call",
+      "audit_tasks": [
+        {
+          "task": "crawl_website",
+          "target": "https://westfieldhair.co.uk",
+          "checks": ["ssl", "mobile_friendly", "page_speed", "booking_system", "google_reviews_visible", "schema_markup"],
+          "output": "data/audits/lead_3_westfield_hair.json"
+        },
+        {
+          "task": "google_ranking_check",
+          "query": "hair salon Leeds",
+          "check_position_for": "westfield hair and beauty",
+          "output": "data/audits/lead_3_ranking.json"
+        },
+        {
+          "task": "competitor_snapshot",
+          "query": "hair salon Leeds",
+          "top_n": 3,
+          "output": "data/audits/lead_3_competitors.json"
+        }
+      ],
+      "reply_template": {
+        "subject": "Re: your York salon website is flagged 'Not Secure'",
+        "body": "Hi Claire,\n\nGreat to hear from you — yes, absolutely happy to chat this week.\n\nBefore we speak, I've run a quick audit on the site and spotted a few things worth talking through:\n\n1. SSL (the 'Not Secure' issue) — fixable in about 20 minutes\n2. The site isn't passing Google's mobile test — affects your local ranking\n3. No booking link visible above the fold — you're probably losing walk-in enquiries\n\nI've put together a short 3-point summary — I'll attach it here so you've got it before the call.\n\nWhat time works best this week? I'm free Tuesday afternoon or Thursday morning.\n\n[Your name]",
+        "attachments": ["data/audits/lead_3_audit_summary.pdf"],
+        "notes": "Generate PDF from audit JSON before sending. Keep it under 1 page — busy salon owner."
+      }
+    },
+    {
+      "queue_id": "vd_002",
+      "lead_id": 22,
+      "business_name": "Pennine Print & Design",
+      "owner_name": "Rob",
+      "lead_email": "rob@pennineprint.co.uk",
+      "town": "Sowerby Bridge",
+      "classification": "INTERESTED",
+      "original_pain_point": "Website lacks SSL certificate",
+      "reply_summary": "Asked for info and pricing — 1-month buying horizon",
+      "priority": 2,
+      "urgency": "high",
+      "value_delivery_type": "capability_pack_plus_audit",
+      "audit_tasks": [
+        {
+          "task": "crawl_website",
+          "target": "https://pennineprint.co.uk",
+          "checks": ["ssl", "mobile_friendly", "portfolio_gallery", "contact_form", "page_speed"],
+          "output": "data/audits/lead_22_pennine_print.json"
+        }
+      ],
+      "reply_template": {
+        "subject": "Re: Quick question about Pennine Print & Design",
+        "body": "Hi Rob,\n\nTa for getting back — glad the timing's right.\n\nHere's a quick summary of what I do and typical costs:\n\n- SSL fix + mobile optimisation: £150 one-off (usually takes a day)\n- Simple site redesign for a print/design business: £400-600 depending on pages\n- Ongoing local SEO (gets you ranking for 'print shop Sowerby Bridge'): £75/month\n\nI also ran a quick audit on pennineprint.co.uk — I'll attach the notes so you've got something to look at.\n\nHappy to jump on a call or swap emails — whatever's easier.\n\n[Your name]",
+        "attachments": ["data/audits/lead_22_audit_summary.pdf"],
+        "notes": "He asked for pricing — give real numbers. Don't hedge with 'it depends' — builds trust. 1-month horizon means don't oversell, just stay in the conversation."
+      }
+    }
+  ],
+  "summary": {
+    "total_interested": 2,
+    "value_delivery_types": {
+      "website_audit_then_call": 1,
+      "capability_pack_plus_audit": 1
+    },
+    "audits_to_run": ["lead_3_westfield_hair", "lead_22_pennine_print"],
+    "expected_conversions": "1-2 (both strong signals)",
+    "gdpr_note": "Both leads replied voluntarily — legitimate interest basis confirmed. Log in audit_log."
+  }
+}
