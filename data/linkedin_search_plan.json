@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-04-03T00:00:00Z",
+  "generated_by": "linkedin-brain-agent",
+  "run_date": "2026-04-03",
+  "note": "First run — no leads qualify for LinkedIn outreach yet. Criteria: emailed 3+ days ago with no reply. No email data exists in the pipeline. Once the Lead Intelligence agent populates daily_signals.json with contacted leads, this plan will be populated automatically on the next run.",
+  "criteria": {
+    "days_since_email_min": 3,
+    "reply_status": "no_reply",
+    "lead_statuses_eligible": ["contacted"],
+    "exclude_statuses": ["replied", "interested", "converted", "unsubscribed"]
+  },
+  "search_queries": [],
+  "summary": {
+    "total_candidates": 0,
+    "queries_generated": 0
+  }
+}

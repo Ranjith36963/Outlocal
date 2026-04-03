@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-04-03T00:00:00Z",
+  "generated_by": "linkedin-brain-agent",
+  "run_date": "2026-04-03",
+  "note": "First run — no multi-channel coordination decisions needed. Pipeline is empty.",
+  "rules_applied": {
+    "block_linkedin_if_email_replied": true,
+    "block_linkedin_if_unsubscribed": true,
+    "nurture_if_already_connected": true,
+    "max_touchpoints_per_lead_per_week": 2,
+    "min_days_between_email_and_linkedin": 3
+  },
+  "decisions": [],
+  "suppressed_leads": {
+    "replied_on_email": [],
+    "already_connected_linkedin": [],
+    "unsubscribed": [],
+    "total_suppressed": 0
+  },
+  "moved_to_nurture": [],
+  "approved_for_linkedin_outreach": [],
+  "summary": {
+    "total_evaluated": 0,
+    "total_suppressed": 0,
+    "total_approved": 0,
+    "total_moved_to_nurture": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-04-03T00:00:00Z",
+  "generated_by": "linkedin-brain-agent",
+  "run_date": "2026-04-03",
+  "note": "First run — no LinkedIn profile data available from previous runs. Connection notes will be generated once: (1) the LinkedIn search plan has been executed by the HANDS agent, (2) profile data has been written back to data/linkedin_profiles.json.",
+  "strategy": {
+    "character_limit": 200,
+    "tone": "slightly awkward genuine compliment — avoids AI-slop polish",
+    "note_types": {
+      "post_reference": "Reference a specific post they made — highest conversion",
+      "headline": "Comment on their headline / job title in a non-sycophantic way",
+      "interest": "Reference a shared industry interest or local business topic",
+      "generic": "Fallback — local business angle only, used when no profile data"
+    },
+    "anti_patterns": [
+      "Do not use 'I came across your profile'",
+      "Do not use 'I was impressed by'",
+      "Do not mention AI or automation",
+      "Do not pitch in the connection note — curiosity only"
+    ]
+  },
+  "connection_notes": [],
+  "summary": {
+    "total_notes": 0,
+    "by_type": {
+      "post_reference": 0,
+      "headline": 0,
+      "interest": 0,
+      "generic": 0
+    }
+  }
+}

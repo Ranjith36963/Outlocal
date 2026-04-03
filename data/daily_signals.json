@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-04-03T00:00:00Z",
+  "generated_by": "linkedin-brain-agent",
+  "note": "First run — Lead Intelligence agent has not yet populated this file. No signals available. Run the Lead Intelligence agent to scrape and score leads before the LinkedIn Brain can act.",
+  "leads_emailed_today": [],
+  "leads_opened_no_reply": [],
+  "leads_replied": [],
+  "summary": {
+    "total_emailed": 0,
+    "total_opened": 0,
+    "total_replied": 0,
+    "candidates_for_linkedin": 0
+  }
+}
