@@ -1,17 +1,120 @@
 {
-  "generated_at": "2026-04-03T00:00:00Z",
+  "generated_at": "2026-04-05T09:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-03",
-  "note": "First run — no leads qualify for LinkedIn outreach yet. Criteria: emailed 3+ days ago with no reply. No email data exists in the pipeline. Once the Lead Intelligence agent populates daily_signals.json with contacted leads, this plan will be populated automatically on the next run.",
+  "run_date": "2026-04-05",
   "criteria": {
     "days_since_email_min": 3,
     "reply_status": "no_reply",
     "lead_statuses_eligible": ["contacted"],
-    "exclude_statuses": ["replied", "interested", "converted", "unsubscribed"]
+    "exclude_statuses": ["replied", "interested", "converted", "unsubscribed", "lost"]
   },
-  "search_queries": [],
+  "note": "Six leads qualify for LinkedIn second touch today. All emailed 3+ days ago with no reply. Leads that replied on email (1, 2, 3, 5, 7, 22) are excluded. Today's new batch (leads 49-56) not yet eligible. HANDS: execute these Google searches, scrape the top LinkedIn result for each, write profile data back to data/linkedin_profiles.json.",
+  "search_queries": [
+    {
+      "lead_id": 4,
+      "name": "Rachel",
+      "business_name": "Skipton Garden Design",
+      "town": "Skipton",
+      "days_since_email": 7,
+      "email_sent_at": "2026-03-29T09:00:00Z",
+      "followup_stage": "day_7",
+      "pain_point": "Website not mobile-friendly",
+      "owner_name_confidence": "known",
+      "google_query": "site:linkedin.com/in \"Rachel\" \"Skipton Garden Design\"",
+      "fallback_query": "site:linkedin.com/in \"Skipton Garden Design\" garden design Skipton",
+      "priority": "high",
+      "notes": "Owner first name known (Rachel). Day 7 follow-up email already sent today — LinkedIn connection request is the parallel second channel. Do NOT send if Rachel replies to today's email before HANDS executes."
+    },
+    {
+      "lead_id": 6,
+      "name": null,
+      "business_name": "Boroughbridge Plumbing",
+      "town": "Boroughbridge",
+      "days_since_email": 7,
+      "email_sent_at": "2026-03-29T09:45:00Z",
+      "followup_stage": "day_7",
+      "pain_point": "Website not mobile-friendly",
+      "owner_name_confidence": "unknown",
+      "google_query": "site:linkedin.com/in \"Boroughbridge Plumbing\" plumber",
+      "fallback_query": "site:linkedin.com/in plumber \"Boroughbridge\" North Yorkshire",
+      "priority": "medium",
+      "notes": "No owner name. Generic inbox (info@). LinkedIn search likely to surface a director or sole trader. If no result found, skip — do not connect to a generic company page."
+    },
+    {
+      "lead_id": 8,
+      "name": "Graham",
+      "business_name": "Ilkley Ironmongery",
+      "town": "Ilkley",
+      "days_since_email": 8,
+      "email_sent_at": "2026-03-28T14:30:00Z",
+      "followup_stage": "day_8_pre_breakup",
+      "pain_point": "Website lacks SSL certificate",
+      "owner_name_confidence": "known",
+      "google_query": "site:linkedin.com/in \"Graham\" \"Ilkley Ironmongery\"",
+      "fallback_query": "site:linkedin.com/in \"Graham\" ironmongery Ilkley hardware",
+      "priority": "high",
+      "notes": "Owner first name known (Graham). Day 14 breakup email pre-written for 2026-04-11. LinkedIn connection now is the last-chance alternative channel before breakup. High value — independent hardware shops are rare and likely owner-managed on LinkedIn."
+    },
+    {
+      "lead_id": 30,
+      "name": "Steve",
+      "business_name": "Halifax Window Cleaning",
+      "town": "Halifax",
+      "days_since_email": 3,
+      "email_sent_at": "2026-04-02T09:30:00Z",
+      "followup_stage": "day_3",
+      "pain_point": "Website lacks SSL certificate",
+      "owner_name_confidence": "known",
+      "google_query": "site:linkedin.com/in \"Steve\" \"Halifax Window Cleaning\"",
+      "fallback_query": "site:linkedin.com/in Steve window cleaning Halifax Calderdale",
+      "priority": "medium",
+      "notes": "Owner first name known (Steve). Day 3 bump sent today via email. LinkedIn at Day 3 is an early touch — use only if Steve is clearly active on LinkedIn (check for recent posts). Do not connect if profile looks dormant."
+    },
+    {
+      "lead_id": 31,
+      "name": null,
+      "business_name": "Pontefract Pharmacy",
+      "town": "Pontefract",
+      "days_since_email": 3,
+      "email_sent_at": "2026-04-02T10:05:00Z",
+      "followup_stage": "day_3",
+      "pain_point": "Website not mobile-friendly",
+      "owner_name_confidence": "unknown",
+      "google_query": "site:linkedin.com/in \"Pontefract Pharmacy\" pharmacist",
+      "fallback_query": "site:linkedin.com/in pharmacist Pontefract owner manager",
+      "priority": "low",
+      "notes": "No owner name. Generic info@ email. Pharmacies often have a superintendent pharmacist or director visible on LinkedIn. If a named pharmacist-owner is found with recent activity, proceed. Otherwise skip — connecting to a faceless pharmacy account won't convert."
+    },
+    {
+      "lead_id": 32,
+      "name": "Ann",
+      "business_name": "Castleford Carpets",
+      "town": "Castleford",
+      "days_since_email": 3,
+      "email_sent_at": "2026-04-02T10:45:00Z",
+      "followup_stage": "day_3",
+      "pain_point": "Website lacks SSL certificate",
+      "owner_name_confidence": "known",
+      "google_query": "site:linkedin.com/in \"Ann\" \"Castleford Carpets\"",
+      "fallback_query": "site:linkedin.com/in Ann carpets flooring Castleford West Yorkshire",
+      "priority": "medium",
+      "notes": "Owner first name known (Ann). Day 3 bump sent today via email. Same Day 3 caution as Steve — check for active profile before connecting."
+    }
+  ],
   "summary": {
-    "total_candidates": 0,
-    "queries_generated": 0
+    "total_candidates": 6,
+    "queries_generated": 6,
+    "by_followup_stage": {
+      "day_7_or_beyond": 3,
+      "day_3": 3
+    },
+    "by_priority": {
+      "high": 2,
+      "medium": 3,
+      "low": 1
+    },
+    "excluded_lead_ids_replied_email": [1, 2, 3, 5, 7, 22],
+    "excluded_lead_ids_too_recent": [42, 44, 46, 49, 50, 51, 52, 53, 54, 55, 56],
+    "notes": "Day 3 leads (30, 31, 32) are borderline — HANDS should only connect if the profile shows recent LinkedIn activity (post in last 30 days). Day 7+ leads (4, 6, 8) are safer second-touch targets."
   }
 }
