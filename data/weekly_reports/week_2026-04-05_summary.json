@@ -1,0 +1,113 @@
+{
+  "report_date": "2026-04-05",
+  "campaign_week": 1,
+  "period": "2026-03-28 to 2026-04-04",
+  "generated_by": "brain-intelligence-agent",
+  "email_channel": {
+    "total_leads_scraped": 48,
+    "total_sent": 30,
+    "total_replies": 6,
+    "reply_rate": 0.20,
+    "interested": 2,
+    "positive_reply_rate": 0.067,
+    "not_interested": 1,
+    "out_of_office": 1,
+    "wrong_person": 1,
+    "unsubscribe": 1,
+    "unsubscribe_rate": 0.033,
+    "conversions": 0,
+    "leads_at_interested_stage": 2,
+    "follow_ups_sent": 6,
+    "follow_ups_queued": 1
+  },
+  "linkedin_channel": {
+    "status": "pre_launch",
+    "connection_requests_sent": 0,
+    "acceptance_rate": null,
+    "moved_to_nurture": 0,
+    "note": "LinkedIn channel not yet active — qualification criteria (3+ days post-send, no reply) not met in Week 1. Expected launch Week 2."
+  },
+  "best_framework": "pas",
+  "framework_performance": {
+    "pas": {"positive_replies": 2, "estimated_sends": 12, "notes": "Both INTERESTED leads from PAS"},
+    "bab": {"positive_replies": 0, "estimated_sends": 8, "notes": "Too early — Day 7 data pending"},
+    "aida": {"positive_replies": 0, "estimated_sends": 4, "notes": "No data yet"},
+    "question": {"positive_replies": 0, "estimated_sends": 0, "notes": "Not yet trialled"},
+    "cliffhanger": {"positive_replies": 0, "estimated_sends": 0, "notes": "Deferred"}
+  },
+  "best_signal_type": "ssl",
+  "signal_performance": {
+    "ssl": {"positive_replies": 2, "estimated_sends": 8, "reply_rate": 0.25},
+    "ssl_mobile": {"positive_replies": 0, "estimated_sends": 3, "reply_rate": 0.0, "notes": "Included in SSL count above"},
+    "no_website": {"positive_replies": 0, "estimated_sends": 6, "reply_rate": 0.0, "notes": "Too early"},
+    "mobile": {"positive_replies": 0, "estimated_sends": 8, "reply_rate": 0.0, "notes": "Inconclusive — 1 OOO, 1 wrong person"},
+    "social_media": {"positive_replies": 0, "estimated_sends": 2, "reply_rate": 0.0, "notes": "Too early"},
+    "generic": {"positive_replies": 0, "estimated_sends": 4, "reply_rate": 0.0}
+  },
+  "best_town": "Leeds",
+  "town_performance": {
+    "Leeds": {"replies": 1, "positive": 1, "status": "expand"},
+    "Sowerby Bridge": {"replies": 1, "positive": 1, "status": "expand"},
+    "Keighley": {"replies": 1, "positive": 0, "status": "watch"},
+    "Haworth": {"replies": 1, "positive": 0, "status": "resume_8_april"},
+    "Todmorden": {"replies": 1, "positive": 0, "status": "re_enrich_lead"},
+    "Otley": {"replies": 1, "positive": 0, "status": "suppress_fitness_category"}
+  },
+  "best_score_range": "70-100",
+  "score_range_performance": {
+    "70_to_100": {"positive_replies": 2, "notes": "All positives from this range"},
+    "50_to_69": {"positive_replies": 0, "notes": "Need Week 2 data"},
+    "40_to_49": {"positive_replies": 0, "notes": "Low priority confirmed"},
+    "below_40": {"positive_replies": 0, "notes": "Do not email until re-enriched"}
+  },
+  "best_subject_pattern": "[First name] — [town] [business type] [specific issue]",
+  "linkedin_acceptance_rate": null,
+  "interested_leads": [
+    {
+      "lead_id": 3,
+      "business_name": "Westfield Hair & Beauty",
+      "town": "Leeds",
+      "framework": "pas",
+      "signal": "ssl_mobile",
+      "action": "Run audit, reply with audit PDF + call offer"
+    },
+    {
+      "lead_id": 22,
+      "business_name": "Pennine Print & Design",
+      "town": "Sowerby Bridge",
+      "framework": "pas",
+      "signal": "ssl",
+      "action": "Reply with pricing + audit today"
+    }
+  ],
+  "recommendations": [
+    "Increase PAS framework allocation to 55% of new emails (proven best performer)",
+    "Prioritise SSL and SSL+mobile signal leads above all other signal types",
+    "Raise minimum lead score threshold to 55 for Week 2 (both positives came from 70+ range)",
+    "Launch LinkedIn channel this week for 28-31 March no-reply cohort (now Day 7+)",
+    "For trades businesses (garages, plumbers, electricians): prefer website contact page email over Google Maps listing email",
+    "Re-engage lead 12 (Bronte Country Cottages) after 8 April using alternative contact",
+    "Convert leads 3 and 22 from INTERESTED to CONVERTED this week — priority 1",
+    "Batch 4 scrape: East Yorkshire (Beverley, Bridlington, Driffield) — fresh high-trades territory",
+    "Trial Question framework for trades leads with no owner name (10% allocation)",
+    "Avoid PAS deficit framing for fitness/wellness businesses — switch to AIDA/BAB positive framing",
+    "Run domain auth check (SPF/DKIM/DMARC) before scaling volume above 40 sends/day",
+    "Confirm A/B test winner (name vs business-name subject) after 50 total sends per variant"
+  ],
+  "week_2_targets": {
+    "new_leads_scraped": "50-60",
+    "emails_sent_new": "35-40",
+    "follow_ups_sent": "10-15",
+    "linkedin_connection_requests": "10-15",
+    "value_delivery_responses": 2,
+    "target_conversions": 1
+  },
+  "compliance": {
+    "unsubscribes_actioned": 1,
+    "unsubscribe_response_time_hours": "<1",
+    "gdpr_compliant": true,
+    "suppressed_leads": [19],
+    "all_outreach_b2b": true,
+    "legitimate_interest_documented": true
+  }
+}
