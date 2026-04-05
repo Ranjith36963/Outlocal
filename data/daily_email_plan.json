@@ -1,193 +1,220 @@
 [
   {
-    "lead_id": 42,
-    "business_name": "Blossom Beauty Studio",
-    "owner_name": "Sarah",
-    "town": "York",
-    "email_found": "sarah@blossombeautystudio.co.uk",
-    "score": 73,
-    "framework": "pas",
-    "framework_rationale": "Double pain point (SSL + mobile) is concrete and visible. PAS amplifies the 'Not Secure' fear before positioning fix.",
-    "signal_type": "ssl_mobile",
-    "signal_text": "Website loads over HTTP — Chrome shows 'Not Secure' warning — and fails Google's mobile test",
-    "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning, and site is not mobile-friendly",
-    "subject_hint": "Sarah — your York salon website is flagged 'Not Secure'",
-    "email_outline": {
-      "problem": "Chrome labels blossombeautystudio.co.uk as 'Not Secure' — new clients Google you before booking, and that warning puts them off",
-      "agitate": "Beauty is a trust-based business. A security warning on your site tells potential customers something's wrong before they've even read your menu",
-      "solution": "SSL fix takes one afternoon. I also spotted the site isn't passing Google's mobile test — both issues likely cost you bookings every week"
-    },
-    "cta": "Reply YES and I'll send a free 3-point audit of the site",
-    "personalisation_vars": {
-      "business_name": "Blossom Beauty Studio",
-      "owner_name": "Sarah",
-      "town": "York",
-      "service": "website security and mobile optimisation"
-    }
-  },
-  {
-    "lead_id": 46,
-    "business_name": "Thornfield Electricals",
-    "owner_name": "Mike Thornfield",
-    "town": "Bradford",
-    "email_found": "mike@thornfieldelectricals.co.uk",
-    "score": 70,
-    "framework": "pas",
-    "framework_rationale": "Trades businesses rely on trust. SSL warning directly undermines the 'reliable, professional' identity a sparky needs.",
-    "signal_type": "ssl",
-    "signal_text": "thornfieldelectricals.co.uk loads over HTTP — Chrome shows a 'Not Secure' lock icon",
-    "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
-    "subject_hint": "Mike — Chrome flags your Bradford electrician website as unsafe",
-    "email_outline": {
-      "problem": "When someone searches 'electrician Bradford' and lands on your site, Chrome immediately shows a 'Not Secure' warning in the address bar",
-      "agitate": "For a trades business, trust is everything. That warning contradicts every five-star review you've earned — and most people quietly click away",
-      "solution": "An SSL certificate costs nothing on most hosts — I can walk you through it or sort it directly. Usually done in 20 minutes."
-    },
-    "cta": "Book a quick 15-min call and I'll check the rest of the site while we're on",
-    "personalisation_vars": {
-      "business_name": "Thornfield Electricals",
-      "owner_name": "Mike Thornfield",
-      "town": "Bradford",
-      "service": "website trust and local SEO"
-    }
-  },
-  {
-    "lead_id": 44,
-    "business_name": "Meadowbrook Vets",
-    "owner_name": "Dr. James Rowe",
-    "town": "Skipton",
-    "email_found": "james@meadowbrookvets.co.uk",
-    "score": 80,
+    "lead_id": 52,
+    "business_name": "Holderness Homecare",
+    "owner_name": "Linda Walsh",
+    "town": "Beverley",
+    "email_found": "linda@holdernessHomecare.co.uk",
+    "score": 82,
     "framework": "aida",
-    "framework_rationale": "Strong existing reputation (4.8★, 142 reviews). AIDA works here — lead with their own social proof, build desire around amplifying it, CTA to discuss.",
+    "framework_rationale": "4.9★ with 78 reviews — strongest social proof in today's batch. AIDA: open with their own outstanding reputation as the Attention hook, build Interest with what they're missing, create Desire by showing the amplification opportunity, CTA.",
     "signal_type": "social_media",
-    "signal_text": "No Facebook or Instagram presence — 142 five-star reviews going unshared and unamplified",
+    "signal_text": "4.9★ rating with 78 reviews — no social media to amplify this exceptional reputation",
     "pain_point": "No social media presence detected — existing reputation not being amplified online",
-    "subject_hint": "Dr Rowe — 142 five-star reviews and nobody's seeing them",
+    "subject_hint": "Linda — 78 five-star reviews and nobody outside Google can see them",
     "email_outline": {
-      "attention": "Meadowbrook has 142 Google reviews averaging 4.8 stars — that's rare, and you've earned it",
-      "interest": "The problem is those reviews stay on Google. No Facebook page means your happy clients can't share their experience, and new pet owners in Skipton can't find you unless they already know to search",
-      "desire": "A simple Facebook presence — even posted once a week — turns your existing word-of-mouth into a visible, searchable stream of trust",
-      "action": "I help local practices set this up in a day. Happy to show you what a low-effort page looks like for a similar vet practice"
+      "attention": "Holderness Homecare has a 4.9-star rating on Google with 78 reviews — that puts you in the top 1% of care services in East Yorkshire",
+      "interest": "The gap is that those reviews sit on Google Maps. Families searching for homecare for a parent don't just search Google — they look for a Facebook page, a face behind the business, a sense of who you are. Right now, there's nothing there",
+      "desire": "A Facebook presence — even two posts a week — turns your existing reputation into something families can share and point to. It becomes a living reference that Google reviews alone can't provide",
+      "action": "I help homecare providers set this up sensitively — no gimmicks, just a trustworthy page that reflects the care you clearly deliver"
     },
-    "cta": "Reply YES and I'll send over two examples from practices your size",
+    "cta": "Reply YES and I'll send two examples from care providers your size",
     "personalisation_vars": {
-      "business_name": "Meadowbrook Vets",
-      "owner_name": "Dr. James Rowe",
-      "town": "Skipton",
-      "service": "social media presence and reputation amplification"
+      "business_name": "Holderness Homecare",
+      "owner_name": "Linda Walsh",
+      "town": "Beverley",
+      "service": "social media presence for care services"
     }
   },
   {
-    "lead_id": 41,
-    "business_name": "Hartley & Sons Plumbing",
-    "owner_name": null,
-    "town": "Harrogate",
-    "email_found": null,
-    "score": 52,
-    "framework": "bab",
-    "framework_rationale": "No website = easy before/after contrast. BAB lets us paint the current missed-opportunity state vs. a simple landing page fix.",
-    "signal_type": "no_website",
-    "signal_text": "No website on Google Maps listing — no way to rank for 'plumber Harrogate' searches",
-    "pain_point": "No website found — missing out on online customers",
-    "subject_hint": "Harrogate plumber with no website — here's what that costs",
+    "lead_id": 55,
+    "business_name": "Beverley Sports & Leisure",
+    "owner_name": "Craig Lawson",
+    "town": "Beverley",
+    "email_found": "craig@beverleysportsleisure.co.uk",
+    "score": 78,
+    "framework": "aida",
+    "framework_rationale": "Strong existing trust signals. AIDA — lead with their reputation, pivot to the visibility gap, show desire through a concrete visual opportunity, clean CTA.",
+    "signal_type": "social_media",
+    "signal_text": "4.7★ with 63 reviews — no Instagram or Facebook to showcase classes and facilities",
+    "pain_point": "No social media presence detected — existing reputation not being amplified online",
+    "subject_hint": "Craig — Beverley Sports & Leisure's best marketing tool isn't being used",
     "email_outline": {
-      "before": "Right now, when someone in Harrogate searches 'emergency plumber' at 11pm, Hartley & Sons doesn't appear — no website means no Google ranking",
-      "after": "A simple one-page site with your number, area covered, and a few reviews puts you in front of people already looking to hire",
-      "bridge": "I build these for local trades in a weekend. No monthly fees, no tech fuss — just a page that sends you calls"
+      "attention": "Beverley Sports & Leisure has 63 Google reviews at 4.7 stars — that's a genuinely strong local reputation",
+      "interest": "The missing piece is that new members in Beverley often check Instagram or Facebook before joining a gym or leisure centre. Without a page, they see your competitors' highlight reels and you get nothing",
+      "desire": "A simple Instagram account showing classes, the facility, and the occasional member story gives potential members a reason to choose you before they've even called",
+      "action": "I set up and manage these for local leisure businesses — low effort on your side, consistent presence online"
     },
-    "cta": "Book a 15-min call and I'll show you three examples from plumbers in similar towns",
+    "cta": "Happy to send you an example content plan — reply and I'll put one together",
+    "personalisation_vars": {
+      "business_name": "Beverley Sports & Leisure",
+      "owner_name": "Craig Lawson",
+      "town": "Beverley",
+      "service": "Instagram and social media management"
+    }
+  },
+  {
+    "lead_id": 50,
+    "business_name": "The Harbour Fish Bar",
+    "owner_name": "Pete",
+    "town": "Bridlington",
+    "email_found": "pete@theharbourfish.co.uk",
+    "score": 71,
+    "framework": "pas",
+    "framework_rationale": "Food business where trust and first impressions are everything. SSL warning is visceral — 'Not Secure' on a chippy website kills summer tourist trade. PAS: problem is concrete, agitation is the missed seasonal opportunity.",
+    "signal_type": "ssl",
+    "signal_text": "theharbourfish.co.uk loads over HTTP — Chrome shows a 'Not Secure' warning to every visitor",
+    "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
+    "subject_hint": "Pete — Chrome is warning your Bridlington customers away before they've read your menu",
+    "email_outline": {
+      "problem": "When someone searches for fish and chips in Bridlington and lands on theharbourfish.co.uk, Chrome immediately flags the site as 'Not Secure' — before they've seen a single menu item",
+      "agitate": "In a coastal town, a big chunk of your summer customers are visitors doing quick research on their phone. That warning tells them something's wrong. Most click back without reading another word",
+      "solution": "An SSL certificate is usually free and takes about 20 minutes to set up. It removes the warning instantly. I can walk you through it or sort it directly — your call"
+    },
+    "cta": "Reply and I'll check your hosting setup and send you the exact steps",
+    "personalisation_vars": {
+      "business_name": "The Harbour Fish Bar",
+      "owner_name": "Pete",
+      "town": "Bridlington",
+      "service": "website SSL fix"
+    }
+  },
+  {
+    "lead_id": 56,
+    "business_name": "East Riding Electrical",
+    "owner_name": "Neil",
+    "town": "Beverley",
+    "email_found": "neil@eastridingelectrical.co.uk",
+    "score": 68,
+    "framework": "pas",
+    "framework_rationale": "Electrician — same trust dynamic as Thornfield Electricals (lead 46). SSL warning directly contradicts the 'qualified, professional, trustworthy' identity trades businesses need. PAS is the right structure.",
+    "signal_type": "ssl",
+    "signal_text": "eastridingelectrical.co.uk loads over HTTP — Chrome flags it Not Secure",
+    "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
+    "subject_hint": "Neil — Chrome flags your Beverley electrician site as unsafe",
+    "email_outline": {
+      "problem": "Anyone who visits eastridingelectrical.co.uk right now sees a 'Not Secure' warning in their browser address bar — before they've read a single word about you",
+      "agitate": "Domestic customers in particular do a lot of research before inviting a trades contractor into their home. A security warning on the website says the opposite of 'qualified and trustworthy', which is exactly what you need them to think",
+      "solution": "SSL is free on virtually every host — I've sorted this for two other East Yorkshire tradespeople in the last month. Usually done in 20 minutes. Happy to look at your setup."
+    },
+    "cta": "Reply and I'll tell you which host you're on and exactly how to fix it",
+    "personalisation_vars": {
+      "business_name": "East Riding Electrical",
+      "owner_name": "Neil",
+      "town": "Beverley",
+      "service": "website SSL fix"
+    }
+  },
+  {
+    "lead_id": 53,
+    "business_name": "Bridlington Bay Lettings",
+    "owner_name": null,
+    "town": "Bridlington",
+    "email_found": null,
+    "score": 65,
+    "framework": "pas",
+    "framework_rationale": "Lettings agencies collect personal data from site enquiry forms. SSL failure is both trust and compliance risk — PAS works because the 'agitate' step can raise GDPR angle without being alarming.",
+    "signal_type": "ssl_mobile",
+    "signal_text": "HTTP site with no SSL — lettings agency asking potential tenants to submit personal details via a non-secure page",
+    "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
+    "subject_hint": "Bridlington Bay Lettings — your enquiry form has an SSL problem",
+    "email_outline": {
+      "problem": "bridlingtonbaylettings.co.uk runs without an SSL certificate — Chrome marks it 'Not Secure' to every visitor who arrives",
+      "agitate": "Prospective tenants are asked to fill in forms with their name, phone and email. Doing that on a page flagged 'Not Secure' raises immediate alarm — most won't complete the form, and some may question how seriously you take their data",
+      "solution": "SSL removes the warning and encrypts form submissions. With GDPR, it's also best practice for sites handling personal data. I can check your hosting and walk you through the fix — usually free and quick."
+    },
+    "cta": "Reply and I'll run a free check on the site and send you the steps",
     "status": "blocked_no_email",
-    "notes": "Cannot send until email found. HANDS: try phone lookup via 192.com or Companies House for this number.",
+    "notes": "HANDS: crawl contact page for email. Check lettings portal profiles (Zoopla/Rightmove agent page). No owner name — keep generic.",
     "personalisation_vars": {
-      "business_name": "Hartley & Sons Plumbing",
+      "business_name": "Bridlington Bay Lettings",
       "owner_name": null,
-      "town": "Harrogate",
-      "service": "simple local trades website"
+      "town": "Bridlington",
+      "service": "website SSL fix and GDPR compliance"
     }
   },
   {
-    "lead_id": 43,
-    "business_name": "Peak District Roofing Ltd",
+    "lead_id": 51,
+    "business_name": "Driffield Garden Centre",
     "owner_name": null,
-    "town": "Bakewell",
+    "town": "Driffield",
     "email_found": null,
-    "score": 48,
+    "score": 50,
     "framework": "bab",
-    "framework_rationale": "Mobile-friendliness has a clear before/after. No owner name so keep it generic but town-specific.",
-    "signal_type": "mobile",
-    "signal_text": "Site fails Google's mobile-friendly test — over 60% of 'roofer near me' searches happen on mobile",
+    "framework_rationale": "Mobile friendliness has a strong seasonal hook for a garden centre (spring peak). BAB before/after is vivid: before = losing mobile visitors in peak season, after = capturing them. No owner name so keep it specific to the business context.",
+    "signal_type": "mobile_reviews",
+    "signal_text": "Site fails mobile test — critical timing with spring peak season underway for garden centres",
     "pain_point": "Website not mobile-friendly — losing mobile visitors",
-    "subject_hint": "Peak District Roofing — your site loses 6 in 10 visitors before they call",
+    "subject_hint": "Driffield Garden Centre — spring shoppers can't use your site on a phone",
     "email_outline": {
-      "before": "Most people searching for a Bakewell roofer are on their phone — and peakdistrictroofing.co.uk currently fails Google's mobile test, meaning they land and immediately leave",
-      "after": "A mobile-optimised site keeps those visitors long enough to call or fill in a form",
-      "bridge": "The fix is usually straightforward — often a one-hour job if the site is on WordPress. Happy to check it free of charge"
+      "before": "Right now, driffieldgardencentre.co.uk fails Google's mobile test — which means the people searching 'garden centre Driffield' on their phone this spring are landing on a broken layout and leaving",
+      "after": "A mobile-optimised site keeps those visitors long enough to check opening times, browse products, and plan a visit",
+      "bridge": "Spring is your peak traffic window. The fix is often straightforward — happy to run a free mobile check and tell you exactly what needs changing"
     },
-    "cta": "Reply and I'll run a free mobile audit and send you the results",
+    "cta": "Reply and I'll send a free mobile report for the site",
     "status": "blocked_no_email",
-    "notes": "No owner name, no email. HANDS: crawl contact page for email. Check for director name on Companies House.",
+    "notes": "HANDS: crawl contact page. Garden centres often list a buyer or manager email. Try head office number to get right contact.",
     "personalisation_vars": {
-      "business_name": "Peak District Roofing Ltd",
+      "business_name": "Driffield Garden Centre",
       "owner_name": null,
-      "town": "Bakewell",
+      "town": "Driffield",
       "service": "mobile optimisation"
     }
   },
   {
-    "lead_id": 45,
-    "business_name": "Cobblestone Kitchen",
+    "lead_id": 49,
+    "business_name": "East Riding Builders Ltd",
     "owner_name": null,
-    "town": "Hebden Bridge",
+    "town": "Beverley",
     "email_found": null,
-    "score": 47,
+    "score": 55,
     "framework": "bab",
-    "framework_rationale": "Instagram presence acknowledged (shows we've done homework). BAB contrasts 'awareness without conversion' vs. website that books tables.",
+    "framework_rationale": "No website — clear before/after. BAB paints the missed-calls scenario vs. a simple landing page that generates enquiries. Trades audience responds well to concrete outcome framing.",
     "signal_type": "no_website",
-    "signal_text": "Active on Instagram but no website — social traffic has nowhere to convert into bookings",
-    "pain_point": "No website found — social media presence not converting to bookings",
-    "subject_hint": "Cobblestone Kitchen — Instagram's great, but where do bookings come from?",
+    "signal_text": "No website on Google Maps — invisible to 'builder Beverley' searches on Google",
+    "pain_point": "No website found — missing out on online customers",
+    "subject_hint": "Beverley builder with no website — what it's costing",
     "email_outline": {
-      "before": "Instagram brings eyes — but right now there's no website, no booking link, no way to capture the person who sees your post at 7pm and thinks 'I want to go there'",
-      "after": "A simple site with an online booking widget means that Instagram scroll turns into a reservation",
-      "bridge": "I've built these for two restaurants in West Yorkshire in the last month — straightforward, no monthly SaaS fees"
+      "before": "When someone in Beverley types 'builder near me' at the weekend, East Riding Builders Ltd doesn't show up — no website means Google can't rank you",
+      "after": "A one-page site with your number, service area, and a couple of job photos gets you in front of people already looking to hire a builder",
+      "bridge": "I build these for local trades — simple, no monthly fees, usually done in a weekend. Happy to show you what a builder's page looks like for a similar East Yorkshire firm"
     },
-    "cta": "Reply YES and I'll send a mock-up of what a booking page could look like for you",
+    "cta": "Book a 15-min call and I'll show you three examples",
     "status": "blocked_no_email",
-    "notes": "HANDS: try DM on Instagram or find email in Instagram bio. Also check Facebook page.",
+    "notes": "HANDS: try Companies House search for 'East Riding Builders Ltd', find director name and email. Also try phone lookup via 192.com.",
     "personalisation_vars": {
-      "business_name": "Cobblestone Kitchen",
+      "business_name": "East Riding Builders Ltd",
       "owner_name": null,
-      "town": "Hebden Bridge",
-      "service": "restaurant website with online booking"
+      "town": "Beverley",
+      "service": "simple local trades website"
     }
   },
   {
-    "lead_id": 48,
-    "business_name": "Calderdale Carpets & Flooring",
+    "lead_id": 54,
+    "business_name": "The Wolds Inn",
     "owner_name": null,
-    "town": "Halifax",
+    "town": "Driffield",
     "email_found": null,
-    "score": 40,
-    "framework": "pas",
-    "framework_rationale": "Multiple issues but email focused on the single most visible one (SSL/trust). Don't list all problems — pick the most concrete.",
-    "signal_type": "ssl",
-    "signal_text": "Site is HTTP — trust signal failure for a business where customers visit a showroom after doing online research",
-    "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
-    "subject_hint": "Halifax flooring site — Chrome is warning your customers away",
+    "score": 50,
+    "framework": "bab",
+    "framework_rationale": "Has Facebook but no website. BAB contrasts 'social awareness without conversion' vs. a booking-enabled website. Hospitality audience is social-savvy — acknowledge their Facebook use.",
+    "signal_type": "no_website",
+    "signal_text": "Facebook page active but no website — no way to show menus, events, or take table bookings online",
+    "pain_point": "No website found — social media presence not converting to bookings",
+    "subject_hint": "The Wolds Inn — Facebook's great, but where do bookings come from?",
     "email_outline": {
-      "problem": "calderdalefloors.co.uk loads without an SSL certificate — Chrome shows a 'Not Secure' warning to anyone who visits",
-      "agitate": "Flooring is a considered purchase. Customers research online before visiting a showroom — a security warning on first contact loses them to a competitor before you've even spoken",
-      "solution": "SSL is usually free and takes under an hour to set up. I can check what hosting you're on and walk you through it"
+      "before": "The Wolds Inn has a Facebook page — but right now there's no website, no booking form, no way to capture someone who sees your post on Friday evening and wants to book a table for Sunday lunch",
+      "after": "A simple site with an online booking widget means that social engagement turns into a confirmed reservation in your diary",
+      "bridge": "I've built these for two Yorkshire pubs in the last couple of months — straightforward, no SaaS fees, works with free booking tools like ResDiary or simply a contact form"
     },
-    "cta": "Reply and I'll send you the specific steps for your host — no obligation",
+    "cta": "Reply YES and I'll send a mock-up of what it could look like",
     "status": "blocked_no_email",
-    "notes": "Low score (40) — deprioritise if email hard to find. Spend enrichment time on leads 42, 46, 44 first.",
+    "notes": "HANDS: check Facebook page bio/About section for email or website link. Also try Google Maps listing phone number for a callback.",
     "personalisation_vars": {
-      "business_name": "Calderdale Carpets & Flooring",
+      "business_name": "The Wolds Inn",
       "owner_name": null,
-      "town": "Halifax",
-      "service": "website security fix"
+      "town": "Driffield",
+      "service": "pub website with online booking"
     }
   }
 ]
