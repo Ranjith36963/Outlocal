@@ -1,7 +1,10 @@
 {
-  "classified_at": "2026-04-05T08:05:00Z",
-  "date": "2026-04-05",
-  "total_replies": 5,
+  "classified_at": "2026-04-06T07:35:00Z",
+  "date": "2026-04-06",
+  "note": "BRAIN layer — Day 9 classification run. No new raw replies received over the weekend (2026-04-05 to 2026-04-06 is Sunday/Monday B2B silence). Carries forward the five classifications from 2026-04-05. Key update: lead 5 (David Harewood) OOO expired today — resume follow-up from Tuesday 2026-04-07. HANDS layer: check IMAP this morning for any replies that arrived Monday morning before this run.",
+  "new_replies_this_run": 0,
+  "carried_forward_from": "2026-04-05",
+  "total_replies_to_date": 11,
   "classifications": [
     {
       "reply_id": 7,
@@ -9,16 +12,19 @@
       "lead_id": 3,
       "business_name": "Westfield Hair & Beauty",
       "town": "Leeds",
+      "received_at": "2026-04-04T10:14:00Z",
       "classification": "INTERESTED",
       "needs_attention": true,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Confirmed call for Tuesday 2pm. Volunteered a new pain point (no online booking) independently — strong buying signal. 'We lose people all the time' = felt pain acknowledged unprompted.",
-      "suggested_action": "Confirm Tuesday 2pm call. Add online booking gap to audit. This is a high-probability conversion — prepare a two-option proposal (SSL+mobile fix vs. full redesign with booking).",
+      "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal. 'We lose people all the time' = felt pain acknowledged unprompted.",
+      "suggested_action": "HANDS: confirmation email sent 2026-04-05. Audit running (westfieldhair.co.uk). Call is TOMORROW (2026-04-07) at 14:00. Ensure audit and two-option proposal are ready before the call. Do NOT send further follow-ups.",
       "urgency": "high",
       "call_scheduled": "2026-04-07T14:00:00Z",
+      "call_prep_status": "audit_in_progress",
       "new_pain_point_discovered": "No online booking system — self-reported lost customers",
-      "lead_status_update": "interested"
+      "lead_status_update": "interested",
+      "status_actioned": true
     },
     {
       "reply_id": 8,
@@ -26,16 +32,19 @@
       "lead_id": 22,
       "business_name": "Pennine Print & Design",
       "town": "Sowerby Bridge",
+      "received_at": "2026-04-04T14:32:00Z",
       "classification": "INTERESTED",
       "needs_attention": true,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Asking whether fixes can be bundled into a redesign — this is a buyer's question, not a fence-sitter's. 'Sort the whole thing in one go' = signalling intent and budget appetite for a larger project.",
-      "suggested_action": "Reply today: yes, bundle as one job. Give a redesign + SSL + mobile package price (£500-700 all-in). Mention that bundling is better value and you can move quickly. Confirm his 1-month timeline.",
-      "urgency": "high",
+      "reasoning": "Asking whether fixes can be bundled into a redesign — a buyer's question. 'Sort the whole thing in one go' signals budget appetite for a larger project.",
+      "suggested_action": "HANDS: scope reply sent 2026-04-05 (£550 or £600+SEO bundle). Awaiting Rob's confirmation. If no reply from Rob by EOD 2026-04-07, send a one-line nudge: 'Happy to send a one-page scope doc if that helps, Rob.'",
+      "urgency": "medium",
       "upsell_signal": true,
-      "upsell_note": "May convert at full redesign level (~£600) rather than just SSL fix (£150). Do not anchor low — let him confirm the scope.",
-      "lead_status_update": "interested"
+      "upsell_note": "May convert at full redesign (~£600) rather than SSL fix only (£150). Do not anchor low.",
+      "lead_status_update": "interested",
+      "status_actioned": true,
+      "awaiting_response_since": "2026-04-05"
     },
     {
       "reply_id": 9,
@@ -43,14 +52,17 @@
       "lead_id": 1,
       "business_name": "Ripon Road Carpentry",
       "town": "Ripon",
+      "received_at": "2026-04-04T09:05:00Z",
       "classification": "INTERESTED",
       "needs_attention": true,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Acknowledged the pain unprompted ('I've been meaning to sort that for ages'), confirmed the mobile workflow problem (customers told to ring), and asked for pricing — three clear buying signals in one reply.",
-      "suggested_action": "Reply with a short pricing note (quote form add-on: £100-150). Offer to show a live example from a similar carpentry business. Ask if Tuesday or Wednesday works for a 15-min call.",
-      "urgency": "high",
-      "lead_status_update": "interested"
+      "reasoning": "Acknowledged the pain unprompted, confirmed the workflow problem, asked for pricing — three clear buying signals.",
+      "suggested_action": "HANDS: pricing reply sent 2026-04-05 (£100-150 for quote form, suggest Tuesday/Wednesday call). If no reply from Tom by EOD 2026-04-08 (Tuesday), send brief nudge. Watch for call booking.",
+      "urgency": "medium",
+      "lead_status_update": "interested",
+      "status_actioned": true,
+      "awaiting_response_since": "2026-04-05"
     },
     {
       "reply_id": 10,
@@ -58,14 +70,16 @@
       "lead_id": 2,
       "business_name": "Nidderdale Pet Supplies",
       "town": "Pateley Bridge",
+      "received_at": "2026-04-04T11:47:00Z",
       "classification": "NOT_INTERESTED",
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Polite but clear rejection — 'happy with how things are', 'not looking to make any changes'. No future-date qualifier. Treat as closed.",
-      "suggested_action": "Stop all follow-ups. Mark lead as LOST. No suppression needed (they did not request removal, just declined) — can re-approach in 6 months if circumstances change.",
-      "urgency": "low",
-      "lead_status_update": "lost"
+      "reasoning": "Polite but clear rejection — 'happy with how things are', 'not looking to make any changes'. No future-date qualifier.",
+      "suggested_action": "All follow-ups stopped. Lead marked LOST. Can re-approach in 6 months if signal changes. No suppression needed — they declined but did not request removal.",
+      "urgency": "none",
+      "lead_status_update": "lost",
+      "status_actioned": true
     },
     {
       "reply_id": 11,
@@ -73,18 +87,23 @@
       "lead_id": 5,
       "business_name": "Harewood Accountants",
       "town": "Wetherby",
+      "received_at": "2026-04-04T08:22:00Z",
       "classification": "OUT_OF_OFFICE",
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Standard OOO auto-reply. Returns Monday 6 April. No explicit interest or rejection signal.",
-      "suggested_action": "Resume follow-up sequence from Tuesday 7 April. David will see the Day 7 email (about Google rankings) when he returns Monday — give him a day before following up.",
+      "reasoning": "Standard OOO auto-reply. Returns Monday 6 April.",
+      "suggested_action": "OOO EXPIRED TODAY (2026-04-06). David is back at his desk. Do NOT send anything today — give him a day to clear his inbox. Resume sequence from Tuesday 2026-04-07. Day 7 new-angle email (Google rankings) pre-written and queued — timing is ideal for a return from holiday.",
       "urgency": "low",
       "resume_after": "2026-04-07",
-      "lead_status_update": null
+      "lead_status_update": null,
+      "status_actioned": true,
+      "ooo_expired": true,
+      "resume_action": "Send Day 7 new-angle email on 2026-04-07"
     }
   ],
   "summary": {
+    "new_replies_today": 0,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
@@ -92,10 +111,11 @@
     "UNSUBSCRIBE": 0,
     "leads_to_suppress": [],
     "leads_needing_attention": [3, 22, 1],
-    "leads_to_re_enrich": [],
-    "leads_to_pause": [5],
+    "leads_to_pause": [],
+    "leads_to_resume_today": [5],
     "calls_scheduled": [3],
     "upsell_signals": [22],
-    "notes": "Strong day — 3 INTERESTED from 5 replies (60% positive rate). Lead 1 (Tom) newly interested after Day 7 follow-up validates the new-angle strategy. Lead 22 (Rob) showing upsell potential to full redesign."
+    "pending_buyer_responses": [22, 1],
+    "notes": "No new replies over the weekend — expected for B2B UK. Lead 5 OOO expires today — resume Tuesday. Priority: lead 3 call prep for tomorrow 14:00. Monitor leads 22 and 1 for responses to Saturday replies."
   }
 }

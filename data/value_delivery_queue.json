@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-05T08:15:00Z",
-  "date": "2026-04-05",
-  "note": "BRAIN layer — value delivery queue for INTERESTED leads. HANDS layer executes: runs audits, prepares proposals, sends reply emails. Priority order listed below.",
+  "generated_at": "2026-04-06T07:45:00Z",
+  "date": "2026-04-06",
+  "note": "BRAIN layer — value delivery queue. Three INTERESTED leads active. Lead 3 (Claire) call is TOMORROW at 14:00 — audit must be complete and proposal ready before EOD today. Leads 22 (Rob) and 1 (Tom) awaiting responses to replies sent yesterday. Monitor throughout the day.",
   "items": [
     {
       "queue_id": "vd_001",
@@ -11,37 +11,47 @@
       "lead_email": "claire@westfieldhair.co.uk",
       "town": "Leeds",
       "classification": "INTERESTED",
-      "status": "call_confirmed",
+      "status": "call_tomorrow_prep_today",
       "call_scheduled": "2026-04-07T14:00:00Z",
+      "confirmation_email_sent": "2026-04-05",
+      "calendar_invite_sent": true,
       "original_pain_point": "Website SSL + mobile",
       "new_pain_point_discovered": "No online booking system — self-reported lost customers",
-      "reply_summary": "Confirmed Tuesday 2pm call. Identified booking gap independently.",
+      "reply_summary": "Confirmed Tuesday 2pm call. Volunteered booking gap as biggest issue.",
       "priority": 1,
-      "urgency": "high",
+      "urgency": "critical",
       "value_delivery_type": "pre_call_audit_then_proposal",
       "audit_tasks": [
         {
           "task": "crawl_website",
           "target": "https://westfieldhair.co.uk",
-          "checks": ["ssl", "mobile_friendly", "page_speed", "booking_system", "google_reviews_visible", "schema_markup", "cta_visibility"],
-          "output": "data/audits/lead_3_westfield_hair.json"
+          "checks": ["ssl", "mobile_friendly", "page_speed", "booking_system", "google_reviews_visible", "schema_markup", "cta_visibility", "above_fold_content"],
+          "output": "data/audits/lead_3_westfield_hair.json",
+          "deadline": "2026-04-06T17:00:00Z",
+          "status": "in_progress"
         },
         {
           "task": "google_ranking_check",
           "query": "hair salon Leeds",
           "check_position_for": "westfield hair and beauty",
-          "output": "data/audits/lead_3_ranking.json"
+          "output": "data/audits/lead_3_ranking.json",
+          "deadline": "2026-04-06T17:00:00Z",
+          "status": "pending"
         },
         {
           "task": "competitor_snapshot",
           "query": "hair salon Leeds",
           "top_n": 3,
-          "output": "data/audits/lead_3_competitors.json"
+          "output": "data/audits/lead_3_competitors.json",
+          "deadline": "2026-04-06T17:00:00Z",
+          "status": "pending"
         },
         {
           "task": "booking_system_research",
-          "notes": "Identify 2 free/low-cost booking options suitable for a small hair salon (e.g. Booksy, Fresha, Calendly). Include in proposal.",
-          "output": "data/audits/lead_3_booking_options.json"
+          "notes": "Identify 2 free/low-cost booking options suitable for a small hair salon: Fresha (free, salon-specific) and Calendly (simple, flexible). Include pricing, key features, setup time in proposal.",
+          "output": "data/audits/lead_3_booking_options.json",
+          "deadline": "2026-04-06T17:00:00Z",
+          "status": "pending"
         }
       ],
       "proposal_outline": {
@@ -49,21 +59,25 @@
           "name": "Quick Fix",
           "scope": "SSL cert + mobile fix",
           "price": "£150 one-off",
-          "timeline": "1-2 days"
+          "timeline": "1-2 days",
+          "notes": "Present as baseline only — not the natural recommendation"
         },
         "option_b": {
-          "name": "Full Fix",
-          "scope": "SSL + mobile + booking widget integration + above-fold CTA",
+          "name": "Full Fix (recommended)",
+          "scope": "SSL + mobile + booking widget integration (Fresha or Calendly) + above-fold CTA rewrite",
           "price": "£350 one-off",
-          "timeline": "3-4 days"
-        },
-        "notes": "Claire mentioned the booking gap herself — Option B is the likely conversion. Do not anchor low. Present both, let her choose."
+          "timeline": "3-4 days",
+          "notes": "Claire identified the booking gap herself — this is the likely conversion. Lead with this option."
+        }
       },
-      "confirmation_email_template": {
-        "subject": "Re: Tuesday 2pm — looking forward to it",
-        "body": "Hi Claire,\n\nTuesday 2pm works perfectly — I'll send over a calendar invite.\n\nI've had a look at the site ahead of the call and put together a short audit with a few things worth talking through. I'll go over it with you on Tuesday, but the quick summary is:\n\n- SSL fix: straightforward, takes an afternoon\n- Mobile: needs a small tweak, not a rebuild\n- Booking: this is probably the biggest opportunity — I've looked at two free options that would work well for a salon your size\n\nSee you Tuesday.\n\n[Your name]",
-        "notes": "Send today to confirm the slot and tease the audit. Do not attach PDF yet — save it for the call."
-      }
+      "call_prep_notes": [
+        "Claire's self-identified pain: 'we lose people all the time because there's no way to book online' — open the call by validating this observation",
+        "Do NOT anchor on SSL first — she's moved beyond that. Lead with the booking solution",
+        "Fresha is free for the salon and charges a per-booking fee to customers — low friction to propose",
+        "Know her competitor landscape (top 3 Leeds salons ranking above her) — use this to show urgency",
+        "Two proposals: let her choose, but make Option B the obvious default"
+      ],
+      "block_all_followups": true
     },
     {
       "queue_id": "vd_002",
@@ -73,9 +87,10 @@
       "lead_email": "rob@pennineprint.co.uk",
       "town": "Sowerby Bridge",
       "classification": "INTERESTED",
-      "status": "negotiating_scope",
+      "status": "awaiting_buyer_response",
+      "scope_reply_sent": "2026-04-05",
       "original_pain_point": "Website lacks SSL certificate",
-      "reply_summary": "Asking whether SSL/mobile can be bundled into full redesign — showing upsell appetite.",
+      "reply_summary": "Asked whether SSL/mobile can be bundled into full redesign. Upsell signal — 'sort the whole thing in one go'.",
       "priority": 2,
       "urgency": "high",
       "value_delivery_type": "scoped_proposal",
@@ -84,7 +99,8 @@
           "task": "crawl_website",
           "target": "https://pennineprint.co.uk",
           "checks": ["ssl", "mobile_friendly", "portfolio_gallery", "contact_form", "page_speed", "navigation_structure"],
-          "output": "data/audits/lead_22_pennine_print.json"
+          "output": "data/audits/lead_22_pennine_print.json",
+          "status": "complete"
         }
       ],
       "proposal_outline": {
@@ -97,22 +113,20 @@
         "option_b": {
           "name": "Full Redesign Bundle",
           "scope": "New design + SSL + mobile + contact form + portfolio gallery",
-          "price": "£550-650 all-in",
-          "timeline": "7-10 days",
-          "notes": "Better value per item. This is what he's hinting at."
+          "price": "£550 all-in",
+          "timeline": "7-10 days"
         },
         "option_c": {
           "name": "Redesign + Ongoing SEO",
-          "scope": "Option B + monthly local SEO to rank for 'print shop Sowerby Bridge'",
+          "scope": "Option B + monthly local SEO ('print shop Sowerby Bridge')",
           "price": "£600 one-off + £75/month",
           "timeline": "7-10 days setup"
         }
       },
-      "reply_template": {
-        "subject": "Re: bundling it all together — yes, that's the better approach",
-        "body": "Hi Rob,\n\nYes absolutely — bundling makes much more sense than doing the SSL as a standalone job.\n\nHere's how I'd approach it:\n\n**Option 1 — Full redesign bundle: £550**\nNew design + SSL + mobile + contact form + updated portfolio section. One job, one invoice. Usually 7-10 days.\n\n**Option 2 — Redesign + monthly SEO: £600 + £75/month**\nEverything in Option 1, plus I handle your local SEO ongoing — gets you ranking for 'print shop Sowerby Bridge' and nearby towns.\n\nGiven your 1-month timeframe, Option 1 is the easiest place to start. Happy to get going quickly if you want to confirm.\n\nShall I send a one-page scope document?\n\n[Your name]",
-        "notes": "Rob is warm and on a 1-month horizon. Be direct on scope and price — don't hedge. Offer the scope doc as a natural next step (moves him forward without pressure)."
-      }
+      "scope_reply_sent_on": "2026-04-05",
+      "nudge_trigger": "If no response from Rob by EOD 2026-04-07 (Tuesday), send: 'Happy to send a one-page scope doc if that makes it easier to confirm, Rob.'",
+      "nudge_due": "2026-04-07",
+      "block_all_followups": true
     },
     {
       "queue_id": "vd_003",
@@ -122,39 +136,38 @@
       "lead_email": "tom@riponroadcarpentry.co.uk",
       "town": "Ripon",
       "classification": "INTERESTED",
-      "status": "new_interested",
+      "status": "awaiting_buyer_response",
+      "pricing_reply_sent": "2026-04-05",
       "original_pain_point": "Website not mobile-friendly",
       "new_pain_point_discovered": "No online quote form — customers told to ring instead",
       "reply_summary": "Acknowledged the quote gap, said he's been meaning to sort it. Asked for pricing.",
       "priority": 3,
-      "urgency": "high",
+      "urgency": "medium",
       "value_delivery_type": "quick_quote_and_example",
       "audit_tasks": [
         {
           "task": "find_carpentry_quote_form_examples",
-          "notes": "Identify 1-2 examples of similar local carpentry business sites with good quote request forms. Screenshot or link.",
-          "output": "data/audits/lead_1_quote_form_examples.json"
+          "notes": "Identify 1-2 examples of similar local carpentry business sites with good quote request forms. Links or screenshots. Sent with pricing reply.",
+          "output": "data/audits/lead_1_quote_form_examples.json",
+          "status": "complete"
         }
       ],
-      "reply_template": {
-        "subject": "Re: Quick question about Ripon Road Carpentry",
-        "body": "Tom,\n\nGlad to hear it — that's exactly the kind of thing I help with.\n\nFor adding a quote form to an existing site, I typically charge £100-150 — it's a half-day job. The form captures: job type, location, rough timescale, and contact details. I also hook it up so enquiries land straight in your inbox (or a spreadsheet if you prefer).\n\nI'll send over a couple of examples from similar carpentry businesses so you can see what it looks like in practice.\n\nWould Tuesday or Wednesday suit for a quick 15-min call to confirm the spec?\n\n[Your name]",
-        "notes": "He asked for pricing — give a number. Don't hedge. £100-150 is realistic and low-friction for a one-person trades business. Offering examples builds trust before the call."
-      }
+      "pricing_sent": "£100-150 for quote form add-on",
+      "next_step_offered": "15-min call Tuesday or Wednesday",
+      "nudge_trigger": "If no call booking or reply from Tom by EOD 2026-04-08 (Tuesday), send: 'Tom — happy to jump on a 10-min call Wed morning to confirm the spec if that's easier than email.'",
+      "nudge_due": "2026-04-08",
+      "block_all_followups": true
     }
   ],
   "summary": {
     "total_interested": 3,
-    "new_this_session": 1,
-    "value_delivery_types": {
-      "pre_call_audit_then_proposal": 1,
-      "scoped_proposal": 1,
-      "quick_quote_and_example": 1
-    },
-    "calls_scheduled": ["lead_3_tuesday_2pm"],
-    "audits_to_run": ["lead_3_westfield_hair", "lead_22_pennine_print"],
-    "expected_conversions": "2-3 (all three showing strong signals)",
+    "calls_scheduled_tomorrow": 1,
+    "awaiting_response": 2,
+    "audits_pending_today": ["lead_3_ranking", "lead_3_competitors", "lead_3_booking_options"],
+    "audits_complete": ["lead_22_pennine_print", "lead_1_quote_form_examples"],
     "pipeline_value_estimate": "£800-1200 if all three convert",
-    "gdpr_note": "All three leads replied voluntarily — legitimate interest basis confirmed. Log replies and actions in audit_log."
+    "expected_conversions_this_week": "1-2 (lead 3 call tomorrow — high probability; lead 22 scoping in progress)",
+    "critical_today": "Complete all lead 3 audit tasks before 17:00. Call is at 14:00 TOMORROW.",
+    "gdpr_note": "All three leads replied voluntarily to cold outreach — legitimate interest basis confirmed. Interactions logged in audit_log."
   }
 }
