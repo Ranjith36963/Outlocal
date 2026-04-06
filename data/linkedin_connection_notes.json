@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-05T09:00:00Z",
+  "generated_at": "2026-04-06T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-05",
-  "note": "No linkedin_profiles.json from previous runs — all notes are 'generic' type using local business context. Once HANDS executes the search plan and writes data/linkedin_profiles.json, re-run this agent to generate post_reference or headline notes for higher conversion. Character counts verified against 200-char LinkedIn free account limit.",
+  "run_date": "2026-04-06",
+  "note": "Three new notes added today (leads 42, 44, 46). Six notes carried forward from 2026-04-05 run (leads 4, 6, 8, 30, 31, 32) — unchanged as no linkedin_profiles.json received from HANDS. All notes remain 'generic' type until HANDS returns profile data. Once linkedin_profiles.json is available, re-run BRAIN to upgrade leads 4, 8, 42, 44 to post_reference or headline type (these are most likely to have LinkedIn presence).",
   "strategy": {
     "character_limit": 200,
     "tone": "slightly awkward genuine compliment — stands out from polished AI outreach",
@@ -18,6 +18,22 @@
   },
   "connection_notes": [
     {
+      "lead_id": 8,
+      "business_name": "Ilkley Ironmongery",
+      "owner_name": "Graham",
+      "town": "Ilkley",
+      "linkedin_url": "TBD — HANDS to populate from search plan",
+      "note_type": "generic",
+      "note": "Graham — Ilkley Ironmongery stood out when I was looking at independent hardware businesses in Wharfedale. Something about the site I thought was worth a mention. Connecting in case it's helpful.",
+      "char_count": 192,
+      "char_limit": 200,
+      "within_limit": true,
+      "priority": "critical",
+      "rationale": "First name known. 'Independent hardware businesses' is a genuine compliment category — independent shops are rare and owners are proud of that. 'Wharfedale' is specific and local. Day 9 — breakup email on Apr 11. This is the last alternative-channel window.",
+      "condition": "none — no activity condition required at Day 9",
+      "upgrade_note": "If Graham posts about the hardware trade, DIY, or local Ilkley content, reference that post instead"
+    },
+    {
       "lead_id": 4,
       "business_name": "Skipton Garden Design",
       "owner_name": "Rachel",
@@ -28,8 +44,58 @@
       "char_count": 182,
       "char_limit": 200,
       "within_limit": true,
-      "rationale": "First name known, local reference, vague 'spotted something' creates curiosity without pitching. 'Caught my attention' is mildly awkward — avoids AI polish.",
-      "upgrade_note": "Replace with post_reference if Rachel has posted about a garden project or spring gardening content recently"
+      "priority": "high",
+      "rationale": "First name known, local reference, vague 'spotted something' creates curiosity without pitching. 'Caught my attention' is mildly awkward — avoids AI polish. Day 8 — no activity condition.",
+      "condition": "none — no activity condition required at Day 8",
+      "upgrade_note": "Replace with post_reference if Rachel has posted about a garden project, spring planting, or landscape portfolio recently"
+    },
+    {
+      "lead_id": 42,
+      "business_name": "Blossom Beauty Studio",
+      "owner_name": "Sarah",
+      "town": "York",
+      "linkedin_url": "TBD — HANDS to populate from search plan",
+      "note_type": "generic",
+      "note": "Sarah — Blossom Beauty Studio caught my eye while I was looking at York beauty businesses. Noticed something about the site worth flagging. Connecting in case it's useful.",
+      "char_count": 171,
+      "char_limit": 200,
+      "within_limit": true,
+      "priority": "high",
+      "rationale": "First name known. 'Caught my eye' is natural and slightly awkward. Beauty sector in York — owner likely presents personally on LinkedIn with professional headshot. No pitch, just curiosity hook. 'Flagging' rather than 'mentioning' is a slightly more concrete word — implies a specific finding.",
+      "condition": "Day 3 — only send if profile shows activity within 60 days",
+      "upgrade_note": "If Sarah has posted about the beauty studio, treatments, or a York lifestyle angle, reference that post"
+    },
+    {
+      "lead_id": 44,
+      "business_name": "Meadowbrook Vets",
+      "owner_name": "Dr. James Rowe",
+      "town": "Skipton",
+      "linkedin_url": "TBD — HANDS to populate from search plan",
+      "note_type": "generic",
+      "note": "Dr Rowe — Meadowbrook Vets stood out while I was looking at independent vet practices in Skipton. Something about the online presence I thought worth mentioning. Connecting in case it's useful.",
+      "char_count": 193,
+      "char_limit": 200,
+      "within_limit": true,
+      "priority": "high",
+      "rationale": "Using 'Dr Rowe' not 'James' — professional context warrants a formal opener. 'Independent vet practices' is a genuine distinguishing category. Vague 'something about the online presence' — specific enough to create curiosity without revealing the pitch. No exclamations, no hollow flattery.",
+      "condition": "Day 3 — only send if profile shows activity within 60 days. If profile shows Dr Rowe posts about animal care or veterinary topics, upgrade note.",
+      "upgrade_note": "If James Rowe has posted about veterinary care, pet health, or practice news, reference that for far higher conversion than generic note"
+    },
+    {
+      "lead_id": 46,
+      "business_name": "Thornfield Electricals",
+      "owner_name": "Mike Thornfield",
+      "town": "Bradford",
+      "linkedin_url": "TBD — HANDS to populate from search plan",
+      "note_type": "generic",
+      "note": "Mike — Thornfield Electricals came up when I was looking at trades businesses in Bradford. Something about the website caught my attention. Connecting in case it's relevant.",
+      "char_count": 173,
+      "char_limit": 200,
+      "within_limit": true,
+      "priority": "medium",
+      "rationale": "First name known. 'Trades businesses in Bradford' is local and honest — not inflated. 'Came up' is conversational. Short and functional — trades people appreciate brevity. 'Relevant' rather than 'useful' is a slightly different word that avoids repetition across notes.",
+      "condition": "Day 3 — only send if profile shows activity within 60 days",
+      "upgrade_note": "If Mike posts about electrical work, certification, or Bradford business content, reference that instead"
     },
     {
       "lead_id": 6,
@@ -42,22 +108,9 @@
       "char_count": 171,
       "char_limit": 200,
       "within_limit": true,
+      "priority": "medium",
       "rationale": "No owner name — keep impersonal but specific to location and trade. 'Caught my eye' is more human than 'I noticed'. No pitch, just curiosity hook.",
-      "condition": "Only send if HANDS identifies a named individual — do not connect to a generic company LinkedIn page"
-    },
-    {
-      "lead_id": 8,
-      "business_name": "Ilkley Ironmongery",
-      "owner_name": "Graham",
-      "town": "Ilkley",
-      "linkedin_url": "TBD — HANDS to populate from search plan",
-      "note_type": "generic",
-      "note": "Graham — Ilkley Ironmongery stood out when I was looking at independent hardware businesses in Wharfedale. Something about the site I thought was worth a mention. Connecting in case it's helpful.",
-      "char_count": 192,
-      "char_limit": 200,
-      "within_limit": true,
-      "rationale": "First name known. 'Independent hardware businesses' is a genuine compliment category — independent shops are rare and owners tend to be proud of that. 'Wharfedale' is specific and local, not generic. Day 8 — last chance before email breakup on Apr 11, so this note should be warm but not desperate.",
-      "upgrade_note": "If Graham posts about the hardware trade, DIY, or local Ilkley content, reference that instead"
+      "condition": "Only send if HANDS identifies a named individual — do not connect to a generic company LinkedIn page. Day 8 — if no named individual found today, skip and rely on Day 14 breakup email (2026-04-19)."
     },
     {
       "lead_id": 30,
@@ -70,22 +123,9 @@
       "char_count": 174,
       "char_limit": 200,
       "within_limit": true,
-      "rationale": "First name known. 'Calderdale' is more specific than 'Halifax' alone — shows local awareness. 'Came up' is natural. Day 3 lead — keep note especially light. HANDS: only connect if Steve's profile shows activity in last 30 days.",
-      "condition": "Day 3 caution — only send if profile is demonstrably active (recent post or engagement)"
-    },
-    {
-      "lead_id": 31,
-      "business_name": "Pontefract Pharmacy",
-      "owner_name": null,
-      "town": "Pontefract",
-      "linkedin_url": "TBD — HANDS to populate from search plan",
-      "note_type": "generic",
-      "note": "Found Pontefract Pharmacy while looking at independent local pharmacies in West Yorkshire. Noticed something about the website that seemed worth flagging. Connecting in case it's useful.",
-      "char_count": 184,
-      "char_limit": 200,
-      "within_limit": true,
-      "rationale": "'Independent local pharmacies' is a genuine framing — pharmacist-owners identify with that label. No owner name so no first-name opener. Day 3 low-priority lead.",
-      "condition": "Low priority — only send if HANDS finds a named pharmacist-owner with clear recent LinkedIn activity. Skip if only a company page is found."
+      "priority": "medium",
+      "rationale": "First name known. 'Calderdale' is more specific than 'Halifax' alone — shows local awareness. 'Came up' is natural. Day 4 — active-profile condition relaxed to 60 days (was 30 at Day 3).",
+      "condition": "Day 4 — only send if profile shows activity within 60 days"
     },
     {
       "lead_id": 32,
@@ -98,27 +138,45 @@
       "char_count": 189,
       "char_limit": 200,
       "within_limit": true,
-      "rationale": "First name known. 'Flooring and home businesses' broadens the context naturally. 'Spotted something' is the curiosity hook without a pitch. Day 3 — same active-profile condition as Steve.",
-      "condition": "Day 3 caution — only send if Ann's profile shows recent activity"
+      "priority": "medium",
+      "rationale": "First name known. 'Flooring and home businesses' broadens the context naturally. 'Spotted something' is the curiosity hook without a pitch. Day 4 — active-profile condition relaxed to 60 days.",
+      "condition": "Day 4 — only send if profile shows activity within 60 days"
+    },
+    {
+      "lead_id": 31,
+      "business_name": "Pontefract Pharmacy",
+      "owner_name": null,
+      "town": "Pontefract",
+      "linkedin_url": "TBD — HANDS to populate from search plan",
+      "note_type": "generic",
+      "note": "Found Pontefract Pharmacy while looking at independent local pharmacies in West Yorkshire. Noticed something about the website that seemed worth flagging. Connecting in case it's useful.",
+      "char_count": 184,
+      "char_limit": 200,
+      "within_limit": true,
+      "priority": "low",
+      "rationale": "'Independent local pharmacies' is a genuine framing — pharmacist-owners identify with that label. No owner name so no first-name opener. Day 4 low-priority lead.",
+      "condition": "Low priority — only send if HANDS finds a named pharmacist-owner with LinkedIn activity within 60 days. Skip if only a company page or inactive profile found. Day 7 Google Profile Gap email (2026-04-09) is the stronger play."
     }
   ],
   "summary": {
-    "total_notes": 6,
+    "total_notes": 9,
+    "new_today": 3,
+    "carried_forward": 6,
     "by_type": {
       "post_reference": 0,
       "headline": 0,
       "interest": 0,
-      "generic": 6
+      "generic": 9
     },
     "all_within_char_limit": true,
     "ready_to_send": 0,
-    "pending_profile_lookup": 6,
+    "pending_profile_lookup": 9,
     "conditions_applied": {
-      "active_profile_required": [30, 31, 32],
-      "named_individual_required": [6, 31],
-      "no_conditions": [4, 8]
+      "no_conditions": [4, 8],
+      "active_profile_60_days": [30, 31, 32, 42, 44, 46],
+      "named_individual_required": [6, 31]
     },
-    "upgrade_candidates_on_next_run": [4, 8],
-    "notes": "All notes are generic pending profile data. Run HANDS search plan first, write linkedin_profiles.json, then re-run BRAIN to upgrade notes to post_reference or headline type. Leads 4 and 8 (day 7+) are highest priority — no activity condition needed, just profile confirmation."
+    "upgrade_candidates_on_next_run": [4, 8, 42, 44],
+    "notes": "All notes are generic pending profile data from HANDS. Priority upgrade candidates: lead 44 (Dr. James Rowe — vet professionals tend to be active on LinkedIn, post_reference likely possible), lead 42 (Sarah — beauty business owners often post about their work), leads 4 and 8 (Day 8-9, highest urgency). Run HANDS search plan first, write data/linkedin_profiles.json, then re-run BRAIN to upgrade notes."
   }
 }
