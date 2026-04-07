@@ -1,10 +1,18 @@
 {
-  "classified_at": "2026-04-06T07:35:00Z",
-  "date": "2026-04-06",
-  "note": "BRAIN layer — Day 9 classification run. No new raw replies received over the weekend (2026-04-05 to 2026-04-06 is Sunday/Monday B2B silence). Carries forward the five classifications from 2026-04-05. Key update: lead 5 (David Harewood) OOO expired today — resume follow-up from Tuesday 2026-04-07. HANDS layer: check IMAP this morning for any replies that arrived Monday morning before this run.",
+  "classified_at": "2026-04-07T07:30:00Z",
+  "date": "2026-04-07",
+  "note": "BRAIN layer — Day 10 classification run. No new raw replies received overnight (Monday evening UK B2B typically quiet). Five classifications carried forward from 2026-04-05/06 run. Key update today: lead 5 (David Harewood) OOO fully expired, Day-7 email sending TODAY. Lead 3 (Claire) call is TODAY at 14:00. HANDS layer: check IMAP first thing — any replies from Rob (22) or Tom (1) since Saturday will appear here. Classify immediately and update this file before actioning any follow-ups.",
   "new_replies_this_run": 0,
-  "carried_forward_from": "2026-04-05",
+  "imap_check_required": true,
+  "imap_check_note": "HANDS: check IMAP for replies from leads 1 (tom@riponroadcarpentry.co.uk), 22 (rob@pennineprint.co.uk), and any cold leads. Monday-Tuesday morning is peak B2B reply window. If new replies found, classify below and update totals.",
+  "carried_forward_from": "2026-04-06",
   "total_replies_to_date": 11,
+  "pipeline_update": {
+    "claire_lead_3": "CALL TODAY 14:00 — do not send any emails, all outreach paused",
+    "rob_lead_22": "Awaiting response to bundle pricing (sent 2026-04-05). Nudge trigger: EOD today if no response.",
+    "tom_lead_1": "Awaiting call booking (pricing sent 2026-04-05). Nudge trigger: EOD tomorrow (2026-04-08) if no reply.",
+    "david_lead_5": "OOO expired. Day-7 Google visibility email sending TODAY per fu_016."
+  },
   "classifications": [
     {
       "reply_id": 7,
@@ -18,13 +26,14 @@
       "should_suppress": false,
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal. 'We lose people all the time' = felt pain acknowledged unprompted.",
-      "suggested_action": "HANDS: confirmation email sent 2026-04-05. Audit running (westfieldhair.co.uk). Call is TOMORROW (2026-04-07) at 14:00. Ensure audit and two-option proposal are ready before the call. Do NOT send further follow-ups.",
-      "urgency": "high",
+      "suggested_action": "CALL TODAY 14:00. Audit complete. Lead with booking gap, not SSL. Two proposals ready: Option A £150 (SSL+mobile), Option B £350 (full fix + booking). Present B as recommendation. Send proposal PDF same day if no on-call decision.",
+      "urgency": "critical",
       "call_scheduled": "2026-04-07T14:00:00Z",
-      "call_prep_status": "audit_in_progress",
+      "call_prep_status": "audit_complete",
       "new_pain_point_discovered": "No online booking system — self-reported lost customers",
       "lead_status_update": "interested",
-      "status_actioned": true
+      "status_actioned": true,
+      "block_all_followups": true
     },
     {
       "reply_id": 8,
@@ -38,13 +47,15 @@
       "should_suppress": false,
       "confidence": "high",
       "reasoning": "Asking whether fixes can be bundled into a redesign — a buyer's question. 'Sort the whole thing in one go' signals budget appetite for a larger project.",
-      "suggested_action": "HANDS: scope reply sent 2026-04-05 (£550 or £600+SEO bundle). Awaiting Rob's confirmation. If no reply from Rob by EOD 2026-04-07, send a one-line nudge: 'Happy to send a one-page scope doc if that helps, Rob.'",
-      "urgency": "medium",
+      "suggested_action": "HANDS: scope reply sent 2026-04-05. If no response from Rob by EOD TODAY (2026-04-07), send nudge: 'Happy to send a one-page scope doc if that makes it easier to confirm, Rob.' Do NOT discount. Monitor morning IMAP for his reply.",
+      "urgency": "high",
       "upsell_signal": true,
       "upsell_note": "May convert at full redesign (~£600) rather than SSL fix only (£150). Do not anchor low.",
       "lead_status_update": "interested",
       "status_actioned": true,
-      "awaiting_response_since": "2026-04-05"
+      "awaiting_response_since": "2026-04-05",
+      "nudge_due": "2026-04-07T17:00:00Z",
+      "block_all_followups": true
     },
     {
       "reply_id": 9,
@@ -58,11 +69,13 @@
       "should_suppress": false,
       "confidence": "high",
       "reasoning": "Acknowledged the pain unprompted, confirmed the workflow problem, asked for pricing — three clear buying signals.",
-      "suggested_action": "HANDS: pricing reply sent 2026-04-05 (£100-150 for quote form, suggest Tuesday/Wednesday call). If no reply from Tom by EOD 2026-04-08 (Tuesday), send brief nudge. Watch for call booking.",
+      "suggested_action": "HANDS: pricing reply sent 2026-04-05 (£100-150 for quote form, suggested Tuesday/Wednesday call). Check IMAP — has Tom replied to book a call? If yes, confirm Thursday or Friday call immediately (not Tuesday — Claire's call day). If no reply by EOD tomorrow (2026-04-08), send nudge: 'Tom — happy to jump on a 10-min call Wed morning to confirm the spec if that's easier than email.'",
       "urgency": "medium",
       "lead_status_update": "interested",
       "status_actioned": true,
-      "awaiting_response_since": "2026-04-05"
+      "awaiting_response_since": "2026-04-05",
+      "nudge_due": "2026-04-08T17:00:00Z",
+      "block_all_followups": true
     },
     {
       "reply_id": 10,
@@ -76,7 +89,7 @@
       "should_suppress": false,
       "confidence": "high",
       "reasoning": "Polite but clear rejection — 'happy with how things are', 'not looking to make any changes'. No future-date qualifier.",
-      "suggested_action": "All follow-ups stopped. Lead marked LOST. Can re-approach in 6 months if signal changes. No suppression needed — they declined but did not request removal.",
+      "suggested_action": "All follow-ups stopped. Lead marked LOST. Can re-approach in 6 months if signal changes (e.g. new SSL failure, new website). No suppression needed.",
       "urgency": "none",
       "lead_status_update": "lost",
       "status_actioned": true
@@ -92,30 +105,32 @@
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Standard OOO auto-reply. Returns Monday 6 April.",
-      "suggested_action": "OOO EXPIRED TODAY (2026-04-06). David is back at his desk. Do NOT send anything today — give him a day to clear his inbox. Resume sequence from Tuesday 2026-04-07. Day 7 new-angle email (Google rankings) pre-written and queued — timing is ideal for a return from holiday.",
+      "reasoning": "Standard OOO auto-reply. Returned Monday 6 April.",
+      "suggested_action": "OOO EXPIRED. Day-7 new-angle email (Google local visibility) SENDING TODAY — fu_016. David had one day to clear his inbox yesterday. Good timing: Day-7 post-OOO is psychologically fresh, not chasing.",
       "urgency": "low",
       "resume_after": "2026-04-07",
-      "lead_status_update": null,
-      "status_actioned": true,
       "ooo_expired": true,
-      "resume_action": "Send Day 7 new-angle email on 2026-04-07"
+      "resume_action": "Day 7 new-angle email sending today per fu_016",
+      "lead_status_update": null,
+      "status_actioned": true
     }
   ],
   "summary": {
     "new_replies_today": 0,
+    "imap_check_pending": true,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
     "WRONG_PERSON": 0,
     "UNSUBSCRIBE": 0,
+    "total_to_date": 11,
     "leads_to_suppress": [],
     "leads_needing_attention": [3, 22, 1],
     "leads_to_pause": [],
-    "leads_to_resume_today": [5],
-    "calls_scheduled": [3],
-    "upsell_signals": [22],
+    "calls_today": [3],
+    "nudges_due_today": [22],
+    "nudges_due_tomorrow": [1],
     "pending_buyer_responses": [22, 1],
-    "notes": "No new replies over the weekend — expected for B2B UK. Lead 5 OOO expires today — resume Tuesday. Priority: lead 3 call prep for tomorrow 14:00. Monitor leads 22 and 1 for responses to Saturday replies."
+    "notes": "CRITICAL: Claire call 14:00 today. Rob nudge due EOD today if no reply. Tom nudge due EOD tomorrow. David Harewood Day-7 email sending today. HANDS: check IMAP for any overnight/morning replies before starting sends."
   }
 }

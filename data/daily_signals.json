@@ -1,16 +1,19 @@
 {
-  "generated_at": "2026-04-06T07:30:00Z",
-  "date": "2026-04-06",
-  "note": "BRAIN layer — signal assignments for enrichment waterfall. Day 9 of campaign. Expanding to Scarborough (new territory) per Week 2 plan. East Yorkshire leads 49-56 carried to HANDS yesterday — status notes included below. New batch: leads 57-61, Scarborough + East Riding extension.",
-  "carried_forward_status": {
-    "lead_49": "blocked_no_email — Companies House lookup pending",
-    "lead_50": "email_found — pete@theharbourfish.co.uk — READY TO SEND",
-    "lead_51": "blocked_no_email — crawl found only contact form, no direct email",
-    "lead_52": "email_found — linda@holdernessHomecare.co.uk — READY TO SEND",
-    "lead_53": "blocked_no_email — Rightmove/Zoopla agent page shows only office phone",
-    "lead_54": "blocked_no_email — Facebook page bio empty, no email listed",
-    "lead_55": "email_found — craig@beverleysportsleisure.co.uk — READY TO SEND",
-    "lead_56": "email_found — neil@eastridingelectrical.co.uk — READY TO SEND"
+  "generated_at": "2026-04-07T07:30:00Z",
+  "date": "2026-04-07",
+  "note": "BRAIN layer — Day 10 signal assignments. Scarborough batch (57-60) still pending enrichment — HANDS priority is finding direct emails today. Leads 50, 52, 55, 56 assumed sent yesterday per plan. No new scrape batch today — focus is enrichment + conversion (Claire call 14:00). Lead 5 (David Harewood) Day-7 email DUE TODAY.",
+  "assumed_sent_yesterday": {
+    "lead_50": "The Harbour Fish Bar — pete@theharbourfish.co.uk",
+    "lead_52": "Holderness Homecare — linda@holdernessHomecare.co.uk",
+    "lead_55": "Beverley Sports & Leisure — craig@beverleysportsleisure.co.uk",
+    "lead_56": "East Riding Electrical — neil@eastridingelectrical.co.uk"
+  },
+  "carried_forward_blocked": {
+    "lead_49": "East Riding Builders Ltd — no email. Companies House lookup still pending.",
+    "lead_51": "Driffield Garden Centre — no email. Only contact form found. Try phone.",
+    "lead_53": "Bridlington Bay Lettings — no email. Rightmove/Zoopla agent page shows office phone only.",
+    "lead_54": "The Wolds Inn — no email. Facebook About section empty. Try Google Maps phone callback.",
+    "lead_61": "Filey Fisheries — HOLD. Score 48 — below threshold. Deprioritise."
   },
   "leads": [
     {
@@ -18,7 +21,7 @@
       "business_name": "Scarborough Bay Plumbing & Heating",
       "town": "Scarborough",
       "source": "google_maps",
-      "status": "new",
+      "status": "pending_enrichment",
       "enrichment_priority": "high",
       "signals": {
         "has_website": true,
@@ -36,15 +39,16 @@
       "signal_text": "scarboroughbayplumbing.co.uk loads over HTTP — Chrome shows 'Not Secure' warning to every visitor, including homeowners searching for an emergency plumber",
       "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
       "estimated_score": 70,
-      "waterfall_action": "crawl_then_email_find",
-      "notes": "Owner name known (Mike Rawlings). Strong profile — 4.6★, 54 reviews. Try mike@scarboroughbayplumbing.co.uk. SSL angle identical to Thornfield Electricals which performed well."
+      "waterfall_action": "email_find_direct",
+      "email_candidates": ["mike@scarboroughbayplumbing.co.uk"],
+      "notes": "Owner name known. Strong profile — 4.6★, 54 reviews. Email copy already written. HANDS: try mike@scarboroughbayplumbing.co.uk first. If bounced, crawl About/Contact page for alternative. Send today if confirmed."
     },
     {
       "lead_id": 58,
       "business_name": "The Old Court Solicitors",
       "town": "Scarborough",
       "source": "google_maps",
-      "status": "new",
+      "status": "pending_enrichment",
       "enrichment_priority": "high",
       "signals": {
         "has_website": true,
@@ -62,14 +66,15 @@
       "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning on a site collecting client enquiries",
       "estimated_score": 68,
       "waterfall_action": "crawl_then_email_find",
-      "notes": "No owner name — try contact page for solicitor name. GDPR compliance angle is particularly potent for legal firms — they know the risk. Do NOT use first name in subject (none known). PAS framework."
+      "email_candidates": ["info@oldcourtsolicitors.co.uk"],
+      "notes": "No owner name — crawl About/Team page for solicitor name and direct email. SRA register lookup may list contact. info@ fallback acceptable for professional services if no direct email found. GDPR angle is potent for legal firms. Email copy already written."
     },
     {
       "lead_id": 59,
       "business_name": "Scarborough Roofing Specialists",
       "town": "Scarborough",
       "source": "google_maps",
-      "status": "new",
+      "status": "pending_enrichment",
       "enrichment_priority": "high",
       "signals": {
         "has_website": true,
@@ -87,15 +92,16 @@
       "signal_text": "scarboroughroofing.co.uk serves over HTTP — domestic customers researching a roofer see a 'Not Secure' warning before reading a single review or testimonial",
       "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
       "estimated_score": 67,
-      "waterfall_action": "crawl_then_email_find",
-      "notes": "Owner name Tony Shields — try tony@scarboroughroofing.co.uk. Domestic trades where homeowners do background checks — same trust angle as East Riding Electrical."
+      "waterfall_action": "email_find_direct",
+      "email_candidates": ["tony@scarboroughroofing.co.uk"],
+      "notes": "Owner name Tony Shields known. Try tony@scarboroughroofing.co.uk directly. Same pattern as East Riding Electrical which worked. Email copy already written. Send today if confirmed."
     },
     {
       "lead_id": 60,
       "business_name": "Pocklington Fine Furniture",
       "town": "Pocklington",
       "source": "google_maps",
-      "status": "new",
+      "status": "pending_enrichment",
       "enrichment_priority": "medium",
       "signals": {
         "has_website": true,
@@ -110,48 +116,21 @@
         "has_social_media": false
       },
       "signal_type": "mobile",
-      "signal_text": "Website fails mobile test — furniture buyers increasingly browse on mobile, especially when starting a room redesign on the sofa",
+      "signal_text": "Website fails mobile test — furniture buyers increasingly browse on mobile before visiting a showroom",
       "pain_point": "Website not mobile-friendly — losing mobile visitors during browsing phase",
       "estimated_score": 62,
-      "waterfall_action": "crawl_then_email_find",
-      "notes": "Owner name (James Hewitt) known. Mobile failure for a visual showroom business — shoppers browse furniture on mobile before visiting. BAB framework: before = bad mobile experience loses you, after = clean mobile site keeps them to booking a visit."
-    },
-    {
-      "lead_id": 61,
-      "business_name": "Filey Fisheries",
-      "town": "Filey",
-      "source": "google_maps",
-      "status": "new",
-      "enrichment_priority": "low",
-      "signals": {
-        "has_website": false,
-        "rating": 4.1,
-        "review_count": 19,
-        "has_phone": true,
-        "has_owner_name": false,
-        "has_social_media": true
-      },
-      "signal_type": "no_website",
-      "signal_text": "Facebook page active but no website — tourist visitors searching online for fish and chips in Filey get no results from this business",
-      "pain_point": "No website found — social media presence not converting tourist traffic",
-      "estimated_score": 48,
-      "waterfall_action": "enrich_contact_only",
-      "notes": "BELOW 50 THRESHOLD — deprioritise. Only enrich if owner name and email trivially findable from Facebook. Tourist seasonal business — angle is summer visitors converting. Hold until higher-priority leads in batch are enriched."
+      "waterfall_action": "email_find_direct",
+      "email_candidates": ["james@pocklingtonfurniture.co.uk"],
+      "notes": "Owner name James Hewitt known. Try james@pocklingtonfurniture.co.uk. Medium priority — SSL leads (57, 58, 59) go first. Send Wednesday if enriched today."
     }
   ],
   "enrichment_summary": {
-    "total_new_leads": 5,
+    "total_pending": 4,
     "high_priority": 3,
     "medium_priority": 1,
-    "low_priority": 1,
-    "action_breakdown": {
-      "crawl_then_email_find": 3,
-      "enrich_contact_only": 1,
-      "email_find_direct": 0,
-      "deep_crawl_required": 0
-    },
-    "top_signal_types": ["ssl", "ssl_mobile", "mobile"],
-    "send_order_recommendation": "57 → 58 → 59 → 60 → 61 (deprioritise)",
-    "notes": "Scarborough is fresh territory — no existing touchpoints. SSL signal leads again. Lead 61 (Filey Fisheries) below score threshold — hold until batch 57-60 enriched. Priority today: enrich 57 and 58 (both have crawlable contact pages likely)."
+    "blocked_carry_forward": 5,
+    "send_order_if_enriched": "57 → 58 → 59 → 60",
+    "today_enrichment_goal": "Confirm emails for 57 and 59 (direct first-name pattern likely to work). 58 needs crawl. 60 lower priority — defer to Wed if 57-59 consume enrichment time.",
+    "notes": "All four email copies already written in daily_email_plan.json. HANDS only needs to confirm email addresses to activate sends. Stagger by 20-30 minutes as always."
   }
 }

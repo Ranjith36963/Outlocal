@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-06T07:45:00Z",
-  "date": "2026-04-06",
-  "note": "BRAIN layer — value delivery queue. Three INTERESTED leads active. Lead 3 (Claire) call is TOMORROW at 14:00 — audit must be complete and proposal ready before EOD today. Leads 22 (Rob) and 1 (Tom) awaiting responses to replies sent yesterday. Monitor throughout the day.",
+  "generated_at": "2026-04-07T07:30:00Z",
+  "date": "2026-04-07",
+  "note": "BRAIN layer — Day 10 value delivery queue. CRITICAL: Claire call is TODAY at 14:00. All audit tasks should be complete before 13:30 at the latest. Rob (lead 22) nudge due EOD if no response. Tom (lead 1) nudge due tomorrow EOD.",
   "items": [
     {
       "queue_id": "vd_001",
@@ -11,7 +11,7 @@
       "lead_email": "claire@westfieldhair.co.uk",
       "town": "Leeds",
       "classification": "INTERESTED",
-      "status": "call_tomorrow_prep_today",
+      "status": "call_today",
       "call_scheduled": "2026-04-07T14:00:00Z",
       "confirmation_email_sent": "2026-04-05",
       "calendar_invite_sent": true,
@@ -27,31 +27,31 @@
           "target": "https://westfieldhair.co.uk",
           "checks": ["ssl", "mobile_friendly", "page_speed", "booking_system", "google_reviews_visible", "schema_markup", "cta_visibility", "above_fold_content"],
           "output": "data/audits/lead_3_westfield_hair.json",
-          "deadline": "2026-04-06T17:00:00Z",
-          "status": "in_progress"
+          "deadline": "2026-04-07T13:30:00Z",
+          "status": "complete"
         },
         {
           "task": "google_ranking_check",
           "query": "hair salon Leeds",
           "check_position_for": "westfield hair and beauty",
           "output": "data/audits/lead_3_ranking.json",
-          "deadline": "2026-04-06T17:00:00Z",
-          "status": "pending"
+          "deadline": "2026-04-07T13:30:00Z",
+          "status": "complete"
         },
         {
           "task": "competitor_snapshot",
           "query": "hair salon Leeds",
           "top_n": 3,
           "output": "data/audits/lead_3_competitors.json",
-          "deadline": "2026-04-06T17:00:00Z",
-          "status": "pending"
+          "deadline": "2026-04-07T13:30:00Z",
+          "status": "complete"
         },
         {
           "task": "booking_system_research",
-          "notes": "Identify 2 free/low-cost booking options suitable for a small hair salon: Fresha (free, salon-specific) and Calendly (simple, flexible). Include pricing, key features, setup time in proposal.",
+          "notes": "Fresha (free for salon, per-booking fee to customers) vs Calendly (simple embed). Key sell: Fresha is sector-specific, handles deposits, reminders, repeat bookings. Calendly simpler but less powerful. Recommend Fresha.",
           "output": "data/audits/lead_3_booking_options.json",
-          "deadline": "2026-04-06T17:00:00Z",
-          "status": "pending"
+          "deadline": "2026-04-07T13:30:00Z",
+          "status": "complete"
         }
       ],
       "proposal_outline": {
@@ -60,22 +60,29 @@
           "scope": "SSL cert + mobile fix",
           "price": "£150 one-off",
           "timeline": "1-2 days",
-          "notes": "Present as baseline only — not the natural recommendation"
+          "notes": "Present as baseline — position as 'what you'd need as a minimum'. Not the natural recommendation."
         },
         "option_b": {
-          "name": "Full Fix (recommended)",
-          "scope": "SSL + mobile + booking widget integration (Fresha or Calendly) + above-fold CTA rewrite",
+          "name": "Full Fix — Recommended",
+          "scope": "SSL + mobile + Fresha booking widget integration + above-fold CTA rewrite",
           "price": "£350 one-off",
           "timeline": "3-4 days",
-          "notes": "Claire identified the booking gap herself — this is the likely conversion. Lead with this option."
+          "notes": "Lead with this. Claire self-identified the booking gap — validate her instinct, then solve it. Fresha is free for the salon. Zero monthly fee for her — only customers pay a small booking fee. Present as obvious choice."
         }
       },
-      "call_prep_notes": [
-        "Claire's self-identified pain: 'we lose people all the time because there's no way to book online' — open the call by validating this observation",
-        "Do NOT anchor on SSL first — she's moved beyond that. Lead with the booking solution",
-        "Fresha is free for the salon and charges a per-booking fee to customers — low friction to propose",
-        "Know her competitor landscape (top 3 Leeds salons ranking above her) — use this to show urgency",
-        "Two proposals: let her choose, but make Option B the obvious default"
+      "call_script_notes": [
+        "OPEN: 'Claire — you mentioned in your email that you lose customers because there's no way to book online. Tell me a bit more about how that plays out in a typical week.' Let her describe the pain in her own words.",
+        "VALIDATE: 'That's exactly what I see on the site — visitors can't book, so they either call or give up. The ones who give up often end up booking a competitor.'",
+        "COMPETITOR INSERT: Use lead_3_competitors.json — name one or two Leeds salons ranking above her that DO have online booking. Make it tangible.",
+        "SOLUTION: 'There are two ways to approach this...' — present Option A and Option B clearly. Pause after each. Do not rush.",
+        "CLOSE: 'Which of those feels like the better fit for you?' — let her answer. Do not talk over the silence.",
+        "IF SHE HESITATES: 'I can send a one-page summary so you can look it over — I'll have it with you within the hour.'",
+        "DO NOT: Mention AI, automation, or your tools. Keep framing around her business outcomes only."
+      ],
+      "post_call_actions": [
+        "If she commits on the call: send a brief written confirmation of scope and price within 2 hours. Request 50% upfront payment via bank transfer.",
+        "If she wants to think it over: send proposal PDF (Option A and B clearly laid out) within 30 minutes of call ending. Follow up Thursday if no response.",
+        "If she declines: thank her, leave door open, mark lead 3 as LOST."
       ],
       "block_all_followups": true
     },
@@ -90,7 +97,7 @@
       "status": "awaiting_buyer_response",
       "scope_reply_sent": "2026-04-05",
       "original_pain_point": "Website lacks SSL certificate",
-      "reply_summary": "Asked whether SSL/mobile can be bundled into full redesign. Upsell signal — 'sort the whole thing in one go'.",
+      "reply_summary": "Asked whether SSL/mobile can be bundled into full redesign. 'Sort the whole thing in one go' — upsell signal.",
       "priority": 2,
       "urgency": "high",
       "value_delivery_type": "scoped_proposal",
@@ -124,8 +131,10 @@
         }
       },
       "scope_reply_sent_on": "2026-04-05",
-      "nudge_trigger": "If no response from Rob by EOD 2026-04-07 (Tuesday), send: 'Happy to send a one-page scope doc if that makes it easier to confirm, Rob.'",
-      "nudge_due": "2026-04-07",
+      "nudge_trigger": "No response from Rob by 17:00 TODAY (2026-04-07) → send fu_022_ROB_NUDGE: 'Happy to send a one-page scope doc if that makes it easier to confirm, Rob.'",
+      "nudge_due": "2026-04-07T17:00:00Z",
+      "do_not_discount": true,
+      "notes": "Rob signalled bundle intent — do NOT anchor down to Option A. His question was commercial ('sort the whole thing'), not cost-driven. The scope doc offer removes decision friction without reducing price.",
       "block_all_followups": true
     },
     {
@@ -147,27 +156,43 @@
       "audit_tasks": [
         {
           "task": "find_carpentry_quote_form_examples",
-          "notes": "Identify 1-2 examples of similar local carpentry business sites with good quote request forms. Links or screenshots. Sent with pricing reply.",
+          "notes": "1-2 examples of local trades businesses with good quote request forms — sent with pricing reply.",
           "output": "data/audits/lead_1_quote_form_examples.json",
           "status": "complete"
         }
       ],
       "pricing_sent": "£100-150 for quote form add-on",
       "next_step_offered": "15-min call Tuesday or Wednesday",
-      "nudge_trigger": "If no call booking or reply from Tom by EOD 2026-04-08 (Tuesday), send: 'Tom — happy to jump on a 10-min call Wed morning to confirm the spec if that's easier than email.'",
-      "nudge_due": "2026-04-08",
+      "nudge_trigger": "No call booking or reply from Tom by 17:00 TOMORROW (2026-04-08) → send fu_026_TOM_NUDGE: 'Tom — happy to jump on a 10-min call Wednesday morning to confirm the spec.'",
+      "nudge_due": "2026-04-08T17:00:00Z",
+      "call_booking_note": "If Tom responds today and wants to book: offer Thursday or Friday slot — NOT Tuesday (Claire's call day) and not Wednesday morning if that's reserved. Confirm immediately.",
       "block_all_followups": true
     }
   ],
+  "post_call_contingency": {
+    "if_claire_converts": {
+      "action": "Update lead 3 status → converted. Log revenue in analytics. Create delivery task. Send invoice/bank transfer request same day.",
+      "revenue": "£350 (Option B most likely)",
+      "note": "Write a brief note in CHANGELOG.md for the first conversion — it's a milestone."
+    },
+    "if_claire_defers": {
+      "action": "Send proposal PDF within 30 mins of call ending. Follow up Thursday 2026-04-10 if no response.",
+      "note": "Do not chase before Thursday. One clear follow-up only."
+    },
+    "if_claire_declines": {
+      "action": "Mark lead 3 LOST. Log in CRM. No further contact unless she re-initiates.",
+      "note": "Rare outcome given the call booking — but plan for it."
+    }
+  },
   "summary": {
     "total_interested": 3,
-    "calls_scheduled_tomorrow": 1,
+    "calls_today": 1,
     "awaiting_response": 2,
-    "audits_pending_today": ["lead_3_ranking", "lead_3_competitors", "lead_3_booking_options"],
-    "audits_complete": ["lead_22_pennine_print", "lead_1_quote_form_examples"],
-    "pipeline_value_estimate": "£800-1200 if all three convert",
-    "expected_conversions_this_week": "1-2 (lead 3 call tomorrow — high probability; lead 22 scoping in progress)",
-    "critical_today": "Complete all lead 3 audit tasks before 17:00. Call is at 14:00 TOMORROW.",
+    "nudges_due_today": 1,
+    "nudges_due_tomorrow": 1,
+    "audits_complete": ["lead_3_westfield_hair", "lead_3_ranking", "lead_3_competitors", "lead_3_booking_options", "lead_22_pennine_print", "lead_1_quote_form_examples"],
+    "pipeline_value_estimate": "£800-1,200 if all three convert (lead 3: £350, lead 22: £550-675, lead 1: £100-150)",
+    "expected_this_week": "Lead 3 likely to convert today or Thursday. Lead 22 scoping in progress — nudge today if silent.",
     "gdpr_note": "All three leads replied voluntarily to cold outreach — legitimate interest basis confirmed. Interactions logged in audit_log."
   }
 }
