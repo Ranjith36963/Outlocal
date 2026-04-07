@@ -1,161 +1,162 @@
 {
-  "generated_at": "2026-04-06T08:00:00Z",
+  "generated_at": "2026-04-07T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-06",
+  "run_date": "2026-04-07",
   "criteria": {
     "days_since_email_min": 3,
     "reply_status": "no_reply",
     "lead_statuses_eligible": ["contacted"],
     "exclude_statuses": ["replied", "interested", "converted", "unsubscribed", "lost"]
   },
-  "note": "Day 9. Nine leads qualify for LinkedIn second touch today. Three are new entries (leads 42, 44, 46 — emailed 2026-04-03, Day-3 bumps also due today). Six are carried forward from yesterday's plan (leads 4, 6, 8, 30, 31, 32 — no reply received overnight, all one day older). NOTE: No linkedin_profiles.json received from HANDS — yesterday's searches not yet confirmed as executed. HANDS: if yesterday's searches were not run, prioritise leads 4 and 8 first (highest urgency). Leads 30, 31, 32 — now at Day 4, active-profile condition slightly relaxed: activity within 60 days (not 30) is sufficient.",
+  "note": "Day 10. Nine leads carry forward — no new leads enter the queue today (leads 50/52/55/56 sent 2026-04-06 are Day 1 only, not eligible). STILL no linkedin_profiles.json received from HANDS after two consecutive BRAIN runs. Lead 8 (Graham, Ilkley Ironmongery) is now Day 10 — breakup email is in 4 days (2026-04-11). This is CRITICAL and must be the first execution. Leads 42, 44, 46 tick to Day 4 — the 30-day activity threshold relaxes to 60 days today. All other conditions unchanged. HANDS: leads 8 and 4 are unconditional — execute even if activity check fails. Do not wait on conditions for these two.",
   "search_queries": [
     {
       "lead_id": 8,
       "name": "Graham",
       "business_name": "Ilkley Ironmongery",
       "town": "Ilkley",
-      "days_since_email": 9,
+      "days_since_email": 10,
       "email_sent_at": "2026-03-28T14:30:00Z",
-      "followup_stage": "day_9_pre_breakup",
+      "followup_stage": "day_10_pre_breakup",
       "pain_point": "Website lacks SSL certificate",
       "owner_name_confidence": "known",
       "google_query": "site:linkedin.com/in \"Graham\" \"Ilkley Ironmongery\"",
-      "fallback_query": "site:linkedin.com/in \"Graham\" ironmongery Ilkley hardware",
+      "fallback_query": "site:linkedin.com/in \"Graham\" ironmongery Ilkley hardware West Yorkshire",
       "priority": "critical",
-      "notes": "CRITICAL — breakup email scheduled 2026-04-11 (5 days). This is the last chance on an alternative channel before closing the lead. Owner name known (Graham). Independent hardware shops are rare — owner likely visible on LinkedIn. Execute this search first today."
+      "notes": "CRITICAL — breakup email scheduled 2026-04-11 (4 days, not 5). This is now the absolute priority. Independent hardware shops in Wharfedale are rare — Graham is almost certainly findable. Two days of HANDS non-execution means this MUST run today. Owner name known (Graham). If primary query returns no results, run fallback immediately. Execute first, before all other searches."
     },
     {
       "lead_id": 4,
       "name": "Rachel",
       "business_name": "Skipton Garden Design",
       "town": "Skipton",
-      "days_since_email": 8,
+      "days_since_email": 9,
       "email_sent_at": "2026-03-29T09:00:00Z",
-      "followup_stage": "day_8",
+      "followup_stage": "day_9",
       "pain_point": "Website not mobile-friendly",
       "owner_name_confidence": "known",
       "google_query": "site:linkedin.com/in \"Rachel\" \"Skipton Garden Design\"",
-      "fallback_query": "site:linkedin.com/in \"Rachel\" garden design Skipton North Yorkshire",
+      "fallback_query": "site:linkedin.com/in \"Rachel\" garden design Skipton North Yorkshire landscape",
       "priority": "high",
-      "notes": "Day 8 — no reply to Day 7 new-angle email sent yesterday. Day 14 breakup pre-written for 2026-04-19 (13 days). LinkedIn connection is now the parallel second channel — execute with no activity condition required."
+      "notes": "Day 9 — Day 7 new-angle email sent 2026-04-06 (yesterday). Day 14 breakup pre-written for 2026-04-19 (10 days). Garden designers in North Yorkshire are highly likely to maintain a professional LinkedIn presence. No activity condition — execute unconditionally. Priority 2 today after lead 8."
     },
     {
       "lead_id": 42,
       "name": "Sarah",
       "business_name": "Blossom Beauty Studio",
       "town": "York",
-      "days_since_email": 3,
+      "days_since_email": 4,
       "email_sent_at": "2026-04-03T10:00:00Z",
-      "followup_stage": "day_3",
+      "followup_stage": "day_4",
       "pain_point": "Website lacks SSL + not mobile-friendly",
       "owner_name_confidence": "known",
       "google_query": "site:linkedin.com/in \"Sarah\" \"Blossom Beauty Studio\"",
-      "fallback_query": "site:linkedin.com/in Sarah beauty salon studio York",
+      "fallback_query": "site:linkedin.com/in Sarah beauty salon studio York owner",
       "priority": "high",
-      "notes": "NEW today. Owner first name known (Sarah). Day 3 bump also sent today via email. Beauty sector businesses in York — owner likely has a personal LinkedIn. Active-profile condition applies: only connect if recent activity found."
+      "notes": "Day 4 — activity condition RELAXED today from 30 days to 60 days (Day 3 threshold was 30 days; Day 4 relaxes). Day 3 email bump sent yesterday. First name Sarah known. Beauty sector in York — owner likely presents professionally on LinkedIn. Proceed if any activity found within 60 days."
     },
     {
       "lead_id": 44,
       "name": "James Rowe",
       "business_name": "Meadowbrook Vets",
       "town": "Skipton",
-      "days_since_email": 3,
+      "days_since_email": 4,
       "email_sent_at": "2026-04-03T10:30:00Z",
-      "followup_stage": "day_3",
-      "pain_point": "No social media presence — 142 Google reviews unamplfied",
+      "followup_stage": "day_4",
+      "pain_point": "No social media presence — 142 Google reviews unamplified",
       "owner_name_confidence": "known",
       "google_query": "site:linkedin.com/in \"James Rowe\" \"Meadowbrook Vets\"",
-      "fallback_query": "site:linkedin.com/in \"James Rowe\" veterinarian vet Skipton",
+      "fallback_query": "site:linkedin.com/in \"James Rowe\" veterinarian vet Skipton North Yorkshire",
       "priority": "high",
-      "notes": "NEW today. Full name known: Dr. James Rowe. Vet practices are professional — owner likely active on LinkedIn. Day 3 bump also going out today. Use professional/formal note tone. Active-profile condition applies for Day 3."
+      "notes": "Day 4 — activity condition RELAXED to 60 days today. Full name known: Dr. James Rowe. Vet professionals have strong LinkedIn presence historically. Day 3 bump sent yesterday. Use formal 'Dr Rowe' opener in connection note. If James Rowe has posted about animal care or practice news recently, HANDS should flag this — note is upgradeable to post_reference."
     },
     {
       "lead_id": 46,
       "name": "Mike Thornfield",
       "business_name": "Thornfield Electricals",
       "town": "Bradford",
-      "days_since_email": 3,
+      "days_since_email": 4,
       "email_sent_at": "2026-04-03T11:00:00Z",
-      "followup_stage": "day_3",
+      "followup_stage": "day_4",
       "pain_point": "Website lacks SSL certificate",
       "owner_name_confidence": "known",
       "google_query": "site:linkedin.com/in \"Mike Thornfield\" \"Thornfield Electricals\"",
       "fallback_query": "site:linkedin.com/in \"Mike Thornfield\" electrician Bradford West Yorkshire",
       "priority": "medium",
-      "notes": "NEW today. Full name known (Mike Thornfield — surname matches business name, very likely a sole trader). Day 3 bump also going out today. Active-profile condition applies — check for recent activity before connecting."
+      "notes": "Day 4 — activity condition RELAXED to 60 days today. Full name known (surname matches business — almost certainly sole trader). Day 3 bump sent yesterday. Trades owners less reliably active on LinkedIn — if dormant or no profile, skip and rely on email sequence. Activity check is the deciding factor for this lead."
     },
     {
       "lead_id": 6,
       "name": null,
       "business_name": "Boroughbridge Plumbing",
       "town": "Boroughbridge",
-      "days_since_email": 8,
+      "days_since_email": 9,
       "email_sent_at": "2026-03-29T09:45:00Z",
-      "followup_stage": "day_8",
+      "followup_stage": "day_9",
       "pain_point": "Website not mobile-friendly",
       "owner_name_confidence": "unknown",
       "google_query": "site:linkedin.com/in \"Boroughbridge Plumbing\" plumber",
-      "fallback_query": "site:linkedin.com/in plumber \"Boroughbridge\" North Yorkshire",
+      "fallback_query": "site:linkedin.com/in plumber \"Boroughbridge\" North Yorkshire owner director",
       "priority": "medium",
-      "notes": "Day 8 — Day 14 breakup pre-written for 2026-04-19. No owner name. Named-individual condition still applies — do not connect to a generic company page. If no named result found today, skip and rely on breakup email on Apr 19."
+      "notes": "Day 9 — Day 14 breakup pre-written for 2026-04-19 (12 days). No owner name. Named-individual condition still applies — do NOT connect to a company page. If no named individual found today, skip and close out via breakup email on 2026-04-19. No change from yesterday's condition."
     },
     {
       "lead_id": 30,
       "name": "Steve",
       "business_name": "Halifax Window Cleaning",
       "town": "Halifax",
-      "days_since_email": 4,
+      "days_since_email": 5,
       "email_sent_at": "2026-04-02T09:30:00Z",
-      "followup_stage": "day_4",
+      "followup_stage": "day_5",
       "pain_point": "Website lacks SSL certificate",
       "owner_name_confidence": "known",
       "google_query": "site:linkedin.com/in \"Steve\" \"Halifax Window Cleaning\"",
-      "fallback_query": "site:linkedin.com/in Steve window cleaning Halifax Calderdale",
+      "fallback_query": "site:linkedin.com/in Steve window cleaning Halifax Calderdale West Yorkshire",
       "priority": "medium",
-      "notes": "Day 4 — Day 7 new-angle email due 2026-04-09 (3 days). Active-profile condition relaxed from Day 3: activity within 60 days (not 30) sufficient. Day 7 new angle covers local SEO/Google Maps ranking — LinkedIn connection is a complementary parallel touch."
+      "notes": "Day 5 — Day 7 new-angle (local SEO) email due 2026-04-09 (2 days). Active-profile condition: activity within 60 days. First name Steve known. Calderdale-specific framing in fallback query. LinkedIn connection is a parallel touch ahead of the Day 7 email."
     },
     {
       "lead_id": 32,
       "name": "Ann",
       "business_name": "Castleford Carpets",
       "town": "Castleford",
-      "days_since_email": 4,
+      "days_since_email": 5,
       "email_sent_at": "2026-04-02T10:45:00Z",
-      "followup_stage": "day_4",
+      "followup_stage": "day_5",
       "pain_point": "Website lacks SSL certificate",
       "owner_name_confidence": "known",
       "google_query": "site:linkedin.com/in \"Ann\" \"Castleford Carpets\"",
-      "fallback_query": "site:linkedin.com/in Ann carpets flooring Castleford West Yorkshire",
+      "fallback_query": "site:linkedin.com/in Ann carpets flooring Castleford West Yorkshire owner",
       "priority": "medium",
-      "notes": "Day 4 — Day 7 new-angle email (missing quote CTA) due 2026-04-09. Active-profile condition relaxed to 60 days. Owner name Ann known — note ready."
+      "notes": "Day 5 — Day 7 new-angle (missing quote CTA) email due 2026-04-09 (2 days). Active-profile condition: activity within 60 days. Owner name Ann known. Retail flooring owners are moderately active on LinkedIn. LinkedIn note ready (generic, upgradeable if profile posts available)."
     },
     {
       "lead_id": 31,
       "name": null,
       "business_name": "Pontefract Pharmacy",
       "town": "Pontefract",
-      "days_since_email": 4,
+      "days_since_email": 5,
       "email_sent_at": "2026-04-02T10:05:00Z",
-      "followup_stage": "day_4",
+      "followup_stage": "day_5",
       "pain_point": "Website not mobile-friendly",
       "owner_name_confidence": "unknown",
       "google_query": "site:linkedin.com/in \"Pontefract Pharmacy\" pharmacist",
-      "fallback_query": "site:linkedin.com/in pharmacist Pontefract owner manager",
+      "fallback_query": "site:linkedin.com/in pharmacist Pontefract superintendent owner manager",
       "priority": "low",
-      "notes": "Day 4 — low priority. Named-individual AND active-profile conditions both still required. Pharmacies often have a superintendent pharmacist or director visible on LinkedIn. If only a company page or dormant profile found, skip — Day 7 Google Profile Gap email (due Apr 9) is a stronger play."
+      "notes": "Day 5 — low priority. Day 7 Google Profile Gap email (due 2026-04-09 — Easter Bank Holiday hours angle) is the stronger play. Named-individual AND active-profile-60-days conditions both required. Superintendent pharmacist may be visible on LinkedIn with professional profile. If only a company page or generic listing found, skip entirely."
     }
   ],
   "summary": {
     "total_candidates": 9,
     "queries_generated": 9,
-    "new_today": 3,
-    "carried_forward": 6,
+    "new_today": 0,
+    "carried_forward": 9,
+    "note_on_carry_forward": "HANDS has not returned linkedin_profiles.json for two consecutive days. All 9 queries must be executed today. CRITICAL escalation for lead 8.",
     "by_followup_stage": {
-      "day_9_pre_breakup": 1,
-      "day_8": 2,
-      "day_4": 3,
-      "day_3": 3
+      "day_10_pre_breakup": 1,
+      "day_9": 2,
+      "day_5": 3,
+      "day_4": 3
     },
     "by_priority": {
       "critical": 1,
@@ -164,9 +165,12 @@
       "low": 1
     },
     "execution_order": "8 → 4 → 42 → 44 → 46 → 6 → 30 → 32 → 31",
+    "unconditional_executions": [8, 4],
+    "conditional_60_day_activity": [42, 44, 46, 30, 32],
+    "conditional_named_individual_required": [6, 31],
     "excluded_lead_ids_replied_email": [1, 2, 3, 5, 7, 22],
     "excluded_lead_ids_too_recent": [50, 52, 55, 56, 57, 58, 59, 60, 61],
     "suppressed": [19],
-    "notes": "Lead 8 (Graham, Ilkley Ironmongery) is now critical — breakup email goes out in 5 days. Three new entries (42, 44, 46) join today as they hit the 3-day threshold. Day 3 conditionals (42, 44, 46) require active profile check. Day 4 conditionals (30, 31, 32) relaxed from 30-day to 60-day activity window. HANDS: if yesterday's searches were not executed, reprioritise leads 8 and 4 ahead of all others."
+    "notes": "Lead 8 (Graham, Ilkley Ironmongery) is now at Day 10 with breakup in 4 days — treat as URGENT. No new leads enter the queue today. Three Day-4 leads (42, 44, 46) have their activity threshold relaxed from 30 to 60 days. HANDS: the two-day non-execution of these searches is a risk for leads 8 and 4 in particular — act on these first."
   }
 }

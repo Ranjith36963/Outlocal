@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-06T08:00:00Z",
+  "generated_at": "2026-04-07T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-06",
-  "note": "Three new notes added today (leads 42, 44, 46). Six notes carried forward from 2026-04-05 run (leads 4, 6, 8, 30, 31, 32) — unchanged as no linkedin_profiles.json received from HANDS. All notes remain 'generic' type until HANDS returns profile data. Once linkedin_profiles.json is available, re-run BRAIN to upgrade leads 4, 8, 42, 44 to post_reference or headline type (these are most likely to have LinkedIn presence).",
+  "run_date": "2026-04-07",
+  "note": "Day 10. All nine notes carried forward — no linkedin_profiles.json received from HANDS for a second consecutive day, so no post_reference or headline upgrades are possible yet. Notes remain 'generic' type pending profile data. IMPORTANT ESCALATION: Lead 8 (Graham, Ilkley Ironmongery) — breakup email is now 4 days away. If this note is sent today and Graham accepts, that conversation window is now narrow. HANDS: after executing search and sending connection note for lead 8, check back same day for any profile data that would enable an upgrade note. Upgrade candidates remain leads 4, 8, 42, 44.",
   "strategy": {
     "character_limit": 200,
     "tone": "slightly awkward genuine compliment — stands out from polished AI outreach",
@@ -14,7 +14,7 @@
       "Do not use exclamation marks",
       "Do not use 'reach out' or 'touch base'"
     ],
-    "upgrade_path": "Once profile data available: replace generic with post_reference (highest) or headline type"
+    "upgrade_path": "Once profile data available from HANDS: replace generic with post_reference (highest) or headline type for leads 4, 8, 42, 44"
   },
   "connection_notes": [
     {
@@ -29,9 +29,10 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "critical",
-      "rationale": "First name known. 'Independent hardware businesses' is a genuine compliment category — independent shops are rare and owners are proud of that. 'Wharfedale' is specific and local. Day 9 — breakup email on Apr 11. This is the last alternative-channel window.",
-      "condition": "none — no activity condition required at Day 9",
-      "upgrade_note": "If Graham posts about the hardware trade, DIY, or local Ilkley content, reference that post instead"
+      "rationale": "First name known. 'Independent hardware businesses' is a genuine compliment category — independent shops are rare, owners are proud of that. 'Wharfedale' is specific and local. Day 10 — breakup email on 2026-04-11. This is the last alternative-channel window before closing the lead. Note unchanged from yesterday (no profile data to upgrade with).",
+      "condition": "none — no activity condition required at Day 10",
+      "upgrade_note": "If Graham posts about the hardware trade, DIY, or local Ilkley content, reference that post instead. Upgrade window is narrow — breakup email is in 4 days.",
+      "escalation_note": "URGENT: If Graham accepts within 24 hours of connection, message immediately: 'Graham — thanks for connecting. I spotted something about the ironmongery site that might be worth a quick look. Want me to send over what I found?' Keep under 300 chars."
     },
     {
       "lead_id": 4,
@@ -45,9 +46,9 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "high",
-      "rationale": "First name known, local reference, vague 'spotted something' creates curiosity without pitching. 'Caught my attention' is mildly awkward — avoids AI polish. Day 8 — no activity condition.",
-      "condition": "none — no activity condition required at Day 8",
-      "upgrade_note": "Replace with post_reference if Rachel has posted about a garden project, spring planting, or landscape portfolio recently"
+      "rationale": "First name known, local reference, vague 'spotted something' creates curiosity without pitching. 'Caught my attention' is mildly awkward — avoids AI polish. Day 9 — no activity condition.",
+      "condition": "none — no activity condition required at Day 9",
+      "upgrade_note": "Replace with post_reference if Rachel has posted about a garden project, spring planting, or landscape portfolio recently. Spring is prime content season for garden designers."
     },
     {
       "lead_id": 42,
@@ -61,9 +62,9 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "high",
-      "rationale": "First name known. 'Caught my eye' is natural and slightly awkward. Beauty sector in York — owner likely presents personally on LinkedIn with professional headshot. No pitch, just curiosity hook. 'Flagging' rather than 'mentioning' is a slightly more concrete word — implies a specific finding.",
-      "condition": "Day 3 — only send if profile shows activity within 60 days",
-      "upgrade_note": "If Sarah has posted about the beauty studio, treatments, or a York lifestyle angle, reference that post"
+      "rationale": "First name known. 'Caught my eye' is natural and slightly awkward. Beauty sector in York — owner likely presents personally on LinkedIn. 'Flagging' implies a specific finding without revealing the pitch. No pitch, just curiosity hook.",
+      "condition": "Day 4 — send if profile shows activity within 60 days (relaxed from 30 days at Day 3)",
+      "upgrade_note": "If Sarah has posted about the beauty studio, treatments, or a York lifestyle angle, reference that post for far higher open rate"
     },
     {
       "lead_id": 44,
@@ -77,9 +78,9 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "high",
-      "rationale": "Using 'Dr Rowe' not 'James' — professional context warrants a formal opener. 'Independent vet practices' is a genuine distinguishing category. Vague 'something about the online presence' — specific enough to create curiosity without revealing the pitch. No exclamations, no hollow flattery.",
-      "condition": "Day 3 — only send if profile shows activity within 60 days. If profile shows Dr Rowe posts about animal care or veterinary topics, upgrade note.",
-      "upgrade_note": "If James Rowe has posted about veterinary care, pet health, or practice news, reference that for far higher conversion than generic note"
+      "rationale": "Using 'Dr Rowe' not 'James' — professional context warrants formal opener. 'Independent vet practices' is a genuine distinguishing category. 'Something about the online presence' is specific enough to create curiosity without revealing the pitch.",
+      "condition": "Day 4 — send if profile shows activity within 60 days (relaxed from 30 days at Day 3). If Dr Rowe has posted about animal care or veterinary topics, upgrade note to post_reference — this is a high-quality upgrade candidate.",
+      "upgrade_note": "Highest upgrade priority after lead 8. If James Rowe has posted about veterinary care, pet health, or practice news, a post_reference note will significantly outperform the generic version."
     },
     {
       "lead_id": 46,
@@ -93,9 +94,9 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "medium",
-      "rationale": "First name known. 'Trades businesses in Bradford' is local and honest — not inflated. 'Came up' is conversational. Short and functional — trades people appreciate brevity. 'Relevant' rather than 'useful' is a slightly different word that avoids repetition across notes.",
-      "condition": "Day 3 — only send if profile shows activity within 60 days",
-      "upgrade_note": "If Mike posts about electrical work, certification, or Bradford business content, reference that instead"
+      "rationale": "First name known. 'Trades businesses in Bradford' is local and honest. 'Came up' is conversational. Short — trades people appreciate brevity. 'Relevant' rather than 'useful' avoids repetition across notes.",
+      "condition": "Day 4 — send if profile shows activity within 60 days (relaxed from 30 days at Day 3). Trades owner — if profile is inactive or dormant, skip and rely on email sequence.",
+      "upgrade_note": "If Mike posts about electrical work, certification, or Bradford business content, reference that post"
     },
     {
       "lead_id": 6,
@@ -110,7 +111,7 @@
       "within_limit": true,
       "priority": "medium",
       "rationale": "No owner name — keep impersonal but specific to location and trade. 'Caught my eye' is more human than 'I noticed'. No pitch, just curiosity hook.",
-      "condition": "Only send if HANDS identifies a named individual — do not connect to a generic company LinkedIn page. Day 8 — if no named individual found today, skip and rely on Day 14 breakup email (2026-04-19)."
+      "condition": "Named-individual condition required — do NOT connect to a generic company LinkedIn page. Day 9 — if no named individual found today, skip and rely on Day 14 breakup email (2026-04-19)."
     },
     {
       "lead_id": 30,
@@ -124,8 +125,8 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "medium",
-      "rationale": "First name known. 'Calderdale' is more specific than 'Halifax' alone — shows local awareness. 'Came up' is natural. Day 4 — active-profile condition relaxed to 60 days (was 30 at Day 3).",
-      "condition": "Day 4 — only send if profile shows activity within 60 days"
+      "rationale": "First name known. 'Calderdale' is more specific than 'Halifax' alone — shows local awareness. 'Came up' is natural. Day 5 — active-profile condition remains 60 days.",
+      "condition": "Day 5 — send if profile shows activity within 60 days"
     },
     {
       "lead_id": 32,
@@ -139,8 +140,8 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "medium",
-      "rationale": "First name known. 'Flooring and home businesses' broadens the context naturally. 'Spotted something' is the curiosity hook without a pitch. Day 4 — active-profile condition relaxed to 60 days.",
-      "condition": "Day 4 — only send if profile shows activity within 60 days"
+      "rationale": "First name known. 'Flooring and home businesses' broadens the context naturally. 'Spotted something' is the curiosity hook without a pitch. Day 5 — active-profile condition 60 days.",
+      "condition": "Day 5 — send if profile shows activity within 60 days"
     },
     {
       "lead_id": 31,
@@ -154,14 +155,14 @@
       "char_limit": 200,
       "within_limit": true,
       "priority": "low",
-      "rationale": "'Independent local pharmacies' is a genuine framing — pharmacist-owners identify with that label. No owner name so no first-name opener. Day 4 low-priority lead.",
-      "condition": "Low priority — only send if HANDS finds a named pharmacist-owner with LinkedIn activity within 60 days. Skip if only a company page or inactive profile found. Day 7 Google Profile Gap email (2026-04-09) is the stronger play."
+      "rationale": "'Independent local pharmacies' is a genuine framing — pharmacist-owners identify with that label. No owner name so no first-name opener. Day 5 low-priority lead.",
+      "condition": "Low priority — named-individual AND active-profile-60-days both required. Skip if only a company page or inactive profile found. Day 7 Google Profile Gap email (2026-04-09) is the stronger play for this lead."
     }
   ],
   "summary": {
     "total_notes": 9,
-    "new_today": 3,
-    "carried_forward": 6,
+    "new_today": 0,
+    "carried_forward": 9,
     "by_type": {
       "post_reference": 0,
       "headline": 0,
@@ -177,6 +178,7 @@
       "named_individual_required": [6, 31]
     },
     "upgrade_candidates_on_next_run": [4, 8, 42, 44],
-    "notes": "All notes are generic pending profile data from HANDS. Priority upgrade candidates: lead 44 (Dr. James Rowe — vet professionals tend to be active on LinkedIn, post_reference likely possible), lead 42 (Sarah — beauty business owners often post about their work), leads 4 and 8 (Day 8-9, highest urgency). Run HANDS search plan first, write data/linkedin_profiles.json, then re-run BRAIN to upgrade notes."
+    "escalation_notes": "Lead 8 breakup window is now 4 days. If Graham accepts connection today, HANDS must message same day. Do not wait for next BRAIN run.",
+    "notes": "All notes remain generic — no profile data received from HANDS. BRAIN cannot upgrade to post_reference or headline type without linkedin_profiles.json. Priority upgrade candidates: lead 44 (Dr. James Rowe — vet professionals post about their practice), lead 42 (Sarah — beauty business owners post frequently), leads 4 and 8 (urgency). HANDS: write data/linkedin_profiles.json after each search so BRAIN can upgrade notes on the next run."
   }
 }
