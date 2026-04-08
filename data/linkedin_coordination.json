@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T08:00:00Z",
+  "generated_at": "2026-04-08T07:30:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-07",
+  "run_date": "2026-04-08",
   "rules_applied": {
     "block_linkedin_if_email_replied": true,
     "block_linkedin_if_unsubscribed": true,
@@ -15,32 +15,32 @@
       "business_name": "Westfield Hair & Beauty",
       "owner_name": "Claire",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Call is TODAY at 14:00. Active buying conversation. Email replied — classification: INTERESTED.",
-      "action": "URGENT: Prep audit and two-option proposal for 14:00 call. Option A £150 (SSL + mobile), Option B £350 (full fix + booking widget). Lead with booking gap pain point. No LinkedIn — would be bizarre to connect same day as a sales call."
+      "reason": "Call was scheduled 2026-04-07 at 14:00. Active pipeline — in negotiation/proposal phase. Email replied — classification: INTERESTED.",
+      "action": "HANDS: confirm call outcome. If deal agreed: issue proposal or contract. If call rescheduled: confirm new date. No LinkedIn — connecting on the same day as or after a sales call would be strange and could undermine trust. Re-evaluate LinkedIn need if deal stalls."
     },
     {
       "lead_id": 1,
       "business_name": "Ripon Road Carpentry",
       "owner_name": "Tom",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Active buying conversation — pricing email sent 2026-04-05, awaiting Tom's call booking. Classification: INTERESTED.",
-      "action": "Monitor IMAP for Tom's reply. If no response by EOD tomorrow (2026-04-08), send nudge fu_026_TOM_NUDGE: 10-min call offer for Wednesday morning. No LinkedIn during active negotiation."
+      "reason": "Active buying conversation — pricing sent 2026-04-05. Tom nudge (fu_026_TOM_NUDGE) DUE TODAY (2026-04-08) if no call booked. Classification: INTERESTED.",
+      "action": "HANDS: check IMAP FIRST this morning. If Tom has replied (call booked, question, anything): route to value_delivery_queue, do NOT send nudge. If no reply found by 17:00: send fu_026_TOM_NUDGE — 'Tom, happy to jump on a 10-min call Wednesday morning to confirm the spec. Just reply with a time that suits.' Do NOT LinkedIn during active negotiation."
     },
     {
       "lead_id": 22,
       "business_name": "Pennine Print & Design",
       "owner_name": "Rob",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Active buying conversation — scope reply sent 2026-04-05, upsell signal (bundle redesign enquiry). Classification: INTERESTED.",
-      "action": "Check IMAP before 17:00 today. If no reply from Rob, send nudge fu_022_ROB_NUDGE: 'Happy to send a one-page scope doc if that makes it easier to confirm, Rob.' No LinkedIn — active negotiation in progress."
+      "reason": "Active buying conversation — bundle scope reply sent 2026-04-05. Rob nudge (fu_022_ROB_NUDGE) was due EOD yesterday (2026-04-07). Classification: INTERESTED.",
+      "action": "HANDS: check IMAP for any reply from Rob. If Rob has replied: route to value_delivery_queue immediately. If no reply: confirm whether fu_022_ROB_NUDGE was sent yesterday. If not sent yet, send now ('Happy to send a one-page scope doc if that makes it easier, Rob'). No LinkedIn — active negotiation in progress. Do not discount."
     },
     {
       "lead_id": 5,
       "business_name": "Harewood Accountants",
       "owner_name": "David Harewood",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Day-7 email sending TODAY (fu_016) — email channel is active and warm. OOO expired 2026-04-06. David is back at his desk. Email is the correct channel — LinkedIn would feel intrusive while email is live.",
-      "action": "HANDS: send fu_016 this morning (09:00-11:00 window). New angle: Google Business Profile gap + local visibility. Warm opener ('hope the break was good'). Check IMAP first for any reply since Monday. No LinkedIn today."
+      "reason": "Day-7 email (fu_016, Google local visibility angle) was sent yesterday (2026-04-07). Email channel active — allow settle time. Monitor for reply before adding another channel.",
+      "action": "HANDS: check IMAP for any reply from David. If David has replied (to fu_016 or any earlier email): classify and route immediately. If no reply: fu_016 is Day 7 — allow at least 48 hours before any further action. Next email trigger would be Day 14 breakup (not yet due). LinkedIn not appropriate while Day-7 email is fresh."
     },
     {
       "lead_id": 2,
@@ -68,23 +68,39 @@
       "business_name": "Ilkley Ironmongery",
       "owner_name": "Graham",
       "decision": "APPROVED_FOR_LINKEDIN",
-      "reason": "Emailed 2026-03-28 (10 days ago). No reply. Day 14 breakup email scheduled 2026-04-11 (4 days). Two consecutive BRAIN runs without HANDS execution — escalation status.",
-      "action": "HANDS: CRITICAL — execute search immediately. Graham must be found today. Send connection note from linkedin_connection_notes.json (lead_id 8). If Graham accepts before next BRAIN run, message the same day — do not wait. Breakup window is narrow."
+      "reason": "Emailed 2026-03-28 (11 days ago). No reply. Breakup email scheduled 2026-04-11 (3 days). THREE consecutive BRAIN runs without HANDS execution — maximum escalation.",
+      "action": "HANDS: CRITICAL — execute search immediately as the first action of the day. Graham must be found today. Send connection note from linkedin_connection_notes.json (lead_id 8). If Graham accepts before next BRAIN run: message same day — 'Graham — thanks for connecting. I spotted something about the ironmongery site that might be worth a quick look. Want me to send over what I found?' Do NOT wait. Breakup window is 3 days."
+    },
+    {
+      "lead_id": 30,
+      "business_name": "Halifax Window Cleaning",
+      "owner_name": "Steve",
+      "decision": "APPROVED_FOR_LINKEDIN_URGENT_TODAY",
+      "reason": "Emailed 2026-04-02 (6 days ago). No reply. Day-7 new-angle email (fu_017, local SEO) sends TOMORROW (2026-04-09). Today is the last window for coordinated two-channel approach.",
+      "action": "HANDS: execute Steve's LinkedIn search TODAY — position 2 after lead 8. LinkedIn connection today + Day-7 email tomorrow = coordinated two-channel approach. Proceed if profile shows activity within 60 days. If Steve's profile is inactive: skip LinkedIn and rely on fu_017 alone. Do not send LinkedIn and email on the same day."
+    },
+    {
+      "lead_id": 32,
+      "business_name": "Castleford Carpets",
+      "owner_name": "Ann",
+      "decision": "APPROVED_FOR_LINKEDIN_URGENT_TODAY",
+      "reason": "Emailed 2026-04-02 (6 days ago). No reply. Day-7 new-angle email (fu_019, missing CTA) sends TOMORROW (2026-04-09). Today is the last window for coordinated two-channel approach.",
+      "action": "HANDS: execute Ann's LinkedIn search TODAY — position 3 after lead 8 and Steve. Proceed if profile shows activity within 60 days. Connection note ready (lead_id 32). If profile inactive: skip LinkedIn and rely on fu_019 alone."
     },
     {
       "lead_id": 4,
       "business_name": "Skipton Garden Design",
       "owner_name": "Rachel",
       "decision": "APPROVED_FOR_LINKEDIN",
-      "reason": "Emailed 2026-03-29 (9 days ago). No reply. Day 7 new-angle email sent yesterday (2026-04-06). Day 14 breakup pre-written for 2026-04-19.",
-      "action": "HANDS: execute search query, confirm Rachel's profile, send connection note (lead_id 4). No activity condition — Day 9 justifies unconditional touch. Priority 2 after lead 8."
+      "reason": "Emailed 2026-03-29 (10 days ago). No reply. Day 7 new-angle email sent 2026-04-06. Day 14 breakup pre-written for 2026-04-19.",
+      "action": "HANDS: execute search query, confirm Rachel's profile, send connection note (lead_id 4). No activity condition — Day 10 justifies unconditional touch. Priority 4 today after leads 8, 30, 32."
     },
     {
       "lead_id": 42,
       "business_name": "Blossom Beauty Studio",
       "owner_name": "Sarah",
       "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed 2026-04-03 (4 days ago). No reply. Day 3 bump sent yesterday. Activity condition relaxed from 30 to 60 days today (Day 4 threshold).",
+      "reason": "Emailed 2026-04-03 (5 days ago). No reply. Day 3 bump sent. Activity condition: 60 days.",
       "action": "HANDS: search for Sarah's LinkedIn. Proceed if profile shows activity within 60 days. Connection note ready (lead_id 42). If Sarah has posted recently, flag for note upgrade to post_reference."
     },
     {
@@ -92,54 +108,38 @@
       "business_name": "Meadowbrook Vets",
       "owner_name": "Dr. James Rowe",
       "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed 2026-04-03 (4 days ago). No reply. Day 3 bump sent yesterday. Activity condition relaxed from 30 to 60 days today (Day 4 threshold).",
-      "action": "HANDS: search for Dr. James Rowe LinkedIn. Proceed if profile shows activity within 60 days. Use formal 'Dr Rowe' opener (lead_id 44). If Dr Rowe has posted about animal care or practice news recently, upgrade note to post_reference — this is the highest-value upgrade candidate in today's queue."
+      "reason": "Emailed 2026-04-03 (5 days ago). No reply. Day 3 bump sent. Activity condition: 60 days.",
+      "action": "HANDS: search for Dr. James Rowe LinkedIn. Proceed if profile shows activity within 60 days. Use formal 'Dr Rowe' opener (lead_id 44). HIGHEST upgrade priority — if Dr Rowe has posted about animal care, pet health, or practice news recently, this note is upgradeable to post_reference for significant response rate lift. Flag the post in linkedin_profiles.json."
     },
     {
       "lead_id": 46,
       "business_name": "Thornfield Electricals",
       "owner_name": "Mike Thornfield",
       "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed 2026-04-03 (4 days ago). No reply. Day 3 bump sent yesterday. Activity condition relaxed from 30 to 60 days today (Day 4 threshold).",
-      "action": "HANDS: search for Mike Thornfield LinkedIn. Proceed if profile shows activity within 60 days. Trades owners less reliably active on LinkedIn — if profile is inactive, deprioritise and rely on email sequence."
+      "reason": "Emailed 2026-04-03 (5 days ago). No reply. Day 3 bump sent. Activity condition: 60 days.",
+      "action": "HANDS: search for Mike Thornfield LinkedIn. Proceed if profile shows activity within 60 days. Trades owners less reliably active — if profile is inactive, skip."
     },
     {
       "lead_id": 6,
       "business_name": "Boroughbridge Plumbing",
       "owner_name": null,
       "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed 2026-03-29 (9 days ago). No reply. Day 14 breakup pre-written for 2026-04-19 (12 days). No owner name.",
-      "action": "HANDS: only proceed if search returns a named individual (not a company page). If no named individual found today, skip — Day 14 breakup email on 2026-04-19 is the close. Named-individual condition unchanged."
-    },
-    {
-      "lead_id": 30,
-      "business_name": "Halifax Window Cleaning",
-      "owner_name": "Steve",
-      "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed 2026-04-02 (5 days ago). No reply. Day 7 new-angle email due 2026-04-09 (2 days).",
-      "action": "HANDS: check Steve's profile for activity within 60 days. Connection note ready (lead_id 30). Day 7 email (local SEO angle) sends Thursday — LinkedIn connection is a complementary parallel touch before that."
-    },
-    {
-      "lead_id": 32,
-      "business_name": "Castleford Carpets",
-      "owner_name": "Ann",
-      "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed 2026-04-02 (5 days ago). No reply. Day 7 new-angle email (missing CTA) due 2026-04-09 (2 days).",
-      "action": "HANDS: check Ann's profile for activity within 60 days. Connection note ready (lead_id 32). Thursday email and LinkedIn note are a coordinated two-channel approach."
+      "reason": "Emailed 2026-03-29 (10 days ago). No reply. Day 14 breakup pre-written for 2026-04-19 (11 days). No owner name.",
+      "action": "HANDS: only proceed if search returns a named individual (not a company page). If no named individual found, skip — breakup email on 2026-04-19 is the close."
     },
     {
       "lead_id": 31,
       "business_name": "Pontefract Pharmacy",
       "owner_name": null,
       "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed 2026-04-02 (5 days ago). No reply. No owner name. Low priority.",
-      "action": "HANDS: low priority. Named-individual AND active-profile-60-days both required. Day 7 Google Profile Gap email (2026-04-09) is the stronger play — deprioritise LinkedIn if no clear individual found. Easter Bank Holiday hours angle in Thursday email is very timely."
+      "reason": "Emailed 2026-04-02 (6 days ago). No reply. No owner name. Low priority.",
+      "action": "HANDS: low priority. Day-7 Google Profile Gap email (fu_018, Easter Bank Holiday hours angle) sends TOMORROW (2026-04-09) — that is the stronger play. Named-individual AND active-profile-60-days both required. If any condition fails, skip entirely."
     }
   ],
   "suppressed_leads": {
     "replied_on_email_active_conversation": [1, 3, 22],
     "replied_on_email_lost": [2],
-    "email_active_today": [5],
+    "email_active_or_just_sent": [5],
     "suppression_list": [19],
     "pre_suppressed_unknown": [7],
     "already_connected_linkedin": [],
@@ -153,9 +153,30 @@
       "owner_name": "Graham",
       "condition": "none",
       "priority": "critical",
-      "days_since_email": 10,
+      "days_since_email": 11,
       "breakup_date": "2026-04-11",
-      "days_until_breakup": 4
+      "days_until_breakup": 3,
+      "execution_status": "3rd consecutive day awaiting HANDS — maximum escalation"
+    },
+    {
+      "lead_id": 30,
+      "business_name": "Halifax Window Cleaning",
+      "owner_name": "Steve",
+      "condition": "active_profile_60_days",
+      "priority": "high_urgency_today",
+      "days_since_email": 6,
+      "last_window_for_coordinated_approach": true,
+      "day7_email_sends": "2026-04-09"
+    },
+    {
+      "lead_id": 32,
+      "business_name": "Castleford Carpets",
+      "owner_name": "Ann",
+      "condition": "active_profile_60_days",
+      "priority": "high_urgency_today",
+      "days_since_email": 6,
+      "last_window_for_coordinated_approach": true,
+      "day7_email_sends": "2026-04-09"
     },
     {
       "lead_id": 4,
@@ -163,7 +184,7 @@
       "owner_name": "Rachel",
       "condition": "none",
       "priority": "high",
-      "days_since_email": 9
+      "days_since_email": 10
     },
     {
       "lead_id": 42,
@@ -171,8 +192,7 @@
       "owner_name": "Sarah",
       "condition": "active_profile_60_days",
       "priority": "high",
-      "days_since_email": 4,
-      "condition_change_vs_yesterday": "relaxed from 30 to 60 days (Day 3 → Day 4)"
+      "days_since_email": 5
     },
     {
       "lead_id": 44,
@@ -180,8 +200,8 @@
       "owner_name": "Dr. James Rowe",
       "condition": "active_profile_60_days",
       "priority": "high",
-      "days_since_email": 4,
-      "condition_change_vs_yesterday": "relaxed from 30 to 60 days (Day 3 → Day 4)"
+      "days_since_email": 5,
+      "note": "Highest note upgrade priority — flag any recent vet/practice posts in linkedin_profiles.json"
     },
     {
       "lead_id": 46,
@@ -189,38 +209,21 @@
       "owner_name": "Mike Thornfield",
       "condition": "active_profile_60_days",
       "priority": "medium",
-      "days_since_email": 4,
-      "condition_change_vs_yesterday": "relaxed from 30 to 60 days (Day 3 → Day 4)"
+      "days_since_email": 5
     },
     {
       "lead_id": 6,
       "business_name": "Boroughbridge Plumbing",
       "condition": "named_individual_required",
       "priority": "medium",
-      "days_since_email": 9
-    },
-    {
-      "lead_id": 30,
-      "business_name": "Halifax Window Cleaning",
-      "owner_name": "Steve",
-      "condition": "active_profile_60_days",
-      "priority": "medium",
-      "days_since_email": 5
-    },
-    {
-      "lead_id": 32,
-      "business_name": "Castleford Carpets",
-      "owner_name": "Ann",
-      "condition": "active_profile_60_days",
-      "priority": "medium",
-      "days_since_email": 5
+      "days_since_email": 10
     },
     {
       "lead_id": 31,
       "business_name": "Pontefract Pharmacy",
       "condition": "named_individual_and_active_profile_60_days",
       "priority": "low",
-      "days_since_email": 5
+      "days_since_email": 6
     }
   ],
   "not_yet_eligible_for_linkedin": [
@@ -229,58 +232,85 @@
       "business_name": "The Harbour Fish Bar",
       "owner_name": "Pete",
       "emailed_at": "2026-04-06",
-      "days_since_email": 1,
+      "days_since_email": 2,
       "eligible_from": "2026-04-09",
-      "notes": "Emailed yesterday. Day 3 bump also due 2026-04-09. If no reply by 2026-04-09, LinkedIn search activates alongside bump."
+      "notes": "Eligible TOMORROW. Day-3 bump (fu_024) also due tomorrow. Easter urgency angle strengthens by the day."
     },
     {
       "lead_id": 52,
       "business_name": "Holderness Homecare",
       "owner_name": "Linda Walsh",
       "emailed_at": "2026-04-06",
-      "days_since_email": 1,
+      "days_since_email": 2,
       "eligible_from": "2026-04-09",
-      "notes": "Emailed yesterday. LinkedIn eligibility: 2026-04-09."
+      "notes": "Eligible TOMORROW. Day-3 bump (fu_022) also due tomorrow."
     },
     {
       "lead_id": 55,
       "business_name": "Beverley Sports & Leisure",
       "owner_name": "Craig Lawson",
       "emailed_at": "2026-04-06",
-      "days_since_email": 1,
+      "days_since_email": 2,
       "eligible_from": "2026-04-09",
-      "notes": "Emailed yesterday. LinkedIn eligibility: 2026-04-09."
+      "notes": "Eligible TOMORROW. Day-3 bump (fu_023) also due tomorrow."
     },
     {
       "lead_id": 56,
       "business_name": "East Riding Electrical",
       "owner_name": "Neil",
       "emailed_at": "2026-04-06",
-      "days_since_email": 1,
+      "days_since_email": 2,
       "eligible_from": "2026-04-09",
-      "notes": "Emailed yesterday. LinkedIn eligibility: 2026-04-09."
+      "notes": "Eligible TOMORROW. Day-3 bump (fu_025) also due tomorrow."
+    },
+    {
+      "lead_id": 57,
+      "business_name": "Scarborough Bay Plumbing & Heating",
+      "owner_name": "Mike Rawlings",
+      "emailed_at": "2026-04-07 (assumed — contingent on HANDS confirming email)",
+      "days_since_email": 1,
+      "eligible_from": "2026-04-10",
+      "notes": "Eligible Thursday if email was confirmed and sent yesterday. BRAIN cannot confirm send status — HANDS to verify."
+    },
+    {
+      "lead_id": 58,
+      "business_name": "The Old Court Solicitors",
+      "town": "Scarborough",
+      "emailed_at": "2026-04-07 (assumed — contingent on HANDS confirming email)",
+      "days_since_email": 1,
+      "eligible_from": "2026-04-10",
+      "notes": "Eligible Thursday if email was sent yesterday. No owner name — LinkedIn search will require crawl of About/Team page first."
+    },
+    {
+      "lead_id": 59,
+      "business_name": "Scarborough Roofing Specialists",
+      "owner_name": "Tony Shields",
+      "emailed_at": "2026-04-07 (assumed — contingent on HANDS confirming email)",
+      "days_since_email": 1,
+      "eligible_from": "2026-04-10",
+      "notes": "Eligible Thursday if email was sent yesterday."
     }
   ],
-  "pending_enrichment_not_eligible": [57, 58, 59, 60, 61],
+  "pending_enrichment_not_eligible": [60, 61],
   "channel_status_today": {
     "email_replied_active_conversations": [
       {
         "lead_id": 1,
         "business": "Ripon Road Carpentry",
         "owner": "Tom",
-        "next_action": "Monitor for pricing reply — nudge fu_026 due EOD tomorrow (2026-04-08) if no call booked"
+        "next_action": "Check IMAP — fu_026_TOM_NUDGE due EOD TODAY (2026-04-08) if no call booked"
       },
       {
         "lead_id": 3,
         "business": "Westfield Hair & Beauty",
         "owner": "Claire",
-        "next_action": "CALL TODAY 14:00 — audit ready, two-option proposal ready. Do not send emails."
+        "next_action": "Call was yesterday — confirm outcome. Issue proposal or contract if agreed."
       },
       {
         "lead_id": 22,
         "business": "Pennine Print & Design",
         "owner": "Rob",
-        "next_action": "Check IMAP before 17:00 — send nudge fu_022_ROB_NUDGE if no reply from Rob"
+        "next_action": "Check IMAP — confirm if fu_022_ROB_NUDGE was sent yesterday. If not sent and no reply: send now."
       }
     ],
     "email_replied_closed": [
@@ -291,39 +321,43 @@
         "reapproach_after": "2026-10-06"
       }
     ],
-    "email_active_today": [
+    "email_just_sent_monitoring": [
       {
         "lead_id": 5,
         "business": "Harewood Accountants",
         "owner": "David Harewood",
-        "action": "Day-7 Google visibility email (fu_016) sending this morning 09:00-11:00"
+        "action": "fu_016 sent yesterday (Day-7). Monitor IMAP for reply. No further action until reply or Day-14 breakup."
       }
     ],
     "linkedin_queue_unconditional": [8, 4],
-    "linkedin_queue_conditional_60_days": [42, 44, 46, 30, 32],
+    "linkedin_queue_urgent_today_last_window": [30, 32],
+    "linkedin_queue_conditional_60_days": [42, 44, 46],
     "linkedin_queue_conditional_named_individual": [6, 31],
     "emails_too_recent_for_linkedin": [50, 52, 55, 56],
-    "pending_enrichment_not_eligible": [57, 58, 59, 60, 61]
+    "assumed_sent_pending_confirmation": [57, 58, 59]
   },
   "upcoming_linkedin_additions": {
     "date": "2026-04-09",
     "new_entrants": [50, 52, 55, 56],
-    "note": "Leads emailed 2026-04-06 hit Day-3 threshold on 2026-04-09. BRAIN will add them to the search plan on Thursday. That is also a heavy email day (7 follow-up items) — HANDS will need to prioritise efficiently."
+    "note": "TOMORROW. Leads emailed 2026-04-06 hit Day-3 threshold on 2026-04-09. BRAIN will add all four to the search plan. Thursday is extremely heavy: 7 email follow-ups (4 Day-3 bumps + 3 Day-7 new angles) + 4 new LinkedIn searches. HANDS will need to prioritise carefully — email follow-ups take precedence over new LinkedIn searches. Leads 57/58/59 may also enter if their emails were confirmed and sent 2026-04-07 (eligible from 2026-04-10)."
   },
   "summary": {
-    "total_evaluated": 16,
+    "total_evaluated": 17,
     "total_suppressed": 7,
     "total_approved_unconditional": 2,
-    "total_approved_conditional": 7,
+    "total_approved_urgent_today": 2,
+    "total_approved_conditional": 5,
     "total_moved_to_nurture": 0,
     "total_too_recent": 4,
     "key_actions_today": [
-      "CRITICAL: HANDS execute Graham (Ilkley Ironmongery, lead 8) LinkedIn search immediately — breakup in 4 days",
-      "Westfield Hair & Beauty (Claire): CALL TODAY 14:00 — highest-value pipeline event",
-      "David Harewood Day-7 email (fu_016) sending this morning",
-      "Rob (Pennine Print) nudge due EOD today if no reply — check IMAP at 17:00",
-      "HANDS: write linkedin_profiles.json after searches — BRAIN needs this to upgrade generic notes"
+      "CRITICAL: Lead 8 (Graham, Ilkley Ironmongery) — execute LinkedIn search immediately. 3rd consecutive day. Breakup in 3 days.",
+      "URGENT: Lead 30 (Steve, Halifax Window Cleaning) — last window before Day-7 email tomorrow. LinkedIn today.",
+      "URGENT: Lead 32 (Ann, Castleford Carpets) — last window before Day-7 email tomorrow. LinkedIn today.",
+      "Tom (lead 1) nudge fu_026_TOM_NUDGE due EOD today — check IMAP first.",
+      "Claire (lead 3) call was yesterday — confirm outcome, issue proposal/contract.",
+      "Rob (lead 22) — check if fu_022_ROB_NUDGE was sent yesterday; send if not.",
+      "HANDS: write data/linkedin_profiles.json after each search — BRAIN needs this urgently to upgrade notes."
     ],
-    "notes": "No new leads enter the LinkedIn queue today. Three Day-3 leads (42, 44, 46) tick to Day 4 — activity threshold relaxes to 60 days, which meaningfully increases the likelihood of all three being approved. Lead 8 (Graham) is the critical item — two days of non-execution has reduced the pre-breakup window from 6 to 4 days. Thursday 2026-04-09 will be a very busy day: 7 email follow-ups + 4 new LinkedIn additions. BRAIN note: if linkedin_profiles.json is available before the next BRAIN run, the note upgrade for leads 44 (Dr. James Rowe) and 42 (Sarah) could yield meaningful response rate lift."
+    "notes": "Three consecutive non-execution days on LinkedIn has compressed the pre-breakup window for lead 8 to just 3 days. The new urgency escalation today is leads 30 and 32 — their Day-7 emails fire tomorrow, making today the last chance for coordinated multi-channel approach. TOMORROW (2026-04-09) will be the busiest day yet: 7 email follow-ups plus 4 new LinkedIn additions. HANDS should prepare for that workload now."
   }
 }
