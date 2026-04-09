@@ -1,136 +1,72 @@
 {
-  "generated_at": "2026-04-07T07:30:00Z",
-  "date": "2026-04-07",
-  "note": "BRAIN layer — Day 10 signal assignments. Scarborough batch (57-60) still pending enrichment — HANDS priority is finding direct emails today. Leads 50, 52, 55, 56 assumed sent yesterday per plan. No new scrape batch today — focus is enrichment + conversion (Claire call 14:00). Lead 5 (David Harewood) Day-7 email DUE TODAY.",
-  "assumed_sent_yesterday": {
-    "lead_50": "The Harbour Fish Bar — pete@theharbourfish.co.uk",
-    "lead_52": "Holderness Homecare — linda@holdernessHomecare.co.uk",
-    "lead_55": "Beverley Sports & Leisure — craig@beverleysportsleisure.co.uk",
-    "lead_56": "East Riding Electrical — neil@eastridingelectrical.co.uk"
+  "generated_at": "2026-04-09T07:30:00Z",
+  "date": "2026-04-09",
+  "note": "BRAIN layer — Day 12 signal assignments. Today is the heavy follow-up day (7 items due — see followup_queue.json). No new sends today. Scarborough batch (leads 57-60) assumed sent 2026-04-07/08 by HANDS. Next new sends require Batch 5 scrape (Ryedale: Malton, Pickering, Helmsley). HANDS: run Batch 5 scrape today or tomorrow to avoid a gap in the new-lead pipeline. Target 4-5 new sends by 2026-04-13 (Monday).",
+  "assumed_sent_since_last_brain_run": {
+    "lead_57": "Scarborough Bay Plumbing — mike@scarboroughbayplumbing.co.uk — sent 2026-04-07 (HANDS to confirm)",
+    "lead_58": "The Old Court Solicitors — info@oldcourtsolicitors.co.uk (or direct email if found) — sent 2026-04-07 (HANDS to confirm)",
+    "lead_59": "Scarborough Roofing Specialists — tony@scarboroughroofing.co.uk — sent 2026-04-07 (HANDS to confirm)",
+    "lead_60": "Pocklington Fine Furniture — james@pocklingtonfurniture.co.uk — sent 2026-04-08 (HANDS to confirm, was deferred to Wednesday)",
+    "fu_016": "David Harewood Day-7 new-angle email — sent 2026-04-07 morning per plan",
+    "fu_022_ROB_NUDGE": "Rob (Pennine Print) nudge — sent 2026-04-07 EOD if no reply by 17:00",
+    "fu_026_TOM_NUDGE": "Tom (Ripon Road Carpentry) nudge — sent 2026-04-08 EOD if no call booked",
+    "lead_12_day7": "Bronte Country Cottages — Day-7 new-angle email sent 2026-04-08 (OOO lifted 2026-04-08)"
   },
   "carried_forward_blocked": {
-    "lead_49": "East Riding Builders Ltd — no email. Companies House lookup still pending.",
-    "lead_51": "Driffield Garden Centre — no email. Only contact form found. Try phone.",
-    "lead_53": "Bridlington Bay Lettings — no email. Rightmove/Zoopla agent page shows office phone only.",
-    "lead_54": "The Wolds Inn — no email. Facebook About section empty. Try Google Maps phone callback.",
-    "lead_61": "Filey Fisheries — HOLD. Score 48 — below threshold. Deprioritise."
-  },
-  "leads": [
-    {
-      "lead_id": 57,
-      "business_name": "Scarborough Bay Plumbing & Heating",
-      "town": "Scarborough",
-      "source": "google_maps",
-      "status": "pending_enrichment",
-      "enrichment_priority": "high",
-      "signals": {
-        "has_website": true,
-        "website_url": "http://scarboroughbayplumbing.co.uk",
-        "website_has_ssl": false,
-        "website_is_mobile_friendly": true,
-        "rating": 4.6,
-        "review_count": 54,
-        "has_phone": true,
-        "has_owner_name": true,
-        "owner_name": "Mike Rawlings",
-        "has_social_media": false
-      },
-      "signal_type": "ssl",
-      "signal_text": "scarboroughbayplumbing.co.uk loads over HTTP — Chrome shows 'Not Secure' warning to every visitor, including homeowners searching for an emergency plumber",
-      "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
-      "estimated_score": 70,
-      "waterfall_action": "email_find_direct",
-      "email_candidates": ["mike@scarboroughbayplumbing.co.uk"],
-      "notes": "Owner name known. Strong profile — 4.6★, 54 reviews. Email copy already written. HANDS: try mike@scarboroughbayplumbing.co.uk first. If bounced, crawl About/Contact page for alternative. Send today if confirmed."
+    "lead_49": {
+      "business": "East Riding Builders Ltd",
+      "status": "blocked_no_email",
+      "action": "HANDS: search beta.companieshouse.gov.uk for 'East Riding Builders Ltd' — pull director name and try [firstname]@eastridingbuilders.co.uk pattern.",
+      "priority": "medium"
     },
-    {
-      "lead_id": 58,
-      "business_name": "The Old Court Solicitors",
-      "town": "Scarborough",
-      "source": "google_maps",
-      "status": "pending_enrichment",
-      "enrichment_priority": "high",
-      "signals": {
-        "has_website": true,
-        "website_url": "http://oldcourtsolicitors.co.uk",
-        "website_has_ssl": false,
-        "website_is_mobile_friendly": false,
-        "rating": 4.3,
-        "review_count": 29,
-        "has_phone": true,
-        "has_owner_name": false,
-        "has_social_media": false
-      },
-      "signal_type": "ssl_mobile",
-      "signal_text": "Solicitors site on HTTP with no mobile support — clients submitting enquiry forms over an unencrypted connection, with GDPR implications",
-      "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning on a site collecting client enquiries",
-      "estimated_score": 68,
-      "waterfall_action": "crawl_then_email_find",
-      "email_candidates": ["info@oldcourtsolicitors.co.uk"],
-      "notes": "No owner name — crawl About/Team page for solicitor name and direct email. SRA register lookup may list contact. info@ fallback acceptable for professional services if no direct email found. GDPR angle is potent for legal firms. Email copy already written."
+    "lead_51": {
+      "business": "Driffield Garden Centre",
+      "status": "blocked_contact_form_only",
+      "action": "HANDS: phone call to centre — ask to speak to the owner or manager, explain you sent a website message and want to confirm receipt. Get direct email.",
+      "priority": "medium"
     },
-    {
-      "lead_id": 59,
-      "business_name": "Scarborough Roofing Specialists",
-      "town": "Scarborough",
-      "source": "google_maps",
-      "status": "pending_enrichment",
-      "enrichment_priority": "high",
-      "signals": {
-        "has_website": true,
-        "website_url": "http://scarboroughroofing.co.uk",
-        "website_has_ssl": false,
-        "website_is_mobile_friendly": true,
-        "rating": 4.4,
-        "review_count": 41,
-        "has_phone": true,
-        "has_owner_name": true,
-        "owner_name": "Tony Shields",
-        "has_social_media": false
-      },
-      "signal_type": "ssl",
-      "signal_text": "scarboroughroofing.co.uk serves over HTTP — domestic customers researching a roofer see a 'Not Secure' warning before reading a single review or testimonial",
-      "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
-      "estimated_score": 67,
-      "waterfall_action": "email_find_direct",
-      "email_candidates": ["tony@scarboroughroofing.co.uk"],
-      "notes": "Owner name Tony Shields known. Try tony@scarboroughroofing.co.uk directly. Same pattern as East Riding Electrical which worked. Email copy already written. Send today if confirmed."
+    "lead_53": {
+      "business": "Bridlington Bay Lettings",
+      "status": "blocked_no_direct_email",
+      "action": "HANDS: check Rightmove agent directory (rightmove.co.uk/estate-agents) and Zoopla agents list for direct email. Also try info@bridlingtonbaylettings.co.uk.",
+      "priority": "medium"
     },
-    {
-      "lead_id": 60,
-      "business_name": "Pocklington Fine Furniture",
-      "town": "Pocklington",
-      "source": "google_maps",
-      "status": "pending_enrichment",
-      "enrichment_priority": "medium",
-      "signals": {
-        "has_website": true,
-        "website_url": "https://pocklingtonfurniture.co.uk",
-        "website_has_ssl": true,
-        "website_is_mobile_friendly": false,
-        "rating": 4.5,
-        "review_count": 36,
-        "has_phone": true,
-        "has_owner_name": true,
-        "owner_name": "James Hewitt",
-        "has_social_media": false
-      },
-      "signal_type": "mobile",
-      "signal_text": "Website fails mobile test — furniture buyers increasingly browse on mobile before visiting a showroom",
-      "pain_point": "Website not mobile-friendly — losing mobile visitors during browsing phase",
-      "estimated_score": 62,
-      "waterfall_action": "email_find_direct",
-      "email_candidates": ["james@pocklingtonfurniture.co.uk"],
-      "notes": "Owner name James Hewitt known. Try james@pocklingtonfurniture.co.uk. Medium priority — SSL leads (57, 58, 59) go first. Send Wednesday if enriched today."
+    "lead_54": {
+      "business": "The Wolds Inn",
+      "status": "blocked_no_email",
+      "action": "HANDS: try info@thewoldsinn.co.uk first. If bounced, try manager@thewoldsinn.co.uk. Score 58 — lower priority, only attempt if blocked leads 49/51 also consume enrichment time.",
+      "priority": "low"
     }
-  ],
+  },
+  "next_batch_recommendation": {
+    "batch_number": 5,
+    "area": "Ryedale District — North Yorkshire market towns",
+    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
+    "target_categories": [
+      "plumbers",
+      "electricians",
+      "roofers",
+      "builders",
+      "joiners / carpenters",
+      "pubs / restaurants",
+      "B&Bs / guest houses",
+      "estate agents",
+      "solicitors"
+    ],
+    "expected_leads": 18,
+    "signal_priority_order": ["ssl", "ssl_mobile", "mobile", "no_website", "social_media"],
+    "minimum_score_to_include": 55,
+    "rationale": "Ryedale is a prosperous rural district — market town demographics (owner-operator businesses, established reputations, often neglected websites) closely match our highest-converting profiles. Similar to Ripon and Skipton cohorts which produced leads 1 and 4 respectively. Scarborough coastal is now partially covered; Ryedale is the logical inland extension.",
+    "when_to_scrape": "TODAY or TOMORROW — no new sends are otherwise possible this week.",
+    "easter_deadline": "All Batch 5 initial sends must go out by 2026-04-16 (Wednesday before Easter) to allow Day-3 bumps before Good Friday pause on 2026-04-18.",
+    "email_copy_target": "BRAIN will write Batch 5 email copy in next run once HANDS returns scraped data."
+  },
+  "leads": [],
   "enrichment_summary": {
-    "total_pending": 4,
-    "high_priority": 3,
-    "medium_priority": 1,
-    "blocked_carry_forward": 5,
-    "send_order_if_enriched": "57 → 58 → 59 → 60",
-    "today_enrichment_goal": "Confirm emails for 57 and 59 (direct first-name pattern likely to work). 58 needs crawl. 60 lower priority — defer to Wed if 57-59 consume enrichment time.",
-    "notes": "All four email copies already written in daily_email_plan.json. HANDS only needs to confirm email addresses to activate sends. Stagger by 20-30 minutes as always."
+    "total_pending_new": 0,
+    "total_blocked_carry_forward": 4,
+    "sends_today": 0,
+    "focus": "All capacity today on 7 pre-written follow-ups. Run offline enrichment on leads 49, 51, 53, 54 in parallel. Batch 5 scrape is the primary pipeline priority.",
+    "pipeline_risk": "Without Batch 5 scrape, new-lead pipeline runs dry after lead 60. Follow-ups alone cannot sustain volume at target 10-15 sends/week."
   }
 }

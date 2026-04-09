@@ -1,15 +1,15 @@
-# Daily Strategy — 2026-04-07 (Tuesday) — Day 10
+# Daily Strategy — 2026-04-09 (Thursday) — Day 12
 
 ## Campaign Overview
 
 | Metric | Value | vs. Benchmark |
 |---|---|---|
 | Leads scraped to date | ~61 (leads 1–61) | — |
-| Emails sent (est.) | ~46 (42 prev + 4 yesterday) | — |
-| Total replies | 11 | 24% reply rate ✅ |
-| Positive (INTERESTED) | 3 | 6.5% positive rate ✅ |
-| NOT_INTERESTED | 2 | 4.3% |
-| UNSUBSCRIBE | 1 | 2.2% (under threshold) |
+| Emails sent (est.) | ~54 (46 prev + 4 Scarborough + 4 East Riding + fu_016 + lead_12 D7) | — |
+| Total replies | 11 | ~20% reply rate ✅ |
+| Positive (INTERESTED) | 3 | 5.6% positive rate ✅ |
+| NOT_INTERESTED | 2 | 3.7% |
+| UNSUBSCRIBE | 1 | 1.9% (under threshold) |
 | OUT_OF_OFFICE | 2 | — |
 | WRONG_PERSON | 1 | — |
 | Active INTERESTED pipeline | 3 leads | — |
@@ -17,116 +17,136 @@
 
 ---
 
-## TODAY'S SINGLE MOST IMPORTANT EVENT
+## MOST IMPORTANT THING TODAY
 
-**Claire's call — 14:00 TODAY (lead 3, Westfield Hair & Beauty, Leeds)**
+**Confirm Claire's call outcome and act accordingly.**
 
-This is the first real conversion moment of the campaign. Everything else today is secondary. All audit tasks for lead 3 are complete (westfield_hair.json, ranking.json, competitors.json, booking_options.json). Proposals are ready (Option A: £150, Option B: £350).
+The call was Tuesday 14:00. Today is Thursday. If she deferred — the proposal nudge is due today. If she committed — confirm delivery is in progress. If there's been no post-call contact at all — check calendar and reschedule if the call was missed.
 
-**Call strategy recap:**
-- Open by asking Claire to describe the booking problem in her own words — she volunteered it, let her confirm it
-- Use competitor data (lead_3_competitors.json) to make the gap concrete — name one or two Leeds salons above her that DO have online booking
-- Present Option B (£350 — SSL + mobile + Fresha booking widget) as the natural recommendation; Option A (£150 — SSL + mobile only) as the minimum
-- Fresha is free for the salon — customers pay a small booking fee per appointment. Zero monthly cost objection.
-- Close with a direct question: "Which of those feels like the better fit?"
-- If she defers: send proposal PDF within 30 minutes of hanging up. Follow up Thursday only.
+This is the campaign's first conversion window. Every hour of delay on this reduces conversion probability. Handle it before touching anything else.
 
 ---
 
 ## Priority Order Today
 
-### URGENT (before 13:30)
-1. **Final audit check** — confirm lead_3 audit files are complete and proposal is ready. Last review before the call.
-2. **Check IMAP** for overnight/morning replies from Rob (lead 22), Tom (lead 1), and any cold leads before starting new sends.
+### CRITICAL (first thing)
+1. **Check IMAP for Claire (lead 3)** — confirm call outcome, send proposal nudge if deferred, confirm conversion if committed, or reschedule if missed.
+2. **Check IMAP for Rob (lead 22)** — did he respond to Tuesday nudge? If yes: send scope doc or book call.
+3. **Check IMAP for Tom (lead 1)** — did he respond to Wednesday nudge? If yes: confirm call slot Thursday/Friday.
 
-### HIGH PRIORITY (morning window, 09:00–12:30)
-3. **Send fu_016** (David Harewood, Day-7 new angle) — send between 09:00 and 11:00. OOO expired yesterday. New angle: Google Business Profile gap. Check IMAP first — if David has already replied, do not send.
-4. **Enrich leads 57 and 59** — direct email pattern (mike@, tony@). Try these first — quick confirmation. If confirmed, send emails for leads 57 and 59 before 12:30, staggered by 25 minutes.
-5. **Enrich lead 58** (The Old Court Solicitors) — crawl About/Team page for solicitor name and email. SRA register fallback. info@ acceptable if no direct email found.
+### HIGH PRIORITY (morning, 09:00–12:00)
+4. **Send all 7 pre-written follow-ups** from followup_queue.json — all DUE TODAY. Stagger 20 minutes apart. Check IMAP for each lead before sending — suppress any that have replied.
+   - Send order: fu_022 (Linda) → fu_023 (Craig) → fu_024 (Pete — Easter urgency) → fu_025 (Neil) → fu_017 (Steve) → fu_018 (Pontefract Pharmacy) → fu_019 (Ann)
+5. **Pull leads 42, 44, 46 from database** — write Day-7 new angles for TOMORROW (due 2026-04-10). Cannot wait until morning — write copy today and add to followup_queue.json.
 
-### STANDARD (post-call, afternoon)
-6. **Process Claire call outcome** — confirm/defer/decline. Send proposal PDF or invoice within 30 mins if applicable. Update lead_3 status in CRM.
-7. **Enrich lead 60** (Pocklington Fine Furniture, James Hewitt) — defer to Wednesday if 57-59 enrichment consumed morning time. Not urgent.
-8. **Rob nudge (lead 22)** — if no response from Rob by 17:00, send fu_022_ROB_NUDGE: "Happy to send a one-page scope doc if that makes it easier to confirm, Rob." Short, 2 lines.
-
-### MONITOR
-9. **Tom (lead 1)** — watch for call booking reply. If Tom replies today, confirm Thursday or Friday call (not Tuesday — today is Claire's call, not Wednesday if reserved). Nudge due tomorrow EOD if silent.
-10. **Lead 12 (Bronte Country Cottages)** — OOO until 8 April (TOMORROW). Do not contact today. Sequence resumes tomorrow.
+### STANDARD (afternoon)
+6. **Run Batch 5 scrape** (Ryedale: Malton, Pickering, Helmsley) — 15-20 leads. Without this, new-lead pipeline is empty. Target 4-5 sends by 2026-04-13.
+7. **Offline enrichment** — try leads 49, 51, 53, 54 (Companies House / phone calls). These have been blocked for 9+ days.
+8. **Pre-write fu_027, fu_028, fu_029** Day-3 bumps (leads 57-59 — DUE TOMORROW) — already in followup_queue.json, just confirm HANDS can execute.
 
 ---
 
-## What Changed Since Yesterday (2026-04-06)
+## What Changed Since Last BRAIN Run (2026-04-07)
 
-- **Leads 50, 52, 55, 56 sent** (per yesterday's plan — assumed complete by HANDS).
-- **Day-3 bumps sent** (leads 42, 44, 46 — yesterday's three due items).
-- **No new replies overnight** — expected for Monday evening UK B2B.
-- **Claire call confirmed for TODAY** — confirmation email sent Saturday, calendar invite out.
-- **Lead 5 (David Harewood)** — OOO expired Monday. Day-7 email due today, not yesterday (gave him one settling-back day).
-- **Scarborough batch (57-59)** — still pending enrichment. HANDS enrichment run required this morning.
-- **4 new Day-3 bumps scheduled for 2026-04-09** (leads 50, 52, 55, 56).
-- **3 Day-7 new angles scheduled for 2026-04-09** (leads 30, 31, 32).
+- **Claire's call happened Tuesday 14:00** — outcome not confirmed in data. Treat as top priority.
+- **Leads 57-60 assumed sent Tue/Wed** — Day-3 bumps due Fri/Sat (fu_027-030 pre-written).
+- **Rob nudge sent Tuesday EOD** — awaiting response.
+- **Tom nudge sent Wednesday EOD** — awaiting response (only 12-24 hours ago).
+- **David Harewood Day-7 email sent Tuesday** — monitoring. Day-14 breakup due 2026-04-14.
+- **Lead 12 (Bronte Country Cottages) Day-7 sent Wednesday** — monitoring. Breakup due 2026-04-15.
+- **No new replies in new_replies.json since 2026-04-04** — expected. Thursday morning is prime B2B reply window.
 
 ---
 
 ## Pattern Intelligence Update
 
-### Day 10 view — what the data is telling us
+### Day 12 — What the data is telling us
 
-**Conversion is imminent for the first time.** Three INTERESTED leads in active pipeline. Claire's call today is a strong signal — she self-identified the pain, confirmed the appointment, and articulated the problem. This profile (pain acknowledged → call confirmed) has converted in other cold email campaigns at roughly 65-70%.
+**SSL signal dominance is confirmed and holding.** All three INTERESTED leads came from SSL-signal emails (PAS framework). The Scarborough batch (57, 58, 59) continues this pattern — watch for replies in the next 24-72 hours.
 
-**SSL signal continues to dominate acquisition.** All three INTERESTED replies came from SSL-type emails. The Scarborough batch (57-59) is entirely SSL-signal — pattern recognition supports prioritising these above other pending leads.
+**Day-3 bump performance is the next data point to watch.** Today's four Day-3 bumps (leads 50, 52, 55, 56) are the first batch from the East Yorkshire territory. If any reply positively to a bump, it validates the sequence for this geographic cohort.
 
-**PAS framework is the clear leader.** 3/3 INTERESTED replies from PAS emails. BAB has 0 positive replies (small sample, continues to be used for no-website/mobile leads where it's the most natural fit). AIDA is unproven but Linda Walsh (lead 52) and Craig Lawson (lead 55) are high-reputation leads — watch closely.
+**The "new angle" Day-7 strategy is proven.** Tom (lead 1) replied to his Day-7 quote-form angle, not the original SSL email. Ann (Castleford Carpets, fu_019) gets a conversion-gap angle today — this is our highest-probability Day-7 send given the clear commercial framing shift.
 
-**Day-7 new angle strategy remains the key unlock.** Tom (lead 1) replied to the Day-7 email (quote form angle), not the original Day-0 SSL email. The initial email plants the flag; the Day-7 shift triggers the action. This validates the angle rotation approach — never rephrase the original, always find a genuinely different pain point.
+**Pipeline stall risk is emerging.** No new scrape since leads 57-61. Without Batch 5, new sends will stop by next week. This is the single biggest strategic risk right now — more important than any individual follow-up.
 
-**Subject line format A is winning (3-0 INTERESTED)** but sample size is still low (need 50 per variant for confidence). Continue running both variants. Lead 58 today is B-variant (no owner name available) — useful natural data point.
+**Easter is 9 days away.** All Batch 5 sends must go out by 2026-04-16 (Wednesday) to allow Day-3 bumps before Good Friday pause on 2026-04-18. Day-7s from Batch 5 will then land on 2026-04-23 (post-Easter). Plan accordingly.
 
 ---
 
-## A/B Test Status (Day 10)
+## A/B Test Status (Day 12)
 
-| Variable | Variant A | Variant B | Current Result | Action |
+| Variable | Variant A | Variant B | Result | Action |
 |---|---|---|---|---|
-| Subject format | `[Name] — [issue]` | `[Business] — [issue]` | A winning (3 vs 0 INTERESTED) | Continue both — need 50 sends per variant |
-| Framework | PAS | BAB | PAS winning (3 vs 0) | PAS default; BAB for no-website/mobile only |
-| CTA | "Reply YES" | "Book a 15-min call" | Inconclusive (2 vs 1) | Need 30+ more sends to call this |
-| Day-7 angle | Reframe pain point | Reminder of original | Day-7 reframe winning (Tom) | Always shift angle at Day 7 |
+| Subject format | `[Name] — [issue]` | `[Business] — [issue]` | A 3 INTERESTED, B 0 | Continue both — need 50 sends/variant. Lead 58 (no name) is natural B test. |
+| Framework | PAS | BAB | PAS 3 INTERESTED, BAB 0 | PAS default. BAB only for social/no-website. |
+| CTA style | "Reply and I'll look" | "Happy to run a free check" | Inconclusive | Need 30+ more sends to read this. |
+| Day-7 angle | New pain point | Same pain reframed | New angle winning (Tom) | Always shift — never rephrase. |
+| Day-3 bump angle | Seasonal urgency (Pete) | Simple bump (Neil, Linda) | No data yet — today's sends | Watch reply rates this week. |
 
 ---
 
-## Follow-Up Calendar (next 7 days)
+## Follow-Up Calendar (next 10 days)
 
 | Date | Items Due | Notes |
 |---|---|---|
-| **TODAY (07 Apr)** | fu_016 (David D7) + Rob nudge (conditional) | Send David AM; Rob nudge only if silent by 17:00 |
-| **08 Apr (Wed)** | Tom nudge (conditional) | Only if Tom hasn't booked call |
-| **09 Apr (Thu)** | 7 items: leads 30, 31, 32 (D7) + 50, 52, 55, 56 (D3) | Heavy day — prep all 7 copy now |
-| **10 Apr (Fri)** | Leads 57, 58, 59 Day-3 bumps (if sent today) | Pre-write now |
-| **11 Apr (Sat)** | Lead 8 (Graham, Ilkley Ironmongery) breakup | Pre-written |
+| **TODAY (09 Apr)** | 7 items (4 Day-3 + 3 Day-7) | All pre-written. IMAP check first. |
+| **10 Apr (Fri)** | fu_027, fu_028, fu_029 (Day-3 Scarborough) + leads 42/44/46 Day-7 | Copy needed for 42/44/46 — HANDS pull today |
+| **11 Apr (Sat)** | fu_030 (lead 60 Day-3) + fu_007_updated (lead 8 breakup) | Two items — Saturday fine for trades/retail |
 | **12 Apr (Sun)** | Nothing | — |
-| **13 Apr (Mon)** | Lead 60 Day-3 bump (if sent Wed) | — |
-| **19 Apr** | Leads 4, 6 breakup emails | Pre-written |
-
-**Pre-write now:** Day-3 bumps for leads 57, 58, 59 (due 2026-04-10). Add to followup_queue.json before end of session.
+| **13 Apr (Mon)** | Rob/Tom final decision — assess if still no response | Do not send — assess only |
+| **14 Apr (Tue)** | fu_031 (David Harewood Day-14 breakup) | Check IMAP first |
+| **15 Apr (Wed)** | fu_032 (Bronte Cottages Day-14 breakup) | Check IMAP first |
+| **16 Apr (Thu)** | Batch 5 final sends cutoff | All Batch 5 must go out today at latest |
+| **17 Apr (Fri)** | Batch 5 Day-3 bumps (if sent 13th) | Pre-write when batch known |
+| **18 Apr (Fri)** | **GOOD FRIDAY — NO OUTREACH** | — |
+| **19 Apr (Sat)** | fu_020 (Rachel, Skipton breakup) + fu_021 (Boroughbridge breakup) | Pre-written |
+| **21 Apr (Mon)** | **EASTER MONDAY — NO OUTREACH** | — |
 
 ---
 
 ## Conversion Focus This Week
 
 ### Lead 3 (Claire) — £350 target
-- **Call at 14:00 today.** Likely conversion if audit shows clear booking gap (it does).
-- Best outcome: on-call commitment, invoice sent same day, 50% deposit within 24 hours.
-- Acceptable outcome: "I'll look over the proposal" → follow up Thursday.
+- Call was Tuesday. Outcome critical to confirm TODAY.
+- Proposal nudge due today if she deferred. One nudge only — do not over-chase.
+- If committed: first revenue this campaign. Log and proceed to delivery.
 
 ### Lead 22 (Rob) — £550-675 target
-- Silent since scope reply Saturday. Nudge due today EOD.
-- Do NOT discount. His framing ("sort the whole thing in one go") signals commercial appetite.
-- If nudge gets a response: offer a 15-min scoping call Thursday.
+- Nudge sent Tuesday. If replied: scope call this week, send doc today.
+- If silent through Friday: reassess Monday. Do NOT discount to accelerate.
+- The bundle intent ("sort the whole thing in one go") is a strong buyer signal.
 
 ### Lead 1 (Tom) — £100-150 target
-- Pricing sent Saturday. Simple decision. Trades people often respond mid-week.
-- Watch for call booking today or tomorrow. Nudge tomorrow if silent.
+- Nudge sent Wednesday (12-24 hours ago). Most likely to reply today or tomorrow.
+- Simple job, clear price — decisions like this often happen on Thursday mornings.
+- Confirm call slot the moment he replies.
+
+---
+
+## Pipeline Health
+
+**Current state:** Strong engagement rate, first conversion imminent, but new-lead pipeline is dry. The campaign is at a fork: if Batch 5 scrape runs today, next week maintains momentum. If not, the pipeline has a gap from 2026-04-16 onwards.
+
+**Target weekly volume:** 10-15 new sends / week. Current week: ~7 follow-ups only (no new sends). Below target. Batch 5 recovers this.
+
+**Geographic coverage:**
+- North Yorkshire: active (Ripon, Wetherby, Skipton, Harrogate, Scarborough)
+- West Yorkshire: active (Leeds, Halifax, Pontefract, Castleford, Sowerby Bridge)
+- East Yorkshire: launched (Beverley, Bridlington, Pocklington)
+- Ryedale: NOT YET STARTED — this is Batch 5 territory
+
+---
+
+## Easter Compliance Plan
+
+| Action | Deadline |
+|---|---|
+| All Batch 5 initial sends | By 2026-04-16 (Wednesday) |
+| Batch 5 Day-3 bumps | 2026-04-19 or 2026-04-22 (avoid 18/21) |
+| No sends | 2026-04-18 (Good Friday) and 2026-04-21 (Easter Monday) |
+| Resume normal schedule | 2026-04-22 (Tuesday) |
+| Update active_strategy.md | 2026-04-12 (next weekly review) |
 
 ---
 
@@ -134,47 +154,28 @@ This is the first real conversion moment of the campaign. Everything else today 
 
 **Status: Active (launched Day 7)**
 
-| Lead | Business | Status | Next Action |
+| Lead | Business | LinkedIn Status | Next Action |
 |---|---|---|---|
-| 4 | Skipton Garden Design (Rachel) | Connection sent | Await acceptance |
-| 6 | Boroughbridge Plumbing | Connection sent | Await acceptance |
-| 8 | Ilkley Ironmongery (Graham) | Connection pending | — |
-| 9–20 | Various batch-1 no-replies | Evaluate linkedin_search_plan.json | |
+| 4 | Skipton Garden Design (Rachel) | Connection sent 2026-04-07 | Await acceptance |
+| 6 | Boroughbridge Plumbing | Connection sent 2026-04-07 | Await acceptance |
+| 8 | Ilkley Ironmongery (Graham) | Connection pending | Breakup email 2026-04-11 — remove LinkedIn if breakup sent |
+| See linkedin_search_plan.json | Batch 1 no-replies | Varies | Reference file for full status |
 
-Do not target leads 1, 2, 3, 5, 7, 22 — all in active email pipeline.
+Do not target: leads 1, 2, 3, 5, 7, 22 — all in active email pipeline or closed.
 
 ---
 
 ## Compliance Notes
 
-- Lead 19 (Summit Fitness) suppressed — no follow-ups.
-- Lead 2 (Nidderdale Pet Supplies) — LOST. No further contact.
-- Bronte Country Cottages (lead 12) — OOO. Resume tomorrow 8 April.
+- Lead 19 (Summit Fitness, Otley) — permanently suppressed. No contact.
+- Lead 2 (Nidderdale Pet Supplies) — LOST. No contact.
+- Lead 7 — suppressed. No contact.
 - All today's sends: business emails only, B2B legitimate interest basis.
-- **Easter pause planning:** Good Friday 18 April and Easter Monday 21 April — no outreach. Pre-schedule all 16-17 April sends in advance. Flag in next weekly strategy update (due 12 April).
-- **Rob (lead 22) and Tom (lead 1):** Both INTERESTED leads replied to outreach — continued contact is engaged communication, not cold outreach. GDPR basis: legitimate interest confirmed by active engagement.
+- Suppression list check mandatory before each send.
+- GDPR Article 21 — any unsubscribe to be processed within 24 hours.
+- Easter planning: Good Friday 18 April and Easter Monday 21 April — no outreach days.
 
 ---
 
-## Scarborough Batch Progress
-
-| Lead | Business | Status | Email Target | Send Date |
-|---|---|---|---|---|
-| 57 | Scarborough Bay Plumbing | Pending enrichment | mike@scarboroughbayplumbing.co.uk | TODAY if confirmed |
-| 58 | The Old Court Solicitors | Pending enrichment | info@ or direct from team page | TODAY if confirmed |
-| 59 | Scarborough Roofing Specialists | Pending enrichment | tony@scarboroughroofing.co.uk | TODAY if confirmed |
-| 60 | Pocklington Fine Furniture | Pending enrichment | james@pocklingtonfurniture.co.uk | Wed 9 Apr if enriched today |
-
----
-
-## Tomorrow's Prep (2026-04-08, Wednesday)
-
-- **Post-Claire follow-up** if she didn't commit on the call — send proposal PDF nudge if not already sent.
-- **Lead 12 (Bronte Country Cottages)** — OOO lifts today. Send Day-7 new angle tomorrow. Check enrichment file for email and pre-written angle.
-- **Tom nudge** (lead 1) — if no call booking by EOD today, send 10-min call offer Wednesday morning.
-- **2026-04-09 queue prep** — confirm all 7 items ready: Day-7 new angles for leads 30, 31, 32 (pre-written) and Day-3 bumps for leads 50, 52, 55, 56 (pre-written). Verify IMAP for any replies before sending.
-
----
-
-*Generated by OUTLOCAL BRAIN layer — 2026-04-07 07:30 UTC*
-*HANDS layer: start with IMAP check, then David Harewood Day-7 email, then Scarborough enrichment. Leave 13:00-14:30 clear for Claire call prep and the call itself.*
+*Generated by OUTLOCAL BRAIN layer — 2026-04-09 07:30 UTC*
+*HANDS layer: start with IMAP check (Claire → Rob → Tom), then cold follow-ups 09:00–12:00, then Batch 5 scrape PM. Leads 42/44/46 Day-7 copy needed before close of business today.*

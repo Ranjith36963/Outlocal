@@ -1,144 +1,71 @@
 [
   {
-    "plan_date": "2026-04-07",
-    "generated_at": "2026-04-07T07:30:00Z",
-    "note": "BRAIN layer — Day 10 email plan. Four new sends contingent on HANDS confirming email addresses for Scarborough batch. No purely-new leads scraped today — plan is enrichment-gated. Stagger all sends 20-30 mins apart. Do NOT email leads 1, 2, 3, 5, 19, 22 — they are in pipeline/suppressed.",
-    "do_not_email": [1, 2, 3, 5, 19, 22],
-    "sends_today": [
-      {
-        "lead_id": 57,
-        "business_name": "Scarborough Bay Plumbing & Heating",
-        "owner_name": "Mike Rawlings",
-        "town": "Scarborough",
-        "email_to_confirm": "mike@scarboroughbayplumbing.co.uk",
-        "score": 70,
-        "send_priority": 1,
-        "send_condition": "Email confirmed by HANDS — send immediately after confirmation",
-        "framework": "pas",
-        "signal_type": "ssl",
-        "signal_text": "scarboroughbayplumbing.co.uk loads over HTTP — Chrome shows 'Not Secure' warning to every visitor, including homeowners searching for an emergency plumber",
-        "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
-        "subject": "Mike — Chrome flags your Scarborough plumber site as unsafe",
-        "email_body": "Hi Mike,\n\nAnyone who finds scarboroughbayplumbing.co.uk right now sees a 'Not Secure' warning in their browser before they've had a chance to read about you.\n\nFor domestic plumbing, homeowners often check the website before calling — especially for bigger jobs. That warning tells them something's not right, and most move on to the next result.\n\nSSL is free to install and usually takes about 20 minutes. I've sorted this for a couple of East Yorkshire tradespeople recently — happy to check which host you're on and send you the exact steps.\n\nReply and I'll take a look.\n\n[Your name]",
-        "cta": "Reply and I'll take a look",
-        "ab_test_variant": "A",
-        "subject_format": "first_name_issue",
-        "followup_schedule": {
-          "day_3": "2026-04-10",
-          "day_7": "2026-04-14",
-          "day_14": "2026-04-21"
-        }
-      },
-      {
-        "lead_id": 58,
-        "business_name": "The Old Court Solicitors",
-        "town": "Scarborough",
-        "email_to_confirm": "info@oldcourtsolicitors.co.uk",
-        "note_on_email": "No owner name — prefer direct email from team/about page. Fall back to info@ only if none found.",
-        "score": 68,
-        "send_priority": 2,
-        "send_condition": "Email confirmed by HANDS — send after lead 57 with 25-min gap",
-        "framework": "pas",
-        "signal_type": "ssl_mobile",
-        "signal_text": "HTTP site, no mobile support — solicitors asking clients to submit enquiries via an unsecured, non-mobile-optimised page",
-        "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning on a site collecting client enquiries",
-        "subject": "The Old Court Solicitors — your client enquiry form has an SSL issue",
-        "email_body": "Hi,\n\noldcourtsolicitors.co.uk runs over HTTP, which means Chrome shows a 'Not Secure' warning to anyone who visits — before they've had a chance to see who you are or what you do.\n\nFor a solicitors' practice, this is particularly sensitive. Prospective clients filling in enquiry forms on an unsecured page may think twice before submitting their name, contact details, or the nature of their legal matter. The ICO's GDPR guidance recommends encryption for any site collecting personal data.\n\nAn SSL certificate fixes this — it's usually free and takes about 20 minutes to install. The mobile issue is a separate but straightforward fix.\n\nI help professional services firms sort both — happy to run a quick check on the site and send you what I find.\n\n[Your name]",
-        "cta": "Reply and I'll run a free check on the site",
-        "ab_test_variant": "B",
-        "subject_format": "business_name_issue",
-        "personalisation_note": "No owner name — address to 'Hi' or 'Hi there'. Use business name in subject.",
-        "followup_schedule": {
-          "day_3": "2026-04-10",
-          "day_7": "2026-04-14",
-          "day_14": "2026-04-21"
-        }
-      },
-      {
-        "lead_id": 59,
-        "business_name": "Scarborough Roofing Specialists",
-        "owner_name": "Tony Shields",
-        "town": "Scarborough",
-        "email_to_confirm": "tony@scarboroughroofing.co.uk",
-        "score": 67,
-        "send_priority": 3,
-        "send_condition": "Email confirmed by HANDS — send after lead 58 with 25-min gap",
-        "framework": "pas",
-        "signal_type": "ssl",
-        "signal_text": "scarboroughroofing.co.uk serves over HTTP — domestic customers researching a roofer see a 'Not Secure' warning before reading a single review or testimonial",
-        "pain_point": "Website lacks SSL certificate — browsers show 'Not Secure' warning",
-        "subject": "Tony — Chrome flags your Scarborough roofing site as unsafe",
-        "email_body": "Hi Tony,\n\nAnyone who visits scarboroughroofing.co.uk sees a 'Not Secure' warning in their browser before they've read a single thing about you.\n\nRoofing is a high-value job and homeowners take their time researching. A security warning at that point says the opposite of professional and trustworthy — and most people will click away rather than find out more.\n\nSSL is free on most hosting plans and takes about 20 minutes to switch on. I've sorted this recently for a couple of other Yorkshire trades businesses.\n\nReply and I'll check which host you're on and send you the exact steps.\n\n[Your name]",
-        "cta": "Reply and I'll check which host you're on and send you the exact steps",
-        "ab_test_variant": "A",
-        "subject_format": "first_name_issue",
-        "followup_schedule": {
-          "day_3": "2026-04-10",
-          "day_7": "2026-04-14",
-          "day_14": "2026-04-21"
-        }
-      },
-      {
-        "lead_id": 60,
-        "business_name": "Pocklington Fine Furniture",
-        "owner_name": "James Hewitt",
-        "town": "Pocklington",
-        "email_to_confirm": "james@pocklingtonfurniture.co.uk",
-        "score": 62,
-        "send_priority": 4,
-        "send_condition": "Email confirmed by HANDS — lower priority, defer to Wednesday if enrichment time runs short",
-        "framework": "bab",
-        "signal_type": "mobile",
-        "signal_text": "pocklingtonfurniture.co.uk fails the mobile test — furniture shoppers browsing on a phone cannot navigate or view products properly",
-        "pain_point": "Website not mobile-friendly — losing mobile visitors during the browsing phase",
-        "subject": "James — Pocklington Fine Furniture's website isn't mobile-friendly",
-        "email_body": "Hi James,\n\nRight now, pocklingtonfurniture.co.uk doesn't pass Google's mobile test — which means anyone browsing for furniture on their phone in Pocklington is getting a broken layout when they find you.\n\nFor a showroom business, the mobile site is often the first impression — people browse on their phone on the sofa, then visit in person. A site that doesn't load correctly on mobile loses you before you've had a chance to show them what you stock.\n\nThe fix is usually straightforward and doesn't require a full redesign.\n\nHappy to run a free mobile test and send you the report — reply and I'll put it together.\n\n[Your name]",
-        "cta": "Happy to run a free mobile test and send you the report",
-        "ab_test_variant": "A",
-        "subject_format": "first_name_issue",
-        "followup_schedule": {
-          "day_3": "2026-04-10",
-          "day_7": "2026-04-14",
-          "day_14": "2026-04-21"
-        }
-      }
-    ],
+    "plan_date": "2026-04-09",
+    "generated_at": "2026-04-09T07:30:00Z",
+    "note": "BRAIN layer — Day 12 email plan. NO NEW SENDS TODAY. All active sends are pre-written follow-ups — see followup_queue.json (7 items due). Blocked leads (49, 51, 53, 54) require offline enrichment before they can be emailed. Next new sends require Batch 5 (Ryedale) scrape — run today or tomorrow. Do NOT email leads in do_not_email list.",
+    "do_not_email": [1, 2, 3, 5, 7, 12, 19, 22, 30, 31, 32, 50, 52, 55, 56, 57, 58, 59, 60],
+    "sends_today": [],
     "blocked_sends": [
       {
         "lead_id": 49,
         "business_name": "East Riding Builders Ltd",
+        "score_estimate": 65,
         "status": "blocked_no_email",
-        "blocker": "No direct email found — Companies House search required"
+        "days_blocked": 9,
+        "blocker": "No direct email. Companies House lookup needed for director name.",
+        "action": "HANDS: search beta.companieshouse.gov.uk — try [firstname]@eastridingbuilders.co.uk pattern once director name found.",
+        "potential_framework": "pas",
+        "potential_signal": "ssl or mobile — check when unblocked"
       },
       {
         "lead_id": 51,
         "business_name": "Driffield Garden Centre",
-        "status": "blocked_no_email",
-        "blocker": "Only contact form found — phone call to centre needed"
+        "score_estimate": 60,
+        "status": "blocked_contact_form_only",
+        "days_blocked": 9,
+        "blocker": "No direct email — contact form only. Phone call required.",
+        "action": "HANDS: call the centre. Ask for the owner/manager. Explain you tried to send a note about the website and want to confirm it went to the right person.",
+        "potential_framework": "pas"
       },
       {
         "lead_id": 53,
         "business_name": "Bridlington Bay Lettings",
-        "status": "blocked_no_email",
-        "blocker": "Agent listing shows only office phone — direct call or Rightmove agent profile needed"
+        "score_estimate": 58,
+        "status": "blocked_no_direct_email",
+        "days_blocked": 9,
+        "blocker": "Office phone only on Rightmove listing. Need agent email.",
+        "action": "HANDS: check Rightmove agent directory and Zoopla. Try info@bridlingtonbaylettings.co.uk as fallback.",
+        "potential_framework": "pas"
       },
       {
         "lead_id": 54,
         "business_name": "The Wolds Inn",
+        "score_estimate": 58,
         "status": "blocked_no_email",
-        "blocker": "Facebook bio empty — try Google Maps phone number"
+        "days_blocked": 9,
+        "blocker": "Facebook empty, no email on Maps.",
+        "action": "HANDS: try info@thewoldsinn.co.uk. If bounced, try manager@thewoldsinn.co.uk. Low priority.",
+        "potential_framework": "pas"
       }
     ],
+    "batch_5_preview": {
+      "status": "scrape_required",
+      "target_area": "Ryedale District (Malton, Pickering, Helmsley, Kirkbymoorside)",
+      "expected_leads": 18,
+      "expected_sends_from_batch": "5-8 (after enrichment and scoring)",
+      "target_send_date": "2026-04-13 to 2026-04-16",
+      "easter_cutoff": "2026-04-16 — no sends on Good Friday 2026-04-18 or Easter Monday 2026-04-21",
+      "note": "BRAIN will generate full Batch 5 email copy once scrape data is available. HANDS: run scrape today and return data."
+    },
     "send_summary": {
-      "total_ready_contingent": 4,
-      "total_blocked": 4,
-      "maximum_sends_today": 4,
-      "minimum_sends_today": 0,
-      "expected_sends_today": "2-3 (57 and 59 have owner name — direct email pattern highly likely to work)",
-      "stagger_interval_minutes": 25,
-      "send_window": "09:00-13:00 UK time — avoid post-lunch for cold email open rates",
-      "ab_test_notes": "Lead 58 assigned variant B (business name subject) as no owner name — useful data point to add to A/B test tracking",
-      "compliance": "All sends to business emails, B2B legitimate interest basis. No residential data. Check suppression list before each send."
+      "total_new_sends_today": 0,
+      "total_follow_up_sends_today": 7,
+      "follow_ups_in_queue": "See followup_queue.json — 7 items DUE TODAY",
+      "stagger_interval_minutes": 20,
+      "send_window": "09:00-12:30 UK time for Day-3 bumps (shorter, lower friction). Day-7 new angles: 09:30-11:30.",
+      "check_imap_first": true,
+      "imap_note": "Check IMAP before each send. Suppress any lead that has replied since last check.",
+      "compliance": "All sends B2B legitimate interest. Check suppression list before each send. Lead 19 (Summit Fitness) permanently suppressed."
     }
   }
 ]
