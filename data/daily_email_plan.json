@@ -1,71 +1,146 @@
 [
   {
-    "plan_date": "2026-04-09",
-    "generated_at": "2026-04-09T07:30:00Z",
-    "note": "BRAIN layer — Day 12 email plan. NO NEW SENDS TODAY. All active sends are pre-written follow-ups — see followup_queue.json (7 items due). Blocked leads (49, 51, 53, 54) require offline enrichment before they can be emailed. Next new sends require Batch 5 (Ryedale) scrape — run today or tomorrow. Do NOT email leads in do_not_email list.",
+    "plan_date": "2026-04-10",
+    "generated_at": "2026-04-10T07:00:00Z",
+    "day_number": 13,
+    "note": "BRAIN layer — Day 13 email plan. MEDIUM SEND DAY: 6 follow-up sends — 3 Day-3 bumps (leads 57, 58, 59) + 3 Day-7 new angles (leads 42, 44, 46). No new sends: Batch 5 (Ryedale) not yet received. All copy pre-written and ready in followup_queue.json. Do NOT email leads in do_not_email list.",
     "do_not_email": [1, 2, 3, 5, 7, 12, 19, 22, 30, 31, 32, 50, 52, 55, 56, 57, 58, 59, 60],
-    "sends_today": [],
+    "note_do_not_email": "Leads 1, 22, 3 are INTERESTED — active buying pipeline. Lead 19 permanently suppressed. Lead 2 LOST. Lead 7 suppressed. Leads 12, 5 already received Day-7, awaiting breakup timing. Leads 30, 31, 32 received Day-7 yesterday. Leads 50, 52, 55, 56 received Day-3 bumps yesterday. Leads 57, 58, 59, 60 are the ones getting bumped TODAY (fu_027, fu_028, fu_029, fu_030 not yet due).",
+    "sends_today": [
+      {
+        "followup_id": "fu_027",
+        "type": "day_3_bump",
+        "lead_id": 57,
+        "business_name": "Scarborough Bay Plumbing & Heating",
+        "owner_name": "Mike Rawlings",
+        "lead_email": "mike@scarboroughbayplumbing.co.uk",
+        "send_order": 1,
+        "send_window": "09:00-10:00",
+        "subject": "Re: Mike — Chrome flags your Scarborough plumber site as unsafe",
+        "notes": "Day-3 bump. Check IMAP before sending — suppress if Mike has replied."
+      },
+      {
+        "followup_id": "fu_028",
+        "type": "day_3_bump",
+        "lead_id": 58,
+        "business_name": "The Old Court Solicitors",
+        "owner_name": null,
+        "lead_email": "info@oldcourtsolicitors.co.uk",
+        "send_order": 2,
+        "send_window": "09:20-10:20",
+        "subject": "Re: The Old Court Solicitors — your client enquiry form has an SSL issue",
+        "notes": "Day-3 GDPR bump. Check IMAP. Reinforce data-protection angle. Stagger 20 mins after fu_027."
+      },
+      {
+        "followup_id": "fu_029",
+        "type": "day_3_bump",
+        "lead_id": 59,
+        "business_name": "Scarborough Roofing Specialists",
+        "owner_name": "Tony Shields",
+        "lead_email": "tony@scarboroughroofing.co.uk",
+        "send_order": 3,
+        "send_window": "09:40-10:40",
+        "subject": "Re: Tony — Chrome flags your Scarborough roofing site as unsafe",
+        "notes": "Day-3 bump. Check IMAP. Stagger 20 mins after fu_028."
+      },
+      {
+        "followup_id": "fu_033",
+        "type": "day_7_new_angle",
+        "lead_id": 42,
+        "business_name": "Blossom Beauty Studio",
+        "owner_name": "Sarah",
+        "lead_email": "HANDS: retrieve from database for lead_id 42",
+        "send_order": 4,
+        "send_window": "10:30-11:30",
+        "framework": "pas",
+        "original_pain_point": "Website lacks SSL + not mobile-friendly",
+        "new_angle": "google_local_ranking_gap",
+        "subject": "One more thing I spotted for Blossom Beauty Studio — Sarah",
+        "notes": "Day-7 new angle. IMAP check. Allow 30-min gap after Day-3 bumps before starting Day-7 batch."
+      },
+      {
+        "followup_id": "fu_034",
+        "type": "day_7_new_angle",
+        "lead_id": 44,
+        "business_name": "Meadowbrook Vets",
+        "owner_name": "Dr. James Rowe",
+        "lead_email": "HANDS: retrieve from database for lead_id 44",
+        "send_order": 5,
+        "send_window": "11:00-12:00",
+        "framework": "pas",
+        "original_pain_point": "No social media presence — 142 Google reviews unamplified",
+        "new_angle": "local_search_visibility_and_trust",
+        "subject": "Something else I spotted for Meadowbrook Vets — Dr Rowe",
+        "notes": "Day-7 new angle. IMAP check. Use formal 'Dr Rowe' form of address. Stagger 20 mins after fu_033."
+      },
+      {
+        "followup_id": "fu_035",
+        "type": "day_7_new_angle",
+        "lead_id": 46,
+        "business_name": "Thornfield Electricals",
+        "owner_name": "Mike Thornfield",
+        "lead_email": "HANDS: retrieve from database for lead_id 46",
+        "send_order": 6,
+        "send_window": "11:20-12:20",
+        "framework": "pas",
+        "original_pain_point": "Website lacks SSL certificate",
+        "new_angle": "local_seo_google_maps_ranking",
+        "subject": "One more thing I spotted for Thornfield Electricals — Mike",
+        "notes": "Day-7 new angle. IMAP check. Trades audience — keep it short and commercial. Stagger 20 mins after fu_034."
+      }
+    ],
     "blocked_sends": [
       {
         "lead_id": 49,
         "business_name": "East Riding Builders Ltd",
         "score_estimate": 65,
         "status": "blocked_no_email",
-        "days_blocked": 9,
-        "blocker": "No direct email. Companies House lookup needed for director name.",
-        "action": "HANDS: search beta.companieshouse.gov.uk — try [firstname]@eastridingbuilders.co.uk pattern once director name found.",
-        "potential_framework": "pas",
-        "potential_signal": "ssl or mobile — check when unblocked"
+        "days_blocked": 10,
+        "action": "HANDS: Companies House director name search."
       },
       {
         "lead_id": 51,
         "business_name": "Driffield Garden Centre",
         "score_estimate": 60,
         "status": "blocked_contact_form_only",
-        "days_blocked": 9,
-        "blocker": "No direct email — contact form only. Phone call required.",
-        "action": "HANDS: call the centre. Ask for the owner/manager. Explain you tried to send a note about the website and want to confirm it went to the right person.",
-        "potential_framework": "pas"
+        "days_blocked": 10,
+        "action": "HANDS: phone call to get direct email."
       },
       {
         "lead_id": 53,
         "business_name": "Bridlington Bay Lettings",
         "score_estimate": 58,
         "status": "blocked_no_direct_email",
-        "days_blocked": 9,
-        "blocker": "Office phone only on Rightmove listing. Need agent email.",
-        "action": "HANDS: check Rightmove agent directory and Zoopla. Try info@bridlingtonbaylettings.co.uk as fallback.",
-        "potential_framework": "pas"
+        "days_blocked": 10,
+        "action": "HANDS: Rightmove / Zoopla agent directory."
       },
       {
         "lead_id": 54,
         "business_name": "The Wolds Inn",
         "score_estimate": 58,
         "status": "blocked_no_email",
-        "days_blocked": 9,
-        "blocker": "Facebook empty, no email on Maps.",
-        "action": "HANDS: try info@thewoldsinn.co.uk. If bounced, try manager@thewoldsinn.co.uk. Low priority.",
-        "potential_framework": "pas"
+        "days_blocked": 10,
+        "action": "HANDS: try info@thewoldsinn.co.uk. Low priority."
       }
     ],
     "batch_5_preview": {
-      "status": "scrape_required",
+      "status": "scrape_required_critical",
       "target_area": "Ryedale District (Malton, Pickering, Helmsley, Kirkbymoorside)",
       "expected_leads": 18,
       "expected_sends_from_batch": "5-8 (after enrichment and scoring)",
       "target_send_date": "2026-04-13 to 2026-04-16",
-      "easter_cutoff": "2026-04-16 — no sends on Good Friday 2026-04-18 or Easter Monday 2026-04-21",
-      "note": "BRAIN will generate full Batch 5 email copy once scrape data is available. HANDS: run scrape today and return data."
+      "easter_cutoff": "2026-04-16 — HARD DEADLINE",
+      "note": "Day 2 of pipeline gap. Batch 5 scrape is now the single most important action this week outside of closing Claire's deal. BRAIN will write email copy on next run once HANDS returns data."
     },
     "send_summary": {
       "total_new_sends_today": 0,
-      "total_follow_up_sends_today": 7,
-      "follow_ups_in_queue": "See followup_queue.json — 7 items DUE TODAY",
+      "total_follow_up_sends_today": 6,
+      "send_order": "fu_027 → fu_028 → fu_029 (Day-3 bumps, 09:00-10:40) → fu_033 → fu_034 → fu_035 (Day-7 new angles, 10:30-12:20)",
       "stagger_interval_minutes": 20,
-      "send_window": "09:00-12:30 UK time for Day-3 bumps (shorter, lower friction). Day-7 new angles: 09:30-11:30.",
+      "send_window": "09:00-12:30 UK time",
       "check_imap_first": true,
-      "imap_note": "Check IMAP before each send. Suppress any lead that has replied since last check.",
-      "compliance": "All sends B2B legitimate interest. Check suppression list before each send. Lead 19 (Summit Fitness) permanently suppressed."
+      "imap_note": "Check IMAP before each send. Suppress any lead that has replied since last check. Priority IMAP check: Claire (lead 3) first.",
+      "compliance": "All sends B2B legitimate interest. Check suppression list before each send. Lead 19 permanently suppressed."
     }
   }
 ]

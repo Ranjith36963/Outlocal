@@ -1,7 +1,8 @@
 {
-  "classified_at": "2026-04-09T07:30:00Z",
-  "date": "2026-04-09",
-  "note": "BRAIN layer — Day 12 classification run. No new raw replies in data/new_replies.json since 2026-04-04. CRITICAL IMAP CHECK REQUIRED before any action today. Claire call was Tuesday 14:00 — outcome must be confirmed. Rob and Tom nudges sent — check for responses. If new replies found, write to new_replies.json and re-run classification before sending any follow-ups today.",
+  "classified_at": "2026-04-10T07:00:00Z",
+  "date": "2026-04-10",
+  "day_number": 13,
+  "note": "BRAIN layer — Day 13 classification run. No new raw replies in data/new_replies.json since 2026-04-04. Friday morning is historically a good B2B reply window — IMAP check is high priority. CRITICAL: Claire proposal nudge was due YESTERDAY (2026-04-09, Thursday). If HANDS did not send it, it must go out first thing today. Rob and Tom responses may have arrived overnight after Wednesday nudges. Check IMAP immediately before any send activity.",
   "new_replies_this_run": 0,
   "imap_check_required": true,
   "imap_check_priority": [
@@ -10,62 +11,73 @@
       "name": "Claire",
       "business": "Westfield Hair & Beauty",
       "email": "claire@westfieldhair.co.uk",
-      "reason": "Call was Tuesday 14:00. Has she replied confirming a decision, asking for the proposal, or booking next steps? If proposal sent Tuesday post-call — did she acknowledge it?",
+      "reason": "CRITICAL. Proposal nudge was due Thursday 2026-04-09. If HANDS did not send it yesterday, it is now one day overdue. Also check: has Claire replied since the Tuesday call? If she replied with a YES to the proposal: log conversion immediately. If she replied with questions: answer them. If no reply to nudge yet: send nudge now (it is still within the acceptable window, just late).",
       "urgency": "critical",
-      "action_if_reply_found": "Classify and update vd_001 status immediately. If she committed: confirm conversion. If she deferred and hasn't replied to proposal: send gentle nudge TODAY (see value_delivery_queue.json)."
+      "action_if_reply_found": "Classify immediately. If committed: log conversion to CONVERTED, update CRM, write CHANGELOG.md milestone note — this is the first revenue conversion. If deferred with questions: answer them clearly. If declined: mark LOST.",
+      "action_if_no_reply_and_nudge_not_sent": "Send the proposal nudge NOW: 'Claire — happy to walk through anything in the proposal if it helps. Just reply and let me know.' One line only. Do not resend proposal. Do not discount."
     },
     {
       "lead_id": 22,
       "name": "Rob",
       "business": "Pennine Print & Design",
       "email": "rob@pennineprint.co.uk",
-      "reason": "Nudge sent Tuesday EOD — 'happy to send a one-page scope doc'. Did he reply?",
+      "reason": "Nudge sent Tuesday EOD (2026-04-07). Three business days since nudge. If Rob has responded: scope call or scope doc required today.",
       "urgency": "high",
-      "action_if_reply_found": "If he asked for the scope doc: send it (Option A: £150, Option B: £550, Option C: £600+£75/month). If he replied positively: offer 15-min scoping call Thursday/Friday."
+      "action_if_reply_found": "If asked for scope doc: send today (Option A: £150, Option B: £550 redesign bundle, Option C: £600+£75/month). If asked to talk: offer 15-min call today or Monday. Confirm immediately — do not let it cool.",
+      "action_if_still_silent": "Do not chase again this week. One final nudge available Monday 2026-04-13 if still silent: 'Rob — happy to leave it here if the timing isn't right — just wanted to make sure my note didn't get buried.' Then close the loop if no reply by Wednesday."
     },
     {
       "lead_id": 1,
       "name": "Tom",
       "business": "Ripon Road Carpentry",
       "email": "tom@riponroadcarpentry.co.uk",
-      "reason": "Nudge sent Wednesday EOD — 'happy to jump on a 10-min call Wednesday morning'. Did he book a call or confirm?",
+      "reason": "Nudge sent Wednesday EOD (2026-04-08). 24-48 hours since nudge — trades people often respond on Thursday or Friday morning. Friday is a likely reply day.",
       "urgency": "medium",
-      "action_if_reply_found": "Confirm call slot Thursday or Friday. NOT Tuesday (Claire) or Monday (leave open). Confirm same-day."
+      "action_if_reply_found": "Confirm call slot today (Friday afternoon) or Monday. NOT Tuesday (Claire is Tuesday). Simple job, agreed price (£100-150) — confirm spec on the call and close this week.",
+      "action_if_still_silent": "Wait. Do not chase again today. If silent by Monday 2026-04-13, send one final light touch: 'Tom — want to leave this with you — let me know if the quote form ever rises to the top of the list.' Then close the loop."
     },
     {
-      "lead_id": 5,
-      "name": "David",
-      "business": "Harewood Accountants",
-      "email": "david@harewoodaccountants.co.uk",
-      "reason": "Day-7 Google local visibility email sent Tuesday. Any early response?",
-      "urgency": "low",
-      "action_if_reply_found": "Classify — if INTERESTED, route to value delivery queue. If NOT_INTERESTED, mark LOST. Day-14 breakup due 2026-04-14 if no response."
+      "lead_id": 42,
+      "name": "Sarah",
+      "business": "Blossom Beauty Studio",
+      "email": "HANDS: retrieve from database",
+      "reason": "Day-7 new angle (fu_033) sends TODAY. Check IMAP before sending — suppress if Sarah has replied to any previous touchpoint.",
+      "urgency": "pre_send_check",
+      "action_if_reply_found": "Classify. If INTERESTED: cancel fu_033, route to value_delivery_queue. If NOT_INTERESTED or UNSUBSCRIBE: suppress and update CRM."
     },
     {
-      "lead_id": 12,
-      "name": "unknown",
-      "business": "Bronte Country Cottages",
-      "email": "info@brontecottages.co.uk",
-      "reason": "Day-7 new-angle email sent Wednesday. Any early response?",
-      "urgency": "low",
-      "action_if_reply_found": "Classify. If INTERESTED, pause sequence and route to value delivery."
+      "lead_id": 44,
+      "name": "Dr. James Rowe",
+      "business": "Meadowbrook Vets",
+      "email": "HANDS: retrieve from database",
+      "reason": "Day-7 new angle (fu_034) sends TODAY. Pre-send IMAP check required.",
+      "urgency": "pre_send_check",
+      "action_if_reply_found": "Classify. If INTERESTED: cancel fu_034, route to value_delivery_queue immediately — vet practice principal has high value potential. If NOT_INTERESTED: suppress."
+    },
+    {
+      "lead_id": 46,
+      "name": "Mike Thornfield",
+      "business": "Thornfield Electricals",
+      "email": "HANDS: retrieve from database",
+      "reason": "Day-7 new angle (fu_035) sends TODAY. Pre-send IMAP check required.",
+      "urgency": "pre_send_check",
+      "action_if_reply_found": "Classify. If INTERESTED: cancel fu_035, route to value_delivery_queue. If NOT_INTERESTED: suppress."
     },
     {
       "lead_id": 57,
       "name": "Mike Rawlings",
       "business": "Scarborough Bay Plumbing & Heating",
       "email": "mike@scarboroughbayplumbing.co.uk",
-      "reason": "Initial email sent Tuesday. Day-3 bump due tomorrow — check for early reply.",
-      "urgency": "low",
+      "reason": "Day-3 bump (fu_027) sends TODAY. Pre-send IMAP check.",
+      "urgency": "pre_send_check",
       "action_if_reply_found": "Classify. Cancel fu_027 if replied."
     },
     {
       "lead_id": 58,
-      "name": "unknown",
       "business": "The Old Court Solicitors",
       "email": "info@oldcourtsolicitors.co.uk",
-      "reason": "Initial email sent Tuesday. Day-3 bump due tomorrow.",
-      "urgency": "low",
+      "reason": "Day-3 bump (fu_028) sends TODAY. Pre-send IMAP check.",
+      "urgency": "pre_send_check",
       "action_if_reply_found": "Classify. Cancel fu_028 if replied."
     },
     {
@@ -73,20 +85,21 @@
       "name": "Tony Shields",
       "business": "Scarborough Roofing Specialists",
       "email": "tony@scarboroughroofing.co.uk",
-      "reason": "Initial email sent Tuesday. Day-3 bump due tomorrow.",
-      "urgency": "low",
+      "reason": "Day-3 bump (fu_029) sends TODAY. Pre-send IMAP check.",
+      "urgency": "pre_send_check",
       "action_if_reply_found": "Classify. Cancel fu_029 if replied."
     }
   ],
   "pipeline_update": {
-    "claire_lead_3": "CALL OUTCOME UNKNOWN — HANDS must confirm. If deferred Tuesday: proposal PDF sent, nudge due TODAY per value_delivery_queue.json. If committed Tuesday: conversion logged, delivery in progress. If declined: mark LOST, no further contact.",
-    "rob_lead_22": "Nudge sent Tuesday EOD. If replied: scope call this week. If still silent: do not chase again until Monday 2026-04-13.",
-    "tom_lead_1": "Nudge sent Wednesday EOD. If replied: confirm call Thursday/Friday. If still silent: wait until Monday 2026-04-13 before next decision — do not over-chase.",
-    "david_lead_5": "Day-7 email sent Tuesday. Monitor. Day-14 breakup due 2026-04-14 if no genuine response.",
-    "lead_12_bronte": "Day-7 email sent Wednesday. Monitor. Day-14 breakup due approx 2026-04-15."
+    "claire_lead_3": "CRITICAL — proposal nudge was due YESTERDAY. If not sent: send immediately this morning. If sent and no reply: give today until EOD before any further action. If sent and she replied: classify and close deal. This is the most important single action of the morning.",
+    "rob_lead_22": "Three days since Tuesday nudge. If replied: send scope doc or book call today. If still silent: Monday is the last opportunity before formally closing the loop.",
+    "tom_lead_1": "Two days since Wednesday nudge. Friday morning is prime reply window for trades. If replied: confirm call today or Monday. If silent by Monday 2026-04-13: send one final light touch, then close the loop.",
+    "david_lead_5": "Day-7 email sent 2026-04-07 (3 days ago). Monitoring. Day-14 breakup (fu_031) due 2026-04-14 (Tuesday).",
+    "lead_12_bronte": "Day-7 email sent 2026-04-08 (2 days ago). Monitoring. Day-14 breakup (fu_032) due 2026-04-15 (Wednesday)."
   },
-  "carried_forward_from": "2026-04-07",
+  "carried_forward_from": "2026-04-09",
   "total_replies_to_date": 11,
+  "new_reply_inbox_check_note": "Friday morning is typically the strongest B2B reply window of the week. Any reply received to the seven follow-ups sent yesterday (fu_017, fu_018, fu_019, fu_022, fu_023, fu_024, fu_025) should be written to new_replies.json by HANDS and classified here before any further sends today.",
   "classifications": [
     {
       "reply_id": 7,
@@ -101,9 +114,8 @@
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal. 'We lose people all the time' = felt pain acknowledged unprompted.",
       "call_completed_at": "2026-04-07T14:00:00Z",
-      "call_outcome": "PENDING_HANDS_CONFIRMATION",
-      "post_call_action_due": "2026-04-09 — if she deferred, send proposal nudge today. If committed Tuesday, confirm delivery timeline.",
-      "suggested_action": "HANDS: check email for post-call reply from Claire. If she deferred and has not responded to proposal PDF: send 2-line nudge today — 'Claire — happy to walk through anything in the proposal if it helps. Just reply and let me know.' Do NOT resend the proposal. Do NOT discount. One nudge only.",
+      "call_outcome": "PENDING_HANDS_CONFIRMATION — now two days overdue on confirmation. Proposal nudge was due Thursday. HANDS: update this field today.",
+      "suggested_action": "HANDS: check IMAP first. If no post-call reply from Claire: send proposal nudge NOW — 'Claire — happy to walk through anything in the proposal if it helps. Just reply and let me know.' One line. Do NOT resend proposal. Do NOT discount.",
       "urgency": "critical",
       "lead_status_update": "interested",
       "status_actioned": true,
@@ -122,8 +134,8 @@
       "confidence": "high",
       "reasoning": "Asking whether fixes can be bundled into a redesign — a buyer's question. 'Sort the whole thing in one go' signals budget appetite for a larger project.",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "suggested_action": "HANDS: check IMAP for Rob's reply to Tuesday nudge. If responded: send scope doc (or book a call). If still silent: do not chase until Monday 2026-04-13. Do NOT discount.",
-      "urgency": "medium",
+      "suggested_action": "HANDS: check IMAP for Rob's reply (3 days since nudge). If responded: send scope doc or book call today. If still silent: wait until Monday 2026-04-13.",
+      "urgency": "high",
       "upsell_signal": true,
       "lead_status_update": "interested",
       "status_actioned": true,
@@ -142,7 +154,7 @@
       "confidence": "high",
       "reasoning": "Acknowledged the pain unprompted, confirmed the workflow problem, asked for pricing — three clear buying signals.",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "suggested_action": "HANDS: check IMAP for Tom's reply to Wednesday nudge. If he replied or booked: confirm call Thursday or Friday (not Tuesday, not Monday). If still silent: wait until Monday 2026-04-13 before deciding next move.",
+      "suggested_action": "HANDS: check IMAP for Tom's reply (Friday morning — prime trades reply window). If replied or booked: confirm call today or Monday. If still silent: wait, do not chase today.",
       "urgency": "medium",
       "lead_status_update": "interested",
       "status_actioned": true,
@@ -159,8 +171,7 @@
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Polite but clear rejection — 'happy with how things are', 'not looking to make any changes'. No future-date qualifier.",
-      "suggested_action": "Lead marked LOST. No further contact. Can re-approach in 6 months if SSL status or mobile grade changes.",
+      "reasoning": "Polite but clear rejection. No further contact.",
       "urgency": "none",
       "lead_status_update": "lost",
       "status_actioned": true
@@ -176,8 +187,7 @@
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Standard OOO auto-reply. Returned Monday 6 April.",
-      "suggested_action": "Day-7 Google local visibility email sent Tuesday 2026-04-07. Monitor for genuine response. Day-14 breakup (fu_031) due 2026-04-14 if no response.",
+      "reasoning": "Standard OOO auto-reply. Returned Monday 6 April. Day-7 email sent 2026-04-07. Day-14 breakup due 2026-04-14.",
       "urgency": "none",
       "ooo_expired": true,
       "day7_sent_at": "2026-04-07",
@@ -198,9 +208,9 @@
     "leads_to_suppress": [],
     "leads_needing_attention": [3, 22, 1],
     "calls_today": [],
-    "nudges_sent_since_last_run": [22, 1],
+    "nudges_sent_since_last_run": [],
     "pending_buyer_responses": [22, 1],
-    "post_call_followup_due_today": [3],
-    "notes": "CRITICAL: Check Claire call outcome and send proposal nudge if deferred. Check Rob and Tom for post-nudge replies. Run IMAP check for all 8 priority leads before sending any of today's 7 cold follow-ups."
+    "proposal_nudge_overdue": [3],
+    "notes": "CRITICAL: Claire proposal nudge is one day overdue — send before any other task. Rob (3 days post-nudge) and Tom (2 days post-nudge) may have replied overnight. Friday is prime reply day — full IMAP sweep before any sends."
   }
 }

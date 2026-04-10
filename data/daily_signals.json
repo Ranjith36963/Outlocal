@@ -1,40 +1,44 @@
 {
-  "generated_at": "2026-04-09T07:30:00Z",
-  "date": "2026-04-09",
-  "note": "BRAIN layer — Day 12 signal assignments. Today is the heavy follow-up day (7 items due — see followup_queue.json). No new sends today. Scarborough batch (leads 57-60) assumed sent 2026-04-07/08 by HANDS. Next new sends require Batch 5 scrape (Ryedale: Malton, Pickering, Helmsley). HANDS: run Batch 5 scrape today or tomorrow to avoid a gap in the new-lead pipeline. Target 4-5 new sends by 2026-04-13 (Monday).",
+  "generated_at": "2026-04-10T07:00:00Z",
+  "date": "2026-04-10",
+  "day_number": 13,
+  "note": "BRAIN layer — Day 13 signal assignments. Friday. Today is a MEDIUM send day: 3 Day-3 bumps (leads 57, 58, 59) + 3 Day-7 new angles (leads 42, 44, 46) — all pre-written below. No new sends: Batch 5 (Ryedale) scrape still not received. Pipeline dry without it. HANDS: if Batch 5 scrape did not run yesterday, run it TODAY — this is now the last viable window before Easter cutoff (2026-04-16). Claire proposal nudge is one day overdue — handle IMAP first.",
   "assumed_sent_since_last_brain_run": {
-    "lead_57": "Scarborough Bay Plumbing — mike@scarboroughbayplumbing.co.uk — sent 2026-04-07 (HANDS to confirm)",
-    "lead_58": "The Old Court Solicitors — info@oldcourtsolicitors.co.uk (or direct email if found) — sent 2026-04-07 (HANDS to confirm)",
-    "lead_59": "Scarborough Roofing Specialists — tony@scarboroughroofing.co.uk — sent 2026-04-07 (HANDS to confirm)",
-    "lead_60": "Pocklington Fine Furniture — james@pocklingtonfurniture.co.uk — sent 2026-04-08 (HANDS to confirm, was deferred to Wednesday)",
-    "fu_016": "David Harewood Day-7 new-angle email — sent 2026-04-07 morning per plan",
-    "fu_022_ROB_NUDGE": "Rob (Pennine Print) nudge — sent 2026-04-07 EOD if no reply by 17:00",
-    "fu_026_TOM_NUDGE": "Tom (Ripon Road Carpentry) nudge — sent 2026-04-08 EOD if no call booked",
-    "lead_12_day7": "Bronte Country Cottages — Day-7 new-angle email sent 2026-04-08 (OOO lifted 2026-04-08)"
+    "fu_022": "Linda Walsh (Holderness Homecare) — Day-3 bump — assumed sent 2026-04-09 09:00 (HANDS to confirm)",
+    "fu_023": "Craig Lawson (Beverley Sports & Leisure) — Day-3 bump — assumed sent 2026-04-09 09:20 (HANDS to confirm)",
+    "fu_024": "Pete (The Harbour Fish Bar) — Day-3 Easter bump — assumed sent 2026-04-09 09:40 (HANDS to confirm)",
+    "fu_025": "Neil (East Riding Electrical) — Day-3 bump — assumed sent 2026-04-09 10:00 (HANDS to confirm)",
+    "fu_017": "Steve (Halifax Window Cleaning) — Day-7 local SEO new angle — assumed sent 2026-04-09 10:30 (HANDS to confirm)",
+    "fu_018": "Pontefract Pharmacy — Day-7 Google profile new angle — assumed sent 2026-04-09 11:00 (HANDS to confirm)",
+    "fu_019": "Ann (Castleford Carpets) — Day-7 conversion gap new angle — assumed sent 2026-04-09 11:30 (HANDS to confirm)"
   },
   "carried_forward_blocked": {
     "lead_49": {
       "business": "East Riding Builders Ltd",
       "status": "blocked_no_email",
-      "action": "HANDS: search beta.companieshouse.gov.uk for 'East Riding Builders Ltd' — pull director name and try [firstname]@eastridingbuilders.co.uk pattern.",
+      "days_blocked": 10,
+      "action": "HANDS: search beta.companieshouse.gov.uk for director name. Try [firstname]@eastridingbuilders.co.uk pattern.",
       "priority": "medium"
     },
     "lead_51": {
       "business": "Driffield Garden Centre",
       "status": "blocked_contact_form_only",
-      "action": "HANDS: phone call to centre — ask to speak to the owner or manager, explain you sent a website message and want to confirm receipt. Get direct email.",
+      "days_blocked": 10,
+      "action": "HANDS: phone call to centre. Ask for owner/manager. Get direct email.",
       "priority": "medium"
     },
     "lead_53": {
       "business": "Bridlington Bay Lettings",
       "status": "blocked_no_direct_email",
-      "action": "HANDS: check Rightmove agent directory (rightmove.co.uk/estate-agents) and Zoopla agents list for direct email. Also try info@bridlingtonbaylettings.co.uk.",
+      "days_blocked": 10,
+      "action": "HANDS: check Rightmove agent directory and Zoopla. Try info@bridlingtonbaylettings.co.uk as fallback.",
       "priority": "medium"
     },
     "lead_54": {
       "business": "The Wolds Inn",
       "status": "blocked_no_email",
-      "action": "HANDS: try info@thewoldsinn.co.uk first. If bounced, try manager@thewoldsinn.co.uk. Score 58 — lower priority, only attempt if blocked leads 49/51 also consume enrichment time.",
+      "days_blocked": 10,
+      "action": "HANDS: try info@thewoldsinn.co.uk first. Score 58 — low priority.",
       "priority": "low"
     }
   },
@@ -43,30 +47,25 @@
     "area": "Ryedale District — North Yorkshire market towns",
     "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
     "target_categories": [
-      "plumbers",
-      "electricians",
-      "roofers",
-      "builders",
-      "joiners / carpenters",
-      "pubs / restaurants",
-      "B&Bs / guest houses",
-      "estate agents",
-      "solicitors"
+      "plumbers", "electricians", "roofers", "builders", "joiners / carpenters",
+      "pubs / restaurants", "B&Bs / guest houses", "estate agents", "solicitors"
     ],
     "expected_leads": 18,
     "signal_priority_order": ["ssl", "ssl_mobile", "mobile", "no_website", "social_media"],
     "minimum_score_to_include": 55,
-    "rationale": "Ryedale is a prosperous rural district — market town demographics (owner-operator businesses, established reputations, often neglected websites) closely match our highest-converting profiles. Similar to Ripon and Skipton cohorts which produced leads 1 and 4 respectively. Scarborough coastal is now partially covered; Ryedale is the logical inland extension.",
-    "when_to_scrape": "TODAY or TOMORROW — no new sends are otherwise possible this week.",
-    "easter_deadline": "All Batch 5 initial sends must go out by 2026-04-16 (Wednesday before Easter) to allow Day-3 bumps before Good Friday pause on 2026-04-18.",
+    "rationale": "Ryedale is a prosperous rural district — market town demographics closely match our highest-converting profiles (Ripon, Skipton cohorts). Scarborough coastal is covered; Ryedale is the logical inland extension.",
+    "when_to_scrape": "TODAY — CRITICAL. Last viable window before Easter cutoff.",
+    "easter_deadline": "All Batch 5 initial sends must go out by 2026-04-16 (Wednesday). Day-3 bumps would then fall 2026-04-19 (Saturday — no Good Friday issue). Day-7 new angles would land 2026-04-23 (post-Easter Wednesday).",
+    "pipeline_risk": "CRITICAL. Without Batch 5, new-lead pipeline is empty. The campaign cannot sustain volume at 10-15 sends/week on follow-ups alone. This is now Day 2 of the pipeline gap.",
     "email_copy_target": "BRAIN will write Batch 5 email copy in next run once HANDS returns scraped data."
   },
   "leads": [],
   "enrichment_summary": {
     "total_pending_new": 0,
     "total_blocked_carry_forward": 4,
-    "sends_today": 0,
-    "focus": "All capacity today on 7 pre-written follow-ups. Run offline enrichment on leads 49, 51, 53, 54 in parallel. Batch 5 scrape is the primary pipeline priority.",
-    "pipeline_risk": "Without Batch 5 scrape, new-lead pipeline runs dry after lead 60. Follow-ups alone cannot sustain volume at target 10-15 sends/week."
+    "sends_today": 6,
+    "sends_breakdown": "3 Day-3 bumps (fu_027, fu_028, fu_029) + 3 Day-7 new angles (leads 42, 44, 46)",
+    "focus": "All follow-up sends today. Batch 5 scrape is critical pipeline priority for PM session.",
+    "pipeline_risk": "Day 2 of new-lead pipeline gap. Batch 5 must run today to stay on track for 2026-04-16 cutoff."
   }
 }
