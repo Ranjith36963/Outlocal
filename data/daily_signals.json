@@ -1,71 +1,245 @@
 {
-  "generated_at": "2026-04-10T07:00:00Z",
-  "date": "2026-04-10",
-  "day_number": 13,
-  "note": "BRAIN layer — Day 13 signal assignments. Friday. Today is a MEDIUM send day: 3 Day-3 bumps (leads 57, 58, 59) + 3 Day-7 new angles (leads 42, 44, 46) — all pre-written below. No new sends: Batch 5 (Ryedale) scrape still not received. Pipeline dry without it. HANDS: if Batch 5 scrape did not run yesterday, run it TODAY — this is now the last viable window before Easter cutoff (2026-04-16). Claire proposal nudge is one day overdue — handle IMAP first.",
+  "generated_at": "2026-04-19T09:00:00Z",
+  "date": "2026-04-19",
+  "day_number": 22,
+  "note": "BRAIN layer — Day 22 (Easter Saturday). TODAY: fu_020 (Rachel, Skipton Garden Design — Day-14 breakup) + fu_021 (Boroughbridge Plumbing — Day-14 breakup). Both pre-written. No new sends — Easter Saturday. Last BRAIN run: Day 13 (2026-04-10). Gap of 9 days includes Good Friday (2026-04-18, no outreach) and contains Easter Monday (2026-04-21, no outreach tomorrow). POST-EASTER CRITICAL: 14 deferred breakup emails + Batch 5 Ryedale scrape must begin 2026-04-22 (Tuesday). Pipeline has been dry of new leads for 12 days. Sequences for 14 active leads expire this week — all require final breakup touchpoints.",
   "assumed_sent_since_last_brain_run": {
-    "fu_022": "Linda Walsh (Holderness Homecare) — Day-3 bump — assumed sent 2026-04-09 09:00 (HANDS to confirm)",
-    "fu_023": "Craig Lawson (Beverley Sports & Leisure) — Day-3 bump — assumed sent 2026-04-09 09:20 (HANDS to confirm)",
-    "fu_024": "Pete (The Harbour Fish Bar) — Day-3 Easter bump — assumed sent 2026-04-09 09:40 (HANDS to confirm)",
-    "fu_025": "Neil (East Riding Electrical) — Day-3 bump — assumed sent 2026-04-09 10:00 (HANDS to confirm)",
-    "fu_017": "Steve (Halifax Window Cleaning) — Day-7 local SEO new angle — assumed sent 2026-04-09 10:30 (HANDS to confirm)",
-    "fu_018": "Pontefract Pharmacy — Day-7 Google profile new angle — assumed sent 2026-04-09 11:00 (HANDS to confirm)",
-    "fu_019": "Ann (Castleford Carpets) — Day-7 conversion gap new angle — assumed sent 2026-04-09 11:30 (HANDS to confirm)"
+    "fu_027": "Mike Rawlings (Scarborough Bay Plumbing) — Day-3 bump — assumed sent 2026-04-10 09:00 (HANDS to confirm)",
+    "fu_028": "The Old Court Solicitors — Day-3 GDPR bump — assumed sent 2026-04-10 09:20 (HANDS to confirm)",
+    "fu_029": "Tony Shields (Scarborough Roofing) — Day-3 bump — assumed sent 2026-04-10 09:40 (HANDS to confirm)",
+    "fu_033": "Sarah (Blossom Beauty Studio) — Day-7 local SEO angle — assumed sent 2026-04-10 10:30 (HANDS to confirm)",
+    "fu_034": "Dr. Rowe (Meadowbrook Vets) — Day-7 local search + trust angle — assumed sent 2026-04-10 11:00 (HANDS to confirm)",
+    "fu_035": "Mike Thornfield (Thornfield Electricals) — Day-7 Google Maps angle — assumed sent 2026-04-10 11:20 (HANDS to confirm)",
+    "fu_030": "James Hewitt (Pocklington Fine Furniture) — Day-3 bump — assumed sent 2026-04-11 09:00 (HANDS to confirm)",
+    "fu_007_updated": "Graham (Ilkley Ironmongery) — Day-14 breakup — assumed sent 2026-04-11 09:20 (HANDS to confirm)",
+    "fu_031": "David Harewood (Harewood Accountants) — Day-14 breakup — assumed sent 2026-04-14 (HANDS to confirm)",
+    "fu_032": "Bronte Country Cottages — Day-14 breakup — assumed sent 2026-04-15 (HANDS to confirm)"
+  },
+  "missed_due_to_brain_gap_and_easter": {
+    "note": "BRAIN did not run between 2026-04-10 and 2026-04-19. The following Day-7 new angles and Day-14 breakups were due during this window but had no BRAIN-written copy. BRAIN now defers all to post-Easter. HANDS: do NOT send unwritten copy speculatively.",
+    "day7_new_angles_skipped": [
+      {
+        "lead_id": 52,
+        "business": "Holderness Homecare",
+        "owner": "Linda Walsh",
+        "was_due": "2026-04-13",
+        "decision": "SKIP_TO_BREAKUP — now Day 13 from initial send, too late for new-angle email. Write Day-14 breakup instead for 2026-04-22."
+      },
+      {
+        "lead_id": 55,
+        "business": "Beverley Sports & Leisure",
+        "owner": "Craig Lawson",
+        "was_due": "2026-04-13",
+        "decision": "SKIP_TO_BREAKUP — same reasoning."
+      },
+      {
+        "lead_id": 50,
+        "business": "The Harbour Fish Bar",
+        "owner": "Pete",
+        "was_due": "2026-04-13",
+        "decision": "SKIP_TO_BREAKUP — same reasoning."
+      },
+      {
+        "lead_id": 56,
+        "business": "East Riding Electrical",
+        "owner": "Neil",
+        "was_due": "2026-04-13",
+        "decision": "SKIP_TO_BREAKUP — same reasoning."
+      },
+      {
+        "lead_id": 57,
+        "business": "Scarborough Bay Plumbing & Heating",
+        "owner": "Mike Rawlings",
+        "was_due": "2026-04-14",
+        "decision": "SKIP_TO_BREAKUP — Day-14 due 2026-04-21 (Easter Monday) → deferred to 2026-04-22."
+      },
+      {
+        "lead_id": 58,
+        "business": "The Old Court Solicitors",
+        "was_due": "2026-04-14",
+        "decision": "SKIP_TO_BREAKUP → deferred to 2026-04-22."
+      },
+      {
+        "lead_id": 59,
+        "business": "Scarborough Roofing Specialists",
+        "owner": "Tony Shields",
+        "was_due": "2026-04-14",
+        "decision": "SKIP_TO_BREAKUP → deferred to 2026-04-22."
+      },
+      {
+        "lead_id": 60,
+        "business": "Pocklington Fine Furniture",
+        "owner": "James Hewitt",
+        "was_due": "2026-04-15",
+        "decision": "SKIP_TO_BREAKUP — Day-14 due 2026-04-22 exactly."
+      }
+    ],
+    "day14_breakups_deferred": [
+      {
+        "lead_id": 30,
+        "business": "Halifax Window Cleaning",
+        "owner": "Steve",
+        "was_due": "2026-04-16",
+        "decision": "DEFERRED to 2026-04-23 — 7 days late but still worth sending. Final touchpoint.",
+        "copy_written": "fu_041 in followup_queue.json"
+      },
+      {
+        "lead_id": 31,
+        "business": "Pontefract Pharmacy",
+        "was_due": "2026-04-16",
+        "decision": "DEFERRED to 2026-04-23.",
+        "copy_written": "fu_042"
+      },
+      {
+        "lead_id": 32,
+        "business": "Castleford Carpets",
+        "owner": "Ann",
+        "was_due": "2026-04-16",
+        "decision": "DEFERRED to 2026-04-23.",
+        "copy_written": "fu_043"
+      },
+      {
+        "lead_id": 42,
+        "business": "Blossom Beauty Studio",
+        "owner": "Sarah",
+        "was_due": "2026-04-17",
+        "decision": "DEFERRED to 2026-04-22 — 5 days late. Highest priority post-Easter breakup.",
+        "copy_written": "fu_036"
+      },
+      {
+        "lead_id": 44,
+        "business": "Meadowbrook Vets",
+        "owner": "Dr. James Rowe",
+        "was_due": "2026-04-17",
+        "decision": "DEFERRED to 2026-04-22.",
+        "copy_written": "fu_037"
+      },
+      {
+        "lead_id": 46,
+        "business": "Thornfield Electricals",
+        "owner": "Mike Thornfield",
+        "was_due": "2026-04-17",
+        "decision": "DEFERRED to 2026-04-22.",
+        "copy_written": "fu_038"
+      },
+      {
+        "lead_id": 57,
+        "business": "Scarborough Bay Plumbing",
+        "owner": "Mike Rawlings",
+        "was_due": "2026-04-21",
+        "decision": "DEFERRED to 2026-04-22 — Easter Monday.",
+        "copy_written": "fu_039"
+      },
+      {
+        "lead_id": 58,
+        "business": "The Old Court Solicitors",
+        "was_due": "2026-04-21",
+        "decision": "DEFERRED to 2026-04-23.",
+        "copy_written": "fu_044"
+      },
+      {
+        "lead_id": 59,
+        "business": "Scarborough Roofing Specialists",
+        "owner": "Tony Shields",
+        "was_due": "2026-04-21",
+        "decision": "DEFERRED to 2026-04-23.",
+        "copy_written": "fu_045"
+      },
+      {
+        "lead_id": 60,
+        "business": "Pocklington Fine Furniture",
+        "owner": "James Hewitt",
+        "was_due": "2026-04-22",
+        "decision": "ON TIME — 2026-04-22.",
+        "copy_written": "fu_040"
+      },
+      {
+        "lead_id": 52,
+        "business": "Holderness Homecare",
+        "owner": "Linda Walsh",
+        "was_due": "2026-04-20",
+        "decision": "DEFERRED to 2026-04-24 — Easter Sunday deferred.",
+        "copy_written": "fu_046"
+      },
+      {
+        "lead_id": 55,
+        "business": "Beverley Sports & Leisure",
+        "owner": "Craig Lawson",
+        "was_due": "2026-04-20",
+        "decision": "DEFERRED to 2026-04-24.",
+        "copy_written": "fu_047"
+      },
+      {
+        "lead_id": 50,
+        "business": "The Harbour Fish Bar",
+        "owner": "Pete",
+        "was_due": "2026-04-20",
+        "decision": "DEFERRED to 2026-04-24.",
+        "copy_written": "fu_048"
+      },
+      {
+        "lead_id": 56,
+        "business": "East Riding Electrical",
+        "owner": "Neil",
+        "was_due": "2026-04-20",
+        "decision": "DEFERRED to 2026-04-24.",
+        "copy_written": "fu_049"
+      }
+    ]
   },
   "carried_forward_blocked": {
     "lead_49": {
       "business": "East Riding Builders Ltd",
       "status": "blocked_no_email",
-      "days_blocked": 10,
-      "action": "HANDS: search beta.companieshouse.gov.uk for director name. Try [firstname]@eastridingbuilders.co.uk pattern.",
+      "days_blocked": 19,
+      "action": "HANDS: Companies House director name search. Now critical post-Easter.",
       "priority": "medium"
     },
     "lead_51": {
       "business": "Driffield Garden Centre",
       "status": "blocked_contact_form_only",
-      "days_blocked": 10,
-      "action": "HANDS: phone call to centre. Ask for owner/manager. Get direct email.",
+      "days_blocked": 19,
+      "action": "HANDS: phone to get direct email.",
       "priority": "medium"
     },
     "lead_53": {
       "business": "Bridlington Bay Lettings",
       "status": "blocked_no_direct_email",
-      "days_blocked": 10,
-      "action": "HANDS: check Rightmove agent directory and Zoopla. Try info@bridlingtonbaylettings.co.uk as fallback.",
+      "days_blocked": 19,
+      "action": "HANDS: Rightmove / Zoopla directory. Try info@ fallback.",
       "priority": "medium"
     },
     "lead_54": {
       "business": "The Wolds Inn",
       "status": "blocked_no_email",
-      "days_blocked": 10,
-      "action": "HANDS: try info@thewoldsinn.co.uk first. Score 58 — low priority.",
+      "days_blocked": 19,
+      "action": "HANDS: try info@thewoldsinn.co.uk. Low priority.",
       "priority": "low"
     }
   },
-  "next_batch_recommendation": {
-    "batch_number": 5,
-    "area": "Ryedale District — North Yorkshire market towns",
+  "batch_5_status": {
+    "status": "CRITICAL — never scraped. Day 12 of pipeline gap.",
+    "original_cutoff": "2026-04-16 (missed — Easter week intervened)",
+    "revised_first_viable_scrape_day": "2026-04-22 (Tuesday)",
+    "revised_first_viable_send_day": "2026-04-23 (Wednesday) — after BRAIN writes copy on the next run",
+    "target_area": "Ryedale District — North Yorkshire market towns",
     "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
-    "target_categories": [
-      "plumbers", "electricians", "roofers", "builders", "joiners / carpenters",
-      "pubs / restaurants", "B&Bs / guest houses", "estate agents", "solicitors"
-    ],
-    "expected_leads": 18,
-    "signal_priority_order": ["ssl", "ssl_mobile", "mobile", "no_website", "social_media"],
-    "minimum_score_to_include": 55,
-    "rationale": "Ryedale is a prosperous rural district — market town demographics closely match our highest-converting profiles (Ripon, Skipton cohorts). Scarborough coastal is covered; Ryedale is the logical inland extension.",
-    "when_to_scrape": "TODAY — CRITICAL. Last viable window before Easter cutoff.",
-    "easter_deadline": "All Batch 5 initial sends must go out by 2026-04-16 (Wednesday). Day-3 bumps would then fall 2026-04-19 (Saturday — no Good Friday issue). Day-7 new angles would land 2026-04-23 (post-Easter Wednesday).",
-    "pipeline_risk": "CRITICAL. Without Batch 5, new-lead pipeline is empty. The campaign cannot sustain volume at 10-15 sends/week on follow-ups alone. This is now Day 2 of the pipeline gap.",
-    "email_copy_target": "BRAIN will write Batch 5 email copy in next run once HANDS returns scraped data."
+    "target_categories": ["plumbers", "electricians", "roofers", "builders", "joiners", "pubs / restaurants", "B&Bs / guest houses", "estate agents", "solicitors"],
+    "expected_leads": "18-22",
+    "minimum_score": 55,
+    "note": "HANDS must run Batch 5 Google Maps scrape on 2026-04-22. BRAIN will write email copy on next run once scraped data is returned. Do not send until BRAIN has reviewed and written personalised copy. Every day of further delay means fewer sends before the end of April."
+  },
+  "batch_6_preview": {
+    "when": "Week of 2026-04-28 (if Batch 5 is sent by 2026-04-24)",
+    "suggested_area": "North Yorkshire Coast — Whitby, Robin Hood's Bay, Filey, Staithes",
+    "rationale": "Coastal businesses (B&Bs, fish & chip shops, gift shops, tradespeople) often have minimal web presence and high seasonal urgency going into May. Whitby is high tourism density — strong fit for the no-website and SSL signals."
   },
   "leads": [],
   "enrichment_summary": {
     "total_pending_new": 0,
     "total_blocked_carry_forward": 4,
-    "sends_today": 6,
-    "sends_breakdown": "3 Day-3 bumps (fu_027, fu_028, fu_029) + 3 Day-7 new angles (leads 42, 44, 46)",
-    "focus": "All follow-up sends today. Batch 5 scrape is critical pipeline priority for PM session.",
-    "pipeline_risk": "Day 2 of new-lead pipeline gap. Batch 5 must run today to stay on track for 2026-04-16 cutoff."
+    "sends_today": 2,
+    "sends_breakdown": "fu_020 (Rachel, Skipton Garden Design — Day-14 breakup) + fu_021 (Boroughbridge Plumbing — Day-14 breakup). Both pre-written in followup_queue.json.",
+    "pipeline_risk": "CRITICAL. 12-day pipeline gap. 14 breakup emails cover 2026-04-22–24 (sequences ending). Active warm pipeline (Claire/Rob/Tom) — outcomes unknown since last BRAIN run — HANDS must update. Batch 5 post-Easter is the single most important action next week."
   }
 }
