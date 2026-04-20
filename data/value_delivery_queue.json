@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-19T09:00:00Z",
-  "date": "2026-04-19",
-  "day_number": 22,
-  "note": "BRAIN layer — Day 22 value delivery queue. Last BRAIN run was 2026-04-10. CRITICAL: All three warm-pipeline leads (Claire, Rob, Tom) have been in the INTERESTED stage for 15-22 days with no BRAIN confirmation of outcomes. HANDS must update actual statuses on 2026-04-22 (Tuesday). Outcomes are unknown — BRAIN provides the decision tree; HANDS must execute and log.",
+  "generated_at": "2026-04-20T09:00:00Z",
+  "date": "2026-04-20",
+  "day_number": 23,
+  "note": "BRAIN layer — Day 23 (Easter Sunday). No change to outcomes — IMAP not checked. All three warm-pipeline leads remain OUTCOME_UNKNOWN. Today: Easter Sunday, no contact. Tomorrow (Easter Monday): no contact. HANDS must check IMAP on 2026-04-22 (Tuesday) and update outcome fields immediately — this is the single highest-priority action of the post-Easter return.",
   "items": [
     {
       "queue_id": "vd_001",
@@ -13,9 +13,9 @@
       "town": "Leeds",
       "classification": "INTERESTED",
       "call_was": "2026-04-07T14:00:00Z",
-      "status": "OUTCOME_UNKNOWN — last BRAIN-confirmed action: proposal nudge sent ~2026-04-10. Final close was due ~2026-04-14. HANDS must check IMAP and update this field.",
-      "days_since_call": 12,
-      "days_since_proposal_nudge": 9,
+      "status": "OUTCOME_UNKNOWN — last BRAIN-confirmed action: proposal nudge sent ~2026-04-10. Final close was due ~2026-04-14. HANDS: check IMAP 2026-04-22 and update this field: CONVERTED / LOST / LOST_NO_RESPONSE / STILL_LIVE.",
+      "days_since_call": 13,
+      "days_since_proposal_nudge": 10,
       "priority": 1,
       "urgency": "critical",
       "original_pain_point": "Website SSL + mobile",
@@ -37,17 +37,17 @@
       },
       "decision_tree_2026_04_22": {
         "if_she_replied_yes_to_nudge": {
-          "action": "CONVERTED. Log £350 (Option B most likely). Write CHANGELOG.md — first campaign revenue conversion. Confirm delivery timeline: 3-4 working days. Send agreement or invoice. This is the campaign's first proof point.",
-          "milestone": "FIRST REVENUE"
+          "action": "CONVERTED. Log £350 (Option B most likely). Write CHANGELOG.md — first campaign revenue conversion. Confirm delivery timeline: 3-4 working days. Send agreement or invoice.",
+          "milestone": "FIRST REVENUE — validate entire campaign model"
         },
         "if_she_replied_with_questions": {
-          "action": "Answer clearly. Fresha is free for the salon. Timeline is 3-4 working days. Keep response short and confident. One reply to close."
+          "action": "Answer clearly and concisely. Fresha is free for the salon. Timeline is 3-4 working days. Keep response short and confident. One reply to close."
         },
         "if_she_replied_no": {
           "action": "Mark LOST. Log in CRM. Reply: 'Thanks for letting me know, Claire — good luck with the season ahead.' No further contact."
         },
-        "if_no_reply_to_nudge_or_final_close": {
-          "action": "Send ONE final close — 'Claire — happy to leave this with you. If the timing changes, you know where I am.' Then mark LOST_NO_RESPONSE. Do NOT resend proposal. Do NOT discount. This is the absolute last touchpoint.",
+        "if_no_reply_to_nudge_and_final_close_not_yet_sent": {
+          "action": "Send ONE final close — 'Claire — happy to leave this with you. If the timing changes, you know where I am.' Then mark LOST_NO_RESPONSE. Do NOT resend proposal. Do NOT discount.",
           "note": "If final close was already sent ~2026-04-14: check IMAP to see if she replied since. If still silent by 2026-04-22: mark LOST_NO_RESPONSE without sending another message."
         }
       },
@@ -68,9 +68,9 @@
       "lead_email": "rob@pennineprint.co.uk",
       "town": "Sowerby Bridge",
       "classification": "INTERESTED",
-      "status": "OUTCOME_UNKNOWN — last BRAIN-confirmed action: nudge sent 2026-04-07. Final nudge was due 2026-04-13 if still silent. Close by 2026-04-15 if no reply.",
+      "status": "OUTCOME_UNKNOWN — last BRAIN-confirmed action: nudge sent 2026-04-07. Final nudge window was 2026-04-13 if still silent. Close by 2026-04-15. HANDS: check IMAP 2026-04-22 and update this field.",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "days_since_nudge": 12,
+      "days_since_nudge": 13,
       "priority": 2,
       "urgency": "high",
       "original_pain_point": "Website lacks SSL certificate",
@@ -97,17 +97,19 @@
       },
       "decision_tree_2026_04_22": {
         "if_replied_and_deal_alive": {
-          "action": "Scope doc or call. If he asked for the scope doc: send it today — three options laid out simply (A, B, C). If he wants to talk: offer a slot this week. Do not discount. Confirm same day.",
-          "close_target": "2026-04-25 (Friday of this week)"
+          "action": "Scope doc or call. Three options laid out simply (A, B, C). If he asks for scope doc: send today. If he wants a call: offer a slot this week. Do not discount.",
+          "close_target": "2026-04-25 (Friday)"
+        },
+        "if_replied_post_easter": {
+          "action": "Treat as fresh — he may have replied over Easter weekend or Monday morning. Respond promptly and move to close this week."
         },
         "if_replied_no": {
           "action": "Mark LOST. Log in CRM. Thank him briefly. No further contact."
         },
-        "if_no_reply_and_final_close_not_yet_sent": {
-          "action": "Send final close — 'Rob — happy to leave it here. If things change and you want to revisit, you know where I am.' Then mark LOST_NO_RESPONSE.",
-          "note": "Do NOT discount or add new urgency."
+        "if_no_reply_final_close_not_sent": {
+          "action": "Send final close — 'Rob — happy to leave it here. If things change and you want to revisit, you know where I am.' Mark LOST_NO_RESPONSE."
         },
-        "if_final_close_already_sent_and_no_reply": {
+        "if_final_close_already_sent_still_silent": {
           "action": "Mark LOST_NO_RESPONSE. No further contact."
         }
       },
@@ -123,27 +125,30 @@
       "lead_email": "tom@riponroadcarpentry.co.uk",
       "town": "Ripon",
       "classification": "INTERESTED",
-      "status": "OUTCOME_UNKNOWN — last BRAIN-confirmed action: nudge sent 2026-04-08. Final nudge window was 2026-04-13. Close by 2026-04-14.",
+      "status": "OUTCOME_UNKNOWN — last BRAIN-confirmed action: nudge sent 2026-04-08. Final nudge window was 2026-04-13. Close by 2026-04-14. HANDS: check IMAP 2026-04-22 and update this field.",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "days_since_nudge": 11,
+      "days_since_nudge": 12,
       "priority": 3,
       "urgency": "medium",
       "original_pain_point": "Website not mobile-friendly",
       "new_pain_point_discovered": "No online quote form — customers told to ring instead",
       "pricing_discussed": "£100-150 for quote form add-on",
       "decision_tree_2026_04_22": {
-        "if_replied_and_wants_to_proceed": {
-          "action": "Confirm call slot Tuesday or Wednesday. Simple spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Timeline: 2-3 days. Agree on the call and close this week.",
+        "if_replied_wants_to_proceed": {
+          "action": "Confirm call slot Tuesday or Wednesday. Spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Timeline: 2-3 days. Agree on the call and close this week.",
           "close_target": "2026-04-24 (Thursday)"
+        },
+        "if_replied_post_easter": {
+          "action": "Treat as fresh — trades people often clear inbox first thing Tuesday. Respond immediately."
         },
         "if_replied_no": {
           "action": "Mark LOST. Log in CRM. Brief and gracious reply."
         },
-        "if_no_reply_and_final_close_not_yet_sent": {
-          "action": "Send final close — 'Tom — going to leave this with you. If the quote form ever rises to the top of the list, you know where I am.' Then mark LOST_NO_RESPONSE.",
-          "note": "Simple job at a modest price — Tom was genuinely interested. The silence is most likely busyness, not rejection."
+        "if_no_reply_final_close_not_sent": {
+          "action": "Send final close — 'Tom — going to leave this with you. If the quote form ever rises to the top of the list, you know where I am.' Mark LOST_NO_RESPONSE.",
+          "note": "Tom was genuinely interested — acknowledged the pain, asked about pricing. The silence is likely busyness, not rejection."
         },
-        "if_final_close_already_sent_and_no_reply": {
+        "if_final_close_already_sent_still_silent": {
           "action": "Mark LOST_NO_RESPONSE. No further contact."
         }
       },
@@ -157,20 +162,20 @@
     "outcomes_confirmed": 0,
     "outcomes_unknown": 3,
     "overdue_actions": 3,
-    "overdue_description": "All three warm-pipeline leads have been in OUTCOME_UNKNOWN state since 2026-04-10. HANDS must check IMAP on 2026-04-22 and log outcomes before any other activity.",
+    "overdue_description": "All three warm-pipeline leads have been in OUTCOME_UNKNOWN for 13-16 days. Proposal close windows have passed for Rob (2026-04-15) and Tom (2026-04-14). Claire's close window was ~2026-04-14. HANDS must resolve all three on 2026-04-22 morning before any cold send.",
     "pipeline_value_estimate": {
       "lead_3_claire": "£350 (Option B most likely) — if still convertible",
-      "lead_22_rob": "£550-675 (redesign bundle) — if still convertible",
+      "lead_22_rob": "£550-675 (redesign bundle + possible SEO retainer) — if still convertible",
       "lead_1_tom": "£100-150 (quote form) — if still convertible",
-      "total_range": "£800-1,200 if all three are still alive and convert"
+      "total_range": "£800-1,200 if all three convert"
     },
     "conversion_probability_post_easter": {
-      "lead_3_claire": "LOW-MEDIUM — 12 days since call, 9 days since nudge. Deal has cooled but not necessarily dead. A post-Easter 'fresh start' message is possible if she replied with any positive intent.",
-      "lead_22_rob": "LOW-MEDIUM — 12 days since nudge. Easter may mean he simply didn't see it. Check for a buried reply.",
-      "lead_1_tom": "LOW — 11 days since nudge. Trades people either decide fast or move on. If no reply by now, likely lost."
+      "lead_3_claire": "LOW-MEDIUM — 13 days since call, 10 days since nudge. Deal has cooled significantly. Post-Easter fresh-start possible if she replied with any positive intent during the break.",
+      "lead_22_rob": "LOW-MEDIUM — 13 days since nudge. Easter may mean buried reply. May have read/replied over the long weekend. Check immediately.",
+      "lead_1_tom": "LOW — 12 days since nudge. Trades people move on quickly. If no reply by now, likely lost. Still worth one final close attempt."
     },
-    "hands_update_required": "CRITICAL. Update this file with actual outcome_field values after IMAP check on 2026-04-22: 'CONVERTED', 'LOST', 'LOST_NO_RESPONSE', or 'STILL_LIVE'. Write CHANGELOG.md if any deal converts — even one conversion validates the entire campaign model.",
-    "post_easter_pipeline_note": "Once these three leads are resolved (converted or closed), the active warm pipeline will be empty. All future pipeline must come from Batch 5 Ryedale new sends. This makes the Batch 5 scrape on 2026-04-22 existentially important for campaign momentum.",
-    "gdpr_note": "All three leads replied voluntarily to cold outreach. Continued contact remains valid under B2B legitimate interest. All interactions should be logged in audit_log."
+    "critical_instruction": "HANDS: Update outcome fields for vd_001, vd_002, vd_003 on 2026-04-22 after IMAP check. Values: CONVERTED / LOST / LOST_NO_RESPONSE / STILL_LIVE. If any deal converts: write CHANGELOG.md immediately — even one conversion validates the campaign model and is campaign milestone #1.",
+    "post_resolution_note": "Once these three leads are resolved, the active warm pipeline will be empty until Batch 5 Ryedale leads start replying (earliest 2026-04-24 to 2026-04-28). The entire post-Easter pipeline depends on Batch 5.",
+    "gdpr_note": "All three leads replied voluntarily to cold outreach. Continued contact is valid under B2B legitimate interest. Log all interactions in audit_log."
   }
 }

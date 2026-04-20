@@ -1,81 +1,100 @@
 {
-  "classified_at": "2026-04-19T09:00:00Z",
-  "date": "2026-04-19",
-  "day_number": 22,
-  "note": "BRAIN layer — Day 22 classification run. No new raw replies received in data/new_replies.json since 2026-04-04. This represents a 15-day IMAP gap — HANDS must do a full sweep on 2026-04-22 (first business day post-Easter). Any replies received to the 10 follow-ups sent between 2026-04-09 and 2026-04-15 are sitting in IMAP unread. Claire/Rob/Tom warm-pipeline outcomes are unknown — these are the highest priority to resolve on Tuesday morning.",
+  "classified_at": "2026-04-20T09:00:00Z",
+  "date": "2026-04-20",
+  "day_number": 23,
+  "note": "BRAIN layer — Day 23 (Easter Sunday). No new raw replies in data/new_replies.json. IMAP gap is now 16 days (last HANDS check: 2026-04-04). Any replies to the 10+ follow-ups sent between 2026-04-07 and 2026-04-15 are sitting in IMAP unread. Full sweep required on 2026-04-22 (Tuesday) — first business day post-Easter. Claire/Rob/Tom warm-pipeline outcomes remain the highest priority to resolve.",
   "new_replies_this_run": 0,
+  "imap_gap_days": 16,
+  "imap_last_checked": "2026-04-04",
   "imap_check_required": true,
-  "imap_check_priority_2026_04_22": [
+  "imap_check_urgency": "CRITICAL — 2026-04-22 morning before any cold sends",
+  "imap_sweep_priority_order_2026_04_22": [
     {
+      "priority": 1,
       "lead_id": 3,
       "name": "Claire",
       "business": "Westfield Hair & Beauty",
       "email": "claire@westfieldhair.co.uk",
-      "last_known_status": "INTERESTED — proposal delivered, nudge was overdue as of 2026-04-10",
-      "days_since_last_known_contact": 9,
+      "last_known_status": "INTERESTED — proposal nudge sent ~2026-04-10. Final close due ~2026-04-14.",
+      "days_since_proposal_nudge": 10,
       "urgency": "critical",
-      "expected_scenarios": {
-        "scenario_a": "Claire replied YES to nudge. Action: Confirm CONVERTED. Log £350 (Option B) in CRM. Write CHANGELOG.md — first revenue conversion. Confirm delivery timeline: 3-4 working days. Send invoice if agreed.",
-        "scenario_b": "Claire replied with questions. Action: Answer clearly and concisely. Confirm Fresha is free for the salon. Do not over-explain.",
-        "scenario_c": "Claire replied NO. Action: Mark lead 3 LOST. Log in CRM. Graceful close: 'Thanks for letting me know, Claire — good luck with the season ahead.'",
-        "scenario_d": "No reply to nudge (sent ~2026-04-10). Action: Send one final close — 'Claire — happy to leave this with you. If the timing changes, you know where I am.' Then mark LOST_NO_RESPONSE. Do NOT send another proposal or pricing mention."
-      },
-      "note": "It has been 9 days since the proposal nudge. The deal window is extremely narrow now. One clean close or mark as lost."
+      "decision_tree": {
+        "if_replied_yes": "CONVERTED. Log £350 (Option B). Write CHANGELOG.md — first campaign revenue. Confirm 3-4 day delivery. Send invoice/agreement.",
+        "if_replied_with_questions": "Answer clearly. Fresha is free for the salon. One reply to close.",
+        "if_replied_no": "Mark LOST. Reply: 'Thanks for letting me know, Claire — good luck with the season ahead.'",
+        "if_no_reply_and_final_close_not_sent": "Send ONE final close: 'Claire — happy to leave this with you. If the timing changes, you know where I am.' Mark LOST_NO_RESPONSE.",
+        "if_final_close_already_sent_still_silent": "Mark LOST_NO_RESPONSE. No further contact."
+      }
     },
     {
+      "priority": 2,
       "lead_id": 22,
       "name": "Rob",
       "business": "Pennine Print & Design",
       "email": "rob@pennineprint.co.uk",
-      "last_known_status": "INTERESTED — 3 days post-nudge as of 2026-04-10. Final nudge window was 2026-04-13. Close by 2026-04-15.",
-      "days_since_last_known_contact": 12,
+      "last_known_status": "INTERESTED — nudge sent 2026-04-07. Final close due 2026-04-15.",
+      "days_since_nudge": 13,
       "urgency": "high",
-      "expected_scenarios": {
-        "scenario_a": "Rob replied and the deal is alive. Action: Assess reply context. If he wants a scope doc: send it. If he asked to talk: offer a slot. Confirm quickly.",
-        "scenario_b": "Rob replied NO or not interested. Action: Mark LOST. Log in CRM.",
-        "scenario_c": "No reply — close window passed. Action: Send final breakup close — 'Rob — happy to leave this here. If things change and you want to revisit, you know where I am.' Then mark LOST_NO_RESPONSE.",
-        "scenario_d": "Rob replied post-Easter (last few days). Action: Treat as fresh — respond promptly and move to close this week."
+      "decision_tree": {
+        "if_replied_deal_alive": "Scope doc or call. Three options (A: £150, B: £550, C: £600+£75/month). Close target: 2026-04-25.",
+        "if_replied_no": "Mark LOST. Thank briefly. No further contact.",
+        "if_no_reply_final_close_not_sent": "Send final close: 'Rob — happy to leave it here. If things change, you know where I am.' Mark LOST_NO_RESPONSE.",
+        "if_final_close_already_sent_still_silent": "Mark LOST_NO_RESPONSE. No further contact."
       }
     },
     {
+      "priority": 3,
       "lead_id": 1,
       "name": "Tom",
       "business": "Ripon Road Carpentry",
       "email": "tom@riponroadcarpentry.co.uk",
-      "last_known_status": "INTERESTED — nudge sent 2026-04-08. Final nudge window was 2026-04-13. Close by 2026-04-14.",
-      "days_since_last_known_contact": 11,
+      "last_known_status": "INTERESTED — nudge sent 2026-04-08. Final close due ~2026-04-14.",
+      "days_since_nudge": 12,
       "urgency": "medium",
-      "expected_scenarios": {
-        "scenario_a": "Tom replied and wants to proceed. Action: Confirm call slot Tuesday or Wednesday this week. Simple job, agreed price (£100-150). Agree spec on the call and close this week.",
-        "scenario_b": "No reply — close window passed. Action: Send one final close — 'Tom — going to leave this with you. If the quote form ever rises to the top of the list, you know where I am.' Mark LOST_NO_RESPONSE.",
-        "scenario_c": "Tom replied post-Easter. Action: Treat as fresh — respond immediately."
+      "decision_tree": {
+        "if_replied_wants_to_proceed": "Confirm call Tuesday or Wednesday. Spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Timeline: 2-3 days. Close target: 2026-04-24.",
+        "if_replied_no": "Mark LOST. Brief and gracious reply.",
+        "if_no_reply_final_close_not_sent": "Send final close: 'Tom — going to leave this with you. If the quote form ever rises to the top of the list, you know where I am.' Mark LOST_NO_RESPONSE.",
+        "if_final_close_already_sent_still_silent": "Mark LOST_NO_RESPONSE."
       }
     },
     {
+      "priority": 4,
       "lead_id": 42,
       "business": "Blossom Beauty Studio",
-      "lead_email": "HANDS: retrieve from database",
-      "reason": "Day-7 new angle (fu_033) was sent 2026-04-10. Day-14 breakup (fu_036) sends 2026-04-22. Check IMAP before sending.",
+      "reason": "Day-7 new angle (fu_033) sent 2026-04-10. Day-14 breakup (fu_036) scheduled 2026-04-22. Check IMAP before sending fu_036.",
       "urgency": "pre_send_check",
-      "action_if_reply_found": "Classify. If INTERESTED: cancel fu_036, route to value_delivery_queue. If NOT_INTERESTED: suppress and cancel fu_036."
+      "action_if_reply_found": "Classify. If INTERESTED: cancel fu_036, route to value_delivery_queue. If NOT_INTERESTED/UNSUBSCRIBE: suppress and cancel fu_036."
     },
     {
+      "priority": 5,
       "lead_id": 44,
       "business": "Meadowbrook Vets",
-      "lead_email": "HANDS: retrieve from database",
-      "reason": "Day-7 new angle (fu_034) was sent 2026-04-10. Day-14 breakup (fu_037) sends 2026-04-22.",
+      "reason": "Day-7 new angle (fu_034) sent 2026-04-10. Day-14 breakup (fu_037) scheduled 2026-04-22.",
       "urgency": "pre_send_check",
-      "action_if_reply_found": "Classify. If INTERESTED: high value — cancel fu_037, route to value_delivery_queue immediately."
+      "action_if_reply_found": "Classify. If INTERESTED: high value lead — cancel fu_037, route to value_delivery_queue immediately."
     },
     {
+      "priority": 6,
       "lead_id": 46,
       "business": "Thornfield Electricals",
-      "lead_email": "HANDS: retrieve from database",
-      "reason": "Day-7 new angle (fu_035) was sent 2026-04-10. Day-14 breakup (fu_038) sends 2026-04-22.",
+      "reason": "Day-7 new angle (fu_035) sent 2026-04-10. Day-14 breakup (fu_038) scheduled 2026-04-22.",
       "urgency": "pre_send_check",
       "action_if_reply_found": "Classify. If INTERESTED: cancel fu_038, route to value_delivery_queue."
     }
   ],
+  "replies_expected_in_imap": {
+    "note": "Leads that received follow-ups since last IMAP check (2026-04-04) and may have replied silently:",
+    "leads": [
+      {"lead_id": 57, "business": "Scarborough Bay Plumbing", "touchpoints_sent_since": ["fu_027 (Day-3, ~2026-04-10)"], "breakup_due": "2026-04-22 (fu_039)"},
+      {"lead_id": 58, "business": "The Old Court Solicitors", "touchpoints_sent_since": ["fu_028 (Day-3 GDPR, ~2026-04-10)"], "breakup_due": "2026-04-23 (fu_044)"},
+      {"lead_id": 59, "business": "Scarborough Roofing Specialists", "touchpoints_sent_since": ["fu_029 (Day-3, ~2026-04-10)"], "breakup_due": "2026-04-23 (fu_045)"},
+      {"lead_id": 60, "business": "Pocklington Fine Furniture", "touchpoints_sent_since": ["fu_030 (Day-3, ~2026-04-11)"], "breakup_due": "2026-04-22 (fu_040)"},
+      {"lead_id": 42, "business": "Blossom Beauty Studio", "touchpoints_sent_since": ["fu_033 (Day-7, ~2026-04-10)"], "breakup_due": "2026-04-22 (fu_036)"},
+      {"lead_id": 44, "business": "Meadowbrook Vets", "touchpoints_sent_since": ["fu_034 (Day-7, ~2026-04-10)"], "breakup_due": "2026-04-22 (fu_037)"},
+      {"lead_id": 46, "business": "Thornfield Electricals", "touchpoints_sent_since": ["fu_035 (Day-7, ~2026-04-10)"], "breakup_due": "2026-04-22 (fu_038)"}
+    ]
+  },
   "carried_forward_from": "2026-04-10",
   "total_replies_to_date": 11,
   "classifications": [
@@ -92,8 +111,7 @@
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal.",
       "call_completed_at": "2026-04-07T14:00:00Z",
-      "call_outcome": "OUTCOME_UNKNOWN — HANDS must update. It has been 12 days since the call. Proposal nudge sent ~2026-04-10. Final close due ~2026-04-14. Status is now: deal closed (converted or lost) OR final close still pending.",
-      "suggested_action_2026_04_22": "IMAP check first. Act per scenario in imap_check_priority above. Update this field with actual outcome immediately.",
+      "call_outcome": "OUTCOME_UNKNOWN — 13 days since call. Proposal nudge sent ~2026-04-10. Final close was due ~2026-04-14. Status: deal closed (converted or lost) OR final close still pending. HANDS must check IMAP 2026-04-22 and log actual outcome.",
       "urgency": "critical",
       "lead_status_update": "interested",
       "status_actioned": true,
@@ -110,10 +128,9 @@
       "needs_attention": true,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Asking whether fixes can be bundled into a redesign — a buyer's question.",
+      "reasoning": "Asked whether fixes can be bundled into redesign — buyer's question. Upsell signal: 'sort the whole thing in one go'.",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "call_outcome": "OUTCOME_UNKNOWN — HANDS must update. 12 days since nudge. Per protocol, final close was due 2026-04-15.",
-      "suggested_action_2026_04_22": "IMAP check. Act per scenario above. Update immediately.",
+      "call_outcome": "OUTCOME_UNKNOWN — 13 days since nudge. Final close was due 2026-04-15. HANDS must check IMAP 2026-04-22.",
       "urgency": "high",
       "upsell_signal": true,
       "lead_status_update": "interested",
@@ -131,10 +148,9 @@
       "needs_attention": true,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Acknowledged the pain unprompted, confirmed workflow problem, asked for pricing.",
+      "reasoning": "Acknowledged the pain unprompted, confirmed workflow problem (customers told to ring), asked for pricing.",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "call_outcome": "OUTCOME_UNKNOWN — HANDS must update. 11 days since nudge. Per protocol, final close due ~2026-04-14.",
-      "suggested_action_2026_04_22": "IMAP check. Act per scenario above. Update immediately.",
+      "call_outcome": "OUTCOME_UNKNOWN — 12 days since nudge. Final close was due ~2026-04-14. HANDS must check IMAP 2026-04-22.",
       "urgency": "medium",
       "lead_status_update": "interested",
       "status_actioned": true,
@@ -151,7 +167,7 @@
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Polite but clear rejection. No further contact on any channel.",
+      "reasoning": "Polite but clear rejection: 'happy with how things are at the moment.' No further contact on any channel.",
       "urgency": "none",
       "lead_status_update": "lost",
       "status_actioned": true
@@ -167,7 +183,7 @@
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Standard OOO. Returned 6 April. Day-7 email sent 2026-04-07. Day-14 breakup (fu_031) sent ~2026-04-14. Sequence complete.",
+      "reasoning": "Standard OOO. Returned 6 April. Day-7 email sent 2026-04-07. Day-14 breakup (fu_031) assumed sent ~2026-04-14. Sequence complete.",
       "urgency": "none",
       "ooo_expired": true,
       "sequence_complete": true,
@@ -179,6 +195,7 @@
     "new_replies_today": 0,
     "total_to_date": 11,
     "imap_check_pending": true,
+    "imap_gap_days": 16,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
@@ -186,6 +203,6 @@
     "UNSUBSCRIBE": 0,
     "warm_pipeline_outcomes_unknown": [3, 22, 1],
     "leads_to_suppress": [],
-    "notes": "HANDS CRITICAL: Full IMAP sweep on 2026-04-22 before any send. Fifteen days of replies may be unread. Claire/Rob/Tom outcomes must be logged before proceeding with any other activity. Update value_delivery_queue.json with actual outcomes. Any new replies to cold follow-ups sent 2026-04-09–15 should be written to data/new_replies.json immediately and then classified here."
+    "hands_instructions": "CRITICAL: Full IMAP sweep on 2026-04-22 morning before any send. Sixteen days of replies may be unread. Resolve Claire/Rob/Tom outcomes first — update value_delivery_queue.json immediately. Check each cold-sequence lead individually before their breakup fires. Any cold reply found: classify, add to new_replies.json, cancel relevant breakup, re-route."
   }
 }

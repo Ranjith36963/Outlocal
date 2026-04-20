@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-19T09:00:00Z",
-  "date": "2026-04-19",
-  "day_number": 22,
-  "note": "BRAIN layer — Day 22 (Easter Saturday). TODAY: fu_020 + fu_021 (both pre-written). POST-EASTER (Tue 22 Apr – Thu 24 Apr): 14 deferred Day-14 breakup emails (fu_036 through fu_049) — ALL copy written below. Split across 3 days to avoid volume concentration. IMAP check before every single send. Do not send to any lead that has replied since 2026-04-10.",
+  "generated_at": "2026-04-20T09:00:00Z",
+  "date": "2026-04-20",
+  "day_number": 23,
+  "note": "BRAIN layer — Day 23 (Easter Sunday). NO SENDS TODAY OR TOMORROW (Easter Monday 2026-04-21). fu_020 (Rachel, Skipton Garden Design) and fu_021 (Boroughbridge Plumbing) ASSUMED SENT 2026-04-19 (Easter Saturday) — HANDS confirm in CHANGELOG.md. All 14 post-Easter breakup email bodies unchanged. POST-EASTER (Tue 22 Apr – Thu 24 Apr): fu_036 through fu_049 — IMAP check before every single send. Do not send to any lead that has replied since 2026-04-10.",
   "suppressed_lead_ids": [19, 7],
   "do_not_followup_replied_lead_ids": [1, 2, 3, 22],
   "sequences_completed_post_april_10": [4, 5, 6, 8, 12],
@@ -30,7 +30,9 @@
       "original_sent_at": "2026-03-29T09:00:00Z",
       "followup_number": 3,
       "sequence_day": 14,
-      "due_today": true,
+      "due_today": false,
+      "assumed_sent": "2026-04-19",
+      "sequence_complete": true,
       "due_date": "2026-04-19",
       "followup_type": "breakup",
       "subject": "Closing the loop — Skipton Garden Design",
@@ -50,7 +52,9 @@
       "original_sent_at": "2026-03-29T09:45:00Z",
       "followup_number": 3,
       "sequence_day": 14,
-      "due_today": true,
+      "due_today": false,
+      "assumed_sent": "2026-04-19",
+      "sequence_complete": true,
       "due_date": "2026-04-19",
       "followup_type": "breakup",
       "subject": "Closing the loop — Boroughbridge Plumbing",
@@ -355,12 +359,13 @@
     }
   ],
   "summary": {
-    "due_today_2026_04_19": 2,
-    "items_due_today": [
-      "fu_020 (lead 4, Rachel, Skipton Garden Design — Day-14 breakup)",
-      "fu_021 (lead 6, Boroughbridge Plumbing — Day-14 breakup)"
+    "assumed_sent_2026_04_19": 2,
+    "items_assumed_sent_yesterday": [
+      "fu_020 (lead 4, Rachel, Skipton Garden Design — Day-14 breakup) — ASSUMED SENT — HANDS confirm in CHANGELOG.md",
+      "fu_021 (lead 6, Boroughbridge Plumbing — Day-14 breakup) — ASSUMED SENT — HANDS confirm in CHANGELOG.md"
     ],
-    "send_order_today": "fu_020 (09:00) → fu_021 (09:20). Easter Saturday. Maximum 2 sends. IMAP check before each.",
+    "today_2026_04_20": "Easter Sunday — NO SENDS. No outreach.",
+    "tomorrow_2026_04_21": "Easter Monday — NO SENDS. UK bank holiday.",
     "due_2026_04_21": 0,
     "easter_monday_note": "NO OUTREACH on 2026-04-21 (Easter Monday). All items that were due 2026-04-21 have been deferred to 2026-04-22.",
     "due_2026_04_22": 5,

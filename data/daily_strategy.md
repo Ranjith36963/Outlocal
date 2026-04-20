@@ -1,167 +1,179 @@
-# Daily Strategy — 2026-04-19 (Saturday) — Day 22 — Easter Saturday
+# Daily Strategy — 2026-04-20 (Easter Sunday) — Day 23
 
 ## Campaign Overview
 
 | Metric | Value | Notes |
 |---|---|---|
 | Leads scraped to date | ~61 (leads 1–61) | Batch 5 not yet scraped |
-| Emails sent (est.) | ~75 | Includes all follow-ups through 2026-04-15 |
-| Total replies | 11 | ~18% reply rate — benchmark holding |
+| Emails sent (estimated) | ~77 | Includes fu_020 + fu_021 assumed sent yesterday |
+| Total replies | 11 | 17.9% reply rate across all touchpoints |
 | INTERESTED | 3 | Claire, Rob, Tom — outcomes unknown |
 | NOT_INTERESTED | 2 | — |
-| UNSUBSCRIBE | 1 | Lead 19 suppressed |
-| OUT_OF_OFFICE | 2 | Both resolved |
-| Active warm pipeline | 3 leads (outcome unknown) | Must resolve 2026-04-22 |
-| Sequences completing this week | 14 | All breakup emails |
-| New-lead pipeline gap | 12 days | Batch 5 critical |
+| UNSUBSCRIBE | 1 | Lead 19 permanently suppressed |
+| OUT_OF_OFFICE | 2 | Both resolved, sequences complete |
+| Sequences completing this week | 14 | All breakup emails (fu_036–049) |
+| New-lead pipeline gap | 13 days | Batch 5 is existential |
+| Warm pipeline outcomes unknown | 3 | Must resolve 2026-04-22 morning |
 
 ---
 
-## TODAY (Easter Saturday, 2026-04-19)
+## TODAY (Easter Sunday, 2026-04-20)
 
-**Two sends only:**
-1. **fu_020** — Rachel (Skipton Garden Design) — Day-14 breakup — 09:00
-2. **fu_021** — Boroughbridge Plumbing — Day-14 breakup — 09:20
+**ZERO SENDS. No outreach on any channel.**
 
-IMAP check before each. Both are pre-written and final. No other outreach today.
-
-**DO NOT SEND on Easter Monday 2026-04-21.**
+fu_020 (Rachel, Skipton Garden Design) and fu_021 (Boroughbridge Plumbing) are assumed sent yesterday. If HANDS did not send them: they are now 1 day overdue but still worth sending — send both on Tuesday 2026-04-22 as the first two items before the breakup window.
 
 ---
 
-## MOST IMPORTANT THINGS ON 2026-04-22 (Tuesday Post-Easter)
+## TOMORROW (Easter Monday, 2026-04-21)
 
-### 1. Full IMAP sweep — warm pipeline first
-Check Claire (lead 3), Rob (lead 22), Tom (lead 1) in that order. Apply decision tree from `value_delivery_queue.json`. Log outcomes immediately. Even one conversion transforms the campaign narrative.
-
-### 2. Run Batch 5 Ryedale scrape
-This has been deferred 12 days past its original planned date. Every further day of delay means fewer days to work the Ryedale leads before end of April. Run the Google Maps scrape for Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent. Return raw data to BRAIN immediately.
-
-### 3. Send 5 breakup emails (fu_036–040)
-All copy is pre-written. Send after IMAP check. These close out the sequences for leads 42, 44, 46, 57, 60.
+**ZERO SENDS. UK bank holiday. No outreach on any channel.**
 
 ---
 
-## Post-Easter Send Calendar
+## MOST IMPORTANT ACTIONS ON 2026-04-22 (Tuesday — first business day)
 
-| Date | Sends | Type | Notes |
+Priority order is strict. Do not deviate.
+
+### 1. Full IMAP sweep — warm pipeline first (09:00 target)
+Check Claire (lead 3) → Rob (lead 22) → Tom (lead 1).
+Apply decision tree from value_delivery_queue.json for each.
+Log outcomes immediately — update value_delivery_queue.json status fields.
+Even one CONVERTED entry transforms the campaign narrative.
+
+### 2. Retrieve DB email addresses before 09:00
+Before starting breakup sends, pull from database:
+- Lead 42 (Blossom Beauty Studio)
+- Lead 44 (Meadowbrook Vets)
+- Lead 46 (Thornfield Electricals)
+- Lead 30 (Halifax Window Cleaning) — for Wed sends
+- Lead 31 (Pontefract Pharmacy) — for Wed
+- Lead 32 (Castleford Carpets) — for Wed
+- Leads 50, 52, 55, 56 — for Thu sends
+
+### 3. Send 5 breakup emails (09:00–10:15)
+fu_036 → fu_037 → fu_038 → fu_039 → fu_040
+IMAP check before each individual send. If reply found: classify, cancel breakup, re-route.
+
+### 4. Run Batch 5 Ryedale Google Maps scrape (after 10:30)
+Target: Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent.
+Categories: plumbers, electricians, roofers, builders, joiners, pubs/restaurants, B&Bs, estate agents, solicitors.
+Return raw data to BRAIN. Do not attempt to write email copy — BRAIN will do this.
+
+### 5. Unblock blocked leads (parallel with scrape)
+- Lead 49 (East Riding Builders): Companies House director search
+- Lead 51 (Driffield Garden Centre): phone for direct email
+- Lead 53 (Bridlington Bay Lettings): Rightmove/Zoopla + info@ fallback
+- Lead 54 (The Wolds Inn): try info@thewoldsinn.co.uk
+
+### 6. Confirm assumed-sent items in CHANGELOG.md
+Verify and log: fu_027, fu_028, fu_029, fu_030, fu_031, fu_032, fu_020, fu_021.
+Note actual send dates for any that are confirmed. Flag any that were NOT sent.
+
+---
+
+## Post-Easter Send Calendar (confirmed)
+
+| Date | Sends | IDs | Notes |
 |---|---|---|---|
-| **Sat 19 Apr** | fu_020, fu_021 | Day-14 breakups | TODAY |
-| **Sun 20 Apr** | None | — | — |
-| **Mon 21 Apr** | None | **EASTER MONDAY — NO OUTREACH** | — |
-| **Tue 22 Apr** | fu_036–040 (5 breakups) | Day-14 breakups | + IMAP sweep + Batch 5 scrape |
-| **Wed 23 Apr** | fu_041–045 (5 breakups) + Batch 5 new sends if ready | Day-14 breakups + new | Need Batch 5 copy from BRAIN |
-| **Thu 24 Apr** | fu_046–049 (4 breakups) + Batch 5 new sends | Day-14 breakups + new | — |
-| **Fri 25 Apr** | Batch 5 new sends (target: 5-8) | New sends | Full Batch 5 send day |
-| **Sat 26 Apr** | Rest or Batch 5 Day-3 planning | — | — |
-| **Tue 28 Apr** | Batch 5 Day-3 bumps (if sent Mon-Tue) | Day-3 bumps | BRAIN to write on next run |
+| Sun 20 Apr | 0 | — | TODAY — Easter Sunday |
+| Mon 21 Apr | 0 | — | Easter Monday — bank holiday |
+| **Tue 22 Apr** | **5 breakups** | fu_036–040 | + IMAP sweep + Batch 5 scrape |
+| **Wed 23 Apr** | **5 breakups** + 1-3 new | fu_041–045 | Batch 5 new sends if copy ready |
+| **Thu 24 Apr** | **4 breakups** + 3-5 new | fu_046–049 | Batch 5 new sends |
+| **Fri 25 Apr** | 5-8 new sends | Batch 5 | Full Batch 5 send day |
+| Mon 28 Apr | Day-3 bumps | Batch 5 | For sends made 22-23 Apr |
+| Tue 29 Apr | Day-3 bumps | Batch 5 | For sends made 24-25 Apr |
 
 ---
 
-## What Changed in the 9-Day BRAIN Gap (2026-04-10 to 2026-04-19)
+## Strategy Update: What Easter Week Has Clarified
 
-**Assumed sent by HANDS (10 items):**
-- 3 Day-3 bumps: Scarborough Bay Plumbing, Old Court Solicitors, Scarborough Roofing (2026-04-10)
-- 3 Day-7 new angles: Blossom Beauty, Meadowbrook Vets, Thornfield Electricals (2026-04-10)
-- 1 Day-3 bump: Pocklington Fine Furniture (2026-04-11)
-- 1 Day-14 breakup: Graham, Ilkley Ironmongery (2026-04-11)
-- 1 Day-14 breakup: David Harewood, Harewood Accountants (~2026-04-14)
-- 1 Day-14 breakup: Bronte Country Cottages (~2026-04-15)
+### The BRAIN gap was costly in one specific way
+Between 2026-04-10 and today (10 days), 8 leads missed their Day-7 new-angle window and went straight to breakup. Day-7 is confirmed as the highest-conversion touchpoint (Tom/lead 1 replied to Day-7, not Day-0). We will never know how many of the 8 skipped leads might have converted with a well-crafted new angle. This is an opportunity cost, not a model failure. Going forward: **BRAIN must run every 3 days maximum** — this is now a firm operating rule.
 
-**HANDS: verify these in CHANGELOG.md. If any were NOT sent, confirm immediately.**
+### Easter Monday return = warm inbox opportunity
+UK B2B decision-makers returning from a 4-day bank holiday weekend will typically:
+1. Clear urgent emails Monday morning (bank holiday — most won't do this)
+2. Do a proper inbox clear on Tuesday morning
+3. Action deferred items Wednesday/Thursday
 
-**Missed due to Easter (9 items — all now in post-Easter queue):**
-- Day-7 new angles for leads 50, 52, 55, 56, 57, 58, 59, 60 — SKIPPED entirely (too late)
-- Day-14 breakups for leads 30, 31, 32 (due 2026-04-16) — deferred to 2026-04-23
-- Day-14 breakups for leads 42, 44, 46 (due 2026-04-17) — deferred to 2026-04-22
-- Day-14 breakups for leads 50, 52, 55, 56 (due 2026-04-20) — deferred to 2026-04-24
-- Day-14 breakups for leads 57, 58, 59 (due 2026-04-21, Easter Mon) — deferred to 2026-04-22–23
-- Day-14 breakup for lead 60 (due 2026-04-22) — on time
+This means Tuesday IMAP sweep is higher-yield than a normal Tuesday — there may be replies to pre-Easter follow-ups that were read over the weekend and are now awaiting action. Do the IMAP sweep before 09:00 on Tuesday.
 
----
+### Breakup timing post-Easter is acceptable
+Breakup emails sent Tuesday/Wednesday after a bank holiday are commercially fine:
+- Leads are returning to work and clearing backlogs
+- A brief, final 'closing the loop' message will be noticed rather than buried
+- The hospitality cohort (Pete/Harbour Fish Bar, East Riding) are at peak seasonal motivation post-Easter
+- Dr Rowe (Meadowbrook Vets) operates a professional practice — Tuesday post-Easter is a normal working day
 
-## Pattern Intelligence Update (Day 22)
+### Batch 5 urgency is now maximal
+13 days without new leads entering the pipeline. With April ending on April 30, there are 8 business days remaining in the month. Working backwards:
+- Day-14 breakups for Batch 5 leads would fall in mid-May
+- Day-7 new angles fall in early May
+- Day-3 bumps fall in late April / early May
+- Initial sends: **must begin 2026-04-23 at the very latest** for a workable April sequence
 
-### Easter Period Effect
-The Easter bank holiday weekend (Good Friday 18th → Easter Monday 21st) has been the longest enforced pause in the campaign. After this, expect:
-- **Post-Easter inbox clearing (Tuesday 22nd):** B2B decision-makers clear their inboxes on the first Tuesday back. Some leads who received follow-ups in the week before Easter may reply on 2026-04-22 as they work through backlog. IMAP sweep Tuesday morning is higher-yield than normal.
-- **Seasonal inflection for hospitality/tourism:** The Easter weekend marks the start of peak season for Yorkshire tourism businesses (B&Bs, restaurants, fish & chip shops). Leads in this category (Pete/Harbour Fish Bar, Bronte Country Cottages) are actually at their highest seasonal motivation right now — breakup emails arriving just after Easter are still commercially relevant.
+If Batch 5 sends begin Wednesday 2026-04-23: the campaign will have ~6 active sequences running through May. This is the minimum viable pipeline to maintain momentum.
 
-### Sequences Ending — What the Data Will Tell Us
-By the end of this week, all 60+ leads will have completed their full 4-touchpoint sequence. The final reply rate across all touchpoints will be the campaign's first complete dataset:
-- **Target reply rate:** 18-22% (current: ~18% at touchpoint 1-2)
-- **Target positive rate:** 5-8% (current: ~4.9%)
-- **Target INTERESTED-to-CONVERTED rate:** 33%+ (0/3 confirmed, awaiting outcomes)
+### The complete campaign dataset arrives this week
+By end of Thursday 2026-04-24, all 60+ leads will have been through all 4 touchpoints. This is the first time BRAIN will have a complete performance dataset. Target benchmarks:
+- **Reply rate (all touchpoints):** 18-22% — current ~17.9%, on track
+- **Positive (INTERESTED) rate:** 5-8% — current 4.9%, marginally below target
+- **INTERESTED-to-CONVERTED rate:** 33%+ — 0/3 confirmed, all unknown
+- **Campaign validation:** one conversion at any price point validates the model
 
-If Claire converts at £350: converted rate = 33%. If two convert: 67%. This week's IMAP sweep is the campaign's first performance verdict.
-
-### Day-7 New Angle Confirms as the Strongest Touchpoint
-Tom (lead 1) replied after his Day-7 quote-form angle — not the original email. This validates the "always shift pain point on Day-7" rule. The fact that we had to skip Day-7 for 8 leads due to the BRAIN gap + Easter is a notable loss — we'll never know whether any of those 8 leads would have replied to a well-written new angle. Post-Easter, tighten BRAIN run cadence to every 3-4 days maximum.
-
-### SSL Signal Continues to Dominate
-The Scarborough batch (leads 57, 58, 59) are all SSL-signal cold emails — same pattern as the three INTERESTED leads (1, 3, 22). If Day-7 had fired for these three before Easter, BRAIN's best estimate is 1-2 more INTERESTED leads would have emerged. This is a pipeline miss, not a model failure.
+If we reach Thursday with zero confirmed conversions (even from Claire/Rob/Tom), the BRAIN layer should write a campaign model assessment note. If Claire converts at £350, converted rate = 33% — campaign validated.
 
 ---
 
-## A/B Test Update (Day 22)
+## A/B Test Status (Day 23)
 
-| Variable | Variant A | Variant B | Result to Date | Action |
-|---|---|---|---|---|
-| Subject: name vs business | `[Name] — [issue]` | `[Business] — [issue]` | A: 3 INTERESTED, B: 0 | Name-first subject confirmed dominant. Default for all new sends. |
-| Framework: PAS vs BAB | PAS | BAB | PAS: 3 INTERESTED, BAB: 0 INTERESTED | PAS default confirmed. |
-| Day-7 angle: new pain vs same reframe | New pain point | Same pain reframed | New pain: 1 confirmed (Tom); data insufficient for others | Always shift — rule confirmed. |
-| Day-3 bump: seasonal vs simple | Seasonal (Pete Easter) | Simple direct | No data — couldn't track Day-7 or Day-14 for this cohort due to gap | Cannot conclude. Monitor post-Easter reply data. |
-| GDPR frame for legal/professional | fu_028 (Old Court Solicitors) | fu_042 (Pontefract Pharmacy) | No reply data available | Watch for any post-Easter reply to fu_028 before breakup (fu_044) sends Wednesday. |
-
----
-
-## Winning Patterns Confirmed
-
-1. **SSL signal → PAS framework → first-name subject line** = all 3 INTERESTED leads. This combination is the campaign's core.
-2. **Day-7 pain-point shift** is confirmed (Tom). Never rephrase the original — always pivot to a new commercial angle.
-3. **Local town name in subject and body** is a trust signal. Continue defaulting to this.
-4. **Two-sentence proposal nudges** are more effective than longer follow-up emails.
-5. **Friday morning** is the highest B2B reply day — schedule IMAP sweeps for Friday AM.
-6. **Easter Saturday is safe** for garden design and plumbing B2B — these are not consumer lifestyle businesses.
+| Variable | Result | Action |
+|---|---|---|
+| Name vs business in subject | Name dominant: 3/3 INTERESTED came from name-first subjects | Rule confirmed. Default: name-first always. |
+| PAS vs BAB framework | PAS dominant: 3/3 INTERESTED from PAS | PAS default confirmed for SSL and mobile signals. |
+| Day-7 new angle vs reframe | New angle wins (Tom) | Always shift pain point on Day-7. Never reframe original. |
+| Friday morning IMAP sweep | Observational: highest reply day appears to be Thursday/Friday | Schedule IMAP sweeps Friday AM. |
+| GDPR frame for professional leads | Insufficient data (fu_028/fu_044 pending) | Watch for post-Easter reply to Old Court Solicitors before Wednesday breakup. |
+| Easter Saturday B2B outreach | No data yet (fu_020/021 sent Saturday, no IMAP since) | Tuesday IMAP will confirm whether Easter Saturday sends get opens/replies. |
 
 ---
 
-## Pipeline Health Assessment
+## Batch 5 Ryedale — Pre-BRAIN Signal Preview
 
-**Current state:** 14 sequences expiring this week. Three warm leads unresolved. New-lead pipeline empty for 12 days.
+Before HANDS returns the scrape data, BRAIN can pre-assign expected signal distribution for Ryedale:
 
-**Risk:** If Batch 5 doesn't run on 2026-04-22, new sends will be impossible before April ends. The follow-up engine has nothing to follow up on.
+**Ryedale profile:**
+- Rural North Yorkshire market towns
+- High density of trades (plumbers, electricians, joiners, roofers) and hospitality (pubs, B&Bs, restaurants)
+- Many businesses have legacy websites or no website — built 10+ years ago, often not SSL, rarely mobile-optimised
+- Lower digital sophistication than urban areas — higher proportion of no-website leads expected vs Batch 4 (East Yorkshire coast)
 
-**Opportunity:** The 14 breakup emails represent final chances for replies from cold leads. A small number of leads who received Day-7 emails before Easter (leads 42, 44, 46 in particular) may reply to a breakup — especially Dr Rowe (Meadowbrook Vets), whose 142 Google reviews represent strong underlying credibility and potential for a quality engagement.
+**Expected signal breakdown:**
+| Signal | Expected % | Framework | Subject pattern |
+|---|---|---|---|
+| SSL / HTTP | 55-65% | PAS | "[Name] — [town] [trade] website is flagged 'Not Secure'" |
+| Mobile fail | 15-20% | PAS | "[Name] — [town] [business] site isn't mobile-friendly" |
+| No website | 10-15% | BAB | "[Business name] — [town] [trade]: customers can't find you online" |
+| Social media / high reviews | 5-10% | AIDA | "[Name] — [number] people reviewed [business], but your site isn't ranking" |
 
-**Target for Week 4 (22–25 April):**
-1. Resolve Claire/Rob/Tom (log at least one conversion)
-2. Send all 14 breakup emails
-3. Scrape Batch 5 Ryedale (18-22 leads)
-4. Send 5-8 Batch 5 initial emails
-5. Unblock leads 49, 51, 53, 54 via offline enrichment
-
----
-
-## Geographic Coverage Update
-
-| Area | Status |
-|---|---|
-| West Yorkshire (Leeds, Bradford, Halifax corridor) | Sequences completing — no new sends until Batch 6 |
-| North Yorkshire (York, Harrogate, Ripon, Skipton, Wetherby) | Sequences completing |
-| East Yorkshire (Beverley, Bridlington, Pocklington, Scarborough) | Sequences completing |
-| **Ryedale (Malton, Pickering, Helmsley)** | **NOT STARTED — Batch 5 urgent** |
-| North Yorkshire Coast (Whitby, Filey, Staithes) | Planned for Batch 6 |
+**Prioritisation rule for Ryedale:**
+1. Trades with owner name + SSL signal → email immediately (highest conversion rate)
+2. Trades with owner name + mobile signal → email second wave
+3. Hospitality with high reviews + no website → BAB framework, strong seasonal angle (spring/summer)
+4. Professional services (solicitors, accountants) → PAS + GDPR trust angle, as per Old Court Solicitors pattern
 
 ---
 
-## LinkedIn Status
+## Winning Patterns — Confirmed to Day 23
 
-Post-Easter LinkedIn plan (starting 2026-04-22):
-- Leads 42, 44, 46: breakup emails go out 2026-04-22. If no email reply found in IMAP, consider LinkedIn before breakup fires — but given the sequence is ending, this is low ROI. Only worth doing if HANDS has profiles ready.
-- Leads 57, 58, 59: same — breakup fires 2026-04-22. LinkedIn not worth chasing at breakup stage.
-- **New Batch 5 leads:** LinkedIn eligibility window starts Day 3 after initial send. Do not touch LinkedIn for Batch 5 leads until Day 3 minimum.
-- **Graham (lead 8):** Breakup (fu_007_updated) assumed sent 2026-04-11. If Graham connected on LinkedIn before then: check for messages. If he connected post-breakup: respond warmly but briefly.
+1. **SSL → PAS → first-name subject** = all 3 INTERESTED leads. Core playbook.
+2. **Day-7 new pain-point pivot** = confirmed winner (Tom). Never reframe — always shift.
+3. **Town name in subject and body** = trust signal. Non-negotiable.
+4. **Two-sentence proposal nudges** outperform longer follow-ups.
+5. **IMAP sweep on Friday AM** = highest yield window.
+6. **BRAIN run every 3 days maximum** = new hard rule. 10-day gaps destroy sequence value.
 
 ---
 
@@ -170,12 +182,20 @@ Post-Easter LinkedIn plan (starting 2026-04-22):
 - Lead 19 (Summit Fitness) — permanently suppressed. No contact on any channel.
 - Lead 2 (Nidderdale Pet Supplies) — LOST. No contact.
 - Lead 7 — suppressed. No contact.
-- All breakup emails: B2B legitimate interest basis. Maximum 4 touchpoints respected.
-- GDPR Article 21: any unsubscribe request must be processed within 24 hours.
-- Easter: Good Friday 2026-04-18 and Easter Monday 2026-04-21 — no outreach on either day.
-- Saturday sends (fu_020, fu_021): acceptable. Garden design and plumbing are non-urgent B2B services.
+- Good Friday 2026-04-18 and Easter Monday 2026-04-21 — no outreach. Correctly enforced.
+- All 14 breakup sequences respect the 4-touchpoint maximum (Day 0 + Day 3 + Day 7 + Day 14).
+- GDPR: any unsubscribe processed within 24 hours. None pending.
+- Warm pipeline (leads 1, 3, 22): continued contact valid under B2B legitimate interest (they replied voluntarily).
 
 ---
 
-*Generated by OUTLOCAL BRAIN layer — 2026-04-19 09:00 UTC*
-*HANDS: TODAY: send fu_020 (09:00) and fu_021 (09:20). Then rest. TUESDAY 2026-04-22: IMAP sweep first, then breakups, then Batch 5 scrape. See followup_queue.json and daily_email_plan.json for full instructions.*
+## LinkedIn — Easter Period Update
+
+LinkedIn activity is paused for all current sequences. All active leads are at Day 14 (breakup stage). LinkedIn connection at breakup stage has near-zero ROI. No LinkedIn outreach until Batch 5 leads reach Day 3 (earliest 2026-04-26).
+
+**Exception:** If any Batch 5 lead has a highly active LinkedIn profile with recent posts, a targeted connection note on Day 3 remains a valid secondary channel. BRAIN will flag in the Batch 5 signal assignment.
+
+---
+
+*Generated by OUTLOCAL BRAIN layer — 2026-04-20 09:00 UTC*  
+*HANDS: TODAY — no sends (Easter Sunday). TOMORROW — no sends (Easter Monday bank holiday). TUESDAY 2026-04-22: IMAP sweep + warm pipeline resolution FIRST, then 5 breakup emails, then Batch 5 scrape. See followup_queue.json and daily_email_plan.json.*
