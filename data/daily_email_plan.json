@@ -1,12 +1,12 @@
 [
   {
-    "plan_date": "2026-04-20",
-    "generated_at": "2026-04-20T09:00:00Z",
-    "day_number": 23,
-    "note": "BRAIN layer — Day 23 (Easter Sunday). NO SENDS TODAY. NO SENDS TOMORROW (Easter Monday 2026-04-21). fu_020 (Rachel, Skipton Garden Design) and fu_021 (Boroughbridge Plumbing) are ASSUMED SENT yesterday — HANDS confirm in CHANGELOG.md. Post-Easter plan (2026-04-22 onwards) is unchanged from Day 22. No Batch 5 data received — copy for Ryedale leads will be written on the next BRAIN run after HANDS returns scrape data.",
+    "plan_date": "2026-04-21",
+    "generated_at": "2026-04-21T08:00:00Z",
+    "day_number": 24,
+    "note": "BRAIN layer — Day 24 (Easter Monday, UK bank holiday). NO SENDS TODAY. fu_020 (Rachel, Skipton Garden Design) and fu_021 (Boroughbridge Plumbing) are ASSUMED SENT 2026-04-19 (Easter Saturday) — HANDS confirm in CHANGELOG.md. If NOT sent on Saturday: send BOTH first on 2026-04-22 before the 09:00 breakup window. Post-Easter plan is unchanged from Day 22/23 runs. No Batch 5 data received — copy for Ryedale leads will be written on the next BRAIN run after HANDS returns scrape data.",
     "sends_today": [],
-    "sends_tomorrow_easter_monday": [],
-    "assumed_sent_yesterday_2026_04_19": [
+    "reason_today": "Easter Monday — UK bank holiday. No outreach on any channel.",
+    "assumed_sent_easter_saturday_2026_04_19": [
       {
         "followup_id": "fu_020",
         "lead_id": 4,
@@ -33,18 +33,15 @@
     "do_not_email": [1, 2, 3, 4, 5, 6, 7, 8, 12, 19, 22],
     "note_do_not_email": "Leads 1, 3, 22: INTERESTED — warm pipeline, handled via value_delivery_queue. Leads 4, 6: sequences complete (fu_020/021 assumed sent). Leads 5, 8, 12: sequences complete (breakups sent 2026-04-11–15). Lead 2: LOST (NOT_INTERESTED). Leads 7, 19: permanently suppressed.",
     "post_easter_plan": {
-      "2026-04-21": {
-        "day": "Easter Monday — UK bank holiday",
-        "sends": 0,
-        "note": "NO OUTREACH on any channel. Bank holiday."
-      },
       "2026-04-22": {
         "day": "Tuesday — first business day post-Easter",
         "priority_morning_tasks": [
-          "Full IMAP sweep — check Claire (lead 3), Rob (lead 22), Tom (lead 1) FIRST. Log outcomes before any cold sends.",
+          "07:00 — Full IMAP sweep: Check Claire (lead 3), Rob (lead 22), Tom (lead 1) FIRST. Log outcomes before any cold sends or LinkedIn activity.",
+          "07:00-09:00 — LinkedIn searches for leads 42, 44, 46, 57, 60 (CRITICAL priority — before breakup emails)",
           "Retrieve email addresses from database for leads 42, 44, 46 before 09:00",
-          "Run Batch 5 Ryedale Google Maps scrape — Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent",
+          "If fu_020/fu_021 NOT sent Saturday: send both before 09:00 window",
           "Confirm assumed-sent items fu_027 through fu_032 and fu_020/fu_021 in CHANGELOG.md",
+          "Run Batch 5 Ryedale Google Maps scrape — AFTER morning send window (10:30+)",
           "Unblock leads 49, 51, 53 (Companies House / phone / directory searches)"
         ],
         "breakup_sends": 5,
@@ -59,6 +56,7 @@
         "send_window": "09:00-10:15",
         "stagger_minutes": 15,
         "new_sends": 0,
+        "linkedin_window": "07:00-09:00 (CRITICAL 5) and 10:30+ (HIGH 5)",
         "compliance_note": "All B2B legitimate interest. Check IMAP for reply to any prior touchpoint before each send. If reply found: classify, cancel breakup, route per reply_classifications.json."
       },
       "2026-04-23": {
@@ -75,6 +73,7 @@
         "send_window": "09:00-10:15",
         "stagger_minutes": 15,
         "new_sends_possible": "1-3 Batch 5 new sends after 10:30 — only if HANDS returned Ryedale data by Tuesday EOD AND BRAIN wrote copy on a Tuesday run",
+        "linkedin_window": "MEDIUM priority leads 50, 52, 55, 56",
         "hands_before_sending": "Retrieve email addresses for leads 30, 31, 32 from database before 09:00"
       },
       "2026-04-24": {
@@ -97,12 +96,13 @@
         "day": "Friday",
         "breakup_sends": 0,
         "new_sends_target": "5-8 Batch 5 new sends",
-        "note": "Full Batch 5 send day — only possible if Ryedale data returned Tuesday and BRAIN wrote copy on a Wednesday run. Friday is the highest B2B reply day — Batch 5 opens start coming in by Monday 2026-04-28."
+        "note": "Full Batch 5 send day — only possible if Ryedale data returned Tuesday and BRAIN wrote copy on a Wednesday run. Friday is historically the highest B2B reply day — Batch 5 opens will start coming in by Monday 2026-04-28.",
+        "milestone": "If Batch 5 sends go out on Friday: Day-3 bumps fall on Monday 2026-04-28. Day-7 new angles on 2026-05-02. Day-14 breakups on 2026-05-09. BRAIN must run every 3 days to cover all touchpoints."
       },
       "2026-04-28": {
         "day": "Monday",
-        "expected": "Batch 5 Day-3 bumps if initial sends went out 2026-04-23 to 2026-04-24. BRAIN must run over the weekend or early Monday to write bump copy.",
-        "note": "BRAIN run cadence: every 3 days max from 2026-04-22 to maintain follow-up pipeline."
+        "expected": "Batch 5 Day-3 bumps if initial sends went out 2026-04-23 to 2026-04-24. BRAIN must run over the weekend or early Monday.",
+        "note": "BRAIN run cadence: every 3 days maximum from 2026-04-22 to maintain follow-up pipeline. This is now a hard rule."
       }
     },
     "batch_5_new_sends": {
@@ -124,41 +124,41 @@
         "lead_id": 49,
         "business_name": "East Riding Builders Ltd",
         "status": "blocked_no_email",
-        "days_blocked": 20,
+        "days_blocked": 21,
         "action": "HANDS: Companies House director name search — 2026-04-22 morning"
       },
       {
         "lead_id": 51,
         "business_name": "Driffield Garden Centre",
         "status": "blocked_contact_form_only",
-        "days_blocked": 20,
-        "action": "HANDS: phone call — 2026-04-22"
+        "days_blocked": 21,
+        "action": "HANDS: phone call — 2026-04-22 after 09:30"
       },
       {
         "lead_id": 53,
         "business_name": "Bridlington Bay Lettings",
         "status": "blocked_no_direct_email",
-        "days_blocked": 20,
+        "days_blocked": 21,
         "action": "HANDS: Rightmove / Zoopla — 2026-04-22"
       },
       {
         "lead_id": 54,
         "business_name": "The Wolds Inn",
         "status": "blocked_no_email",
-        "days_blocked": 20,
+        "days_blocked": 21,
         "action": "HANDS: try info@thewoldsinn.co.uk — low priority"
       }
     ],
     "send_summary": {
       "total_new_sends_today": 0,
       "total_follow_up_sends_today": 0,
-      "total_sends_tomorrow": 0,
-      "reason_today": "Easter Sunday — no outreach",
-      "reason_tomorrow": "Easter Monday — UK bank holiday",
+      "reason_today": "Easter Monday — UK bank holiday",
       "next_send_day": "2026-04-22 (Tuesday)",
       "next_send_count": 5,
       "next_followup_ids": ["fu_036", "fu_037", "fu_038", "fu_039", "fu_040"],
-      "check_imap_first": true
+      "imap_first_thing": true,
+      "linkedin_before_09:00": true,
+      "check_imap_before_each_send": true
     }
   }
 ]
