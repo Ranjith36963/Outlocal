@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-19T09:15:00Z",
+  "generated_at": "2026-04-23T08:30:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-19",
-  "day_number": 22,
-  "note": "Day 22 (Easter Saturday). 10-day BRAIN gap since last coordination run (Day 12, 2026-04-09). No LinkedIn activity today or Easter Monday 2026-04-21. First execution window: Tuesday 2026-04-22 from 07:00. All three warm-pipeline leads (1/3/22) remain in OUTCOME_UNKNOWN state — HANDS must resolve these on 2026-04-22 before any cold channel activity. Five leads have Day-14 breakup emails AND LinkedIn requests both due 2026-04-22 — LinkedIn goes first (07:00), breakups follow (09:00). This file supersedes all previous coordination decisions.",
+  "run_date": "2026-04-23",
+  "day_number": 26,
+  "note": "Day 26 (Wednesday). This file supersedes all previous coordination decisions. IMAP gap 19 days — HANDS must check IMAP before any outreach. HANDS Tuesday execution unconfirmed. Today's email channel: fu_041-045 (breakups for 30/31/32/58/59, 09:00-10:15). Today's LinkedIn channel: leads 52/55/50/56 (last window before tomorrow's breakup emails). All other leads either blocked, sequence complete, or in active sales pipeline.",
   "rules_applied": {
     "block_linkedin_if_email_replied": true,
     "block_linkedin_if_unsubscribed": true,
@@ -12,102 +12,249 @@
     "min_days_between_email_and_linkedin": 1,
     "no_linkedin_same_day_as_new_angle_email": true,
     "no_linkedin_same_day_as_bump_email": true,
-    "no_linkedin_on_breakup_day_unless_sent_before_breakup": true,
-    "no_linkedin_bank_holidays": true
+    "no_linkedin_on_breakup_day": true,
+    "no_linkedin_after_breakup_window_expired": true,
+    "imap_check_before_each_outreach": true
   },
-  "easter_constraints": {
-    "good_friday_2026_04_18": "NO OUTREACH — Bank Holiday (already passed)",
-    "easter_saturday_2026_04_19": "NO LinkedIn execution — not a Bank Holiday but no outreach today per campaign plan",
-    "easter_sunday_2026_04_20": "NO outreach",
-    "easter_monday_2026_04_21": "NO OUTREACH — Bank Holiday",
-    "first_viable_day": "2026-04-22 (Tuesday)"
-  },
-  "channel_coordination_2026_04_22": {
-    "pre_send_imap_sweep": {
-      "required": true,
-      "leads_to_check": [1, 3, 22, 42, 44, 46, 57, 60, 30, 32, 50, 52, 55, 56, 58, 59],
-      "instruction": "CRITICAL — check IMAP for ALL active leads before ANY outreach. Outcomes for leads 1/3/22 are unknown since 2026-04-10. Even one late reply from a warm lead changes the entire day's priorities.",
-      "warm_pipeline_outcomes_overdue": "Leads 1 (Tom), 3 (Claire), 22 (Rob) have been in OUTCOME_UNKNOWN for 12+ days. See value_delivery_queue.json for decision trees."
+  "channel_schedule_today_2026_04_23": {
+    "email_channel_09:00-10:15": {
+      "sends": ["fu_041", "fu_042", "fu_043", "fu_044", "fu_045"],
+      "leads": [30, 31, 32, 58, 59],
+      "type": "Day-14 breakup emails — sequences close after each send",
+      "imap_check_required": "Before each individual send — 19-day gap means silent replies possible",
+      "stagger_minutes": 15
     },
-    "linkedin_channel_morning_07:00-09:00": {
-      "execute_in_order": [42, 44, 46, 57, 60],
-      "condition": "Check IMAP for each lead immediately before sending. If reply found: cancel LinkedIn for that lead.",
-      "instruction": "LinkedIn requests for these 5 leads must be sent BEFORE the 09:00 email window. Connection notes are already written in linkedin_connection_notes.json. Immediately populate linkedin_profiles.json with results.",
-      "max_time_per_search": "10 minutes. If profile not found within 10 minutes: skip and move to next."
-    },
-    "email_channel_morning_09:00-10:15": {
-      "breakup_sends": [42, 44, 46, 57, 60],
-      "followup_ids": ["fu_036", "fu_037", "fu_038", "fu_039", "fu_040"],
-      "instruction": "Pre-written breakup emails in followup_queue.json. IMAP check before each send. Stagger 15 minutes apart.",
-      "note": "LinkedIn requests were sent in the 07:00-09:00 window. Email breakups follow at 09:00. Different channels — both are appropriate."
-    },
-    "linkedin_channel_afternoon_10:30+": {
-      "execute_in_order": [30, 32, 59, 31, 58],
-      "condition": "Cancel any lead that replied to email. Check IMAP before each search.",
-      "note": "These leads have breakups on 2026-04-23 — afternoon execution Tuesday is fine."
-    },
-    "email_channel_afternoon_10:30+": {
-      "new_sends": 0,
-      "note": "No new Batch 5 sends yet — awaiting Ryedale scrape data from HANDS. See daily_email_plan.json."
+    "linkedin_channel_pre_email": {
+      "note": "No CRITICAL or HIGH priority LinkedIn activity today — those windows all expired (42/44/46/57/60 window was 2026-04-22 before 09:00; 30/32/59/31/58 blocked by today's breakups).",
+      "active_targets": [52, 55, 50, 56],
+      "execution_order": "52 → 55 → 50 → 56",
+      "execute_before_breakup_emails": false,
+      "execute_today_any_time": "After IMAP sweep, before or after fu_041-045 sends — LinkedIn targets (50/52/55/56) are not the same leads as today's email sends (30/31/32/58/59). No channel conflict.",
+      "recommended_window": "Before 15:00 UK time — do not send LinkedIn requests after business hours"
     }
   },
   "decisions": [
+    {
+      "lead_id": 52,
+      "business_name": "Holderness Homecare",
+      "owner_name": "Linda Walsh",
+      "decision": "APPROVED_FOR_LINKEDIN_TODAY",
+      "priority": "MEDIUM — last window",
+      "reason": "Emailed 2026-04-06 (17 days ago). Day-3 bump sent 2026-04-10. Day-7 email SKIPPED (BRAIN gap). No confirmed reply. Day-14 breakup fires tomorrow (fu_046, 2026-04-24 09:00).",
+      "email_status": "No reply in new_replies.json. IMAP not checked for 19 days — HANDS must check before sending.",
+      "action": "HANDS: (1) Check IMAP for Linda Walsh. (2) If no reply: search LinkedIn using queries in linkedin_search_plan.json. (3) If active profile found (60-day activity): send connection note (lead_id 52, linkedin_connection_notes.json). (4) Write result to data/linkedin_profiles.json immediately. (5) Tomorrow: send fu_046 breakup regardless of LinkedIn status.",
+      "days_since_email": 17,
+      "breakup_date": "2026-04-24",
+      "days_until_breakup": 1,
+      "cancel_if_reply": true,
+      "moved_to_nurture_if_connected": true
+    },
+    {
+      "lead_id": 55,
+      "business_name": "Beverley Sports & Leisure",
+      "owner_name": "Craig Lawson",
+      "decision": "APPROVED_FOR_LINKEDIN_TODAY",
+      "priority": "MEDIUM — last window",
+      "reason": "Emailed 2026-04-06 (17 days ago). Day-3 bump sent 2026-04-10. Day-7 email SKIPPED. No confirmed reply. Day-14 breakup fires tomorrow (fu_047, 2026-04-24 09:15).",
+      "email_status": "No reply in new_replies.json. IMAP not checked for 19 days.",
+      "action": "HANDS: (1) Check IMAP for Craig Lawson. (2) If no reply: search LinkedIn. (3) If active profile: send connection note (lead_id 55). (4) Write to linkedin_profiles.json. (5) Tomorrow: fu_047 breakup fires regardless.",
+      "days_since_email": 17,
+      "breakup_date": "2026-04-24",
+      "days_until_breakup": 1,
+      "cancel_if_reply": true
+    },
+    {
+      "lead_id": 50,
+      "business_name": "The Harbour Fish Bar",
+      "owner_name": "Pete",
+      "decision": "APPROVED_FOR_LINKEDIN_TODAY",
+      "priority": "MEDIUM — last window",
+      "reason": "Emailed 2026-04-06 (17 days ago). Day-3 bump sent 2026-04-10. Day-7 email SKIPPED. No confirmed reply. Day-14 breakup fires tomorrow (fu_048, 2026-04-24 09:30).",
+      "email_status": "No reply in new_replies.json. IMAP not checked for 19 days.",
+      "action": "HANDS: (1) Check IMAP for Pete / The Harbour Fish Bar. (2) If no reply: search LinkedIn. (3) First name Pete only — skip if profile not clearly identifiable within 10 minutes. (4) If active and identified: send connection note (lead_id 50). (5) Write to linkedin_profiles.json. (6) Tomorrow: fu_048 fires regardless.",
+      "days_since_email": 17,
+      "breakup_date": "2026-04-24",
+      "days_until_breakup": 1,
+      "cancel_if_reply": true,
+      "name_confidence": "LOW — first name Pete only, no surname. 10-minute search limit applies."
+    },
+    {
+      "lead_id": 56,
+      "business_name": "East Riding Electrical",
+      "owner_name": "Neil",
+      "decision": "APPROVED_FOR_LINKEDIN_TODAY",
+      "priority": "MEDIUM — last window, lowest confidence",
+      "reason": "Emailed 2026-04-06 (17 days ago). Day-3 bump sent 2026-04-10. Day-7 email SKIPPED. No confirmed reply. Day-14 breakup fires tomorrow (fu_049, 2026-04-24 09:45).",
+      "email_status": "No reply in new_replies.json. IMAP not checked for 19 days.",
+      "action": "HANDS: (1) Check IMAP for Neil / East Riding Electrical. (2) If no reply AND searches 52/55/50 are complete: search LinkedIn. (3) First name Neil only — lowest search confidence today. Skip within 10 minutes if not clearly found. (4) If active and identified: send connection note (lead_id 56). (5) Write to linkedin_profiles.json.",
+      "days_since_email": 17,
+      "breakup_date": "2026-04-24",
+      "days_until_breakup": 1,
+      "cancel_if_reply": true,
+      "name_confidence": "LOW — first name Neil only, no surname. Last-priority search today."
+    },
+    {
+      "lead_id": 30,
+      "business_name": "Halifax Window Cleaning",
+      "owner_name": "Steve",
+      "decision": "BLOCK_LINKEDIN_TODAY",
+      "reason": "Breakup email fu_041 fires today at 09:00. Same-day LinkedIn rule: no LinkedIn contact on the same day as a breakup email. Steve's email sequence closes today.",
+      "email_status": "fu_041 scheduled 09:00 today — check IMAP before sending, as always.",
+      "action": "No LinkedIn today. Email sequence completes after fu_041.",
+      "linkedin_window_status": "EXPIRED — LinkedIn was due Tuesday 2026-04-22 afternoon. HANDS non-execution means no LinkedIn contact was made across this entire sequence.",
+      "sequence_closes_today": true
+    },
+    {
+      "lead_id": 31,
+      "business_name": "Pontefract Pharmacy",
+      "owner_name": null,
+      "decision": "BLOCK_LINKEDIN_TODAY",
+      "reason": "Breakup email fu_042 fires today at 09:15. Same-day LinkedIn rule. Was already lowest-priority/conditional (no named individual). Sequence closes today.",
+      "email_status": "fu_042 scheduled 09:15 today.",
+      "action": "No LinkedIn today. Sequence closes after fu_042.",
+      "sequence_closes_today": true
+    },
+    {
+      "lead_id": 32,
+      "business_name": "Castleford Carpets",
+      "owner_name": "Ann",
+      "decision": "BLOCK_LINKEDIN_TODAY",
+      "reason": "Breakup email fu_043 fires today at 09:30. Same-day LinkedIn rule. Ann's sequence closes today.",
+      "email_status": "fu_043 scheduled 09:30 today.",
+      "action": "No LinkedIn today. Sequence closes after fu_043.",
+      "linkedin_window_status": "EXPIRED — LinkedIn was due Tuesday 2026-04-22 afternoon. No LinkedIn contact made.",
+      "sequence_closes_today": true
+    },
+    {
+      "lead_id": 58,
+      "business_name": "The Old Court Solicitors",
+      "owner_name": null,
+      "decision": "BLOCK_LINKEDIN_TODAY",
+      "reason": "Breakup email fu_044 fires today at 09:45. Was already BLOCKED (no named individual identified from firm website). Sequence closes today.",
+      "email_status": "fu_044 scheduled 09:45 today.",
+      "action": "No LinkedIn today. Sequence closes after fu_044.",
+      "sequence_closes_today": true
+    },
+    {
+      "lead_id": 59,
+      "business_name": "Scarborough Roofing Specialists",
+      "owner_name": "Tony Shields",
+      "decision": "BLOCK_LINKEDIN_TODAY",
+      "reason": "Breakup email fu_045 fires today at 10:00. Same-day LinkedIn rule. Tony's sequence closes today.",
+      "email_status": "fu_045 scheduled 10:00 today.",
+      "action": "No LinkedIn today. Sequence closes after fu_045.",
+      "linkedin_window_status": "EXPIRED — LinkedIn was due Tuesday 2026-04-22 afternoon. No LinkedIn contact made.",
+      "sequence_closes_today": true
+    },
+    {
+      "lead_id": 42,
+      "business_name": "Blossom Beauty Studio",
+      "owner_name": "Sarah",
+      "decision": "LINKEDIN_WINDOW_EXPIRED",
+      "reason": "Pre-breakup LinkedIn window was 2026-04-22 before 09:00. HANDS execution unconfirmed. Breakup (fu_036) was due yesterday — sequence either closed (if fu_036 sent) or in limbo (if not sent).",
+      "action": "HANDS: (1) Confirm in CHANGELOG.md whether fu_036 was sent on 2026-04-22. (2) If NOT sent: send fu_036 immediately — the sequence is overdue by 1 day. (3) No LinkedIn for Sarah — window expired. If fu_036 was not sent and sequence is unresolved, email takes absolute priority over LinkedIn at this stage.",
+      "linkedin_action": "NONE — window expired",
+      "sequence_status_unknown": true
+    },
+    {
+      "lead_id": 44,
+      "business_name": "Meadowbrook Vets",
+      "owner_name": "Dr. James Rowe",
+      "decision": "LINKEDIN_WINDOW_EXPIRED",
+      "reason": "Pre-breakup LinkedIn window was 2026-04-22 before 09:00. HANDS execution unconfirmed. Breakup (fu_037) was due yesterday.",
+      "action": "HANDS: confirm fu_037 status in CHANGELOG.md. If not sent: send immediately. No LinkedIn for Dr Rowe.",
+      "linkedin_action": "NONE — window expired",
+      "sequence_status_unknown": true
+    },
+    {
+      "lead_id": 46,
+      "business_name": "Thornfield Electricals",
+      "owner_name": "Mike Thornfield",
+      "decision": "LINKEDIN_WINDOW_EXPIRED",
+      "reason": "Pre-breakup LinkedIn window was 2026-04-22 before 09:00. Breakup (fu_038) was due yesterday.",
+      "action": "HANDS: confirm fu_038 status. If not sent: send immediately. No LinkedIn for Mike Thornfield.",
+      "linkedin_action": "NONE — window expired",
+      "sequence_status_unknown": true
+    },
+    {
+      "lead_id": 57,
+      "business_name": "Scarborough Bay Plumbing & Heating",
+      "owner_name": "Mike Rawlings",
+      "decision": "LINKEDIN_WINDOW_EXPIRED",
+      "reason": "Pre-breakup LinkedIn window was 2026-04-22 before 09:00. Breakup (fu_039) was due yesterday.",
+      "action": "HANDS: confirm fu_039 status. If not sent: send immediately. No LinkedIn for Mike Rawlings.",
+      "linkedin_action": "NONE — window expired",
+      "sequence_status_unknown": true
+    },
+    {
+      "lead_id": 60,
+      "business_name": "Pocklington Fine Furniture",
+      "owner_name": "James Hewitt",
+      "decision": "LINKEDIN_WINDOW_EXPIRED",
+      "reason": "Pre-breakup LinkedIn window was 2026-04-22 before 09:00. Breakup (fu_040) was due yesterday.",
+      "action": "HANDS: confirm fu_040 status. If not sent: send immediately. No LinkedIn for James Hewitt.",
+      "linkedin_action": "NONE — window expired",
+      "sequence_status_unknown": true
+    },
     {
       "lead_id": 3,
       "business_name": "Westfield Hair & Beauty",
       "owner_name": "Claire",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "INTERESTED — replied on email 2026-04-04. Active sales pipeline. Call completed 2026-04-07.",
-      "email_status": "OUTCOME_UNKNOWN — last confirmed action: proposal nudge sent ~2026-04-10. Outcome not confirmed in 9 days.",
-      "action": "HANDS: check IMAP FIRST THING on 2026-04-22. Decision tree in value_delivery_queue.json (vd_001). If Claire replied yes: CONVERTED — first campaign revenue. If no reply: send one final close ('Claire — happy to leave this with you. If the timing changes, you know where I am.') then mark LOST_NO_RESPONSE. LinkedIn remains blocked during and after active sales conversation — it would feel intrusive."
+      "reason": "INTERESTED — replied on email 2026-04-04. Active sales pipeline. Proposal sent. Outcome unknown since 2026-04-10.",
+      "email_status": "OUTCOME_UNKNOWN — 19-day gap. HANDS: check IMAP for Claire today. If no reply in 19 days: send final close email ('Claire — happy to leave this with you. If the timing changes, you know where I am.') then mark LOST_NO_RESPONSE. If replied yes: CONVERTED.",
+      "action": "No LinkedIn — blocked while sales conversation live or being resolved.",
+      "warm_pipeline": true
     },
     {
       "lead_id": 1,
       "business_name": "Ripon Road Carpentry",
       "owner_name": "Tom",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "INTERESTED — replied on email 2026-04-04. Active buying conversation. Nudge sent 2026-04-08.",
-      "email_status": "OUTCOME_UNKNOWN — nudge sent 2026-04-08, no confirmed reply since.",
-      "action": "HANDS: check IMAP on 2026-04-22. Decision tree in value_delivery_queue.json (vd_003). If Tom replied: book call slot, confirm quote form spec and price (£100-150). If no reply: send final close then mark LOST_NO_RESPONSE. LinkedIn blocked."
+      "reason": "INTERESTED — replied on email 2026-04-04. Active buying conversation. Nudge sent 2026-04-08. Outcome unknown since.",
+      "email_status": "OUTCOME_UNKNOWN — 15-day gap since nudge. HANDS: check IMAP for Tom. If no reply: send final close then mark LOST_NO_RESPONSE. LinkedIn blocked.",
+      "action": "No LinkedIn. Resolve email outcome first.",
+      "warm_pipeline": true
     },
     {
       "lead_id": 22,
       "business_name": "Pennine Print & Design",
       "owner_name": "Rob",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "INTERESTED — replied on email 2026-04-04. Upsell potential (bundle/redesign). Nudge sent 2026-04-07.",
-      "email_status": "OUTCOME_UNKNOWN — nudge sent 2026-04-07, no confirmed reply since.",
-      "action": "HANDS: check IMAP on 2026-04-22. Decision tree in value_delivery_queue.json (vd_002). If Rob replied: send scope doc (Options A/B/C) or book scoping call. Target close by 2026-04-25. LinkedIn blocked during active negotiation."
+      "reason": "INTERESTED — replied on email 2026-04-04. Upsell discussion. Nudge sent 2026-04-07. Outcome unknown since.",
+      "email_status": "OUTCOME_UNKNOWN — 16-day gap since nudge. HANDS: check IMAP for Rob. If no reply: send final close then mark LOST_NO_RESPONSE. LinkedIn blocked.",
+      "action": "No LinkedIn. Resolve email outcome first.",
+      "warm_pipeline": true
     },
     {
       "lead_id": 2,
       "business_name": "Nidderdale Pet Supplies",
       "decision": "BLOCK_LINKEDIN_PERMANENTLY",
       "reason": "LOST — replied NOT INTERESTED on email 2026-04-04.",
-      "action": "No outreach on any channel. Re-approach window: 2026-10-06 (6 months) if SSL or mobile status changes significantly."
+      "action": "No outreach on any channel. Re-approach window: 2026-10-06 if site signals change."
     },
     {
       "lead_id": 5,
       "business_name": "Harewood Accountants",
       "owner_name": "David Harewood",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Email sequence COMPLETE — Day-14 breakup assumed sent 2026-04-14. OOO reply 2026-04-04 was not a genuine engagement. Sequence closed.",
-      "action": "No further outreach. If David reaches out proactively: respond. Re-approach window: 2026-10-14 (6 months from breakup)."
+      "reason": "Sequence complete — Day-14 breakup assumed sent 2026-04-14. OOO reply was not genuine engagement.",
+      "action": "No further outreach. Re-approach window: 2026-10-14."
     },
     {
       "lead_id": 8,
       "business_name": "Ilkley Ironmongery",
       "owner_name": "Graham",
-      "decision": "OPTIONAL_LAST_SHOT_LINKEDIN",
-      "reason": "Email sequence COMPLETE — Day-14 breakup (fu_007_updated) sent 2026-04-11 (8 days ago). LinkedIn request was NEVER executed by HANDS across 5 consecutive BRAIN runs.",
-      "action": "HANDS: see linkedin_search_plan.json for OPTIONAL_LAST_SHOT designation. If connection request was already sent and Graham is pending-acceptance: monitor and message if accepted. If not yet sent: proceed only if time permits after all higher-priority searches on 2026-04-22. If Graham accepts: soft message ('Graham — just spotted your ironmongery. Still something worth a quick look if you're ever curious.'). Low expected yield 8 days post-breakup.",
-      "consecutive_non_execution_days": 5
+      "decision": "BLOCK_LINKEDIN",
+      "reason": "Email sequence fully complete — Day-14 breakup sent 2026-04-11 (12 days ago). Seven consecutive BRAIN runs of LinkedIn non-execution by HANDS. Post-breakup LinkedIn is now too late to be meaningful.",
+      "action": "No further LinkedIn action. If Graham ever connects proactively: respond. Re-approach window: 2026-10-11.",
+      "consecutive_non_execution_days": 7
     },
     {
       "lead_id": 12,
       "business_name": "Bronte Country Cottages",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Email sequence COMPLETE — Day-14 breakup assumed sent 2026-04-15.",
+      "reason": "Sequence complete — Day-14 breakup assumed sent 2026-04-15.",
       "action": "No further outreach. Re-approach window: 2026-10-15."
     },
     {
@@ -115,15 +262,15 @@
       "business_name": "Skipton Garden Design",
       "owner_name": "Rachel",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Day-14 breakup fu_020 firing TODAY (Easter Saturday). Email sequence ending. LinkedIn on same day as breakup email is inappropriate — the sequence is formally closing.",
-      "action": "No LinkedIn contact. Email sequence concludes today."
+      "reason": "Sequence complete — Day-14 breakup fu_020 sent 2026-04-19 (Easter Saturday).",
+      "action": "No further outreach. Re-approach window: 2026-10-19."
     },
     {
       "lead_id": 6,
       "business_name": "Boroughbridge Plumbing",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Day-14 breakup fu_021 firing TODAY. Email sequence ending.",
-      "action": "No LinkedIn contact. Email sequence concludes today."
+      "reason": "Sequence complete — Day-14 breakup fu_021 sent 2026-04-19 (Easter Saturday).",
+      "action": "No further outreach. Re-approach window: 2026-10-19."
     },
     {
       "lead_id": 7,
@@ -138,265 +285,90 @@
       "action": "No outreach on any channel."
     },
     {
-      "lead_id": 42,
-      "business_name": "Blossom Beauty Studio",
-      "owner_name": "Sarah",
-      "decision": "APPROVED_FOR_LINKEDIN_CRITICAL",
-      "reason": "Emailed 2026-04-03 (16 days ago). No reply. Day-7 email sent 2026-04-10. Day-14 breakup fires 2026-04-22 at 09:00.",
-      "action": "HANDS: execute LinkedIn search BEFORE 09:00 on 2026-04-22. Connection note ready (lead_id 42 in linkedin_connection_notes.json). Check IMAP immediately before sending. If Sarah has posted recently: flag post text in linkedin_profiles.json for note upgrade to post_reference. If accepted: message 'Sarah — thanks for connecting. I spotted something about the Blossom Beauty site worth a quick mention. Happy to share what I found if it's useful.'",
-      "days_since_email": 16,
-      "breakup_date": "2026-04-22",
-      "days_until_breakup": 3,
-      "execution_window": "2026-04-22 07:00-09:00",
-      "upgrade_priority": "HIGH"
-    },
-    {
-      "lead_id": 44,
-      "business_name": "Meadowbrook Vets",
-      "owner_name": "Dr. James Rowe",
-      "decision": "APPROVED_FOR_LINKEDIN_CRITICAL",
-      "reason": "Emailed 2026-04-03 (16 days ago). No reply. Day-7 email sent 2026-04-10. Day-14 breakup fires 2026-04-22 at 09:00.",
-      "action": "HANDS: execute LinkedIn search BEFORE 09:00 on 2026-04-22. Use formal 'Dr Rowe' opener. Highest note upgrade priority in entire queue — if Dr Rowe has posted about animal care, pet health, practice news: flag post text urgently in linkedin_profiles.json. If accepted: message 'Dr Rowe — thanks for connecting. I noticed something about the Meadowbrook Vets online presence that seemed worth a quick mention. Happy to share if it's useful.'",
-      "days_since_email": 16,
-      "breakup_date": "2026-04-22",
-      "days_until_breakup": 3,
-      "execution_window": "2026-04-22 07:00-09:00",
-      "upgrade_priority": "HIGHEST"
-    },
-    {
-      "lead_id": 46,
-      "business_name": "Thornfield Electricals",
-      "owner_name": "Mike Thornfield",
-      "decision": "APPROVED_FOR_LINKEDIN_CRITICAL",
-      "reason": "Emailed 2026-04-03 (16 days ago). No reply. Day-7 email sent 2026-04-10. Day-14 breakup fires 2026-04-22 at 09:00.",
-      "action": "HANDS: execute LinkedIn search BEFORE 09:00 on 2026-04-22. If profile dormant: skip. Rely on Day-14 breakup email alone if LinkedIn not found or inactive.",
-      "days_since_email": 16,
-      "breakup_date": "2026-04-22",
-      "days_until_breakup": 3,
-      "execution_window": "2026-04-22 07:00-09:00"
-    },
-    {
-      "lead_id": 57,
-      "business_name": "Scarborough Bay Plumbing & Heating",
-      "owner_name": "Mike Rawlings",
-      "decision": "APPROVED_FOR_LINKEDIN_CRITICAL",
-      "reason": "Emailed ~2026-04-07 (12 days ago). Day-3 bump sent 2026-04-10. Day-7 SKIPPED (BRAIN gap). Day-14 breakup fires 2026-04-22 at 09:00.",
-      "action": "HANDS: execute LinkedIn search BEFORE 09:00 on 2026-04-22. Full name Mike Rawlings known. Connection note ready (lead_id 57).",
-      "days_since_email": 12,
-      "breakup_date": "2026-04-22",
-      "days_until_breakup": 3,
-      "execution_window": "2026-04-22 07:00-09:00"
-    },
-    {
-      "lead_id": 60,
-      "business_name": "Pocklington Fine Furniture",
-      "owner_name": "James Hewitt",
-      "decision": "APPROVED_FOR_LINKEDIN_CRITICAL",
-      "reason": "Emailed ~2026-04-08 (11 days ago). Day-3 bump sent 2026-04-11. Day-7 SKIPPED (BRAIN gap). Day-14 breakup fires 2026-04-22 at 09:00.",
-      "action": "HANDS: execute LinkedIn search BEFORE 09:00 on 2026-04-22. Full name James Hewitt known. Connection note ready (lead_id 60). Fine furniture = artisan positioning — high probability of active profile with portfolio content. Check for posts.",
-      "days_since_email": 11,
-      "breakup_date": "2026-04-22",
-      "days_until_breakup": 3,
-      "execution_window": "2026-04-22 07:00-09:00"
-    },
-    {
-      "lead_id": 30,
-      "business_name": "Halifax Window Cleaning",
-      "owner_name": "Steve",
-      "decision": "APPROVED_FOR_LINKEDIN_HIGH",
-      "reason": "Emailed 2026-04-02 (17 days ago). Day-7 new-angle email sent 2026-04-09. No confirmed reply. Day-14 breakup fires 2026-04-23.",
-      "action": "HANDS: check IMAP for Steve's reply to fu_017 (Day-7 email). If replied: cancel LinkedIn, route to value_delivery_queue. If no reply: execute LinkedIn search Tuesday afternoon 2026-04-22. Connection note ready (lead_id 30).",
-      "days_since_email": 17,
-      "breakup_date": "2026-04-23",
-      "days_until_breakup": 4,
-      "execution_window": "2026-04-22 afternoon",
-      "cancel_if_reply_before": "execution"
-    },
-    {
-      "lead_id": 32,
-      "business_name": "Castleford Carpets",
-      "owner_name": "Ann",
-      "decision": "APPROVED_FOR_LINKEDIN_HIGH",
-      "reason": "Emailed 2026-04-02 (17 days ago). Day-7 new-angle email sent 2026-04-09. No confirmed reply. Day-14 breakup fires 2026-04-23.",
-      "action": "HANDS: check IMAP for Ann's reply to fu_019 (Day-7 email). If replied: cancel LinkedIn, route to value_delivery_queue. If no reply: execute LinkedIn search Tuesday afternoon 2026-04-22. Connection note ready (lead_id 32).",
-      "days_since_email": 17,
-      "breakup_date": "2026-04-23",
-      "days_until_breakup": 4,
-      "execution_window": "2026-04-22 afternoon",
-      "cancel_if_reply_before": "execution"
-    },
-    {
-      "lead_id": 58,
-      "business_name": "The Old Court Solicitors",
-      "town": "Scarborough",
-      "decision": "APPROVED_FOR_LINKEDIN_CONDITIONAL",
-      "reason": "Emailed ~2026-04-07 (12 days ago). Day-3 bump sent 2026-04-10. Day-7 SKIPPED. Day-14 breakup fires 2026-04-23.",
-      "action": "HANDS: before ANY LinkedIn search, crawl the firm website About/Team page to identify a named partner or director. Only proceed to LinkedIn if named individual is found. Do NOT connect with a company page. Connection note template ready (lead_id 58) — replace [Name] placeholder before sending.",
-      "days_since_email": 12,
-      "breakup_date": "2026-04-23",
-      "days_until_breakup": 4,
-      "condition": "named_individual_required — firm website crawl required first"
-    },
-    {
-      "lead_id": 59,
-      "business_name": "Scarborough Roofing Specialists",
-      "owner_name": "Tony Shields",
-      "decision": "APPROVED_FOR_LINKEDIN_HIGH",
-      "reason": "Emailed ~2026-04-07 (12 days ago). Day-3 bump sent 2026-04-10. Day-7 SKIPPED. Day-14 breakup fires 2026-04-23.",
-      "action": "HANDS: execute LinkedIn search Tuesday afternoon 2026-04-22. Full name Tony Shields known. Connection note ready (lead_id 59). Skip if profile dormant.",
-      "days_since_email": 12,
-      "breakup_date": "2026-04-23",
-      "days_until_breakup": 4,
-      "execution_window": "2026-04-22 afternoon"
-    },
-    {
-      "lead_id": 50,
-      "business_name": "The Harbour Fish Bar",
-      "owner_name": "Pete",
-      "decision": "APPROVED_FOR_LINKEDIN_MEDIUM",
-      "reason": "Emailed 2026-04-06 (13 days ago). Day-3 bump sent 2026-04-10. Day-7 SKIPPED. Day-14 breakup fires 2026-04-24.",
-      "action": "HANDS: execute LinkedIn search Wednesday 2026-04-23. Connection note ready (lead_id 50). Sole-trader chip shop — if not found or dormant within 10 minutes: skip. Day-14 breakup fires next day (2026-04-24) regardless.",
-      "days_since_email": 13,
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 5,
-      "execution_window": "2026-04-23"
-    },
-    {
-      "lead_id": 52,
-      "business_name": "Holderness Homecare",
-      "owner_name": "Linda Walsh",
-      "decision": "APPROVED_FOR_LINKEDIN_MEDIUM",
-      "reason": "Emailed 2026-04-06 (13 days ago). Day-3 bump sent 2026-04-10. Day-7 SKIPPED. Day-14 breakup fires 2026-04-24.",
-      "action": "HANDS: execute LinkedIn search Wednesday 2026-04-23. Full name Linda Walsh known. Care providers typically active on LinkedIn. Connection note ready (lead_id 52). High probability of active profile.",
-      "days_since_email": 13,
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 5,
-      "execution_window": "2026-04-23"
-    },
-    {
-      "lead_id": 55,
-      "business_name": "Beverley Sports & Leisure",
-      "owner_name": "Craig Lawson",
-      "decision": "APPROVED_FOR_LINKEDIN_MEDIUM",
-      "reason": "Emailed 2026-04-06 (13 days ago). Day-3 bump sent 2026-04-10. Day-7 SKIPPED. Day-14 breakup fires 2026-04-24.",
-      "action": "HANDS: execute LinkedIn search Wednesday 2026-04-23. Full name Craig Lawson known. Connection note ready (lead_id 55).",
-      "days_since_email": 13,
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 5,
-      "execution_window": "2026-04-23"
-    },
-    {
-      "lead_id": 56,
-      "business_name": "East Riding Electrical",
-      "owner_name": "Neil",
-      "decision": "APPROVED_FOR_LINKEDIN_MEDIUM",
-      "reason": "Emailed 2026-04-06 (13 days ago). Day-3 bump sent 2026-04-10. Day-7 SKIPPED. Day-14 breakup fires 2026-04-24.",
-      "action": "HANDS: execute LinkedIn search Wednesday 2026-04-23. First name Neil only (no surname). Skip if not found within 10 minutes. Connection note ready (lead_id 56).",
-      "days_since_email": 13,
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 5,
-      "execution_window": "2026-04-23"
-    },
-    {
-      "lead_id": 31,
-      "business_name": "Pontefract Pharmacy",
-      "decision": "APPROVED_FOR_LINKEDIN_LOW_CONDITIONAL",
-      "reason": "Emailed 2026-04-02 (17 days ago). Day-7 email sent 2026-04-09. Day-14 breakup fires 2026-04-23. No owner name.",
-      "action": "HANDS: only proceed after leads 30 and 32 are handled. Named-individual AND active-60-days both required. If either condition fails: skip. Connection note ready (lead_id 31) but impersonal without a name.",
-      "days_since_email": 17,
-      "breakup_date": "2026-04-23",
-      "days_until_breakup": 4,
-      "condition": "named_individual_and_active_profile_60_days — both required"
-    },
-    {
       "lead_id": 49,
       "business_name": "East Riding Builders Ltd",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Blocked — no email address obtained. LinkedIn not appropriate before any email contact has been made.",
-      "action": "HANDS: Companies House director name search on 2026-04-22 to unblock email channel first."
+      "reason": "No email address obtained. No email contact made. LinkedIn not appropriate before email.",
+      "action": "HANDS: Companies House director name search overdue. Unblock email channel first — then LinkedIn becomes viable."
     },
     {
       "lead_id": 51,
       "business_name": "Driffield Garden Centre",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Blocked — contact form only, no direct email obtained. No email contact made yet.",
-      "action": "HANDS: phone call post-Easter to get direct email. LinkedIn not appropriate before email contact."
+      "reason": "Contact form only, no direct email obtained. No email contact made.",
+      "action": "HANDS: phone the business to get direct email. LinkedIn not appropriate before email contact."
     },
     {
       "lead_id": 53,
       "business_name": "Bridlington Bay Lettings",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Blocked — no direct email obtained. No email contact made yet.",
-      "action": "HANDS: Rightmove / Zoopla directory. Try info@ fallback. LinkedIn not appropriate before email contact."
+      "reason": "No direct email obtained. No email contact made.",
+      "action": "HANDS: check Rightmove/Zoopla agent directory. Try info@ fallback."
     },
     {
       "lead_id": 54,
       "business_name": "The Wolds Inn",
       "decision": "BLOCK_LINKEDIN",
-      "reason": "Blocked — no email address obtained. No email contact made yet.",
-      "action": "HANDS: try info@thewoldsinn.co.uk. Low priority. LinkedIn not appropriate before email contact."
+      "reason": "No email address obtained. No email contact made.",
+      "action": "HANDS: try info@thewoldsinn.co.uk. LinkedIn not appropriate before email contact."
     }
   ],
   "suppressed_leads": {
-    "replied_on_email_interested": [1, 3, 22],
-    "replied_on_email_lost": [2],
-    "sequence_complete_no_genuine_reply": [5, 8, 12],
-    "sequence_ending_today": [4, 6],
+    "active_sales_pipeline_linkedin_blocked": [1, 3, 22],
+    "replied_not_interested_all_channels_blocked": [2],
+    "sequence_complete_no_linkedin": [4, 5, 6, 8, 12],
+    "breakup_fires_today_linkedin_blocked": [30, 31, 32, 58, 59],
+    "pre_breakup_window_expired_linkedin_blocked": [42, 44, 46, 57, 60],
     "permanently_suppressed": [7, 19],
     "not_yet_emailed_blocked": [49, 51, 53, 54],
-    "total_suppressed_from_linkedin": 13
+    "total_suppressed_from_linkedin": 28
   },
   "moved_to_nurture": [],
-  "approved_for_linkedin_post_easter": {
-    "critical_before_09:00_2026_04_22": {
-      "lead_ids": [42, 44, 46, 57, 60],
-      "execution_order": "42 → 44 → 46 → 57 → 60",
-      "note": "All have Day-14 breakup emails at 09:00. LinkedIn must go out in the 07:00-09:00 window."
-    },
-    "high_tuesday_afternoon_2026_04_22": {
-      "lead_ids": [30, 32, 59, 31, 58],
-      "execution_order": "30 → 32 → 59 → 31 (if named individual) → 58 (if named individual from website)"
-    },
-    "medium_wednesday_2026_04_23": {
-      "lead_ids": [50, 52, 55, 56],
-      "execution_order": "52 → 55 → 50 → 56"
-    },
-    "optional_if_time_permits": {
-      "lead_ids": [8],
-      "note": "Post-breakup last shot. Low expected yield."
+  "already_connected_linkedin": [],
+  "approved_for_linkedin_today_2026_04_23": {
+    "medium_priority": {
+      "lead_ids": [52, 55, 50, 56],
+      "execution_order": "52 → 55 → 50 → 56",
+      "window": "Any time today before 15:00 UK. No channel conflict with today's email sends (different lead IDs).",
+      "note": "TODAY IS THE LAST WINDOW. Breakup emails fu_046-049 fire tomorrow. After tomorrow, the entire active campaign cohort has completed all 4 email touchpoints."
     }
   },
-  "post_easter_workload_warning": {
-    "2026_04_22_task_count": {
-      "imap_sweeps": 10,
-      "warm_pipeline_outcomes": 3,
-      "linkedin_searches_critical": 5,
-      "linkedin_searches_high": 5,
-      "breakup_emails_to_send": 5,
-      "batch_5_scrape_to_initiate": 1
-    },
-    "instruction": "Tuesday 2026-04-22 is the busiest day of the campaign. Suggested order: (1) IMAP sweep for warm pipeline leads 1/3/22 — resolve outcomes first, they may convert. (2) LinkedIn searches for 42/44/46/57/60 before 09:00. (3) Breakup email sends 09:00-10:15. (4) LinkedIn searches for 30/32/59/58/31 from 10:30. (5) Initiate Batch 5 Ryedale Google Maps scrape in the background. Do not skip any step — all are critical."
+  "sequences_closing_today": {
+    "lead_ids": [30, 31, 32, 58, 59],
+    "emails": ["fu_041", "fu_042", "fu_043", "fu_044", "fu_045"],
+    "send_window": "09:00-10:15",
+    "note": "After today's sends, these five sequences are closed. No further email or LinkedIn outreach on these leads. Log completion in CHANGELOG.md."
   },
+  "sequences_closing_tomorrow": {
+    "lead_ids": [50, 52, 55, 56],
+    "emails": ["fu_046", "fu_047", "fu_048", "fu_049"],
+    "send_window": "2026-04-24 09:00-10:00",
+    "note": "After tomorrow's sends, the entire active campaign cohort will have completed all 4 touchpoints. Full dataset ready for analysis from 2026-04-25."
+  },
+  "unconfirmed_tuesday_sequences": {
+    "status": "CRITICAL — HANDS has not confirmed fu_036-040 send status",
+    "leads": [42, 44, 46, 57, 60],
+    "hand_action_required_today": "HANDS: update CHANGELOG.md today without fail. Confirm individually for each of fu_036/037/038/039/040: (a) sent or not sent, (b) send time, (c) any reply detected before send. If any were not sent: send them immediately. These sequences may be unresolved — one day late on a breakup email is acceptable if sent today."
+  },
+  "campaign_milestone_note": "After tomorrow's fu_046-049 sends, all 60+ active leads will have completed all 4 email touchpoints. This is the final operational day of the active outreach campaign. From 2026-04-25: full dataset available for open-rate, reply-rate, and conversion analysis. Batch 5 (Ryedale) data, if received, would extend the campaign — but the original cohort is complete.",
   "summary": {
-    "total_leads_evaluated": 30,
-    "total_blocked_from_linkedin": 13,
-    "total_approved_critical": 5,
-    "total_approved_high": 5,
-    "total_approved_medium": 4,
-    "total_approved_low_conditional": 2,
-    "total_optional": 1,
+    "total_leads_evaluated": 34,
+    "total_blocked_from_linkedin": 28,
+    "total_approved_today": 4,
+    "approved_lead_ids": [52, 55, 50, 56],
     "total_moved_to_nurture": 0,
     "already_connected_linkedin": [],
+    "sequences_closing_today": 5,
+    "sequences_closing_tomorrow": 4,
+    "warm_pipeline_outcome_unknown": 3,
     "key_actions_ordered": [
-      "1. IMAP SWEEP (07:00 Tuesday): Check leads 1/3/22 for warm pipeline outcomes — these take absolute priority. Write outcomes to value_delivery_queue.json.",
-      "2. CRITICAL LINKEDIN (07:00-09:00): Lead 42 (Sarah, Blossom Beauty) → Lead 44 (Dr. Rowe, Meadowbrook Vets) → Lead 46 (Mike Thornfield, Thornfield Electricals) → Lead 57 (Mike Rawlings, Scarborough Bay Plumbing) → Lead 60 (James Hewitt, Pocklington Fine Furniture). LinkedIn before breakup emails.",
-      "3. BREAKUP EMAILS (09:00-10:15): fu_036/037/038/039/040 — pre-written, in followup_queue.json. IMAP check before each.",
-      "4. HIGH LINKEDIN (10:30+): Lead 30 (Steve, Halifax) → Lead 32 (Ann, Castleford) → Lead 59 (Tony, Scarborough Roofing) → Lead 58 (Old Court Solicitors, conditional) → Lead 31 (Pontefract Pharmacy, conditional).",
-      "5. BATCH 5 SCRAPE: Initiate Ryedale Google Maps scrape — do not defer again. 12-day pipeline gap. BRAIN will write copy on next run.",
-      "6. WEDNESDAY 2026-04-23: Breakup emails fu_041-045 at 09:00, then LinkedIn for leads 50/52/55/56.",
-      "7. Write data/linkedin_profiles.json after EVERY search — this is blocking BRAIN from upgrading all notes from generic to post_reference."
+      "1. IMAP SWEEP (before 09:00): Check leads 1/3/22 for warm pipeline outcomes. HANDS: these are 15-19 days overdue. Resolve today without fail.",
+      "2. EMAIL SENDS (09:00-10:15): fu_041-045 for leads 30/31/32/58/59. IMAP check before each individual send. Stagger 15 minutes.",
+      "3. CONFIRM TUESDAY SENDS in CHANGELOG.md: fu_036-040 status for leads 42/44/46/57/60. If any not sent: send immediately.",
+      "4. LINKEDIN SEARCHES (any time today before 15:00): 52 (Linda Walsh) → 55 (Craig Lawson) → 50 (Pete) → 56 (Neil). IMAP check before each. 10-minute limit per search.",
+      "5. WRITE linkedin_profiles.json AFTER EACH SEARCH — six BRAIN runs without this file. Last opportunity before campaign analysis phase.",
+      "6. HAND OFF BLOCKED LEADS: If Batch 5 Ryedale data not received today, campaign stalls from Friday. BRAIN will not run tomorrow unless Batch 5 data is returned."
     ],
-    "channel_conflict_resolution": "No email/LinkedIn same-day conflicts on 2026-04-22 except for the 5 CRITICAL leads where breakups and LinkedIn both occur. Resolution: LinkedIn goes out in the 07:00-09:00 window, breakups follow at 09:00. Different channels — not a conflict, but a planned coordinated double-touch.",
-    "linkedin_profiles_escalation": "FIVE consecutive BRAIN runs without linkedin_profiles.json. Blocking all note upgrades. Final escalation: if HANDS does not write linkedin_profiles.json after searches on 2026-04-22, BRAIN will be unable to improve any note quality for the remainder of this campaign's active leads. All sequences end by 2026-04-24 — this is the last opportunity."
+    "linkedin_profiles_escalation": "SIX consecutive BRAIN runs without linkedin_profiles.json. Today is the last active pre-breakup LinkedIn day. HANDS: writing linkedin_profiles.json today is the single highest-impact action for the LinkedIn channel. Required format: [{lead_id, linkedin_url, headline, last_post_date, last_post_text, connection_status, active_within_60_days, profile_found}]."
   }
 }
