@@ -1,113 +1,80 @@
 {
-  "generated_at": "2026-04-21T08:00:00Z",
-  "date": "2026-04-21",
-  "day_number": 24,
-  "note": "BRAIN layer — Day 24 (Easter Monday, UK bank holiday). NO SENDS TODAY. No new signals to assign — Batch 5 Ryedale scrape not yet executed. IMAP gap is now 17 days (last HANDS check: 2026-04-04). All previous signal assignments and queued emails unchanged. Activity resumes TOMORROW (Tuesday 2026-04-22). This is the final BRAIN silence day before the post-Easter execution sprint.",
-  "today_outreach": "NONE — Easter Monday, UK bank holiday",
-  "tomorrow_outreach": "FULL EXECUTION — 2026-04-22 is the most important execution day of the campaign",
+  "generated_at": "2026-04-23T08:00:00Z",
+  "date": "2026-04-23",
+  "day_number": 26,
+  "note": "BRAIN layer — Day 26 (Wednesday). No Batch 5 Ryedale data received from HANDS. IMAP gap now 19 days (last confirmed HANDS check: 2026-04-04). Tuesday 2026-04-22 HANDS execution unconfirmed — fu_036-040 send status unknown. No new leads to assign signals to. All signal slots remain WAITING_FOR_BATCH_5.",
+  "today_outreach": "5 breakup emails ONLY (fu_041-045, 09:00-10:15). No new initial sends — Batch 5 data not yet received.",
+  "tomorrow_outreach": "4 breakup emails (fu_046-049). New initial sends possible ONLY if HANDS returns Ryedale scrape data by Wednesday EOD.",
   "new_signals_today": 0,
   "new_leads_today": 0,
-  "imap_gap_days": 17,
-  "imap_last_checked": "2026-04-04",
-  "no_outreach_days": {
-    "2026-04-18": "Good Friday — bank holiday — no outreach (confirmed)",
-    "2026-04-19": "Easter Saturday — fu_020 and fu_021 ASSUMED SENT",
-    "2026-04-20": "Easter Sunday — no outreach (confirmed)",
-    "2026-04-21": "Easter Monday — UK bank holiday — no outreach (confirmed)"
-  },
-  "assumed_sent_easter_saturday": {
-    "fu_020": {
-      "lead_id": 4,
-      "business": "Skipton Garden Design",
-      "owner": "Rachel",
-      "type": "Day-14 breakup",
-      "sent_date": "2026-04-19",
-      "status": "ASSUMED_SENT — HANDS must confirm in CHANGELOG.md on 2026-04-22",
-      "sequence_complete": true
-    },
-    "fu_021": {
-      "lead_id": 6,
-      "business": "Boroughbridge Plumbing",
-      "type": "Day-14 breakup",
-      "sent_date": "2026-04-19",
-      "status": "ASSUMED_SENT — HANDS must confirm in CHANGELOG.md on 2026-04-22",
-      "sequence_complete": true
-    },
-    "if_not_sent": "HANDS: if fu_020 and fu_021 were NOT sent on Easter Saturday, send BOTH before the 09:00 breakup window on 2026-04-22 — they are now 2 days overdue. Still worth sending. Log in CHANGELOG.md."
-  },
-  "pending_batch_5": {
-    "status": "CRITICAL — 14 days without new leads. This is the longest pipeline gap of the campaign.",
+  "imap_gap_days": 19,
+  "imap_last_confirmed_check": "2026-04-04",
+  "tuesday_execution_status": "UNCONFIRMED — HANDS has not updated new_replies.json or any output file since the 2026-04-21 BRAIN run. HANDS: confirm fu_036-040 actual send/cancel status in CHANGELOG.md today (2026-04-23) without fail.",
+  "batch_5_status": {
+    "status": "CRITICAL — 16 days without new leads. Longest pipeline gap of the campaign.",
+    "data_received": false,
+    "waiting_since": "2026-04-22",
     "target_area": "Ryedale District, North Yorkshire",
     "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
     "target_categories": ["plumbers", "electricians", "roofers", "builders", "joiners", "pubs / restaurants", "B&Bs / guest houses", "estate agents", "solicitors"],
     "expected_leads": "18-22",
     "minimum_score": 55,
-    "first_viable_scrape_day": "2026-04-22 (Tuesday) — AFTER morning breakup sends and warm pipeline IMAP checks",
-    "first_viable_send_day": "2026-04-23 (Wednesday) — ONLY after BRAIN writes copy on a Tuesday run",
-    "expected_signal_distribution": {
-      "ssl": "~60% of scraped leads — assign PAS framework",
-      "mobile": "~20% — assign PAS framework",
-      "no_website": "~10% — assign BAB framework (only for active-review businesses)",
-      "social_media_high_review": "~10% — assign AIDA framework (only 4.5★+ with 100+ reviews)"
-    },
-    "signal_assignment_note": "BRAIN will run waterfall logic on Batch 5 leads once HANDS returns raw scrape data. SSL takes priority over mobile — do not double-assign. AIDA only for leads with confirmed high-volume reviews. Minimum score 55 to email.",
-    "ryedale_profile_note": "Rural North Yorkshire market towns — higher proportion of no-website and legacy-site leads than East Yorkshire coast. Many trades businesses have 10+ year old websites with no SSL, no mobile optimisation. Low digital sophistication = higher signal density = strong conversion potential.",
-    "do_not_send_before_brain_review": true
+    "scrape_deadline": "2026-04-23 EOD — if data not returned today, first new sends slip to Monday 2026-04-28",
+    "consequence_of_delay": "By end of Thursday 2026-04-24, ALL active sequences will be complete. Zero warm pipeline. Zero cold sequences in flight. Total campaign stall until Batch 5 or Batch 6 data arrives."
+  },
+  "signal_assignments": [],
+  "signal_assignment_note": "No leads to assign signals to. Awaiting Batch 5 Ryedale raw data from HANDS. When data arrives, BRAIN will run waterfall: SSL → mobile → no_website → social_media_high_review. Minimum score 55 to email.",
+  "waterfall_logic": {
+    "priority_1": "ssl — PAS framework — subject: '[Name] — [town] [trade] website flagged Not Secure'",
+    "priority_2": "mobile — PAS framework — subject: '[Name] — [town] [business] site isn't mobile-friendly'",
+    "priority_3": "no_website — BAB framework — subject: '[Business] — [town] [trade]: customers can't find you online' (only 4★+ active-review businesses)",
+    "priority_4": "social_media_high_review — AIDA framework — subject: '[Name] — [N] reviews but your site isn't ranking' (only 4.5★+ with 100+ reviews)",
+    "do_not_double_assign": true,
+    "generic_signal": "Do NOT email — hold until deep crawl finds specific angle"
   },
   "carried_forward_blocked": {
     "lead_49": {
       "business": "East Riding Builders Ltd",
       "status": "blocked_no_email",
-      "days_blocked": 21,
-      "action": "HANDS: Companies House director name search on 2026-04-22 morning. Use director surname + domain pattern (e.g. j.smith@eastridingbuilders.co.uk). Critical — 21 days blocked is excessive.",
-      "priority": "medium"
+      "days_blocked": 23,
+      "action": "HANDS: Companies House director name search — overdue since 2026-04-22. Use director surname + domain pattern. Do today."
     },
     "lead_51": {
       "business": "Driffield Garden Centre",
       "status": "blocked_contact_form_only",
-      "days_blocked": 21,
-      "action": "HANDS: phone the business on 2026-04-22 after 09:30 (post-Easter, give them time to open). 'Just need the right address for some information I wanted to send across.'",
-      "priority": "medium"
+      "days_blocked": 23,
+      "action": "HANDS: phone the business after 09:30. 'Just need the right address for some information I wanted to send across.' Do today."
     },
     "lead_53": {
       "business": "Bridlington Bay Lettings",
       "status": "blocked_no_direct_email",
-      "days_blocked": 21,
-      "action": "HANDS: check Rightmove / Zoopla agent directory for direct email. Try info@ as fallback if no other found.",
-      "priority": "medium"
+      "days_blocked": 23,
+      "action": "HANDS: check Rightmove / Zoopla agent directory. Try info@ as fallback. Do today."
     },
     "lead_54": {
       "business": "The Wolds Inn",
       "status": "blocked_no_email",
-      "days_blocked": 21,
-      "action": "HANDS: try info@thewoldsinn.co.uk. Low priority — do after blocked leads 49, 51, 53.",
-      "priority": "low"
+      "days_blocked": 23,
+      "action": "HANDS: try info@thewoldsinn.co.uk. Low priority — do after leads 49, 51, 53."
     }
   },
   "sequences_completed_to_date": {
     "confirmed": [2, 5, 7, 8, 12, 19],
-    "assumed_complete_pending_hands_confirmation": [4, 6],
-    "note": "Leads 4 (Rachel, Skipton Garden Design) and 6 (Boroughbridge Plumbing) sequences assumed complete after fu_020 and fu_021 — HANDS must confirm in CHANGELOG.md."
-  },
-  "warm_pipeline_status": {
-    "lead_3_claire": "OUTCOME_UNKNOWN — 17 days since last IMAP check. Proposal nudge sent ~2026-04-10. Final close window passed ~2026-04-14. Easter weekend may have generated a late reply — check first thing 2026-04-22.",
-    "lead_22_rob": "OUTCOME_UNKNOWN — 17 days since last IMAP check. Nudge sent 2026-04-07. Final close window passed 2026-04-15. Rob expressed strong buying intent (bundle question) — there is a real possibility of an unanswered reply sitting in IMAP.",
-    "lead_1_tom": "OUTCOME_UNKNOWN — 17 days since last IMAP check. Nudge sent 2026-04-08. Trades people often reply post-holiday with a clear head. Check IMAP before taking any final close action."
-  },
-  "high_probability_imap_reply_window": {
-    "note": "Easter bank holiday pattern: UK B2B owners often scroll email on Easter Sunday/Monday out of habit, then compose replies on Tuesday morning. The 17-day IMAP gap creates a higher-than-normal probability of finding replies on Tuesday sweep. Rob (lead 22) in particular — his question about bundling work was a strong commercial signal and he may have had time to think it over during Easter.",
-    "sweet_spot_for_reply": "2026-04-22 07:00 IMAP sweep — this is peak yield time"
+    "assumed_complete": [4, 6],
+    "completing_today_wed": [30, 31, 32, 58, 59],
+    "completing_tomorrow_thu": [50, 52, 55, 56],
+    "completing_this_week_tuesday_unconfirmed": [42, 44, 46, 57, 60],
+    "note": "By end of Thursday 2026-04-24, all 60+ active leads will have been through all 4 touchpoints. Full campaign dataset available for analysis from Friday 2026-04-25."
   },
   "summary": {
     "new_signals_assigned": 0,
     "blocked_carry_forward": 4,
-    "sends_today": 0,
-    "sends_tomorrow": 5,
-    "next_send_day": "2026-04-22",
-    "next_send_count": 5,
-    "next_send_ids": ["fu_036", "fu_037", "fu_038", "fu_039", "fu_040"],
-    "pipeline_risk": "CRITICAL. 14-day new-lead gap. Batch 5 Ryedale scrape on 2026-04-22 is the single most important action to restore pipeline momentum. Without it, no new initial sends until after 2026-04-25 at the earliest.",
-    "total_sequences_completing_this_week": 14,
-    "entire_active_pipeline_completes": "By end of 2026-04-24, all 60+ leads will have been through all 4 touchpoints — the first time a complete campaign dataset exists for analysis."
+    "sends_today": 5,
+    "send_ids_today": ["fu_041", "fu_042", "fu_043", "fu_044", "fu_045"],
+    "sends_tomorrow": 4,
+    "send_ids_tomorrow": ["fu_046", "fu_047", "fu_048", "fu_049"],
+    "pipeline_risk": "CRITICAL. 16-day new-lead gap. All existing sequences complete by end of Thursday. Without Batch 5 data today, campaign stalls completely from Friday 2026-04-25.",
+    "batch_5_scrape_deadline": "2026-04-23 EOD",
+    "next_brain_run_required": "2026-04-24 (Thursday) — MANDATORY even if Batch 5 data arrives Wednesday EOD. Cannot miss Day-3 bump window for Batch 5 initial sends."
   }
 }

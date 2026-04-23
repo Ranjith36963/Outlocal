@@ -1,173 +1,20 @@
 {
-  "generated_at": "2026-04-21T08:00:00Z",
-  "date": "2026-04-21",
-  "day_number": 24,
-  "note": "BRAIN layer — Day 24 (Easter Monday, UK bank holiday). NO SENDS TODAY. fu_020 (Rachel, Skipton Garden Design) and fu_021 (Boroughbridge Plumbing) ASSUMED SENT 2026-04-19 (Easter Saturday) — HANDS confirm in CHANGELOG.md. If NOT sent Saturday: send both before 09:00 window on 2026-04-22. All 14 post-Easter breakup email bodies unchanged. POST-EASTER (Tue 22 Apr – Thu 24 Apr): fu_036 through fu_049 — IMAP check before every single send. LinkedIn searches for leads 42/44/46/57/60 in 07:00-09:00 window BEFORE breakup emails. Do not send to any lead that has replied since 2026-04-10. IMAP gap is now 17 days.",
+  "generated_at": "2026-04-23T08:00:00Z",
+  "date": "2026-04-23",
+  "day_number": 26,
+  "note": "BRAIN layer — Day 26 (Wednesday). Today's sends: fu_041-045 (09:00-10:15). Tomorrow's sends: fu_046-049 (09:00-10:00). Tuesday sends fu_036-040 status UNCONFIRMED — HANDS must confirm in CHANGELOG.md. IMAP check before each individual send — 19-day gap means any of today's leads may have replied silently.",
   "suppressed_lead_ids": [19, 7],
   "do_not_followup_replied_lead_ids": [1, 2, 3, 22],
-  "sequences_completed_post_april_10": [4, 5, 6, 8, 12],
-  "assumed_sent_since_last_brain_run": [
-    "fu_027 (lead 57, Mike, Scarborough Bay Plumbing — Day-3 bump — assumed 2026-04-10)",
-    "fu_028 (lead 58, Old Court Solicitors — Day-3 bump — assumed 2026-04-10)",
-    "fu_029 (lead 59, Tony, Scarborough Roofing — Day-3 bump — assumed 2026-04-10)",
-    "fu_033 (lead 42, Sarah, Blossom Beauty — Day-7 new angle — assumed 2026-04-10)",
-    "fu_034 (lead 44, Dr Rowe, Meadowbrook Vets — Day-7 new angle — assumed 2026-04-10)",
-    "fu_035 (lead 46, Mike Thornfield, Thornfield Electricals — Day-7 new angle — assumed 2026-04-10)",
-    "fu_030 (lead 60, James Hewitt, Pocklington — Day-3 bump — assumed 2026-04-11)",
-    "fu_007_updated (lead 8, Graham, Ilkley Ironmongery — Day-14 breakup — assumed 2026-04-11)",
-    "fu_031 (lead 5, David Harewood — Day-14 breakup — assumed 2026-04-14)",
-    "fu_032 (lead 12, Bronte Country Cottages — Day-14 breakup — assumed 2026-04-15)"
-  ],
+  "sequences_completed_confirmed": [2, 5, 7, 8, 12, 19],
+  "sequences_completed_assumed": [4, 6],
+  "tuesday_send_status": {
+    "fu_036": {"lead_id": 42, "business": "Blossom Beauty Studio", "status": "UNCONFIRMED — HANDS confirm in CHANGELOG.md"},
+    "fu_037": {"lead_id": 44, "business": "Meadowbrook Vets", "status": "UNCONFIRMED — HANDS confirm in CHANGELOG.md"},
+    "fu_038": {"lead_id": 46, "business": "Thornfield Electricals", "status": "UNCONFIRMED — HANDS confirm in CHANGELOG.md"},
+    "fu_039": {"lead_id": 57, "business": "Scarborough Bay Plumbing", "status": "UNCONFIRMED — HANDS confirm in CHANGELOG.md"},
+    "fu_040": {"lead_id": 60, "business": "Pocklington Fine Furniture", "status": "UNCONFIRMED — HANDS confirm in CHANGELOG.md"}
+  },
   "followups": [
-    {
-      "followup_id": "fu_020",
-      "original_email_id": 4,
-      "lead_id": 4,
-      "business_name": "Skipton Garden Design",
-      "owner_name": "Rachel",
-      "lead_email": "rachel@skiptongarden.co.uk",
-      "town": "Skipton",
-      "original_sent_at": "2026-03-29T09:00:00Z",
-      "followup_number": 3,
-      "sequence_day": 14,
-      "due_today": false,
-      "assumed_sent": "2026-04-19",
-      "sequence_complete": true,
-      "due_date": "2026-04-19",
-      "followup_type": "breakup",
-      "subject": "Closing the loop — Skipton Garden Design",
-      "body": "Rachel,\n\nI've dropped you a couple of notes about the mobile issue and the portfolio gap on the site — won't keep following up if the timing isn't right.\n\nIf things change down the line, or spring brings a burst of new enquiries and you want to capture more of them, you know where to find me.\n\nAll the best,\n[Your name]",
-      "angle": "breakup",
-      "send_window": "09:00-10:00",
-      "notes": "DUE TODAY (Easter Saturday). Spring garden design framing remains timely — Easter weekend into spring season. Check IMAP first. Final touchpoint."
-    },
-    {
-      "followup_id": "fu_021",
-      "original_email_id": 6,
-      "lead_id": 6,
-      "business_name": "Boroughbridge Plumbing",
-      "owner_name": null,
-      "lead_email": "info@boroughbridgeplumbing.co.uk",
-      "town": "Boroughbridge",
-      "original_sent_at": "2026-03-29T09:45:00Z",
-      "followup_number": 3,
-      "sequence_day": 14,
-      "due_today": false,
-      "assumed_sent": "2026-04-19",
-      "sequence_complete": true,
-      "due_date": "2026-04-19",
-      "followup_type": "breakup",
-      "subject": "Closing the loop — Boroughbridge Plumbing",
-      "body": "Hi,\n\nI've sent a couple of notes about the mobile and local SEO issues — won't keep following up if now isn't the right time.\n\nIf you want to revisit this later, feel free to get in touch.\n\nAll the best,\n[Your name]",
-      "angle": "breakup",
-      "send_window": "09:20-10:00",
-      "notes": "DUE TODAY (Easter Saturday). Short and clean — no owner name. Stagger 20 mins after fu_020. Final touchpoint."
-    },
-    {
-      "followup_id": "fu_036",
-      "original_email_id": "HANDS: retrieve from database for lead_id 42",
-      "lead_id": 42,
-      "business_name": "Blossom Beauty Studio",
-      "owner_name": "Sarah",
-      "lead_email": "HANDS: retrieve from database for lead_id 42",
-      "town": "York",
-      "original_sent_at": "2026-04-03",
-      "followup_number": 3,
-      "sequence_day": 14,
-      "due_today": false,
-      "due_date": "2026-04-22",
-      "overdue_from": "2026-04-17",
-      "followup_type": "breakup",
-      "subject": "Closing the loop — Blossom Beauty Studio",
-      "body": "Sarah,\n\nI've dropped you a couple of notes about the Blossom Beauty Studio site — the SSL, mobile issue, and how it's showing up in local search for York.\n\nWon't keep following up if now isn't the right time. If things change, you know where I am.\n\nAll the best,\n[Your name]",
-      "angle": "breakup",
-      "send_window": "09:00-09:15",
-      "notes": "DUE 2026-04-22 (Tuesday post-Easter). 5 days overdue — send first of the day. IMAP check before sending — if Sarah replied to any touchpoint since 2026-04-10, cancel immediately. Final touchpoint."
-    },
-    {
-      "followup_id": "fu_037",
-      "original_email_id": "HANDS: retrieve from database for lead_id 44",
-      "lead_id": 44,
-      "business_name": "Meadowbrook Vets",
-      "owner_name": "Dr. James Rowe",
-      "lead_email": "HANDS: retrieve from database for lead_id 44",
-      "town": "Skipton",
-      "original_sent_at": "2026-04-03",
-      "followup_number": 3,
-      "sequence_day": 14,
-      "due_today": false,
-      "due_date": "2026-04-22",
-      "overdue_from": "2026-04-17",
-      "followup_type": "breakup",
-      "subject": "Closing the loop — Meadowbrook Vets",
-      "body": "Dr Rowe,\n\nI've sent a couple of notes about local search visibility and the trust signals on the Meadowbrook Vets site — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-      "angle": "breakup",
-      "send_window": "09:15-09:30",
-      "notes": "DUE 2026-04-22. Use 'Dr Rowe' — formal address appropriate for a veterinary principal. Stagger 15 mins after fu_036. Check IMAP. Final touchpoint."
-    },
-    {
-      "followup_id": "fu_038",
-      "original_email_id": "HANDS: retrieve from database for lead_id 46",
-      "lead_id": 46,
-      "business_name": "Thornfield Electricals",
-      "owner_name": "Mike Thornfield",
-      "lead_email": "HANDS: retrieve from database for lead_id 46",
-      "town": "Bradford",
-      "original_sent_at": "2026-04-03",
-      "followup_number": 3,
-      "sequence_day": 14,
-      "due_today": false,
-      "due_date": "2026-04-22",
-      "overdue_from": "2026-04-17",
-      "followup_type": "breakup",
-      "subject": "Closing the loop — Thornfield Electricals",
-      "body": "Mike,\n\nI've sent a couple of notes about the SSL issue and the Google Maps ranking gap for Thornfield Electricals — won't keep following up if now isn't the right time.\n\nIf things change and you want to revisit it, you know where I am.\n\nAll the best,\n[Your name]",
-      "angle": "breakup",
-      "send_window": "09:30-09:45",
-      "notes": "DUE 2026-04-22. Stagger 15 mins after fu_037. Check IMAP. Final touchpoint."
-    },
-    {
-      "followup_id": "fu_039",
-      "original_email_id": 57,
-      "lead_id": 57,
-      "business_name": "Scarborough Bay Plumbing & Heating",
-      "owner_name": "Mike Rawlings",
-      "lead_email": "mike@scarboroughbayplumbing.co.uk",
-      "town": "Scarborough",
-      "original_sent_at": "2026-04-07",
-      "followup_number": 3,
-      "sequence_day": 14,
-      "due_today": false,
-      "due_date": "2026-04-22",
-      "deferred_from": "2026-04-21",
-      "deferred_reason": "Easter Monday",
-      "followup_type": "breakup",
-      "subject": "Closing the loop — Scarborough Bay Plumbing",
-      "body": "Mike,\n\nI've dropped you a couple of notes about the SSL issue on the scarboroughbayplumbing.co.uk site — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-      "angle": "breakup",
-      "send_window": "09:45-10:00",
-      "notes": "DUE 2026-04-22. Deferred from Easter Monday. Stagger 15 mins after fu_038. Check IMAP. Final touchpoint."
-    },
-    {
-      "followup_id": "fu_040",
-      "original_email_id": 60,
-      "lead_id": 60,
-      "business_name": "Pocklington Fine Furniture",
-      "owner_name": "James Hewitt",
-      "lead_email": "james@pocklingtonfurniture.co.uk",
-      "town": "Pocklington",
-      "original_sent_at": "2026-04-08",
-      "followup_number": 3,
-      "sequence_day": 14,
-      "due_today": false,
-      "due_date": "2026-04-22",
-      "followup_type": "breakup",
-      "subject": "Closing the loop — Pocklington Fine Furniture",
-      "body": "James,\n\nI've sent a couple of notes about the mobile issue on the Pocklington Fine Furniture site — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-      "angle": "breakup",
-      "send_window": "10:00-10:15",
-      "notes": "DUE 2026-04-22 (exactly on schedule). Stagger 15 mins after fu_039. Check IMAP. Final touchpoint."
-    },
     {
       "followup_id": "fu_041",
       "original_email_id": "HANDS: retrieve from database for lead_id 30",
@@ -179,7 +26,7 @@
       "original_sent_at": "2026-04-02",
       "followup_number": 3,
       "sequence_day": 14,
-      "due_today": false,
+      "due_today": true,
       "due_date": "2026-04-23",
       "overdue_from": "2026-04-16",
       "followup_type": "breakup",
@@ -187,7 +34,7 @@
       "body": "Steve,\n\nI've dropped you a couple of notes about the mobile issue and local SEO gaps for the Halifax Window Cleaning site — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:00-09:15",
-      "notes": "DUE 2026-04-23 (Wednesday). 7 days overdue — still worth sending as final touchpoint. Check IMAP for any reply to Day-7 local SEO email (fu_017, sent 2026-04-09). Final touchpoint."
+      "notes": "DUE TODAY (Wednesday 2026-04-23). 7 days overdue — still worth sending as final touchpoint. IMAP check before sending — check for reply to Day-7 local SEO email (fu_017, assumed sent 2026-04-09). Final touchpoint. Retrieve email from database before 09:00."
     },
     {
       "followup_id": "fu_042",
@@ -200,7 +47,7 @@
       "original_sent_at": "2026-04-02",
       "followup_number": 3,
       "sequence_day": 14,
-      "due_today": false,
+      "due_today": true,
       "due_date": "2026-04-23",
       "overdue_from": "2026-04-16",
       "followup_type": "breakup",
@@ -208,7 +55,7 @@
       "body": "Hi,\n\nI've dropped a couple of notes about the Google Business Profile and local visibility issues — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:15-09:30",
-      "notes": "DUE 2026-04-23. No owner name — use 'Hi'. Stagger 15 mins after fu_041. Check IMAP for any reply to Day-7 Google Profile email (fu_018, sent 2026-04-09). Final touchpoint."
+      "notes": "DUE TODAY. No owner name — use 'Hi'. 7 days overdue. Stagger 15 mins after fu_041. IMAP check for reply to Day-7 Google Profile email (fu_018, assumed sent 2026-04-09). Final touchpoint. Retrieve email from database before 09:00."
     },
     {
       "followup_id": "fu_043",
@@ -221,7 +68,7 @@
       "original_sent_at": "2026-04-02",
       "followup_number": 3,
       "sequence_day": 14,
-      "due_today": false,
+      "due_today": true,
       "due_date": "2026-04-23",
       "overdue_from": "2026-04-16",
       "followup_type": "breakup",
@@ -229,7 +76,7 @@
       "body": "Ann,\n\nI've sent a couple of notes about the website — won't keep following up if now isn't the right time.\n\nIf things change and you want to revisit it, you know where I am.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:30-09:45",
-      "notes": "DUE 2026-04-23. Stagger 15 mins after fu_042. Check IMAP for any reply to Day-7 conversion-gap email (fu_019, sent 2026-04-09). Final touchpoint."
+      "notes": "DUE TODAY. Stagger 15 mins after fu_042. IMAP check for reply to Day-7 conversion-gap email (fu_019, assumed sent 2026-04-09). Final touchpoint. Retrieve email from database before 09:00."
     },
     {
       "followup_id": "fu_044",
@@ -242,7 +89,7 @@
       "original_sent_at": "2026-04-07",
       "followup_number": 3,
       "sequence_day": 14,
-      "due_today": false,
+      "due_today": true,
       "due_date": "2026-04-23",
       "deferred_from": "2026-04-21",
       "followup_type": "breakup",
@@ -250,7 +97,7 @@
       "body": "Hi,\n\nI've sent a couple of notes about the SSL issue affecting the client enquiry form on your website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:45-10:00",
-      "notes": "DUE 2026-04-23. No owner name — 'Hi'. Deferred from Easter Monday. Check IMAP for any reply to Day-3 GDPR bump (fu_028). Final touchpoint."
+      "notes": "DUE TODAY. No owner name — 'Hi'. Deferred from Easter Monday. IMAP check for reply to Day-3 GDPR bump (fu_028, assumed sent 2026-04-10). Final touchpoint. Professional framing — GDPR angle: client data form served over HTTP."
     },
     {
       "followup_id": "fu_045",
@@ -263,7 +110,7 @@
       "original_sent_at": "2026-04-07",
       "followup_number": 3,
       "sequence_day": 14,
-      "due_today": false,
+      "due_today": true,
       "due_date": "2026-04-23",
       "deferred_from": "2026-04-21",
       "followup_type": "breakup",
@@ -271,7 +118,7 @@
       "body": "Tony,\n\nI've dropped a couple of notes about the SSL issue on the Scarborough Roofing site — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "10:00-10:15",
-      "notes": "DUE 2026-04-23. Deferred from Easter Monday. Stagger 15 mins after fu_044. Check IMAP for any reply to Day-3 bump (fu_029). Final touchpoint."
+      "notes": "DUE TODAY. Deferred from Easter Monday. Stagger 15 mins after fu_044. IMAP check for reply to Day-3 bump (fu_029, assumed sent 2026-04-10). Final touchpoint."
     },
     {
       "followup_id": "fu_046",
@@ -292,7 +139,7 @@
       "body": "Linda,\n\nI've dropped you a couple of notes about the Holderness Homecare website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:00-09:15",
-      "notes": "DUE 2026-04-24 (Thursday). Deferred from Easter Sunday. Check IMAP for any reply to Day-3 bump (fu_022, assumed sent 2026-04-09). Final touchpoint."
+      "notes": "DUE TOMORROW (Thursday 2026-04-24). Deferred from Easter Sunday. IMAP check before sending — check for reply to Day-3 bump (fu_022, assumed sent 2026-04-09). Final touchpoint. Retrieve email from database before 09:00 Thursday."
     },
     {
       "followup_id": "fu_047",
@@ -313,7 +160,7 @@
       "body": "Craig,\n\nI've sent a couple of notes about the Beverley Sports & Leisure website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:15-09:30",
-      "notes": "DUE 2026-04-24. Stagger 15 mins after fu_046. Check IMAP for any reply to Day-3 bump (fu_023). Final touchpoint."
+      "notes": "DUE TOMORROW. Stagger 15 mins after fu_046. IMAP check for reply to Day-3 bump (fu_023). Final touchpoint. Retrieve email from database before 09:00 Thursday."
     },
     {
       "followup_id": "fu_048",
@@ -334,7 +181,7 @@
       "body": "Pete,\n\nI've dropped a couple of notes about the site for The Harbour Fish Bar — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:30-09:45",
-      "notes": "DUE 2026-04-24. Easter weekend has just passed — hospitality businesses in East Yorkshire may see a spike in activity this week. Check IMAP for any reply to Day-3 Easter bump (fu_024). Final touchpoint."
+      "notes": "DUE TOMORROW. Post-Easter hospitality in East Yorkshire — fish and chip shops will be busy after the bank holiday weekend. Timing is actually strong. IMAP check for reply to Day-3 Easter bump (fu_024). Final touchpoint. Retrieve email from database before 09:00 Thursday."
     },
     {
       "followup_id": "fu_049",
@@ -355,57 +202,42 @@
       "body": "Neil,\n\nI've sent a couple of notes about the East Riding Electrical site — won't keep following up if the timing isn't right.\n\nIf things change down the line, you know where I am.\n\nAll the best,\n[Your name]",
       "angle": "breakup",
       "send_window": "09:45-10:00",
-      "notes": "DUE 2026-04-24. Trades people often return to inbox after Easter — breakup timing is fine. Stagger 15 mins after fu_048. Check IMAP for any reply to Day-3 bump (fu_025). Final touchpoint."
+      "notes": "DUE TOMORROW. Trades people often clear inbox after bank holidays — post-Easter timing reasonable. Stagger 15 mins after fu_048. IMAP check for reply to Day-3 bump (fu_025). Final touchpoint. Retrieve email from database before 09:00 Thursday."
     }
   ],
   "summary": {
-    "assumed_sent_2026_04_19": 2,
-    "items_assumed_sent_yesterday": [
-      "fu_020 (lead 4, Rachel, Skipton Garden Design — Day-14 breakup) — ASSUMED SENT — HANDS confirm in CHANGELOG.md",
-      "fu_021 (lead 6, Boroughbridge Plumbing — Day-14 breakup) — ASSUMED SENT — HANDS confirm in CHANGELOG.md"
-    ],
-    "today_2026_04_20": "Easter Sunday — NO SENDS. No outreach.",
-    "tomorrow_2026_04_21": "Easter Monday — NO SENDS. UK bank holiday.",
-    "due_2026_04_21": 0,
-    "easter_monday_note": "NO OUTREACH on 2026-04-21 (Easter Monday). All items that were due 2026-04-21 have been deferred to 2026-04-22.",
-    "due_2026_04_22": 5,
-    "items_due_2026_04_22": [
-      "fu_036 (lead 42, Sarah, Blossom Beauty — Day-14 breakup, 5 days overdue)",
-      "fu_037 (lead 44, Dr Rowe, Meadowbrook Vets — Day-14 breakup, 5 days overdue)",
-      "fu_038 (lead 46, Mike Thornfield, Thornfield Electricals — Day-14 breakup, 5 days overdue)",
-      "fu_039 (lead 57, Mike Rawlings, Scarborough Bay Plumbing — Day-14 breakup, Easter deferred)",
-      "fu_040 (lead 60, James Hewitt, Pocklington Fine Furniture — Day-14 breakup, exactly on schedule)"
-    ],
-    "send_order_2026_04_22": "fu_036 → fu_037 → fu_038 → fu_039 → fu_040 (09:00-10:15, 15-min stagger). IMAP check before each send. Retrieve email addresses from database for leads 42, 44, 46.",
-    "due_2026_04_23": 5,
-    "items_due_2026_04_23": [
+    "due_today_2026_04_23": 5,
+    "items_due_today": [
       "fu_041 (lead 30, Steve, Halifax Window Cleaning — Day-14 breakup, 7 days overdue)",
       "fu_042 (lead 31, Pontefract Pharmacy — Day-14 breakup, 7 days overdue)",
       "fu_043 (lead 32, Ann, Castleford Carpets — Day-14 breakup, 7 days overdue)",
       "fu_044 (lead 58, Old Court Solicitors — Day-14 breakup, Easter deferred)",
       "fu_045 (lead 59, Tony Shields, Scarborough Roofing — Day-14 breakup, Easter deferred)"
     ],
-    "send_order_2026_04_23": "fu_041 → fu_042 → fu_043 → fu_044 → fu_045 (09:00-10:15, 15-min stagger). IMAP check before each.",
-    "due_2026_04_24": 4,
-    "items_due_2026_04_24": [
+    "send_order_today": "fu_041 → fu_042 → fu_043 → fu_044 → fu_045 (09:00-10:15, 15-min stagger). IMAP check before each send. Retrieve email addresses from database for leads 30, 31, 32 before 09:00.",
+    "due_tomorrow_2026_04_24": 4,
+    "items_due_tomorrow": [
       "fu_046 (lead 52, Linda Walsh, Holderness Homecare — Day-14 breakup)",
-      "fu_047 (lead 55, Craig Lawson, Beverley Sports — Day-14 breakup)",
-      "fu_048 (lead 50, Pete, Harbour Fish Bar — Day-14 breakup)",
+      "fu_047 (lead 55, Craig Lawson, Beverley Sports & Leisure — Day-14 breakup)",
+      "fu_048 (lead 50, Pete, The Harbour Fish Bar — Day-14 breakup)",
       "fu_049 (lead 56, Neil, East Riding Electrical — Day-14 breakup)"
     ],
-    "send_order_2026_04_24": "fu_046 → fu_047 → fu_048 → fu_049 (09:00-10:00, 15-min stagger). IMAP check before each.",
-    "total_in_queue": 16,
-    "breakup_emails_total": 16,
+    "send_order_tomorrow": "fu_046 → fu_047 → fu_048 → fu_049 (09:00-10:00, 15-min stagger). IMAP check before each. Retrieve email addresses for leads 50, 52, 55, 56 from database before 09:00.",
+    "tuesday_sends_unconfirmed": ["fu_036", "fu_037", "fu_038", "fu_039", "fu_040"],
+    "total_in_queue": 9,
+    "breakup_emails_total": 9,
     "new_angle_emails_total": 0,
-    "total_sequences_completing_this_week": 14,
-    "imap_instructions": "HANDS: Full IMAP sweep on 2026-04-22 before any send. Check Claire (lead 3), Rob (lead 22), Tom (lead 1) first — these deals may have closed or require final close actions. Then check each cold lead individually before their breakup send. Any cold lead that has replied since 2026-04-10 should have their breakup cancelled and be re-routed appropriately.",
+    "sequences_completing_today": [30, 31, 32, 58, 59],
+    "sequences_completing_tomorrow": [50, 52, 55, 56],
+    "milestone": "After Thursday's sends (fu_046-049), all active sequences for leads 4, 6, 30, 31, 32, 42, 44, 46, 50, 52, 55, 56, 57, 58, 59, 60 will be complete. The entire campaign cohort of ~60 leads will have been through all 4 touchpoints — first full dataset available for analysis.",
     "hands_actions_required": [
-      "Retrieve email addresses from database for leads 30, 31, 32, 42, 44, 46, 50, 52, 55, 56 before sending respective breakups",
-      "Update value_delivery_queue.json with Claire/Rob/Tom actual outcomes — this is the most important data gap",
-      "Confirm all assumed-sent items above (fu_027 through fu_032) — update CHANGELOG.md with actual send dates",
-      "Run Batch 5 Ryedale Google Maps scrape on 2026-04-22 — do not delay further"
+      "Retrieve email addresses from database for leads 30, 31, 32 BEFORE 09:00 today",
+      "IMAP check before each of today's 5 sends — do not skip",
+      "Confirm Tuesday sends fu_036-040 in CHANGELOG.md",
+      "Retrieve email addresses for leads 50, 52, 55, 56 before Thursday 09:00",
+      "Batch 5 Ryedale scrape today — CRITICAL for pipeline continuity"
     ],
-    "easter_compliance": "No outreach on Good Friday 2026-04-18 or Easter Monday 2026-04-21. Today (Saturday 2026-04-19) is acceptable for fu_020 and fu_021 — garden design and plumbing are non-urgent B2B, Saturday send is appropriate. All other outreach from Tuesday 2026-04-22.",
-    "notes": "All 16 items in this queue are breakup emails — final touchpoints, brief and polite. After these send, sequences for leads 4, 6, 30, 31, 32, 42, 44, 46, 50, 52, 55, 56, 57, 58, 59, 60 will be complete. The entire active pipeline of ~60 leads will have been fully worked. Post-Easter, all growth depends on Batch 5 and Batch 6 scrapes."
+    "new_initial_sends_today": 0,
+    "new_initial_sends_note": "No Batch 5 data received. No new initial sends until HANDS returns Ryedale data and BRAIN writes copy."
   }
 }

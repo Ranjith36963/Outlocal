@@ -1,164 +1,167 @@
 [
   {
-    "plan_date": "2026-04-21",
-    "generated_at": "2026-04-21T08:00:00Z",
-    "day_number": 24,
-    "note": "BRAIN layer — Day 24 (Easter Monday, UK bank holiday). NO SENDS TODAY. fu_020 (Rachel, Skipton Garden Design) and fu_021 (Boroughbridge Plumbing) are ASSUMED SENT 2026-04-19 (Easter Saturday) — HANDS confirm in CHANGELOG.md. If NOT sent on Saturday: send BOTH first on 2026-04-22 before the 09:00 breakup window. Post-Easter plan is unchanged from Day 22/23 runs. No Batch 5 data received — copy for Ryedale leads will be written on the next BRAIN run after HANDS returns scrape data.",
-    "sends_today": [],
-    "reason_today": "Easter Monday — UK bank holiday. No outreach on any channel.",
-    "assumed_sent_easter_saturday_2026_04_19": [
+    "plan_date": "2026-04-23",
+    "generated_at": "2026-04-23T08:00:00Z",
+    "day_number": 26,
+    "note": "BRAIN layer — Day 26 (Wednesday). Today: 5 breakup sends (fu_041-045). No new initial sends — Batch 5 Ryedale data not yet received. Tuesday sends fu_036-040 unconfirmed. IMAP gap 19 days — check before each send.",
+    "sends_today": [
       {
-        "followup_id": "fu_020",
-        "lead_id": 4,
-        "business_name": "Skipton Garden Design",
-        "owner_name": "Rachel",
-        "type": "Day-14 breakup",
-        "subject": "Closing the loop — Skipton Garden Design",
-        "due_date": "2026-04-19",
-        "status": "ASSUMED_SENT — HANDS confirm in CHANGELOG.md",
-        "sequence_complete": true
+        "type": "followup_breakup",
+        "followup_id": "fu_041",
+        "lead_id": 30,
+        "business_name": "Halifax Window Cleaning",
+        "owner_name": "Steve",
+        "lead_email": "HANDS: retrieve from database for lead_id 30",
+        "town": "Halifax",
+        "subject": "Closing the loop — Halifax Window Cleaning",
+        "body": "Steve,\n\nI've dropped you a couple of notes about the mobile issue and local SEO gaps for the Halifax Window Cleaning site — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
+        "send_time": "09:00",
+        "imap_check_required": true,
+        "retrieve_email_from_db": true,
+        "sequence_step": 3,
+        "sequence_complete_after": true
       },
       {
-        "followup_id": "fu_021",
-        "lead_id": 6,
-        "business_name": "Boroughbridge Plumbing",
+        "type": "followup_breakup",
+        "followup_id": "fu_042",
+        "lead_id": 31,
+        "business_name": "Pontefract Pharmacy",
         "owner_name": null,
-        "type": "Day-14 breakup",
-        "subject": "Closing the loop — Boroughbridge Plumbing",
-        "due_date": "2026-04-19",
-        "status": "ASSUMED_SENT — HANDS confirm in CHANGELOG.md",
-        "sequence_complete": true
+        "lead_email": "HANDS: retrieve from database for lead_id 31",
+        "town": "Pontefract",
+        "subject": "Closing the loop — Pontefract Pharmacy",
+        "body": "Hi,\n\nI've dropped a couple of notes about the Google Business Profile and local visibility issues — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
+        "send_time": "09:15",
+        "imap_check_required": true,
+        "retrieve_email_from_db": true,
+        "sequence_step": 3,
+        "sequence_complete_after": true
+      },
+      {
+        "type": "followup_breakup",
+        "followup_id": "fu_043",
+        "lead_id": 32,
+        "business_name": "Castleford Carpets",
+        "owner_name": "Ann",
+        "lead_email": "HANDS: retrieve from database for lead_id 32",
+        "town": "Castleford",
+        "subject": "Closing the loop — Castleford Carpets",
+        "body": "Ann,\n\nI've sent a couple of notes about the website — won't keep following up if now isn't the right time.\n\nIf things change and you want to revisit it, you know where I am.\n\nAll the best,\n[Your name]",
+        "send_time": "09:30",
+        "imap_check_required": true,
+        "retrieve_email_from_db": true,
+        "sequence_step": 3,
+        "sequence_complete_after": true
+      },
+      {
+        "type": "followup_breakup",
+        "followup_id": "fu_044",
+        "lead_id": 58,
+        "business_name": "The Old Court Solicitors",
+        "owner_name": null,
+        "lead_email": "info@oldcourtsolicitors.co.uk",
+        "town": "Scarborough",
+        "subject": "Closing the loop — The Old Court Solicitors",
+        "body": "Hi,\n\nI've sent a couple of notes about the SSL issue affecting the client enquiry form on your website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
+        "send_time": "09:45",
+        "imap_check_required": true,
+        "retrieve_email_from_db": false,
+        "sequence_step": 3,
+        "sequence_complete_after": true,
+        "ab_test_note": "GDPR/professional framing — watch for post-breakup reply rate on solicitors sector"
+      },
+      {
+        "type": "followup_breakup",
+        "followup_id": "fu_045",
+        "lead_id": 59,
+        "business_name": "Scarborough Roofing Specialists",
+        "owner_name": "Tony Shields",
+        "lead_email": "tony@scarboroughroofing.co.uk",
+        "town": "Scarborough",
+        "subject": "Closing the loop — Scarborough Roofing Specialists",
+        "body": "Tony,\n\nI've dropped a couple of notes about the SSL issue on the Scarborough Roofing site — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
+        "send_time": "10:00",
+        "imap_check_required": true,
+        "retrieve_email_from_db": false,
+        "sequence_step": 3,
+        "sequence_complete_after": true
       }
     ],
+    "new_sends_today": [],
+    "new_sends_reason": "BLOCKED — No Batch 5 Ryedale scrape data received from HANDS. Cannot write copy without leads. HANDS: scrape Ryedale today and return raw data. BRAIN will write copy on the next run (Thursday 24 April).",
     "do_not_email": [1, 2, 3, 4, 5, 6, 7, 8, 12, 19, 22],
-    "note_do_not_email": "Leads 1, 3, 22: INTERESTED — warm pipeline, handled via value_delivery_queue. Leads 4, 6: sequences complete (fu_020/021 assumed sent). Leads 5, 8, 12: sequences complete (breakups sent 2026-04-11–15). Lead 2: LOST (NOT_INTERESTED). Leads 7, 19: permanently suppressed.",
-    "post_easter_plan": {
-      "2026-04-22": {
-        "day": "Tuesday — first business day post-Easter",
-        "priority_morning_tasks": [
-          "07:00 — Full IMAP sweep: Check Claire (lead 3), Rob (lead 22), Tom (lead 1) FIRST. Log outcomes before any cold sends or LinkedIn activity.",
-          "07:00-09:00 — LinkedIn searches for leads 42, 44, 46, 57, 60 (CRITICAL priority — before breakup emails)",
-          "Retrieve email addresses from database for leads 42, 44, 46 before 09:00",
-          "If fu_020/fu_021 NOT sent Saturday: send both before 09:00 window",
-          "Confirm assumed-sent items fu_027 through fu_032 and fu_020/fu_021 in CHANGELOG.md",
-          "Run Batch 5 Ryedale Google Maps scrape — AFTER morning send window (10:30+)",
-          "Unblock leads 49, 51, 53 (Companies House / phone / directory searches)"
-        ],
-        "breakup_sends": 5,
-        "followup_ids": ["fu_036", "fu_037", "fu_038", "fu_039", "fu_040"],
-        "businesses": [
-          "Blossom Beauty Studio (Sarah, York) — fu_036 — 09:00",
-          "Meadowbrook Vets (Dr James Rowe, Skipton) — fu_037 — 09:15",
-          "Thornfield Electricals (Mike Thornfield, Bradford) — fu_038 — 09:30",
-          "Scarborough Bay Plumbing (Mike Rawlings) — fu_039 — 09:45",
-          "Pocklington Fine Furniture (James Hewitt) — fu_040 — 10:00"
-        ],
-        "send_window": "09:00-10:15",
-        "stagger_minutes": 15,
-        "new_sends": 0,
-        "linkedin_window": "07:00-09:00 (CRITICAL 5) and 10:30+ (HIGH 5)",
-        "compliance_note": "All B2B legitimate interest. Check IMAP for reply to any prior touchpoint before each send. If reply found: classify, cancel breakup, route per reply_classifications.json."
-      },
-      "2026-04-23": {
-        "day": "Wednesday",
-        "breakup_sends": 5,
-        "followup_ids": ["fu_041", "fu_042", "fu_043", "fu_044", "fu_045"],
-        "businesses": [
-          "Halifax Window Cleaning (Steve) — fu_041 — 09:00",
-          "Pontefract Pharmacy — fu_042 — 09:15",
-          "Castleford Carpets (Ann) — fu_043 — 09:30",
-          "The Old Court Solicitors — fu_044 — 09:45",
-          "Scarborough Roofing Specialists (Tony Shields) — fu_045 — 10:00"
-        ],
-        "send_window": "09:00-10:15",
-        "stagger_minutes": 15,
-        "new_sends_possible": "1-3 Batch 5 new sends after 10:30 — only if HANDS returned Ryedale data by Tuesday EOD AND BRAIN wrote copy on a Tuesday run",
-        "linkedin_window": "MEDIUM priority leads 50, 52, 55, 56",
-        "hands_before_sending": "Retrieve email addresses for leads 30, 31, 32 from database before 09:00"
-      },
-      "2026-04-24": {
-        "day": "Thursday",
-        "breakup_sends": 4,
-        "followup_ids": ["fu_046", "fu_047", "fu_048", "fu_049"],
-        "businesses": [
-          "Holderness Homecare (Linda Walsh) — fu_046 — 09:00",
-          "Beverley Sports & Leisure (Craig Lawson) — fu_047 — 09:15",
-          "The Harbour Fish Bar (Pete, Bridlington) — fu_048 — 09:30",
-          "East Riding Electrical (Neil) — fu_049 — 09:45"
-        ],
-        "send_window": "09:00-10:00",
-        "stagger_minutes": 15,
-        "new_sends_possible": "3-5 Batch 5 new sends if copy is ready",
-        "hands_before_sending": "Retrieve email addresses for leads 50, 52, 55, 56 from database before 09:00",
-        "note": "Post-Easter hospitality return — Pete (Harbour Fish Bar) and East Riding businesses may be back at their desks and motivated after a busy Easter weekend."
-      },
-      "2026-04-25": {
-        "day": "Friday",
-        "breakup_sends": 0,
-        "new_sends_target": "5-8 Batch 5 new sends",
-        "note": "Full Batch 5 send day — only possible if Ryedale data returned Tuesday and BRAIN wrote copy on a Wednesday run. Friday is historically the highest B2B reply day — Batch 5 opens will start coming in by Monday 2026-04-28.",
-        "milestone": "If Batch 5 sends go out on Friday: Day-3 bumps fall on Monday 2026-04-28. Day-7 new angles on 2026-05-02. Day-14 breakups on 2026-05-09. BRAIN must run every 3 days to cover all touchpoints."
-      },
-      "2026-04-28": {
-        "day": "Monday",
-        "expected": "Batch 5 Day-3 bumps if initial sends went out 2026-04-23 to 2026-04-24. BRAIN must run over the weekend or early Monday.",
-        "note": "BRAIN run cadence: every 3 days maximum from 2026-04-22 to maintain follow-up pipeline. This is now a hard rule."
-      }
+    "compliance_note": "All B2B legitimate interest. IMAP check before each send — 19-day gap means silent replies possible on any lead. Suppress immediately if unsubscribe found.",
+    "post_easter_ab_test_watch": {
+      "saturday_send_rate": "fu_020/021 sent Easter Saturday 2026-04-19 — HANDS confirm open/reply rate vs weekday sends",
+      "gdpr_frame_solicitors": "fu_044 Old Court Solicitors — professional GDPR angle — watch post-breakup reply rate",
+      "wednesday_breakup_rate": "Today's 5 breakups will be the first Wednesday-specific data point — log any replies by day-of-week"
     },
-    "batch_5_new_sends": {
-      "status": "WAITING_FOR_SCRAPE_DATA",
-      "email_copy_status": "NOT_WRITTEN — will be written on next BRAIN run after HANDS returns Ryedale data",
-      "estimated_leads_after_scoring": "5-8 (from ~18-22 scraped, filtered at score ≥55)",
-      "target_send_dates": "2026-04-23 to 2026-04-25",
-      "frameworks_by_signal": {
-        "ssl": "PAS — 'Problem: SSL flag / Agitate: trust loss / Solve: quick fix'",
-        "mobile": "PAS — 'Problem: mobile fail / Agitate: lost mobile searchers / Solve: optimisation'",
-        "no_website": "BAB — 'Before: invisible online / After: bookable, findable / Bridge: simple site'",
-        "social_media_high_review": "AIDA — 'Attention: strong reputation / Interest: missing channel / Desire: more inbound / Action: one simple step'"
-      },
-      "subject_line_rule": "[First name] — [town] [business type] [specific concrete issue]",
-      "minimum_score": 55
+    "tomorrow_plan_2026_04_24": {
+      "breakup_sends": 4,
+      "followup_ids": ["fu_046", "fu_047", "fu_048", "fu_049"],
+      "businesses": [
+        "Holderness Homecare (Linda Walsh) — fu_046 — 09:00",
+        "Beverley Sports & Leisure (Craig Lawson) — fu_047 — 09:15",
+        "The Harbour Fish Bar (Pete, Bridlington) — fu_048 — 09:30",
+        "East Riding Electrical (Neil) — fu_049 — 09:45"
+      ],
+      "send_window": "09:00-10:00",
+      "stagger_minutes": 15,
+      "new_sends_possible": "3-5 Batch 5 initial sends — ONLY if HANDS returns Ryedale data today (Wednesday EOD) AND BRAIN writes copy tonight/tomorrow morning",
+      "retrieve_emails_before_09:00": "Leads 50, 52, 55, 56 — retrieve from database",
+      "milestone": "After fu_049, entire active campaign cohort (all 60+ leads) will have been through all 4 touchpoints. Full dataset available for analysis from Friday 2026-04-25."
     },
-    "blocked_sends": [
-      {
-        "lead_id": 49,
-        "business_name": "East Riding Builders Ltd",
-        "status": "blocked_no_email",
-        "days_blocked": 21,
-        "action": "HANDS: Companies House director name search — 2026-04-22 morning"
+    "batch_5_copy_readiness": {
+      "status": "WAITING_FOR_DATA",
+      "data_required": "Ryedale raw scrape (business name, URL, review count/rating, town, category)",
+      "copy_template_by_framework": {
+        "PAS_ssl": {
+          "subject": "[First name] — [town] [trade] website flagged 'Not Secure'",
+          "opening": "Hi [Name],\n\nI had a look at [business URL] this morning — your site is currently flagged 'Not Secure' in Chrome because the SSL certificate hasn't been activated.",
+          "agitate": "For a [trade] business in [town], that warning appears to every customer who finds you on Google. Some will leave without making contact.",
+          "solve": "It's a quick fix — usually sorted within a day. Happy to run you through it if useful.",
+          "sign_off": "All the best,\n[Your name]"
+        },
+        "PAS_mobile": {
+          "subject": "[First name] — [town] [business] site isn't mobile-friendly",
+          "opening": "Hi [Name],\n\nI checked [business URL] this morning — on mobile it's not displaying properly. The text overlaps and the contact number isn't clickable.",
+          "agitate": "Most local searches for [trade] in [town] happen on mobile. If the site is broken on a phone, you're losing customers before they've even read the page.",
+          "solve": "It's fixable without rebuilding the site. Happy to show you what it looks like if that's useful.",
+          "sign_off": "All the best,\n[Your name]"
+        },
+        "BAB_no_website": {
+          "subject": "[Business name] — [town] [trade]: customers can't find you online",
+          "opening": "Hi [Name],\n\nI was looking for [trade] businesses in [town] this morning and noticed [Business] doesn't have a website.",
+          "before": "Right now, anyone searching Google for a [trade] in [town] won't find you — they'll find whoever has a site.",
+          "after": "A simple one-page site with your phone number, services, and a few reviews would put you on the map for local searches.",
+          "bridge": "It doesn't need to be complicated. Happy to show you what that might look like.",
+          "sign_off": "All the best,\n[Your name]"
+        },
+        "AIDA_social": {
+          "subject": "[First name] — [N] people reviewed [Business], but your site isn't ranking",
+          "opening": "Hi [Name],\n\n[Business] has [N] Google reviews — that's a strong local reputation in [town].",
+          "interest": "The problem is that reputation doesn't show up in Google search results because the site isn't optimised for '[trade] [town]' searches.",
+          "desire": "A few specific changes to the site would put you at the top of local results, where the reviews can do their job.",
+          "action": "Happy to show you what I mean if you're curious.",
+          "sign_off": "All the best,\n[Your name]"
+        }
       },
-      {
-        "lead_id": 51,
-        "business_name": "Driffield Garden Centre",
-        "status": "blocked_contact_form_only",
-        "days_blocked": 21,
-        "action": "HANDS: phone call — 2026-04-22 after 09:30"
+      "signal_to_framework_map": {
+        "ssl": "PAS_ssl",
+        "mobile": "PAS_mobile",
+        "no_website": "BAB_no_website",
+        "social_media_high_review": "AIDA_social",
+        "generic": "HOLD — do not email"
       },
-      {
-        "lead_id": 53,
-        "business_name": "Bridlington Bay Lettings",
-        "status": "blocked_no_direct_email",
-        "days_blocked": 21,
-        "action": "HANDS: Rightmove / Zoopla — 2026-04-22"
-      },
-      {
-        "lead_id": 54,
-        "business_name": "The Wolds Inn",
-        "status": "blocked_no_email",
-        "days_blocked": 21,
-        "action": "HANDS: try info@thewoldsinn.co.uk — low priority"
-      }
-    ],
+      "minimum_score_to_send": 55
+    },
     "send_summary": {
       "total_new_sends_today": 0,
-      "total_follow_up_sends_today": 0,
-      "reason_today": "Easter Monday — UK bank holiday",
-      "next_send_day": "2026-04-22 (Tuesday)",
-      "next_send_count": 5,
-      "next_followup_ids": ["fu_036", "fu_037", "fu_038", "fu_039", "fu_040"],
-      "imap_first_thing": true,
-      "linkedin_before_09:00": true,
-      "check_imap_before_each_send": true
+      "total_followup_sends_today": 5,
+      "total_emails_today": 5,
+      "send_window": "09:00-10:15",
+      "imap_check_required_before_each": true,
+      "retrieve_emails_from_db_before_09:00": [30, 31, 32]
     }
   }
 ]
