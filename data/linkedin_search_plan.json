@@ -1,170 +1,59 @@
 {
-  "generated_at": "2026-04-23T08:30:00Z",
+  "generated_at": "2026-04-24T07:30:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-23",
-  "day_number": 26,
-  "note": "Day 26 (Wednesday). TODAY IS THE LAST LINKEDIN WINDOW for leads 50/52/55/56 — their Day-14 breakup emails fire tomorrow (2026-04-24, fu_046-049). HANDS execution on Tuesday 2026-04-22 remains UNCONFIRMED: fu_036-040 send status unknown, LinkedIn searches for leads 42/44/46/57/60 and 30/32/59/31/58 unknown. Today's valid LinkedIn targets: MEDIUM priority leads 52/55/50/56 ONLY. Do NOT attempt LinkedIn for leads 30/31/32/58/59 — breakup emails fire today (fu_041-045, 09:00-10:15). Do NOT attempt LinkedIn for leads 42/44/46/57/60 — their pre-breakup LinkedIn window was 2026-04-22 before 09:00; that window has passed regardless of whether fu_036-040 were sent.",
+  "run_date": "2026-04-24",
+  "day_number": 27,
+  "note": "Day 27 (Thursday). CAMPAIGN MILESTONE DAY. Today's breakup emails fu_046-049 (leads 52/55/50/56, 09:00-09:45) complete the entire active campaign cohort. The same-day-as-breakup rule blocks all four remaining LinkedIn candidates. ZERO LinkedIn search queries today. No new leads (Batch 5 Ryedale data not received). The LinkedIn channel enters a holding pattern until Batch 5 initial emails have been sent for 3+ days. Orchestrator: src/outlocal/linkedin/orchestrator.py does not exist — all execution is manual (HANDS).",
   "orchestrator_status": "NOT FOUND — src/outlocal/linkedin/orchestrator.py does not exist. All execution is manual (HANDS).",
-  "imap_gap_warning": "CRITICAL — IMAP has not been checked for 19 days (last confirmed: 2026-04-04). Silent replies possible on any active lead. MANDATORY: check IMAP for leads 50, 52, 55, 56 individually before sending each LinkedIn request. Cancel if any reply found.",
-  "execution_constraints": {
-    "execute_today_2026_04_23": [52, 55, 50, 56],
-    "execution_order": "52 (Linda Walsh, Holderness Homecare) → 55 (Craig Lawson, Beverley Sports) → 50 (Pete, Harbour Fish Bar) → 56 (Neil, East Riding Electrical)",
-    "do_not_execute_today": {
-      "breakup_fires_today_09:00-10:15": {
-        "leads": [30, 31, 32, 58, 59],
-        "emails": ["fu_041", "fu_042", "fu_043", "fu_044", "fu_045"],
-        "rule": "No LinkedIn contact on the same day as a breakup email. Their email sequences close today."
-      },
-      "pre_breakup_window_passed": {
-        "leads": [42, 44, 46, 57, 60],
-        "reason": "LinkedIn window was 2026-04-22 before 09:00. That window has now passed. These sequences are closed or closing. Post-breakup LinkedIn has very low yield and risks disrupting the sequence close.",
-        "hands_action": "HANDS: in CHANGELOG.md today, confirm (a) whether fu_036-040 were sent on 2026-04-22, and (b) whether LinkedIn requests for any of these five leads were sent. If fu_036-040 were not sent, escalate immediately — all five sequences may be unresolved."
-      }
-    },
-    "max_searches_per_session": 4,
-    "time_limit_per_search_minutes": 10,
-    "skip_if_inactive_or_not_found": true,
-    "imap_check_required_before_each": true,
-    "cancel_if_reply_detected": true
+  "imap_gap_warning": "CRITICAL — IMAP has not been checked for 20 days (last confirmed: 2026-04-04). HANDS must check IMAP before each of today's breakup sends (fu_046-049). Silent replies are a real risk on all four leads.",
+  "search_queries": [],
+  "no_queries_reason": "BREAKUP_DAY_RULE — all four remaining LinkedIn candidates (leads 50/52/55/56) have their Day-14 breakup emails firing today (fu_046-049, 09:00-09:45). The no-LinkedIn-on-breakup-day rule applies to all four. No other active leads qualify: all other sequences are complete, the warm pipeline (leads 1/3/22) is blocked while sales conversations are unresolved, and no Batch 5 data has arrived to generate new candidates.",
+  "yesterday_execution_status": {
+    "run_date": "2026-04-23",
+    "day_number": 26,
+    "planned_searches": [52, 55, 50, 56],
+    "planned_execution_order": "52 (Linda Walsh, Holderness Homecare) → 55 (Craig Lawson, Beverley Sports) → 50 (Pete, Harbour Fish Bar) → 56 (Neil, East Riding Electrical)",
+    "execution_status": "UNCONFIRMED — BRAIN has no data on whether HANDS executed yesterday's LinkedIn searches. No linkedin_profiles.json received (7 consecutive BRAIN runs without this file). If notes were sent: connection status unknown to BRAIN. If not sent: the window has now expired.",
+    "post_breakup_consequence": "Today's breakup emails close these sequences regardless of LinkedIn status. If any connection requests from yesterday are pending (sent but not yet accepted), and the lead accepts post-breakup: HANDS should send the if_accepted_message from archived notes in linkedin_connection_notes.json. Do not reference the breakup email in the acceptance message.",
+    "linkedin_profiles_gap": "SEVEN consecutive BRAIN runs without linkedin_profiles.json from HANDS. The full campaign cohort has now completed all 4 email touchpoints without any confirmed LinkedIn contact. Campaign dataset will not include LinkedIn conversion data for Batch 1-4."
   },
-  "search_queries": [
-    {
-      "lead_id": 52,
-      "name": "Linda Walsh",
-      "business_name": "Holderness Homecare",
-      "town": "Beverley",
-      "county": "East Riding of Yorkshire",
-      "days_since_email": 17,
-      "email_sent_at": "2026-04-06",
-      "last_email_type": "day_3_bump (fu_022, assumed sent 2026-04-10). Day-7 email SKIPPED (BRAIN gap).",
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 1,
-      "priority": "MEDIUM — execute TODAY (last window before breakup)",
-      "execution_order": 1,
-      "cancel_if_reply_detected": true,
-      "condition": "active_profile_60_days",
-      "imap_pre_check": "MANDATORY — check IMAP for any reply from Linda Walsh before proceeding",
-      "google_query": "site:linkedin.com/in \"Linda Walsh\" \"Holderness Homecare\"",
-      "fallback_query": "site:linkedin.com/in \"Linda Walsh\" homecare care provider Beverley East Yorkshire",
-      "fallback_query_2": "site:linkedin.com/in homecare home care Beverley \"East Yorkshire\" owner manager director",
-      "profile_likelihood": "HIGH — care providers maintain active LinkedIn for CQC compliance visibility, staff recruitment, and sector credibility. Full name known. Good probability of active profile.",
-      "upgrade_priority": "HIGH — if Linda has posted about care quality, CQC inspection results, staff recognition, or community volunteering in the last 60 days: flag first 200 chars of post text in linkedin_profiles.json for BRAIN to upgrade note from generic to post_reference",
-      "connection_note_ready": true,
-      "connection_note_location": "data/linkedin_connection_notes.json — lead_id 52",
-      "if_accepted_message": "Linda — thanks for connecting. I noticed something about the Holderness Homecare online presence worth a quick mention. Happy to share if useful.",
-      "note": "Full name Linda Walsh known. Care sector LinkedIn profiles tend to be professionally maintained — CQC registration, staff welfare posts, client testimonials. If active within 60 days: send connection note immediately and populate linkedin_profiles.json. If profile found but no activity in 60+ days: skip and let tomorrow's breakup email close the sequence."
-    },
-    {
-      "lead_id": 55,
-      "name": "Craig Lawson",
-      "business_name": "Beverley Sports & Leisure",
-      "town": "Beverley",
-      "county": "East Riding of Yorkshire",
-      "days_since_email": 17,
-      "email_sent_at": "2026-04-06",
-      "last_email_type": "day_3_bump (fu_023, assumed sent 2026-04-10). Day-7 email SKIPPED (BRAIN gap).",
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 1,
-      "priority": "MEDIUM — execute TODAY (last window before breakup)",
-      "execution_order": 2,
-      "cancel_if_reply_detected": true,
-      "condition": "active_profile_60_days",
-      "imap_pre_check": "MANDATORY — check IMAP for any reply from Craig Lawson before proceeding",
-      "google_query": "site:linkedin.com/in \"Craig Lawson\" \"Beverley Sports\"",
-      "fallback_query": "site:linkedin.com/in \"Craig Lawson\" sports leisure Beverley East Yorkshire",
-      "fallback_query_2": "site:linkedin.com/in sports leisure fitness Beverley \"East Yorkshire\" owner manager",
-      "profile_likelihood": "MEDIUM — sports/leisure owners are more active on LinkedIn than trades; they post about events, fitness classes, and community involvement. Full name known.",
-      "upgrade_priority": "MEDIUM — if Craig has posted about sports events, club news, fitness programming, or Beverley community content: flag post text in linkedin_profiles.json. Leisure owners who post tend to post with clear context — good note upgrade material.",
-      "connection_note_ready": true,
-      "connection_note_location": "data/linkedin_connection_notes.json — lead_id 55",
-      "if_accepted_message": "Craig — thanks for connecting. Noticed something about the Beverley Sports & Leisure online presence worth mentioning. Happy to share if it's useful.",
-      "note": "Full name Craig Lawson known. If profile found and active: send note immediately, populate linkedin_profiles.json with headline, last_post_date, last_post_text. If inactive within 10 minutes of searching: skip."
-    },
-    {
-      "lead_id": 50,
-      "name": "Pete",
-      "business_name": "The Harbour Fish Bar",
-      "town": "Bridlington",
-      "county": "East Riding of Yorkshire",
-      "days_since_email": 17,
-      "email_sent_at": "2026-04-06",
-      "last_email_type": "day_3_bump (fu_024, assumed sent 2026-04-10). Day-7 email SKIPPED (BRAIN gap).",
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 1,
-      "priority": "MEDIUM — execute TODAY (last window before breakup)",
-      "execution_order": 3,
-      "cancel_if_reply_detected": true,
-      "condition": "active_profile_60_days",
-      "imap_pre_check": "MANDATORY — check IMAP for any reply from Pete (The Harbour Fish Bar) before proceeding",
-      "google_query": "site:linkedin.com/in \"Pete\" \"Harbour Fish Bar\"",
-      "fallback_query": "site:linkedin.com/in Pete fish chips Bridlington seafront owner",
-      "fallback_query_2": "site:linkedin.com/in \"Bridlington\" fish bar chip shop owner hospitality",
-      "profile_likelihood": "LOW-MEDIUM — sole-trader chip shop owner; variable LinkedIn presence. First name Pete only (no surname) reduces search precision. If not found within 10 minutes: skip.",
-      "upgrade_priority": "LOW-MEDIUM — if Pete posts about the seafront, seasonal fish, Easter/summer footfall, or Bridlington tourism: flag for post_reference upgrade. Seafront hospitality owners post about location atmosphere more than services.",
-      "connection_note_ready": true,
-      "connection_note_location": "data/linkedin_connection_notes.json — lead_id 50",
-      "if_accepted_message": "Pete — thanks for connecting. Spotted something about The Harbour Fish Bar website worth a quick mention. Happy to share if it's relevant.",
-      "note": "First name Pete only — no surname. Sole-trader fish and chip shop. If not found or profile dormant within 10 minutes: skip. Tomorrow's breakup email (fu_048) closes the sequence regardless."
-    },
-    {
-      "lead_id": 56,
-      "name": "Neil",
-      "business_name": "East Riding Electrical",
-      "town": "Beverley",
-      "county": "East Riding of Yorkshire",
-      "days_since_email": 17,
-      "email_sent_at": "2026-04-06",
-      "last_email_type": "day_3_bump (fu_025, assumed sent 2026-04-10). Day-7 email SKIPPED (BRAIN gap).",
-      "breakup_date": "2026-04-24",
-      "days_until_breakup": 1,
-      "priority": "MEDIUM — execute TODAY (last window before breakup)",
-      "execution_order": 4,
-      "cancel_if_reply_detected": true,
-      "condition": "active_profile_60_days",
-      "imap_pre_check": "MANDATORY — check IMAP for any reply from Neil (East Riding Electrical) before proceeding",
-      "google_query": "site:linkedin.com/in \"Neil\" \"East Riding Electrical\"",
-      "fallback_query": "site:linkedin.com/in Neil electrician Beverley East Yorkshire NICEIC",
-      "fallback_query_2": "site:linkedin.com/in electrician \"East Riding\" Beverley sole trader owner",
-      "profile_likelihood": "LOW — first name Neil only, no surname. Sole-trader electrician. Least reliable LinkedIn presence of today's batch. Execute last and only if searches 1-3 complete within time.",
-      "upgrade_priority": "LOW — if Neil posts about electrical work, NICEIC certification, or East Riding business: flag for note upgrade. Unusual for a sole-trader electrician but worth checking if profile found.",
-      "connection_note_ready": true,
-      "connection_note_location": "data/linkedin_connection_notes.json — lead_id 56",
-      "if_accepted_message": "Neil — thanks for connecting. Noticed something about the East Riding Electrical website worth a quick mention. Happy to share if it's useful.",
-      "note": "First name Neil only, no surname. Lowest search precision in today's batch. If not found within 10 minutes: skip. This is the lowest-priority search of the day — do not spend extra time on it."
-    }
-  ],
-  "missed_execution_status": {
-    "tuesday_2026_04_22_unconfirmed": {
-      "linkedin_critical_window_07:00-09:00": {
-        "leads": [42, 44, 46, 57, 60],
-        "status": "EXECUTION UNCONFIRMED — HANDS has not updated any output file since 2026-04-21 BRAIN run",
-        "brain_decision": "These leads' pre-breakup LinkedIn windows have expired. Do not attempt today. Sequences are closed or closing via email breakup channel.",
-        "hands_action_required": "HANDS: update CHANGELOG.md immediately. Confirm: (1) Were fu_036-040 sent on 2026-04-22? (2) Were LinkedIn requests sent for leads 42/44/46/57/60 before 09:00? (3) Were LinkedIn requests sent for leads 30/32/59/31/58 in the afternoon?"
-      },
-      "linkedin_high_window_afternoon": {
-        "leads": [30, 32, 59, 31, 58],
-        "status": "EXECUTION UNCONFIRMED",
-        "brain_decision": "Breakup emails for these leads fire TODAY (fu_041-045). Even if LinkedIn was not executed on Tuesday afternoon, it cannot be executed today — same-day-as-breakup rule applies. Sequences close today via email.",
-        "consequence": "Leads 30, 32, 59 have completed their email sequences without LinkedIn contact (if Tuesday was not executed). Leads 31 and 58 also close today. No further LinkedIn action appropriate."
-      }
-    }
+  "next_linkedin_window": {
+    "trigger": "Batch 5 Ryedale data received AND initial emails sent AND 3+ days elapsed since those sends",
+    "earliest_date": "2026-04-28 (Monday) — only if Batch 5 data received today (Thursday EOD) and initial sends fire Friday 2026-04-25",
+    "most_likely_date": "2026-04-30 (Wednesday) or later — Batch 5 data not yet received as of this run",
+    "target_area": "Ryedale District, North Yorkshire",
+    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
+    "expected_candidates": "18-22 leads, min score 55, SSL+PAS priority",
+    "linkedin_eligibility_rule": "LinkedIn window opens Day 3 after initial email, must close before Day-7 follow-up. Window: Day 3 to Day 6 inclusive.",
+    "priority_order": "Full name + SSL signal first. Full name + mobile signal second. First-name-only leads: only attempt if sector has high LinkedIn presence (care, leisure, hospitality management, professional services)."
   },
-  "linkedin_profiles_json_escalation": {
-    "consecutive_runs_without_profiles": 6,
-    "status": "SIX consecutive BRAIN runs without linkedin_profiles.json from HANDS. This is the final escalation.",
-    "impact": "All active notes remain generic. Post_reference notes achieve 3-4x higher acceptance rates. Today is the last day we have active pre-breakup leads to send notes to. After tomorrow's breakup emails (fu_046-049), the entire active campaign cohort will have completed all 4 touchpoints. Zero pre-breakup LinkedIn opportunities remaining after today.",
-    "required_fields": "lead_id, linkedin_url (or 'not_found'), headline, last_post_date (or null), last_post_text (first 200 chars, or null), connection_status (pending/connected/not_found/dormant), active_within_60_days (true/false), profile_found (true/false)",
-    "instruction": "HANDS: after each search today, APPEND to data/linkedin_profiles.json immediately. Do not batch — write after each individual search."
+  "batch_5_linkedin_strategy": {
+    "confirmed_winner_sector": "SSL leads with full names — 3 of 3 INTERESTED leads used SSL+PAS+first-name-subject combination",
+    "search_query_template": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+    "fallback_query_1_template": "site:linkedin.com/in \"[Full Name]\" [trade] [town] [county]",
+    "fallback_query_2_template": "site:linkedin.com/in [trade] \"[town]\" [county] owner manager director",
+    "first_name_only_rule": "Skip LinkedIn if first name only AND trade is low-LinkedIn (electrician, plumber, roofer, joiner, builder). Attempt LinkedIn if first name only AND sector is higher-LinkedIn (care, leisure, spa, gallery, solicitor, accountant, restaurant owner).",
+    "note_strategy": "Slightly awkward genuine compliment — stands out from AI slop. 200-char hard limit. Generic note is acceptable baseline. Upgrade to post_reference if HANDS finds post from last 60 days — post_reference achieves 3-4x higher acceptance rate.",
+    "upgrade_instructions": "HANDS: check profile for recent posts BEFORE sending any note. If post found (60 days): use post_reference template. If no post or profile inactive: use generic template. Write result to linkedin_profiles.json immediately after each search."
+  },
+  "campaign_milestone": {
+    "trigger": "fu_049 sent today (Neil, East Riding Electrical, ~09:45)",
+    "milestone": "After fu_049: ALL active sequences complete. 60+ leads through all 4 touchpoints. Full dataset available for analysis.",
+    "linkedin_channel_summary": "ZERO confirmed LinkedIn contacts in entire Batch 1-4 campaign. Seven consecutive BRAIN runs without linkedin_profiles.json. LinkedIn channel was architecturally designed and daily-planned but operationally unexecuted by HANDS throughout the campaign.",
+    "key_learning": "For Batch 5: HANDS must commit to LinkedIn execution within 2 hours of each BRAIN run. The BRAIN output is solid — the operational gap is execution latency. LinkedIn notes have a narrow window (Day 3-6) that cannot be recovered once missed.",
+    "analysis_due": "2026-04-25 (Friday) — BRAIN to write full post-campaign analysis including LinkedIn channel failure assessment and revised execution protocol for Batch 5."
   },
   "summary": {
-    "total_queries_today": 4,
-    "execution_order": "52 → 55 → 50 → 56",
-    "last_valid_window": "Today (2026-04-23) is the LAST LinkedIn window before tomorrow's breakup emails close all remaining sequences. After fu_046-049 fire on 2026-04-24, the entire active campaign cohort (60+ leads) will have completed all email touchpoints. Full dataset available for analysis from Friday 2026-04-25.",
-    "leads_with_missed_linkedin_windows": {
-      "count": 10,
-      "lead_ids": [42, 44, 46, 57, 60, 30, 32, 59, 31, 58],
-      "note": "All 10 of these leads had LinkedIn windows that either expired (42/44/46/57/60) or are blocked today due to breakup emails (30/32/59/31/58). HANDS non-execution across 6 BRAIN runs has meant zero LinkedIn contacts made in the entire campaign."
-    },
-    "campaign_milestone": "After tomorrow's sends (fu_046-049), all 60+ leads will have received all 4 email touchpoints. Full campaign dataset ready for analysis from 2026-04-25."
+    "total_queries_today": 0,
+    "reason": "BREAKUP_DAY_RULE applies to all remaining candidates (50/52/55/56). No other active leads.",
+    "linkedin_channel_status": "HOLDING — no active sequences. Awaiting Batch 5 Ryedale data.",
+    "next_run": "2026-04-25 (Friday) — post-campaign analysis + Batch 5 copy if data arrives. Next LinkedIn search plan generated when Batch 5 initial sends have fired for 3+ days.",
+    "hands_actions_today": [
+      "1. IMAP SWEEP before 09:00 — 20-day gap. Check leads 50/52/55/56 individually before each send.",
+      "2. Check warm pipeline IMAP (leads 1/3/22) before 12:00 — send final closes if still no reply.",
+      "3. Send fu_046-049 in the 09:00-09:45 window. Log campaign milestone in CHANGELOG.md after fu_049.",
+      "4. If Batch 5 Ryedale data arrives today: return immediately to BRAIN. Do NOT delay.",
+      "5. Confirm Wednesday fu_041-045 send status in CHANGELOG.md."
+    ]
   }
 }
