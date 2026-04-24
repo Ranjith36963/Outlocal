@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-23T08:00:00Z",
-  "date": "2026-04-23",
-  "day_number": 26,
-  "note": "BRAIN layer — Day 26 (Wednesday). IMAP gap now 19 days. Tuesday 2026-04-22 HANDS execution unconfirmed. All three warm-pipeline leads remain OUTCOME_UNKNOWN from BRAIN's perspective. HANDS: if outcomes were resolved on Tuesday, update the status fields below immediately and write to CHANGELOG.md. If NOT yet resolved: do so today before cold breakup sends. These three leads represent £800-1,200 in pipeline value and are the single most important data gap in the campaign.",
+  "generated_at": "2026-04-24T07:00:00Z",
+  "date": "2026-04-24",
+  "day_number": 27,
+  "note": "BRAIN layer — Day 27 (Thursday). All three warm-pipeline leads remain OUTCOME_UNKNOWN from BRAIN's perspective. Wednesday 16:00 deadline passed — HANDS execution unconfirmed. IMAP gap now 20 days. Today is the absolute final opportunity for close attempts. If IMAP sweep reveals no prior final close was sent: send today before 12:00. If IMAP sweep reveals final close WAS sent and still no reply: mark LOST_NO_RESPONSE and close records. Do not send another attempt after today.",
   "items": [
     {
       "queue_id": "vd_001",
@@ -13,12 +13,12 @@
       "town": "Leeds",
       "classification": "INTERESTED",
       "call_was": "2026-04-07T14:00:00Z",
-      "status": "OUTCOME_UNKNOWN — HANDS: update this field to CONVERTED / LOST / LOST_NO_RESPONSE / STILL_LIVE after IMAP check",
-      "days_since_call": 16,
-      "days_since_proposal_nudge": 13,
-      "days_outcome_unknown": 19,
+      "status": "OUTCOME_UNKNOWN — HANDS: update this field to CONVERTED / LOST / LOST_NO_RESPONSE / STILL_LIVE after IMAP check TODAY",
+      "days_since_call": 17,
+      "days_since_proposal_nudge": 14,
+      "days_outcome_unknown": 20,
       "priority": 1,
-      "urgency": "CRITICAL — close window was 2026-04-14, now 9 days past. Final close only if no final close was sent. Otherwise mark LOST_NO_RESPONSE and close the record.",
+      "urgency": "FINAL — close window was 2026-04-14, now 10 days past. This is the last BRAIN-sanctioned close attempt.",
       "original_pain_point": "Website SSL + mobile",
       "new_pain_point_discovered": "No online booking system — self-reported lost customers",
       "proposal_options": {
@@ -36,23 +36,25 @@
           "notes": "Fresha is free for the salon — zero monthly cost objection."
         }
       },
-      "decision_tree_2026_04_23": {
-        "if_she_replied_yes_at_any_point": {
-          "action": "CONVERTED. Log £350 (Option B most likely). Write CHANGELOG.md — FIRST CAMPAIGN REVENUE. Confirm delivery: 3-4 working days. Send agreement or invoice today.",
-          "milestone": "FIRST REVENUE — validates entire campaign model"
+      "decision_tree_2026_04_24": {
+        "step_1_imap_check": "Check IMAP for claire@westfieldhair.co.uk before 09:00. Look for any reply since 2026-04-04.",
+        "if_replied_yes": {
+          "action": "CONVERTED. Log £350 (Option B most likely). Write CHANGELOG.md — FIRST CAMPAIGN REVENUE. Send invoice or agreement today. Confirm delivery timeline: 3-4 working days.",
+          "milestone": "Campaign milestone #1 — first revenue. Validates the entire outreach model."
         },
-        "if_she_replied_with_questions": {
-          "action": "Answer concisely. Fresha is free. Timeline 3-4 days. One reply to close."
+        "if_replied_with_questions": {
+          "action": "Answer concisely today. Fresha is free. Timeline 3-4 days. One reply only to close."
         },
-        "if_she_replied_no": {
-          "action": "Mark LOST. Log in CRM. Reply: 'Thanks for letting me know, Claire — good luck with the season ahead.' No further contact."
+        "if_replied_no": {
+          "action": "Mark LOST. Reply briefly: 'Thanks for letting me know, Claire — good luck with the season ahead.' Log in CRM. No further contact."
         },
-        "if_no_reply_and_final_close_not_yet_sent": {
-          "action": "Send ONE final close TODAY: 'Claire — happy to leave this with you. If the timing changes, you know where I am.' Then mark LOST_NO_RESPONSE. Do NOT resend proposal. Do NOT discount.",
-          "deadline": "Send by 16:00 today (2026-04-23) if no prior close sent — do not wait another day"
+        "if_no_reply_and_no_final_close_yet_sent": {
+          "action": "Send ONE final close TODAY before 12:00: 'Claire — happy to leave this with you. If the timing changes and you want to revisit the booking system or SSL fix, you know where I am. All the best, [name].' Then mark LOST_NO_RESPONSE immediately. Do NOT wait for a reply. Do NOT re-send.",
+          "deadline": "12:00 today — no extension"
         },
         "if_final_close_already_sent_still_silent": {
-          "action": "Mark LOST_NO_RESPONSE. No further contact. Archive the record."
+          "action": "Mark LOST_NO_RESPONSE now. No further contact on any channel. Archive the record.",
+          "note": "20 days without response after a confirmed interested call. The decision has been made. Respect it."
         }
       },
       "audit_status": "complete",
@@ -62,7 +64,8 @@
         "data/audits/lead_3_competitors.json",
         "data/audits/lead_3_booking_options.json"
       ],
-      "block_all_followups": true
+      "block_all_followups": true,
+      "conversion_probability": "VERY LOW — 17 days since call, 14 days since nudge. If she wanted to proceed she would have replied by now. Final close is a courtesy, not a conversion play."
     },
     {
       "queue_id": "vd_002",
@@ -72,12 +75,12 @@
       "lead_email": "rob@pennineprint.co.uk",
       "town": "Sowerby Bridge",
       "classification": "INTERESTED",
-      "status": "OUTCOME_UNKNOWN — HANDS: update this field after IMAP check",
+      "status": "OUTCOME_UNKNOWN — HANDS: update this field after IMAP check TODAY",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "days_since_nudge": 16,
-      "days_outcome_unknown": 19,
+      "days_since_nudge": 17,
+      "days_outcome_unknown": 20,
       "priority": 2,
-      "urgency": "HIGH — close window was 2026-04-15, now 8 days past. Rob's bundle question was a strong buying signal. Check IMAP and act today.",
+      "urgency": "FINAL — Rob's 'sort the whole thing in one go' was the strongest buying signal in the campaign. One last attempt warranted.",
       "original_pain_point": "Website lacks SSL certificate",
       "reply_summary": "Asked whether SSL/mobile can be bundled into full redesign. 'Sort the whole thing in one go' — upsell signal.",
       "proposal_options": {
@@ -100,25 +103,27 @@
           "timeline": "7-10 days setup"
         }
       },
-      "decision_tree_2026_04_23": {
+      "decision_tree_2026_04_24": {
+        "step_1_imap_check": "Check IMAP for rob@pennineprint.co.uk before 09:00.",
         "if_replied_and_deal_alive": {
-          "action": "Scope doc or call. Present three options simply (A, B, C). Close target: 2026-04-25 (Friday). Do not discount. Rob's 'sort the whole thing in one go' points to Option B or C.",
-          "close_target": "2026-04-25"
+          "action": "Present three options (A, B, C) clearly and briefly. Close target: today or Monday 2026-04-28. Rob's 'sort the whole thing' signal points to Option B or C. Do not discount.",
+          "close_target": "2026-04-28 at latest"
         },
         "if_replied_no": {
-          "action": "Mark LOST. Log in CRM. Thank briefly. No further contact."
+          "action": "Mark LOST. Thank briefly. No further contact."
         },
-        "if_no_reply_final_close_not_sent": {
-          "action": "Send final close TODAY: 'Rob — happy to leave it here. If things change and you want to revisit, you know where I am.' Mark LOST_NO_RESPONSE.",
-          "deadline": "Send by 16:00 today if no prior close sent"
+        "if_no_reply_and_no_final_close_sent": {
+          "action": "Send ONE final close TODAY before 12:00: 'Rob — happy to leave it here. If you do decide to sort the site — whether it's just the SSL or the full redesign — you know where I am. All the best, [name].' Mark LOST_NO_RESPONSE.",
+          "deadline": "12:00 today"
         },
         "if_final_close_already_sent_still_silent": {
-          "action": "Mark LOST_NO_RESPONSE. No further contact."
+          "action": "Mark LOST_NO_RESPONSE now. No further contact."
         }
       },
       "audit_status": "complete",
       "audit_file": "data/audits/lead_22_pennine_print.json",
-      "block_all_followups": true
+      "block_all_followups": true,
+      "conversion_probability": "LOW-MEDIUM — Rob's bundle question was a genuine buying signal. 17 days of silence after a positive reply is unusual but not conclusive. Spring printing season (wedding season, event season) may have made him busier. One final close is genuinely warranted."
     },
     {
       "queue_id": "vd_003",
@@ -128,34 +133,36 @@
       "lead_email": "tom@riponroadcarpentry.co.uk",
       "town": "Ripon",
       "classification": "INTERESTED",
-      "status": "OUTCOME_UNKNOWN — HANDS: update this field after IMAP check",
+      "status": "OUTCOME_UNKNOWN — HANDS: update this field after IMAP check TODAY",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "days_since_nudge": 15,
-      "days_outcome_unknown": 19,
+      "days_since_nudge": 16,
+      "days_outcome_unknown": 20,
       "priority": 3,
-      "urgency": "MEDIUM — close window was ~2026-04-14, now 9 days past. Tom is mid-season for carpentry — spring enquiries may have sharpened the pain. One final close attempt today.",
+      "urgency": "FINAL — spring carpentry season, one last attempt.",
       "original_pain_point": "Website not mobile-friendly",
       "new_pain_point_discovered": "No online quote form — customers told to ring instead",
       "pricing_discussed": "£100-150 for quote form add-on",
-      "decision_tree_2026_04_23": {
+      "decision_tree_2026_04_24": {
+        "step_1_imap_check": "Check IMAP for tom@riponroadcarpentry.co.uk before 09:00.",
         "if_replied_wants_to_proceed": {
-          "action": "Agree on call slot this week. Spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Timeline: 2-3 days. Close target: 2026-04-25.",
-          "close_target": "2026-04-25"
+          "action": "Agree on spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150 (confirmed earlier). Timeline: 2-3 days. Set a call slot this week. Close target: 2026-04-28.",
+          "close_target": "2026-04-28"
         },
         "if_replied_no": {
-          "action": "Mark LOST. Log in CRM. Brief and gracious reply."
+          "action": "Mark LOST. Brief and gracious reply. No further contact."
         },
-        "if_no_reply_final_close_not_sent": {
-          "action": "Send final close TODAY: 'Tom — going to leave this with you. If the quote form ever rises to the top of the list, you know where I am.' Mark LOST_NO_RESPONSE.",
-          "deadline": "Send by 16:00 today if no prior close sent"
+        "if_no_reply_and_no_final_close_sent": {
+          "action": "Send ONE final close TODAY before 12:00: 'Tom — going to leave this with you. If the quote form ever rises to the top of the list, you know where I am. All the best, [name].' Mark LOST_NO_RESPONSE.",
+          "deadline": "12:00 today"
         },
         "if_final_close_already_sent_still_silent": {
-          "action": "Mark LOST_NO_RESPONSE. No further contact."
+          "action": "Mark LOST_NO_RESPONSE now. No further contact."
         }
       },
       "audit_status": "complete",
       "audit_file": "data/audits/lead_1_quote_form_examples.json",
-      "block_all_followups": true
+      "block_all_followups": true,
+      "conversion_probability": "LOW — 16 days since nudge. Spring carpentry season may mean he's too busy to prioritise it. Final close is a courtesy — door left open for return in quieter months."
     }
   ],
   "summary": {
@@ -163,22 +170,21 @@
     "outcomes_confirmed": 0,
     "outcomes_unknown": 3,
     "overdue_actions": 3,
-    "overdue_description": "All three warm-pipeline leads have been OUTCOME_UNKNOWN for 19 days. Close windows have passed for all three. HANDS must resolve today without exception.",
+    "overdue_description": "All three warm-pipeline leads OUTCOME_UNKNOWN for 20 days. Close windows passed 9-10 days ago. Today is the absolute final day for close attempts — no further slippage.",
     "pipeline_value_estimate": {
-      "lead_3_claire": "£350 (Option B) — if still convertible",
-      "lead_22_rob": "£550-675 (redesign bundle + possible SEO retainer) — if still convertible",
-      "lead_1_tom": "£100-150 (quote form) — if still convertible",
+      "lead_3_claire": "£350 (Option B) — if still convertible (conversion probability: very low)",
+      "lead_22_rob": "£550-675 (redesign bundle + possible SEO retainer) — if still convertible (conversion probability: low-medium)",
+      "lead_1_tom": "£100-150 (quote form) — if still convertible (conversion probability: low)",
       "total_range": "£800-1,175 if all three convert",
-      "minimum_conversion_note": "Even one conversion at any price validates the campaign model"
+      "realistic_expectation": "Zero to one conversion from today's final closes. Data from all three outcomes (converted/lost/no-response) feeds Week 4 strategy regardless."
     },
-    "conversion_probability_2026_04_23": {
-      "lead_3_claire": "LOW — 16 days since call, 13 days since nudge, 9 days past close window. Still worth final close if not yet sent.",
-      "lead_22_rob": "LOW-MEDIUM — Rob's buying signal was strong. 'Sort the whole thing in one go' is a specific purchase question. One final close today.",
-      "lead_1_tom": "LOW — Trades people move quickly. Final close worth sending — spring carpentry season means he may have new enquiries and renewed motivation."
+    "resolution_deadline": "TODAY (2026-04-24) by 12:00 — final close or record closure for all three leads.",
+    "post_resolution_protocol": {
+      "if_any_converted": "Write CHANGELOG.md immediately — campaign milestone #1. Begin delivery. Send invoice.",
+      "if_all_lost_or_no_response": "Log in CRM. Warm pipeline is now empty. Campaign depends entirely on Batch 5 Ryedale replies to build next warm pipeline.",
+      "both_cases": "After resolution: full IMAP sweep of entire cohort. This is Day 27 — the campaign's first complete state view."
     },
-    "resolution_deadline": "Today (2026-04-23) by 16:00. No further slippage acceptable.",
-    "post_resolution_note": "Once these three leads are resolved (converted or lost), the warm pipeline will be empty until Batch 5 Ryedale replies start arriving (earliest 2026-04-26). The post-Easter campaign depends entirely on Batch 5.",
     "gdpr_note": "All three leads replied voluntarily to cold outreach. Final close emails are valid under B2B legitimate interest. Log all interactions in audit_log.",
-    "critical_instruction": "HANDS: Check IMAP for all three leads today. Update status fields above. If any lead converts: write CHANGELOG.md IMMEDIATELY — even one conversion is campaign milestone #1 and validates the entire outreach model."
+    "hands_instruction": "Check IMAP for all three leads before 09:00. Update status fields above immediately. If any lead converts: write CHANGELOG.md IMMEDIATELY — even one conversion is campaign milestone #1. If no reply and no prior close: send final close before 12:00, then mark LOST_NO_RESPONSE. Do not revisit these leads after today."
   }
 }

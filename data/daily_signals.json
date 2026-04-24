@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-04-23T08:00:00Z",
-  "date": "2026-04-23",
-  "day_number": 26,
-  "note": "BRAIN layer — Day 26 (Wednesday). No Batch 5 Ryedale data received from HANDS. IMAP gap now 19 days (last confirmed HANDS check: 2026-04-04). Tuesday 2026-04-22 HANDS execution unconfirmed — fu_036-040 send status unknown. No new leads to assign signals to. All signal slots remain WAITING_FOR_BATCH_5.",
-  "today_outreach": "5 breakup emails ONLY (fu_041-045, 09:00-10:15). No new initial sends — Batch 5 data not yet received.",
-  "tomorrow_outreach": "4 breakup emails (fu_046-049). New initial sends possible ONLY if HANDS returns Ryedale scrape data by Wednesday EOD.",
+  "generated_at": "2026-04-24T07:00:00Z",
+  "date": "2026-04-24",
+  "day_number": 27,
+  "note": "BRAIN layer — Day 27 (Thursday). Campaign milestone day: after today's 4 breakup sends (fu_046-049), the entire active cohort (~60 leads) will have been through all 4 touchpoints. Full dataset available for analysis from today. No Batch 5 Ryedale data received as of this BRAIN run — Wednesday scrape either not completed or not returned. IMAP gap now 20 days (last confirmed check: 2026-04-04). Wednesday sends fu_041-045 status UNCONFIRMED. Warm pipeline leads 1, 3, 22 outcome still UNKNOWN from BRAIN's perspective — 20 days since last confirmed IMAP check.",
+  "today_outreach": "4 breakup emails ONLY (fu_046-049, 09:00-10:00). IMAP check before each send. No new initial sends — Batch 5 Ryedale data not yet received.",
+  "tomorrow_outreach": "0 scheduled sends after today's milestone. If Batch 5 data arrives today (Thursday EOD), BRAIN to write copy Friday morning. First new initial sends: Friday afternoon (earliest) or Monday 2026-04-28 (most likely).",
   "new_signals_today": 0,
   "new_leads_today": 0,
-  "imap_gap_days": 19,
+  "imap_gap_days": 20,
   "imap_last_confirmed_check": "2026-04-04",
-  "tuesday_execution_status": "UNCONFIRMED — HANDS has not updated new_replies.json or any output file since the 2026-04-21 BRAIN run. HANDS: confirm fu_036-040 actual send/cancel status in CHANGELOG.md today (2026-04-23) without fail.",
+  "wednesday_execution_status": {
+    "fu_041_fu_045": "UNCONFIRMED — BRAIN has not received updated output files from HANDS since 2026-04-21. If sends were completed Wednesday, confirm in CHANGELOG.md before today's 09:00 window. If any were skipped: those leads are now 8 days overdue for final breakup — still worth sending today after fu_049 if not already sent.",
+    "warm_pipeline_closes": "UNCONFIRMED — whether final closes for leads 3 (Claire), 22 (Rob), 1 (Tom) were sent by 16:00 Wednesday is unknown to BRAIN.",
+    "batch_5_scrape": "NOT RETURNED — no Ryedale data in any output file as of this BRAIN run."
+  },
   "batch_5_status": {
-    "status": "CRITICAL — 16 days without new leads. Longest pipeline gap of the campaign.",
+    "status": "CRITICAL — 17 days without new leads. Campaign stall begins today.",
     "data_received": false,
     "waiting_since": "2026-04-22",
     "target_area": "Ryedale District, North Yorkshire",
@@ -19,62 +23,67 @@
     "target_categories": ["plumbers", "electricians", "roofers", "builders", "joiners", "pubs / restaurants", "B&Bs / guest houses", "estate agents", "solicitors"],
     "expected_leads": "18-22",
     "minimum_score": 55,
-    "scrape_deadline": "2026-04-23 EOD — if data not returned today, first new sends slip to Monday 2026-04-28",
-    "consequence_of_delay": "By end of Thursday 2026-04-24, ALL active sequences will be complete. Zero warm pipeline. Zero cold sequences in flight. Total campaign stall until Batch 5 or Batch 6 data arrives."
+    "consequence": "After today's sends, the campaign has ZERO active sequences in flight. Without Batch 5 data, no new sends until Monday 2026-04-28. Every day of delay is a day without prospecting. HANDS: if not scraped Wednesday, scrape today as the single highest-priority action.",
+    "revised_timeline": {
+      "if_data_returns_today_thursday": "BRAIN writes copy Thursday evening → initial sends Friday 2026-04-25 → Day-3 bumps Monday 2026-04-28",
+      "if_data_returns_friday": "BRAIN writes copy Friday → sends Monday → campaign gap total: 19 days",
+      "if_data_not_received_by_friday": "First new sends slip to Monday. 20+ day new-lead gap. Full campaign stall."
+    }
   },
   "signal_assignments": [],
-  "signal_assignment_note": "No leads to assign signals to. Awaiting Batch 5 Ryedale raw data from HANDS. When data arrives, BRAIN will run waterfall: SSL → mobile → no_website → social_media_high_review. Minimum score 55 to email.",
+  "signal_assignment_note": "No leads to assign signals to. All signal assignment awaits Batch 5 Ryedale raw data. When data arrives, BRAIN will run full waterfall: SSL → mobile → no_website → social_media_high_review. Minimum score 55 to email. Signal→framework map unchanged.",
   "waterfall_logic": {
-    "priority_1": "ssl — PAS framework — subject: '[Name] — [town] [trade] website flagged Not Secure'",
-    "priority_2": "mobile — PAS framework — subject: '[Name] — [town] [business] site isn't mobile-friendly'",
-    "priority_3": "no_website — BAB framework — subject: '[Business] — [town] [trade]: customers can't find you online' (only 4★+ active-review businesses)",
-    "priority_4": "social_media_high_review — AIDA framework — subject: '[Name] — [N] reviews but your site isn't ranking' (only 4.5★+ with 100+ reviews)",
-    "do_not_double_assign": true,
-    "generic_signal": "Do NOT email — hold until deep crawl finds specific angle"
+    "priority_1": "ssl — PAS framework — subject: '[First name] — [town] [trade] website flagged Not Secure'",
+    "priority_2": "mobile — PAS framework — subject: '[First name] — [town] [business] site isn't mobile-friendly'",
+    "priority_3": "no_website — BAB framework — '[Business] — [town] [trade]: customers can't find you online' (only 4★+ active-review businesses)",
+    "priority_4": "social_media_high_review — AIDA framework — '[First name] — [N] reviews but your site isn't ranking' (only 4.5★+ with 100+ reviews)",
+    "do_not_email_generic": true,
+    "confirmed_winner": "ssl → PAS → first-name subject — 3/3 INTERESTED leads used this combination. Prioritise SSL signal leads in Batch 5 above all others."
   },
   "carried_forward_blocked": {
     "lead_49": {
       "business": "East Riding Builders Ltd",
       "status": "blocked_no_email",
-      "days_blocked": 23,
-      "action": "HANDS: Companies House director name search — overdue since 2026-04-22. Use director surname + domain pattern. Do today."
+      "days_blocked": 24,
+      "action": "HANDS: Companies House director name search. Overdue 24 days. Do today if Batch 5 scrape completes early."
     },
     "lead_51": {
       "business": "Driffield Garden Centre",
       "status": "blocked_contact_form_only",
-      "days_blocked": 23,
-      "action": "HANDS: phone the business after 09:30. 'Just need the right address for some information I wanted to send across.' Do today."
+      "days_blocked": 24,
+      "action": "HANDS: phone the business after 09:30. Still worth a call — they were a good lead."
     },
     "lead_53": {
       "business": "Bridlington Bay Lettings",
       "status": "blocked_no_direct_email",
-      "days_blocked": 23,
-      "action": "HANDS: check Rightmove / Zoopla agent directory. Try info@ as fallback. Do today."
+      "days_blocked": 24,
+      "action": "HANDS: Rightmove / Zoopla agent directory. Try info@ as fallback."
     },
     "lead_54": {
       "business": "The Wolds Inn",
       "status": "blocked_no_email",
-      "days_blocked": 23,
-      "action": "HANDS: try info@thewoldsinn.co.uk. Low priority — do after leads 49, 51, 53."
+      "days_blocked": 24,
+      "action": "HANDS: try info@thewoldsinn.co.uk. Low priority — do after 49, 51, 53."
     }
   },
-  "sequences_completed_to_date": {
-    "confirmed": [2, 5, 7, 8, 12, 19],
-    "assumed_complete": [4, 6],
-    "completing_today_wed": [30, 31, 32, 58, 59],
-    "completing_tomorrow_thu": [50, 52, 55, 56],
-    "completing_this_week_tuesday_unconfirmed": [42, 44, 46, 57, 60],
-    "note": "By end of Thursday 2026-04-24, all 60+ active leads will have been through all 4 touchpoints. Full campaign dataset available for analysis from Friday 2026-04-25."
+  "campaign_milestone": {
+    "trigger": "After fu_049 is sent today (lead 56, Neil, East Riding Electrical, ~09:45)",
+    "milestone": "ALL active sequences complete — entire cohort (~60 leads, all 4 touchpoints) through the pipeline",
+    "dataset_available": "Full campaign dataset from 2026-03-28 to 2026-04-24 — first time analysis is possible across all metrics",
+    "analysis_due": "2026-04-25 (Friday) — BRAIN to write full Week 4 strategy and post-campaign analysis",
+    "significance": "Campaign milestone #2 (after milestone #1 = first revenue). Validates pipeline architecture. Enables data-driven Batch 5 targeting."
   },
+  "sequences_completing_today": [50, 52, 55, 56],
+  "sequences_completed_to_date_confirmed": [2, 5, 7, 8, 12, 19],
+  "sequences_completed_assumed": [4, 6, 30, 31, 32, 42, 44, 46, 57, 58, 59, 60],
   "summary": {
     "new_signals_assigned": 0,
     "blocked_carry_forward": 4,
-    "sends_today": 5,
-    "send_ids_today": ["fu_041", "fu_042", "fu_043", "fu_044", "fu_045"],
-    "sends_tomorrow": 4,
-    "send_ids_tomorrow": ["fu_046", "fu_047", "fu_048", "fu_049"],
-    "pipeline_risk": "CRITICAL. 16-day new-lead gap. All existing sequences complete by end of Thursday. Without Batch 5 data today, campaign stalls completely from Friday 2026-04-25.",
-    "batch_5_scrape_deadline": "2026-04-23 EOD",
-    "next_brain_run_required": "2026-04-24 (Thursday) — MANDATORY even if Batch 5 data arrives Wednesday EOD. Cannot miss Day-3 bump window for Batch 5 initial sends."
+    "sends_today": 4,
+    "send_ids_today": ["fu_046", "fu_047", "fu_048", "fu_049"],
+    "sends_tomorrow": 0,
+    "pipeline_risk": "CRITICAL. 17-day new-lead gap. All existing sequences complete after today. No warm pipeline from tomorrow until Batch 5 sends fire.",
+    "batch_5_scrape_latest_acceptable_date": "2026-04-24 EOD (today)",
+    "next_brain_run_required": "2026-04-25 (Friday) — post-campaign analysis + Batch 5 copy if data returns today"
   }
 }

@@ -1,52 +1,74 @@
 {
-  "classified_at": "2026-04-23T08:00:00Z",
-  "date": "2026-04-23",
-  "day_number": 26,
-  "note": "BRAIN layer — Day 26 (Wednesday). new_replies.json unchanged since 2026-04-04. IMAP gap is now 19 days. Tuesday 2026-04-22 HANDS execution unconfirmed — BRAIN has no data on whether IMAP was swept or warm-pipeline outcomes were resolved. All five previously classified replies carried forward. HANDS: if IMAP was checked on Tuesday and new replies were found, write them to new_replies.json IMMEDIATELY and flag BRAIN. The 19-day gap makes undiscovered interested replies a real risk.",
+  "classified_at": "2026-04-24T07:00:00Z",
+  "date": "2026-04-24",
+  "day_number": 27,
+  "note": "BRAIN layer — Day 27 (Thursday). new_replies.json unchanged since 2026-04-04. IMAP gap is now 20 days. Wednesday 2026-04-23 HANDS execution unconfirmed — BRAIN has no data on whether IMAP was swept, warm-pipeline leads were resolved, or fu_041-045 were sent. All five previously classified replies carried forward. HANDS: complete IMAP sweep before today's 09:00 send window without exception. If new replies found: write to new_replies.json immediately — BRAIN classifies on next run.",
   "new_replies_this_run": 0,
-  "imap_gap_days": 19,
+  "imap_gap_days": 20,
   "imap_last_confirmed_check": "2026-04-04",
-  "imap_check_status": "OVERDUE — Tuesday sweep unconfirmed. HANDS must complete IMAP sweep before fu_041-045 sends today (2026-04-23 09:00).",
-  "imap_sweep_required_before_sends": ["fu_041", "fu_042", "fu_043", "fu_044", "fu_045"],
-  "tuesday_outcomes_unknown": {
-    "fu_036_fu_040": "UNCONFIRMED — BRAIN does not know whether these 5 breakup emails were sent or cancelled on Tuesday 2026-04-22. HANDS: confirm in CHANGELOG.md before starting today's send window.",
-    "warm_pipeline": "UNCONFIRMED — BRAIN does not know outcomes for leads 3 (Claire), 22 (Rob), 1 (Tom). These may have been resolved on Tuesday. If so: update value_delivery_queue.json immediately."
-  },
+  "imap_check_status": "CRITICAL OVERDUE — 20 days. HANDS must sweep IMAP before fu_046 (09:00 today). No send without IMAP check.",
+  "imap_sweep_required_before_sends": ["fu_046", "fu_047", "fu_048", "fu_049"],
   "pre_send_imap_checks_today": [
     {
-      "lead_id": 30,
-      "business": "Halifax Window Cleaning",
-      "breakup_due": "fu_041 — 09:00",
-      "last_touchpoint": "Day-7 new angle (fu_017, assumed sent 2026-04-09)",
-      "action": "Check IMAP for any reply to fu_017 before sending fu_041. If reply found: classify, cancel fu_041."
+      "lead_id": 52,
+      "business": "Holderness Homecare",
+      "owner": "Linda Walsh",
+      "breakup_due": "fu_046 — 09:00",
+      "last_touchpoint": "Day-3 bump (fu_022, assumed sent 2026-04-09)",
+      "action": "Check IMAP for any reply to fu_022 before sending fu_046. If reply found: classify, cancel fu_046, route per classification."
     },
     {
-      "lead_id": 31,
-      "business": "Pontefract Pharmacy",
-      "breakup_due": "fu_042 — 09:15",
-      "last_touchpoint": "Day-7 Google Profile email (fu_018, assumed sent 2026-04-09)",
-      "action": "Check IMAP for any reply to fu_018 before sending fu_042. If reply found: classify, cancel fu_042."
+      "lead_id": 55,
+      "business": "Beverley Sports & Leisure",
+      "owner": "Craig Lawson",
+      "breakup_due": "fu_047 — 09:15",
+      "last_touchpoint": "Day-3 bump (fu_023, assumed sent 2026-04-09)",
+      "action": "Check IMAP for any reply to fu_023 before sending fu_047. If reply found: classify, cancel fu_047, route per classification."
     },
     {
-      "lead_id": 32,
-      "business": "Castleford Carpets",
-      "breakup_due": "fu_043 — 09:30",
-      "last_touchpoint": "Day-7 conversion-gap email (fu_019, assumed sent 2026-04-09)",
-      "action": "Check IMAP for any reply to fu_019 before sending fu_043. If reply found: classify, cancel fu_043."
+      "lead_id": 50,
+      "business": "The Harbour Fish Bar",
+      "owner": "Pete",
+      "breakup_due": "fu_048 — 09:30",
+      "last_touchpoint": "Day-3 Easter bump (fu_024, assumed sent 2026-04-09)",
+      "action": "Check IMAP for any reply to fu_024 before sending fu_048. If reply found: classify, cancel fu_048, route per classification."
     },
     {
-      "lead_id": 58,
-      "business": "The Old Court Solicitors",
-      "breakup_due": "fu_044 — 09:45",
-      "last_touchpoint": "Day-3 GDPR bump (fu_028, assumed sent 2026-04-10)",
-      "action": "Check IMAP for any reply to fu_028 before sending fu_044. If reply found: classify, cancel fu_044."
+      "lead_id": 56,
+      "business": "East Riding Electrical",
+      "owner": "Neil",
+      "breakup_due": "fu_049 — 09:45",
+      "last_touchpoint": "Day-3 bump (fu_025, assumed sent 2026-04-09)",
+      "action": "Check IMAP for any reply to fu_025 before sending fu_049. If reply found: classify, cancel fu_049, route per classification. Note: this is the final send of the campaign cohort — especially important to confirm no silent reply exists."
+    }
+  ],
+  "warm_pipeline_imap_checks": [
+    {
+      "lead_id": 3,
+      "business": "Westfield Hair & Beauty",
+      "owner": "Claire",
+      "email": "claire@westfieldhair.co.uk",
+      "status": "OUTCOME_UNKNOWN",
+      "action": "Check IMAP for any reply to proposal nudge (~2026-04-10) or final close (~2026-04-23 if sent). If still no reply and no final close sent: this is the absolute last opportunity — send final close today before 12:00.",
+      "urgency": "FINAL"
     },
     {
-      "lead_id": 59,
-      "business": "Scarborough Roofing Specialists",
-      "breakup_due": "fu_045 — 10:00",
-      "last_touchpoint": "Day-3 bump (fu_029, assumed sent 2026-04-10)",
-      "action": "Check IMAP for any reply to fu_029 before sending fu_045. If reply found: classify, cancel fu_045."
+      "lead_id": 22,
+      "business": "Pennine Print & Design",
+      "owner": "Rob",
+      "email": "rob@pennineprint.co.uk",
+      "status": "OUTCOME_UNKNOWN",
+      "action": "Check IMAP for any reply to proposal nudge (~2026-04-07). If still no reply and no final close sent: send final close today before 12:00. Rob's 'sort the whole thing in one go' was the strongest buying signal in the campaign — one more attempt is warranted.",
+      "urgency": "FINAL"
+    },
+    {
+      "lead_id": 1,
+      "business": "Ripon Road Carpentry",
+      "owner": "Tom",
+      "email": "tom@riponroadcarpentry.co.uk",
+      "status": "OUTCOME_UNKNOWN",
+      "action": "Check IMAP for any reply to pricing nudge (~2026-04-08) or final close (~2026-04-23 if sent). If still no reply and no final close sent: send final close today before 12:00. Spring season — pain may have sharpened.",
+      "urgency": "FINAL"
     }
   ],
   "carried_forward_from": "2026-04-04",
@@ -65,8 +87,8 @@
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal.",
       "call_completed_at": "2026-04-07T14:00:00Z",
-      "call_outcome": "OUTCOME_UNKNOWN — 19 days since last confirmed IMAP check. Proposal nudge sent ~2026-04-10. Final close was due ~2026-04-14. HANDS: resolve on next IMAP sweep — update value_delivery_queue.json.",
-      "urgency": "critical",
+      "call_outcome": "OUTCOME_UNKNOWN — 20 days since last confirmed IMAP check. Proposal nudge sent ~2026-04-10. Final close was due 2026-04-14 (10 days past). HANDS: resolve on IMAP sweep before 12:00 today.",
+      "urgency": "FINAL — last opportunity",
       "lead_status_update": "interested",
       "status_actioned": true,
       "block_all_followups": true
@@ -84,8 +106,8 @@
       "confidence": "high",
       "reasoning": "Asked whether fixes can be bundled into redesign — buyer's question. Upsell signal: 'sort the whole thing in one go'.",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "call_outcome": "OUTCOME_UNKNOWN — 19 days since last confirmed IMAP check. Final close window was 2026-04-15. HANDS: resolve on next IMAP sweep.",
-      "urgency": "high",
+      "call_outcome": "OUTCOME_UNKNOWN — 20 days since last confirmed IMAP check. Final close window was 2026-04-15 (9 days past). HANDS: resolve before 12:00 today.",
+      "urgency": "FINAL — upsell signal, last close attempt",
       "upsell_signal": true,
       "lead_status_update": "interested",
       "status_actioned": true,
@@ -104,8 +126,8 @@
       "confidence": "high",
       "reasoning": "Acknowledged the pain unprompted, confirmed workflow problem, asked for pricing.",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "call_outcome": "OUTCOME_UNKNOWN — 19 days since last confirmed IMAP check. Final close window was ~2026-04-14. HANDS: resolve on next IMAP sweep.",
-      "urgency": "medium",
+      "call_outcome": "OUTCOME_UNKNOWN — 20 days since last confirmed IMAP check. Final close window was ~2026-04-14 (10 days past). HANDS: resolve before 12:00 today.",
+      "urgency": "FINAL — spring carpentry season, last attempt",
       "lead_status_update": "interested",
       "status_actioned": true,
       "block_all_followups": true
@@ -149,7 +171,7 @@
     "new_replies_today": 0,
     "total_to_date": 11,
     "imap_check_pending": true,
-    "imap_gap_days": 19,
+    "imap_gap_days": 20,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
@@ -157,6 +179,6 @@
     "UNSUBSCRIBE": 0,
     "warm_pipeline_outcomes_unknown": [3, 22, 1],
     "leads_to_suppress": [],
-    "hands_instructions": "IMAP sweep is now 19 days overdue. Complete before each of today's 5 breakup sends (fu_041-045, 09:00-10:15). Check warm-pipeline leads (3, 22, 1) — if still unresolved from Tuesday, resolve today. Write new replies to new_replies.json immediately — BRAIN classifies them on next run. Do NOT send any breakup if the lead has replied to any touchpoint since 2026-04-04."
+    "hands_instructions": "IMAP sweep is 20 days overdue. Complete before fu_046 (09:00 today). Check warm-pipeline leads 3, 22, 1 — if outcomes unresolved from Wednesday, send final closes before 12:00 today. Write any new replies to new_replies.json immediately. Do NOT send any breakup if the lead has replied to any touchpoint since 2026-04-04. After today's sends complete: do a full IMAP sweep of the entire cohort. This is the first complete post-campaign sweep."
   }
 }
