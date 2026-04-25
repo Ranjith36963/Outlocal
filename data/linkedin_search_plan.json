@@ -1,59 +1,87 @@
 {
-  "generated_at": "2026-04-24T07:30:00Z",
+  "generated_at": "2026-04-25T07:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-24",
-  "day_number": 27,
-  "note": "Day 27 (Thursday). CAMPAIGN MILESTONE DAY. Today's breakup emails fu_046-049 (leads 52/55/50/56, 09:00-09:45) complete the entire active campaign cohort. The same-day-as-breakup rule blocks all four remaining LinkedIn candidates. ZERO LinkedIn search queries today. No new leads (Batch 5 Ryedale data not received). The LinkedIn channel enters a holding pattern until Batch 5 initial emails have been sent for 3+ days. Orchestrator: src/outlocal/linkedin/orchestrator.py does not exist — all execution is manual (HANDS).",
-  "orchestrator_status": "NOT FOUND — src/outlocal/linkedin/orchestrator.py does not exist. All execution is manual (HANDS).",
-  "imap_gap_warning": "CRITICAL — IMAP has not been checked for 20 days (last confirmed: 2026-04-04). HANDS must check IMAP before each of today's breakup sends (fu_046-049). Silent replies are a real risk on all four leads.",
-  "search_queries": [],
-  "no_queries_reason": "BREAKUP_DAY_RULE — all four remaining LinkedIn candidates (leads 50/52/55/56) have their Day-14 breakup emails firing today (fu_046-049, 09:00-09:45). The no-LinkedIn-on-breakup-day rule applies to all four. No other active leads qualify: all other sequences are complete, the warm pipeline (leads 1/3/22) is blocked while sales conversations are unresolved, and no Batch 5 data has arrived to generate new candidates.",
-  "yesterday_execution_status": {
-    "run_date": "2026-04-23",
-    "day_number": 26,
-    "planned_searches": [52, 55, 50, 56],
-    "planned_execution_order": "52 (Linda Walsh, Holderness Homecare) → 55 (Craig Lawson, Beverley Sports) → 50 (Pete, Harbour Fish Bar) → 56 (Neil, East Riding Electrical)",
-    "execution_status": "UNCONFIRMED — BRAIN has no data on whether HANDS executed yesterday's LinkedIn searches. No linkedin_profiles.json received (7 consecutive BRAIN runs without this file). If notes were sent: connection status unknown to BRAIN. If not sent: the window has now expired.",
-    "post_breakup_consequence": "Today's breakup emails close these sequences regardless of LinkedIn status. If any connection requests from yesterday are pending (sent but not yet accepted), and the lead accepts post-breakup: HANDS should send the if_accepted_message from archived notes in linkedin_connection_notes.json. Do not reference the breakup email in the acceptance message.",
-    "linkedin_profiles_gap": "SEVEN consecutive BRAIN runs without linkedin_profiles.json from HANDS. The full campaign cohort has now completed all 4 email touchpoints without any confirmed LinkedIn contact. Campaign dataset will not include LinkedIn conversion data for Batch 1-4."
+  "run_date": "2026-04-25",
+  "day_number": 28,
+  "note": "Day 28 (Friday). POST-CAMPAIGN MILESTONE. Yesterday (Day 27) saw the final sends of the entire Batch 1-4 campaign cohort: fu_046-049 (leads 52/55/50/56, breakup emails, 09:00-09:45). All active email sequences are now assumed complete. IMAP gap is now 21 days (last confirmed: 2026-04-04). No Batch 5 Ryedale data received. ZERO LinkedIn search queries today — no leads in the Day 3-6 eligibility window. LinkedIn channel remains in full HOLD until Batch 5 initial emails have fired for 3+ days. Today BRAIN is also due to write the full post-campaign analysis (see daily_signals.json campaign_milestone note).",
+  "orchestrator_status": "NOT FOUND — src/outlocal/linkedin/orchestrator.py does not exist. All execution is manual (HANDS). This file has not existed for the entire Batch 1-4 campaign (28 days).",
+  "imap_gap_warning": "CRITICAL — IMAP has not been confirmed checked for 21 days (last confirmed: 2026-04-04). Any lead in new_replies.json may have replied silently. Before any outreach of any kind, HANDS must perform a full IMAP sweep. This is now the most urgent operational action.",
+  "campaign_milestone_confirmed": {
+    "assumed": true,
+    "note": "BRAIN assumes fu_046-049 were sent yesterday per daily_email_plan.json schedule. HANDS: if any of these four sends did NOT complete yesterday, they are now 1 day overdue — still worth sending today as final touchpoints. Confirm all four in CHANGELOG.md before 09:00 today.",
+    "consequence_if_unconfirmed": "If fu_041-045 (Wednesday) and fu_046-049 (Thursday) were both not sent by HANDS, up to 9 leads are overdue for their final breakup touchpoints. Send them today. Day-14 breakup is still valid at Day-15. Do not send at Day-16+."
   },
-  "next_linkedin_window": {
-    "trigger": "Batch 5 Ryedale data received AND initial emails sent AND 3+ days elapsed since those sends",
-    "earliest_date": "2026-04-28 (Monday) — only if Batch 5 data received today (Thursday EOD) and initial sends fire Friday 2026-04-25",
-    "most_likely_date": "2026-04-30 (Wednesday) or later — Batch 5 data not yet received as of this run",
-    "target_area": "Ryedale District, North Yorkshire",
-    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
-    "expected_candidates": "18-22 leads, min score 55, SSL+PAS priority",
-    "linkedin_eligibility_rule": "LinkedIn window opens Day 3 after initial email, must close before Day-7 follow-up. Window: Day 3 to Day 6 inclusive.",
-    "priority_order": "Full name + SSL signal first. Full name + mobile signal second. First-name-only leads: only attempt if sector has high LinkedIn presence (care, leisure, hospitality management, professional services)."
+  "search_queries": [],
+  "no_queries_reason": "POST-CAMPAIGN HOLDING PATTERN — three-part block applies: (1) All Batch 1-4 sequences are complete — LinkedIn window (Day 3-6) has definitively closed for all ~60 leads. (2) No Batch 5 Ryedale data received — no new leads to generate queries for. (3) Warm pipeline leads 1/3/22 remain LinkedIn-blocked while email sales conversations are unresolved (IMAP gap 21 days).",
+  "eligibility_check": {
+    "rule": "LinkedIn connection window: Day 3 to Day 6 inclusive after initial email, before Day-7 follow-up fires",
+    "active_leads_in_window": [],
+    "reason_no_active_leads": "All Batch 1-4 leads have completed their Day-14 breakup step. No lead is in Days 3-6. No Batch 5 leads exist yet.",
+    "next_eligible_leads": "Batch 5 Ryedale leads — as soon as initial emails fire. Earliest eligibility: Day 3 after first Batch 5 send."
+  },
+  "post_breakup_contingency": {
+    "applies_to": [52, 55, 50, 56],
+    "description": "Leads whose Day-14 breakup emails fired yesterday (assumed). If HANDS sent LinkedIn connection requests to any of these leads on Day 26 (2026-04-23) and those requests are accepted today or later:",
+    "rule": "Respond with the if_accepted_message from linkedin_connection_notes.json (archived_notes section). Do NOT reference the breakup email. Do NOT reference the email sequence. Treat as a new LinkedIn connection in full.",
+    "probability": "LOW — but these four requests (if sent) may still be pending. Monitor periodically.",
+    "if_accepted_messages": {
+      "lead_52_linda_walsh": "Linda — thanks for connecting. I noticed something about the Holderness Homecare online presence worth a quick mention. Happy to share if useful.",
+      "lead_55_craig_lawson": "Craig — thanks for connecting. Noticed something about the Beverley Sports & Leisure online presence worth mentioning. Happy to share if it's useful.",
+      "lead_50_pete": "Pete — thanks for connecting. Spotted something about The Harbour Fish Bar website worth a quick mention. Happy to share if it's relevant.",
+      "lead_56_neil": "Neil — thanks for connecting. Noticed something about the East Riding Electrical website worth a quick mention. Happy to share if it's useful."
+    }
   },
   "batch_5_linkedin_strategy": {
-    "confirmed_winner_sector": "SSL leads with full names — 3 of 3 INTERESTED leads used SSL+PAS+first-name-subject combination",
+    "status": "READY — templates and rules prepared. Awaiting Batch 5 Ryedale data.",
+    "target_area": "Ryedale District, North Yorkshire",
+    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
     "search_query_template": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
     "fallback_query_1_template": "site:linkedin.com/in \"[Full Name]\" [trade] [town] [county]",
     "fallback_query_2_template": "site:linkedin.com/in [trade] \"[town]\" [county] owner manager director",
-    "first_name_only_rule": "Skip LinkedIn if first name only AND trade is low-LinkedIn (electrician, plumber, roofer, joiner, builder). Attempt LinkedIn if first name only AND sector is higher-LinkedIn (care, leisure, spa, gallery, solicitor, accountant, restaurant owner).",
-    "note_strategy": "Slightly awkward genuine compliment — stands out from AI slop. 200-char hard limit. Generic note is acceptable baseline. Upgrade to post_reference if HANDS finds post from last 60 days — post_reference achieves 3-4x higher acceptance rate.",
-    "upgrade_instructions": "HANDS: check profile for recent posts BEFORE sending any note. If post found (60 days): use post_reference template. If no post or profile inactive: use generic template. Write result to linkedin_profiles.json immediately after each search."
+    "confirmed_winner_sectors": "SSL leads with full names — 3 of 3 INTERESTED leads used SSL+PAS+first-name-subject. Prioritise high-LinkedIn sectors: solicitors, estate agents, B&Bs, restaurants, care providers.",
+    "first_name_only_rule": "Skip LinkedIn if first name only AND low-LinkedIn trade (electrician, plumber, roofer, joiner, builder). Attempt if first name only AND high-LinkedIn sector (care, leisure, solicitor, accountant, restaurant owner).",
+    "post_reference_priority": "HANDS: check each profile for recent posts (60 days) BEFORE sending any note. post_reference achieves 3-4x higher acceptance rate. Do not split search and send across days — execute in one session.",
+    "minimum_score_for_linkedin": 55,
+    "window": "Day 3 to Day 6 inclusive after initial email. This is a narrow window — execution must happen within the same BRAIN-run day."
   },
-  "campaign_milestone": {
-    "trigger": "fu_049 sent today (Neil, East Riding Electrical, ~09:45)",
-    "milestone": "After fu_049: ALL active sequences complete. 60+ leads through all 4 touchpoints. Full dataset available for analysis.",
-    "linkedin_channel_summary": "ZERO confirmed LinkedIn contacts in entire Batch 1-4 campaign. Seven consecutive BRAIN runs without linkedin_profiles.json. LinkedIn channel was architecturally designed and daily-planned but operationally unexecuted by HANDS throughout the campaign.",
-    "key_learning": "For Batch 5: HANDS must commit to LinkedIn execution within 2 hours of each BRAIN run. The BRAIN output is solid — the operational gap is execution latency. LinkedIn notes have a narrow window (Day 3-6) that cannot be recovered once missed.",
-    "analysis_due": "2026-04-25 (Friday) — BRAIN to write full post-campaign analysis including LinkedIn channel failure assessment and revised execution protocol for Batch 5."
+  "next_linkedin_window": {
+    "trigger": "Batch 5 Ryedale data received AND initial emails sent AND 3+ days elapsed since those sends",
+    "scenario_a": {
+      "condition": "Batch 5 data received today (Friday 2026-04-25)",
+      "brain_copy_written": "Today (Friday) — BRAIN writes initial email copy",
+      "initial_sends": "Monday 2026-04-28 (earliest — weekend gap)",
+      "linkedin_window_opens": "Thursday 2026-04-30 (Day 3 after Monday sends)",
+      "linkedin_window_closes": "Sunday 2026-05-03 (Day 6)",
+      "notes": "Weekend sends not recommended — open rates lower. Monday send is optimal."
+    },
+    "scenario_b": {
+      "condition": "Batch 5 data received Monday 2026-04-28",
+      "brain_copy_written": "Monday 2026-04-28",
+      "initial_sends": "Monday 2026-04-28 (afternoon) or Tuesday 2026-04-29",
+      "linkedin_window_opens": "Thursday 2026-05-01 or Friday 2026-05-02",
+      "linkedin_window_closes": "Sunday 2026-05-04 or Monday 2026-05-05"
+    },
+    "scenario_c": {
+      "condition": "Batch 5 data not received by Friday EOD",
+      "consequence": "Campaign gap extends to 21+ days. Every additional day without new leads is a day without prospecting. HANDS: Ryedale scrape is the single highest-priority action remaining.",
+      "most_likely_next_linkedin_run": "2026-05-01 (Thursday) or later"
+    }
   },
+  "post_campaign_analysis_note": "Today (Friday 2026-04-25) BRAIN is due to write the full Week 4 / post-campaign analysis. This is separate from the LinkedIn intelligence function but feeds into Batch 5 strategy. Key LinkedIn finding: ZERO confirmed LinkedIn contacts in entire Batch 1-4 campaign (60+ leads, 28 days, 7+ BRAIN runs with active notes). Root cause: HANDS execution latency. The 3-6 day window cannot be recovered once missed. Revised protocol for Batch 5: HANDS must execute LinkedIn searches within 2 hours of each BRAIN run on Day 3, 4, 5, or 6.",
   "summary": {
     "total_queries_today": 0,
-    "reason": "BREAKUP_DAY_RULE applies to all remaining candidates (50/52/55/56). No other active leads.",
-    "linkedin_channel_status": "HOLDING — no active sequences. Awaiting Batch 5 Ryedale data.",
-    "next_run": "2026-04-25 (Friday) — post-campaign analysis + Batch 5 copy if data arrives. Next LinkedIn search plan generated when Batch 5 initial sends have fired for 3+ days.",
+    "reason": "POST-CAMPAIGN HOLD — all Batch 1-4 sequences complete, no Batch 5 data, no leads in Day 3-6 window",
+    "linkedin_channel_status": "FULL HOLD — awaiting Batch 5 Ryedale initial sends",
+    "imap_gap_days": 21,
+    "consecutive_runs_without_linkedin_profiles": 8,
+    "next_linkedin_search_plan": "Generated on the day Batch 5 leads reach Day 3 after initial email",
     "hands_actions_today": [
-      "1. IMAP SWEEP before 09:00 — 20-day gap. Check leads 50/52/55/56 individually before each send.",
-      "2. Check warm pipeline IMAP (leads 1/3/22) before 12:00 — send final closes if still no reply.",
-      "3. Send fu_046-049 in the 09:00-09:45 window. Log campaign milestone in CHANGELOG.md after fu_049.",
-      "4. If Batch 5 Ryedale data arrives today: return immediately to BRAIN. Do NOT delay.",
-      "5. Confirm Wednesday fu_041-045 send status in CHANGELOG.md."
+      "1. FULL IMAP SWEEP — 21-day gap. Check ALL leads including warm pipeline (1/3/22) and any leads that may have replied silently. This is the single most urgent action.",
+      "2. Confirm yesterday's fu_046-049 send status in CHANGELOG.md. If any were not sent: send today (Day 15 — last acceptable day for final breakup).",
+      "3. Confirm Wednesday fu_041-045 send status in CHANGELOG.md. If any were not sent: send today (Day 16 — borderline; still send if not sent).",
+      "4. Warm pipeline (leads 1/3/22 — Claire/Rob/Tom): check IMAP. If no reply and final close not yet sent: send final close today. These are the only potential revenue from the campaign.",
+      "5. Batch 5 Ryedale scrape — if not yet completed: THIS IS THE TOP PRIORITY after IMAP and final closes. HANDS must return data to BRAIN today for Friday copy writing. Every day of delay is a day without prospecting.",
+      "6. Blocked leads 49/51/53/54 — unblocking actions: Companies House search (49), phone call after 09:30 (51), Rightmove/Zoopla lookup (53), info@ fallback (54). Do after milestone confirms."
     ]
   }
 }
