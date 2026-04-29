@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-27T07:00:00Z",
+  "generated_at": "2026-04-29T07:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-27",
-  "day_number": 30,
-  "note": "Day 30 (Monday). Zero active connection notes. No Batch 5 Ryedale data — no new leads. All Batch 1-4 sequences complete since 2026-04-24. Warm pipeline leads 1/3/22 (Tom/Claire/Rob): final close emails assumed sent 2026-04-25 (Friday). Now Day 2 of 7-day buffer. LinkedIn nurture notes pre-generated and ready; earliest dispatch 2026-05-02 (Saturday), preferred 2026-05-04 (Monday). Post-breakup contingency notes for leads 50/52/55/56 carry forward — connection requests sent status remains UNCONFIRMED after 10 consecutive BRAIN runs without linkedin_profiles.json.",
+  "run_date": "2026-04-29",
+  "day_number": 32,
+  "note": "Day 32 (Wednesday). Zero active connection notes. No Batch 5 Ryedale data — no new leads. All Batch 1-4 sequences complete since 2026-04-24. Warm pipeline leads 1/3/22 (Tom/Claire/Rob): final close emails assumed sent 2026-04-25 (Friday). Now Day 4 of 7-day buffer — 3 days remaining. Pre-generated notes ready; earliest dispatch 2026-05-02 (Saturday), preferred 2026-05-04 (Monday). KEY: Monday 2026-05-04 is a convergence point — warm pipeline nurture + potential Batch 5 Day 3-5 window both open on the same day regardless of when Batch 5 data arrives this week.",
   "strategy": {
     "character_limit": 200,
     "tone": "slightly awkward genuine compliment — stands out from polished AI outreach slop",
@@ -18,21 +18,22 @@
       "Do not reference the email outreach in warm pipeline nurture notes",
       "Do not reference any previous contact in warm pipeline nurture notes — treat as first contact"
     ],
-    "priority_upgrade_rule": "HANDS: always check LinkedIn profile for posts from last 60 days BEFORE sending any note. If post found: use post_reference note (3-4x higher acceptance rate). If no recent posts: use generic note. This was NOT executed across 10 consecutive BRAIN runs in Batch 1-4. MANDATORY for Batch 5 and warm pipeline.",
+    "priority_upgrade_rule": "HANDS: always check LinkedIn profile for posts from last 60 days BEFORE sending any note. If post found: use post_reference note (3-4x higher acceptance rate). If no recent posts: use generic note. MANDATORY for Batch 5 and warm pipeline.",
     "execution_protocol_batch_5": "HANDS must open LinkedIn, search, check for posts, and send the note in a SINGLE SESSION on Day 3, 4, 5, or 6 after initial email. Do not split search and send across days. The window closes automatically on Day 7 when the follow-up email fires.",
     "warm_pipeline_note_rule": "Warm pipeline notes (leads 1/3/22) must NOT reference the email sequence, the campaign, or any prior contact. Treat as a cold LinkedIn connection from a new prospect who noticed their business online."
   },
   "active_notes": [],
   "active_notes_count": 0,
-  "no_active_notes_reason": "No leads in Day 3-6 LinkedIn eligibility window. All Batch 1-4 complete. No Batch 5 data. Warm pipeline 1/3/22 in 7-day post-close buffer (Day 2 of 7 — 5 days remaining).",
+  "no_active_notes_reason": "No leads in Day 3-6 LinkedIn eligibility window. All Batch 1-4 complete. No Batch 5 data. Warm pipeline 1/3/22 in 7-day post-close buffer (Day 4 of 7 — 3 days remaining).",
   "warm_pipeline_nurture_notes": {
     "status": "PRE-GENERATED — ready for dispatch on 2026-05-02 (Saturday) or 2026-05-04 (Monday preferred)",
     "buffer_started": "2026-04-25 (Friday — assumed send date of final close emails)",
     "buffer_expires": "2026-05-02",
-    "days_remaining_in_buffer": 5,
+    "days_remaining_in_buffer": 3,
     "trigger_condition": "Final close emails sent 2026-04-25 (assumed) AND no email reply received by 2026-05-02",
     "do_not_send_if": "Any of these leads reply to the final close email at any point — even a rejection. LinkedIn is permanently closed if an email reply arrives.",
-    "hands_check_required": "Before sending any of these notes: HANDS must (1) confirm final close was sent 2026-04-25, (2) check IMAP on send day — if reply found after close was sent: cancel LinkedIn note for that lead immediately. (3) IMAP gap is 23 days — a silent reply is plausible for any of these leads.",
+    "hands_check_required": "Before sending any of these notes: HANDS must (1) confirm final close was sent 2026-04-25, (2) check IMAP on send day — if reply found after close was sent: cancel LinkedIn note for that lead immediately. (3) IMAP gap is 25 days — a silent reply is plausible for any of these leads.",
+    "convergence_alert": "Monday 2026-05-04 is convergence day — warm pipeline nurture AND potential Batch 5 Day 3-5 window both open simultaneously. HANDS: plan a combined LinkedIn session on Monday. Do not split across days.",
     "notes": [
       {
         "lead_id": 1,
@@ -52,7 +53,7 @@
         "earliest_send_date": "2026-05-02",
         "preferred_send_date": "2026-05-04 (Monday — better acceptance rate than Saturday)",
         "do_not_send_if": "Tom has replied to the final close email at any point (including rejection)",
-        "notes_about_lead": "First-name-only lead. Spring carpentry season. Confirm the LinkedIn profile is clearly the owner/operator of Ripon Road Carpentry in Ripon before connecting. Email reply received 2026-04-04 — INTERESTED."
+        "notes_about_lead": "First-name-only lead. Spring carpentry season — pain may have sharpened. Confirm the LinkedIn profile is clearly the owner/operator of Ripon Road Carpentry in Ripon before connecting. Email reply received 2026-04-04 — INTERESTED."
       },
       {
         "lead_id": 3,
@@ -100,7 +101,7 @@
     "applies_if": "HANDS sent LinkedIn connection requests to leads 52/55/50/56 on or around Day 23-26 of the campaign and those requests have not yet been accepted — and a lead accepts today or in coming days",
     "rule": "If a lead accepts post-breakup: send the if_accepted_message ONLY. Do NOT reference the breakup email or the email sequence. Respond naturally as a new LinkedIn connection.",
     "probability": "LOW — but these four requests (if they were sent) may still be pending in the connection queue. Monitor for 30 days post-send.",
-    "confirmed_sent_status": "UNCONFIRMED — BRAIN has received zero linkedin_profiles.json files across 10 consecutive runs. It is unknown whether HANDS sent any connection requests at any point during the campaign.",
+    "confirmed_sent_status": "UNCONFIRMED — BRAIN has received zero linkedin_profiles.json files across 12 consecutive runs. It is unknown whether HANDS sent any connection requests at any point during the campaign.",
     "pending_leads": [
       {
         "lead_id": 52,
@@ -141,7 +142,7 @@
     ]
   },
   "batch_5_note_templates": {
-    "status": "READY — templates prepared. Note generation begins on Day 3 after Batch 5 initial emails fire. If sends fire today (Monday 2026-04-27): Day 3 = Thursday 2026-05-01.",
+    "status": "READY — templates prepared. Note generation begins on Day 3 after Batch 5 initial emails fire. If sends fire today (Wednesday 2026-04-29): Day 3 = Saturday 2026-05-02 → weekend hold → Day 5 = Monday 2026-05-04.",
     "target_area": "Ryedale District, North Yorkshire",
     "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
     "post_reference_template": "[Name] — saw your post about [X]. [Business] caught my eye looking at [trade] businesses in [town]. Noticed something about the site worth mentioning. Connecting in case it's useful.",
@@ -220,23 +221,24 @@
     "total_confirmed_connections_made": 0,
     "brain_runs_with_active_notes": 7,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 10,
+    "consecutive_runs_without_profiles": 12,
     "root_cause": "HANDS execution latency. LinkedIn window (Day 3-6) is narrow and cannot be recovered once missed. Notes were generated correctly by BRAIN on 7 consecutive runs. Zero notes were confirmed sent by HANDS.",
-    "key_learning": "The 'post_reference upgrade' step requires HANDS to check each profile BEFORE sending — this step was not executed once across 30 campaign days. For Batch 5: HANDS must open LinkedIn, search, check for posts, and send in a SINGLE session on the correct day.",
-    "batch_5_protocol_change": "BRAIN will flag Day 3 LinkedIn send day explicitly in daily_signals.json as a MANDATORY action item with a 2-hour execution target. HANDS must write linkedin_profiles.json after every search session — even if no note was sent."
+    "key_learning": "The 'post_reference upgrade' step requires HANDS to check each profile BEFORE sending — this step was not executed once across 32 campaign days. For Batch 5: HANDS must open LinkedIn, search, check for posts, and send in a SINGLE session on the correct day.",
+    "batch_5_protocol_change": "BRAIN flags Day 3 LinkedIn send day explicitly in daily_signals.json as a MANDATORY action item with a 2-hour execution target. HANDS must write linkedin_profiles.json after every search session — even if no note was sent. The window is not recoverable after Day 6."
   },
   "summary": {
     "total_active_notes": 0,
     "warm_pipeline_nurture_notes_pre_generated": 3,
     "warm_pipeline_nurture_lead_ids": [1, 3, 22],
-    "warm_pipeline_buffer_days_remaining": 5,
+    "warm_pipeline_buffer_days_remaining": 3,
     "warm_pipeline_nurture_earliest_send": "2026-05-02",
     "warm_pipeline_nurture_preferred_send": "2026-05-04 (Monday)",
     "total_archived": 4,
     "archived_ids": [52, 55, 50, 56],
     "post_breakup_contingency_leads": [52, 55, 50, 56],
-    "consecutive_runs_without_linkedin_profiles": 10,
+    "consecutive_runs_without_linkedin_profiles": 12,
     "campaign_linkedin_contacts_confirmed": 0,
-    "next_active_notes": "Batch 5 Ryedale leads — earliest Day 3 after initial sends (Thursday 2026-05-01 if sends fire today Monday 2026-04-27), OR warm pipeline nurture on 2026-05-04 (Monday) if email closes confirmed sent and no reply by 2026-05-02"
+    "key_convergence_date": "2026-05-04 (Monday) — warm pipeline nurture + Batch 5 Day 3-5 window both active simultaneously if Batch 5 data arrives this week",
+    "next_active_notes": "Warm pipeline nurture (leads 1/3/22) on 2026-05-04 (Monday, preferred) if no email reply by 2026-05-02. Batch 5 notes generated same session if initial emails fire this week."
   }
 }

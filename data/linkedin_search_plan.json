@@ -1,73 +1,88 @@
 {
-  "generated_at": "2026-04-27T07:00:00Z",
+  "generated_at": "2026-04-29T07:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-27",
-  "day_number": 30,
-  "note": "Day 30 (Monday). First weekday after post-campaign Saturday hold. All Batch 1-4 sequences confirmed complete as of 2026-04-24 (fu_049 = final campaign send). No leads in Day 3-6 LinkedIn eligibility window. No Batch 5 Ryedale data received — no new leads. Warm pipeline leads 1/3/22 (Tom/Claire/Rob): final close emails assumed sent 2026-04-25 (Friday). Now Day 2 of 7-day buffer — LinkedIn blocked until 2026-05-02 (Saturday) / 2026-05-04 (Monday preferred). IMAP gap: 23 days — CRITICAL. Monday is highest-priority day for Batch 5 data return. If data arrives today: BRAIN writes copy same day → sends Monday afternoon / Tuesday 2026-04-28 → LinkedIn window opens Thursday 2026-05-01.",
-  "orchestrator_status": "NOT FOUND — src/outlocal/linkedin/orchestrator.py does not exist. All execution is manual (HANDS). This has not existed at any point in the 30-day campaign. Consider scaffolding for Batch 5 to automate Day 3 LinkedIn flag in daily_signals.json.",
-  "imap_gap_warning": "CRITICAL — 23 days without confirmed IMAP check (last confirmed: 2026-04-04). Any lead in the warm pipeline (1/3/22) may have replied to the final close email. HANDS: full IMAP sweep is the single most urgent operational action before any other outreach today.",
+  "run_date": "2026-04-29",
+  "day_number": 32,
+  "note": "Day 32 (Wednesday). All Batch 1-4 sequences confirmed complete (fu_049 = final send, 2026-04-24). No leads in Day 3-6 LinkedIn eligibility window. No Batch 5 Ryedale data received — campaign stall at 32 days since last initial send (2026-03-28). Warm pipeline leads 1/3/22 (Tom/Claire/Rob): final close emails assumed sent 2026-04-25. Now Day 4 of 7-day buffer — LinkedIn opens 2026-05-02 (Saturday), preferred 2026-05-04 (Monday). IMAP gap: 25 days — CRITICAL. KEY CONVERGENCE FORMING: if Batch 5 data arrives Wed/Thu/Fri this week, Day 3 falls on a weekend and holds to Monday 2026-05-04 — same day the warm pipeline buffer expires. Monday 2026-05-04 is a high-priority combined LinkedIn session.",
+  "orchestrator_status": "NOT FOUND — src/outlocal/linkedin/orchestrator.py does not exist. All execution is manual (HANDS). Has not existed at any point in the 32-day campaign. Scaffolding for Batch 5 would automate the Day 3 LinkedIn flag in daily_signals.json.",
+  "imap_gap_warning": "CRITICAL — 25 days without confirmed IMAP check (last confirmed: 2026-04-04). Warm pipeline leads 1/3/22 may have replied to final close emails (assumed sent 2026-04-25). HANDS: full IMAP sweep is the single most urgent operational action before any LinkedIn activity.",
   "eligibility_check": {
     "rule": "LinkedIn connection window: Day 3 to Day 6 inclusive after initial email, before Day-7 follow-up fires",
     "active_leads_in_window": [],
-    "reason_no_active_leads": "All Batch 1-4 leads have completed their Day-14 breakup step (sequences assumed complete 2026-04-24). No lead is in Days 3-6. No Batch 5 leads exist. Warm pipeline leads 1/3/22 are BLOCKED — email conversation active (7-day buffer post final-close runs until 2026-05-02).",
-    "next_eligible_leads": "Batch 5 Ryedale leads — if data arrives today (Monday 2026-04-27) and initial emails fire today or Tuesday 2026-04-28, LinkedIn window opens Thursday 2026-05-01 (Day 3 after Monday sends) or Friday 2026-05-02 (Day 3 after Tuesday sends)."
+    "reason_no_active_leads": "All Batch 1-4 leads have completed their Day-14 breakup step (sequences complete 2026-04-24). No lead is in Days 3-6. No Batch 5 leads exist. Warm pipeline leads 1/3/22 are BLOCKED — email conversation active (7-day buffer post final-close runs until 2026-05-02, 3 days remaining).",
+    "next_eligible_leads": "Batch 5 Ryedale leads — if data arrives today (Wednesday 2026-04-29) and initial emails fire today: Day 3 = Saturday 2026-05-02 (weekend rule → hold to Monday 2026-05-04). If data arrives Thursday 2026-04-30: Day 3 = Sunday 2026-05-03 (hold to Monday 2026-05-04). If data arrives Friday 2026-05-01: Day 3 = Monday 2026-05-04 directly."
   },
   "leads_emailed_3_plus_days_no_reply": {
-    "note": "All Batch 1-4 leads (~60) were emailed 3+ days ago. However, the LinkedIn eligibility window (Day 3-6) has expired for all of them — sequences are complete at Day-14 breakup. Being emailed 3+ days ago is a necessary but not sufficient condition. The Day 3-6 window closes when the Day-7 follow-up fires. All Batch 1-4 leads are past Day-14 breakup.",
+    "note": "All Batch 1-4 leads (~60) were emailed 3+ days ago. However, the LinkedIn eligibility window (Day 3-6) has expired for all of them — sequences complete at Day-14 breakup. Being emailed 3+ days ago is a necessary but not sufficient condition. The Day 3-6 window closes when the Day-7 follow-up fires. All Batch 1-4 leads are past Day-14 breakup.",
     "warm_pipeline_exception": "Leads 1/3/22 (Tom/Claire/Rob) DID reply. They are in active close email conversations (INTERESTED). LinkedIn BLOCKED while email conversation is open and within 7-day post-close buffer.",
     "final_close_emails": {
       "assumed_sent": "2026-04-25 (Friday)",
       "buffer_started": "2026-04-25",
       "buffer_expires": "2026-05-02",
-      "days_remaining_in_buffer": 5,
+      "days_remaining_in_buffer": 3,
       "linkedin_available_from": "2026-05-02 (Saturday) — 2026-05-04 (Monday) preferred"
     },
     "eligible_lead_ids": []
   },
   "search_queries": [],
-  "no_queries_reason": "Three-part block: (1) All Batch 1-4 sequences complete — LinkedIn window (Day 3-6) definitively closed for all ~60 leads. (2) No Batch 5 Ryedale data received — no new leads to generate queries for. (3) Warm pipeline leads 1/3/22 still within 7-day post-close buffer (Day 2 of 7) — LinkedIn blocked until 2026-05-02.",
-  "monday_priority_note": {
-    "highest_urgency": "Batch 5 Ryedale data return. If data arrives today: BRAIN writes copy immediately. First sends Monday afternoon (if data arrives before 14:00) or Tuesday morning. LinkedIn window opens Thursday 2026-05-01.",
-    "campaign_gap_status": "31 days since last initial send (2026-03-28). Every additional day without Batch 5 is a day without prospecting. This is the longest prospecting gap of the campaign.",
-    "imap_priority": "Full IMAP sweep before any other action. 23-day gap. Warm pipeline leads 1/3/22 may have replied to final close emails sent Friday."
+  "no_queries_reason": "Three-part block: (1) All Batch 1-4 sequences complete — LinkedIn window (Day 3-6) definitively closed for all ~60 leads. (2) No Batch 5 Ryedale data received — no new leads to generate queries for. (3) Warm pipeline leads 1/3/22 still within 7-day post-close buffer (Day 4 of 7, 3 days remaining — LinkedIn opens 2026-05-02).",
+  "wednesday_priority_note": {
+    "highest_urgency": "Batch 5 Ryedale data return. If data arrives today: BRAIN writes copy immediately. First sends Wednesday afternoon (14:00-16:00). LinkedIn window opens Monday 2026-05-04 (Day 3 falls Saturday 2026-05-02 — weekend hold applies).",
+    "campaign_gap_status": "32 days since last initial send (2026-03-28). Every additional day without Batch 5 is a day without prospecting.",
+    "imap_priority": "Full IMAP sweep before any other action. 25-day gap. Warm pipeline leads 1/3/22 may have replied to final close emails sent Friday 2026-04-25.",
+    "key_convergence_monday_2026_05_04": "Monday 2026-05-04 is a convergence point regardless of when Batch 5 data arrives this week: (1) Warm pipeline buffer expires Saturday 2026-05-02 → LinkedIn nurture for leads 1/3/22 available Monday. (2) If Batch 5 sends fire any day Wednesday-Friday: Day 3 weekend-hold resolves Monday 2026-05-04. HANDS must plan a dedicated LinkedIn session for Monday 2026-05-04."
   },
   "next_linkedin_window": {
-    "trigger": "Batch 5 Ryedale data received AND initial emails sent AND 3+ days elapsed since those sends",
+    "trigger": "Batch 5 Ryedale data received AND initial emails sent AND 3+ days elapsed since those sends (adjusted for weekend hold rule)",
     "scenario_a": {
-      "condition": "Batch 5 data received today (Monday 2026-04-27) before 14:00",
-      "brain_copy_written": "Monday 2026-04-27 (same day)",
-      "initial_sends": "Monday 2026-04-27 afternoon (e.g. 14:00-16:00)",
-      "linkedin_window_opens": "Thursday 2026-05-01 (Day 3 after Monday sends)",
-      "linkedin_window_closes": "Sunday 2026-05-04 (Day 6 after Monday sends)",
-      "notes": "Best-case scenario. HANDS: if Batch 5 data in hand, return TODAY. BRAIN will write copy this session.",
-      "weekend_adjustment": "Day 6 falls on Sunday 2026-05-04 — send by Sunday 18:00+ if Day 5 (Saturday) was missed. Do NOT skip the window."
+      "condition": "Batch 5 data received today (Wednesday 2026-04-29) before 14:00",
+      "brain_copy_written": "Wednesday 2026-04-29 (same day)",
+      "initial_sends": "Wednesday 2026-04-29 afternoon (14:00-16:00)",
+      "day_3": "Saturday 2026-05-02 — WEEKEND HOLD",
+      "day_4": "Sunday 2026-05-03 — WEEKEND HOLD",
+      "linkedin_window_opens": "Monday 2026-05-04 (Day 5 after Wednesday sends — first non-weekend day)",
+      "linkedin_window_closes": "Tuesday 2026-05-05 (Day 6 after Wednesday sends)",
+      "convergence_note": "Warm pipeline buffer also expires Saturday 2026-05-02 → LinkedIn nurture for leads 1/3/22 available same Monday. HANDS: combined Batch 5 + warm pipeline LinkedIn session on Monday 2026-05-04.",
+      "notes": "Best-case scenario this week. Sends fire today → Monday session covers everything in one go."
     },
     "scenario_b": {
-      "condition": "Batch 5 data received Monday 2026-04-27 after 14:00 or Tuesday 2026-04-28",
-      "brain_copy_written": "Monday 2026-04-27 (if late arrival) or Tuesday 2026-04-28",
-      "initial_sends": "Tuesday 2026-04-28",
-      "linkedin_window_opens": "Friday 2026-05-02 (Day 3 after Tuesday sends)",
-      "linkedin_window_closes": "Monday 2026-05-05 (Day 6 after Tuesday sends)",
-      "notes": "Slight delay but manageable. Tuesday sends → Friday LinkedIn start. Good alignment with warm pipeline nurture window opening on Saturday."
+      "condition": "Batch 5 data received Thursday 2026-04-30",
+      "brain_copy_written": "Thursday 2026-04-30",
+      "initial_sends": "Thursday 2026-04-30",
+      "day_3": "Sunday 2026-05-03 — WEEKEND HOLD",
+      "linkedin_window_opens": "Monday 2026-05-04 (Day 4 after Thursday sends)",
+      "linkedin_window_closes": "Wednesday 2026-05-06 (Day 6 after Thursday sends)",
+      "convergence_note": "Same Monday 2026-05-04 convergence. LinkedIn window wider: Mon-Wed. Warm pipeline 1/3/22 also available from Monday.",
+      "notes": "Same Monday convergence as Scenario A. Slightly more time in window (3 working days vs 2)."
     },
     "scenario_c": {
-      "condition": "Batch 5 data not received by Tuesday 2026-04-28 EOD",
-      "consequence": "Campaign gap extends beyond 31 days. First new sends slip to Wednesday 2026-04-29 or later. LinkedIn window shifts to Saturday 2026-05-03 or Monday 2026-05-05.",
-      "most_likely_next_linkedin_run": "Week of 2026-05-05 or later"
+      "condition": "Batch 5 data received Friday 2026-05-01",
+      "brain_copy_written": "Friday 2026-05-01",
+      "initial_sends": "Friday 2026-05-01",
+      "day_3": "Monday 2026-05-04 — NO WEEKEND HOLD NEEDED",
+      "linkedin_window_opens": "Monday 2026-05-04 (Day 3 lands directly on Monday)",
+      "linkedin_window_closes": "Thursday 2026-05-07 (Day 6 after Friday sends)",
+      "convergence_note": "Day 3 lands on Monday directly — no weekend adjustment needed. Warm pipeline 1/3/22 also available from Monday. Widest window of the three scenarios (4 working days).",
+      "notes": "Friday arrival gives the most comfortable LinkedIn execution window (Mon-Thu). Combined session Monday."
+    },
+    "scenario_d": {
+      "condition": "Batch 5 data not received by Friday 2026-05-01 EOD",
+      "consequence": "Campaign gap extends to 35+ days. First new sends slip to Monday 2026-05-04 or later. Batch 5 LinkedIn window shifts to Thursday 2026-05-07+. Warm pipeline nurture Monday 2026-05-04 proceeds regardless (independent of Batch 5).",
+      "most_likely_next_linkedin_run": "Warm pipeline nurture: Monday 2026-05-04 confirmed. Batch 5: week of 2026-05-07 if data not received by Friday."
     },
     "warm_pipeline_linkedin_option": {
       "condition": "Leads 1/3/22 received final close emails 2026-04-25 (assumed) and have not replied by 2026-05-02",
       "available_from": "2026-05-02 (Saturday — if no reply confirmed by IMAP)",
-      "preferred_date": "2026-05-04 (Monday — better acceptance rate)",
+      "preferred_date": "2026-05-04 (Monday — better acceptance rate than Saturday)",
       "note_type": "generic — do NOT reference the email outreach. Treat as fresh LinkedIn connection.",
       "lead_ids": [1, 3, 22],
-      "days_remaining_in_buffer": 5,
+      "days_remaining_in_buffer": 3,
       "pre_generated_notes": "All three notes pre-generated in linkedin_connection_notes.json warm_pipeline_nurture_notes section — ready for dispatch.",
       "rule": "If any of these three leads reply to the final close email at any point before LinkedIn notes are sent: LinkedIn is permanently blocked for that lead. HANDS: IMAP sweep before sending any note."
     }
   },
   "batch_5_linkedin_strategy": {
-    "status": "READY — templates and rules prepared. Awaiting Batch 5 Ryedale data. CRITICAL: 31-day gap since last initial send.",
+    "status": "READY — templates and rules prepared. Awaiting Batch 5 Ryedale data. CRITICAL: 32-day campaign gap since last initial send (2026-03-28).",
     "target_area": "Ryedale District, North Yorkshire",
     "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
     "search_query_template": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
@@ -101,21 +116,23 @@
   ],
   "summary": {
     "total_queries_today": 0,
-    "reason": "No leads in Day 3-6 window. No Batch 5 data. Warm pipeline 1/3/22 still in 7-day post-close buffer (5 days remaining).",
+    "reason": "No leads in Day 3-6 window. No Batch 5 data. Warm pipeline 1/3/22 still in 7-day post-close buffer (Day 4 of 7, 3 days remaining — opens Saturday 2026-05-02).",
     "linkedin_channel_status": "HOLD — awaiting Batch 5 Ryedale initial sends OR warm pipeline buffer expiry (2026-05-02)",
-    "imap_gap_days": 23,
-    "consecutive_runs_without_linkedin_profiles": 10,
-    "next_linkedin_search_plan": "Generated on Day 3 after Batch 5 initial emails fire (earliest Thursday 2026-05-01 if sends fire today), OR warm pipeline nurture run on 2026-05-04 (Monday)",
-    "warm_pipeline_linkedin_option_opens": "2026-05-02 (if final closes sent 2026-04-25 and no reply within 7 days)",
-    "batch_5_trigger": "If Batch 5 data received today (Monday 2026-04-27): BRAIN writes copy immediately. First sends today afternoon / Tuesday morning. LinkedIn search plan generated Thursday 2026-05-01.",
-    "hands_actions_today_monday": [
-      "1. IMAP SWEEP — 23-day gap. Do immediately before any other action. Write results to new_replies.json. If any warm pipeline lead (1/3/22) has replied: cancel their LinkedIn option permanently.",
-      "2. Batch 5 Ryedale scrape data — if in hand: return data file NOW. BRAIN writes copy today. Every hour of delay is a prospecting hour lost.",
-      "3. Confirm final close emails for leads 1/3/22 (Tom/Claire/Rob) were sent Friday 2026-04-25. If NOT sent: send today (Monday). Log in CHANGELOG.md with timestamp.",
+    "imap_gap_days": 25,
+    "consecutive_runs_without_linkedin_profiles": 12,
+    "next_linkedin_search_plan": "Generated on Day 3 (adjusted for weekend holds) after Batch 5 initial emails fire — earliest Monday 2026-05-04 regardless of whether data arrives Wed/Thu/Fri. Warm pipeline nurture plan also executes Monday 2026-05-04.",
+    "warm_pipeline_linkedin_option_opens": "2026-05-02 (Saturday — if final closes sent 2026-04-25 and no reply within 7 days)",
+    "key_convergence_date": "Monday 2026-05-04 — ALL LinkedIn channels potentially active regardless of Batch 5 timing. HANDS must plan a dedicated LinkedIn session for this date.",
+    "batch_5_trigger": "If Batch 5 data received today (Wednesday 2026-04-29): BRAIN writes copy immediately. First sends today afternoon. LinkedIn search plan generated Monday 2026-05-04 (Day 5 after Wednesday sends — weekend days 3-4 held).",
+    "hands_actions_today_wednesday": [
+      "1. IMAP SWEEP — 25-day gap. Do FIRST before any other action. Check ALL leads. Write results to new_replies.json immediately. If any warm pipeline lead (1/3/22) has replied: cancel their LinkedIn option permanently.",
+      "2. Batch 5 Ryedale data — if in hand: return immediately. BRAIN writes copy today. LinkedIn window opens Monday 2026-05-04.",
+      "3. Confirm final close emails for leads 1/3/22 (Tom/Claire/Rob) were sent Friday 2026-04-25. If NOT sent: send today (Wednesday — 4 days late but still valid final-close). Log in CHANGELOG.md with timestamp.",
       "4. Confirm fu_046-049 send status in CHANGELOG.md if not already done.",
-      "5. Confirm fu_036-045 send status in CHANGELOG.md. If any not sent: send today (borderline day 16-17, still valid breakups).",
-      "6. Blocked leads 49/51/53/54 — unblocking actions: Companies House (49), phone call (51 — weekday OK), Rightmove/Zoopla (53), info@ (54).",
-      "7. Write linkedin_profiles.json for any LinkedIn searches done in past 10 BRAIN runs — retrospectively, for campaign records."
+      "5. Confirm and send any of fu_036-045 not yet sent — Day 19-20 after initial send. Today is the last acceptable day for breakup emails on these leads.",
+      "6. Blocked leads 49/51/53/54 — unblocking actions now overdue 35 days: Companies House (49), phone call (51), Rightmove/Zoopla (53), info@ (54).",
+      "7. PREPARE for Monday 2026-05-04 LinkedIn session: warm pipeline nurture (1/3/22) + Batch 5 Day 3-5 (if sends fire this week). Review pre-generated notes in linkedin_connection_notes.json. Confirm profiles exist before Monday.",
+      "8. Write linkedin_profiles.json for any LinkedIn searches done in past 12 BRAIN runs — retrospectively, for campaign records."
     ]
   }
 }
