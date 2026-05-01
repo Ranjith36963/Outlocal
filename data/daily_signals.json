@@ -1,89 +1,152 @@
 {
-  "generated_at": "2026-04-24T07:00:00Z",
-  "date": "2026-04-24",
-  "day_number": 27,
-  "note": "BRAIN layer — Day 27 (Thursday). Campaign milestone day: after today's 4 breakup sends (fu_046-049), the entire active cohort (~60 leads) will have been through all 4 touchpoints. Full dataset available for analysis from today. No Batch 5 Ryedale data received as of this BRAIN run — Wednesday scrape either not completed or not returned. IMAP gap now 20 days (last confirmed check: 2026-04-04). Wednesday sends fu_041-045 status UNCONFIRMED. Warm pipeline leads 1, 3, 22 outcome still UNKNOWN from BRAIN's perspective — 20 days since last confirmed IMAP check.",
-  "today_outreach": "4 breakup emails ONLY (fu_046-049, 09:00-10:00). IMAP check before each send. No new initial sends — Batch 5 Ryedale data not yet received.",
-  "tomorrow_outreach": "0 scheduled sends after today's milestone. If Batch 5 data arrives today (Thursday EOD), BRAIN to write copy Friday morning. First new initial sends: Friday afternoon (earliest) or Monday 2026-04-28 (most likely).",
+  "generated_at": "2026-05-01T07:00:00Z",
+  "date": "2026-05-01",
+  "day_number": 34,
+  "note": "BRAIN layer — Day 34 (Thursday). 7-day gap since last BRAIN run (2026-04-24). Friday 2026-04-25 mandatory run was MISSED. CHANGELOG has no entries since Session 1 — HANDS execution entirely unconfirmed since 2026-04-21. IMAP gap: 27 days (last confirmed check 2026-04-04). Batch 5 Ryedale still NOT received — campaign stall now 24 days. All previous sequences assumed complete. Warm pipeline leads 1, 3, 22 now declared PRESUMED_LOST_NO_RESPONSE (27 days past replies, final close deadline 2026-04-24 has passed).",
+  "today_outreach": "ZERO sends. No active sequences. No Batch 5 data. HANDS: scrape Ryedale TODAY — every additional day of delay costs a full send cycle.",
+  "tomorrow_outreach": "First Batch 5 initial sends possible IF Ryedale scrape data returned by 17:00 today. Otherwise: Monday 2026-05-04 is the absolute earliest for new sends.",
+
   "new_signals_today": 0,
   "new_leads_today": 0,
-  "imap_gap_days": 20,
+
+  "imap_gap_days": 27,
   "imap_last_confirmed_check": "2026-04-04",
-  "wednesday_execution_status": {
-    "fu_041_fu_045": "UNCONFIRMED — BRAIN has not received updated output files from HANDS since 2026-04-21. If sends were completed Wednesday, confirm in CHANGELOG.md before today's 09:00 window. If any were skipped: those leads are now 8 days overdue for final breakup — still worth sending today after fu_049 if not already sent.",
-    "warm_pipeline_closes": "UNCONFIRMED — whether final closes for leads 3 (Claire), 22 (Rob), 1 (Tom) were sent by 16:00 Wednesday is unknown to BRAIN.",
-    "batch_5_scrape": "NOT RETURNED — no Ryedale data in any output file as of this BRAIN run."
-  },
+  "imap_status": "CRITICAL OVERDUE — 27 days. Must sweep entire cohort TODAY before any sends. Priority: leads 1, 3, 22 (warm pipeline) then all unconfirmed sequence leads.",
+
   "batch_5_status": {
-    "status": "CRITICAL — 17 days without new leads. Campaign stall begins today.",
+    "status": "CRITICAL — 24-day campaign stall. No active sequences. No warm pipeline.",
     "data_received": false,
     "waiting_since": "2026-04-22",
+    "days_overdue": 9,
     "target_area": "Ryedale District, North Yorkshire",
     "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
     "target_categories": ["plumbers", "electricians", "roofers", "builders", "joiners", "pubs / restaurants", "B&Bs / guest houses", "estate agents", "solicitors"],
-    "expected_leads": "18-22",
+    "expected_leads": "18-22 (15-20 emailable after SSL/mobile signal check)",
     "minimum_score": 55,
-    "consequence": "After today's sends, the campaign has ZERO active sequences in flight. Without Batch 5 data, no new sends until Monday 2026-04-28. Every day of delay is a day without prospecting. HANDS: if not scraped Wednesday, scrape today as the single highest-priority action.",
-    "revised_timeline": {
-      "if_data_returns_today_thursday": "BRAIN writes copy Thursday evening → initial sends Friday 2026-04-25 → Day-3 bumps Monday 2026-04-28",
-      "if_data_returns_friday": "BRAIN writes copy Friday → sends Monday → campaign gap total: 19 days",
-      "if_data_not_received_by_friday": "First new sends slip to Monday. 20+ day new-lead gap. Full campaign stall."
+    "timeline_if_data_returns_today_thursday": {
+      "brain_run": "TODAY — Friday morning (2026-05-01 evening latest)",
+      "initial_sends": "Friday 2026-05-02 morning (09:00–10:30)",
+      "day3_bumps": "Monday 2026-05-05",
+      "day7_new_angle": "Monday 2026-05-12 (or Friday 2026-05-09 if sent Friday)",
+      "day14_breakups": "Monday 2026-05-18"
+    },
+    "timeline_if_data_returns_friday": {
+      "initial_sends": "Monday 2026-05-04 morning",
+      "day3_bumps": "Thursday 2026-05-07",
+      "day7_new_angle": "Thursday 2026-05-14",
+      "day14_breakups": "Thursday 2026-05-21"
+    },
+    "scraping_instructions": {
+      "tool": "Google Maps scraper (F004 — Playwright)",
+      "return_format": "business_name, url_or_no_website_flag, review_count, rating, town, category, phone",
+      "do_not_enrich": "BRAIN enriches on next run — HANDS returns raw scrape data only",
+      "ssl_check_required": "YES — check each URL for HTTP vs HTTPS. Tag as ssl=true/false. This is the primary signal.",
+      "mobile_check": "Secondary — Playwright screenshot or PageSpeed API check at mobile viewport",
+      "no_website_flag": "If no website found via Google Maps listing, flag no_website=true",
+      "minimum_score_to_include": 50
     }
   },
+
   "signal_assignments": [],
-  "signal_assignment_note": "No leads to assign signals to. All signal assignment awaits Batch 5 Ryedale raw data. When data arrives, BRAIN will run full waterfall: SSL → mobile → no_website → social_media_high_review. Minimum score 55 to email. Signal→framework map unchanged.",
+  "signal_assignment_note": "No leads to assign signals to. All signal assignments await Batch 5 Ryedale raw data. When data arrives, BRAIN will run full waterfall.",
+
   "waterfall_logic": {
-    "priority_1": "ssl — PAS framework — subject: '[First name] — [town] [trade] website flagged Not Secure'",
-    "priority_2": "mobile — PAS framework — subject: '[First name] — [town] [business] site isn't mobile-friendly'",
-    "priority_3": "no_website — BAB framework — '[Business] — [town] [trade]: customers can't find you online' (only 4★+ active-review businesses)",
-    "priority_4": "social_media_high_review — AIDA framework — '[First name] — [N] reviews but your site isn't ranking' (only 4.5★+ with 100+ reviews)",
+    "confirmed_winner": "ssl → PAS → first-name subject — 3/3 INTERESTED leads used this exact combination. Non-negotiable for Batch 5.",
+    "priority_1": {
+      "signal": "ssl",
+      "framework": "PAS",
+      "subject_pattern": "[First name] — [town] [business type] website flagged 'Not Secure'",
+      "expected_rate": "~15% INTERESTED (confirmed from Batches 1-3)",
+      "notes": "Use for all HTTP sites. SSL signal is the strongest pain-to-action trigger found in the campaign."
+    },
+    "priority_2": {
+      "signal": "mobile",
+      "framework": "PAS",
+      "subject_pattern": "[First name] — [town] [business] site isn't mobile-friendly",
+      "expected_rate": "Low (0% confirmed INTERESTED — but Tom Day-0 mobile email triggered Day-7 reply). Do not abandon — use as secondary when SSL absent.",
+      "notes": "If ssl=false AND mobile=true: use mobile PAS. Different angle from SSL — customers can't read on phone, lost trust signal."
+    },
+    "priority_3": {
+      "signal": "no_website",
+      "framework": "BAB",
+      "subject_pattern": "[Business name] — [town] [trade]: customers can't find you online",
+      "expected_rate": "0% confirmed in Batch 4. Lower bar for Ryedale: 4★+ AND 20+ reviews (was 50+ in Batch 4).",
+      "notes": "Ryedale trades may be more open to no-website outreach given rural, offline-referral economy. Reference their Google Maps listing specifically."
+    },
+    "priority_4": {
+      "signal": "social_media_high_review",
+      "framework": "AIDA",
+      "subject_pattern": "[First name] — [N] reviews but your site isn't ranking locally",
+      "expected_rate": "0% confirmed. Pivot to KEYWORD GAP angle: 'customers searching X in Malton/Pickering can't find you' rather than abstract ranking claim.",
+      "notes": "Only for 4.5★+ with 100+ reviews. Reference the specific keyword gap: 'plumber Malton' or 'electrician Pickering'."
+    },
     "do_not_email_generic": true,
-    "confirmed_winner": "ssl → PAS → first-name subject — 3/3 INTERESTED leads used this combination. Prioritise SSL signal leads in Batch 5 above all others."
+    "do_not_email_fitness_wellness_otley": true
   },
+
   "carried_forward_blocked": {
     "lead_49": {
       "business": "East Riding Builders Ltd",
       "status": "blocked_no_email",
-      "days_blocked": 24,
-      "action": "HANDS: Companies House director name search. Overdue 24 days. Do today if Batch 5 scrape completes early."
+      "days_blocked": 31,
+      "action": "HANDS: Companies House director name search. Critically overdue — 31 days blocked. Do today if Batch 5 scrape completes early."
     },
     "lead_51": {
       "business": "Driffield Garden Centre",
       "status": "blocked_contact_form_only",
-      "days_blocked": 24,
-      "action": "HANDS: phone the business after 09:30. Still worth a call — they were a good lead."
+      "days_blocked": 31,
+      "action": "HANDS: phone the business after 09:30. 31 days blocked — may now be too stale for cold outreach. Try once more."
     },
     "lead_53": {
       "business": "Bridlington Bay Lettings",
       "status": "blocked_no_direct_email",
-      "days_blocked": 24,
+      "days_blocked": 31,
       "action": "HANDS: Rightmove / Zoopla agent directory. Try info@ as fallback."
     },
     "lead_54": {
       "business": "The Wolds Inn",
       "status": "blocked_no_email",
-      "days_blocked": 24,
+      "days_blocked": 31,
       "action": "HANDS: try info@thewoldsinn.co.uk. Low priority — do after 49, 51, 53."
     }
   },
-  "campaign_milestone": {
-    "trigger": "After fu_049 is sent today (lead 56, Neil, East Riding Electrical, ~09:45)",
-    "milestone": "ALL active sequences complete — entire cohort (~60 leads, all 4 touchpoints) through the pipeline",
-    "dataset_available": "Full campaign dataset from 2026-03-28 to 2026-04-24 — first time analysis is possible across all metrics",
-    "analysis_due": "2026-04-25 (Friday) — BRAIN to write full Week 4 strategy and post-campaign analysis",
-    "significance": "Campaign milestone #2 (after milestone #1 = first revenue). Validates pipeline architecture. Enables data-driven Batch 5 targeting."
+
+  "unconfirmed_wednesday_sends": {
+    "status": "UNCONFIRMED — now 8 days overdue. fu_041-045 send status never confirmed in CHANGELOG.",
+    "assessment": "At Day 14+8 overdue, these breakup emails have marginal value. Sending is still technically valid and respects the 4-touchpoint max — it closes the loop and leaves a professional impression. HANDS: if none of fu_041-045 were sent on 2026-04-23, send today (single batch, 10:00-11:00, IMAP check before each). Do NOT send if IMAP reveals the lead has since replied.",
+    "fu_041": {"lead_id": 30, "business": "Halifax Window Cleaning (Steve)", "status": "UNCONFIRMED"},
+    "fu_042": {"lead_id": 31, "business": "Pontefract Pharmacy", "status": "UNCONFIRMED"},
+    "fu_043": {"lead_id": 32, "business": "Castleford Carpets (Ann)", "status": "UNCONFIRMED"},
+    "fu_044": {"lead_id": 58, "business": "The Old Court Solicitors", "status": "UNCONFIRMED"},
+    "fu_045": {"lead_id": 59, "business": "Scarborough Roofing Specialists (Tony Shields)", "status": "UNCONFIRMED"}
   },
-  "sequences_completing_today": [50, 52, 55, 56],
-  "sequences_completed_to_date_confirmed": [2, 5, 7, 8, 12, 19],
-  "sequences_completed_assumed": [4, 6, 30, 31, 32, 42, 44, 46, 57, 58, 59, 60],
+
+  "warm_pipeline_status": {
+    "all_outcomes_unknown_since": "2026-04-04",
+    "days_unknown": 27,
+    "final_close_deadline_was": "2026-04-24",
+    "brain_declaration": "PRESUMED_LOST_NO_RESPONSE for all three leads. Final close deadline passed 7 days ago. HANDS: confirm via IMAP sweep today. If any conversion occurred, update CHANGELOG immediately — campaign milestone #1.",
+    "lead_1_tom_ripon_road_carpentry": "PRESUMED_LOST_NO_RESPONSE — HANDS confirm",
+    "lead_3_claire_westfield_hair": "PRESUMED_LOST_NO_RESPONSE — HANDS confirm",
+    "lead_22_rob_pennine_print": "PRESUMED_LOST_NO_RESPONSE — HANDS confirm"
+  },
+
+  "campaign_milestone_status": {
+    "fu_046_to_049": "ASSUMED SENT (2026-04-24 per plan, but unconfirmed)",
+    "all_sequences_complete": "ASSUMED — entire campaign cohort (~60 leads) through all 4 touchpoints",
+    "post_campaign_analysis": "OVERDUE — was due 2026-04-25 (Friday). Running today as part of this BRAIN run.",
+    "full_dataset_available_since": "2026-04-24 (assumed)"
+  },
+
   "summary": {
     "new_signals_assigned": 0,
     "blocked_carry_forward": 4,
-    "sends_today": 4,
-    "send_ids_today": ["fu_046", "fu_047", "fu_048", "fu_049"],
-    "sends_tomorrow": 0,
-    "pipeline_risk": "CRITICAL. 17-day new-lead gap. All existing sequences complete after today. No warm pipeline from tomorrow until Batch 5 sends fire.",
-    "batch_5_scrape_latest_acceptable_date": "2026-04-24 EOD (today)",
-    "next_brain_run_required": "2026-04-25 (Friday) — post-campaign analysis + Batch 5 copy if data returns today"
+    "sends_today": 0,
+    "campaign_stall_days": 24,
+    "imap_gap_days": 27,
+    "pipeline_risk": "CRITICAL — 24-day stall. Zero active sequences. Zero warm pipeline. Zero new-lead data. Every day without Batch 5 is a wasted send-cycle slot.",
+    "single_highest_priority_action": "HANDS: Batch 5 Ryedale scrape TODAY. Return data by 17:00 for Friday sends.",
+    "second_priority": "IMAP sweep — entire cohort. 27-day gap. Do before any sends.",
+    "third_priority": "Confirm Wednesday sends fu_041-045 and Thursday sends fu_046-049 in CHANGELOG.md"
   }
 }
