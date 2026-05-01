@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-29T07:00:00Z",
+  "generated_at": "2026-05-01T07:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-04-29",
-  "day_number": 32,
-  "note": "Day 32 (Wednesday). Zero active connection notes. No Batch 5 Ryedale data — no new leads. All Batch 1-4 sequences complete since 2026-04-24. Warm pipeline leads 1/3/22 (Tom/Claire/Rob): final close emails assumed sent 2026-04-25 (Friday). Now Day 4 of 7-day buffer — 3 days remaining. Pre-generated notes ready; earliest dispatch 2026-05-02 (Saturday), preferred 2026-05-04 (Monday). KEY: Monday 2026-05-04 is a convergence point — warm pipeline nurture + potential Batch 5 Day 3-5 window both open on the same day regardless of when Batch 5 data arrives this week.",
+  "run_date": "2026-05-01",
+  "day_number": 34,
+  "note": "Day 34 (Thursday). Warm pipeline buffer expires TOMORROW (2026-05-02, Saturday). Pre-generated notes for leads 1/3/22 are valid and ready. Preferred dispatch: Monday 2026-05-04. IMAP sweep mandatory before sending any note — 27-day gap means a silent reply is a genuine risk. Leads 1/3/22 declared PRESUMED_LOST_NO_RESPONSE in daily_signals.json. LinkedIn is the last available soft channel before archiving. No new profile data received from HANDS (linkedin_profiles_json_received = 0 across all 34 campaign days). Post_reference upgrades remain possible — HANDS must check each profile on Monday before deciding note type.",
   "strategy": {
     "character_limit": 200,
     "tone": "slightly awkward genuine compliment — stands out from polished AI outreach slop",
@@ -18,22 +18,22 @@
       "Do not reference the email outreach in warm pipeline nurture notes",
       "Do not reference any previous contact in warm pipeline nurture notes — treat as first contact"
     ],
-    "priority_upgrade_rule": "HANDS: always check LinkedIn profile for posts from last 60 days BEFORE sending any note. If post found: use post_reference note (3-4x higher acceptance rate). If no recent posts: use generic note. MANDATORY for Batch 5 and warm pipeline.",
-    "execution_protocol_batch_5": "HANDS must open LinkedIn, search, check for posts, and send the note in a SINGLE SESSION on Day 3, 4, 5, or 6 after initial email. Do not split search and send across days. The window closes automatically on Day 7 when the follow-up email fires.",
-    "warm_pipeline_note_rule": "Warm pipeline notes (leads 1/3/22) must NOT reference the email sequence, the campaign, or any prior contact. Treat as a cold LinkedIn connection from a new prospect who noticed their business online."
+    "priority_upgrade_rule": "HANDS: always check LinkedIn profile for posts from last 60 days BEFORE sending any note. If post found: use post_reference note (3-4x higher acceptance rate). If no recent posts: use generic note. MANDATORY for warm pipeline leads.",
+    "warm_pipeline_note_rule": "Warm pipeline notes (leads 1/3/22) must NOT reference the email sequence, the campaign, or any prior contact. Treat as a cold LinkedIn connection from someone who noticed their business online.",
+    "presumed_lost_framing": "These leads are PRESUMED_LOST_NO_RESPONSE. The LinkedIn note is a soft, no-pressure connection — not a follow-up. The note does not reference any email exchange. If they connect and message, respond naturally. Do not immediately pitch."
   },
   "active_notes": [],
   "active_notes_count": 0,
-  "no_active_notes_reason": "No leads in Day 3-6 LinkedIn eligibility window. All Batch 1-4 complete. No Batch 5 data. Warm pipeline 1/3/22 in 7-day post-close buffer (Day 4 of 7 — 3 days remaining).",
+  "no_active_notes_reason": "Warm pipeline leads 1/3/22 still have 1 day remaining in the 7-day post-close buffer (expires 2026-05-02 — TOMORROW). Notes become eligible tomorrow; preferred dispatch Monday 2026-05-04. No Batch 5 leads. All Batch 1-4 sequences complete.",
   "warm_pipeline_nurture_notes": {
-    "status": "PRE-GENERATED — ready for dispatch on 2026-05-02 (Saturday) or 2026-05-04 (Monday preferred)",
+    "status": "PRE-GENERATED — ready for dispatch from 2026-05-02 (Saturday) or 2026-05-04 (Monday preferred)",
     "buffer_started": "2026-04-25 (Friday — assumed send date of final close emails)",
-    "buffer_expires": "2026-05-02",
-    "days_remaining_in_buffer": 3,
-    "trigger_condition": "Final close emails sent 2026-04-25 (assumed) AND no email reply received by 2026-05-02",
-    "do_not_send_if": "Any of these leads reply to the final close email at any point — even a rejection. LinkedIn is permanently closed if an email reply arrives.",
-    "hands_check_required": "Before sending any of these notes: HANDS must (1) confirm final close was sent 2026-04-25, (2) check IMAP on send day — if reply found after close was sent: cancel LinkedIn note for that lead immediately. (3) IMAP gap is 25 days — a silent reply is plausible for any of these leads.",
-    "convergence_alert": "Monday 2026-05-04 is convergence day — warm pipeline nurture AND potential Batch 5 Day 3-5 window both open simultaneously. HANDS: plan a combined LinkedIn session on Monday. Do not split across days.",
+    "buffer_expires": "2026-05-02 (TOMORROW — Saturday)",
+    "days_remaining_in_buffer": 1,
+    "trigger_condition": "Final close emails assumed sent 2026-04-25 AND no email reply received by 2026-05-02",
+    "do_not_send_if": "IMAP reveals any email reply from the lead since 2026-04-04 — including rejection, further discussion, or conversion. LinkedIn is permanently closed if any email reply arrives.",
+    "imap_check_required": "MANDATORY — 27-day IMAP gap. HANDS: sweep IMAP first. Any reply cancels the LinkedIn option for that lead.",
+    "upgrade_decision": "On Monday 2026-05-04: for each lead, run Google query → open profile → check for posts from last 60 days → if post found: write bespoke post_reference note → if no post: use generic note below. Count chars before sending.",
     "notes": [
       {
         "lead_id": 1,
@@ -42,18 +42,21 @@
         "town": "Ripon",
         "county": "North Yorkshire",
         "sector": "Carpentry / trades",
+        "brain_status": "PRESUMED_LOST_NO_RESPONSE — INTERESTED reply 2026-04-04 (pricing question). Final close assumed sent 2026-04-25. No confirmed reply since.",
+        "linkedin_sector": "low — trades, first name only. Attempt because lead showed genuine intent.",
         "linkedin_search_query": "site:linkedin.com/in \"Tom\" \"Ripon Road Carpentry\"",
-        "linkedin_search_fallback": "site:linkedin.com/in carpentry joiner \"Ripon\" \"North Yorkshire\" owner",
+        "linkedin_search_fallback": "site:linkedin.com/in carpentry joinery \"Ripon\" \"North Yorkshire\" owner",
         "note_type": "generic",
         "note": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
         "char_count": 193,
         "within_limit": true,
-        "post_reference_upgrade": "If Tom has posted about carpentry projects, heritage joinery, North Yorkshire builds, or trade work in the last 60 days: upgrade to post_reference. Keep under 200 chars.",
+        "post_reference_upgrade": "If Tom has posted about carpentry projects, heritage joinery, North Yorkshire builds, or trade news in the last 60 days: write a bespoke post_reference note. Keep under 200 chars. Template below.",
         "post_reference_template": "Tom — saw your post about [X]. Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my eye. Connecting in case useful.",
+        "post_reference_char_count_template": 192,
         "earliest_send_date": "2026-05-02",
-        "preferred_send_date": "2026-05-04 (Monday — better acceptance rate than Saturday)",
-        "do_not_send_if": "Tom has replied to the final close email at any point (including rejection)",
-        "notes_about_lead": "First-name-only lead. Spring carpentry season — pain may have sharpened. Confirm the LinkedIn profile is clearly the owner/operator of Ripon Road Carpentry in Ripon before connecting. Email reply received 2026-04-04 — INTERESTED."
+        "preferred_send_date": "2026-05-04 (Monday)",
+        "do_not_send_if": "Tom has replied to any email at any point (including after 2026-04-04 — IMAP gap means this is unconfirmed)",
+        "notes_about_lead": "First-name-only lead. Spring/early-summer carpentry season — pain around online presence may be fresh. Confirm LinkedIn profile is clearly the owner/operator of Ripon Road Carpentry in Ripon before connecting."
       },
       {
         "lead_id": 3,
@@ -62,18 +65,21 @@
         "town": "Leeds",
         "county": "West Yorkshire",
         "sector": "Hair & beauty / salon",
+        "brain_status": "PRESUMED_LOST_NO_RESPONSE — INTERESTED reply 2026-04-04 (booked call 2026-04-07). Final close assumed sent 2026-04-25. No confirmed reply since.",
+        "linkedin_sector": "high — salons typically active on LinkedIn and social media. Post_reference upgrade expected.",
         "linkedin_search_query": "site:linkedin.com/in \"Claire\" \"Westfield Hair\" Leeds",
         "linkedin_search_fallback": "site:linkedin.com/in hairdresser salon owner \"Leeds\" \"West Yorkshire\"",
         "note_type": "generic",
         "note": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
         "char_count": 191,
         "within_limit": true,
-        "post_reference_upgrade": "If Claire has posted about salon news, team achievements, client transformations, or Leeds business content in the last 60 days: upgrade to post_reference.",
+        "post_reference_upgrade": "STRONGLY PREFERRED. If Claire has posted about salon news, team achievements, client work, Leeds business content, or seasonal offers in the last 60 days: write bespoke post_reference note. Salons post frequently — this upgrade is highly likely.",
         "post_reference_template": "Claire — saw your post about [X]. Westfield Hair & Beauty caught my attention looking at independent salons in Leeds. Noticed something about the online presence. Connecting in case it's relevant.",
+        "post_reference_char_count_template": 191,
         "earliest_send_date": "2026-05-02",
         "preferred_send_date": "2026-05-04 (Monday)",
-        "do_not_send_if": "Claire has replied to the final close email at any point. She booked a call (2026-04-07) — LinkedIn permanently blocked if email conversation resumes.",
-        "notes_about_lead": "STRONGEST warm pipeline lead. Booked a call, identified booking pain. High LinkedIn presence expected — salons typically active on social. Upgrade to post_reference if profile has recent posts. Do not reference the call or any previous contact."
+        "do_not_send_if": "Claire has replied to any email at any point. She booked a call on 2026-04-07 — extra caution: confirm the email thread is genuinely dead. If any reply found: LinkedIn permanently blocked.",
+        "notes_about_lead": "STRONGEST warm pipeline lead. Booked a call, identified booking pain independently. High LinkedIn presence expected. Do not reference the call, the email, or any previous contact in the note."
       },
       {
         "lead_id": 22,
@@ -82,26 +88,48 @@
         "town": "Sowerby Bridge",
         "county": "West Yorkshire",
         "sector": "Print & design / B2B services",
+        "brain_status": "PRESUMED_LOST_NO_RESPONSE — INTERESTED reply 2026-04-04 (upsell signal: 'sort the whole thing in one go'). Final close assumed sent 2026-04-25. No confirmed reply since.",
+        "linkedin_sector": "high — B2B print/design typically well-represented on LinkedIn for client and supplier relationships.",
         "linkedin_search_query": "site:linkedin.com/in \"Rob\" \"Pennine Print\" \"Sowerby Bridge\"",
         "linkedin_search_fallback": "site:linkedin.com/in print design owner director \"Sowerby Bridge\" OR \"Halifax\" \"West Yorkshire\"",
         "note_type": "generic",
         "note": "Rob — Pennine Print & Design stood out when I was looking at print businesses in Sowerby Bridge. Noticed something about the website worth a quick mention. Connecting in case it's relevant.",
         "char_count": 188,
         "within_limit": true,
-        "post_reference_upgrade": "If Rob has posted about print projects, B2B design work, West Yorkshire business content, or Pennine Print news in the last 60 days: upgrade to post_reference.",
+        "post_reference_upgrade": "If Rob has posted about print projects, B2B design work, West Yorkshire business content, or Pennine Print news in the last 60 days: write bespoke post_reference note.",
         "post_reference_template": "Rob — saw your post about [X]. Pennine Print & Design came up looking at print businesses around Sowerby Bridge. Something about the website caught my attention. Connecting in case it's useful.",
+        "post_reference_char_count_template": 192,
         "earliest_send_date": "2026-05-02",
         "preferred_send_date": "2026-05-04 (Monday)",
-        "do_not_send_if": "Rob has replied to the final close email at any point. Upsell signal: 'sort the whole thing in one go' — highest revenue potential in campaign. If email conversation resumes: LinkedIn permanently blocked.",
-        "notes_about_lead": "HIGHEST REVENUE POTENTIAL — upsell signal. B2B print/design sector: high LinkedIn presence expected. Confirm profile ownership before connecting. Do not reference the email or any prior contact."
+        "do_not_send_if": "Rob has replied to any email at any point. Upsell signal was strong — a late reply is plausible. IMAP sweep is especially important for this lead.",
+        "notes_about_lead": "HIGHEST REVENUE POTENTIAL — upsell signal. B2B print/design sector. High LinkedIn presence expected. Confirm profile ownership before connecting. Do not reference the email or any prior contact."
       }
     ]
   },
+  "batch_5_note_templates": {
+    "status": "READY — templates prepared. Note generation begins on Day 3 after Batch 5 initial emails fire. If sends fire Friday 2026-05-02: Day 3 = Monday 2026-05-04 directly.",
+    "target_area": "Ryedale District, North Yorkshire",
+    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
+    "post_reference_template": "[Name] — saw your post about [X]. [Business] caught my eye looking at [trade] businesses in [town]. Noticed something about the site worth mentioning. Connecting in case it's useful.",
+    "generic_template": "[Name] — [Business] came up when I was looking at [trade] businesses in [town]. Something about the [website/online presence] caught my attention. Connecting in case it's relevant.",
+    "headline_template": "[Name] — [headline reference] caught my attention. [Business] came up looking at [trade] businesses in [town]. Noticed something about the online presence. Connecting in case it's useful.",
+    "char_limit_reminder": "All notes must be trimmed to 200 chars or fewer. Count every character — LinkedIn free account limit is absolute.",
+    "upgrade_decision_matrix": {
+      "post_from_last_60_days_found": "USE post_reference — highest acceptance rate (3-4x over generic)",
+      "distinctive_headline_found": "USE headline — e.g. 'Malton's only RICS-registered surveyor' → reference the credential specifically",
+      "active_profile_no_recent_post": "USE generic — effective, non-AI-sounding",
+      "inactive_profile_or_no_profile": "SKIP — log in linkedin_profiles.json as 'not_found' or 'inactive'. Do not send generic to a profile with zero activity."
+    },
+    "sector_priority": {
+      "high_linkedin_presence_attempt_all": ["solicitors", "accountants", "estate agents", "hotels/B&Bs", "restaurants", "care providers", "leisure/sports clubs"],
+      "low_linkedin_presence_full_name_only": ["plumbers", "electricians", "roofers", "joiners", "builders"],
+      "low_linkedin_presence_skip_if_first_name_only": ["plumbers", "electricians", "roofers", "joiners", "builders"]
+    }
+  },
   "post_breakup_contingency": {
-    "applies_if": "HANDS sent LinkedIn connection requests to leads 52/55/50/56 on or around Day 23-26 of the campaign and those requests have not yet been accepted — and a lead accepts today or in coming days",
+    "applies_if": "HANDS sent LinkedIn connection requests to leads 52/55/50/56 during campaign and those requests are accepted",
     "rule": "If a lead accepts post-breakup: send the if_accepted_message ONLY. Do NOT reference the breakup email or the email sequence. Respond naturally as a new LinkedIn connection.",
-    "probability": "LOW — but these four requests (if they were sent) may still be pending in the connection queue. Monitor for 30 days post-send.",
-    "confirmed_sent_status": "UNCONFIRMED — BRAIN has received zero linkedin_profiles.json files across 12 consecutive runs. It is unknown whether HANDS sent any connection requests at any point during the campaign.",
+    "confirmed_sent_status": "UNCONFIRMED — 0 linkedin_profiles.json files received across 34 campaign days. It is unknown whether any connection requests were ever sent.",
     "pending_leads": [
       {
         "lead_id": 52,
@@ -109,8 +137,7 @@
         "owner_name": "Linda Walsh",
         "if_accepted_message": "Linda — thanks for connecting. I noticed something about the Holderness Homecare online presence worth a quick mention. Happy to share if useful.",
         "char_count": 140,
-        "within_limit": true,
-        "notes": "Care sector — empathetic and professional tone. Do not mention the breakup email (fu_046, assumed sent 2026-04-24)."
+        "within_limit": true
       },
       {
         "lead_id": 55,
@@ -118,8 +145,7 @@
         "owner_name": "Craig Lawson",
         "if_accepted_message": "Craig — thanks for connecting. Noticed something about the Beverley Sports & Leisure online presence worth mentioning. Happy to share if it's useful.",
         "char_count": 152,
-        "within_limit": true,
-        "notes": "Sports/leisure sector. Professional, slightly casual tone. Do not mention fu_047."
+        "within_limit": true
       },
       {
         "lead_id": 50,
@@ -127,8 +153,7 @@
         "owner_name": "Pete",
         "if_accepted_message": "Pete — thanks for connecting. Spotted something about The Harbour Fish Bar website worth a quick mention. Happy to share if it's relevant.",
         "char_count": 138,
-        "within_limit": true,
-        "notes": "First-name-only lead. Confirm the profile is clearly identifiable as the owner of The Harbour Fish Bar in Bridlington before messaging. Do not mention fu_048."
+        "within_limit": true
       },
       {
         "lead_id": 56,
@@ -136,31 +161,9 @@
         "owner_name": "Neil",
         "if_accepted_message": "Neil — thanks for connecting. Noticed something about the East Riding Electrical website worth a quick mention. Happy to share if it's useful.",
         "char_count": 143,
-        "within_limit": true,
-        "notes": "First-name-only lead. Sole-trader electrician. Confirm profile ownership before messaging. Do not mention fu_049 (final campaign send)."
+        "within_limit": true
       }
     ]
-  },
-  "batch_5_note_templates": {
-    "status": "READY — templates prepared. Note generation begins on Day 3 after Batch 5 initial emails fire. If sends fire today (Wednesday 2026-04-29): Day 3 = Saturday 2026-05-02 → weekend hold → Day 5 = Monday 2026-05-04.",
-    "target_area": "Ryedale District, North Yorkshire",
-    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
-    "post_reference_template": "[Name] — saw your post about [X]. [Business] caught my eye looking at [trade] businesses in [town]. Noticed something about the site worth mentioning. Connecting in case it's useful.",
-    "generic_template": "[Name] — [Business] came up when I was looking at [trade] businesses in [town]. Something about the [website/online presence] caught my attention. Connecting in case it's relevant.",
-    "headline_template": "[Name] — [headline reference] caught my attention. [Business] came up looking at [trade] businesses in [town]. Noticed something about the online presence. Connecting in case it's useful.",
-    "char_limit_reminder": "All notes must be trimmed to 200 chars or fewer before sending. Count carefully — LinkedIn free account limit is absolute.",
-    "upgrade_decision_matrix": {
-      "post_from_last_60_days_found": "USE post_reference — highest acceptance rate (3-4x over generic)",
-      "distinctive_headline_found": "USE headline — e.g. 'Malton's only RICS-registered surveyor' → reference the credential specifically",
-      "active_profile_no_recent_post": "USE generic — still effective, clean, non-AI-sounding",
-      "inactive_profile_or_no_profile": "SKIP — log in linkedin_profiles.json as 'not_found' or 'inactive'. Do not send generic to a profile with zero activity."
-    },
-    "sector_priority_batch_5": {
-      "high_linkedin_presence_attempt_all": ["solicitors", "accountants", "estate agents", "hotels / B&Bs", "restaurants", "care providers", "leisure / sports clubs"],
-      "low_linkedin_presence_full_name_only": ["plumbers", "electricians", "roofers", "joiners", "builders"],
-      "low_linkedin_presence_skip_if_first_name_only": ["plumbers", "electricians", "roofers", "joiners", "builders"],
-      "note": "Ryedale target categories include joiners, builders, plumbers — expect lower LinkedIn presence for these trades. Prioritise SSL leads in high-LinkedIn sectors first."
-    }
   },
   "archived_notes": [
     {
@@ -170,7 +173,7 @@
       "town": "Holderness",
       "county": "East Riding of Yorkshire",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_046 assumed sent 2026-04-24 at 09:00. Email sequence complete. LinkedIn window closed.",
+      "archive_reason": "Breakup email fu_046 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed.",
       "note_type": "generic",
       "note": "Linda — Holderness Homecare came up when I was looking at independent care providers around Beverley. Something about the online presence caught my attention. Connecting in case it's relevant.",
       "char_count": 191,
@@ -183,7 +186,7 @@
       "town": "Beverley",
       "county": "East Riding of Yorkshire",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_047 assumed sent 2026-04-24 at 09:15. Email sequence complete. LinkedIn window closed.",
+      "archive_reason": "Breakup email fu_047 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed.",
       "note_type": "generic",
       "note": "Craig — Beverley Sports & Leisure caught my eye looking at leisure businesses in the East Riding. Noticed something about the online presence worth mentioning. Connecting in case it's useful.",
       "char_count": 188,
@@ -196,7 +199,7 @@
       "town": "Bridlington",
       "county": "East Riding of Yorkshire",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_048 assumed sent 2026-04-24 at 09:30. Email sequence complete. LinkedIn window closed.",
+      "archive_reason": "Breakup email fu_048 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed.",
       "note_type": "generic",
       "note": "Pete — The Harbour Fish Bar stood out looking at Bridlington seafront businesses. Something on the website caught my eye — worth a mention. Connecting in case it's useful.",
       "char_count": 169,
@@ -209,7 +212,7 @@
       "town": "Beverley",
       "county": "East Riding of Yorkshire",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_049 assumed sent 2026-04-24 at 09:45. FINAL SEND OF CAMPAIGN COHORT. Email sequence complete. LinkedIn window closed.",
+      "archive_reason": "Breakup email fu_049 assumed sent 2026-04-24. FINAL SEND OF CAMPAIGN COHORT. Email sequence complete. LinkedIn window closed.",
       "note_type": "generic",
       "note": "Neil — East Riding Electrical came up when I was looking at trades businesses in Beverley. Something about the website I thought was worth a quick mention. Connecting in case it's relevant.",
       "char_count": 187,
@@ -221,24 +224,27 @@
     "total_confirmed_connections_made": 0,
     "brain_runs_with_active_notes": 7,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 12,
-    "root_cause": "HANDS execution latency. LinkedIn window (Day 3-6) is narrow and cannot be recovered once missed. Notes were generated correctly by BRAIN on 7 consecutive runs. Zero notes were confirmed sent by HANDS.",
-    "key_learning": "The 'post_reference upgrade' step requires HANDS to check each profile BEFORE sending — this step was not executed once across 32 campaign days. For Batch 5: HANDS must open LinkedIn, search, check for posts, and send in a SINGLE session on the correct day.",
-    "batch_5_protocol_change": "BRAIN flags Day 3 LinkedIn send day explicitly in daily_signals.json as a MANDATORY action item with a 2-hour execution target. HANDS must write linkedin_profiles.json after every search session — even if no note was sent. The window is not recoverable after Day 6."
+    "consecutive_runs_without_profiles": 13,
+    "root_cause": "HANDS execution latency. LinkedIn window (Day 3-6) is narrow and cannot be recovered once missed. Notes were generated correctly by BRAIN on 7 consecutive runs. Zero notes confirmed sent by HANDS across 34 campaign days.",
+    "key_learning": "The 'post_reference upgrade' step requires HANDS to check each profile BEFORE sending — this step was not executed once across 34 campaign days. For warm pipeline and Batch 5: HANDS must open LinkedIn, search, check for posts, and send in a SINGLE SESSION.",
+    "monday_protocol_change": "BRAIN flags Monday 2026-05-04 as a MANDATORY combined LinkedIn session in daily_signals.json. Warm pipeline nurture + Batch 5 Day 3 (if sends fire Friday). HANDS must write linkedin_profiles.json after every search session — even if no note was sent. This has not happened once in 34 days."
   },
   "summary": {
     "total_active_notes": 0,
     "warm_pipeline_nurture_notes_pre_generated": 3,
     "warm_pipeline_nurture_lead_ids": [1, 3, 22],
-    "warm_pipeline_buffer_days_remaining": 3,
+    "warm_pipeline_buffer_days_remaining": 1,
+    "warm_pipeline_buffer_expires": "2026-05-02 (TOMORROW — Saturday)",
     "warm_pipeline_nurture_earliest_send": "2026-05-02",
     "warm_pipeline_nurture_preferred_send": "2026-05-04 (Monday)",
+    "warm_pipeline_brain_status": "PRESUMED_LOST_NO_RESPONSE — LinkedIn is the last soft channel before archiving",
     "total_archived": 4,
     "archived_ids": [52, 55, 50, 56],
     "post_breakup_contingency_leads": [52, 55, 50, 56],
-    "consecutive_runs_without_linkedin_profiles": 12,
+    "consecutive_runs_without_linkedin_profiles": 13,
     "campaign_linkedin_contacts_confirmed": 0,
-    "key_convergence_date": "2026-05-04 (Monday) — warm pipeline nurture + Batch 5 Day 3-5 window both active simultaneously if Batch 5 data arrives this week",
-    "next_active_notes": "Warm pipeline nurture (leads 1/3/22) on 2026-05-04 (Monday, preferred) if no email reply by 2026-05-02. Batch 5 notes generated same session if initial emails fire this week."
+    "imap_gap_days": 27,
+    "key_action_monday_2026_05_04": "Combined LinkedIn session: IMAP sweep first → Batch 5 Day 3 connections (if applicable) → warm pipeline nurture (1/3/22) → write linkedin_profiles.json immediately",
+    "next_active_notes": "Warm pipeline nurture (leads 1/3/22) from 2026-05-02 (preferred: Monday 2026-05-04) if IMAP confirms no email reply. Batch 5 notes on Day 3 after initial sends."
   }
 }
