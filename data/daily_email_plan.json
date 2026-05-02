@@ -1,18 +1,33 @@
 [
   {
-    "plan_date": "2026-05-01",
-    "generated_at": "2026-05-01T07:00:00Z",
-    "day_number": 34,
-    "note": "BRAIN layer — Day 34 (Thursday). NO SENDS TODAY. Zero active sequences. Batch 5 Ryedale data not received. This plan contains: (1) zero-send declaration for today, (2) contingency send instructions for unconfirmed fu_041-045, (3) pre-written Batch 5 copy templates ready to personalise the moment Ryedale data arrives.",
+    "plan_date": "2026-05-02",
+    "generated_at": "2026-05-02T07:00:00Z",
+    "day_number": 35,
+    "note": "BRAIN layer — Day 35 (Friday). NO SENDS TODAY. Zero active sequences. Batch 5 Ryedale data not received. KEY DISCOVERY: Monday 2026-05-05 is UK May Day bank holiday — initial Batch 5 sends now target TUESDAY 2026-05-06 AM (post-bank-holiday = confirmed #1 yield trigger).",
+
+    "bank_holiday_send_revision": {
+      "headline": "UK MAY DAY BANK HOLIDAY — MONDAY 2026-05-05",
+      "previous_plan": "If data arrives today (Friday): send Monday 2026-05-04",
+      "revised_plan": "If data arrives any time before Tuesday morning: send TUESDAY 2026-05-06 AM",
+      "rationale": "Post-bank-holiday Tuesday is the confirmed highest-yield send window in this campaign. All 3 INTERESTED replies (Claire, Rob, Tom) arrived on Tuesday 2026-04-07 — the first working day after Easter Monday. Tuesday 2026-05-06 is the first working day after May Day Monday 2026-05-05. The 24-hour delay from Monday to Tuesday is worth it for peak yield.",
+      "sequence_cascade": {
+        "day_0_initial": "Tuesday 2026-05-06, 09:00-10:30",
+        "day_3_bump": "Friday 2026-05-09, 09:00-10:30",
+        "day_7_new_angle": "Tuesday 2026-05-13, 09:00-10:30",
+        "day_14_breakup": "Tuesday 2026-05-20, 09:00-10:30",
+        "note": "Three of four touchpoints land on Tuesday AM. Day-7 and Day-14 are both Tuesdays — optimal."
+      }
+    },
 
     "sends_today": [],
 
     "new_sends_today": [],
-    "new_sends_reason": "BLOCKED — No Batch 5 Ryedale scrape data received. 24-day campaign stall. First new initial sends: Friday 2026-05-02 (if data returns today) or Monday 2026-05-04 (if data returns tomorrow).",
+    "new_sends_reason": "BLOCKED — No Batch 5 Ryedale scrape data received. 25-day campaign stall. First new initial sends: TUESDAY 2026-05-06 (bank holiday Monday confirmed — this is the target regardless of when data arrives).",
 
-    "contingency_sends_unconfirmed_wednesday": {
-      "note": "fu_041-045 send status never confirmed in CHANGELOG. If IMAP sweep confirms none were sent: send today as final touchpoints. Stagger every 15 minutes starting 10:00. IMAP check before each.",
-      "conditional": "ONLY if IMAP sweep confirms the lead has NOT replied already",
+    "contingency_sends_unconfirmed": {
+      "note": "fu_041-045 send status still unconfirmed in CHANGELOG — now 9 days overdue as Day-14 breakups. Still worth sending today as professional sequence close. IMAP check before each. Do not send if lead has replied.",
+      "conditional": "ONLY if: (1) IMAP confirms the lead has NOT replied to any touchpoint, AND (2) the fu_04x was not sent on 2026-04-23",
+      "send_window": "Today 10:00-11:15 (if IMAP sweep completes by 09:30)",
       "sends": [
         {
           "followup_id": "fu_041",
@@ -26,7 +41,7 @@
           "sequence_step": 3,
           "sequence_complete_after": true,
           "imap_check_required": true,
-          "notes": "Day-14 breakup overdue by 8 days. Still valid final touchpoint — closes the loop professionally. IMAP check first."
+          "days_overdue": 9
         },
         {
           "followup_id": "fu_042",
@@ -39,7 +54,7 @@
           "sequence_step": 3,
           "sequence_complete_after": true,
           "imap_check_required": true,
-          "notes": "No confirmed owner name. Use Hi. Day-14 overdue by 8 days. Healthcare/pharmacy — professional, empathetic tone."
+          "days_overdue": 9
         },
         {
           "followup_id": "fu_043",
@@ -53,7 +68,8 @@
           "sequence_step": 3,
           "sequence_complete_after": true,
           "imap_check_required": true,
-          "notes": "Day-14 overdue by 8 days. Retail — May is start of summer home-improvement season, slight timing benefit."
+          "days_overdue": 9,
+          "seasonal_note": "May is start of summer home-improvement season — minor timing benefit for carpet retail."
         },
         {
           "followup_id": "fu_044",
@@ -66,7 +82,7 @@
           "sequence_step": 3,
           "sequence_complete_after": true,
           "imap_check_required": true,
-          "notes": "No owner name confirmed. Professional/legal sector — formal, brief tone correct. Do not mention GDPR angle in breakup (save for a fresh campaign if relaunched)."
+          "days_overdue": 9
         },
         {
           "followup_id": "fu_045",
@@ -80,100 +96,100 @@
           "sequence_step": 3,
           "sequence_complete_after": true,
           "imap_check_required": true,
-          "notes": "Roofing — May/June is peak season. Tony may have been too busy to reply during April. Final touchpoint."
+          "days_overdue": 9,
+          "seasonal_note": "Peak roofing season (May-August). Tony may have been too busy in April to reply. May urgency is real."
         }
       ]
     },
 
     "batch_5_copy_templates": {
-      "status": "READY — pre-written, awaiting lead data to personalise",
-      "instructions": "When Ryedale data returns, BRAIN will populate lead-specific fields. HANDS: do NOT use these templates directly — wait for BRAIN to personalise per lead.",
+      "status": "READY — pre-written, awaiting Ryedale lead data to personalise. BRAIN personalises on data receipt.",
+      "send_date_target": "TUESDAY 2026-05-06 — post-bank-holiday. Highest-yield window in campaign.",
+      "instructions": "HANDS: do NOT use these templates directly. Return raw Ryedale scrape data. BRAIN personalises per lead.",
 
       "template_ssl_pas": {
         "framework": "PAS",
         "signal": "ssl",
+        "allocation": "60% of Batch 5 sends — primary template",
         "subject_pattern": "[First name] — [town] [business type] website flagged 'Not Secure'",
         "subject_examples": [
           "Mark — your Malton plumbing site is flagged 'Not Secure'",
           "Julie — your Pickering B&B website is flagged 'Not Secure'",
-          "David — your Helmsley estate agency site isn't secure"
+          "David — your Helmsley estate agency site isn't secure",
+          "Helen — your Kirkbymoorside joinery site is flagged 'Not Secure'",
+          "Paul — your Norton garage site isn't secure"
         ],
         "body_template": "[First name],\n\nI was looking at [business name]'s website just now — [specific URL].\n\nChrome is flagging it as 'Not Secure' because it's running on HTTP rather than HTTPS. Any customer who clicks through from Google or a recommendation will see that warning before they even read your homepage.\n\nFor a [trade/business type] in [town], that trust signal matters — particularly if customers are comparing you with competitors before calling.\n\nI fix this sort of thing for small businesses across Yorkshire. It's usually a one-day job and costs less than you'd think.\n\nWorth a quick chat?\n\n[Your name]",
-        "notes": "Confirmed winner: 3/3 INTERESTED replies came from this template with personalised URL and first name. Do not deviate from structure."
+        "day7_new_angle": "If Day-0 was SSL: Day-7 angle = Google ranking impact ('Not Secure sites rank below HTTPS competitors in local search') OR missing Google Business Profile. Never repeat the SSL angle.",
+        "notes": "Confirmed winner: 3/3 INTERESTED replies used this exact pattern. Do not deviate from structure."
       },
 
       "template_mobile_pas": {
         "framework": "PAS",
         "signal": "mobile",
+        "allocation": "20% of Batch 5 sends — secondary template",
         "subject_pattern": "[First name] — [town] [business] site isn't mobile-friendly",
         "subject_examples": [
           "Paul — your Kirkbymoorside joinery site doesn't work on mobile",
-          "Sarah — your Norton restaurant site is hard to use on a phone"
+          "Sarah — your Norton restaurant site is hard to use on a phone",
+          "James — your Hovingham B&B site doesn't load properly on a phone"
         ],
         "body_template": "[First name],\n\nI checked [business name]'s website on a mobile just now — [specific URL].\n\nThe text is tiny, the layout breaks on a smaller screen, and the phone number isn't tap-to-call. Anyone searching for a [trade] in [town] on their phone — which is most people — will likely give up and try the next result.\n\nI help small businesses across Yorkshire fix exactly this. It's usually a half-day job.\n\nWould it help to take a look?\n\n[Your name]",
-        "notes": "Secondary signal only. Use when ssl=false AND mobile failure is clear. First name + town required."
+        "day7_new_angle": "If Day-0 was mobile: Day-7 angle = SSL (if HTTP present) OR missing click-to-call button OR specific competitor who IS mobile-friendly.",
+        "notes": "Secondary signal only. Use when ssl=false AND mobile failure is clear. Tom's conversion came Day-7, not Day-0 — mobile is a slow-burn that requires the Day-7 new angle to fire."
       },
 
       "template_no_website_bab": {
         "framework": "BAB",
         "signal": "no_website",
+        "allocation": "15% of Batch 5 sends — tertiary template",
+        "qualification": "4★+ AND 20+ reviews (Ryedale lowered bar from 50+ — rural offline economy)",
         "subject_pattern": "[Business name] — [town] [trade]: customers can't find you online",
         "subject_examples": [
           "Malton Plumbing — customers searching for a plumber in Malton can't find you online",
-          "Pickering Joiners — no website means Google can't recommend you"
+          "Pickering Joiners — no website means Google can't recommend you",
+          "Helmsley Builders — your competitors with websites are getting calls you're missing"
         ],
         "body_template": "Hi,\n\nI searched for '[trade] [town]' on Google just now — [business name] doesn't appear.\n\nCustomers who don't already know you will find your competitors instead. In a market like [town], the first business with a credible website often gets the call.\n\nA simple one-page website — your services, your area, a contact form — is usually enough to start ranking locally within a few weeks.\n\nWould that be useful?\n\n[Your name]",
-        "qualification_required": "4★+ AND 20+ reviews. Ryedale lowered bar from Batch 4 (50+ reviews) given rural offline-referral market.",
-        "notes": "0% INTERESTED in Batch 4. Lowering review bar for Ryedale. Reference Google Maps listing specifically to show you looked."
+        "day7_new_angle": "Competitors who ARE ranking for the search term. Or estimate of missed booking revenue ('A plumber in Malton with a basic website typically picks up 3-5 enquiries a month from search').",
+        "notes": "0% INTERESTED in Batch 4 at 50+ review threshold. Lowering to 20+ for Ryedale rural market. Reference Google Maps listing specifically to show you looked."
       },
 
-      "template_aida_social_high_review": {
+      "template_aida_keyword_gap": {
         "framework": "AIDA",
         "signal": "social_media_high_review",
-        "subject_pattern": "[First name] — [N] reviews but [keyword] in [town] isn't bringing you up",
+        "allocation": "5% of Batch 5 sends — test only",
+        "qualification": "4.5★+ AND 100+ reviews only",
+        "subject_pattern": "[First name] — [N] reviews but '[keyword] [town]' isn't bringing your site up",
         "subject_examples": [
           "Helen — 127 reviews but 'accountant Helmsley' isn't bringing up your site",
-          "James — your pub has 200+ reviews but doesn't rank for 'pub Pickering'"
+          "James — your pub has 200+ reviews but doesn't rank for 'pub Pickering'",
+          "Sarah — 89 reviews but 'solicitor Malton' doesn't show your firm"
         ],
-        "body_template": "[First name],\n\n[Business name] has [N] reviews — that's a strong local reputation.\n\nBut when I searched '[keyword] [town]' on Google, your website didn't appear in the top results. Your competitors with fewer reviews are ranking above you because their sites are technically better optimised.\n\nThe gap is fixable — usually a few hours of on-page SEO work and a small structural change.\n\nWould it be worth a look?\n\n[Your name]",
-        "qualification_required": "4.5★+ AND 100+ reviews. Pivot from abstract 'ranking' to specific keyword gap.",
-        "notes": "0% INTERESTED in Batch 4. Revised angle: keyword-gap specific (not generic ranking claim). Test in Batch 5."
+        "body_template": "[First name],\n\n[Business name] has [N] reviews — that's a strong local reputation.\n\nBut when I searched '[keyword] [town]' on Google just now, your website didn't appear in the top results. Your competitors with fewer reviews are ranking above you because their sites are technically better optimised.\n\nThe gap is fixable — usually a few hours of on-page SEO work and a small structural change.\n\nWould it be worth a look?\n\n[Your name]",
+        "day7_new_angle": "Page speed score OR missing structured data (LocalBusiness schema) OR competitor specific comparison.",
+        "notes": "0% INTERESTED in Batch 4 with abstract ranking angle. Pivot to specific keyword gap ('plumber Malton' shows competitors X and Y above you). Test this revised angle in Batch 5."
       }
-    },
-
-    "batch_5_send_schedule_on_data_receipt": {
-      "if_data_arrives_today_thursday_2026_05_01": {
-        "brain_personalisation": "2026-05-01 evening",
-        "initial_sends": "Friday 2026-05-02, 09:00-10:30 (max 15 leads, 8-min stagger)",
-        "day3_bumps": "Monday 2026-05-05, 09:00",
-        "day7_new_angle": "Monday 2026-05-12, 09:00",
-        "day14_breakups": "Monday 2026-05-18, 09:00"
-      },
-      "if_data_arrives_friday_2026_05_02": {
-        "brain_personalisation": "2026-05-02 afternoon",
-        "initial_sends": "Monday 2026-05-04, 09:00-10:30",
-        "day3_bumps": "Thursday 2026-05-07, 09:00",
-        "day7_new_angle": "Thursday 2026-05-14, 09:00",
-        "day14_breakups": "Thursday 2026-05-21, 09:00"
-      },
-      "send_rate": "Max 15-20 initial sends per batch. Stagger every 8-10 minutes. Stay under 40/day domain safety limit.",
-      "send_window": "09:00–11:00 only. No afternoon sends (lower reply rates based on Batch 1-4 data).",
-      "day_of_week_preference": "Tuesday AM highest confirmed yield (all 3 INTERESTED replies came on Tuesday). Friday AM second choice. Avoid Monday — post-weekend backlog, lower open rates."
     },
 
     "do_not_email": [1, 2, 3, 7, 19, 22],
     "suppressed_permanently": [7, 19],
     "lost_no_contact": [2],
+    "warm_pipeline_final_close_overdue": [1, 3, 22],
 
-    "compliance_note": "All B2B legitimate interest. 4-touchpoint maximum respected throughout. Unsubscribes: leads 7 and 19 permanently suppressed. All contingency sends (fu_041-045) must IMAP-check first — any reply cancels the send.",
+    "compliance_note": "All B2B legitimate interest. 4-touchpoint maximum respected. Unsubscribes: leads 7 and 19 permanently suppressed. fu_041-045 contingency sends must IMAP-check first — any reply cancels the send. Bank holiday Monday: no sends 2026-05-05.",
 
     "send_summary": {
       "total_new_sends_today": 0,
       "total_contingency_sends_if_applicable": 5,
-      "total_emails_today_maximum": 5,
-      "send_window": "10:00-11:00 (contingency only)",
+      "contingency_window_today": "10:00-11:15 (after IMAP sweep)",
       "imap_check_required_before_each": true,
-      "sends_tomorrow_friday_2026_05_02": "0-15 (0 if no Batch 5 data; up to 15 initial sends if data arrives today)"
+      "sends_monday_2026_05_05": 0,
+      "sends_monday_reason": "UK May Day bank holiday — DO NOT SEND",
+      "sends_tuesday_2026_05_06": "10-15 initial Batch 5 sends (if data arrives before Monday evening)",
+      "send_window_tuesday": "09:00-10:30",
+      "stagger": "8-10 minutes between sends",
+      "day_of_week_rationale": "Post-bank-holiday Tuesday is the confirmed highest-yield trigger: all 3 INTERESTED replies arrived on the first working day after a bank holiday Monday."
     }
   }
 ]

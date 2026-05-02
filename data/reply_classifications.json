@@ -1,54 +1,59 @@
 {
-  "classified_at": "2026-05-01T07:00:00Z",
-  "date": "2026-05-01",
-  "day_number": 34,
-  "note": "BRAIN layer — Day 34 (Thursday). new_replies.json unchanged since 2026-04-04. IMAP gap: 27 days (last confirmed check 2026-04-04). 7-day gap since last BRAIN run (2026-04-24). Friday 2026-04-25 run missed. CHANGELOG has no HANDS entries since Session 1. No new replies received. All 5 classified replies carried forward. Warm pipeline leads 1, 3, 22 now BRAIN-declared PRESUMED_LOST_NO_RESPONSE — HANDS must confirm via IMAP sweep today.",
+  "classified_at": "2026-05-02T07:00:00Z",
+  "date": "2026-05-02",
+  "day_number": 35,
+  "note": "BRAIN layer — Day 35 (Friday). new_replies.json unchanged since 2026-04-04. IMAP gap: 28 days. No new replies this run. All 5 classifications carried forward. Warm pipeline leads 1, 3, 22: LinkedIn buffer expired today — IMAP sweep must precede any LinkedIn approach. Final email close deadline 8 days past.",
 
   "new_replies_this_run": 0,
-  "imap_gap_days": 27,
+  "imap_gap_days": 28,
   "imap_last_confirmed_check": "2026-04-04",
 
-  "imap_check_status": "EMERGENCY OVERDUE — 27 days. Complete full cohort sweep TODAY before any sends or outreach.",
+  "imap_check_status": "EMERGENCY OVERDUE — 28 days. Complete full cohort sweep before any sends or LinkedIn approach.",
   "imap_sweep_priority_order": [
-    "lead_3 (Claire, Westfield Hair & Beauty — claire@westfieldhair.co.uk) — warm pipeline final state unknown",
-    "lead_22 (Rob, Pennine Print & Design — rob@pennineprint.co.uk) — warm pipeline final state unknown",
-    "lead_1 (Tom, Ripon Road Carpentry — tom@riponroadcarpentry.co.uk) — warm pipeline final state unknown",
-    "lead_52 (Linda Walsh, Holderness Homecare) — last fu_046 send assumed 2026-04-24",
-    "lead_55 (Craig Lawson, Beverley Sports & Leisure) — last fu_047 send assumed 2026-04-24",
-    "lead_50 (Pete, The Harbour Fish Bar, Bridlington) — last fu_048 send assumed 2026-04-24",
-    "lead_56 (Neil, East Riding Electrical) — last fu_049 send assumed 2026-04-24",
-    "leads_30_31_32_58_59 — Wednesday sends fu_041-045 unconfirmed",
+    "lead_3 (Claire, Westfield Hair & Beauty — claire@westfieldhair.co.uk) — LinkedIn unlocked today, IMAP first",
+    "lead_22 (Rob, Pennine Print & Design — rob@pennineprint.co.uk) — LinkedIn unlocked today, IMAP first",
+    "lead_1 (Tom, Ripon Road Carpentry — tom@riponroadcarpentry.co.uk) — LinkedIn unlocked today, IMAP first",
+    "lead_52 (Linda Walsh, Holderness Homecare) — fu_046 assumed sent 2026-04-24",
+    "lead_55 (Craig Lawson, Beverley Sports & Leisure) — fu_047 assumed sent 2026-04-24",
+    "lead_50 (Pete, The Harbour Fish Bar, Bridlington) — fu_048 assumed sent 2026-04-24",
+    "lead_56 (Neil, East Riding Electrical) — fu_049 assumed sent 2026-04-24",
+    "leads_30_31_32_58_59 — fu_041-045 sends unconfirmed (9 days overdue)",
     "All remaining cohort leads not in suppressed list"
   ],
 
   "warm_pipeline_resolution": {
-    "brain_declaration": "PRESUMED_LOST_NO_RESPONSE for all three leads. Final close deadline was 2026-04-24 — 7 days ago. BRAIN cannot confirm without IMAP data. HANDS must perform IMAP sweep and update this status today.",
+    "brain_declaration": "PRESUMED_LOST_NO_RESPONSE for all three leads. Final email close deadline 8 days past. LinkedIn buffer expired today (2026-05-02). IMAP sweep must precede any action. If IMAP finds a conversion: write CHANGELOG immediately — Campaign Milestone #1.",
+    "linkedin_channel_now_open": true,
+    "linkedin_preferred_date": "2026-05-04 (Monday)",
     "lead_3": {
       "business": "Westfield Hair & Beauty",
       "owner": "Claire",
       "email": "claire@westfieldhair.co.uk",
       "classification_to_date": "INTERESTED",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE",
-      "action_if_new_reply_found": "If CONVERTED: write CHANGELOG.md immediately — campaign milestone #1. If declined: mark LOST. If still no reply to final close (assumed sent 2026-04-24 or earlier): mark LOST_NO_RESPONSE. No further contact on any channel.",
-      "action_if_no_final_close_was_sent": "Send ONE final close NOW (body in value_delivery_queue.json vd_001). Mark LOST_NO_RESPONSE immediately after sending. Do not wait for reply."
+      "brain_email_status": "PRESUMED_LOST_NO_RESPONSE",
+      "linkedin_status": "AVAILABLE — buffer expired today. LinkedIn note: curiosity-led, NO reference to prior call or email. Approach Monday 2026-05-04.",
+      "action_if_new_reply_found": "If CONVERTED: CHANGELOG immediately — Campaign Milestone #1. If still interested: send invoice/agreement today. If declined: mark LOST. No further contact.",
+      "action_if_no_reply_no_final_close_sent": "Send ONE final close TODAY using body in value_delivery_queue.json vd_001. Mark LOST_NO_RESPONSE immediately after."
     },
     "lead_22": {
       "business": "Pennine Print & Design",
       "owner": "Rob",
       "email": "rob@pennineprint.co.uk",
       "classification_to_date": "INTERESTED",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE",
-      "action_if_new_reply_found": "If converted or still interested: present options A/B/C (in value_delivery_queue.json vd_002). Close target: 2026-05-04 (Monday). If declined: mark LOST. If still silent: mark LOST_NO_RESPONSE. No further contact.",
-      "action_if_no_final_close_was_sent": "Send ONE final close NOW. Mark LOST_NO_RESPONSE immediately after. Do not wait."
+      "brain_email_status": "PRESUMED_LOST_NO_RESPONSE",
+      "linkedin_status": "AVAILABLE — buffer expired today. LinkedIn note: curiosity-led, no mention of prior contact. Approach Monday 2026-05-04.",
+      "action_if_new_reply_found": "If deal alive: present options A/B/C (value_delivery_queue.json vd_002). Close target Monday 2026-05-05. If declined: mark LOST.",
+      "action_if_no_reply_no_final_close_sent": "Send ONE final close TODAY. Mark LOST_NO_RESPONSE after."
     },
     "lead_1": {
       "business": "Ripon Road Carpentry",
       "owner": "Tom",
       "email": "tom@riponroadcarpentry.co.uk",
       "classification_to_date": "INTERESTED",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE",
-      "action_if_new_reply_found": "If still interested: agree spec (quote form, 3-4 fields, £100-150) and set Monday call. If declined: mark LOST. If silent: mark LOST_NO_RESPONSE. No further contact.",
-      "action_if_no_final_close_was_sent": "Send ONE final close NOW. Mark LOST_NO_RESPONSE after. Do not wait."
+      "brain_email_status": "PRESUMED_LOST_NO_RESPONSE",
+      "linkedin_status": "AVAILABLE — buffer expired today. LinkedIn note: curiosity-led. Approach Monday 2026-05-04.",
+      "action_if_new_reply_found": "If still interested: agree quote form spec (3-4 fields, £100-150). Set call this week. If declined: mark LOST.",
+      "action_if_no_reply_no_final_close_sent": "Send ONE final close TODAY. Mark LOST_NO_RESPONSE after."
     }
   },
 
@@ -68,11 +73,12 @@
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal.",
       "call_confirmed_at": "2026-04-07T14:00:00Z",
-      "current_status": "PRESUMED_LOST_NO_RESPONSE — 27 days since reply, 7 days past BRAIN-declared final close deadline (2026-04-24). HANDS: confirm via IMAP today.",
-      "urgency": "FINAL — resolve TODAY",
+      "current_status": "PRESUMED_LOST_NO_RESPONSE — 28 days since reply, 8 days past email close deadline. LinkedIn now open (buffer expired today). IMAP first.",
+      "urgency": "FINAL EMAIL CLOSE — email channel closed after today. LinkedIn opens Monday 2026-05-04.",
       "lead_status_update": "interested",
       "status_actioned": true,
-      "block_all_followups": true
+      "block_all_email_followups": true,
+      "linkedin_available": true
     },
     {
       "reply_id": 8,
@@ -85,14 +91,15 @@
       "needs_attention": true,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Asked whether fixes can be bundled into redesign — buyer's question. 'Sort the whole thing in one go' upsell signal.",
+      "reasoning": "Asked to bundle fixes into redesign — buyer's question. 'Sort the whole thing in one go' strongest upsell signal in campaign.",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "current_status": "PRESUMED_LOST_NO_RESPONSE — 27 days since reply, 7 days past final close deadline. HANDS: confirm via IMAP today. One final check warranted given the strength of Rob's buying signal.",
-      "urgency": "FINAL — resolve TODAY",
+      "current_status": "PRESUMED_LOST_NO_RESPONSE — 28 days since reply, 8 days past email close deadline. LinkedIn now open. IMAP first.",
+      "urgency": "FINAL EMAIL CLOSE — LinkedIn opens Monday 2026-05-04.",
       "upsell_signal": true,
       "lead_status_update": "interested",
       "status_actioned": true,
-      "block_all_followups": true
+      "block_all_email_followups": true,
+      "linkedin_available": true
     },
     {
       "reply_id": 9,
@@ -105,13 +112,14 @@
       "needs_attention": true,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Acknowledged the pain unprompted, confirmed workflow problem, asked for pricing.",
+      "reasoning": "Acknowledged pain unprompted, confirmed workflow problem (no quote form), asked for pricing.",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "current_status": "PRESUMED_LOST_NO_RESPONSE — 27 days since reply, 7 days past final close deadline. HANDS: confirm via IMAP today.",
-      "urgency": "FINAL — resolve TODAY",
+      "current_status": "PRESUMED_LOST_NO_RESPONSE — 28 days since reply, 8 days past email close deadline. LinkedIn now open. IMAP first.",
+      "urgency": "FINAL EMAIL CLOSE — LinkedIn opens Monday 2026-05-04.",
       "lead_status_update": "interested",
       "status_actioned": true,
-      "block_all_followups": true
+      "block_all_email_followups": true,
+      "linkedin_available": true
     },
     {
       "reply_id": 10,
@@ -127,7 +135,9 @@
       "reasoning": "Polite but clear rejection: 'happy with how things are at the moment.' No further contact on any channel.",
       "urgency": "none",
       "lead_status_update": "lost",
-      "status_actioned": true
+      "status_actioned": true,
+      "linkedin_available": false,
+      "linkedin_blocked_until": "2026-10-06"
     },
     {
       "reply_id": 11,
@@ -140,7 +150,7 @@
       "needs_attention": false,
       "should_suppress": false,
       "confidence": "high",
-      "reasoning": "Standard OOO. Returned 6 April. Day-14 breakup (fu_031) assumed sent ~2026-04-14. Sequence complete.",
+      "reasoning": "Standard OOO. Returned 6 April. Sequence complete — Day-14 breakup assumed sent ~2026-04-14.",
       "urgency": "none",
       "ooo_expired": true,
       "sequence_complete": true,
@@ -153,14 +163,16 @@
     "new_replies_today": 0,
     "total_to_date": 11,
     "imap_check_pending": true,
-    "imap_gap_days": 27,
+    "imap_gap_days": 28,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
     "WRONG_PERSON": 0,
     "UNSUBSCRIBE": 0,
     "warm_pipeline_brain_declared_presumed_lost": [3, 22, 1],
+    "warm_pipeline_linkedin_buffer_expired": true,
+    "linkedin_open_leads": [1, 3, 22],
     "leads_to_suppress": [],
-    "hands_instructions": "IMAP sweep is 27 days overdue. Priority 1: sweep leads 3, 22, 1 — if any conversion found write CHANGELOG immediately (campaign milestone #1). Priority 2: sweep all other cohort leads for silent replies. Write any new replies to new_replies.json immediately. Do NOT send any email without first checking IMAP for that lead. After full sweep: update reply_classifications.json status fields for all three warm-pipeline leads."
+    "hands_instructions": "IMAP sweep is 28 days overdue. Priority 1: sweep leads 3, 22, 1 — if conversion found, write CHANGELOG immediately (Campaign Milestone #1). Priority 2: sweep all other cohort leads. Write any new replies to new_replies.json immediately. LinkedIn for leads 1, 3, 22 is open from today — preferred Monday 2026-05-04. Do NOT approach on LinkedIn if IMAP reveals an unread email reply."
   }
 }

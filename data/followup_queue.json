@@ -1,8 +1,17 @@
 {
-  "generated_at": "2026-05-01T07:00:00Z",
-  "date": "2026-05-01",
-  "day_number": 34,
-  "note": "BRAIN layer — Day 34 (Thursday). All Batch 1-4 sequences ASSUMED COMPLETE (all leads through Day-0, Day-3, Day-7, Day-14). fu_046-049 (Thursday 2026-04-24) assumed sent. fu_041-045 (Wednesday 2026-04-23) UNCONFIRMED — still worth sending today if IMAP confirms no reply. Zero active sequences until Batch 5 Ryedale initial sends fire.",
+  "generated_at": "2026-05-02T07:00:00Z",
+  "date": "2026-05-02",
+  "day_number": 35,
+  "note": "BRAIN layer — Day 35 (Friday). All Batch 1-4 sequences ASSUMED COMPLETE. fu_046-049 (Thursday 2026-04-24) assumed sent. fu_041-045 UNCONFIRMED — 9 days overdue. Still worth sending today if IMAP confirms no prior reply. Zero active sequences until Batch 5 Tuesday 2026-05-06 initial sends.",
+
+  "bank_holiday_sequence_update": {
+    "monday_2026_05_05": "UK May Day bank holiday — NO SENDS",
+    "batch_5_day0_date": "TUESDAY 2026-05-06",
+    "batch_5_day3_date": "Friday 2026-05-09",
+    "batch_5_day7_date": "Tuesday 2026-05-13",
+    "batch_5_day14_date": "Tuesday 2026-05-20",
+    "note": "Three of four Batch 5 touchpoints now land on Tuesday AM — optimal yield alignment."
+  },
 
   "suppressed_lead_ids": [7, 19],
   "do_not_followup_replied_lead_ids": [1, 2, 3, 22],
@@ -13,12 +22,11 @@
   "active_count": 0,
 
   "unconfirmed_final_sends": {
-    "description": "fu_041-045 were due Wednesday 2026-04-23. Never confirmed in CHANGELOG. Still valid to send today (8 days late as Day-14 breakups — marginally worth it as a professional close).",
-    "send_decision": "SEND TODAY if IMAP confirms no prior reply from the lead. Do not send if lead has replied to any touchpoint since their Day-0 initial send.",
+    "description": "fu_041-045 were due Wednesday 2026-04-23. Never confirmed in CHANGELOG. Now 9 days overdue as Day-14 breakups. Diminishing but still valid — closes the loop professionally.",
+    "send_decision": "SEND TODAY if IMAP confirms no prior reply. If fu_04x was sent on 2026-04-23 and confirmed in CHANGELOG: skip.",
     "sends": [
       {
         "followup_id": "fu_041",
-        "original_email_id": "fu_026_equivalent",
         "lead_id": 30,
         "business_name": "Halifax Window Cleaning",
         "owner_name": "Steve",
@@ -26,14 +34,13 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 8,
+        "overdue_days": 9,
         "due_today": true,
         "followup_type": "breakup",
         "subject": "Closing the loop — Halifax Window Cleaning",
         "body": "Steve,\n\nI've dropped you a couple of notes about the Halifax Window Cleaning website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
         "send_window": "10:00-10:15",
-        "imap_check_required": true,
-        "notes": "8 days overdue. Still valid. Clean breakup — no pressure. IMAP check first."
+        "imap_check_required": true
       },
       {
         "followup_id": "fu_042",
@@ -43,14 +50,13 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 8,
+        "overdue_days": 9,
         "due_today": true,
         "followup_type": "breakup",
         "subject": "Closing the loop — Pontefract Pharmacy",
         "body": "Hi,\n\nI've sent a couple of notes about the Pontefract Pharmacy website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
         "send_window": "10:15-10:30",
-        "imap_check_required": true,
-        "notes": "No owner name. Healthcare tone — brief, professional."
+        "imap_check_required": true
       },
       {
         "followup_id": "fu_043",
@@ -61,14 +67,13 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 8,
+        "overdue_days": 9,
         "due_today": true,
         "followup_type": "breakup",
         "subject": "Closing the loop — Castleford Carpets",
         "body": "Ann,\n\nI've sent a couple of notes about the Castleford Carpets website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
         "send_window": "10:30-10:45",
-        "imap_check_required": true,
-        "notes": "Retail — May start of home-improvement season. Minor timing benefit."
+        "imap_check_required": true
       },
       {
         "followup_id": "fu_044",
@@ -78,14 +83,13 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 8,
+        "overdue_days": 9,
         "due_today": true,
         "followup_type": "breakup",
         "subject": "Closing the loop — The Old Court Solicitors",
         "body": "Hi,\n\nI've sent a couple of notes about the Old Court Solicitors website — won't keep following up if now isn't the right time.\n\nIf things change down the line, feel free to get in touch.\n\nAll the best,\n[Your name]",
         "send_window": "10:45-11:00",
-        "imap_check_required": true,
-        "notes": "Professional/legal — formal, brief tone. No owner name."
+        "imap_check_required": true
       },
       {
         "followup_id": "fu_045",
@@ -96,57 +100,74 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 8,
+        "overdue_days": 9,
         "due_today": true,
         "followup_type": "breakup",
         "subject": "Closing the loop — Scarborough Roofing Specialists",
         "body": "Tony,\n\nI've dropped you a couple of notes about the Scarborough Roofing Specialists site — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
         "send_window": "11:00-11:15",
         "imap_check_required": true,
-        "notes": "Peak roofing season (May-August). Tony may now be motivated to sort the site. Final touchpoint."
+        "seasonal_note": "Peak roofing season May-August. Tony may now be motivated to sort the site."
       }
     ]
   },
 
   "batch_5_followup_schedule": {
-    "status": "PENDING — no Batch 5 initial sends yet. Schedule below is PROVISIONAL based on Friday initial send scenario.",
-    "if_initial_sends_friday_2026_05_02": {
-      "day3_bumps_due": "2026-05-05 (Monday)",
-      "day3_bump_notes": "Short thread reply (3-4 lines). Reference the specific pain point from the initial email. Not a restatement — a brief 'just wanted to make sure this didn't get buried' tone.",
-      "day7_new_angle_due": "2026-05-12 (Monday — 9 days after Friday send, rounding to nearest weekday)",
-      "day7_angle_notes": "NEW pain point — not a reframe of the SSL/mobile issue. If initial was SSL: Day-7 angle could be Google ranking ('Not Secure sites rank below HTTPS competitors'), or specific page speed score, or missing Google Business Profile. If initial was mobile: Day-7 angle could be SSL (if present), or missing click-to-call button.",
-      "day14_breakup_due": "2026-05-19 (Tuesday — aim for Tue AM for best open rates)",
-      "breakup_template": "Standard breakup: 3 lines, no pressure, door left open."
+    "status": "PENDING — no Batch 5 initial sends yet. Schedule below based on REVISED Tuesday 2026-05-06 initial send scenario (bank holiday correction).",
+    "initial_sends_date": "TUESDAY 2026-05-06, 09:00-10:30",
+    "bank_holiday_note": "Monday 2026-05-05 is UK May Day — NOT a send day. Tuesday 2026-05-06 is the revised target for ALL scenarios.",
+    "day3_bumps": {
+      "due": "Friday 2026-05-09, 09:00-10:30",
+      "type": "Short thread reply",
+      "content": "3-4 lines. Reference the specific pain point from Day-0. Not a restatement — a brief 'just wanted to make sure this didn't get buried' tone.",
+      "subject": "Re: [original subject]",
+      "template": "[First name],\n\nJust wanted to make sure this didn't get buried.\n\n[One sentence restating specific issue — e.g. 'The Not Secure warning on [URL] is still showing']\n\n[Your name]"
     },
-    "if_initial_sends_monday_2026_05_04": {
-      "day3_bumps_due": "2026-05-07 (Thursday)",
-      "day7_new_angle_due": "2026-05-12 (Tuesday — prioritise Tue AM)",
-      "day14_breakup_due": "2026-05-19 (Tuesday)"
+    "day7_new_angle": {
+      "due": "Tuesday 2026-05-13, 09:00-10:30",
+      "note": "BEST DAY — second Tuesday in the sequence",
+      "type": "New pain point — fresh email, NOT a thread reply",
+      "pivot_rules": {
+        "if_day0_was_ssl": "Day-7 angle: Google ranking impact ('Not Secure sites rank below HTTPS competitors in local search') OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
+        "if_day0_was_mobile": "Day-7 angle: SSL check (if HTTP), OR missing click-to-call button, OR specific competitor who IS mobile-friendly.",
+        "if_day0_was_no_website": "Day-7 angle: competitors who ARE ranking for the keyword / estimate of missed enquiries per month.",
+        "rule": "Day-7 MUST be a different pain point. A reframe of the same issue does not perform. Tom's conversion came from a genuine new angle."
+      }
+    },
+    "day14_breakup": {
+      "due": "Tuesday 2026-05-20, 09:00-10:30",
+      "note": "BEST DAY — third Tuesday in sequence",
+      "type": "Breakup email — clean close, door left open",
+      "template": "[First name],\n\nI've dropped you a couple of notes about [specific issue] — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
+      "rules": "3 lines maximum. No new content. No pressure. No question marks. Door open but no call to action."
     }
   },
 
   "summary": {
-    "due_today_2026_05_01": {
+    "due_today_2026_05_02": {
       "confirmed_active": 0,
       "contingency_unconfirmed": 5,
       "items": [
-        "fu_041 (lead 30, Steve, Halifax Window Cleaning — Day-14 breakup, 8 days overdue)",
-        "fu_042 (lead 31, Pontefract Pharmacy — Day-14 breakup, 8 days overdue)",
-        "fu_043 (lead 32, Ann, Castleford Carpets — Day-14 breakup, 8 days overdue)",
-        "fu_044 (lead 58, The Old Court Solicitors — Day-14 breakup, 8 days overdue)",
-        "fu_045 (lead 59, Tony Shields, Scarborough Roofing — Day-14 breakup, 8 days overdue)"
+        "fu_041 (lead 30, Steve, Halifax Window Cleaning — Day-14 breakup, 9 days overdue)",
+        "fu_042 (lead 31, Pontefract Pharmacy — Day-14 breakup, 9 days overdue)",
+        "fu_043 (lead 32, Ann, Castleford Carpets — Day-14 breakup, 9 days overdue)",
+        "fu_044 (lead 58, The Old Court Solicitors — Day-14 breakup, 9 days overdue)",
+        "fu_045 (lead 59, Tony Shields, Scarborough Roofing — Day-14 breakup, 9 days overdue)"
       ],
-      "condition": "ONLY send if: (1) IMAP confirms no prior reply from the lead, AND (2) fu_04x was not sent on 2026-04-23"
+      "condition": "ONLY send if: (1) IMAP confirms no prior reply, AND (2) fu_04x was not sent on 2026-04-23"
     },
-    "due_tomorrow_2026_05_02": 0,
-    "next_scheduled_followups": "Batch 5 Day-3 bumps — date TBD based on initial send date",
+    "due_monday_2026_05_05": "ZERO — bank holiday. No sends.",
+    "due_tuesday_2026_05_06": "10-15 Batch 5 initial sends (if data arrives before Monday evening)",
+    "next_scheduled_followups": "Batch 5 Day-3 bumps — Friday 2026-05-09",
     "total_active_sequences": 0,
     "hands_actions_required": [
       "IMAP sweep — entire cohort — before any sends today",
       "Confirm in CHANGELOG whether fu_041-045 were sent on 2026-04-23",
       "Confirm in CHANGELOG whether fu_046-049 were sent on 2026-04-24",
-      "If fu_041-045 not sent: send today (10:00-11:15, IMAP check before each)",
-      "Log all sends in CHANGELOG.md with timestamp and confirmation"
+      "If fu_041-045 not sent: send today 10:00-11:15 (IMAP check before each)",
+      "Batch 5 Ryedale scrape — return data today or weekend. BRAIN personalises for Tuesday 2026-05-06 initial sends",
+      "DO NOT SEND on Monday 2026-05-05 — bank holiday",
+      "Log all sends in CHANGELOG.md with timestamp"
     ]
   }
 }

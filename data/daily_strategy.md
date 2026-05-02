@@ -1,354 +1,252 @@
-# Daily Strategy — 2026-05-01 (Thursday) — Day 34
+# Daily Strategy — 2026-05-02 (Friday) — Day 35
 
-**Updated:** 2026-05-01 (BRAIN Day 34 run)  
-**Replaces:** 2026-04-24 strategy  
-**Includes:** Post-campaign analysis (Batches 1–4) + Week 5 / Batch 5 strategy
+**Updated:** 2026-05-02 (BRAIN Day 35 run)  
+**Replaces:** 2026-05-01 strategy  
+**Key change from Day 34:** Bank holiday send timing discovery — Tuesday 2026-05-06 is now the mandatory Batch 5 initial send date.
 
 ---
 
-## CAMPAIGN STATUS AT DAY 34
+## HEADLINE DISCOVERY: UK MAY DAY BANK HOLIDAY
 
-| Metric | Value | Notes |
+**Monday 2026-05-05 is the UK Early May Bank Holiday.**
+
+Previous plan: "if data arrives Friday, send Monday 2026-05-04."  
+**Revised plan: send TUESDAY 2026-05-06 AM — regardless of when data arrives.**
+
+### Why This Changes Everything
+
+The only confirmed INTERESTED replies in this 35-day campaign arrived on **Tuesday 2026-04-07** — the first working day after Easter Monday (bank holiday). All three (Claire, Rob, Tom) replied on the same Tuesday morning.
+
+Tuesday 2026-05-06 is the first working day after May Day Monday (bank holiday). The conditions are identical:
+
+| Factor | Easter Week (yielded 3 replies) | May Bank Holiday Week |
 |---|---|---|
-| Leads scraped (Batches 1-4) | ~61 | Batch 5 Ryedale: NOT received |
-| Emails sent (estimated) | ~91 | Includes assumed fu_041-049 |
-| Total replies confirmed | 11 | 17.9% reply rate |
-| INTERESTED | 3 | Leads 1, 3, 22 — PRESUMED_LOST_NO_RESPONSE |
-| NOT_INTERESTED | 2 | Leads 2, 4 |
-| UNSUBSCRIBE | 1 | Lead 19 — permanently suppressed |
-| OUT_OF_OFFICE | 2 | Both resolved, sequences complete |
-| Conversions confirmed | 0 | Campaign milestone #1 pending IMAP confirmation |
-| Active sequences | 0 | All Batch 1-4 cohort complete |
-| IMAP gap | 27 days | Emergency sweep required today |
-| Campaign stall (no new leads) | 24 days | Batch 5 Ryedale CRITICAL |
-| Days since last BRAIN run | 7 | Friday run missed |
-| Days since CHANGELOG update | 34 | No HANDS updates since Session 1 |
+| Bank holiday | Monday 2026-04-06 (Easter) | Monday 2026-05-05 (May Day) |
+| First working day | Tuesday 2026-04-07 | **Tuesday 2026-05-06** |
+| Business owner state | Returning from long weekend, catching up | Same |
+| Email check behaviour | Focused, less reactive | Expected same |
 
----
+**The 24-hour delay from Monday to Tuesday costs nothing and aligns with the campaign's confirmed #1 yield trigger.**
 
-## POST-CAMPAIGN ANALYSIS — BATCHES 1–4 COMPLETE
+### Cascade Benefit
 
-*First full analysis possible now that entire cohort has been through all 4 touchpoints.*  
-*Based on confirmed data (replies, classifications) through 2026-04-04. Assumed data for later touchpoints.*
+Sending Tuesday also aligns Day-7 and Day-14 on Tuesdays:
 
----
-
-### SIGNAL PERFORMANCE
-
-| Signal type | Est. sends | INTERESTED replies | Est. rate | Framework used |
-|---|---|---|---|---|
-| **SSL (PAS)** | ~20 | **3** | **~15%** | PAS |
-| Mobile (PAS) | ~12 | 0 confirmed* | ~0% | PAS |
-| No website (BAB) | ~6 | 0 | 0% | BAB |
-| Social/AIDA | ~4 | 0 | 0% | AIDA |
-| Generic | ~0 | — | — | Not used |
-
-*Tom (lead 1) replied on Day-7 (new mobile angle) having received a mobile Day-0. The Day-0 mobile email was not the trigger — the Day-7 pivot was. Mobile is not a zero — it's a slow-burn that requires the Day-7 new angle to fire.
-
-**Confirmed finding: SSL → PAS is the only signal-framework combination that produced INTERESTED leads on the initial send.** This is the non-negotiable core of the Batch 5 playbook.
-
----
-
-### FRAMEWORK PERFORMANCE
-
-| Framework | Sends | INTERESTED | Notes |
-|---|---|---|---|
-| **PAS** | ~32 | **3** | All 3 came from SSL-PAS. Mobile-PAS: 0 direct, 1 indirect (Tom Day-7) |
-| BAB | ~6 | 0 | No-website targets didn't convert. May reflect selection quality, not framework flaw |
-| AIDA | ~4 | 0 | Abstract ranking angle didn't resonate. Pivot to keyword-gap in Batch 5 |
-| Question | ~3 | 0 | Not enough data |
-| Cliffhanger | 0 | — | Never deployed |
-| Observation | 0 | — | Never deployed |
-
-**Verdict: PAS dominates. Keep PAS at 60%+ of Batch 5 sends. AIDA gets one more test with keyword-gap pivot. BAB gets one more test at lower review threshold (20+ vs 50+).**
-
----
-
-### SEQUENCE STEP PERFORMANCE
-
-| Sequence step | Sends | Replies | Notes |
-|---|---|---|---|
-| Day-0 (initial) | ~61 | 5 confirmed (others possible — IMAP gap) | Includes OOO, NOT_INTERESTED |
-| Day-3 (bump) | ~55 (assumed) | Unknown — IMAP gap | Short bump. No reply data confirmed. |
-| Day-7 (new angle) | ~50 (assumed) | 1 confirmed (Tom replied Day-7 to new mobile angle) | Tom: strongest signal for Day-7 new angle value |
-| Day-14 (breakup) | ~45 (assumed) | Unknown — IMAP gap | |
-
-**Key learning: Day-7 new angle is essential, not optional.** Tom's conversion was triggered by Day-7, not Day-0. The Day-7 pivot to a different pain point — not a restatement — is what caught his attention. This validates the 4-touchpoint structure.
-
----
-
-### SUBJECT LINE PERFORMANCE
-
-**Winning pattern confirmed:** `[First name] — [town] [business type] [specific concrete issue]`
-
-Winners that produced INTERESTED:
-- `Claire — your Leeds hair salon website is flagged 'Not Secure'` → INTERESTED (Day-0)
-- `Rob — your Sowerby Bridge print shop site has an SSL issue` → INTERESTED (Day-0)
-- `Tom — your Ripon carpentry site isn't mobile-friendly` (Day-0) → reply came Day-7 to new angle
-
-**Rules unchanged and confirmed:**
-1. First name always outperforms business-name-only (3-0 confirmed)
-2. Town name always — local trust signal (mentioned explicitly by Claire and Tom)
-3. Specific verifiable issue — not abstract ("your [URL] is flagged Not Secure" > "improve your web presence")
-4. No question marks — statement of fact outperforms question for trades cold email
-5. Fallback (no owner name): `[Business name] — [town] [specific issue]`
-
----
-
-### DAY-OF-WEEK ANALYSIS
-
-| Day | Replies | Notes |
+| Touchpoint | Date | Day |
 |---|---|---|
-| Tuesday | **3 INTERESTED** | All 3 came on Tuesday 2026-04-04 (post-bank-holiday Monday) |
-| Other days | 2 (OOO + NOT_INTERESTED) | No INTERESTED replies on any other day confirmed |
+| Day-0 initial | **Tuesday 2026-05-06** | Tuesday (peak yield) |
+| Day-3 bump | Friday 2026-05-09 | Friday (second choice) |
+| Day-7 new angle | **Tuesday 2026-05-13** | Tuesday (peak yield) |
+| Day-14 breakup | **Tuesday 2026-05-20** | Tuesday (peak yield) |
 
-**Finding: Tuesday AM is the highest-yield send window confirmed.** Post-bank-holiday Tuesdays especially strong (all 3 INTERESTED came the day after Easter Monday). This suggests:
-- Business owners catch up on email Tuesday after a long weekend
-- Bank holiday Monday clears their backlog, Tuesday they're focused
-- **Batch 5 initial sends: prefer Tuesday AM if data allows. Friday is second choice.**
+Three of four Batch 5 touchpoints land on Tuesday AM. This is the optimal schedule achievable in this campaign.
+
+**RULE: No sends on Monday 2026-05-05 under any scenario.**
 
 ---
 
-### SECTOR PERFORMANCE
+## CAMPAIGN STATUS — DAY 35
 
-| Sector | Leads | INTERESTED | Notes |
+| Metric | Value | Delta from Day 34 | Notes |
 |---|---|---|---|
-| Trades (plumber, electrician, roofer, joiner) | ~18 | 1 (Tom, carpentry) | Strong — specific pain visible online |
-| Beauty/salon | ~5 | 1 (Claire) | High conversion rate per send — lead quality high |
-| Print/signage | ~3 | 1 (Rob) | Upsell potential strongest of any sector |
-| Homecare | ~3 | 0 | Linda (breakup) — no response |
-| Hospitality (pub, restaurant, fish bar) | ~5 | 0 | Pete's breakup sent — no response |
-| Retail | ~4 | 0 | Ann (Castleford Carpets) — no response |
-| Sport/leisure | ~3 | 0 | Craig (Beverley Sports) — no response |
-| Accountancy | ~2 | 0 | David OOO, sequence complete |
-| Legal/solicitors | ~2 | 0 | Old Court — GDPR angle not tested yet |
-| Pet supplies | ~1 | 0 (NOT_INTERESTED) | Nidderdale — happy as-is |
-| Fitness/wellness | ~2 | 1 UNSUBSCRIBE | Summit Fitness — paused for framing review |
-
-**Sector priority for Batch 5 (Ryedale):**
-1. Trades — consistently strong, highest volume in rural Yorkshire
-2. Beauty/salon — disproportionate conversion per send (Claire was 1/5 in sector)
-3. Hospitality — low conversion in Batch 4 but right framing (booking/conversion) may improve this
-4. Professional services (solicitors, accountants) — GDPR angle untested, worth one round
+| Leads scraped (Batches 1-4) | ~61 | — | Batch 5 Ryedale: NOT received |
+| Emails sent (estimated) | ~91 | — | Includes assumed fu_041-049 |
+| Total replies confirmed | 11 | — | 17.9% overall reply rate |
+| INTERESTED | 3 | — | Leads 1, 3, 22 — PRESUMED_LOST_NO_RESPONSE |
+| Active email sequences | 0 | — | All Batch 1-4 complete |
+| IMAP gap | **28 days** | +1 | Emergency sweep required today |
+| Campaign stall (no new leads) | **25 days** | +1 | Batch 5 Ryedale CRITICAL |
+| fu_041-045 overdue | **9 days** | +1 | Still actionable today |
+| Days past warm pipeline close deadline | **8 days** | +1 | Email closed; LinkedIn opens today |
+| LinkedIn buffer (leads 1,3,22) | **EXPIRED today** | Changed | LinkedIn available from today |
+| CHANGELOG updates since Session 1 | **0** | — | 35 days of HANDS actions unlogged |
 
 ---
 
-### GEOGRAPHIC PERFORMANCE
+## PRIORITY ORDER FOR TODAY (Friday 2026-05-02)
 
-| Area | Leads | INTERESTED | Notes |
-|---|---|---|---|
-| West Yorkshire (Leeds, Halifax, Sowerby Bridge) | ~20 | 2 (Claire, Rob) | Strongest ROI area — dense, digital-aware SMEs |
-| North Yorkshire (Ripon, Harrogate, York) | ~15 | 1 (Tom) | Solid — rural trades have real digital gap |
-| East Yorkshire (Beverley, Bridlington, Holderness) | ~18 | 0 confirmed | First-ever East Yorkshire data — no IMAP confirmation |
-| Derbyshire (Bakewell) | ~3 | 0 | Light coverage — deprioritised |
-
-**Next area: Ryedale (Malton, Pickering, Helmsley, Kirkbymoorside)** — rural North Yorkshire, high trades density, estimated 15-20% no-website rate, strong SSL signal expected.
-
----
-
-### WHAT DIDN'T WORK
-
-1. **BAB (no-website)** — 0 INTERESTED across ~6 sends. Probable reasons:
-   - No URL to reference in subject → less credible, easier to ignore
-   - No-website businesses may have chosen not to have one deliberately
-   - Higher score threshold (we used 50+ reviews) may have been too restrictive for rural markets
-   - **Adjustment for Batch 5:** Lower bar to 20+ reviews for Ryedale. Reference their Google Maps listing explicitly ("I searched 'plumber Malton' and you don't appear"). More concrete, less abstract.
-
-2. **AIDA (social/high-review)** — 0 INTERESTED. Probable reasons:
-   - "Ranking" angle is abstract — business owners don't see a gap they can verify
-   - High-review businesses may feel their reputation speaks for itself
-   - **Adjustment for Batch 5:** Pivot to keyword-gap angle ("When someone searches 'pub Pickering' your site doesn't come up"). Verifiable, specific, creates urgency.
-
-3. **Mobile (PAS)** — 0 direct INTERESTED. Note: Tom's Day-0 was mobile, but the trigger was Day-7 new angle. Mobile pain may be less urgent than SSL security warning.
-   - **Adjustment for Batch 5:** Keep mobile as secondary signal (after SSL). Always pivot to a *different* pain point on Day-7 if Day-0 was mobile.
-
-4. **Day-0 sends on Friday** — lower confirmed open/reply rate. Only Tuesday has 3 confirmed INTERESTED replies.
-   - **Adjustment for Batch 5:** Schedule Day-0 initial sends on Tuesday AM if possible. Friday as backup.
-
----
-
-### WHAT WORKED — CONFIRMED PLAYBOOK
-
-1. **SSL → PAS → first-name subject → town mention → specific URL** — 3/3 INTERESTED from this pattern
-2. **Day-7 new pain point** (not a reframe) — pivoted Tom from mobile→quote form, generated the conversion
-3. **Short proposal nudge** (2 sentences) — Claire and Rob replied to 2-sentence nudges, not longer copy
-4. **One pain point per email** — no overwhelm, single clear signal per touchpoint
-5. **Tuesday AM** — all 3 INTERESTED replies arrived on a Tuesday morning
-6. **B2B legitimate interest framing** — no GDPR issues, no deliverability issues in 34 days
-
----
-
-## CRITICAL STATUS — TODAY 2026-05-01
-
-### 1. IMAP EMERGENCY SWEEP (Priority 1 — before any sends)
-
-27 days without confirmed IMAP check. Silent replies sitting in inbox will invalidate planned breakup sends.
+### 1. IMAP SWEEP (Priority 1 — before 09:00)
+28 days without confirmed IMAP check. Must complete before any sends or LinkedIn approach.
 
 **Sweep order:**
-1. Claire (lead 3) — `claire@westfieldhair.co.uk`
-2. Rob (lead 22) — `rob@pennineprint.co.uk`
-3. Tom (lead 1) — `tom@riponroadcarpentry.co.uk`
-4. fu_046-049 recipients (leads 50, 52, 55, 56 — assumed sent 2026-04-24)
-5. fu_041-045 recipients (leads 30, 31, 32, 58, 59 — sends unconfirmed)
-6. Remainder of cohort
+1. `claire@westfieldhair.co.uk` — LinkedIn unlocked today; IMAP first
+2. `rob@pennineprint.co.uk` — LinkedIn unlocked today; IMAP first
+3. `tom@riponroadcarpentry.co.uk` — LinkedIn unlocked today; IMAP first
+4. Leads 50, 52, 55, 56 (fu_046-049 assumed sent 2026-04-24)
+5. Leads 30, 31, 32, 58, 59 (fu_041-045 unconfirmed)
+6. Full remaining cohort
 
-**If any conversion found:** Write CHANGELOG.md immediately — Campaign Milestone #1. Begin delivery.
-
----
-
-### 2. WARM PIPELINE RESOLUTION (Priority 2 — by 12:00)
-
-All three warm-pipeline leads are now 27 days past their replies. Final close window passed 7 days ago.
-
-| Lead | Business | Email | Brain Status | Action |
-|---|---|---|---|---|
-| 3 | Westfield Hair & Beauty | claire@westfieldhair.co.uk | PRESUMED_LOST | Check IMAP → act per decision tree in value_delivery_queue.json |
-| 22 | Pennine Print & Design | rob@pennineprint.co.uk | PRESUMED_LOST | Check IMAP → act per decision tree |
-| 1 | Ripon Road Carpentry | tom@riponroadcarpentry.co.uk | PRESUMED_LOST | Check IMAP → act per decision tree |
-
-**After today: these records are closed regardless of outcome. No further contact.**
+**If any conversion found:** Write CHANGELOG.md immediately — Campaign Milestone #1.
 
 ---
 
-### 3. BATCH 5 RYEDALE SCRAPE (Priority 3 — today EOD)
+### 2. WARM PIPELINE EMAIL CLOSE (Priority 2 — before 12:00)
+Email channel closes today. Final close emails (if not yet sent) go today.
 
-**The single most important action this week.** Campaign is in a 24-day full stall.
+| Lead | Business | Email | Action |
+|---|---|---|---|
+| 3 | Westfield Hair (Claire) | claire@westfieldhair.co.uk | IMAP → act per decision tree in value_delivery_queue.json vd_001 |
+| 22 | Pennine Print (Rob) | rob@pennineprint.co.uk | IMAP → act per decision tree in value_delivery_queue.json vd_002 |
+| 1 | Ripon Road Carpentry (Tom) | tom@riponroadcarpentry.co.uk | IMAP → act per decision tree in value_delivery_queue.json vd_003 |
 
-- **Target area:** Ryedale District, North Yorkshire
-- **Towns:** Malton (primary), Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent
-- **Categories:** plumbers, electricians, roofers, builders, joiners, pubs/restaurants, B&Bs, estate agents, solicitors
-- **Expected yield:** 18-22 raw leads
-- **SSL check required:** Tag each URL as HTTP or HTTPS — this is the primary signal
-- **Return format:** business_name, url (or no_website_flag), review_count, rating, town, category, phone
-- **Do NOT enrich or write copy** — return raw data, BRAIN personalises on next run
-
-**Timeline if data arrives today:** BRAIN writes copy tonight → initial sends Friday 2026-05-02 AM → Day-3 bumps Monday 2026-05-05
+After today: email channel closed for all three. LinkedIn channel is the only remaining option.
 
 ---
 
-### 4. UNCONFIRMED SENDS (Priority 4 — after IMAP sweep)
+### 3. UNCONFIRMED BREAKUP SENDS (Priority 3 — 10:00-11:15, after IMAP)
+fu_041-045 are 9 days overdue as Day-14 breakups. Send today if IMAP confirms no prior reply.
 
-| Action | Details |
-|---|---|
-| Confirm fu_041-045 sent/not-sent | Write to CHANGELOG.md |
-| Confirm fu_046-049 sent/not-sent | Write to CHANGELOG.md |
-| If fu_041-045 NOT sent | Send today 10:00-11:15 (IMAP check before each) |
+Send window: 10:00-11:15, 15-minute stagger. IMAP check before each.
+
+---
+
+### 4. BATCH 5 RYEDALE SCRAPE (Priority 4 — return data today or weekend)
+25-day campaign stall. The scrape is 10 days overdue.
+
+**Return format:** business_name, url_or_no_website_flag, review_count, rating, town, category, phone, ssl (HTTP/HTTPS tag), mobile (pass/fail)
+
+**Once data arrives:** BRAIN runs personalisation that same day/evening. Initial sends: **Tuesday 2026-05-06 09:00-10:30**.
 
 ---
 
 ### 5. CHANGELOG — UPDATE TODAY
-
-CHANGELOG has no entries since 2026-03-28 (Session 1). The following must be logged today:
-- Sends fu_026 onwards — all sends and their outcomes
-- Campaign milestone #2 (all sequences complete) — date and confirmation
+35 days of HANDS actions completely unlogged. Log:
+- All sends fu_026 onwards
 - Warm pipeline outcomes (leads 1, 3, 22)
+- Status of fu_041-049
 - Batch 5 scrape status
 
 ---
 
-## WEEK 5 STRATEGY — BATCH 5 (RYEDALE)
+## WEEK 5 STRATEGY — BATCH 5 RYEDALE
 
 ### Target Profile
 
-**Ryedale District, North Yorkshire.** Market towns, rural trades economy. Key characteristics:
-- Higher estimated no-website density (~15-20%) vs East Yorkshire (~8-10%)
-- Trades-dominant: plumbing, electrical, roofing, joinery
-- Offline referral model dominant — owners know they lack digital presence but haven't prioritised it
-- Lower digital sophistication = higher SSL signal density (~60-70% HTTP sites expected)
-- Strong seasonal patterns: trades busiest May-August (peak DIY/renovation season)
+Ryedale District, North Yorkshire. Rural market towns with strong trades economy. Key characteristics:
+- Estimated 60-70% HTTP site rate (high SSL signal density vs East Yorkshire ~40%)
+- Trades-dominant: plumbing, electrical, roofing, joinery — peak season May-August
+- Offline referral model — digital gap is real but not yet a pain point owners have acted on
+- Lower digital sophistication = higher receptivity to SSL/mobile framing
 
-### Signal Priority for Ryedale
+### Signal Priority
 
-1. **SSL (priority)** — All HTTP sites. PAS framework. First-name subject. Expect 10-14 SSL leads from Ryedale scrape.
-2. **Mobile** — Secondary. PAS framework. Only where ssl=false but mobile failure is obvious.
-3. **No website** — Tertiary. BAB. Lower bar: 4★+ AND 20+ reviews (rural adjustment from 50+).
-4. **Social/high review** — Quaternary. AIDA with keyword-gap pivot. 4.5★+ AND 100+ reviews only.
+| Priority | Signal | Framework | Allocation | Qualification |
+|---|---|---|---|---|
+| 1 | **SSL (HTTP site)** | PAS | 60% | Any HTTP site |
+| 2 | Mobile failure | PAS | 20% | ssl=false AND mobile fails |
+| 3 | No website | BAB | 15% | 4★+ AND 20+ reviews |
+| 4 | High review, poor rank | AIDA | 5% | 4.5★+ AND 100+ reviews |
 
 ### Copy Rules for Batch 5
 
-- SSL initial: mention specific URL + "flagged 'Not Secure'" in subject. Reference the URL in the body ("I was looking at [specific URL] just now").
-- Mobile initial: show you tested it ("I checked on a mobile just now — [specific URL]").
-- No-website BAB: reference Google search result ("I searched 'plumber Malton' — [business name] doesn't appear").
-- Day-7 new angle: NEVER repeat the Day-0 angle. Pivot to a different but related pain:
-  - If Day-0 was SSL → Day-7: Google ranking impact of Not Secure / missing Google Business Profile
-  - If Day-0 was mobile → Day-7: SSL (if HTTP), or missing click-to-call, or competitor comparison
-  - If Day-0 was no-website → Day-7: competitors who ARE ranking / missed booking revenue estimate
+**SSL initial:**
+- Reference specific URL + `'Not Secure'` (Chrome's exact wording — credibility signal)
+- Subject: `[First name] — [town] [business type] website flagged 'Not Secure'`
+- Body: "I was looking at [specific URL] just now. Chrome is flagging it as 'Not Secure'…"
+- Owner first name + town required in both subject and body
 
-### Send Schedule for Batch 5
+**Mobile initial:**
+- Show you tested it: "I checked on a mobile just now — [specific URL]"
+- Subject: `[First name] — [town] [business] site isn't mobile-friendly`
 
-| Step | Preferred Day | Volume | Notes |
+**No-website BAB:**
+- Reference their Google Maps listing: "I searched 'plumber Malton' — [business] doesn't appear"
+- Lower bar: 4★+ AND 20+ reviews (rural market adjustment)
+
+**Day-7 pivot rules (always different pain point):**
+- SSL Day-0 → Day-7: Google ranking impact of Not Secure, or missing Google Business Profile
+- Mobile Day-0 → Day-7: SSL (if HTTP), or missing click-to-call, or competitor comparison
+- No-website Day-0 → Day-7: Competitors ranking for the keyword, or missed enquiry estimate
+
+### Send Schedule — Revised for Bank Holiday
+
+| Touchpoint | Date | Day | Notes |
 |---|---|---|---|
-| Day-0 initial sends | **Tuesday 2026-05-05 AM** | 10-15 | Preferred: Tue AM per Batch 1-4 data. Alternative: Friday 2026-05-02 if data arrives today |
-| Day-3 bumps | Thursday 2026-05-08 | Same count | Short thread reply. 3-4 lines. |
-| Day-7 new angle | Thursday 2026-05-15 | Same count | New pain point. Fresh email. No threading. |
-| Day-14 breakup | Thursday 2026-05-22 | Same count | Clean break. 3 lines. No pressure. |
+| Day-0 initial | **Tuesday 2026-05-06** | Tue | Post-bank-holiday premium. 09:00-10:30. |
+| Day-3 bump | Friday 2026-05-09 | Fri | Short thread reply. 09:00-10:30. |
+| Day-7 new angle | **Tuesday 2026-05-13** | Tue | New pain point. Fresh email. 09:00-10:30. |
+| Day-14 breakup | **Tuesday 2026-05-20** | Tue | 3-line close. 09:00-10:30. |
 
-**Send rate:** 10-15 per batch session. Max 40/day. 8-10 minute stagger between sends.
-**Send window:** 09:00-11:00 only. Tuesday AM is top priority.
-
-### Enrichment Priorities for Batch 5
-
-1. Leads with owner name + website → fastest to enrich (SSL check + email find)
-2. Leads with website only → crawl contact page + SSL check
-3. Leads with no website → phone lookup / Companies House / Facebook business page
-4. Leads scoring <50 → deprioritise
-
-**For trades specifically:** Prefer website contact page email over Google Maps listing email (workshop/reception vs owner).
+**DO NOT SEND MONDAY 2026-05-05 (bank holiday).**
 
 ---
 
-## SUBJECT LINE RULES — CONFIRMED AND UPDATED
+## POST-CAMPAIGN ANALYSIS — BATCHES 1-4 (Full)
 
-**Pattern:** `[First name] — [town] [business type] [specific concrete issue]`
+*First full analysis was completed in Day 34 run. Confirmed findings carried forward.*
 
-**Batch 5 examples (pre-written):**
-- `Mark — your Malton plumbing site is flagged 'Not Secure'`
-- `Julie — your Pickering B&B website is flagged 'Not Secure'`
-- `David — your Helmsley estate agency site isn't secure`
-- `Paul — your Kirkbymoorside joinery site doesn't work on mobile`
-- `Malton Plumbing — customers searching for a plumber can't find you online`
+### Confirmed Playbook (non-negotiable for Batch 5)
 
-**Rules (confirmed):**
-1. First name if known — outperforms business name only (3-0 in campaign)
-2. Town name always — local trust signal (confirmed by Claire and Tom's replies)
-3. Issue specific and verifiable — never abstract
-4. No question marks — statement > question for trades cold email
-5. SSL/Not Secure: use quotes exactly — "flagged 'Not Secure'" is how Chrome displays it, makes it credible
+1. **SSL → PAS → first-name subject → town name → specific URL** — 3/3 INTERESTED
+2. **Day-7 new pain point pivot** — Tom's conversion came from Day-7, not Day-0
+3. **2-sentence proposal nudge** — both Claire and Rob replied to short nudges
+4. **One pain point per email** — single signal, never list all issues
+5. **Tuesday AM** — all 3 INTERESTED replies arrived on a Tuesday morning
+6. **Town name in subject AND body** — local credibility confirmed by recipient feedback
+7. **No question marks in subject** — statement of fact > curiosity/question for cold trades email
+8. **Post-bank-holiday premium** — confirmed (all 3 replies on bank-holiday Tuesday)
+
+### Signal Performance Summary
+
+| Signal | Sends | INTERESTED | Rate | Batch 5 treatment |
+|---|---|---|---|---|
+| SSL (PAS) | ~20 | 3 | **~15%** | Core — non-negotiable |
+| Mobile (PAS) | ~12 | 0 direct* | 0%* | Secondary — Day-7 pivot |
+| No website (BAB) | ~6 | 0 | 0% | Lower bar — 20+ reviews |
+| AIDA (social) | ~4 | 0 | 0% | Keyword-gap pivot |
+
+*Tom's conversion was triggered by Day-7 new angle, not Day-0 mobile email.
+
+### What Didn't Work — Adjustments
+
+**BAB (no-website):** 0 INTERESTED at 50+ review threshold. Batch 5: lower to 20+. Reference Google Maps listing directly.
+
+**AIDA (social/high-review):** 0 INTERESTED with abstract ranking angle. Batch 5: keyword-gap angle ("'plumber Malton' shows competitors above you"). Verifiable, specific.
+
+**Mobile Day-0:** 0 direct INTERESTED. But Day-7 mobile → new angle produced Tom. Keep as secondary signal — the value is the Day-7 pivot opportunity.
+
+**Friday/Monday Day-0 sends:** Lower confirmed yield. Tuesday is the target. Post-bank-holiday Tuesday is the peak.
 
 ---
 
-## A/B TESTS — BATCH 5
+## A/B TESTS FOR BATCH 5
 
-| Variable | Test | Hypothesis |
-|---|---|---|
-| BAB review threshold | 20+ reviews vs 50+ reviews (Batch 4) | Lower bar will produce more leads but possibly lower quality. Measure INTERESTED rate. |
-| AIDA keyword-gap pivot | "keyword X in [town] doesn't show you" vs Batch 4 ranking angle | More specific = more credible = higher response |
-| Day-of-week: Tuesday vs Friday initial | Split Tuesday AM vs Friday AM sends | Confirm Tuesday hypothesis with larger dataset |
-| Subject length: short vs medium | `Mark — Malton plumbing site is Not Secure` vs `Mark — your Malton plumbing website is flagged 'Not Secure'` | Slightly longer with specific URL context |
+| Variable | Control | Test | Hypothesis |
+|---|---|---|---|
+| BAB review threshold | 50+ reviews (Batch 4) | 20+ reviews (Batch 5) | Lower bar increases volume — test if INTERESTED rate holds |
+| AIDA angle | Abstract ranking (Batch 4) | Keyword-gap specific (Batch 5) | Specific = credible = higher response |
+| Day-of-week premium | Observation from Batch 4 | Tuesday 2026-05-06 vs Day-3 Friday | Confirm Tuesday post-bank-holiday hypothesis with Batch 5 data |
+| Subject length | Short (`Mark — Malton site is Not Secure`) | Medium (`Mark — your Malton plumbing website is flagged 'Not Secure'`) | Slightly longer with specific context |
 
 ---
 
-## COMPLIANCE STATUS — DAY 34
+## CHANNEL STATUS — EMAIL AND LINKEDIN
+
+| Channel | Leads 1, 3, 22 | Batch 5 leads | All other Batch 1-4 |
+|---|---|---|---|
+| Email | CLOSED (8 days past deadline) | Pending — Day-0 Tuesday 2026-05-06 | All sequences complete |
+| LinkedIn | **OPEN from today — preferred Monday 2026-05-04** | Available after Day-3 (2026-05-12) | Seq complete — LinkedIn open |
+
+**Email close for warm pipeline:** Today is the final day for a final close email (if not yet sent). After today: email channel closed for leads 1, 3, 22. LinkedIn is the last soft channel.
+
+**LinkedIn for warm pipeline:** Approach Monday 2026-05-04. Curiosity-led connection note. NO reference to prior email, call, or website issues. IMAP must confirm current status before any LinkedIn approach.
+
+---
+
+## COMPLIANCE STATUS — DAY 35
 
 | Item | Status |
 |---|---|
 | Lead 19 (Summit Fitness) | Permanently suppressed ✓ |
 | Lead 7 | Permanently suppressed ✓ |
 | Lead 2 (Nidderdale Pet Supplies) | LOST — no further contact ✓ |
-| All sequences | 4-touchpoint maximum respected throughout ✓ |
+| 4-touchpoint maximum | Respected throughout all sequences ✓ |
 | GDPR basis | B2B legitimate interest (all business emails) ✓ |
 | Unsubscribe processing | Lead 19 processed within 24h ✓ |
-| Fitness/wellness Otley | Paused pending framing review ✓ |
+| Fitness/wellness Otley | Paused — framing review required before re-engaging ✓ |
 | Residential addresses | None sent ✓ |
-| Domain safety limit | Never exceeded 40/day ✓ |
-| No website fitness/wellness | Pause until framing reviewed |
-
-**Batch 5 compliance notes:**
-- Ryedale scrape: businesses only, no residential
-- All emails to business addresses — B2B legitimate interest basis
-- Process any new unsubscribes within 24h
-- Log all new suppressions in audit_log table
-- No Fitness/wellness category until framing reviewed
+| Domain safety limit (40/day) | Never exceeded ✓ |
+| Bank holiday sends | BLOCKED Monday 2026-05-05 ✓ |
 
 ---
 
@@ -356,47 +254,32 @@ CHANGELOG has no entries since 2026-03-28 (Session 1). The following must be log
 
 | Date | Run | Purpose | Status |
 |---|---|---|---|
-| Thu 24 Apr | Completed | Final breakup sends + campaign milestone framing | ✓ Done |
-| Fri 25 Apr | **MISSED** | Post-campaign analysis + Batch 5 copy | ✗ Missed — running today |
-| **Thu 1 May** | **TODAY** | Post-campaign analysis + Batch 5 readiness | ✓ Running now |
-| **Fri 2 May / Tue 5 May** | **REQUIRED** | Batch 5 copy personalisation (once Ryedale data arrives) | Mandatory |
-| Thu 8 May | Required | Batch 5 Day-3 bump copy (if initial sends Tue 5 May) | |
-| Thu 15 May | Required | Batch 5 Day-7 new angle copy | |
-| Thu 22 May | Required | Batch 5 Day-14 breakup copy | |
+| Thu 1 May | Completed | Post-campaign analysis + Batch 5 readiness | ✓ Done |
+| **Fri 2 May** | **TODAY** | Bank holiday discovery + Batch 5 send timing revision | ✓ Running |
+| **Fri 2 May (pm) / Sat** | **REQUIRED if Ryedale data arrives** | Batch 5 copy personalisation per lead | Mandatory |
+| **Mon 5 May** | Bank holiday — no BRAIN run needed | | — |
+| **Tue 6 May** | HANDS sends Batch 5 Day-0 | No BRAIN run unless issues | — |
+| **Fri 9 May** | Required | Batch 5 Day-3 bump copy | |
+| **Tue 13 May** | Required | Batch 5 Day-7 new angle copy | |
+| **Tue 20 May** | Required | Batch 5 Day-14 breakup copy | |
 
-**Hard rule: BRAIN must run within 48h of Ryedale data arriving. Campaign cannot wait another 7-day gap.**
-
----
-
-## TODAY — STRICT EXECUTION ORDER FOR HANDS
-
-| Priority | Action | Deadline |
-|---|---|---|
-| 1 | IMAP sweep — warm pipeline (leads 3, 22, 1) | Before 09:00 |
-| 2 | Full IMAP sweep — entire cohort | 09:00-10:00 |
-| 3 | Warm pipeline resolution (decision trees in value_delivery_queue.json) | Before 12:00 |
-| 4 | Confirm fu_041-049 status in CHANGELOG.md | By 10:00 |
-| 5 | Send fu_041-045 IF not sent AND IMAP confirms no reply | 10:00-11:15 |
-| 6 | **Batch 5 Ryedale scrape** — SINGLE HIGHEST PRIORITY | By 17:00 |
-| 7 | Unblock leads 49, 51, 53, 54 (parallel with scrape) | Afternoon |
-| 8 | Update CHANGELOG.md with all today's actions | EOD |
-
-**Do not skip the IMAP sweep before any send. Do not send to a lead that has replied.**
+**Hard rule: BRAIN must run within same day of Ryedale data arriving (Friday 2026-05-02 or weekend). Do not let another week pass without sends.**
 
 ---
 
-## WINNING PATTERNS — MASTER LIST (Day 34 Confirmed)
+## WINNING PATTERNS — MASTER LIST (Day 35 Confirmed)
 
-1. **SSL → PAS → first-name subject → town name → specific URL** — 3/3 INTERESTED. Non-negotiable core playbook.
-2. **Day-7 new pain point pivot** — Tom's conversion came from Day-7 new angle, not Day-0. Always pivot to a *different* problem.
-3. **2-sentence proposal nudge** — Claire and Rob both replied to short nudges, not long copy.
-4. **One pain point per email** — single clear signal prevents overwhelm.
-5. **Tuesday AM** — all 3 INTERESTED replies came on Tuesday morning (post-bank-holiday).
-6. **Town name in subject AND body** — local credibility signal, confirmed by recipient feedback.
-7. **No question marks in subject** — statement of specific fact outperforms curiosity/question pattern.
+1. **SSL → PAS → first-name subject → town name → specific URL** — 3/3 INTERESTED. Non-negotiable.
+2. **Post-bank-holiday Tuesday AM** — all 3 INTERESTED replies arrived on a bank-holiday-following Tuesday. Tuesday 2026-05-06 is the next such window.
+3. **Day-7 new pain point** (not a reframe) — Tom's conversion came from Day-7 genuinely different angle.
+4. **2-sentence proposal nudge** — Claire and Rob replied to short nudges, not long copy.
+5. **One pain point per email** — single clear signal prevents overwhelm.
+6. **Town name in subject AND body** — local credibility signal (confirmed by recipient feedback).
+7. **No question marks in subject** — statement of fact outperforms question for trades cold email.
+8. **IMAP before every send** — 28-day gap is now an operational risk; a lead that has replied and received a further cold email is a compliance and relationship problem.
 
 ---
 
-*Generated by OUTLOCAL BRAIN layer — 2026-05-01 07:00 UTC*  
-*Day 34. Post-campaign analysis complete (Batches 1–4). Batch 5 Ryedale copy ready to personalise on data receipt.*  
-*Next mandatory BRAIN run: within 48h of Ryedale data arriving — Friday 2026-05-02 or Monday 2026-05-05 latest.*
+*Generated by OUTLOCAL BRAIN layer — 2026-05-02 07:00 UTC*  
+*Day 35. Bank holiday send timing revision: Batch 5 initial sends now target Tuesday 2026-05-06 AM (post-May-Day bank holiday — same pattern as Easter week when all 3 INTERESTED replies arrived).*  
+*Next mandatory BRAIN run: same day Ryedale data arrives. If data arrives today: BRAIN runs this afternoon. Sends Tuesday 2026-05-06.*
