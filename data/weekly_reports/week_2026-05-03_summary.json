@@ -1,0 +1,258 @@
+{
+  "report_date": "2026-05-03",
+  "campaign_weeks": "2-5",
+  "period": "2026-04-06 to 2026-05-02",
+  "generated_by": "brain-intelligence-agent",
+  "previous_report": "week_2026-04-05",
+  "next_report_due": "2026-05-10",
+
+  "email_channel": {
+    "total_leads_scraped_campaign": 61,
+    "total_initial_sends_campaign": 60,
+    "total_followups_sent_campaign": 31,
+    "total_emails_sent_campaign": 91,
+    "total_replies_campaign": 11,
+    "reply_rate": 0.179,
+    "interested": 3,
+    "positive_reply_rate": 0.05,
+    "not_interested": 1,
+    "out_of_office": 1,
+    "wrong_person": 1,
+    "unsubscribe": 1,
+    "unsubscribe_rate": 0.017,
+    "conversions": 0,
+    "active_sequences": 0,
+    "campaign_stall_days": 25,
+    "warm_pipeline_leads": [1, 3, 22],
+    "warm_pipeline_status": "PRESUMED_LOST_NO_RESPONSE",
+    "warm_pipeline_value_range_gbp": "800-1175",
+    "imap_gap_days": 28,
+    "imap_status": "CRITICAL — sweep required before Tuesday sends"
+  },
+
+  "linkedin_channel": {
+    "status": "never_activated",
+    "connection_requests_sent": 0,
+    "acceptance_rate": null,
+    "moved_to_nurture": 0,
+    "profiles_json_written": 0,
+    "consecutive_runs_without_execution": 14,
+    "root_cause": "HANDS execution latency — notes generated on 8 BRAIN runs, zero sent",
+    "warm_pipeline_approved": [1, 3, 22],
+    "warm_pipeline_execute_date": "TUESDAY 2026-05-06",
+    "batch_5_day3_window": "2026-05-09 to 2026-05-11"
+  },
+
+  "best_framework": "pas",
+  "framework_performance": {
+    "pas": {
+      "positive_replies": 3,
+      "estimated_sends": 20,
+      "interested_rate": 0.15,
+      "notes": "Non-negotiable core. All 3 INTERESTED leads from PAS. 60% allocation Batch 5."
+    },
+    "bab": {
+      "positive_replies": 0,
+      "estimated_sends": 10,
+      "interested_rate": 0.0,
+      "notes": "0% at 50+ review threshold. Batch 5 test: lower to 20+ for rural Ryedale market."
+    },
+    "aida": {
+      "positive_replies": 0,
+      "estimated_sends": 6,
+      "interested_rate": 0.0,
+      "notes": "Abstract ranking angle failed. Batch 5 pivot: keyword-gap specific angle ('plumber Malton' not ranking)."
+    },
+    "question": {
+      "positive_replies": 0,
+      "estimated_sends": 4,
+      "interested_rate": 0.0,
+      "notes": "Insufficient data. 5% test allocation retained for Batch 5."
+    },
+    "cliffhanger": {
+      "positive_replies": 0,
+      "estimated_sends": 0,
+      "notes": "Deferred indefinitely."
+    },
+    "observation": {
+      "positive_replies": 0,
+      "estimated_sends": 0,
+      "notes": "Deferred indefinitely."
+    }
+  },
+
+  "best_signal_type": "ssl",
+  "signal_performance": {
+    "ssl": {
+      "positive_replies": 3,
+      "estimated_sends": 20,
+      "interested_rate": 0.15,
+      "batch_5_allocation": 0.60
+    },
+    "mobile": {
+      "positive_replies": 0,
+      "day7_conversions": 1,
+      "estimated_sends": 12,
+      "interested_rate_direct": 0.0,
+      "notes": "Day-7 new angle produced Tom (lead 1). Slow-burn secondary signal. 20% allocation Batch 5.",
+      "batch_5_allocation": 0.20
+    },
+    "no_website": {
+      "positive_replies": 0,
+      "estimated_sends": 8,
+      "interested_rate": 0.0,
+      "notes": "0% at 50+ review threshold. Batch 5 test: 20+ reviews for Ryedale rural market.",
+      "batch_5_allocation": 0.15
+    },
+    "social_media": {
+      "positive_replies": 0,
+      "estimated_sends": 6,
+      "interested_rate": 0.0,
+      "notes": "Keyword-gap angle pivot for Batch 5. 5% test only.",
+      "batch_5_allocation": 0.05
+    },
+    "generic": {
+      "positive_replies": 0,
+      "estimated_sends": 4,
+      "interested_rate": 0.0,
+      "notes": "Do not use. Deprecated."
+    }
+  },
+
+  "best_town": "Ripon",
+  "town_performance": {
+    "Ripon": {"interested": 1, "leads": 3, "verdict": "strong"},
+    "Leeds": {"interested": 1, "leads": 5, "verdict": "strong"},
+    "Sowerby Bridge": {"interested": 1, "leads": 2, "verdict": "strong_small_sample"},
+    "Halifax": {"interested": 0, "leads": 3, "verdict": "inconclusive"},
+    "Scarborough": {"interested": 0, "leads": 4, "verdict": "inconclusive"},
+    "Castleford": {"interested": 0, "leads": 2, "verdict": "inconclusive"},
+    "Pontefract": {"interested": 0, "leads": 2, "verdict": "inconclusive"},
+    "Beverley": {"interested": 0, "leads": 5, "verdict": "early_data"},
+    "Bridlington": {"interested": 0, "leads": 3, "verdict": "early_data"},
+    "Keighley": {"interested": 0, "leads": 2, "verdict": "watch_different_sector"},
+    "Otley": {"interested": 0, "leads": 1, "verdict": "suppress_fitness_category"}
+  },
+
+  "best_score_range": "70-100",
+  "score_range_performance": {
+    "70_to_100": {"interested": 3, "leads_emailed": 15, "notes": "100% of positives from this range"},
+    "55_to_69": {"interested": 0, "leads_emailed": 25, "notes": "No positives — insufficient Batch 5 data to conclude"},
+    "40_to_54": {"interested": 0, "leads_emailed": 15, "notes": "Low priority confirmed"},
+    "below_40": {"interested": 0, "leads_emailed": 5, "notes": "Do not email"}
+  },
+
+  "best_subject_pattern": "[First name] — [town] [business type] flagged 'Not Secure'",
+  "subject_line_rules": {
+    "first_name_in_subject": "Outperforms business name only",
+    "town_name_required": "Local credibility signal",
+    "specific_verifiable_issue": "Required — 'flagged Not Secure' beats 'improve your presence'",
+    "no_question_marks": "Statement of fact outperforms question hook for trades cold email",
+    "chrome_exact_wording": "Use 'Not Secure' — Chrome's exact wording adds credibility"
+  },
+
+  "send_timing": {
+    "confirmed_best_day": "Tuesday",
+    "confirmed_best_window": "post-bank-holiday Tuesday AM",
+    "evidence": "All 3 INTERESTED replies arrived Easter Saturday 2026-04-04; all deal activity on Tuesday 2026-04-07 (first working day after Easter Monday)",
+    "batch_5_send_date": "TUESDAY 2026-05-06",
+    "send_window": "09:00-10:30",
+    "bank_holiday_rule": "DO NOT send Monday 2026-05-05 — UK May Day bank holiday"
+  },
+
+  "linkedin_acceptance_rate": null,
+  "linkedin_execution_rate": 0.0,
+
+  "warm_pipeline": {
+    "leads": [
+      {
+        "lead_id": 1,
+        "business": "Ripon Road Carpentry",
+        "owner": "Tom",
+        "town": "Ripon",
+        "status": "PRESUMED_LOST_NO_RESPONSE",
+        "potential_gbp": "100-150",
+        "linkedin_approved": true,
+        "linkedin_execute": "TUESDAY 2026-05-06"
+      },
+      {
+        "lead_id": 3,
+        "business": "Westfield Hair & Beauty",
+        "owner": "Claire",
+        "town": "Leeds",
+        "status": "PRESUMED_LOST_NO_RESPONSE",
+        "potential_gbp": "350",
+        "linkedin_approved": true,
+        "linkedin_execute": "TUESDAY 2026-05-06"
+      },
+      {
+        "lead_id": 22,
+        "business": "Pennine Print & Design",
+        "owner": "Rob",
+        "town": "Sowerby Bridge",
+        "status": "PRESUMED_LOST_NO_RESPONSE",
+        "potential_gbp": "550-675",
+        "linkedin_approved": true,
+        "linkedin_execute": "TUESDAY 2026-05-06",
+        "upsell_signal": "sort the whole thing in one go"
+      }
+    ],
+    "total_potential_revenue_gbp": "1000-1175",
+    "realistic_outcome": "Zero to one email conversion. LinkedIn adds final marginal chance."
+  },
+
+  "batch_5_readiness": {
+    "status": "CRITICAL — 25-day stall ending Tuesday",
+    "target_area": "Ryedale District, North Yorkshire",
+    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
+    "expected_leads": "18-22",
+    "expected_initial_sends": "12-18",
+    "send_date": "TUESDAY 2026-05-06",
+    "send_window": "09:00-10:30",
+    "expected_interested_rate": "~15% from SSL-PAS (based on Batches 1-3)",
+    "framework_split": {"pas_ssl": 0.60, "pas_mobile": 0.20, "bab_no_website": 0.15, "aida_keyword_gap": 0.05}
+  },
+
+  "operational_failures": [
+    "CHANGELOG not updated in 35 days — all sends unlogged",
+    "LinkedIn never executed despite notes prepared on 8 BRAIN runs",
+    "IMAP gap 28 days — reply state unknown for entire cohort",
+    "Batch 5 Ryedale scrape 10 days overdue",
+    "fu_041-045 send status unconfirmed — 9 days overdue",
+    "4 leads blocked for email enrichment 32-37 days"
+  ],
+
+  "recommendations": [
+    "IMAP full cohort sweep BEFORE any Tuesday sends — 28-day gap is compliance risk",
+    "Update CHANGELOG today — all sends fu_026 onwards, warm pipeline outcomes",
+    "Batch 5 Ryedale scrape delivery by Monday evening — BRAIN personalises same day",
+    "Send Batch 5 initial emails TUESDAY 2026-05-06 09:00-10:30 ONLY (post-bank-holiday premium)",
+    "Execute warm pipeline LinkedIn session Tuesday after 11:00 — leads 1, 3, 22",
+    "Write linkedin_profiles.json SAME SESSION as LinkedIn outreach — this has never been done",
+    "PAS+SSL allocation: 60% of Batch 5 — non-negotiable based on 3/3 INTERESTED from this pattern",
+    "Minimum lead score: maintain 55 (exception: 50+ if owner name confirmed + no-website + 4★+ 20+ reviews)",
+    "DO NOT send on Monday 2026-05-05 — UK May Day bank holiday (hard rule)",
+    "Unblock leads 49, 51, 53, 54 before Tuesday — Companies House, phone, directory searches",
+    "Batch 5 Day-3 LinkedIn window: Friday 2026-05-09 — HANDS must execute same day as bump emails"
+  ],
+
+  "compliance": {
+    "unsubscribes_actioned": 1,
+    "gdpr_compliant": true,
+    "suppressed_leads": [7, 19],
+    "not_interested_all_channels": [2],
+    "all_outreach_b2b": true,
+    "legitimate_interest_documented": true,
+    "imap_gap_risk": "HIGH — 28 days without IMAP check",
+    "changelog_gap_risk": "HIGH — 35 days of unlogged sends"
+  },
+
+  "week_6_targets": {
+    "batch_5_initial_sends": "12-18",
+    "linkedin_warm_pipeline_requests": 3,
+    "linkedin_batch_5_day3_requests": "up to 12",
+    "imap_checks_required": "60+ leads full cohort",
+    "changelog_entries_required": "all historical sends + all new",
+    "target_interested_from_batch_5": "2-3 (based on 15% SSL-PAS rate)"
+  }
+}
