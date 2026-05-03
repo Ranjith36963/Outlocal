@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-05-02T07:00:00Z",
-  "date": "2026-05-02",
-  "day_number": 35,
-  "note": "BRAIN layer — Day 35 (Friday). Batch 5 Ryedale data still NOT received. IMAP gap now 28 days. KEY DISCOVERY THIS RUN: Monday 2026-05-05 is UK May Day bank holiday — DO NOT send on Monday 2026-05-05 under any circumstances. Send Tuesday 2026-05-06 AM instead. Post-bank-holiday Tuesday is the confirmed #1 yield trigger in this campaign (all 3 INTERESTED replies arrived on Tuesday 2026-04-07, post-Easter Monday). The delay costs 24 hours but gains the highest-yield send window available. Campaign stall now 25 days.",
+  "generated_at": "2026-05-03T07:00:00Z",
+  "date": "2026-05-03",
+  "day_number": 36,
+  "note": "BRAIN layer — Day 36 (Sunday). Weekend bridge run. No HANDS activity expected Saturday/Sunday. Batch 5 Ryedale data STILL not received — campaign stall now 26 days. IMAP gap now 29 days. Bank holiday Monday 2026-05-05 unchanged — no sends. Tuesday 2026-05-06 initial send target confirmed. LinkedIn approach for warm pipeline (leads 1, 3, 22) opens TOMORROW Monday 2026-05-04 — connection note copy prepared in value_delivery_queue.json. fu_041-045 now 10+ days overdue if not sent Friday — send first window Tuesday 2026-05-06 post-IMAP if HANDS confirms not already sent.",
 
-  "today_outreach": "ZERO sends. No active sequences. No Batch 5 data. Contingency fu_041-045 still actionable if IMAP confirms no prior reply.",
+  "today_outreach": "ZERO sends. Sunday. No active sequences. No Batch 5 data. No HANDS activity expected.",
 
-  "bank_holiday_alert": {
+  "bank_holiday_rule": {
     "date": "2026-05-05",
     "day": "Monday",
     "type": "UK May Day Early May Bank Holiday",
-    "impact_rating": "CRITICAL — changes entire Batch 5 send strategy",
-    "detail": "UK May Day bank holiday falls Monday 2026-05-05. SMEs will not be at their desks or checking email. Tuesday 2026-05-06 becomes the first working day of the week. This is the EXACT pattern that produced all 3 INTERESTED replies on Easter-week Tuesday 2026-04-07 (post-Easter Monday). Business owners return from a long weekend, catch up on email, and are in a more considered state. Do NOT send on Monday even if Batch 5 data arrives today. The 24-hour wait for Tuesday is worth it.",
-    "send_date": "TUESDAY 2026-05-06 AM",
-    "historical_evidence": "All 3 INTERESTED replies (Claire, Rob, Tom) arrived on Tuesday 2026-04-07 — the first working day after Easter Monday 2026-04-06. The same dynamic applies to Tuesday 2026-05-06 (first working day after May Day 2026-05-05)."
+    "status": "CONFIRMED — hard rule: zero sends on Monday 2026-05-05 under any scenario.",
+    "revised_send_date": "TUESDAY 2026-05-06 AM — post-bank-holiday premium window confirmed."
   },
 
   "new_signals_today": 0,
   "new_leads_today": 0,
 
-  "imap_gap_days": 28,
+  "imap_gap_days": 29,
   "imap_last_confirmed_check": "2026-04-04",
-  "imap_status": "CRITICAL OVERDUE — 28 days. Sweep entire cohort before any sends or LinkedIn outreach. Warm pipeline leads 3, 22, 1 are LinkedIn-unlocked today (buffer expired). IMAP must precede any LinkedIn approach for these leads.",
+  "imap_status": "CRITICAL OVERDUE — 29 days. Full cohort sweep must complete before any sends or LinkedIn approach. First IMAP sweep opportunity: Tuesday 2026-05-06 morning (bank holiday Monday rules out Monday sweep for sends purposes; HANDS may sweep on Monday if available — just do not send if Monday is the bank holiday).",
 
   "batch_5_status": {
-    "status": "CRITICAL — 25-day campaign stall. No active sequences. No warm pipeline.",
+    "status": "CRITICAL — 26-day campaign stall. No active sequences. Batch 5 Ryedale data now 11 days overdue.",
     "data_received": false,
     "waiting_since": "2026-04-22",
-    "days_overdue": 10,
+    "days_overdue": 11,
+    "campaign_stall_days": 26,
     "target_area": "Ryedale District, North Yorkshire",
     "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
     "target_categories": [
@@ -36,45 +35,32 @@
     ],
     "expected_leads": "18-22 (15-20 emailable after SSL/mobile signal check)",
     "minimum_score": 55,
-    "send_schedule_bank_holiday_revised": {
-      "note": "Bank holiday on Monday 2026-05-05 removes Monday as an option. ALL Batch 5 initial sends now target TUESDAY 2026-05-06 AM regardless of when data arrives.",
-      "if_data_arrives_today_friday_2026_05_02": {
-        "brain_personalisation": "TODAY — 2026-05-02 afternoon/evening",
-        "initial_sends": "TUESDAY 2026-05-06, 09:00-10:30",
-        "day3_bumps": "Friday 2026-05-09, 09:00-10:30",
-        "day7_new_angle": "TUESDAY 2026-05-13, 09:00-10:30",
-        "day14_breakup": "TUESDAY 2026-05-20, 09:00-10:30",
-        "assessment": "OPTIMAL SCHEDULE — three of four touchpoints land on Tuesday AM (peak yield day). Day-7 and Day-14 are also Tuesdays.",
-        "yield_multiplier": "Expected ~15% INTERESTED from SSL-PAS initial sends on a post-bank-holiday Tuesday (same yield driver as Easter week)"
-      },
-      "if_data_arrives_weekend": {
-        "brain_personalisation": "Saturday/Sunday — same weekend",
-        "initial_sends": "TUESDAY 2026-05-06, 09:00-10:30",
-        "day3_bumps": "Friday 2026-05-09, 09:00",
-        "day7_new_angle": "TUESDAY 2026-05-13, 09:00",
-        "day14_breakup": "TUESDAY 2026-05-20, 09:00"
-      },
-      "if_data_arrives_monday_bank_holiday": {
-        "note": "If HANDS somehow receives data on the bank holiday Monday — BRAIN runs Monday evening, sends still Tuesday 2026-05-06.",
-        "initial_sends": "TUESDAY 2026-05-06, 09:00-10:30"
-      },
-      "no_monday_sends_ever": "DO NOT send initial Batch 5 emails on Monday 2026-05-05 under any scenario.",
-      "send_rate": "Max 15 initial sends per batch. 8-10 minute stagger between sends.",
-      "send_window": "09:00-10:30 only. No afternoon sends."
+    "if_data_arrives_today_sunday": {
+      "brain_run": "BRAIN personalises today — same day/evening",
+      "initial_sends": "TUESDAY 2026-05-06, 09:00-10:30 (not Monday — bank holiday)",
+      "note": "Sunday arrival still means Tuesday initial sends. Do NOT send Monday."
     },
+    "send_schedule_confirmed": {
+      "day_0_initial": "Tuesday 2026-05-06, 09:00-10:30",
+      "day_3_bump": "Friday 2026-05-09, 09:00-10:30",
+      "day_7_new_angle": "Tuesday 2026-05-13, 09:00-10:30",
+      "day_14_breakup": "Tuesday 2026-05-20, 09:00-10:30",
+      "note": "Three of four touchpoints on Tuesday AM — optimal yield alignment. Unchanged from Day 35."
+    },
+    "send_rate": "Max 15 initial sends per batch. 8-10 minute stagger between sends.",
+    "send_window": "09:00-10:30 only.",
     "scraping_instructions": {
       "tool": "Google Maps scraper (F004 — Playwright)",
       "return_format": "business_name, url_or_no_website_flag, review_count, rating, town, category, phone",
-      "do_not_enrich": "BRAIN enriches on next run — HANDS returns raw scrape data only",
-      "ssl_check_required": "YES — check each URL for HTTP vs HTTPS. Tag ssl=true/false. This is the primary signal.",
-      "mobile_check": "Secondary — Playwright screenshot or PageSpeed API check at mobile viewport",
-      "no_website_flag": "If no website found via Google Maps listing, flag no_website=true",
+      "ssl_check_required": "YES — tag each URL as ssl=true (HTTPS) or ssl=false (HTTP). Primary signal.",
+      "mobile_check": "Secondary — Playwright screenshot or PageSpeed API check at mobile viewport.",
+      "no_website_flag": "If no website found via Google Maps listing, flag no_website=true.",
       "minimum_score_to_include": 50
     }
   },
 
   "signal_assignments": [],
-  "signal_assignment_note": "No leads to assign signals to. All signal assignments await Batch 5 Ryedale raw data. When data arrives, BRAIN runs full waterfall same session.",
+  "signal_assignment_note": "No leads to assign signals to. All signal assignments await Batch 5 Ryedale raw data. When data arrives, BRAIN runs full waterfall same session. Priority waterfall: ssl → PAS → first-name subject; mobile → PAS; no_website → BAB (20+ reviews); social_high_review → AIDA (100+ reviews).",
 
   "waterfall_logic": {
     "confirmed_winner": "ssl → PAS → first-name subject — 3/3 INTERESTED leads used this exact combination. Non-negotiable core of Batch 5.",
@@ -83,30 +69,29 @@
       "framework": "PAS",
       "subject_pattern": "[First name] — [town] [business type] website flagged 'Not Secure'",
       "expected_rate": "~15% INTERESTED (confirmed from Batches 1-3)",
-      "notes": "Use for all HTTP sites. Reference the specific URL in the body. SSL is the strongest pain-to-action trigger in the campaign."
+      "batch_5_allocation": "60%"
     },
     "priority_2": {
       "signal": "mobile",
       "framework": "PAS",
       "subject_pattern": "[First name] — [town] [business] site isn't mobile-friendly",
-      "expected_rate": "0% direct confirmed — Tom Day-7 validates as slow-burn secondary signal.",
-      "notes": "Use when ssl=false AND mobile failure is clear. Day-7 pivot to SSL (if HTTP) or competitor comparison."
+      "expected_rate": "0% direct — Tom Day-7 validates as slow-burn secondary signal",
+      "batch_5_allocation": "20%",
+      "notes": "Use when ssl=false AND mobile failure is clear. Day-7 pivot to new angle required."
     },
     "priority_3": {
       "signal": "no_website",
       "framework": "BAB",
       "subject_pattern": "[Business name] — [town] [trade]: customers can't find you online",
-      "qualification": "4★+ AND 20+ reviews (Ryedale lowered bar from 50+ in Batch 4 — rural offline economy)",
-      "expected_rate": "0% in Batch 4. Lowered bar and more concrete reference for Batch 5.",
-      "notes": "Reference their Google Maps listing: 'I searched plumber Malton — [business] doesn't appear.'"
+      "qualification": "4★+ AND 20+ reviews (Ryedale — lowered from 50+ in Batch 4)",
+      "batch_5_allocation": "15%"
     },
     "priority_4": {
       "signal": "social_media_high_review",
       "framework": "AIDA",
-      "subject_pattern": "[First name] — [N] reviews but [keyword] in [town] isn't bringing you up",
+      "subject_pattern": "[First name] — [N] reviews but '[keyword] [town]' isn't bringing your site up",
       "qualification": "4.5★+ AND 100+ reviews only",
-      "expected_rate": "0% in Batch 4. Keyword-gap angle pivot for Batch 5.",
-      "notes": "Specific keyword: 'plumber Malton' or 'electrician Pickering'. Verifiable, not abstract."
+      "batch_5_allocation": "5%"
     },
     "do_not_email_generic": true,
     "do_not_email_fitness_wellness_otley": true
@@ -116,49 +101,54 @@
     "lead_49": {
       "business": "East Riding Builders Ltd",
       "status": "blocked_no_email",
-      "days_blocked": 32,
-      "action": "HANDS: Companies House director name search. 32 days blocked — critically overdue."
+      "days_blocked": 33,
+      "action": "HANDS: Companies House director name search. 33 days blocked — critically overdue."
     },
     "lead_51": {
       "business": "Driffield Garden Centre",
       "status": "blocked_contact_form_only",
-      "days_blocked": 32,
-      "action": "HANDS: phone after 09:30. 32 days blocked — final attempt before archiving."
+      "days_blocked": 33,
+      "action": "HANDS: phone after 09:30 on a weekday. Final attempt before archiving."
     },
     "lead_53": {
       "business": "Bridlington Bay Lettings",
       "status": "blocked_no_direct_email",
-      "days_blocked": 32,
+      "days_blocked": 33,
       "action": "HANDS: Rightmove / Zoopla agent directory. Try info@ as fallback."
     },
     "lead_54": {
       "business": "The Wolds Inn",
       "status": "blocked_no_email",
-      "days_blocked": 32,
+      "days_blocked": 33,
       "action": "HANDS: try info@thewoldsinn.co.uk. Low priority — do after 49, 51, 53."
     }
   },
 
   "linkedin_channel_update": {
-    "warm_pipeline_buffer_expired_today": true,
+    "buffer_expired": "2026-05-02 (Friday — Day 35)",
     "leads_available_for_linkedin": [1, 3, 22],
-    "available_from": "2026-05-02 (today — buffer expired)",
-    "preferred_linkedin_date": "2026-05-04 (Monday — first business day after today)",
-    "imap_precondition": "IMAP sweep must precede any LinkedIn approach for leads 1, 3, 22. If IMAP reveals a new reply: do NOT approach on LinkedIn — respond to the reply instead.",
-    "note": "BRAIN email layer notes LinkedIn opens. LinkedIn BRAIN layer handles execution planning."
+    "approach_date": "TOMORROW — Monday 2026-05-04",
+    "approach_time": "09:00-10:00 Monday morning (business owners check LinkedIn on weekday mornings)",
+    "imap_precondition": "HANDS must IMAP-sweep leads 1, 3, 22 before any LinkedIn approach. If IMAP reveals an unread reply: respond to that reply instead — do NOT approach on LinkedIn.",
+    "connection_note_copy": "See value_delivery_queue.json — connection notes written for each lead.",
+    "rule": "Curiosity-led connection notes ONLY. Zero reference to prior email, call, website, SSL, booking, or quote form. Sounds like a genuine business connection, not a follow-on pitch.",
+    "after_connection_accepted": "Wait 2-3 days before sending any message. First message: short value observation, not a pitch."
   },
 
   "summary": {
     "new_signals_assigned": 0,
     "blocked_carry_forward": 4,
     "sends_today": 0,
-    "campaign_stall_days": 25,
-    "imap_gap_days": 28,
-    "bank_holiday_discovery": "CRITICAL — Monday 2026-05-05 is UK May Day. Tuesday 2026-05-06 is post-bank-holiday — exact conditions that produced all 3 INTERESTED replies on 2026-04-07. DO NOT send Monday.",
-    "optimal_send_window": "TUESDAY 2026-05-06 AM — highest-yield window available in this campaign",
-    "single_highest_priority_action": "HANDS: Batch 5 Ryedale scrape — return data today or weekend. BRAIN personalises. Sends TUESDAY 2026-05-06.",
-    "second_priority": "IMAP sweep — 28-day gap. Before any sends or LinkedIn.",
-    "third_priority": "Confirm fu_041-045 status in CHANGELOG.md. If not sent: send today (IMAP check first). 9 days overdue.",
-    "fourth_priority": "Confirm fu_046-049 and warm pipeline final close status in CHANGELOG.md."
+    "campaign_stall_days": 26,
+    "imap_gap_days": 29,
+    "bank_holiday_monday_confirmed": "2026-05-05 — zero sends",
+    "optimal_send_window": "TUESDAY 2026-05-06 AM — post-bank-holiday premium. Highest-yield window in this campaign.",
+    "linkedin_opens_tomorrow": "Monday 2026-05-04 — leads 1, 3, 22. IMAP sweep first.",
+    "fu_041_045_status": "OVERDUE 10+ days if not sent Friday. Send Tuesday 2026-05-06 post-IMAP if HANDS confirms not already sent.",
+    "single_highest_priority_action": "HANDS: Batch 5 Ryedale scrape — return data TODAY (Sunday) if possible. BRAIN personalises same session. Sends TUESDAY 2026-05-06.",
+    "second_priority": "LinkedIn for leads 1, 3, 22 — TOMORROW Monday 2026-05-04. IMAP sweep first.",
+    "third_priority": "IMAP sweep full cohort — 29-day gap. Before any sends or LinkedIn.",
+    "fourth_priority": "fu_041-045 status confirmed in CHANGELOG. Send Tuesday if not sent + IMAP clear.",
+    "fifth_priority": "CHANGELOG.md update — 36 days of HANDS actions unlogged."
   }
 }

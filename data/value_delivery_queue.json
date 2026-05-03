@@ -1,21 +1,22 @@
 {
-  "generated_at": "2026-05-02T07:00:00Z",
-  "date": "2026-05-02",
-  "day_number": 35,
-  "note": "BRAIN layer — Day 35 (Friday). All three warm-pipeline leads PRESUMED_LOST_NO_RESPONSE. Final email close deadline 8 days past. LinkedIn buffer expired today (2026-05-02) — leads 1, 3, 22 can now be approached on LinkedIn from Monday 2026-05-04 (IMAP check must precede any approach). No further email outreach unless IMAP reveals unread reply.",
+  "generated_at": "2026-05-03T07:00:00Z",
+  "date": "2026-05-03",
+  "day_number": 36,
+  "note": "BRAIN layer — Day 36 (Sunday). KEY UPDATE THIS RUN: LinkedIn connection note copy prepared for all three warm pipeline leads. Approach date: TOMORROW Monday 2026-05-04 09:00-10:00. IMAP sweep must precede any LinkedIn action. If IMAP finds a reply from any of these leads: respond to that reply instead — do NOT approach on LinkedIn. Email channel is closed for all three.",
 
   "pipeline_summary": {
     "total_interested": 3,
     "outcomes_confirmed": 0,
     "brain_declared_presumed_lost": 3,
-    "days_since_original_replies": 28,
-    "days_past_final_email_close_deadline": 8,
-    "email_channel": "CLOSED — final close deadline was 2026-04-24. No further cold email to leads 1, 3, 22.",
-    "linkedin_channel": "OPEN from today — buffer expired 2026-05-02. Preferred approach date Monday 2026-05-04.",
+    "days_since_original_replies": 29,
+    "days_past_final_email_close_deadline": 9,
+    "email_channel": "CLOSED — no further cold email to leads 1, 3, 22.",
+    "linkedin_channel": "OPEN. Buffer expired 2026-05-02. Preferred approach Monday 2026-05-04.",
     "linkedin_precondition": "IMAP sweep must confirm no unread reply before any LinkedIn approach.",
-    "realistic_conversion_expectation": "Very low via email. LinkedIn soft approach offers a marginal additional chance — leads must not feel stalked.",
+    "linkedin_approach_window": "Monday 2026-05-04, 09:00-10:00 — after IMAP sweep of leads 1, 3, 22.",
     "total_pipeline_value_if_all_convert": "£800-1,175 (Claire £350 + Rob £550-675 + Tom £100-150)",
-    "realistic_revenue_this_week": "£0-350 (one surprise IMAP conversion possible; LinkedIn conversion 2-3 weeks away at earliest)"
+    "realistic_revenue_this_week": "£0-350 (one IMAP surprise possible; LinkedIn conversion 2-3 weeks away at earliest)",
+    "note_on_bank_holiday": "Monday 2026-05-05 bank holiday does NOT affect LinkedIn. LinkedIn approach on Monday 2026-05-04 (tomorrow) is fine — business owners are active on LinkedIn even on regular Mondays."
   },
 
   "items": [
@@ -29,9 +30,9 @@
       "classification": "INTERESTED",
       "original_reply_date": "2026-04-04",
       "call_was": "2026-04-07T14:00:00Z",
-      "days_since_reply": 28,
-      "days_past_final_email_close_deadline": 8,
+      "days_since_reply": 29,
       "brain_status": "PRESUMED_LOST_NO_RESPONSE",
+      "email_channel": "CLOSED",
       "priority": 1,
 
       "proposal_options": {
@@ -50,37 +51,47 @@
         }
       },
 
-      "decision_tree_2026_05_02": {
-        "step_1_imap_check": "Check IMAP for claire@westfieldhair.co.uk FIRST.",
+      "linkedin_approach": {
+        "status": "READY — approach Monday 2026-05-04",
+        "precondition": "IMAP sweep claire@westfieldhair.co.uk FIRST. If reply found: act on that instead.",
+        "find_profile": "Search: Claire [Westfield Hair Beauty Leeds] on LinkedIn. Verify profile before connecting.",
+        "connection_note": "Hi Claire — came across Westfield Hair & Beauty while looking at Leeds salons. Really strong local reputation. Would be great to connect.",
+        "rules": [
+          "Zero reference to prior email, call, SSL, booking system, or website",
+          "Under 200 characters for connection note",
+          "Friendly and genuine — not a pitch",
+          "Do not send a message at connection — wait for acceptance"
+        ],
+        "after_acceptance_wait": "2-3 days",
+        "first_message_after_acceptance": "Hi Claire — thanks for connecting. Hope May is a good one for the salon. I know the hair and beauty sector has been picking up really well in Leeds this spring. All the best.",
+        "first_message_rules": [
+          "No mention of website, SSL, booking, or prior email — ever",
+          "Warm, brief, seasonal",
+          "Leave door open without pushing"
+        ],
+        "conversion_window": "2-3 weeks via LinkedIn — very low probability but worth the soft touch",
+        "if_no_connection_in_7_days": "Mark LOST_NO_RESPONSE. No further action on any channel."
+      },
+
+      "decision_tree_imap_monday": {
         "if_reply_found_converted": {
-          "action": "Log CHANGELOG.md — CAMPAIGN MILESTONE #1 — FIRST REVENUE. Send invoice/agreement today. Delivery: 3-4 working days.",
-          "invoice_amount": "£350 (Option B — most likely given her booking-gap pain point)"
+          "action": "Log CHANGELOG.md — CAMPAIGN MILESTONE #1 — FIRST REVENUE. Send invoice today. Do NOT approach on LinkedIn.",
+          "invoice_amount": "£350 (Option B — her booking-gap pain point matches full fix)"
+        },
+        "if_reply_found_still_interested": {
+          "action": "Respond warmly. Send proposal options A/B. Close target: this week. Do NOT approach on LinkedIn."
         },
         "if_reply_found_declined": {
-          "action": "Mark LOST. Reply briefly: 'Thanks for letting me know, Claire — good luck with the season ahead.' Log in CRM. No further contact on any channel."
+          "action": "Mark LOST. Reply: 'Thanks for letting me know, Claire — good luck with the season ahead.' No further contact."
         },
-        "if_no_reply_and_no_final_close_was_sent": {
-          "action": "Send ONE final close via email TODAY (before 12:00). Mark LOST_NO_RESPONSE immediately after.",
-          "final_close_body": "Claire,\n\nHappy to leave this with you — I know May is a busy time for the salon.\n\nIf the booking system or the SSL fix rises to the top of the list, you know where I am.\n\nAll the best,\n[Your name]",
-          "deadline": "Before 12:00 today — no extension. Email channel closes after this."
-        },
-        "if_final_close_already_sent_still_silent": {
-          "action": "Email channel closed. Mark LOST_NO_RESPONSE. LinkedIn soft approach available from Monday 2026-05-04 — curiosity-led, no reference to prior call or email.",
-          "linkedin_note_guidance": "Reference her salon or a local business topic. NO mention of website, SSL, booking, or the call. Connection note only — no pitch."
+        "if_no_reply": {
+          "action": "LinkedIn connection note (above). Mark LOST_NO_RESPONSE. Monitor for LinkedIn acceptance 2-3 days."
         }
       },
 
-      "audit_status": "complete",
-      "audit_files": [
-        "data/audits/lead_3_westfield_hair.json",
-        "data/audits/lead_3_ranking.json",
-        "data/audits/lead_3_competitors.json",
-        "data/audits/lead_3_booking_options.json"
-      ],
       "block_all_email_followups": true,
-      "conversion_probability": "Very low email. LinkedIn gives a final marginal chance.",
       "linkedin_available": true,
-      "linkedin_preferred_date": "2026-05-04 (Monday)"
+      "linkedin_approach_date": "2026-05-04"
     },
 
     {
@@ -93,12 +104,12 @@
       "classification": "INTERESTED",
       "original_reply_date": "2026-04-04",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "days_since_reply": 28,
-      "days_past_final_email_close_deadline": 8,
+      "days_since_reply": 29,
       "brain_status": "PRESUMED_LOST_NO_RESPONSE",
+      "email_channel": "CLOSED",
       "priority": 2,
 
-      "upsell_signal": "'Sort the whole thing in one go' — strongest buying signal in the campaign. May is wedding + event season — print demand high.",
+      "upsell_signal": "'Sort the whole thing in one go' — strongest buying signal in the campaign. May is wedding + event season — print demand is at peak.",
 
       "proposal_options": {
         "option_a": {
@@ -121,32 +132,44 @@
         }
       },
 
-      "decision_tree_2026_05_02": {
-        "step_1_imap_check": "Check IMAP for rob@pennineprint.co.uk FIRST.",
+      "linkedin_approach": {
+        "status": "READY — approach Monday 2026-05-04",
+        "precondition": "IMAP sweep rob@pennineprint.co.uk FIRST. If reply found: act on that instead.",
+        "find_profile": "Search: Rob [Pennine Print Design Sowerby Bridge] on LinkedIn. Verify before connecting.",
+        "connection_note": "Hi Rob — came across Pennine Print while exploring Calderdale businesses. Great local reputation. Happy to connect.",
+        "rules": [
+          "Zero reference to prior email, SSL, mobile, redesign, or website",
+          "Under 200 characters",
+          "Reads like a genuine local business connection"
+        ],
+        "after_acceptance_wait": "2-3 days",
+        "first_message_after_acceptance": "Hi Rob — thanks for connecting. Looks like a busy time for Pennine Print — the wedding and events season always picks up well in West Yorkshire. Hope it's going well.",
+        "first_message_rules": [
+          "Reference print + wedding/events season — relevant to Rob's business, no pitch",
+          "No mention of website, SSL, redesign, or prior contact",
+          "Warm and brief"
+        ],
+        "upsell_note": "Rob's 'sort the whole thing in one go' signal makes him the highest-value warm prospect (Option B/C = £550-675+). If LinkedIn eventually leads to a DM conversation: present bundle options naturally.",
+        "conversion_window": "2-3 weeks — low-medium probability given original buying signal strength",
+        "if_no_connection_in_7_days": "Mark LOST_NO_RESPONSE. No further action."
+      },
+
+      "decision_tree_imap_monday": {
         "if_reply_found_deal_alive": {
-          "action": "Present options A/B/C. Close target: Monday 2026-05-05 (bank holiday — push to Tuesday 2026-05-06 if needed). Rob's 'sort the whole thing' signal points to Option B or C. Do not discount.",
-          "note": "May is peak print season (weddings, events, graduations). Rob may have been too busy in April and now has time."
+          "action": "Present options A/B/C. Target close: Thursday 2026-05-07. May is peak print season — timing works. Do NOT approach on LinkedIn.",
+          "note": "Rob's bundle question remains the strongest upsell signal — do not discount to Option A unless he insists."
         },
         "if_reply_found_declined": {
           "action": "Mark LOST. Brief thank-you. No further contact."
         },
-        "if_no_reply_and_no_final_close_was_sent": {
-          "action": "Send ONE final close via email TODAY.",
-          "final_close_body": "Rob,\n\nHappy to leave this with you — if you do decide to sort the site, whether it's just the SSL or the full redesign, you know where I am.\n\nAll the best,\n[Your name]",
-          "deadline": "Before 12:00 today"
-        },
-        "if_final_close_already_sent_still_silent": {
-          "action": "Email channel closed. Mark LOST_NO_RESPONSE. LinkedIn soft approach available from Monday 2026-05-04.",
-          "linkedin_note_guidance": "Reference his print business or local business context. No mention of website, SSL, redesign, or prior email. Curiosity-led connection note only."
+        "if_no_reply": {
+          "action": "LinkedIn connection note (above). Mark LOST_NO_RESPONSE. Monitor for acceptance."
         }
       },
 
-      "audit_status": "complete",
-      "audit_file": "data/audits/lead_22_pennine_print.json",
       "block_all_email_followups": true,
-      "conversion_probability": "Low-medium — Rob's bundle question remains the strongest buying signal. May seasonality may revive interest. IMAP is the final check.",
       "linkedin_available": true,
-      "linkedin_preferred_date": "2026-05-04 (Monday)"
+      "linkedin_approach_date": "2026-05-04"
     },
 
     {
@@ -159,70 +182,86 @@
       "classification": "INTERESTED",
       "original_reply_date": "2026-04-04",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "days_since_reply": 28,
-      "days_past_final_email_close_deadline": 8,
+      "days_since_reply": 29,
       "brain_status": "PRESUMED_LOST_NO_RESPONSE",
+      "email_channel": "CLOSED",
       "priority": 3,
 
       "pricing_discussed": "£100-150 for quote form add-on",
 
-      "decision_tree_2026_05_02": {
-        "step_1_imap_check": "Check IMAP for tom@riponroadcarpentry.co.uk FIRST.",
+      "seasonal_note": "May is peak spring carpentry and joinery season in North Yorkshire. Tom may now have time to look at the site after a busy April.",
+
+      "linkedin_approach": {
+        "status": "READY — approach Monday 2026-05-04",
+        "precondition": "IMAP sweep tom@riponroadcarpentry.co.uk FIRST. If reply found: act on that instead.",
+        "find_profile": "Search: Tom [Ripon Road Carpentry Ripon] on LinkedIn. Verify before connecting.",
+        "connection_note": "Hi Tom — spotted Ripon Road Carpentry while looking at North Yorkshire trades businesses. Great reputation locally. Happy to connect.",
+        "rules": [
+          "Zero reference to prior email, website, quote form, or any prior contact",
+          "Under 200 characters",
+          "Trades owner — keep it brief and direct"
+        ],
+        "after_acceptance_wait": "2-3 days",
+        "first_message_after_acceptance": "Hi Tom — thanks for connecting. Hope the spring joinery work is keeping you busy — always a good time of year for it in North Yorkshire.",
+        "first_message_rules": [
+          "Reference carpentry / spring season — genuine, not a pitch",
+          "No mention of website, quote form, SSL, or prior email",
+          "Warm, brief, leaves door completely open"
+        ],
+        "value_note": "Lowest pipeline value (£100-150 quote form) but Tom acknowledged the pain unprompted — conversion probability is real if he sees the LinkedIn message as a fresh touchpoint.",
+        "conversion_window": "2-3 weeks — low probability",
+        "if_no_connection_in_7_days": "Mark LOST_NO_RESPONSE. No further action."
+      },
+
+      "decision_tree_imap_monday": {
         "if_reply_found_wants_to_proceed": {
-          "action": "Agree spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Timeline: 2-3 days. Set a call slot this week.",
-          "note": "May is peak spring carpentry season — Tom may have been genuinely too busy in April. Pain (no quote form) is still real and has not gone away."
+          "action": "Agree spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Set a call this week. Do NOT approach on LinkedIn.",
+          "note": "May is peak carpentry season — Tom's pain (no quote form) is still real and has not gone away."
         },
         "if_reply_found_declined": {
           "action": "Mark LOST. Brief reply. No further contact."
         },
-        "if_no_reply_and_no_final_close_was_sent": {
-          "action": "Send ONE final close via email TODAY.",
-          "final_close_body": "Tom,\n\nGoing to leave this with you. If the quote form ever rises to the top of the list, you know where I am.\n\nAll the best,\n[Your name]",
-          "deadline": "Before 12:00 today"
-        },
-        "if_final_close_already_sent_still_silent": {
-          "action": "Email channel closed. Mark LOST_NO_RESPONSE. LinkedIn soft approach available from Monday 2026-05-04.",
-          "linkedin_note_guidance": "Reference his carpentry work or a local North Yorkshire business topic. No mention of website, quote form, or prior email. Curiosity only."
+        "if_no_reply": {
+          "action": "LinkedIn connection note (above). Mark LOST_NO_RESPONSE. Monitor for acceptance."
         }
       },
 
-      "audit_status": "complete",
-      "audit_file": "data/audits/lead_1_quote_form_examples.json",
       "block_all_email_followups": true,
-      "conversion_probability": "Low — 28 days of email silence. LinkedIn gives one final soft-touch opportunity.",
       "linkedin_available": true,
-      "linkedin_preferred_date": "2026-05-04 (Monday)"
+      "linkedin_approach_date": "2026-05-04"
     }
   ],
 
   "post_resolution_protocol": {
     "if_any_converted": {
-      "step_1": "Write CHANGELOG.md immediately — 'Campaign milestone #1: first revenue — [business name], [amount]. [Date].'",
+      "step_1": "Write CHANGELOG.md immediately — 'Campaign Milestone #1: first revenue — [business name], [amount], [date].'",
       "step_2": "Begin delivery immediately. Send invoice or agreement today.",
-      "step_3": "Update lead status to 'converted' in database (leads table).",
+      "step_3": "Update lead status to 'converted' in database.",
       "step_4": "Update CRM pipeline record.",
       "step_5": "Log in audit_log table."
     },
-    "if_all_lost_or_no_response": {
-      "step_1": "Update each lead status: LOST or LOST_NO_RESPONSE in leads table.",
-      "step_2": "Log in CHANGELOG.md: 'Warm pipeline closed — leads 1, 3, 22 marked [status]. Campaign depends on Batch 5 for next revenue.'",
-      "step_3": "No further email contact. LinkedIn soft approach still available (Monday 2026-05-04).",
-      "step_4": "Records remain in CRM as closed — pipeline conversion rate data for retrospective."
+    "if_all_lost_no_response": {
+      "step_1": "Update each lead status: LOST_NO_RESPONSE.",
+      "step_2": "Log in CHANGELOG.md: 'Warm pipeline closed — leads 1, 3, 22 marked LOST_NO_RESPONSE. Campaign depends on Batch 5 for next revenue.'",
+      "step_3": "LinkedIn soft approach still available (Monday 2026-05-04) — see above.",
+      "step_4": "Records remain in CRM as closed pipeline data."
     },
-    "gdpr_note": "All three leads replied voluntarily to cold outreach. B2B legitimate interest. Final close emails (if not yet sent) are valid under the same basis. Log all sends in audit_log."
+    "gdpr_note": "All three leads replied voluntarily to cold outreach. B2B legitimate interest. LinkedIn approach is a different channel and a genuine business connection — not a continuation of cold email sequence. No reference to prior contact in connection note."
   },
 
   "summary": {
     "imap_check_first": true,
+    "imap_approach_time": "Before 09:00 Monday 2026-05-04",
     "imap_check_emails": [
       "claire@westfieldhair.co.uk",
       "rob@pennineprint.co.uk",
       "tom@riponroadcarpentry.co.uk"
     ],
-    "email_channel_status": "CLOSED (deadline passed). Final close emails (if not yet sent) can go today before 12:00. After that: email is done.",
-    "linkedin_channel_status": "OPEN from today. Preferred Monday 2026-05-04. IMAP sweep must precede.",
+    "email_channel_status": "CLOSED — no further email to leads 1, 3, 22 under any scenario.",
+    "linkedin_channel_status": "OPEN. Approach Monday 2026-05-04 09:00-10:00. After IMAP confirms no pending reply.",
+    "linkedin_connection_notes_ready": true,
     "pipeline_value_range": "£0-1,175",
-    "realistic_outcome": "Zero to one email conversion. LinkedIn adds a low-probability second chance.",
-    "hands_instruction": "1. IMAP sweep for all three before 09:00. 2. Act per decision trees above. 3. If final close not yet sent: send before 12:00. 4. Mark status immediately after each action. 5. LinkedIn BRAIN handles Monday approach planning."
+    "realistic_outcome": "Zero to one IMAP surprise conversion. LinkedIn adds a low-probability second chance over 2-3 weeks.",
+    "hands_instruction": "1. IMAP sweep for all three before 09:00 Monday 2026-05-04. 2. Act per decision trees above. 3. LinkedIn: approach each lead from 09:30-10:00 Monday using connection notes in this file (IMAP must be clean first). 4. Mark status immediately after each action. 5. Log everything in CHANGELOG.md."
   }
 }
