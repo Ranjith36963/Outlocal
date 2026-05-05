@@ -1,63 +1,51 @@
 {
-  "generated_at": "2026-05-04T07:30:00Z",
+  "generated_at": "2026-05-05T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-04",
-  "day_number": 37,
-  "note": "Day 37 (Monday). CALENDAR CORRECTION APPLIED: prior Day 35-36 BRAIN runs labelled May 5 as 'Monday bank holiday' — 2026-05-05 is a TUESDAY. Today (2026-05-04) is a MONDAY and a working day. LinkedIn executes TODAY. Prior Day 36 files show 'preferred: TUESDAY 2026-05-06' — that label was wrong. The execution date has always been the first working day after the bank holiday sequence — and that is TODAY for the warm pipeline LinkedIn session. Orchestrator (src/outlocal/linkedin/orchestrator.py) does not exist — all execution is manual (HANDS). IMAP gap now 30 days.",
+  "run_date": "2026-05-05",
+  "day_number": 38,
+  "note": "Day 38 (Tuesday — UK May Day bank holiday). ZERO LinkedIn execution today. This is an intelligence-only run: search plan carried forward from Day 37, deadlines escalated to reflect Wednesday 2026-05-06 as the ABSOLUTE FINAL WINDOW. Orchestrator (src/outlocal/linkedin/orchestrator.py) does not exist — all execution is manual (HANDS). No linkedin_profiles.json has been written across all 38 campaign days.",
 
-  "orchestrator_status": "NOT FOUND — src/outlocal/linkedin/orchestrator.py does not exist. All LinkedIn execution is manual (HANDS). Unchanged across all 37 campaign days.",
+  "orchestrator_status": {
+    "file": "src/outlocal/linkedin/orchestrator.py",
+    "exists": false,
+    "note": "All LinkedIn execution is manual (HANDS). BRAIN generates search plans and connection notes only. HANDS executes Google searches, opens profiles, checks posts, sends connection requests, and writes linkedin_profiles.json."
+  },
 
-  "email_outreach_state_check": {
-    "checked_at": "2026-05-04T07:30:00Z",
-    "source_files": ["data/daily_signals.json", "data/daily_email_plan.json"],
-    "imap_gap_days": 30,
+  "email_outreach_state": {
+    "checked_at": "2026-05-05T08:00:00Z",
+    "source_files": ["data/daily_signals.json", "data/daily_email_plan.json", "data/reply_classifications.json"],
+    "imap_gap_days": 31,
     "imap_last_confirmed_check": "2026-04-04",
-    "imap_status": "CRITICAL OVERDUE — 30 days. Full cohort sweep MUST complete TODAY (Monday 2026-05-04) before any LinkedIn action. Priority sweep: leads 3 then 22 then 1 first.",
-    "leads_emailed_3_plus_days_no_reply_linkedin_candidates": {
-      "note": "All Batch 1-4 leads (~60) were emailed 3+ days ago. LinkedIn Day 3-6 window has definitively expired for all — sequences complete at Day-14 breakup. Warm pipeline leads 1/3/22 are the ONLY active LinkedIn candidates: 7-day post-close buffer confirmed expired 2026-05-02.",
-      "batch_1_4_linkedin_window": "CLOSED — irreversible.",
-      "fu_041_045_leads": "Day 3-6 LinkedIn window expired regardless of whether breakup was sent (rescheduled to Wednesday 2026-05-06). No LinkedIn for leads 30, 31, 32, 58, 59.",
-      "warm_pipeline": {
-        "lead_ids": [1, 3, 22],
-        "status": "ACTIVE — LinkedIn executes TODAY Monday 2026-05-04, 09:30-10:00 (after IMAP sweep)",
-        "buffer_expired": "2026-05-02",
-        "imap_precondition": "MANDATORY — 30-day IMAP gap. Sweep leads 3, 22, 1 BEFORE any connection request."
-      },
-      "batch_5_status": "NO DATA RECEIVED — no initial sends made. No leads to query. LinkedIn Day 3-6 window opens after Batch 5 sends. If sends fire Wednesday 2026-05-06: Day 3 = Saturday 2026-05-09 (weekend) — LinkedIn Friday 2026-05-09 or Monday 2026-05-11."
+    "imap_status": "CRITICAL OVERDUE — 31 days. First action Wednesday 2026-05-06 from 07:00. Priority: leads 3 then 22 then 1 (LinkedIn precondition). Then leads 30, 31, 32, 58, 59 (fu_041-045 precondition). Then full remaining cohort.",
+    "leads_3_plus_days_no_reply_linkedin_candidates": {
+      "note": "All Batch 1-4 leads (~60) were emailed 3+ days ago. Day 3-6 LinkedIn window has expired for all — sequences are at Day-14 breakup stage or complete. Only the warm pipeline (leads 1, 3, 22) remain as active LinkedIn candidates. Their 7-day post-close buffer expired 2026-05-02. IMAP confirms no reply since 2026-04-04 (subject to 31-day gap caveat).",
+      "active_linkedin_candidates": [1, 3, 22],
+      "candidate_status": "PRESUMED_LOST_NO_RESPONSE — email channel closed. LinkedIn is the last available soft channel before permanent archiving.",
+      "batch_5_status": "No initial sends made — no Day 3-6 window has opened. Awaiting Ryedale data. If sends fire Wednesday 2026-05-06: Day 3 = Saturday 2026-05-09 (weekend, skip). LinkedIn window opens Friday 2026-05-09 (preferred) or Monday 2026-05-11."
     },
-    "active_sequences": "NONE",
-    "sends_today_monday_2026_05_04": 0,
-    "sends_tuesday_2026_05_05": 0,
-    "sends_tuesday_reason": "UK May Day bank holiday — hard rule, zero sends",
-    "campaign_stall_days": 27
+    "sends_today_tuesday": 0,
+    "sends_today_reason": "UK May Day bank holiday — hard rule. Zero sends, zero HANDS, zero IMAP.",
+    "campaign_stall_days": 28
   },
 
-  "calendar_correction": {
-    "error_in_prior_runs": "Day 35-36 BRAIN files labelled 2026-05-05 as 'Monday bank holiday' and set 'preferred LinkedIn date = TUESDAY 2026-05-06'.",
-    "correction": "2026-05-05 is a TUESDAY. 2026-05-04 is MONDAY — a normal working day. LinkedIn executes TODAY.",
-    "impact_on_linkedin": "Warm pipeline LinkedIn session moves from 'TUESDAY 2026-05-06' to 'TODAY — Monday 2026-05-04, 09:30-10:00'. All queries and notes were already correct — only the execution date label changes.",
-    "fu_041_045_impact": "These breakup emails were rescheduled to 'TUESDAY 2026-05-06' in Day 36 files. Corrected: they send WEDNESDAY 2026-05-06 (first working day). LinkedIn window for these leads expired regardless.",
-    "wednesday_send_day": "2026-05-06 (Wednesday) remains the confirmed email send day — fu_041-045 + Batch 5 initial sends."
-  },
-
-  "bank_holiday_linkedin_rule": {
+  "bank_holiday_block": {
     "date": "2026-05-05",
-    "day": "Tuesday (corrected from prior 'Monday' label)",
-    "rule": "NO LinkedIn outreach on UK bank holidays. Blocked.",
-    "today_monday_2026_05_04": "WORKING DAY — LinkedIn executes today.",
-    "bank_holiday_tomorrow": "Tuesday 2026-05-05 — no LinkedIn, no email.",
-    "first_viable_day_for_remaining": "Wednesday 2026-05-06 — but warm pipeline LinkedIn window is TODAY Monday 2026-05-04.",
-    "strategic_upside": "Post-bank-holiday window holds for email (Wednesday morning). LinkedIn warm pipeline runs today as planned."
+    "day": "Tuesday",
+    "type": "UK Early May Bank Holiday",
+    "rule": "NO LinkedIn outreach today. Hard block.",
+    "next_viable_day": "WEDNESDAY 2026-05-06",
+    "wednesday_note": "Wednesday 2026-05-06 is also the confirmed email send day. LinkedIn warm pipeline session MUST execute BEFORE email sends: 07:45-08:20. Absolute deadline — no further deferrals permitted."
   },
 
-  "eligibility_check": {
-    "rule": "LinkedIn connection window for cold email leads: Day 3-6 after initial email. Warm pipeline nurture: after 7-day post-close buffer expires AND IMAP confirms no reply.",
-    "active_leads_in_window": [1, 3, 22],
-    "window_type": "warm_pipeline_nurture",
-    "buffer_confirmed_expired": "2026-05-02",
-    "imap_precondition": "MANDATORY — 30-day IMAP gap. Sweep IMAP for each lead BEFORE sending any connection request.",
-    "batch_5_window_status": "NOT APPLICABLE — no Batch 5 sends made. LinkedIn Day 3-6 window begins after Batch 5 initial sends on Wednesday 2026-05-06. Day 3 = Saturday 2026-05-09 (skip). LinkedIn window: Friday 2026-05-09 (preferred) or Monday 2026-05-11.",
-    "batch_1_4_window_status": "CLOSED — all sequences complete. Day 3-6 window expired."
+  "linkedin_deadline_escalation": {
+    "due_date_original": "Day 3-6 after initial email (expired for all batch leads)",
+    "warm_pipeline_buffer_expired": "2026-05-02",
+    "due_date_monday": "2026-05-04 — NOT CONFIRMED EXECUTED",
+    "blocked_tuesday": "2026-05-05 — UK May Day bank holiday — confirmed hard block",
+    "ABSOLUTE_FINAL_WINDOW": "WEDNESDAY 2026-05-06, 07:45-08:20 — before email sends",
+    "sessions_without_linkedin_profiles_json": 38,
+    "archive_trigger": "If LinkedIn not executed by 08:20 Wednesday 2026-05-06: archive leads 1, 3, 22 permanently as LOST_NO_RESPONSE. No further action on any channel. Log in CHANGELOG.md.",
+    "no_further_deferrals": "This has been deferred 38 sessions. Not deferrable again."
   },
 
   "search_queries": [
@@ -69,21 +57,33 @@
       "county": "West Yorkshire",
       "sector": "hair & beauty / salon",
       "priority": 1,
-      "priority_reason": "Strongest warm pipeline lead. Booked a call 2026-04-07, confirmed booking-gap pain. LinkedIn is last channel. Extra caution required.",
-      "linkedin_sector_priority": "high — salons active on LinkedIn and social. Post_reference upgrade expected.",
+      "priority_reason": "Strongest warm pipeline lead. Booked a call 2026-04-07, confirmed booking-gap pain. Extra caution — DO NOT reference the call or any prior contact.",
+      "linkedin_sector_likelihood": "high — salons are active on LinkedIn and social media. Post_reference upgrade expected (salons post: wedding hair, prom, bank holiday appointments, team news, before/after, spring colours).",
       "google_query": "site:linkedin.com/in \"Claire\" \"Westfield Hair\" Leeds",
       "fallback_query_1": "site:linkedin.com/in hairdresser salon owner director \"Leeds\" \"West Yorkshire\"",
       "fallback_query_2": "site:linkedin.com/in \"Westfield Hair & Beauty\" owner manager Leeds",
-      "profile_verification_required": "Confirm profile is Claire, owner/manager of Westfield Hair & Beauty in Leeds. Multiple staff may have profiles — verify role before connecting.",
-      "do_not_send_if": "IMAP reveals any email reply since 2026-04-04 — including any follow-up to the call booked 2026-04-07. Any reply cancels LinkedIn permanently.",
-      "note_type_on_find": "post_reference STRONGLY PREFERRED. Check posts from last 60 days FIRST. Salons post: bank holiday appointments, wedding hair, prom, spring colours, team news. Write bespoke note if post found. If no post: use generic note from linkedin_connection_notes.json.",
+      "profile_verification_required": "Confirm profile is Claire, owner or manager of Westfield Hair & Beauty in Leeds. Multiple staff profiles may exist — verify role before connecting. Do NOT connect to a junior stylist.",
+      "do_not_send_if": "IMAP reveals ANY email reply since 2026-04-04 — including any follow-up to the call booked 2026-04-07. Any reply cancels LinkedIn permanently for this lead.",
+      "note_type_on_find": "post_reference STRONGLY PREFERRED. Check posts from last 60 days FIRST. If post found: write bespoke note under 200 chars referencing the specific post. If no recent post: use pre-generated generic note from linkedin_connection_notes.json.",
       "pre_generated_note_available": true,
       "note_character_limit": 200,
-      "preferred_send_date": "TODAY — Monday 2026-05-04, 09:30-10:00",
-      "last_acceptable_date": "Tuesday 2026-05-06 (skip bank holiday Tuesday 2026-05-05)",
+      "execution_window": "WEDNESDAY 2026-05-06, 07:45-08:00 — ABSOLUTE FINAL WINDOW",
       "brain_status": "PRESUMED_LOST_NO_RESPONSE",
-      "seasonal_context": "May is peak salon season — wedding hair, prom, bank holiday appointments. Claire may have been too busy to progress in April. Pain point (no online booking) is structural and ongoing.",
-      "reapproach_date_if_no_linkedin_response": "2026-10-26"
+      "seasonal_context": "May is peak salon season — wedding hair, prom, bank holiday appointments. Pain point (no online booking) is structural and ongoing.",
+      "post_reference_topics_to_scan": [
+        "bank holiday availability",
+        "wedding hair",
+        "prom",
+        "spring colour",
+        "summer bookings",
+        "new treatment",
+        "team news",
+        "before and after",
+        "appointment availability",
+        "Mother's Day results"
+      ],
+      "reapproach_date_if_no_linkedin_response": "2026-10-26",
+      "archive_if_wednesday_missed": true
     },
     {
       "lead_id": 22,
@@ -93,21 +93,33 @@
       "county": "West Yorkshire",
       "sector": "print & design / B2B services",
       "priority": 2,
-      "priority_reason": "Highest revenue potential (£550-675 upsell). Upsell signal was the strongest in the campaign. IMAP especially critical — late reply is plausible.",
-      "linkedin_sector_priority": "high — B2B print/design well-represented on LinkedIn for client and supplier relationships.",
+      "priority_reason": "Highest revenue potential (£550-675 redesign upsell). Upsell signal ('sort the whole thing in one go') was the strongest in the campaign. Late reply is plausible — IMAP check is especially critical.",
+      "linkedin_sector_likelihood": "high — B2B print/design well-represented on LinkedIn for client and supplier relationships.",
       "google_query": "site:linkedin.com/in \"Rob\" \"Pennine Print\" \"Sowerby Bridge\"",
       "fallback_query_1": "site:linkedin.com/in print design owner director \"Sowerby Bridge\" OR \"Halifax\" \"West Yorkshire\"",
       "fallback_query_2": "site:linkedin.com/in \"Pennine Print & Design\" print owner manager director",
-      "profile_verification_required": "Confirm profile is Rob, owner/director of Pennine Print & Design in Sowerby Bridge. Do not connect to another Rob in print.",
-      "do_not_send_if": "IMAP reveals any email reply since 2026-04-04. Rob's upsell signal makes a late reply plausible — IMAP is especially critical before acting.",
-      "note_type_on_find": "post_reference if post found within last 60 days — B2B business posts likely (client work, events, print news, weddings, graduations). Write bespoke note. If no recent post: use generic note.",
+      "profile_verification_required": "Confirm profile is Rob, owner or director of Pennine Print & Design in Sowerby Bridge. Do not connect to another Rob in print.",
+      "do_not_send_if": "IMAP reveals ANY email reply since 2026-04-04. Given Rob's upsell signal, a late reply is a genuine risk — treat IMAP as especially critical before any LinkedIn action.",
+      "note_type_on_find": "post_reference if post found within last 60 days. B2B print businesses post about client work, events, weddings, graduations, new print runs. Write bespoke note if post found. If no recent post: use pre-generated generic note.",
       "pre_generated_note_available": true,
       "note_character_limit": 200,
-      "preferred_send_date": "TODAY — Monday 2026-05-04, 09:30-10:00",
-      "last_acceptable_date": "Tuesday 2026-05-06",
+      "execution_window": "WEDNESDAY 2026-05-06, 08:00-08:10 — ABSOLUTE FINAL WINDOW",
       "brain_status": "PRESUMED_LOST_NO_RESPONSE",
-      "seasonal_context": "May is peak print season — weddings, events, graduations. Rob may have been too busy in April. Redesign pain is still live.",
-      "reapproach_date_if_no_linkedin_response": "2026-10-26"
+      "seasonal_context": "May is peak print season — weddings, events, graduations. Redesign pain is structural and ongoing.",
+      "post_reference_topics_to_scan": [
+        "wedding stationery",
+        "event programme",
+        "graduation",
+        "summer print run",
+        "new client",
+        "rebrand",
+        "product launch",
+        "design work",
+        "exhibition stand",
+        "menus"
+      ],
+      "reapproach_date_if_no_linkedin_response": "2026-10-26",
+      "archive_if_wednesday_missed": true
     },
     {
       "lead_id": 1,
@@ -117,37 +129,42 @@
       "county": "North Yorkshire",
       "sector": "carpentry / trades",
       "priority": 3,
-      "priority_reason": "Lowest pipeline value (£100-150) but genuine intent shown (pricing question, acknowledged quote-form pain unprompted). LinkedIn is last channel before archiving.",
-      "linkedin_sector_priority": "low — trades, first name only. Attempt because lead showed genuine intent.",
+      "priority_reason": "Lowest pipeline value (£100-150 quote form) but genuine intent — acknowledged pain unprompted and asked for pricing. LinkedIn is the last channel before archiving.",
+      "linkedin_sector_likelihood": "low — trades rarely active on LinkedIn. Attempt because lead showed genuine intent. Skip if profile cannot be confidently identified.",
       "google_query": "site:linkedin.com/in \"Tom\" \"Ripon Road Carpentry\"",
       "fallback_query_1": "site:linkedin.com/in carpentry joinery \"Ripon\" \"North Yorkshire\" owner director",
       "fallback_query_2": "site:linkedin.com/in \"Ripon Road\" joiner carpenter owner",
-      "profile_verification_required": "Confirm profile is clearly the owner/operator of Ripon Road Carpentry in Ripon. Do NOT connect to a generic Tom in carpentry elsewhere in Yorkshire.",
-      "do_not_send_if": "IMAP reveals any email reply since 2026-04-04.",
-      "note_type_on_find": "post_reference if post found within last 60 days — write bespoke note. If no recent post: use generic note.",
+      "profile_verification_required": "Confirm profile is clearly the owner/operator of Ripon Road Carpentry in Ripon. First name only — extra caution. Do NOT connect to a generic Tom in carpentry elsewhere in Yorkshire.",
+      "do_not_send_if": "IMAP reveals any email reply since 2026-04-04. OR if profile cannot be confidently confirmed as the Ripon Road Carpentry owner.",
+      "note_type_on_find": "post_reference if post found within last 60 days. Write bespoke note. If no recent post: use pre-generated generic note.",
       "pre_generated_note_available": true,
       "note_character_limit": 200,
-      "preferred_send_date": "TODAY — Monday 2026-05-04, 09:30-10:00",
-      "last_acceptable_date": "Tuesday 2026-05-06",
+      "execution_window": "WEDNESDAY 2026-05-06, 08:10-08:20 — ABSOLUTE FINAL WINDOW",
       "brain_status": "PRESUMED_LOST_NO_RESPONSE",
-      "seasonal_context": "May is start of peak carpentry season. Tom may have been too busy to reply in April. Pain point (no quote form) is structural and ongoing.",
-      "reapproach_date_if_no_linkedin_response": "2026-10-26"
+      "seasonal_context": "May is start of peak carpentry season — garden structures, outdoor projects, extensions. Pain point (no quote form) is structural and ongoing.",
+      "post_reference_topics_to_scan": [
+        "spring builds",
+        "garden structures",
+        "outdoor project",
+        "workshop",
+        "heritage joinery",
+        "bespoke furniture",
+        "extension",
+        "decking"
+      ],
+      "reapproach_date_if_no_linkedin_response": "2026-10-26",
+      "archive_if_wednesday_missed": true
     }
   ],
 
-  "batch_5_query_readiness": {
-    "status": "READY — query templates prepared. No Batch 5 Ryedale data received — no queries generated yet.",
-    "trigger": "Batch 5 initial sends fire Wednesday 2026-05-06 (if data arrives before Wednesday morning). Day 3 = Saturday 2026-05-09 (weekend — skip). LinkedIn queries generated Friday 2026-05-09 BRAIN run.",
-    "day3_window": {
-      "if_sends_fire_wednesday_2026_05_06": {
-        "day_3_calendar": "Saturday 2026-05-09 — weekend, skip",
-        "linkedin_day3_preferred": "Friday 2026-05-09 (send before weekend gap)",
-        "linkedin_day3_fallback": "Monday 2026-05-11",
-        "day_6": "Tuesday 2026-05-12",
-        "queries_generated": "Friday 2026-05-09 BRAIN run",
-        "note": "Warm pipeline nurture (leads 1/3/22) is a separate, independent session TODAY Monday 2026-05-04. Batch 5 Day 3 window is a separate BRAIN run on Friday 2026-05-09."
-      }
-    },
+  "batch_5_day3_forward_plan": {
+    "status": "READY — query templates prepared. No Batch 5 initial sends made yet (awaiting Ryedale data). No queries generated.",
+    "trigger_condition": "Batch 5 initial sends fire Wednesday 2026-05-06, 10:00-11:30 (if Ryedale data received before 09:30 Wednesday).",
+    "day_3_calendar": "Saturday 2026-05-09 — weekend, skip",
+    "linkedin_day3_window_preferred": "FRIDAY 2026-05-09 — send before weekend gap. BRAIN generates Day 3 queries same session.",
+    "linkedin_day3_fallback": "Monday 2026-05-11",
+    "day_6": "Tuesday 2026-05-12",
+    "next_brain_run_for_batch5": "Friday 2026-05-09 — Day 3 bump copy + LinkedIn search queries. Also confirms Batch 5 Day 3 send date.",
     "query_template_high_linkedin_sector": {
       "sectors": ["solicitors", "accountants", "estate agents", "hotels / B&Bs", "restaurants", "care providers"],
       "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
@@ -157,58 +174,45 @@
     "query_template_low_linkedin_sector": {
       "sectors": ["plumbers", "electricians", "roofers", "joiners", "builders"],
       "primary": "site:linkedin.com/in \"[First Name] [Last Name]\" \"[Business Name]\"",
-      "note": "Skip if first name only — insufficient to identify correct profile without surname."
-    }
+      "note": "Skip if first name only — insufficient to confirm correct profile without surname."
+    },
+    "note": "Warm pipeline nurture (leads 1/3/22) and Batch 5 Day 3 LinkedIn are independent sessions. Do NOT conflate."
   },
 
-  "hands_today_monday_2026_05_04_session_plan": {
-    "date": "TODAY — Monday 2026-05-04",
-    "window": "09:30-10:00 (after IMAP sweep before 09:00)",
-    "execution_target": "2 hours maximum for entire LinkedIn session. All searches, profile checks, post scans, and connection requests in a single sitting.",
-    "priority_order": [
-      "1. IMAP SWEEP for leads 3, 22, 1 — mandatory first (before 09:00). Any reply cancels that lead's LinkedIn note.",
-      "2. Full IMAP sweep of all cohort leads — 09:00-09:30.",
-      "3. Google search for each eligible lead in priority order: Claire then Rob then Tom.",
-      "4. Open profile, verify ownership, scroll posts from last 60 days.",
-      "5. If post found: write bespoke post_reference note under 200 chars. If no post: use pre-generated generic note from linkedin_connection_notes.json.",
-      "6. Send connection request with note.",
-      "7. Write linkedin_profiles.json IMMEDIATELY after session — every lead searched, even if no profile found or note not sent."
+  "wednesday_execution_brief": {
+    "date": "2026-05-06",
+    "day": "Wednesday — first working day after bank holiday",
+    "linkedin_window": "07:45-08:20 — BEFORE email sends",
+    "imap_precondition": "Sweep leads 3, 22, 1 from 07:00. IMAP must confirm no reply before each connection request.",
+    "session_protocol": [
+      "07:00-07:15 — IMAP check: lead 3 (claire@westfieldhair.co.uk)",
+      "07:15-07:30 — IMAP check: lead 22 (rob@pennineprint.co.uk)",
+      "07:30-07:45 — IMAP check: lead 1 (tom@riponroadcarpentry.co.uk)",
+      "07:45-08:00 — LinkedIn: Google search Claire. Open profile. Verify owner. Scroll posts 60 days. Write bespoke note if post found, else use generic. Send request.",
+      "08:00-08:10 — LinkedIn: Google search Rob. Same protocol.",
+      "08:10-08:20 — LinkedIn: Google search Tom. Same protocol. Skip if profile unconfirmable.",
+      "08:20 — Write linkedin_profiles.json IMMEDIATELY. Even if no note was sent — write the file with search outcomes. MANDATORY.",
+      "08:20-08:40 — IMAP sweep: leads 30, 31, 32, 58, 59 + full remaining cohort",
+      "08:45-09:25 — fu_041-045 (if IMAP confirms not sent and no reply)",
+      "10:00-11:30 — Batch 5 initial sends (if Ryedale data received before 09:30)",
+      "EOD — CHANGELOG.md update: ALL actions, ALL outcomes, ALL timestamps"
     ],
-    "post_reference_protocol": "For each lead: (1) run Google query, (2) open profile, (3) scroll posts from last 60 days, (4) if post found: write bespoke note under 200 chars, (5) if no post: use pre-generated generic note. Count every character including spaces.",
-    "char_counting_reminder": "200 chars is a hard limit. Test in notepad before sending.",
-    "profiles_json_required_fields": [
+    "linkedin_profiles_json_required_fields": [
       "lead_id",
       "linkedin_url (or 'not_found')",
-      "profile_confirmed_owner (true/false)",
+      "profile_confirmed_owner (true/false/uncertain)",
       "post_found_last_60_days (true/false)",
       "post_summary_if_found",
       "note_type_used (post_reference | generic | not_sent)",
       "note_sent (true/false)",
       "note_text_if_sent",
+      "imap_check_result_before_sending (no_reply | reply_found | unknown)",
       "timestamp"
     ],
-    "failure_protocol": "If HANDS cannot execute today Monday 2026-05-04: do NOT execute Tuesday 2026-05-05 (bank holiday). Tuesday 2026-05-06 is the absolute last acceptable day. After Tuesday: warm pipeline connection opportunity is stale — archive leads 1/3/22. Log reason in CHANGELOG.md immediately."
-  },
-
-  "do_not_approach_on_linkedin": {
-    "lead_2": {
-      "business": "Nidderdale Pet Supplies",
-      "reason": "NOT_INTERESTED reply — all channels blocked until 2026-10-06"
-    },
-    "leads_30_31_32_58_59": {
-      "reason": "Day 3-6 LinkedIn window expired. In Day-14 breakup phase (fu_041-045 rescheduled to Wednesday 2026-05-06). No LinkedIn at any point."
-    },
-    "leads_7_19": {
-      "reason": "Permanently suppressed — no outreach on any channel."
-    },
-    "leads_49_51_53_54": {
-      "reason": "No email contact established — LinkedIn not appropriate before email channel is opened."
-    },
-    "all_other_batch_1_4_leads": {
-      "reason": "Sequences complete. Day 3-6 LinkedIn window expired."
-    },
-    "tuesday_2026_05_05": {
-      "reason": "UK May Day bank holiday — no LinkedIn outreach."
+    "if_reply_found_in_imap": {
+      "lead_3_claire": "Cancel LinkedIn permanently. Respond to reply. If conversion: write CHANGELOG.md — Campaign Milestone #1. Invoice today (Option B £350).",
+      "lead_22_rob": "Cancel LinkedIn permanently. Present redesign options A/B/C. Close target Thursday 2026-05-07.",
+      "lead_1_tom": "Cancel LinkedIn permanently. Agree quote form spec (£100-150). Set call this week."
     }
   },
 
@@ -217,15 +221,13 @@
     "lead_ids": [3, 22, 1],
     "query_type": "warm_pipeline_nurture",
     "buffer_confirmed_expired": "2026-05-02",
-    "preferred_execution_date": "TODAY — Monday 2026-05-04, 09:30-10:00",
-    "last_acceptable_date": "Tuesday 2026-05-06",
-    "imap_gap_days": 30,
-    "imap_precondition": "MANDATORY for all three leads before any LinkedIn action",
-    "calendar_correction": "May 5 = TUESDAY bank holiday (not Monday). May 4 = Monday = TODAY = LinkedIn execution day.",
-    "consecutive_runs_without_linkedin_profiles": 16,
-    "campaign_stall_days": 27,
-    "batch_5_status": "NOT received — no Day 3-6 queries generated yet. If sends fire Wednesday 2026-05-06: Day 3 = Saturday 2026-05-09 (skip). LinkedIn window: Friday 2026-05-09 (preferred) or Monday 2026-05-11.",
-    "single_highest_priority_action": "HANDS TODAY: IMAP sweep (before 09:00) — Google searches — profile/post checks — send notes or use generics — write linkedin_profiles.json immediately. linkedin_profiles.json has NOT been written once across 37 campaign days — this must change today.",
-    "day_37_run_note": "Monday working day. Calendar correction from Day 37 daily run applied — LinkedIn executes TODAY, not Tuesday. Bank holiday is tomorrow Tuesday May 5. All queries and notes were already correct — only execution date label updated."
+    "execution_today_tuesday": "BLOCKED — UK May Day bank holiday",
+    "execution_wednesday": "ABSOLUTE FINAL WINDOW — 07:45-08:20 Wednesday 2026-05-06 (before email sends)",
+    "imap_gap_days": 31,
+    "imap_precondition": "MANDATORY — full cohort sweep from 07:00 Wednesday. Leads 3, 22, 1 first.",
+    "sessions_without_linkedin_profiles_json": 38,
+    "archive_trigger": "If not executed by 08:20 Wednesday: archive leads 1, 3, 22 permanently as LOST_NO_RESPONSE.",
+    "batch_5_day3_status": "Not applicable — no Batch 5 sends yet. If sends fire Wednesday: Day 3 LinkedIn queries generated Friday 2026-05-09 BRAIN run.",
+    "day_38_run_note": "Bank holiday Tuesday 2026-05-05. Intelligence-only run — no execution. Wednesday 07:45-08:20 is confirmed absolute final window."
   }
 }

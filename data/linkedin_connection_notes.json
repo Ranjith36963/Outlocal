@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T07:30:00Z",
+  "generated_at": "2026-05-05T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-04",
-  "day_number": 37,
-  "note": "Day 37 (Monday). CALENDAR CORRECTION APPLIED: Day 36 files set dispatch date as 'TUESDAY 2026-05-06' based on incorrect bank holiday labelling. 2026-05-05 is a TUESDAY (bank holiday). TODAY (2026-05-04) is Monday — a normal working day. All three notes updated to dispatch TODAY. Note content is unchanged from Day 36 — generic notes remain valid pending HANDS post_reference upgrade check. No HANDS profile data received across 37 campaign days — post_reference upgrade requires HANDS to check each profile today before sending.",
+  "run_date": "2026-05-05",
+  "day_number": 38,
+  "note": "Day 38 (Tuesday — UK May Day bank holiday). Intelligence-only run. Notes unchanged from Day 37 — content is correct and ready. Only timestamp and execution framing updated. ABSOLUTE FINAL WINDOW: Wednesday 2026-05-06, 07:45-08:20 (before email sends). IMAP sweep for each lead MUST precede each note dispatch. 38 sessions without linkedin_profiles.json — Wednesday is a hard deadline with no further deferrals.",
 
   "strategy": {
     "character_limit": 200,
-    "char_limit_note": "200 characters is an absolute hard limit on LinkedIn free accounts. Count every character including spaces, punctuation, and the name at the start. Test in a notepad before sending.",
-    "tone": "slightly awkward genuine observation — the kind a real person makes when they noticed something but are not sure how to say it. Stands out from polished AI slop by being specific and slightly imperfect.",
+    "char_limit_note": "200 characters is an absolute hard limit on LinkedIn free accounts. Count every character including spaces, punctuation, and name at the start. Test in a notepad before sending.",
+    "tone": "slightly awkward genuine observation — the kind a real person makes when they noticed something but are not sure how to say it perfectly. Stands out from polished AI slop by being specific and slightly imperfect.",
     "anti_patterns": [
       "Do not use 'I came across your profile'",
       "Do not use 'I was impressed by'",
@@ -30,7 +30,7 @@
       "End with low-pressure framing ('in case it's useful', 'connecting in case relevant')",
       "Slightly awkward construction is fine — it reads human"
     ],
-    "priority_upgrade_rule": "HANDS: always check LinkedIn profile for posts from the last 60 days BEFORE sending any note. If post found: write bespoke post_reference note (3-4x higher acceptance rate). If no recent posts: use generic note below. MANDATORY for warm pipeline leads.",
+    "priority_upgrade_rule": "HANDS: always check LinkedIn profile for posts from the last 60 days BEFORE sending any note. If post found: write bespoke post_reference note (3-4x higher acceptance rate). If no recent posts: use pre-generated generic note below.",
     "warm_pipeline_note_rule": "Notes for leads 1/3/22 must NOT reference the email sequence, campaign, website audit, call, or any prior contact. Treat as a cold LinkedIn connection from someone who noticed their business through general research.",
     "presumed_lost_framing": "These leads are PRESUMED_LOST_NO_RESPONSE. The note is a soft, no-pressure connection — not a follow-up. If they connect and message, respond naturally. Do NOT immediately pitch.",
     "post_reference_priority": "Claire (lead 3) > Rob (lead 22) > Tom (lead 1) — by LinkedIn sector activity likelihood."
@@ -44,18 +44,18 @@
       "town": "Leeds",
       "county": "West Yorkshire",
       "sector": "Hair & beauty / salon",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE — STRONGEST warm pipeline lead. Booked a call 2026-04-07, confirmed booking-gap pain. LinkedIn is last channel.",
-      "linkedin_sector": "high — salons typically active on LinkedIn and social media. Post_reference upgrade highly likely.",
+      "email": "claire@westfieldhair.co.uk",
+      "brain_status": "PRESUMED_LOST_NO_RESPONSE — STRONGEST warm pipeline lead. Booked a call 2026-04-07, confirmed booking-gap pain. 31 days since reply. Email channel closed. LinkedIn is the final soft channel.",
+      "linkedin_sector": "high — salons typically active on LinkedIn and social media. Post_reference upgrade highly expected.",
       "linkedin_search_query": "site:linkedin.com/in \"Claire\" \"Westfield Hair\" Leeds",
       "note_type": "generic",
       "note": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
       "char_count": 191,
       "within_limit": true,
       "post_reference_upgrade": {
-        "instruction": "STRONGLY PREFERRED. If Claire has posted in the last 60 days: write a bespoke note referencing the specific post. Salons post frequently — this upgrade is highly likely.",
+        "instruction": "STRONGLY PREFERRED. If Claire has posted in the last 60 days: write a bespoke note referencing the specific post. Salons post frequently — this upgrade is highly likely. Count every character.",
         "template": "Claire — saw your post about [specific topic]. Westfield Hair & Beauty caught my attention looking at salons in Leeds. Noticed something about the online presence. Connecting in case it's relevant.",
-        "template_char_count": 196,
-        "char_count_warning": "196 chars with short topic. Adjust topic length carefully — 200 char hard limit.",
+        "template_char_count_note": "Template above with a 5-char topic = 196 chars. Adjust topic length carefully — 200 char hard limit.",
         "seasonal_post_topics_to_look_for": [
           "bank holiday",
           "wedding hair",
@@ -70,22 +70,29 @@
         ]
       },
       "dispatch_conditions": {
-        "preferred": "Monday 2026-05-04, 09:30-10:00 (MISSED — not confirmed executed)",
-        "last_acceptable": "WEDNESDAY 2026-05-06, 07:45-08:00 — ABSOLUTE DEADLINE (before email sends)",
+        "last_acceptable": "WEDNESDAY 2026-05-06, 07:45-08:00 — ABSOLUTE FINAL WINDOW (before email sends)",
+        "monday_2026_05_04_status": "NOT CONFIRMED EXECUTED",
+        "tuesday_2026_05_05": "BLOCKED — UK May Day bank holiday",
         "imap_check_required": true,
-        "do_not_send_if": "IMAP reveals any email reply. Extra caution: Claire booked a call 2026-04-07. If any reply found: LinkedIn permanently blocked.",
+        "imap_check_email": "claire@westfieldhair.co.uk",
+        "do_not_send_if": "IMAP reveals any email reply since 2026-04-04. Extra caution: Claire booked a call 2026-04-07. If any reply found: LinkedIn permanently cancelled for this lead.",
         "profile_check_required": true,
-        "profile_confirmation": "Confirm profile is Claire, owner/manager of Westfield Hair & Beauty in Leeds. Multiple staff may have profiles — verify role."
+        "profile_confirmation": "Confirm profile is Claire, owner/manager of Westfield Hair & Beauty in Leeds. Multiple staff profiles may exist — verify role before connecting."
       },
       "if_connection_accepted_followup": {
-        "timing": "Wait 3-5 days after acceptance. Do not message immediately.",
+        "timing": "Wait 3-5 days after acceptance. Do NOT message immediately.",
         "message": "Claire — noticed the Westfield Hair & Beauty site doesn't have an online booking option. Happy to share what I spotted if it's useful at all.",
         "char_count": 148,
         "within_limit": true,
         "rule": "Only send if they connect. Do NOT reference the call, the email, or any prior contact. This is a new connection."
       },
+      "if_imap_finds_reply_wednesday": {
+        "action": "Cancel LinkedIn permanently for lead 3. Respond to reply. If converted: write CHANGELOG.md — Campaign Milestone #1. Invoice today (Option B £350).",
+        "linkedin_status_if_reply": "PERMANENTLY CANCELLED"
+      },
       "archive_date_if_no_response": "2026-10-26",
-      "notes": "DO NOT reference the call booked 2026-04-07. Maximum care — highest quality lead. May is peak salon season (wedding hair, prom, bank holiday). Execute today before bank holiday tomorrow."
+      "archive_date_if_wednesday_missed": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
+      "notes": "DO NOT reference the call booked 2026-04-07. Maximum care — highest quality lead. May is peak salon season (wedding hair, prom, bank holiday). Post_reference upgrade highly likely."
     },
     {
       "lead_id": 22,
@@ -94,7 +101,8 @@
       "town": "Sowerby Bridge",
       "county": "West Yorkshire",
       "sector": "Print & design / B2B services",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE — HIGHEST REVENUE POTENTIAL. INTERESTED reply 2026-04-04 with upsell signal ('sort the whole thing in one go'). LinkedIn is last channel.",
+      "email": "rob@pennineprint.co.uk",
+      "brain_status": "PRESUMED_LOST_NO_RESPONSE — HIGHEST REVENUE POTENTIAL. INTERESTED reply 2026-04-04 with upsell signal ('sort the whole thing in one go'). 31 days since reply. Email channel closed. LinkedIn is the final soft channel.",
       "linkedin_sector": "high — B2B print/design sector well-represented on LinkedIn for client and supplier relationships.",
       "linkedin_search_query": "site:linkedin.com/in \"Rob\" \"Pennine Print\" \"Sowerby Bridge\"",
       "note_type": "generic",
@@ -104,8 +112,7 @@
       "post_reference_upgrade": {
         "instruction": "If Rob has posted in the last 60 days: write bespoke note referencing the specific post. B2B print businesses post about client work, events, weddings, graduations — check thoroughly.",
         "template": "Rob — saw your post about [specific topic]. Pennine Print & Design came up looking at print businesses around Sowerby Bridge. Something about the website caught my attention. Connecting in case it's useful.",
-        "template_char_count_with_short_topic": 200,
-        "char_count_note": "Template above is exactly 200 chars with a 5-char topic. Adjust topic length carefully.",
+        "template_char_count_note": "Template with a 5-char topic = 200 chars exactly. Adjust topic length carefully — 200 char hard limit.",
         "seasonal_post_topics_to_look_for": [
           "wedding stationery",
           "event programme",
@@ -120,10 +127,12 @@
         ]
       },
       "dispatch_conditions": {
-        "preferred": "Monday 2026-05-04, 09:30-10:00 (MISSED — not confirmed executed)",
-        "last_acceptable": "WEDNESDAY 2026-05-06, 08:00-08:10 — ABSOLUTE DEADLINE (before email sends)",
+        "last_acceptable": "WEDNESDAY 2026-05-06, 08:00-08:10 — ABSOLUTE FINAL WINDOW (before email sends)",
+        "monday_2026_05_04_status": "NOT CONFIRMED EXECUTED",
+        "tuesday_2026_05_05": "BLOCKED — UK May Day bank holiday",
         "imap_check_required": true,
-        "do_not_send_if": "IMAP reveals any email reply. Rob's upsell signal means a late reply is plausible — IMAP check is especially critical.",
+        "imap_check_email": "rob@pennineprint.co.uk",
+        "do_not_send_if": "IMAP reveals any email reply since 2026-04-04. Rob's upsell signal makes a late reply especially plausible — IMAP check is critical.",
         "profile_check_required": true,
         "profile_confirmation": "Confirm profile is Rob, owner/director of Pennine Print & Design in Sowerby Bridge. Do not connect to another Rob in print."
       },
@@ -134,8 +143,13 @@
         "within_limit": true,
         "rule": "Only send if they connect. Do NOT reference the redesign discussion, SSL fix, or any prior email."
       },
+      "if_imap_finds_reply_wednesday": {
+        "action": "Cancel LinkedIn permanently for lead 22. Present redesign options A/B/C from value_delivery_queue.json. Close target Thursday 2026-05-07.",
+        "linkedin_status_if_reply": "PERMANENTLY CANCELLED"
+      },
       "archive_date_if_no_response": "2026-10-26",
-      "notes": "HIGHEST REVENUE POTENTIAL — upsell to full redesign (£550-675). May is peak print season. Execute today — tomorrow is bank holiday."
+      "archive_date_if_wednesday_missed": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
+      "notes": "HIGHEST REVENUE POTENTIAL — upsell to full redesign (£550-675). May is peak print season. IMAP especially critical — late reply is a genuine risk."
     },
     {
       "lead_id": 1,
@@ -144,8 +158,9 @@
       "town": "Ripon",
       "county": "North Yorkshire",
       "sector": "Carpentry / trades",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE — INTERESTED reply 2026-04-04 (pricing question, acknowledged quote-form pain). LinkedIn is last channel.",
-      "linkedin_sector": "low — trades, first name only. Attempt because lead showed genuine intent.",
+      "email": "tom@riponroadcarpentry.co.uk",
+      "brain_status": "PRESUMED_LOST_NO_RESPONSE — INTERESTED reply 2026-04-04 (pricing question, acknowledged quote-form pain unprompted). 31 days since reply. Email channel closed. LinkedIn is the final soft channel.",
+      "linkedin_sector": "low — trades rarely active on LinkedIn. Attempt because lead showed genuine intent. Skip if profile cannot be confidently confirmed.",
       "linkedin_search_query": "site:linkedin.com/in \"Tom\" \"Ripon Road Carpentry\"",
       "note_type": "generic",
       "note": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
@@ -154,7 +169,7 @@
       "post_reference_upgrade": {
         "instruction": "If Tom has posted about carpentry projects in the last 60 days: write bespoke note. If no post or profile not found: use generic note above.",
         "template": "Tom — saw your post about [specific topic]. Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my eye. Connecting in case useful.",
-        "template_char_count_with_short_topic": 199,
+        "template_char_count_note": "Template with a 5-char topic = 199 chars. Adjust topic length carefully.",
         "seasonal_post_topics_to_look_for": [
           "spring builds",
           "garden structures",
@@ -167,12 +182,14 @@
         ]
       },
       "dispatch_conditions": {
-        "preferred": "Monday 2026-05-04, 09:30-10:00 (MISSED — not confirmed executed)",
-        "last_acceptable": "WEDNESDAY 2026-05-06, 08:10-08:20 — ABSOLUTE DEADLINE (before email sends)",
+        "last_acceptable": "WEDNESDAY 2026-05-06, 08:10-08:20 — ABSOLUTE FINAL WINDOW (before email sends)",
+        "monday_2026_05_04_status": "NOT CONFIRMED EXECUTED",
+        "tuesday_2026_05_05": "BLOCKED — UK May Day bank holiday",
         "imap_check_required": true,
-        "do_not_send_if": "IMAP reveals any email reply since 2026-04-04",
+        "imap_check_email": "tom@riponroadcarpentry.co.uk",
+        "do_not_send_if": "IMAP reveals any email reply since 2026-04-04. OR if profile cannot be confidently confirmed as the owner/operator of Ripon Road Carpentry.",
         "profile_check_required": true,
-        "profile_confirmation": "Confirm profile is owner/operator of Ripon Road Carpentry in Ripon before connecting. First-name only — verify carefully."
+        "profile_confirmation": "Confirm profile is owner/operator of Ripon Road Carpentry in Ripon. First-name-only lead — verify carefully. Do NOT connect to a generic Tom in carpentry elsewhere."
       },
       "if_connection_accepted_followup": {
         "timing": "Wait 3-5 days after acceptance. Do not message immediately.",
@@ -181,14 +198,19 @@
         "within_limit": true,
         "rule": "Only send if they connect. Do NOT reference email, pricing discussion, or prior contact."
       },
+      "if_imap_finds_reply_wednesday": {
+        "action": "Cancel LinkedIn permanently for lead 1. Respond to reply. If still interested: agree quote form spec (£100-150). Set call this week.",
+        "linkedin_status_if_reply": "PERMANENTLY CANCELLED"
+      },
       "archive_date_if_no_response": "2026-10-26",
-      "notes": "First-name-only lead. Low LinkedIn sector but genuine intent shown. May is peak carpentry season. Pain point (no quote form) is structural and ongoing."
+      "archive_date_if_wednesday_missed": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
+      "notes": "First-name-only lead. Low LinkedIn sector — skip if profile is ambiguous. Genuine intent shown. May is start of peak carpentry season. Pain point (no quote form) is structural."
     }
   ],
   "active_notes_count": 3,
 
   "post_breakup_contingency": {
-    "note": "These leads had connection requests that may have been sent (unconfirmed — 0 linkedin_profiles.json files received across 37 campaign days). If any pending request is accepted: use the if_accepted_message only. Do NOT reference the breakup email or email sequence.",
+    "note": "These leads had connection requests that may have been sent (unconfirmed — 0 linkedin_profiles.json files received across 38 campaign days). If any pending request is accepted: use the if_accepted_message only. Do NOT reference the breakup email or email sequence.",
     "pending_leads": [
       {
         "lead_id": 52,
@@ -263,21 +285,20 @@
   "campaign_linkedin_assessment": {
     "total_confirmed_notes_sent": 0,
     "total_confirmed_connections_made": 0,
-    "brain_runs_with_active_notes": 10,
+    "brain_runs_with_active_notes": 11,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 16,
-    "root_cause": "HANDS execution latency — LinkedIn window (Day 3-6) missed for every batch across all 37 campaign days. Notes generated correctly by BRAIN on 10 runs. Zero notes confirmed sent by HANDS.",
-    "key_learning": "Post_reference upgrade step requires HANDS to check each profile before sending — not executed once in 37 days. For warm pipeline (leads 1/3/22): HANDS must open LinkedIn, search, check posts, and send in a SINGLE SESSION today.",
-    "today_protocol": "BRAIN flags TODAY MONDAY 2026-05-04 as the warm pipeline LinkedIn session. HANDS must write linkedin_profiles.json after every search session — even if no note was sent. This has not happened once in 37 days.",
-    "escalation_note": "Monday execution NOT CONFIRMED. Today is bank holiday Tuesday 2026-05-05 — skip. WEDNESDAY 2026-05-06, 07:45-08:20 is the absolute last acceptable window — before email sends. After that: archive leads 1/3/22 permanently. Do not silently skip."
+    "consecutive_runs_without_profiles": 38,
+    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 38 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
+    "key_learning": "Post_reference upgrade step requires HANDS to check each profile before sending — not executed once in 38 days. For warm pipeline (leads 1/3/22): HANDS must open LinkedIn, search, check posts, and send in a SINGLE SESSION Wednesday 2026-05-06.",
+    "wednesday_protocol": "BRAIN declares Wednesday 2026-05-06, 07:45-08:20 as the absolute final warm pipeline LinkedIn session. HANDS must write linkedin_profiles.json after the session — even if no note was sent. This has not happened once in 38 days.",
+    "escalation_note": "No further deferrals. If HANDS cannot complete LinkedIn by 08:20 Wednesday: archive leads 1/3/22 permanently as LOST_NO_RESPONSE. Log in CHANGELOG.md immediately."
   },
 
   "summary": {
     "total_active_notes": 3,
     "active_note_lead_ids": [3, 22, 1],
-    "status": "CRITICAL — Monday 2026-05-04 execution NOT CONFIRMED. Wednesday 2026-05-06 is ABSOLUTE LAST WINDOW.",
-    "preferred_dispatch_date": "Monday 2026-05-04 (MISSED — not confirmed executed)",
-    "last_acceptable_date": "WEDNESDAY 2026-05-06, 07:45-08:20 — before email sends. Absolute deadline.",
+    "status": "CRITICAL — Monday 2026-05-04 NOT CONFIRMED. Tuesday 2026-05-05 BLOCKED (bank holiday). Wednesday 2026-05-06 = ABSOLUTE FINAL WINDOW.",
+    "last_acceptable_date": "WEDNESDAY 2026-05-06, 07:45-08:20 — before email sends. No further deferrals.",
     "imap_precondition": "MANDATORY before sending any note — 31-day IMAP gap",
     "imap_gap_days": 31,
     "post_reference_upgrade_possible": true,
@@ -288,6 +309,6 @@
     "consecutive_runs_without_profiles": 38,
     "campaign_linkedin_contacts_confirmed": 0,
     "archive_trigger": "If LinkedIn not executed by 08:20 Wednesday 2026-05-06: permanently archive leads 1, 3, 22 as LOST_NO_RESPONSE.",
-    "day_38_run_note": "Bank holiday Tuesday 2026-05-05. LinkedIn NOT confirmed from Monday. Wednesday 07:45-08:20 is the absolute last chance — before email sends. 38 sessions without linkedin_profiles.json."
+    "day_38_run_note": "Bank holiday Tuesday 2026-05-05. Intelligence-only run. Notes unchanged — content is correct and ready. Wednesday 07:45-08:20 is the confirmed absolute final window."
   }
 }
