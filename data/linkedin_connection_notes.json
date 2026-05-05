@@ -70,8 +70,8 @@
         ]
       },
       "dispatch_conditions": {
-        "preferred": "TODAY — Monday 2026-05-04, 09:30-10:00",
-        "last_acceptable": "Tuesday 2026-05-06 (skip bank holiday Tuesday 2026-05-05)",
+        "preferred": "Monday 2026-05-04, 09:30-10:00 (MISSED — not confirmed executed)",
+        "last_acceptable": "WEDNESDAY 2026-05-06, 07:45-08:00 — ABSOLUTE DEADLINE (before email sends)",
         "imap_check_required": true,
         "do_not_send_if": "IMAP reveals any email reply. Extra caution: Claire booked a call 2026-04-07. If any reply found: LinkedIn permanently blocked.",
         "profile_check_required": true,
@@ -120,8 +120,8 @@
         ]
       },
       "dispatch_conditions": {
-        "preferred": "TODAY — Monday 2026-05-04, 09:30-10:00",
-        "last_acceptable": "Tuesday 2026-05-06",
+        "preferred": "Monday 2026-05-04, 09:30-10:00 (MISSED — not confirmed executed)",
+        "last_acceptable": "WEDNESDAY 2026-05-06, 08:00-08:10 — ABSOLUTE DEADLINE (before email sends)",
         "imap_check_required": true,
         "do_not_send_if": "IMAP reveals any email reply. Rob's upsell signal means a late reply is plausible — IMAP check is especially critical.",
         "profile_check_required": true,
@@ -167,8 +167,8 @@
         ]
       },
       "dispatch_conditions": {
-        "preferred": "TODAY — Monday 2026-05-04, 09:30-10:00",
-        "last_acceptable": "Tuesday 2026-05-06",
+        "preferred": "Monday 2026-05-04, 09:30-10:00 (MISSED — not confirmed executed)",
+        "last_acceptable": "WEDNESDAY 2026-05-06, 08:10-08:20 — ABSOLUTE DEADLINE (before email sends)",
         "imap_check_required": true,
         "do_not_send_if": "IMAP reveals any email reply since 2026-04-04",
         "profile_check_required": true,
@@ -269,25 +269,25 @@
     "root_cause": "HANDS execution latency — LinkedIn window (Day 3-6) missed for every batch across all 37 campaign days. Notes generated correctly by BRAIN on 10 runs. Zero notes confirmed sent by HANDS.",
     "key_learning": "Post_reference upgrade step requires HANDS to check each profile before sending — not executed once in 37 days. For warm pipeline (leads 1/3/22): HANDS must open LinkedIn, search, check posts, and send in a SINGLE SESSION today.",
     "today_protocol": "BRAIN flags TODAY MONDAY 2026-05-04 as the warm pipeline LinkedIn session. HANDS must write linkedin_profiles.json after every search session — even if no note was sent. This has not happened once in 37 days.",
-    "escalation_note": "If HANDS cannot execute today (Monday 2026-05-04): Tuesday 2026-05-05 is bank holiday — skip. Tuesday 2026-05-06 is the absolute last acceptable day. After that: archive leads 1/3/22 permanently. Do not silently skip."
+    "escalation_note": "Monday execution NOT CONFIRMED. Today is bank holiday Tuesday 2026-05-05 — skip. WEDNESDAY 2026-05-06, 07:45-08:20 is the absolute last acceptable window — before email sends. After that: archive leads 1/3/22 permanently. Do not silently skip."
   },
 
   "summary": {
     "total_active_notes": 3,
     "active_note_lead_ids": [3, 22, 1],
-    "status": "ACTIVE — buffer confirmed expired 2026-05-02. Notes ready for dispatch TODAY.",
-    "preferred_dispatch_date": "TODAY — Monday 2026-05-04, 09:30-10:00",
-    "last_acceptable_date": "Tuesday 2026-05-06 (skip bank holiday Tuesday 2026-05-05)",
-    "imap_precondition": "MANDATORY before sending any note — 30-day IMAP gap",
-    "imap_gap_days": 30,
+    "status": "CRITICAL — Monday 2026-05-04 execution NOT CONFIRMED. Wednesday 2026-05-06 is ABSOLUTE LAST WINDOW.",
+    "preferred_dispatch_date": "Monday 2026-05-04 (MISSED — not confirmed executed)",
+    "last_acceptable_date": "WEDNESDAY 2026-05-06, 07:45-08:20 — before email sends. Absolute deadline.",
+    "imap_precondition": "MANDATORY before sending any note — 31-day IMAP gap",
+    "imap_gap_days": 31,
     "post_reference_upgrade_possible": true,
     "upgrade_priority": "Claire (lead 3) > Rob (lead 22) > Tom (lead 1)",
     "total_archived": 4,
     "archived_ids": [52, 55, 50, 56],
     "post_breakup_contingency_leads": [52, 55, 50, 56],
-    "consecutive_runs_without_profiles": 16,
+    "consecutive_runs_without_profiles": 38,
     "campaign_linkedin_contacts_confirmed": 0,
-    "calendar_correction": "May 5 = TUESDAY bank holiday. TODAY = Monday 2026-05-04 = execution day. Prior Day 36 files said 'TUESDAY 2026-05-06' — that was based on wrong bank holiday day-name. All notes unchanged — only dispatch date updated.",
-    "day_37_run_note": "Monday working day. LinkedIn executes today. Bank holiday tomorrow (Tuesday May 5) has no effect on today's LinkedIn session. IMAP sweep before 09:00 is the gating precondition."
+    "archive_trigger": "If LinkedIn not executed by 08:20 Wednesday 2026-05-06: permanently archive leads 1, 3, 22 as LOST_NO_RESPONSE.",
+    "day_38_run_note": "Bank holiday Tuesday 2026-05-05. LinkedIn NOT confirmed from Monday. Wednesday 07:45-08:20 is the absolute last chance — before email sends. 38 sessions without linkedin_profiles.json."
   }
 }

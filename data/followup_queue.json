@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-04T07:00:00Z",
-  "date": "2026-05-04",
-  "day_number": 37,
-  "note": "BRAIN layer — Day 37 (Monday). CALENDAR CORRECTION: bank holiday = TUESDAY 2026-05-05 (not Monday). First working day = WEDNESDAY 2026-05-06 (not Tuesday). All send times updated to 'send_time_wednesday'. fu_041-045 now 11 days overdue. No active sequences. fu_041-045 contingency confirmed for WEDNESDAY 2026-05-06 08:45-09:25 (IMAP first). Batch 5 awaiting data.",
+  "generated_at": "2026-05-05T07:00:00Z",
+  "date": "2026-05-05",
+  "day_number": 38,
+  "note": "BRAIN layer — Day 38 (Tuesday — UK May Day bank holiday). TODAY: zero sends — bank holiday. fu_041-045 now 12 days overdue. Send window unchanged: WEDNESDAY 2026-05-06 08:45-09:25 (after IMAP sweep and LinkedIn window). IMAP must precede each send. No active sequences. Batch 5 awaiting Ryedale data.",
 
   "bank_holiday_rule": {
     "date_blocked": "2026-05-05",
-    "day": "Tuesday (corrected from prior BRAIN label of 'Monday')",
+    "day": "Tuesday",
     "reason": "UK May Day bank holiday — zero sends Tuesday 2026-05-05",
-    "batch_5_day0": "WEDNESDAY 2026-05-06 — confirmed, updated from prior 'Tuesday' label"
+    "batch_5_day0": "WEDNESDAY 2026-05-06 — confirmed"
   },
 
   "suppressed_lead_ids": [7, 19],
@@ -20,8 +20,9 @@
   "active_count": 0,
 
   "unconfirmed_final_sends": {
-    "description": "fu_041-045 were due 2026-04-23. Never confirmed in CHANGELOG. Now 11 days overdue as Day-14 breakups. Rescheduled to Wednesday 2026-05-06 pre-Batch 5 window (08:45-09:25).",
+    "description": "fu_041-045 were due 2026-04-23. Never confirmed in CHANGELOG. Now 12 days overdue as Day-14 breakups. Send window: Wednesday 2026-05-06 08:45-09:25 (post-IMAP, post-LinkedIn).",
     "send_decision": "SEND WEDNESDAY 2026-05-06 08:45-09:25 if: (1) IMAP confirms no prior reply for each lead, AND (2) HANDS confirms fu_04x was NOT sent on 2026-04-23. If already sent: skip and log in CHANGELOG.",
+    "wednesday_execution_order": "IMAP sweep (07:00) → LinkedIn for leads 1/3/22 (07:45-08:20) → IMAP remaining cohort (08:20-08:40) → fu_041-045 (08:45-09:25) → Batch 5 (10:00)",
     "sends": [
       {
         "followup_id": "fu_041",
@@ -32,7 +33,7 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 11,
+        "overdue_days": 12,
         "rescheduled_send_date": "2026-05-06",
         "rescheduled_send_time": "08:45",
         "rescheduled_send_day": "Wednesday",
@@ -49,7 +50,7 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 11,
+        "overdue_days": 12,
         "rescheduled_send_date": "2026-05-06",
         "rescheduled_send_time": "08:55",
         "rescheduled_send_day": "Wednesday",
@@ -67,7 +68,7 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 11,
+        "overdue_days": 12,
         "rescheduled_send_date": "2026-05-06",
         "rescheduled_send_time": "09:05",
         "rescheduled_send_day": "Wednesday",
@@ -85,7 +86,7 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 11,
+        "overdue_days": 12,
         "rescheduled_send_date": "2026-05-06",
         "rescheduled_send_time": "09:15",
         "rescheduled_send_day": "Wednesday",
@@ -103,7 +104,7 @@
         "original_sent_at": "2026-04-09",
         "followup_number": 3,
         "sequence_day": 14,
-        "overdue_days": 11,
+        "overdue_days": 12,
         "rescheduled_send_date": "2026-05-06",
         "rescheduled_send_time": "09:25",
         "rescheduled_send_day": "Wednesday",
@@ -117,14 +118,14 @@
   },
 
   "batch_5_followup_schedule": {
-    "status": "PENDING — no Batch 5 initial sends yet. Schedule confirmed on corrected bank holiday basis.",
+    "status": "PENDING — no Batch 5 initial sends yet.",
     "initial_sends_date": "WEDNESDAY 2026-05-06, 10:00-11:30 (after fu_041-045 window 08:45-09:25)",
     "bank_holiday_note": "Tuesday 2026-05-05 is UK May Day — NOT a send day under any scenario.",
 
     "day3_bumps": {
       "due_calculation": "Day 3 from Wednesday 2026-05-06 = Saturday 2026-05-09 — weekend, no send.",
-      "due_adjusted": "FRIDAY 2026-05-09 (send before weekend) OR MONDAY 2026-05-11 (first weekday after Day 3 weekend)",
-      "brain_decision_required": "BRAIN runs FRIDAY 2026-05-09 to confirm Day-3 send date. Friday preference: avoids leads going cold over weekend. But Friday reply rate lower than Tuesday/Wednesday — BRAIN to weigh up on Friday run.",
+      "due_adjusted": "FRIDAY 2026-05-09 (send before weekend) OR MONDAY 2026-05-11",
+      "brain_decision_required": "BRAIN runs FRIDAY 2026-05-09 to confirm. Friday preference likely — avoids cold weekend gap.",
       "type": "Short thread reply (reply to original email thread)",
       "template": "[First name],\n\nJust wanted to make sure this didn't get buried.\n\n[One sentence restating specific issue — e.g. 'The Not Secure warning on [URL] is still showing.']\n\n[Your name]",
       "rules": "3-4 lines only. Same thread. Brief bump — not a restatement. IMAP before each.",
@@ -133,7 +134,6 @@
 
     "day7_new_angle": {
       "due": "Wednesday 2026-05-13, 09:00-10:30",
-      "note": "Same day-of-week as initial sends — Wednesday consistency.",
       "type": "New pain point. Fresh email — NOT a thread reply.",
       "pivot_rules": {
         "if_day0_was_ssl": "Day-7: Google ranking impact of Not Secure OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
@@ -146,7 +146,6 @@
 
     "day14_breakup": {
       "due": "Wednesday 2026-05-20, 09:00-10:30",
-      "note": "Same day-of-week as initial sends.",
       "type": "Breakup email — clean close, door left open.",
       "template": "[First name],\n\nI've dropped you a couple of notes about [specific issue] — won't keep following up if now isn't the right time.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
       "rules": "3 lines maximum. No new content. No pressure. No question marks.",
@@ -156,22 +155,24 @@
 
   "summary": {
     "active_sequences": 0,
-    "due_today_monday": 0,
-    "due_tuesday_bank_holiday": 0,
+    "due_today_tuesday_bank_holiday": 0,
     "due_wednesday_2026_05_06": {
       "fu_041_045_contingency": "5 (if not sent + IMAP clear) — window 08:45-09:25",
       "batch_5_initial_sends": "10-15 (if data arrives before Wednesday morning) — window 10:00-11:30"
     },
     "next_scheduled_followups": "Batch 5 Day-3 bumps — Friday 2026-05-09 or Monday 2026-05-11 (BRAIN confirms Friday)",
     "hands_actions_required": [
-      "Monday 2026-05-04: IMAP sweep — full cohort. Before any LinkedIn approach.",
-      "Monday 2026-05-04: LinkedIn approach for leads 1, 3, 22 (09:30-10:00 after IMAP). See value_delivery_queue.json.",
-      "Monday/Tuesday: Confirm in CHANGELOG whether fu_041-045 were sent on 2026-04-23.",
-      "Wednesday 2026-05-06 08:00: IMAP sweep — full cohort again before sends.",
-      "Wednesday 2026-05-06 08:45: If fu_041-045 not sent: send each after per-send IMAP check (8 min stagger).",
-      "Wednesday 2026-05-06 10:00: Batch 5 initial sends (if data received). IMAP sweep complete.",
-      "DO NOT send on Tuesday 2026-05-05 — bank holiday.",
-      "Log all sends in CHANGELOG.md with timestamp."
+      "Wednesday 2026-05-06 07:00: IMAP sweep — leads 3, 22, 1 (warm pipeline — LinkedIn precondition).",
+      "Wednesday 2026-05-06 07:45-08:20: LinkedIn approach leads 1, 3, 22 (ABSOLUTE LAST CHANCE). Write linkedin_profiles.json same session.",
+      "Wednesday 2026-05-06 08:20-08:40: IMAP sweep — leads 30, 31, 32, 58, 59 + full remaining cohort.",
+      "Wednesday 2026-05-06 08:45: fu_041 — Steve, Halifax Window Cleaning. IMAP clean + not previously sent.",
+      "Wednesday 2026-05-06 08:55: fu_042 — Pontefract Pharmacy. IMAP clean + not previously sent.",
+      "Wednesday 2026-05-06 09:05: fu_043 — Ann, Castleford Carpets. IMAP clean + not previously sent.",
+      "Wednesday 2026-05-06 09:15: fu_044 — Old Court Solicitors. IMAP clean + not previously sent.",
+      "Wednesday 2026-05-06 09:25: fu_045 — Tony, Scarborough Roofing. IMAP clean + not previously sent.",
+      "Wednesday 2026-05-06 10:00-11:30: Batch 5 initial sends (if data received by 09:30).",
+      "Wednesday 2026-05-06 EOD: CHANGELOG.md — all actions logged with timestamps.",
+      "DO NOT send on Tuesday 2026-05-05 — bank holiday."
     ]
   }
 }
