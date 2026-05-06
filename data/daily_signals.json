@@ -1,128 +1,196 @@
 {
-  "generated_at": "2026-05-05T07:00:00Z",
-  "date": "2026-05-05",
-  "day_number": 38,
-  "note": "BRAIN layer — Day 38 (Tuesday — UK May Day bank holiday). Unscheduled bridge run: prior BRAIN schedule said no run today, but invoked to lock Wednesday execution order. TODAY: zero sends, zero HANDS — bank holiday. Key change from Day 37: LinkedIn approach for leads 1, 3, 22 NOT confirmed executed Monday 2026-05-04 (no linkedin_profiles.json written in 38 campaign days). Last acceptable LinkedIn window is now WEDNESDAY 2026-05-06 morning — before email sends. If LinkedIn not done Wednesday: archive leads 1, 3, 22 permanently.",
+  "generated_at": "2026-05-06T06:30:00Z",
+  "date": "2026-05-06",
+  "day_number": 39,
+  "note": "BRAIN layer — Day 39 (Wednesday 2026-05-06 — SEND DAY). First working day after UK May Day bank holiday. Post-bank-holiday premium send window active. No Batch 5 Ryedale data received at BRAIN run time. HANDS: execute locked sequence from 07:00. If Ryedale data arrives before 09:30: notify BRAIN for same-session personalisation.",
 
-  "today_outreach": "ZERO sends. TODAY is Tuesday 2026-05-05 — UK May Day bank holiday. No HANDS. No IMAP. No LinkedIn. All actions deferred to WEDNESDAY 2026-05-06.",
+  "send_day_status": "ACTIVE — execute locked sequence NOW",
 
-  "bank_holiday_rule": {
-    "date": "2026-05-05",
-    "day": "Tuesday",
-    "type": "UK Early May Bank Holiday",
-    "status": "CONFIRMED — zero sends, zero HANDS, zero IMAP today.",
-    "first_working_day_after": "WEDNESDAY 2026-05-06",
-    "send_window": "Wednesday 2026-05-06 — IMAP from 07:00, LinkedIn 07:45-08:20, fu_041-045 from 08:45, Batch 5 from 10:00"
+  "today_is": {
+    "date": "2026-05-06",
+    "day_of_week": "Wednesday",
+    "campaign_day": 39,
+    "significance": "First working day after UK May Day bank holiday. Post-bank-holiday premium send window. All 3 INTERESTED replies (leads 1/3/22) arrived on first-working-day-after-bank-holiday — same mechanism active today.",
+    "bank_holiday_was": "Tuesday 2026-05-05 — UK Early May Bank Holiday (confirmed zero sends)"
   },
 
   "new_signals_today": 0,
   "new_leads_today": 0,
+  "batch_5_data_received": false,
+  "batch_5_data_cutoff_today": "09:30 — if Ryedale data arrives before 09:30, BRAIN runs same session and initial sends proceed 10:00-11:30",
 
-  "imap_gap_days": 31,
+  "imap_gap_days": 32,
   "imap_last_confirmed_check": "2026-04-04",
-  "imap_status": "CRITICAL OVERDUE — 31 days. Full cohort sweep MUST be first action Wednesday 2026-05-06, starting 07:00. Leads 3, 22, 1 swept first (LinkedIn precondition). Then leads 30, 31, 32, 58, 59 (fu_041-045 precondition). Then full remaining cohort.",
+  "imap_status": "CRITICAL — 32 days. Full cohort sweep MUST be first action today. Priority: leads 3 → 22 → 1 (LinkedIn precondition) from 07:00-07:45. Then leads 30, 31, 32, 58, 59 (fu_041-045 precondition) from 08:20-08:40. Then all remaining cohort.",
 
   "linkedin_status": {
-    "status": "NOT CONFIRMED EXECUTED",
-    "due_date_monday": "2026-05-04",
-    "executed_monday": false,
-    "linkedin_profiles_json_written": false,
-    "consecutive_sessions_without_profiles": 38,
-    "last_acceptable_date": "WEDNESDAY 2026-05-06 — before email sends. ABSOLUTE DEADLINE.",
-    "escalation": "If HANDS cannot complete LinkedIn 07:45-08:20 Wednesday: archive leads 1, 3, 22 as LOST_NO_RESPONSE immediately. Do NOT silently skip again.",
-    "wednesday_window": "07:45-08:20 — after IMAP sweep of leads 3, 22, 1. Before fu_041-045 sends.",
-    "archive_if_missed": "Permanent archive. No further LinkedIn action on any channel."
-  },
-
-  "batch_5_status": {
-    "status": "CRITICAL — 28-day campaign stall. Batch 5 Ryedale data now 13 days overdue.",
-    "data_received": false,
-    "waiting_since": "2026-04-22",
-    "days_overdue": 13,
-    "campaign_stall_days": 28,
-    "target_area": "Ryedale District, North Yorkshire",
-    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
-    "if_data_arrives_tonight_tuesday": {
-      "brain_run": "BRAIN personalises tonight — same session even on bank holiday",
-      "initial_sends": "WEDNESDAY 2026-05-06, 10:00-11:30 (after IMAP + LinkedIn + fu_041-045 window)",
-      "note": "Even Tuesday evening Ryedale data arrival means Wednesday initial sends remain valid. Do NOT send Tuesday."
-    },
-    "if_no_data_by_wednesday_morning": {
-      "sends_wednesday": "LIMITED TO fu_041-045 only (5 sends)",
-      "batch_5_deferred": "Awaits data — no Batch 5 sends without BRAIN personalisation first",
-      "stall_continues": true
-    },
-    "send_schedule_confirmed": {
-      "day_0_initial": "Wednesday 2026-05-06, 10:00-11:30 (after fu_041-045 window 08:45-09:25)",
-      "day_3_bump": "BRAIN runs FRIDAY 2026-05-09 to confirm: Friday 09 May send (before weekend) vs Monday 12 May",
-      "day_7_new_angle": "Wednesday 2026-05-13, 09:00-10:30",
-      "day_14_breakup": "Wednesday 2026-05-20, 09:00-10:30"
-    },
-    "send_rate": "Max 15 initial sends per batch. 8-10 minute stagger.",
-    "send_window": "10:00-11:30 Wednesday only."
+    "status": "EXECUTE TODAY — ABSOLUTE FINAL WINDOW",
+    "window": "07:45-08:20 TODAY — after IMAP sweep of leads 3, 22, 1",
+    "consecutive_sessions_without_profiles": 39,
+    "linkedin_profiles_json_ever_written": false,
+    "escalation": "This is not a planning day. Execute now. If HANDS cannot complete 07:45-08:20: archive leads 1, 3, 22 as LOST_NO_RESPONSE immediately and log CHANGELOG.md.",
+    "archive_trigger": "If not done by 08:20: permanently archive leads 1, 3, 22. No further action on any channel. Log CHANGELOG.md."
   },
 
   "signal_assignments": [],
-  "signal_assignment_note": "No leads to assign. All signal assignments await Batch 5 Ryedale data. Priority waterfall on data receipt: ssl → PAS → first-name subject (60%); mobile → PAS (20%); no_website → BAB 20+ reviews (15%); social_high_review → AIDA 100+ reviews (5%).",
+  "signal_assignment_note": "No new signal assignments. All Batch 5 Ryedale leads await data delivery. On data receipt: ssl → PAS (60%), mobile → PAS (20%), no_website 20+ reviews → BAB (15%), 4.5★+/100+ reviews → AIDA (5%). BRAIN personalises on receipt — HANDS does NOT use templates directly.",
 
-  "carried_forward_blocked": {
-    "lead_49": {
-      "business": "East Riding Builders Ltd",
-      "status": "blocked_no_email",
-      "days_blocked": 38,
-      "action": "HANDS: Companies House director name search. Archive if not resolved by Wednesday 2026-05-06 EOD."
-    },
-    "lead_51": {
-      "business": "Driffield Garden Centre",
-      "status": "blocked_contact_form_only",
-      "days_blocked": 38,
-      "action": "HANDS: phone after 09:30 Wednesday. Final attempt. Archive if no answer."
-    },
-    "lead_53": {
-      "business": "Bridlington Bay Lettings",
-      "status": "blocked_no_direct_email",
-      "days_blocked": 38,
-      "action": "HANDS: Rightmove / Zoopla directory, or info@ fallback."
-    },
-    "lead_54": {
-      "business": "The Wolds Inn",
-      "status": "blocked_no_email",
-      "days_blocked": 38,
-      "action": "HANDS: try info@thewoldsinn.co.uk. Low priority."
-    }
-  },
-
-  "wednesday_execution_order_locked": {
-    "note": "THIS IS THE LOCKED WEDNESDAY BRIEF. Do not deviate from this order.",
+  "execution_order_locked": {
+    "note": "LOCKED. Execute in this exact sequence. No deviations.",
     "sequence": [
-      {"time": "07:00-07:45", "action": "IMAP sweep — leads 3, 22, 1 (warm pipeline)", "condition": "Mandatory before any LinkedIn"},
-      {"time": "07:45-08:20", "action": "LinkedIn — leads 3, 22, 1 (if IMAP clean for each)", "condition": "ABSOLUTE LAST CHANCE. Write linkedin_profiles.json same session. If IMAP found reply: skip LinkedIn for that lead."},
-      {"time": "08:20-08:40", "action": "IMAP sweep — leads 30, 31, 32, 58, 59 + full remaining cohort", "condition": "fu_041-045 precondition"},
-      {"time": "08:45", "action": "fu_041 — Steve, Halifax Window Cleaning", "condition": "IMAP clean + not sent on 2026-04-23"},
-      {"time": "08:55", "action": "fu_042 — Pontefract Pharmacy", "condition": "IMAP clean + not sent"},
-      {"time": "09:05", "action": "fu_043 — Ann, Castleford Carpets", "condition": "IMAP clean + not sent"},
-      {"time": "09:15", "action": "fu_044 — Old Court Solicitors", "condition": "IMAP clean + not sent"},
-      {"time": "09:25", "action": "fu_045 — Tony, Scarborough Roofing", "condition": "IMAP clean + not sent"},
-      {"time": "10:00-11:30", "action": "Batch 5 initial sends (if Ryedale data received)", "condition": "Data must arrive before 09:30 Wednesday"},
-      {"time": "EOD", "action": "CHANGELOG.md update", "condition": "ALL actions logged with timestamps — mandatory"}
+      {
+        "time": "07:00-07:45",
+        "action": "IMAP sweep — leads 3, 22, 1 (warm pipeline)",
+        "type": "imap_precondition",
+        "lead_ids": [3, 22, 1],
+        "emails": ["claire@westfieldhair.co.uk", "rob@pennineprint.co.uk", "tom@riponroadcarpentry.co.uk"],
+        "notes": "LinkedIn precondition. If any reply found: act on reply, cancel LinkedIn for that lead. Write to new_replies.json immediately. If conversion: CHANGELOG.md — Campaign Milestone #1."
+      },
+      {
+        "time": "07:45-08:00",
+        "action": "LinkedIn — lead 3 (Claire, Westfield Hair & Beauty)",
+        "type": "linkedin",
+        "lead_id": 3,
+        "condition": "IMAP clean for claire@westfieldhair.co.uk",
+        "notes": "Search profile. Check posts last 60 days — salon sector posts frequently. Use post_reference note if post found (3-4x acceptance). Generic note in linkedin_connection_notes.json if no post."
+      },
+      {
+        "time": "08:00-08:10",
+        "action": "LinkedIn — lead 22 (Rob, Pennine Print & Design)",
+        "type": "linkedin",
+        "lead_id": 22,
+        "condition": "IMAP clean for rob@pennineprint.co.uk",
+        "notes": "Check posts. B2B print sector posts about client work, weddings, graduations. May is peak print season."
+      },
+      {
+        "time": "08:10-08:20",
+        "action": "LinkedIn — lead 1 (Tom, Ripon Road Carpentry)",
+        "type": "linkedin",
+        "lead_id": 1,
+        "condition": "IMAP clean for tom@riponroadcarpentry.co.uk",
+        "notes": "Low LinkedIn sector (trades). Skip if profile cannot be confirmed as the right Tom. Use generic note from linkedin_connection_notes.json."
+      },
+      {
+        "time": "08:20",
+        "action": "Write linkedin_profiles.json",
+        "type": "mandatory_file",
+        "notes": "MANDATORY — same session. Write immediately after LinkedIn window regardless of outcome. Include search result, profile found (yes/no), note sent (yes/no), notes text used. This has not been done in 39 campaign sessions."
+      },
+      {
+        "time": "08:20-08:40",
+        "action": "IMAP sweep — leads 30, 31, 32, 58, 59 + full remaining cohort",
+        "type": "imap_precondition",
+        "lead_ids": [30, 31, 32, 58, 59],
+        "notes": "fu_041-045 precondition. If any of these leads has replied: do NOT send fu_04x for that lead."
+      },
+      {
+        "time": "08:45",
+        "action": "fu_041 — Steve, Halifax Window Cleaning",
+        "type": "send",
+        "lead_id": 30,
+        "subject": "Closing the loop — Halifax Window Cleaning",
+        "condition": "IMAP clean (lead 30) + not already sent on 2026-04-23",
+        "notes": "Day-14 breakup. 13 days overdue. Still professionally appropriate to send — closes the loop."
+      },
+      {
+        "time": "08:55",
+        "action": "fu_042 — Pontefract Pharmacy",
+        "type": "send",
+        "lead_id": 31,
+        "subject": "Closing the loop — Pontefract Pharmacy",
+        "condition": "IMAP clean (lead 31) + not already sent"
+      },
+      {
+        "time": "09:05",
+        "action": "fu_043 — Ann, Castleford Carpets",
+        "type": "send",
+        "lead_id": 32,
+        "subject": "Closing the loop — Castleford Carpets",
+        "condition": "IMAP clean (lead 32) + not already sent",
+        "notes": "May is start of summer home-improvement season — minor timing benefit."
+      },
+      {
+        "time": "09:15",
+        "action": "fu_044 — Old Court Solicitors",
+        "type": "send",
+        "lead_id": 58,
+        "subject": "Closing the loop — The Old Court Solicitors",
+        "condition": "IMAP clean (lead 58) + not already sent"
+      },
+      {
+        "time": "09:25",
+        "action": "fu_045 — Tony Shields, Scarborough Roofing Specialists",
+        "type": "send",
+        "lead_id": 59,
+        "subject": "Closing the loop — Scarborough Roofing Specialists",
+        "condition": "IMAP clean (lead 59) + not already sent",
+        "notes": "May-August is peak roofing season. Tony may now be motivated."
+      },
+      {
+        "time": "09:30",
+        "action": "Batch 5 data check — BRAIN decision point",
+        "type": "decision",
+        "notes": "If Ryedale data has arrived: BRAIN personalises same session. Initial sends proceed 10:00-11:30. If no data: sends complete (5 fu breakups only). Batch 5 waits."
+      },
+      {
+        "time": "10:00-11:30",
+        "action": "Batch 5 initial sends (if data received)",
+        "type": "send_batch",
+        "condition": "Ryedale data received before 09:30. 8-10 min stagger. BRAIN personalises first.",
+        "notes": "Post-bank-holiday premium window. 10-15 initial sends. All 3 INTERESTED replies arrived on first-working-day-after-bank-holiday."
+      },
+      {
+        "time": "EOD",
+        "action": "CHANGELOG.md update",
+        "type": "mandatory",
+        "notes": "ALL actions logged with timestamps. LinkedIn outcomes (note sent or not, profile found or not). IMAP results (any replies found). fu_041-045 outcomes. Batch 5 sends (if applicable). 39 days of unlogged HANDS actions."
+      }
     ]
   },
 
+  "batch_5_status": {
+    "data_received": false,
+    "days_overdue": 14,
+    "campaign_stall_days": 29,
+    "target_area": "Ryedale District, North Yorkshire",
+    "target_towns": ["Malton", "Pickering", "Helmsley", "Kirkbymoorside", "Hovingham", "Norton-on-Derwent"],
+    "if_data_arrives_before_0930": {
+      "brain_action": "BRAIN personalises immediately — same session",
+      "sends": "10:00-11:30 Wednesday 2026-05-06 (post-bank-holiday premium window — DO NOT defer to Thursday)",
+      "note": "Missing today's window means losing the post-bank-holiday premium. If data arrives after 09:30: Thursday sends still valid but premium window is partially lost."
+    },
+    "if_no_data_today": {
+      "sends_today": "fu_041-045 only (5 sends)",
+      "batch_5": "Wait for data — no sends without BRAIN personalisation",
+      "next_window": "Thursday 2026-05-07 (still acceptable) or next Tuesday 2026-05-12 (standard timing)"
+    },
+    "blocked_leads_final_status": {
+      "lead_49": "East Riding Builders Ltd — Companies House search. Final attempt today. Archive if unresolved by EOD.",
+      "lead_51": "Driffield Garden Centre — phone after 09:30. Final attempt. Archive if no answer.",
+      "lead_53": "Bridlington Bay Lettings — Rightmove/Zoopla or info@ fallback.",
+      "lead_54": "The Wolds Inn — try info@thewoldsinn.co.uk. Low priority."
+    }
+  },
+
+  "suppressed_lead_ids": [7, 19],
+  "do_not_email": [1, 2, 3, 7, 19, 22],
+
   "summary": {
     "new_signals_assigned": 0,
-    "blocked_carry_forward": 4,
-    "sends_today": 0,
-    "today_is_bank_holiday": true,
-    "campaign_stall_days": 28,
-    "imap_gap_days": 31,
-    "linkedin_status": "NOT CONFIRMED — last window Wednesday 2026-05-06 morning. Absolute deadline.",
-    "linkedin_archive_trigger": "If not done Wednesday morning: archive leads 1, 3, 22 permanently.",
-    "bank_holiday_confirmed": "2026-05-05 — zero sends, zero HANDS",
-    "optimal_send_window": "WEDNESDAY 2026-05-06 AM — first working day after bank holiday. Post-bank-holiday premium window.",
-    "single_highest_priority_wednesday": "IMAP sweep from 07:00 — 31-day gap. Full cohort sweep before any other action.",
-    "second_priority_wednesday": "LinkedIn for leads 1, 3, 22 — 07:45-08:20. ABSOLUTE LAST CHANCE.",
-    "third_priority_wednesday": "fu_041-045 contingency sends — 08:45-09:25 (12 days overdue)",
-    "fourth_priority_wednesday": "Batch 5 initial sends — 10:00-11:30 (if data received)",
-    "fifth_priority_wednesday": "CHANGELOG.md — 38 days of HANDS actions unlogged"
+    "sends_due_today": 5,
+    "sends_due_today_ids": "fu_041 (lead 30), fu_042 (lead 31), fu_043 (lead 32), fu_044 (lead 58), fu_045 (lead 59)",
+    "sends_due_today_condition": "Each requires IMAP clear + not previously sent 2026-04-23",
+    "batch_5_sends_today": "0-15 (conditional on data receipt before 09:30)",
+    "imap_gap_days": 32,
+    "linkedin_execute_today": true,
+    "linkedin_window": "07:45-08:20 — NOW",
+    "linkedin_archive_trigger": "Not done by 08:20 today: archive leads 1/3/22 permanently as LOST_NO_RESPONSE",
+    "campaign_stall_days": 29,
+    "fu_overdue_days": 13,
+    "highest_priority": "IMAP sweep leads 3, 22, 1 from 07:00",
+    "second_priority": "LinkedIn 07:45-08:20 — absolute last chance — write linkedin_profiles.json same session",
+    "third_priority": "fu_041-045 breakups 08:45-09:25 (IMAP precondition 08:20-08:40)",
+    "fourth_priority": "Batch 5 initial sends 10:00-11:30 (if data received)",
+    "fifth_priority": "CHANGELOG.md EOD — 39 days unlogged"
   }
 }

@@ -1,55 +1,56 @@
 {
-  "classified_at": "2026-05-05T07:00:00Z",
-  "date": "2026-05-05",
-  "day_number": 38,
-  "note": "BRAIN layer — Day 38 (Tuesday — UK May Day bank holiday). No new replies since 2026-04-04. IMAP gap: 31 days. new_replies.json unchanged — same 5 replies from Day 1. LinkedIn approach for leads 1, 3, 22 NOT confirmed executed Monday 2026-05-04 (no linkedin_profiles.json in 38 campaign days). Last acceptable LinkedIn window: Wednesday 2026-05-06 morning, BEFORE email sends. Absolute deadline — archive permanently if missed.",
+  "classified_at": "2026-05-06T06:30:00Z",
+  "date": "2026-05-06",
+  "day_number": 39,
+  "note": "BRAIN layer — Day 39 (Wednesday 2026-05-06 — SEND DAY). No new replies processed — new_replies.json unchanged (same 5 replies from 2026-04-04). IMAP gap: 32 days. True inbox state unknown until HANDS sweeps from 07:00 today. Classifications below reflect 2026-04-04 data only. If IMAP reveals new replies: write to new_replies.json and re-invoke BRAIN for classification.",
 
   "new_replies_this_run": 0,
-  "imap_gap_days": 31,
+  "imap_gap_days": 32,
   "imap_last_confirmed_check": "2026-04-04",
+  "imap_source": "new_replies.json — HANDS-written on 2026-04-04. Not updated since.",
 
-  "imap_warning": "CRITICAL — 31-day IMAP gap. Reply classifications reflect only what HANDS collected on 2026-04-04. True inbox state is unknown. Wednesday 07:00: sweep leads 3, 22, 1 first. If conversion found: write CHANGELOG.md immediately — Campaign Milestone #1. Do NOT approach on LinkedIn for any lead where IMAP finds a reply.",
+  "imap_warning": "CRITICAL — 32-day IMAP gap. All classifications below may be stale. Sweep from 07:00 today: leads 3, 22, 1 first (LinkedIn precondition), then leads 30, 31, 32, 58, 59 (fu precondition), then full remaining cohort. If conversion found: write CHANGELOG.md immediately — Campaign Milestone #1.",
 
-  "imap_sweep_wednesday": {
+  "imap_sweep_today": {
     "execute_from": "07:00 Wednesday 2026-05-06",
     "priority_order": [
-      "lead_3 (Claire — claire@westfieldhair.co.uk) — LinkedIn approach Wednesday; IMAP must come first",
-      "lead_22 (Rob — rob@pennineprint.co.uk) — LinkedIn approach Wednesday; IMAP must come first",
-      "lead_1 (Tom — tom@riponroadcarpentry.co.uk) — LinkedIn approach Wednesday; IMAP must come first",
-      "lead_30 (Steve, Halifax Window Cleaning) — fu_041 Wednesday 08:45",
-      "lead_31 (Pontefract Pharmacy) — fu_042 Wednesday 08:55",
-      "lead_32 (Ann, Castleford Carpets) — fu_043 Wednesday 09:05",
-      "lead_58 (Old Court Solicitors) — fu_044 Wednesday 09:15",
-      "lead_59 (Tony, Scarborough Roofing) — fu_045 Wednesday 09:25",
-      "All remaining cohort leads"
+      "lead_3 (Claire — claire@westfieldhair.co.uk) — LinkedIn approach 07:45; IMAP must precede",
+      "lead_22 (Rob — rob@pennineprint.co.uk) — LinkedIn approach 08:00; IMAP must precede",
+      "lead_1 (Tom — tom@riponroadcarpentry.co.uk) — LinkedIn approach 08:10; IMAP must precede",
+      "lead_30 (Steve, Halifax Window Cleaning) — fu_041 at 08:45",
+      "lead_31 (Pontefract Pharmacy) — fu_042 at 08:55",
+      "lead_32 (Ann, Castleford Carpets) — fu_043 at 09:05",
+      "lead_58 (Old Court Solicitors) — fu_044 at 09:15",
+      "lead_59 (Tony, Scarborough Roofing) — fu_045 at 09:25",
+      "All remaining cohort leads — full sweep before EOD"
     ]
   },
 
   "action_on_new_reply_found": {
-    "leads_1_3_22": "If IMAP reveals any reply: do NOT approach on LinkedIn. Write entry to new_replies.json immediately. Re-run BRAIN classifications. If converted: write CHANGELOG.md — Campaign Milestone #1.",
+    "leads_1_3_22": "If IMAP reveals ANY reply: cancel LinkedIn permanently for that lead. Write entry to new_replies.json immediately. Re-invoke BRAIN for classification. If converted: write CHANGELOG.md — Campaign Milestone #1 — first revenue.",
+    "fu_leads_30_31_32_58_59": "If IMAP reveals reply for any fu lead: do NOT send fu_04x for that lead. Write to new_replies.json. Classify.",
     "any_other_lead": "Write to new_replies.json. Classify. Update lead status. If unsubscribe: suppress permanently within 24 hours (GDPR Article 21).",
-    "conversion_protocol": "Log CHANGELOG.md: 'Campaign Milestone #1: first revenue — [business], [amount], [date].' Begin delivery same day."
+    "conversion_protocol": "Log CHANGELOG.md: 'Campaign Milestone #1: first revenue — [business], [amount], [date].' Invoice today. Begin delivery same day."
   },
 
   "warm_pipeline_resolution": {
-    "brain_declaration": "PRESUMED_LOST_NO_RESPONSE for all three. Email channel closed. LinkedIn window: WEDNESDAY 2026-05-06 morning — ABSOLUTE LAST CHANCE.",
+    "brain_declaration": "PRESUMED_LOST_NO_RESPONSE for all three. Email channel closed.",
     "linkedin_channel_open": true,
-    "linkedin_approach_due": "Monday 2026-05-04 — NOT CONFIRMED EXECUTED",
-    "linkedin_last_acceptable": "WEDNESDAY 2026-05-06, 07:45-08:20 — before email sends",
+    "linkedin_approach_today": "07:45-08:20 — ABSOLUTE LAST CHANCE. Execute NOW.",
     "linkedin_profiles_json_received": false,
-    "consecutive_runs_without_profiles": 38,
-    "archive_trigger": "If LinkedIn not executed by 08:20 Wednesday: archive leads 1, 3, 22 as LOST_NO_RESPONSE permanently.",
+    "consecutive_runs_without_profiles": 39,
+    "archive_trigger": "If LinkedIn not executed by 08:20 today: archive leads 1, 3, 22 as LOST_NO_RESPONSE permanently. No further action on any channel.",
     "lead_3": {
       "business": "Westfield Hair & Beauty",
       "owner": "Claire",
       "email": "claire@westfieldhair.co.uk",
       "classification": "INTERESTED",
       "brain_email_status": "PRESUMED_LOST_NO_RESPONSE",
-      "days_since_original_reply": 31,
+      "days_since_original_reply": 32,
       "email_channel": "CLOSED",
-      "linkedin_status": "WEDNESDAY 2026-05-06 07:45 — LAST CHANCE",
-      "if_imap_finds_reply": "Classify. If converted: milestone #1. If still interested: invoice today (Option B £350). Skip LinkedIn.",
-      "if_no_imap_reply": "LinkedIn connection note (see linkedin_connection_notes.json vd_001). Write linkedin_profiles.json same session."
+      "linkedin_status": "TODAY 07:45-08:00 — ABSOLUTE LAST CHANCE",
+      "if_imap_finds_reply": "Classify. If converted: CHANGELOG Campaign Milestone #1. If still interested: invoice today (Option B £350). Cancel LinkedIn.",
+      "if_no_imap_reply": "LinkedIn connection note (linkedin_connection_notes.json vd_001). Write linkedin_profiles.json same session."
     },
     "lead_22": {
       "business": "Pennine Print & Design",
@@ -57,11 +58,11 @@
       "email": "rob@pennineprint.co.uk",
       "classification": "INTERESTED",
       "brain_email_status": "PRESUMED_LOST_NO_RESPONSE",
-      "days_since_original_reply": 31,
+      "days_since_original_reply": 32,
       "email_channel": "CLOSED",
-      "linkedin_status": "WEDNESDAY 2026-05-06 07:55 — LAST CHANCE",
-      "if_imap_finds_reply": "Classify. If deal alive: present options A/B/C. Close target Thursday 2026-05-07. Skip LinkedIn.",
-      "if_no_imap_reply": "LinkedIn connection note (see linkedin_connection_notes.json vd_002). Write linkedin_profiles.json same session."
+      "linkedin_status": "TODAY 08:00-08:10 — ABSOLUTE LAST CHANCE",
+      "if_imap_finds_reply": "Classify. Present options A/B/C from value_delivery_queue.json. Close target Thursday 2026-05-07. Cancel LinkedIn.",
+      "if_no_imap_reply": "LinkedIn connection note (linkedin_connection_notes.json vd_002). Write linkedin_profiles.json."
     },
     "lead_1": {
       "business": "Ripon Road Carpentry",
@@ -69,11 +70,11 @@
       "email": "tom@riponroadcarpentry.co.uk",
       "classification": "INTERESTED",
       "brain_email_status": "PRESUMED_LOST_NO_RESPONSE",
-      "days_since_original_reply": 31,
+      "days_since_original_reply": 32,
       "email_channel": "CLOSED",
-      "linkedin_status": "WEDNESDAY 2026-05-06 08:10 — LAST CHANCE",
-      "if_imap_finds_reply": "Classify. If still interested: agree quote form spec (£100-150). Set call this week. Skip LinkedIn.",
-      "if_no_imap_reply": "LinkedIn connection note (see linkedin_connection_notes.json vd_003). Write linkedin_profiles.json same session."
+      "linkedin_status": "TODAY 08:10-08:20 — ABSOLUTE LAST CHANCE",
+      "if_imap_finds_reply": "Classify. Agree quote form spec (£100-150). Set call this week. Cancel LinkedIn.",
+      "if_no_imap_reply": "LinkedIn connection note (linkedin_connection_notes.json vd_003). Write linkedin_profiles.json."
     }
   },
 
@@ -93,13 +94,13 @@
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal.",
       "call_confirmed_at": "2026-04-07T14:00:00Z",
-      "current_status": "PRESUMED_LOST_NO_RESPONSE — 31 days since reply. Email channel closed. LinkedIn: WEDNESDAY 2026-05-06 — absolute last chance.",
+      "current_status": "PRESUMED_LOST_NO_RESPONSE — 32 days since reply. Email channel closed. LinkedIn: TODAY 07:45-08:00 — absolute last chance.",
       "lead_status_update": "interested",
       "status_actioned": true,
       "block_all_email_followups": true,
       "linkedin_available": true,
       "linkedin_approach_date": "2026-05-06",
-      "linkedin_approach_window": "07:45-08:00 Wednesday"
+      "linkedin_approach_window": "07:45-08:00 TODAY"
     },
     {
       "reply_id": 8,
@@ -114,14 +115,14 @@
       "confidence": "high",
       "reasoning": "Asked to bundle fixes into redesign — buyer's question. 'Sort the whole thing in one go' is the strongest upsell signal in the campaign.",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "current_status": "PRESUMED_LOST_NO_RESPONSE — 31 days since reply. Email channel closed. LinkedIn: WEDNESDAY 2026-05-06 — absolute last chance.",
+      "current_status": "PRESUMED_LOST_NO_RESPONSE — 32 days since reply. Email channel closed. LinkedIn: TODAY 08:00-08:10 — absolute last chance.",
       "upsell_signal": true,
       "lead_status_update": "interested",
       "status_actioned": true,
       "block_all_email_followups": true,
       "linkedin_available": true,
       "linkedin_approach_date": "2026-05-06",
-      "linkedin_approach_window": "07:55-08:10 Wednesday"
+      "linkedin_approach_window": "08:00-08:10 TODAY"
     },
     {
       "reply_id": 9,
@@ -136,13 +137,13 @@
       "confidence": "high",
       "reasoning": "Acknowledged pain unprompted, confirmed workflow problem (no quote form), asked for pricing.",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "current_status": "PRESUMED_LOST_NO_RESPONSE — 31 days since reply. Email channel closed. LinkedIn: WEDNESDAY 2026-05-06 — absolute last chance.",
+      "current_status": "PRESUMED_LOST_NO_RESPONSE — 32 days since reply. Email channel closed. LinkedIn: TODAY 08:10-08:20 — absolute last chance.",
       "lead_status_update": "interested",
       "status_actioned": true,
       "block_all_email_followups": true,
       "linkedin_available": true,
       "linkedin_approach_date": "2026-05-06",
-      "linkedin_approach_window": "08:10-08:20 Wednesday"
+      "linkedin_approach_window": "08:10-08:20 TODAY"
     },
     {
       "reply_id": 10,
@@ -184,8 +185,8 @@
     "new_replies_today": 0,
     "total_to_date": 11,
     "imap_check_pending": true,
-    "imap_gap_days": 31,
-    "imap_warning": "31-day gap — classified replies may not reflect true inbox state. Sweep from 07:00 Wednesday 2026-05-06 before any LinkedIn or sends.",
+    "imap_gap_days": 32,
+    "imap_warning": "32-day gap — classified replies do not reflect true inbox state. Sweep from 07:00 TODAY before any LinkedIn or sends.",
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
@@ -193,9 +194,9 @@
     "UNSUBSCRIBE": 0,
     "warm_pipeline_brain_declared_presumed_lost": [3, 22, 1],
     "linkedin_open_leads": [1, 3, 22],
-    "linkedin_approach_date": "WEDNESDAY 2026-05-06, 07:45-08:20 — ABSOLUTE LAST CHANCE",
+    "linkedin_approach_today": "TODAY 07:45-08:20 — EXECUTE NOW. ABSOLUTE LAST CHANCE.",
     "linkedin_archive_if_missed": "Permanent archive of leads 1, 3, 22 as LOST_NO_RESPONSE",
     "leads_to_suppress": [],
-    "hands_instructions": "1. IMAP sweep leads 3, 22, 1 from 07:00 Wednesday 2026-05-06. 2. If any conversion found: write CHANGELOG.md immediately — Campaign Milestone #1. 3. LinkedIn approach leads 1, 3, 22 from 07:45 if IMAP confirms no pending reply. Write linkedin_profiles.json same session — mandatory. 4. If LinkedIn not done by 08:20: archive leads 1/3/22 permanently. 5. IMAP sweep remaining cohort 08:20-08:40. 6. fu_041-045 sends from 08:45."
+    "hands_instructions": "1. IMAP sweep leads 3, 22, 1 from 07:00 TODAY. 2. If conversion found: CHANGELOG.md — Campaign Milestone #1 immediately. 3. LinkedIn approach leads 1, 3, 22 from 07:45 (IMAP clear per lead). Write linkedin_profiles.json same session — 39 sessions without this file. 4. If LinkedIn not done by 08:20: archive permanently. 5. IMAP sweep remaining cohort 08:20-08:40. 6. fu_041-045 sends from 08:45 (each requires IMAP clear). 7. CHANGELOG.md EOD."
   }
 }

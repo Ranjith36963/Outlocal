@@ -1,56 +1,27 @@
 [
   {
-    "plan_date": "2026-05-05",
-    "generated_at": "2026-05-05T07:00:00Z",
-    "day_number": 38,
-    "note": "BRAIN layer — Day 38 (Tuesday — UK May Day bank holiday). TODAY: zero sends. Key change from Day 37: LinkedIn for leads 1/3/22 NOT confirmed executed Monday (no linkedin_profiles.json in 38 days). Wednesday execution order updated — LinkedIn slotted 07:45-08:20 BEFORE email sends. Wednesday is now the absolute last LinkedIn window. fu_041-045 unchanged: 12 days overdue, send 08:45-09:25. Batch 5 awaiting Ryedale data.",
+    "plan_date": "2026-05-06",
+    "generated_at": "2026-05-06T06:30:00Z",
+    "day_number": 39,
+    "note": "BRAIN layer — Day 39 (Wednesday 2026-05-06 — SEND DAY). Post-bank-holiday first-working-day premium window active. No Batch 5 Ryedale data received at BRAIN run time (09:30 cutoff still open). Five Day-14 breakup emails ready for HANDS execution 08:45-09:25. All are IMAP-conditional. Batch 5 templates remain on standby — personalisation fires on data receipt.",
 
-    "sends_today": [],
+    "send_day_note": "Post-bank-holiday premium send window. All 3 INTERESTED replies in the campaign (leads 1/3/22) arrived on the first working day after a bank holiday. This mechanism is active today. Same-day sends are highest priority.",
+
+    "sends_today_confirmed": [],
     "sends_today_count": 0,
-    "sends_today_reason": "UK May Day bank holiday — DO NOT SEND. Zero HANDS today.",
+    "sends_today_note": "No confirmed sends yet — HANDS must run IMAP sweep first (07:00). Sends fire from 08:45 conditional on IMAP.",
 
-    "sends_wednesday_2026_05_06": {
-      "target_count": "5 fu_041-045 contingency + 10-15 Batch 5 initial sends (if Ryedale data received by 09:30 Wednesday)",
-      "execution_order_locked": true,
-      "execution_sequence": [
-        {"time": "07:00-07:45", "action": "IMAP sweep — leads 3, 22, 1", "type": "precondition", "notes": "Warm pipeline IMAP before LinkedIn. 31-day gap."},
-        {"time": "07:45-08:00", "action": "LinkedIn — lead 3 (Claire, Westfield Hair & Beauty)", "type": "linkedin", "notes": "LAST CHANCE. IMAP clean required. See linkedin_connection_notes.json."},
-        {"time": "08:00-08:10", "action": "LinkedIn — lead 22 (Rob, Pennine Print & Design)", "type": "linkedin", "notes": "LAST CHANCE. IMAP clean required."},
-        {"time": "08:10-08:20", "action": "LinkedIn — lead 1 (Tom, Ripon Road Carpentry)", "type": "linkedin", "notes": "LAST CHANCE. IMAP clean required."},
-        {"time": "08:20", "action": "Write linkedin_profiles.json", "type": "mandatory_file", "notes": "MANDATORY — same session. Do not skip. Even if no note was sent, write the file with search outcomes."},
-        {"time": "08:20-08:40", "action": "IMAP sweep — leads 30, 31, 32, 58, 59 + full remaining cohort", "type": "precondition", "notes": "fu_041-045 IMAP precondition."},
-        {"time": "08:45", "action": "fu_041 — Steve, Halifax Window Cleaning", "type": "send", "subject": "Closing the loop — Halifax Window Cleaning", "condition": "IMAP clean + not sent 2026-04-23"},
-        {"time": "08:55", "action": "fu_042 — Pontefract Pharmacy", "type": "send", "subject": "Closing the loop — Pontefract Pharmacy", "condition": "IMAP clean + not sent"},
-        {"time": "09:05", "action": "fu_043 — Ann, Castleford Carpets", "type": "send", "subject": "Closing the loop — Castleford Carpets", "condition": "IMAP clean + not sent"},
-        {"time": "09:15", "action": "fu_044 — Old Court Solicitors", "type": "send", "subject": "Closing the loop — The Old Court Solicitors", "condition": "IMAP clean + not sent"},
-        {"time": "09:25", "action": "fu_045 — Tony, Scarborough Roofing", "type": "send", "subject": "Closing the loop — Scarborough Roofing Specialists", "condition": "IMAP clean + not sent"},
-        {"time": "10:00-11:30", "action": "Batch 5 initial sends", "type": "send_batch", "condition": "Ryedale data received by 09:30 Wednesday. 8-10 min stagger.", "notes": "Post-bank-holiday premium window. All 3 INTERESTED replies arrived on first working day after bank holiday."},
-        {"time": "EOD", "action": "CHANGELOG.md update", "type": "mandatory", "notes": "ALL sends logged with timestamps. LinkedIn outcomes logged. IMAP results logged. 38 days of HANDS actions unlogged."}
-      ],
-      "stagger": "8-10 minutes between each send",
-      "imap_check_required_before_each": true,
-      "rationale": "Post-bank-holiday first-working-day premium. All 3 INTERESTED replies arrived on the first working day after Easter Monday. Same mechanism Wednesday 2026-05-06 after Tuesday bank holiday."
+    "linkedin_today": {
+      "status": "EXECUTE 07:45-08:20 TODAY",
+      "leads": [3, 22, 1],
+      "note": "LinkedIn is NOT an email send. Included here for HANDS sequencing clarity. Notes ready in linkedin_connection_notes.json. IMAP precondition per lead. Write linkedin_profiles.json same session."
     },
 
-    "linkedin_escalation": {
-      "status": "CRITICAL — NOT CONFIRMED EXECUTED",
-      "due_date": "Monday 2026-05-04",
-      "linkedin_profiles_json_written_ever": false,
-      "consecutive_sessions_without_profiles": 38,
-      "wednesday_window": "07:45-08:20 — ABSOLUTE LAST CHANCE",
-      "if_missed": "Archive leads 1, 3, 22 permanently as LOST_NO_RESPONSE. No further action on any channel.",
-      "note": "This has been deferred 38 sessions. Not deferrable again."
-    },
-
-    "batch_5_templates_status": "READY — awaiting Ryedale raw data for per-lead personalisation.",
-
-    "new_sends_today": [],
-    "new_sends_reason": "UK May Day bank holiday. Zero sends.",
-
-    "contingency_sends_unconfirmed": {
-      "note": "fu_041-045: Day-14 breakups. 12 days overdue. Still worth sending — professionally closes the loop. IMAP check required before each.",
-      "send_window_wednesday": "08:45-09:25",
-      "conditional": "ONLY if: (1) IMAP confirms lead has NOT replied, AND (2) HANDS confirms fu_04x was NOT sent 2026-04-23",
+    "contingency_sends_due_today": {
+      "description": "fu_041-045 — Day-14 breakups, 13 days overdue. Each is IMAP-conditional.",
+      "imap_precondition_window": "08:20-08:40",
+      "send_window": "08:45-09:25",
+      "stagger": "10 minutes",
       "sends": [
         {
           "followup_id": "fu_041",
@@ -58,26 +29,32 @@
           "business_name": "Halifax Window Cleaning",
           "owner_name": "Steve",
           "town": "Halifax",
+          "send_time": "08:45",
+          "framework": "breakup",
+          "signal_type": "ssl",
           "subject": "Closing the loop — Halifax Window Cleaning",
           "body": "Steve,\n\nI've dropped you a couple of notes about the Halifax Window Cleaning website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
-          "send_time_wednesday": "08:45",
+          "imap_check_required": true,
+          "send_condition": "IMAP clean (no reply from Steve) + not already sent 2026-04-23",
           "sequence_step": 3,
           "sequence_complete_after": true,
-          "imap_check_required": true,
-          "days_overdue": 12
+          "days_overdue": 13
         },
         {
           "followup_id": "fu_042",
           "lead_id": 31,
           "business_name": "Pontefract Pharmacy",
           "town": "Pontefract",
+          "send_time": "08:55",
+          "framework": "breakup",
+          "signal_type": "ssl",
           "subject": "Closing the loop — Pontefract Pharmacy",
           "body": "Hi,\n\nI've sent a couple of notes about the Pontefract Pharmacy website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-          "send_time_wednesday": "08:55",
+          "imap_check_required": true,
+          "send_condition": "IMAP clean (no reply from Pontefract Pharmacy) + not already sent",
           "sequence_step": 3,
           "sequence_complete_after": true,
-          "imap_check_required": true,
-          "days_overdue": 12
+          "days_overdue": 13
         },
         {
           "followup_id": "fu_043",
@@ -85,27 +62,33 @@
           "business_name": "Castleford Carpets",
           "owner_name": "Ann",
           "town": "Castleford",
+          "send_time": "09:05",
+          "framework": "breakup",
+          "signal_type": "mobile",
           "subject": "Closing the loop — Castleford Carpets",
           "body": "Ann,\n\nI've sent a couple of notes about the Castleford Carpets website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-          "send_time_wednesday": "09:05",
+          "imap_check_required": true,
+          "send_condition": "IMAP clean (no reply from Ann) + not already sent",
           "sequence_step": 3,
           "sequence_complete_after": true,
-          "imap_check_required": true,
-          "days_overdue": 12,
-          "seasonal_note": "May home-improvement season."
+          "days_overdue": 13,
+          "seasonal_note": "May is start of summer home-improvement season — minor timing upside."
         },
         {
           "followup_id": "fu_044",
           "lead_id": 58,
           "business_name": "The Old Court Solicitors",
           "town": "Scarborough",
+          "send_time": "09:15",
+          "framework": "breakup",
+          "signal_type": "ssl",
           "subject": "Closing the loop — The Old Court Solicitors",
           "body": "Hi,\n\nI've sent a couple of notes about the Old Court Solicitors website — won't keep following up if now isn't the right time.\n\nIf things change down the line, feel free to get in touch.\n\nAll the best,\n[Your name]",
-          "send_time_wednesday": "09:15",
+          "imap_check_required": true,
+          "send_condition": "IMAP clean (no reply) + not already sent",
           "sequence_step": 3,
           "sequence_complete_after": true,
-          "imap_check_required": true,
-          "days_overdue": 12
+          "days_overdue": 13
         },
         {
           "followup_id": "fu_045",
@@ -113,31 +96,38 @@
           "business_name": "Scarborough Roofing Specialists",
           "owner_name": "Tony Shields",
           "town": "Scarborough",
+          "send_time": "09:25",
+          "framework": "breakup",
+          "signal_type": "ssl",
           "subject": "Closing the loop — Scarborough Roofing Specialists",
           "body": "Tony,\n\nI've dropped you a couple of notes about the Scarborough Roofing Specialists site — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-          "send_time_wednesday": "09:25",
+          "imap_check_required": true,
+          "send_condition": "IMAP clean (no reply from Tony) + not already sent",
           "sequence_step": 3,
           "sequence_complete_after": true,
-          "imap_check_required": true,
-          "days_overdue": 12,
-          "seasonal_note": "Peak roofing season May-August."
+          "days_overdue": 13,
+          "seasonal_note": "Peak roofing season May-August. Tony may now be motivated — well-timed close."
         }
       ]
     },
 
     "batch_5_copy_templates": {
-      "status": "READY — awaiting Ryedale raw data for per-lead personalisation.",
-      "send_date_target": "WEDNESDAY 2026-05-06 from 10:00 (after fu_041-045 window 08:45-09:25)",
-      "instruction": "HANDS: return raw Ryedale scrape data. BRAIN personalises per lead on data receipt. Do NOT use templates directly.",
+      "status": "STANDBY — awaiting Ryedale raw data. Personalisation fires on data receipt before 09:30 today.",
+      "send_date_if_data_received_today": "Wednesday 2026-05-06, 10:00-11:30 (post-bank-holiday premium window)",
+      "send_date_if_data_arrives_after_0930": "Thursday 2026-05-07 (still valid, premium partially lost)",
+      "instruction": "HANDS: deliver raw Ryedale scrape data. BRAIN personalises per lead. Do NOT use templates directly.",
 
       "template_ssl_pas": {
         "framework": "PAS",
         "signal": "ssl",
         "allocation": "60% of Batch 5 sends",
         "subject_pattern": "[First name] — [town] [business type] website flagged 'Not Secure'",
+        "subject_fallback": "[Business name] — [town] [trade]: website flagged 'Not Secure'",
         "body_template": "[First name],\n\nI was looking at [business name]'s website just now — [specific URL].\n\nChrome is flagging it as 'Not Secure' because it's running on HTTP rather than HTTPS. Any customer who clicks through from Google or a recommendation will see that warning before they even read your homepage.\n\nFor a [trade/business type] in [town], that trust signal matters — particularly if customers are comparing you with competitors before calling.\n\nI fix this sort of thing for small businesses across Yorkshire. It's usually a one-day job and costs less than you'd think.\n\nWorth a quick chat?\n\n[Your name]",
-        "day7_new_angle": "Google ranking impact of Not Secure OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
-        "notes": "Confirmed winner: 3/3 INTERESTED replies used this exact pattern."
+        "personalisation_vars": ["First name", "business name", "specific URL", "trade/business type", "town"],
+        "subject_rules": ["First name if known — outperforms business name only", "Town name always included", "'Not Secure' in exact Chrome wording", "No question marks in subject"],
+        "day7_pivot": "Google ranking impact of Not Secure OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
+        "notes": "Confirmed winner: 3/3 INTERESTED leads used this exact pattern."
       },
 
       "template_mobile_pas": {
@@ -146,7 +136,8 @@
         "allocation": "20% of Batch 5 sends",
         "subject_pattern": "[First name] — [town] [business] site isn't mobile-friendly",
         "body_template": "[First name],\n\nI checked [business name]'s website on a mobile just now — [specific URL].\n\nThe text is tiny, the layout breaks on a smaller screen, and the phone number isn't tap-to-call. Anyone searching for a [trade] in [town] on their phone — which is most people — will likely give up and try the next result.\n\nI help small businesses across Yorkshire fix exactly this. It's usually a half-day job.\n\nWould it help to take a look?\n\n[Your name]",
-        "day7_new_angle": "SSL (if HTTP), OR missing click-to-call, OR specific local competitor who IS mobile-friendly."
+        "personalisation_vars": ["First name", "business name", "specific URL", "trade", "town"],
+        "day7_pivot": "SSL (if HTTP), OR missing tap-to-call, OR specific local competitor who IS mobile-friendly."
       },
 
       "template_no_website_bab": {
@@ -156,7 +147,8 @@
         "qualification": "4★+ AND 20+ reviews (Ryedale rural — lowered from 50+)",
         "subject_pattern": "[Business name] — [town] [trade]: customers can't find you online",
         "body_template": "Hi,\n\nI searched for '[trade] [town]' on Google just now — [business name] doesn't appear.\n\nCustomers who don't already know you will find your competitors instead. In a market like [town], the first business with a credible website often gets the call.\n\nA simple one-page website — your services, your area, a contact form — is usually enough to start ranking locally within a few weeks.\n\nWould that be useful?\n\n[Your name]",
-        "day7_new_angle": "Specific competitors ranking for the keyword, OR estimated missed enquiries per month."
+        "personalisation_vars": ["business name", "trade", "town"],
+        "day7_pivot": "Specific competitors ranking for the keyword, OR estimated missed enquiries per month."
       },
 
       "template_aida_keyword_gap": {
@@ -166,7 +158,8 @@
         "qualification": "4.5★+ AND 100+ reviews only",
         "subject_pattern": "[First name] — [N] reviews but '[keyword] [town]' isn't bringing your site up",
         "body_template": "[First name],\n\n[Business name] has [N] reviews — that's a strong local reputation.\n\nBut when I searched '[keyword] [town]' on Google just now, your website didn't appear in the top results. Your competitors with fewer reviews are ranking above you because their sites are technically better optimised.\n\nThe gap is fixable — usually a few hours of on-page SEO work and a small structural change.\n\nWould it be worth a look?\n\n[Your name]",
-        "day7_new_angle": "Page speed OR missing LocalBusiness structured data OR specific competitor comparison."
+        "personalisation_vars": ["First name", "business name", "N (review count)", "keyword", "town"],
+        "day7_pivot": "Page speed, OR missing LocalBusiness structured data, OR specific competitor comparison."
       }
     },
 
@@ -175,20 +168,17 @@
     "lost_no_contact": [2],
     "warm_pipeline_email_closed": [1, 3, 22],
 
-    "compliance_note": "All B2B legitimate interest. 4-touchpoint maximum respected. Unsubscribes: leads 7 and 19 permanently suppressed. fu_041-045 requires IMAP check before each — any reply cancels the send. Bank holiday Tuesday 2026-05-05: no sends.",
+    "compliance_note": "All B2B legitimate interest. 4-touchpoint maximum respected throughout. Unsubscribes: leads 7 and 19 permanently suppressed. fu_041-045 requires IMAP check before each — any reply cancels the send for that lead. LinkedIn approach is a separate channel: zero reference to cold email outreach in any connection note.",
 
     "send_summary": {
       "total_new_sends_today": 0,
-      "sends_tuesday_2026_05_05": 0,
-      "sends_tuesday_reason": "UK May Day bank holiday — DO NOT SEND",
-      "linkedin_wednesday_window": "07:45-08:20 — before email sends. Absolute last chance.",
-      "total_contingency_sends_wednesday": 5,
-      "contingency_window_wednesday": "08:45-09:25",
-      "imap_check_required_before_each_contingency": true,
-      "sends_wednesday_2026_05_06_batch5": "10-15 initial Batch 5 sends from 10:00 (if data arrives before 09:30)",
-      "send_window_batch5_wednesday": "10:00-11:30",
+      "contingency_sends_due_today": 5,
+      "contingency_send_window": "08:45-09:25 (IMAP precondition 08:20-08:40)",
+      "batch_5_initial_sends_today": "0-15 conditional on data receipt before 09:30",
+      "batch_5_send_window": "10:00-11:30",
       "stagger": "8-10 minutes between Batch 5 sends",
-      "day_of_week_rationale": "Post-bank-holiday first-working-day premium. All 3 INTERESTED replies arrived on the first working day after a bank holiday."
+      "domain_safety_limit": "40/day — max 20 sends today (5 + 15). Well within limit.",
+      "post_bank_holiday_note": "Post-bank-holiday first-working-day premium. Same mechanism that delivered all 3 INTERESTED replies. Highest-yield window in the week."
     }
   }
 ]
