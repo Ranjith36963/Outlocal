@@ -57,6 +57,7 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 | 2026-05-04 | 37 | Daily email + followup | Calendar correction: bank holiday = Tue 05; send day = Wed 06; LinkedIn executes TODAY |
 | 2026-05-05 | 38 | Bank holiday bridge (unscheduled) | LinkedIn NOT confirmed Mon; last window Wed 07:45; Wednesday execution order locked |
 | **2026-05-06** | **39** | **Daily email + followup (SEND DAY)** | **IMAP sweep 07:00; LinkedIn last chance 07:45-08:20; fu_041-045 08:45-09:25; Batch 5 conditional 10:00** |
+| **2026-05-06** | **39** | **Daily LinkedIn research (FINAL RUN)** | **All 3 output files updated; archive trigger live; HANDS execute 07:45-08:20 or archive leads 1/3/22 EOD** |
 
 ---
 
@@ -78,7 +79,9 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 - `data/followup_queue.json` — Day 39, fu_041-045 (13 days overdue), today 08:45-09:25
 - `data/reply_classifications.json` — Day 39, IMAP gap 32 days, LinkedIn TODAY
 - `data/value_delivery_queue.json` — Day 39, LinkedIn TODAY 07:45-08:20 = ABSOLUTE DEADLINE
-- `data/linkedin_connection_notes.json` — unchanged, notes ready for all 3 leads
+- `data/linkedin_connection_notes.json` — Day 39 updated, notes ready for all 3 leads, archive trigger active
+- `data/linkedin_search_plan.json` — Day 39 updated, queries confirmed, EXECUTE NOW framing
+- `data/linkedin_coordination.json` — Day 39 updated, all decisions current, archive trigger live
 
 ### IMAP Status
 - **32 days overdue** (last confirmed check: 2026-04-04)

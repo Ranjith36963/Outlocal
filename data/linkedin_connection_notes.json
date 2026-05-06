@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-05T08:00:00Z",
+  "generated_at": "2026-05-06T06:45:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-05",
-  "day_number": 38,
-  "note": "Day 38 (Tuesday — UK May Day bank holiday). Intelligence-only run. Notes unchanged from Day 37 — content is correct and ready. Only timestamp and execution framing updated. ABSOLUTE FINAL WINDOW: Wednesday 2026-05-06, 07:45-08:20 (before email sends). IMAP sweep for each lead MUST precede each note dispatch. 38 sessions without linkedin_profiles.json — Wednesday is a hard deadline with no further deferrals.",
+  "run_date": "2026-05-06",
+  "day_number": 39,
+  "note": "Day 39 (Wednesday 2026-05-06 — SEND DAY). THIS IS THE ABSOLUTE FINAL WINDOW. Notes unchanged from Day 38 — content is correct and ready. Execution window: 07:45-08:20 TODAY before email sends. HANDS: check each profile for recent posts BEFORE using the generic note. Post_reference upgrade has 3-4x higher acceptance rate. Write linkedin_profiles.json immediately after the session — 39 sessions without this file.",
 
   "strategy": {
     "character_limit": 200,
@@ -45,8 +45,8 @@
       "county": "West Yorkshire",
       "sector": "Hair & beauty / salon",
       "email": "claire@westfieldhair.co.uk",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE — STRONGEST warm pipeline lead. Booked a call 2026-04-07, confirmed booking-gap pain. 31 days since reply. Email channel closed. LinkedIn is the final soft channel.",
-      "linkedin_sector": "high — salons typically active on LinkedIn and social media. Post_reference upgrade highly expected.",
+      "brain_status": "PRESUMED_LOST_NO_RESPONSE — STRONGEST warm pipeline lead. Booked a call 2026-04-07, confirmed booking-gap pain. 32 days since last confirmed IMAP check (2026-04-04). Email channel closed. LinkedIn is the final soft channel.",
+      "linkedin_sector": "high — salons typically active on LinkedIn and social media. Post_reference upgrade highly expected. First working day after bank holiday — post-bank-holiday salon content is common.",
       "linkedin_search_query": "site:linkedin.com/in \"Claire\" \"Westfield Hair\" Leeds",
       "note_type": "generic",
       "note": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
@@ -70,7 +70,7 @@
         ]
       },
       "dispatch_conditions": {
-        "last_acceptable": "WEDNESDAY 2026-05-06, 07:45-08:00 — ABSOLUTE FINAL WINDOW (before email sends)",
+        "execution_window": "TODAY 07:45-08:00 — ABSOLUTE FINAL WINDOW. Execute now.",
         "monday_2026_05_04_status": "NOT CONFIRMED EXECUTED",
         "tuesday_2026_05_05": "BLOCKED — UK May Day bank holiday",
         "imap_check_required": true,
@@ -86,13 +86,13 @@
         "within_limit": true,
         "rule": "Only send if they connect. Do NOT reference the call, the email, or any prior contact. This is a new connection."
       },
-      "if_imap_finds_reply_wednesday": {
+      "if_imap_finds_reply_today": {
         "action": "Cancel LinkedIn permanently for lead 3. Respond to reply. If converted: write CHANGELOG.md — Campaign Milestone #1. Invoice today (Option B £350).",
         "linkedin_status_if_reply": "PERMANENTLY CANCELLED"
       },
       "archive_date_if_no_response": "2026-10-26",
-      "archive_date_if_wednesday_missed": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
-      "notes": "DO NOT reference the call booked 2026-04-07. Maximum care — highest quality lead. May is peak salon season (wedding hair, prom, bank holiday). Post_reference upgrade highly likely."
+      "archive_date_if_window_missed_today": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
+      "notes": "DO NOT reference the call booked 2026-04-07. Maximum care — highest quality lead. May is peak salon season (wedding hair, prom, bank holiday). Post-bank-holiday first working day — high social media activity."
     },
     {
       "lead_id": 22,
@@ -102,7 +102,7 @@
       "county": "West Yorkshire",
       "sector": "Print & design / B2B services",
       "email": "rob@pennineprint.co.uk",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE — HIGHEST REVENUE POTENTIAL. INTERESTED reply 2026-04-04 with upsell signal ('sort the whole thing in one go'). 31 days since reply. Email channel closed. LinkedIn is the final soft channel.",
+      "brain_status": "PRESUMED_LOST_NO_RESPONSE — HIGHEST REVENUE POTENTIAL. INTERESTED reply 2026-04-04 with upsell signal ('sort the whole thing in one go'). 32 days since last confirmed IMAP check. Email channel closed. LinkedIn is the final soft channel.",
       "linkedin_sector": "high — B2B print/design sector well-represented on LinkedIn for client and supplier relationships.",
       "linkedin_search_query": "site:linkedin.com/in \"Rob\" \"Pennine Print\" \"Sowerby Bridge\"",
       "note_type": "generic",
@@ -127,7 +127,7 @@
         ]
       },
       "dispatch_conditions": {
-        "last_acceptable": "WEDNESDAY 2026-05-06, 08:00-08:10 — ABSOLUTE FINAL WINDOW (before email sends)",
+        "execution_window": "TODAY 08:00-08:10 — ABSOLUTE FINAL WINDOW. Execute now.",
         "monday_2026_05_04_status": "NOT CONFIRMED EXECUTED",
         "tuesday_2026_05_05": "BLOCKED — UK May Day bank holiday",
         "imap_check_required": true,
@@ -143,13 +143,13 @@
         "within_limit": true,
         "rule": "Only send if they connect. Do NOT reference the redesign discussion, SSL fix, or any prior email."
       },
-      "if_imap_finds_reply_wednesday": {
+      "if_imap_finds_reply_today": {
         "action": "Cancel LinkedIn permanently for lead 22. Present redesign options A/B/C from value_delivery_queue.json. Close target Thursday 2026-05-07.",
         "linkedin_status_if_reply": "PERMANENTLY CANCELLED"
       },
       "archive_date_if_no_response": "2026-10-26",
-      "archive_date_if_wednesday_missed": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
-      "notes": "HIGHEST REVENUE POTENTIAL — upsell to full redesign (£550-675). May is peak print season. IMAP especially critical — late reply is a genuine risk."
+      "archive_date_if_window_missed_today": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
+      "notes": "HIGHEST REVENUE POTENTIAL — upsell to full redesign (£550-675). May is peak print season. IMAP especially critical — late reply is a genuine risk given upsell signal."
     },
     {
       "lead_id": 1,
@@ -159,7 +159,7 @@
       "county": "North Yorkshire",
       "sector": "Carpentry / trades",
       "email": "tom@riponroadcarpentry.co.uk",
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE — INTERESTED reply 2026-04-04 (pricing question, acknowledged quote-form pain unprompted). 31 days since reply. Email channel closed. LinkedIn is the final soft channel.",
+      "brain_status": "PRESUMED_LOST_NO_RESPONSE — INTERESTED reply 2026-04-04 (pricing question, acknowledged quote-form pain unprompted). 32 days since last confirmed IMAP check. Email channel closed. LinkedIn is the final soft channel.",
       "linkedin_sector": "low — trades rarely active on LinkedIn. Attempt because lead showed genuine intent. Skip if profile cannot be confidently confirmed.",
       "linkedin_search_query": "site:linkedin.com/in \"Tom\" \"Ripon Road Carpentry\"",
       "note_type": "generic",
@@ -182,7 +182,7 @@
         ]
       },
       "dispatch_conditions": {
-        "last_acceptable": "WEDNESDAY 2026-05-06, 08:10-08:20 — ABSOLUTE FINAL WINDOW (before email sends)",
+        "execution_window": "TODAY 08:10-08:20 — ABSOLUTE FINAL WINDOW. Execute now.",
         "monday_2026_05_04_status": "NOT CONFIRMED EXECUTED",
         "tuesday_2026_05_05": "BLOCKED — UK May Day bank holiday",
         "imap_check_required": true,
@@ -198,19 +198,19 @@
         "within_limit": true,
         "rule": "Only send if they connect. Do NOT reference email, pricing discussion, or prior contact."
       },
-      "if_imap_finds_reply_wednesday": {
+      "if_imap_finds_reply_today": {
         "action": "Cancel LinkedIn permanently for lead 1. Respond to reply. If still interested: agree quote form spec (£100-150). Set call this week.",
         "linkedin_status_if_reply": "PERMANENTLY CANCELLED"
       },
       "archive_date_if_no_response": "2026-10-26",
-      "archive_date_if_wednesday_missed": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
+      "archive_date_if_window_missed_today": "2026-05-06 EOD — permanent LOST_NO_RESPONSE",
       "notes": "First-name-only lead. Low LinkedIn sector — skip if profile is ambiguous. Genuine intent shown. May is start of peak carpentry season. Pain point (no quote form) is structural."
     }
   ],
   "active_notes_count": 3,
 
   "post_breakup_contingency": {
-    "note": "These leads had connection requests that may have been sent (unconfirmed — 0 linkedin_profiles.json files received across 38 campaign days). If any pending request is accepted: use the if_accepted_message only. Do NOT reference the breakup email or email sequence.",
+    "note": "These leads had connection requests that may have been sent (unconfirmed — 0 linkedin_profiles.json files received across 39 campaign days). If any pending request is accepted: use the if_accepted_message only. Do NOT reference the breakup email or email sequence.",
     "pending_leads": [
       {
         "lead_id": 52,
@@ -285,30 +285,30 @@
   "campaign_linkedin_assessment": {
     "total_confirmed_notes_sent": 0,
     "total_confirmed_connections_made": 0,
-    "brain_runs_with_active_notes": 11,
+    "brain_runs_with_active_notes": 12,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 38,
-    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 38 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
-    "key_learning": "Post_reference upgrade step requires HANDS to check each profile before sending — not executed once in 38 days. For warm pipeline (leads 1/3/22): HANDS must open LinkedIn, search, check posts, and send in a SINGLE SESSION Wednesday 2026-05-06.",
-    "wednesday_protocol": "BRAIN declares Wednesday 2026-05-06, 07:45-08:20 as the absolute final warm pipeline LinkedIn session. HANDS must write linkedin_profiles.json after the session — even if no note was sent. This has not happened once in 38 days.",
-    "escalation_note": "No further deferrals. If HANDS cannot complete LinkedIn by 08:20 Wednesday: archive leads 1/3/22 permanently as LOST_NO_RESPONSE. Log in CHANGELOG.md immediately."
+    "consecutive_runs_without_profiles": 39,
+    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 39 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
+    "key_learning": "Post_reference upgrade step requires HANDS to check each profile before sending — not executed once in 39 days. For warm pipeline (leads 1/3/22): HANDS must open LinkedIn, search, check posts, and send in THIS SESSION Wednesday 2026-05-06.",
+    "wednesday_protocol": "BRAIN declares Wednesday 2026-05-06, 07:45-08:20 as the absolute final warm pipeline LinkedIn session. HANDS must write linkedin_profiles.json after the session — even if no note was sent. This has not happened once in 39 days.",
+    "escalation_note": "No further deferrals. If HANDS cannot complete LinkedIn by 08:20 today: archive leads 1/3/22 permanently as LOST_NO_RESPONSE. Log in CHANGELOG.md immediately."
   },
 
   "summary": {
     "total_active_notes": 3,
     "active_note_lead_ids": [3, 22, 1],
-    "status": "CRITICAL — Monday 2026-05-04 NOT CONFIRMED. Tuesday 2026-05-05 BLOCKED (bank holiday). Wednesday 2026-05-06 = ABSOLUTE FINAL WINDOW.",
-    "last_acceptable_date": "WEDNESDAY 2026-05-06, 07:45-08:20 — before email sends. No further deferrals.",
-    "imap_precondition": "MANDATORY before sending any note — 31-day IMAP gap",
-    "imap_gap_days": 31,
+    "status": "EXECUTE NOW — TODAY 07:45-08:20",
+    "execution_window": "TODAY 07:45-08:20 — ABSOLUTE FINAL WINDOW. No further deferrals.",
+    "imap_precondition": "MANDATORY before sending any note — 32-day IMAP gap",
+    "imap_gap_days": 32,
     "post_reference_upgrade_possible": true,
     "upgrade_priority": "Claire (lead 3) > Rob (lead 22) > Tom (lead 1)",
     "total_archived": 4,
     "archived_ids": [52, 55, 50, 56],
     "post_breakup_contingency_leads": [52, 55, 50, 56],
-    "consecutive_runs_without_profiles": 38,
+    "consecutive_runs_without_profiles": 39,
     "campaign_linkedin_contacts_confirmed": 0,
-    "archive_trigger": "If LinkedIn not executed by 08:20 Wednesday 2026-05-06: permanently archive leads 1, 3, 22 as LOST_NO_RESPONSE.",
-    "day_38_run_note": "Bank holiday Tuesday 2026-05-05. Intelligence-only run. Notes unchanged — content is correct and ready. Wednesday 07:45-08:20 is the confirmed absolute final window."
+    "archive_trigger": "If LinkedIn not executed by 08:20 today: permanently archive leads 1, 3, 22 as LOST_NO_RESPONSE. Log CHANGELOG.md immediately.",
+    "day_39_run_note": "Wednesday 2026-05-06 — SEND DAY. Post-bank-holiday first working day. Notes ready. Execute immediately."
   }
 }
