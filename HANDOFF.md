@@ -58,89 +58,65 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 | 2026-05-05 | 38 | Bank holiday bridge (unscheduled) | LinkedIn NOT confirmed Mon; last window Wed 07:45; Wednesday execution order locked |
 | **2026-05-06** | **39** | **Daily email + followup (SEND DAY)** | **IMAP sweep 07:00; LinkedIn last chance 07:45-08:20; fu_041-045 08:45-09:25; Batch 5 conditional 10:00** |
 | **2026-05-06** | **39** | **Daily LinkedIn research (FINAL RUN)** | **All 3 output files updated; archive trigger live; HANDS execute 07:45-08:20 or archive leads 1/3/22 EOD** |
+| **2026-05-07** | **40** | **Daily email + followup (archive + carry-forward)** | **Leads 1/3/22 formally archived LOST_NO_RESPONSE (LinkedIn never executed, 40 sessions). fu_041-045 carry forward (14 days overdue). Batch 5: last Thursday send window. IMAP gap 33 days.** |
 
 ---
 
-## CRITICAL STATE — 2026-05-06 (Day 39 — SEND DAY)
+## CRITICAL STATE — 2026-05-07 (Day 40 — ARCHIVE + LAST THURSDAY WINDOW)
 
-### SEND DAY — EXECUTING
-- **2026-05-05 = Tuesday — UK May Day bank holiday** (CONFIRMED zero sends)
-- **2026-05-06 = Wednesday — SEND DAY** (TODAY — execute locked sequence)
+### WARM PIPELINE — FORMALLY CLOSED
+- **Archive trigger fired 2026-05-06** — LinkedIn deadline (08:20) missed for the 40th consecutive session
+- **Leads 1 (Tom), 3 (Claire), 22 (Rob): FORMALLY ARCHIVED LOST_NO_RESPONSE — 2026-05-07**
+- Email channel: CLOSED (since 2026-04-08). LinkedIn channel: PERMANENTLY CLOSED (never activated).
+- Combined pipeline value written off: £800-1,175
+- **ONE FINAL IMAP OVERRIDE:** HANDS must sweep leads 3, 22, 1 today — if any reply found, override archive immediately
+- If conversion found: CHANGELOG Campaign Milestone #1. Invoice same day.
 
-### KEY STATUS (Day 39): LinkedIn Execute or Archive
-- LinkedIn was due Monday 2026-05-04. Not executed. Not executed Tuesday (bank holiday). 39 sessions without linkedin_profiles.json.
-- **ABSOLUTE LAST WINDOW: TODAY 07:45-08:20 — before email sends.**
-- If missed today: permanently archive leads 1, 3, 22 as LOST_NO_RESPONSE. No further action.
-
-### Active Data Files (all updated 2026-05-06)
-- `data/daily_signals.json` — Day 39, SEND DAY, locked execution order, IMAP/LinkedIn/fu_041-045/Batch 5
-- `data/daily_email_plan.json` — Day 39, fu_041-045 ready, Batch 5 templates on standby
-- `data/daily_strategy.md` — Day 39, full execution brief, calendar forward
-- `data/followup_queue.json` — Day 39, fu_041-045 (13 days overdue), today 08:45-09:25
-- `data/reply_classifications.json` — Day 39, IMAP gap 32 days, LinkedIn TODAY
-- `data/value_delivery_queue.json` — Day 39, LinkedIn TODAY 07:45-08:20 = ABSOLUTE DEADLINE
-- `data/linkedin_connection_notes.json` — Day 39 updated, notes ready for all 3 leads, archive trigger active
-- `data/linkedin_search_plan.json` — Day 39 updated, queries confirmed, EXECUTE NOW framing
-- `data/linkedin_coordination.json` — Day 39 updated, all decisions current, archive trigger live
+### Active Data Files (all updated 2026-05-07)
+- `data/daily_signals.json` — Day 40, archive trigger fired, fu_041-045 carry-forward, Batch 5 Thursday window
+- `data/daily_email_plan.json` — Day 40, fu_041-045 (14 days overdue), Batch 5 templates on standby
+- `data/daily_strategy.md` — Day 40, full brief, archive declaration, forward calendar
+- `data/followup_queue.json` — Day 40, fu_041-045 carry-forward, Batch 5 Day-3/7/14 schedule
+- `data/reply_classifications.json` — Day 40, IMAP gap 33 days, archive override protocol
+- `data/value_delivery_queue.json` — Day 40, leads 1/3/22 formally archived, Batch 5 LinkedIn lesson applied
 
 ### IMAP Status
-- **32 days overdue** (last confirmed check: 2026-04-04)
-- Full cohort sweep from 07:00 TODAY
-- Priority order: leads 3 → 22 → 1 (LinkedIn precondition), then leads 30, 31, 32, 58, 59 (fu precondition), then all remaining
+- **33 days overdue** (last confirmed check: 2026-04-04)
+- Full cohort sweep FIRST — before any sends or decisions
+- Priority: leads 3 → 22 → 1 (archive override check), then leads 30, 31, 32, 58, 59 (fu precondition), then all remaining
 
 ### Batch 5 Status
-- **29-day campaign stall** — no new leads since Batch 4
-- Ryedale data is 14 days overdue (requested 2026-04-22)
+- **30-day campaign stall** — no new leads since Batch 4
+- Ryedale data is 15 days overdue
 - Target: Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent
 - Signal: SSL-primary (PAS, 60%), mobile-secondary (PAS, 20%), no-website BAB (15%, 20+ reviews), AIDA keyword-gap (5%)
-- **Data cutoff: 09:30 today. If data arrives before 09:30: BRAIN personalises same session, sends from 10:00. Post-bank-holiday premium window is NOW.**
-- If no data by 09:30: fu_041-045 only (5 sends). Batch 5 waits.
+- **Thursday 2026-05-07 = LAST viable send day this week** (weekend follows). If data arrives today: BRAIN personalises, HANDS sends same day.
+- If no data today: next send window is TUESDAY 2026-05-12, 09:00-10:30.
 
-### Unconfirmed Sends
-- fu_041-045 (leads 30, 31, 32, 58, 59): Day-14 breakups, 13 days overdue. **Send today 08:45-09:25 (IMAP first — confirm not sent 2026-04-23).**
-- fu_046-049 (leads 52, 55, 50, 56): assumed sent 2026-04-24, never confirmed in CHANGELOG.
-
-### Warm Pipeline
-- Leads 1 (Tom), 3 (Claire), 22 (Rob): all PRESUMED_LOST_NO_RESPONSE
-- Email channel: CLOSED
-- LinkedIn channel: **OPEN. ABSOLUTE LAST WINDOW: TODAY 07:45-08:20 (before email sends)**
-- LinkedIn connection notes in `data/linkedin_connection_notes.json` and `data/value_delivery_queue.json`
-- Rule: IMAP sweep before LinkedIn. If reply found: respond to reply, skip LinkedIn for that lead.
-- **linkedin_profiles.json must be written same session — no exceptions. 39 sessions without it.**
-- **If LinkedIn not done by 08:20 today: archive leads 1/3/22 permanently.**
-
-### Day-3 Bump Date
-- Batch 5 Day-0: Wednesday 2026-05-06 (if data arrives in time)
-- Day 3 calendar: Saturday 2026-05-09 — weekend, no send
-- **Day-3 bump: FRIDAY 2026-05-09 (preferred — avoids weekend cold gap) or Monday 2026-05-11**
-- BRAIN confirms on Friday 2026-05-09 morning run
+### fu_041-045 Status
+- Day-14 breakups, 14 days overdue. Status from Day 39: UNKNOWN.
+- Send today — still professionally appropriate. IMAP clean required before each.
 
 ### CHANGELOG
-- No HANDS updates since 2026-03-28 (39 days). All sends unlogged. **Update TODAY EOD — mandatory.**
+- No HANDS updates since 2026-03-28 (40 days). **Update TODAY EOD — mandatory. Include archive of leads 1/3/22.**
 
 ---
 
-## HANDS Execution Order for TODAY (Wednesday 2026-05-06)
+## HANDS Execution Order for TODAY (Thursday 2026-05-07)
 
-| Time | Action | Condition |
-|---|---|---|
-| 07:00-07:45 | IMAP sweep — leads 3, 22, 1 | Mandatory before LinkedIn |
-| 07:45-08:00 | LinkedIn — Claire (lead 3) | IMAP clean. Check posts. Write note. |
-| 08:00-08:10 | LinkedIn — Rob (lead 22) | IMAP clean. Check posts. Write note. |
-| 08:10-08:20 | LinkedIn — Tom (lead 1) | IMAP clean. Check posts. Write note. |
-| **08:20** | **Write linkedin_profiles.json** | **MANDATORY — 39 sessions without this file** |
-| 08:20-08:40 | IMAP sweep — leads 30, 31, 32, 58, 59 + full cohort | fu precondition |
-| 08:45 | fu_041 — Steve, Halifax Window Cleaning | IMAP clean + not sent 2026-04-23 |
-| 08:55 | fu_042 — Pontefract Pharmacy | IMAP clean + not sent |
-| 09:05 | fu_043 — Ann, Castleford Carpets | IMAP clean + not sent |
-| 09:15 | fu_044 — Old Court Solicitors | IMAP clean + not sent |
-| 09:25 | fu_045 — Tony, Scarborough Roofing | IMAP clean + not sent |
-| 09:30 | Batch 5 data check — BRAIN decision | If data received: BRAIN personalises now |
-| 10:00-11:30 | Batch 5 initial sends | If Ryedale data received by 09:30 |
-| EOD | CHANGELOG.md update | ALL actions logged with timestamps — 39 days unlogged |
+| Action | Condition |
+|---|---|
+| IMAP sweep — leads 3, 22, 1 | FIRST — archive override check. If reply found: cancel archive, act immediately. |
+| IMAP sweep — leads 30, 31, 32, 58, 59 + full cohort | fu precondition |
+| fu_041 — Steve, Halifax Window Cleaning | IMAP clean |
+| fu_042 — Pontefract Pharmacy | IMAP clean |
+| fu_043 — Ann, Castleford Carpets | IMAP clean |
+| fu_044 — Old Court Solicitors | IMAP clean |
+| fu_045 — Tony, Scarborough Roofing | IMAP clean |
+| Batch 5 initial sends (if data arrives today) | BRAIN personalises first — HANDS sends same session |
+| CHANGELOG.md update | EOD — MANDATORY — 40 days unlogged — include archive of leads 1/3/22 |
 
 ## Next BRAIN Run
-- **If Batch 5 fires today:** Next mandatory BRAIN run is **Friday 2026-05-09** for Day-3 bump copy and send-date confirmation (Friday 09 May preferred over Monday 11 May).
-- **If no data by 09:30 today:** Sends limited to fu_041-045 (5 sends). Next BRAIN run when Ryedale data arrives.
-- **If Batch 5 data arrives today after 09:30:** BRAIN runs same session. Thursday 2026-05-07 initial sends.
-- **Next mandatory BRAIN run: Friday 2026-05-09** (if Batch 5 fired today) or on data arrival (if not).
+- **If Batch 5 fires today (Thursday):** BRAIN generates Day-3 copy + LinkedIn queries **today (Thursday evening)**. Friday 2026-05-09 is the Day-3 send window (preferred over Monday 2026-05-11).
+- **If no Batch 5 data today:** Next BRAIN run on data arrival OR Tuesday 2026-05-12 morning.
+- **Next mandatory BRAIN run: Friday 2026-05-09** (if Batch 5 fired Thursday) OR **Tuesday 2026-05-12** (if data arrives that day).

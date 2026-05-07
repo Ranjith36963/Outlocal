@@ -1,24 +1,22 @@
 {
-  "generated_at": "2026-05-06T06:30:00Z",
-  "date": "2026-05-06",
-  "day_number": 39,
-  "note": "BRAIN layer — Day 39 (Wednesday 2026-05-06 — SEND DAY). LinkedIn window is NOW — 07:45-08:20 TODAY. This is the absolute final chance for leads 1, 3, 22. 39 sessions without a linkedin_profiles.json written. IMAP sweep from 07:00 is the mandatory precondition before any LinkedIn action.",
+  "generated_at": "2026-05-07T06:30:00Z",
+  "date": "2026-05-07",
+  "day_number": 40,
+  "note": "BRAIN layer — Day 40 (Thursday 2026-05-07). Warm pipeline (leads 1/3/22) formally archived LOST_NO_RESPONSE. Archive trigger fired 2026-05-06 (LinkedIn never executed). IMAP override remains possible if HANDS sweep today reveals any reply.",
 
   "pipeline_summary": {
     "total_interested": 3,
     "outcomes_confirmed": 0,
-    "brain_declared_presumed_lost": 3,
-    "days_since_original_replies": 32,
-    "days_past_final_email_close_deadline": 12,
-    "email_channel": "CLOSED — no further cold email to leads 1, 3, 22 under any scenario.",
-    "linkedin_channel": "OPEN. WINDOW IS NOW: 07:45-08:20 TODAY.",
-    "linkedin_profiles_json_ever_written": false,
-    "consecutive_sessions_without_profiles": 39,
-    "linkedin_precondition": "IMAP sweep leads 3, 22, 1 from 07:00 today. LinkedIn follows immediately after per-lead IMAP clear.",
-    "linkedin_approach_window": "TODAY 07:45-08:20 — absolute deadline. Execute or archive.",
-    "archive_trigger": "If LinkedIn not done by 08:20 today: permanently archive leads 1, 3, 22 as LOST_NO_RESPONSE. Log CHANGELOG.md immediately.",
-    "total_pipeline_value_if_all_convert": "£800-1,175 (Claire £350 + Rob £550-675 + Tom £100-150)",
-    "realistic_revenue_this_week": "£0-350 (LinkedIn conversion 2-3 weeks away at earliest if executed today. IMAP surprise remains a small live probability.)"
+    "archived_today": 3,
+    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 40 sessions",
+    "days_since_original_replies": 33,
+    "email_channel": "CLOSED — no further email to leads 1, 3, 22 under any scenario.",
+    "linkedin_channel": "PERMANENTLY CLOSED — archive trigger fired 2026-05-06. Never activated.",
+    "pipeline_value_written_off": "£800-1,175 (Claire £350 + Rob £550-675 + Tom £100-150)",
+    "imap_override_still_possible": "Yes — HANDS IMAP sweep today may reveal late reply. If found: override archive immediately.",
+    "realistic_remaining_probability": "Very low — 33 days since last contact. Any reply would be exceptional.",
+    "lesson_logged": "LinkedIn channel must be activated within Day 7-14 of initial reply. 40-session delay = permanent LOST_NO_RESPONSE. This rule applies to ALL Batch 5 leads from Day 0.",
+    "next_revenue_opportunity": "Batch 5 Ryedale — 2-3 INTERESTED leads expected at 15% SSL-PAS rate on 12-18 initial sends."
   },
 
   "items": [
@@ -31,12 +29,14 @@
       "town": "Leeds",
       "classification": "INTERESTED",
       "original_reply_date": "2026-04-04",
-      "call_was": "2026-04-07T14:00:00Z",
-      "days_since_reply": 32,
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE",
+      "days_since_reply": 33,
+      "brain_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE",
+      "archive_date": "2026-05-07",
+      "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06 per Day 39 rules.",
       "email_channel": "CLOSED",
-      "priority": 1,
-
+      "linkedin_channel": "CLOSED — permanently",
+      "imap_override_active": true,
+      "imap_override_instruction": "If IMAP sweep today finds ANY reply: cancel archive. Act on reply. If Claire has converted or still wants to proceed: Option B (£350 — SSL + mobile + Fresha booking widget). Invoice same day. CHANGELOG Campaign Milestone #1.",
       "proposal_options": {
         "option_a": {
           "name": "Quick Fix",
@@ -49,41 +49,17 @@
           "scope": "SSL + mobile + Fresha booking widget integration + above-fold CTA rewrite",
           "price": "£350 one-off",
           "timeline": "3-4 days",
-          "notes": "Fresha is free for the salon — no monthly cost objection. Claire volunteered the booking gap as her biggest issue."
+          "notes": "Fresha is free for the salon — no monthly cost objection. Lead with Option B."
         }
       },
-
-      "linkedin_approach": {
-        "status": "EXECUTE TODAY 07:45-08:00 — ABSOLUTE FINAL WINDOW",
-        "precondition": "IMAP sweep claire@westfieldhair.co.uk from 07:00. If reply found: act on reply, skip LinkedIn permanently.",
-        "find_profile": "Search: Claire [Westfield Hair Beauty Leeds] on LinkedIn. Salons post frequently — post_reference upgrade highly likely. May topics: wedding hair, prom season, bank holiday, spring colour.",
-        "connection_note_generic": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
-        "connection_note_char_count": 191,
-        "post_reference_upgrade_template": "Claire — saw your post about [specific topic]. Westfield Hair & Beauty caught my attention looking at salons in Leeds. Noticed something about the online presence. Connecting in case it's relevant.",
-        "post_reference_char_count_note": "Template with 5-char topic = 196 chars. Adjust topic length carefully. 200 char hard limit.",
-        "rules": [
-          "Zero reference to prior email, call, SSL, booking system, or website audit",
-          "Under 200 characters — hard LinkedIn limit",
-          "Do NOT send a message at connection — wait for acceptance",
-          "DO NOT reference the call booked 2026-04-07",
-          "Do not start with 'I'"
-        ],
-        "after_acceptance_wait": "3-5 days",
-        "first_message_after_acceptance": "Claire — noticed the Westfield Hair & Beauty site doesn't have an online booking option. Happy to share what I spotted if it's useful at all.",
-        "if_no_connection_in_7_days": "Archive as LOST_NO_RESPONSE. No further action.",
-        "archive_if_linkedin_missed_today": "Permanent LOST_NO_RESPONSE. Log CHANGELOG.md."
+      "if_imap_reply_found": {
+        "if_converted_or_still_interested": "Cancel archive. Respond warmly. Lead with Option B. Invoice today.",
+        "if_declined": "Confirm archive as LOST_DECLINED. Brief polite reply. No further contact.",
+        "no_further_linkedin_regardless": true
       },
-
-      "decision_tree_imap_today": {
-        "if_reply_found_converted": "Log CHANGELOG.md — CAMPAIGN MILESTONE #1 — FIRST REVENUE. Invoice today (Option B £350). Skip LinkedIn.",
-        "if_reply_found_still_interested": "Respond warmly. Send proposal A/B. Close this week. Skip LinkedIn.",
-        "if_reply_found_declined": "Mark LOST. Brief polite reply. No further contact. Skip LinkedIn.",
-        "if_no_reply": "LinkedIn connection note (above). Write linkedin_profiles.json immediately after."
-      },
-
       "block_all_email_followups": true,
-      "linkedin_available": true,
-      "linkedin_approach_date": "2026-05-06"
+      "linkedin_available": false,
+      "no_further_action": "Archive is final unless IMAP override fires today"
     },
 
     {
@@ -96,13 +72,16 @@
       "classification": "INTERESTED",
       "original_reply_date": "2026-04-04",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "days_since_reply": 32,
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE",
+      "days_since_reply": 33,
+      "brain_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE",
+      "archive_date": "2026-05-07",
+      "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06 per Day 39 rules.",
       "email_channel": "CLOSED",
-      "priority": 2,
-
-      "upsell_signal": "'Sort the whole thing in one go' — strongest buying signal in the campaign. May is wedding + event season — peak print demand.",
-
+      "linkedin_channel": "CLOSED — permanently",
+      "imap_override_active": true,
+      "imap_override_instruction": "If IMAP sweep today finds ANY reply: cancel archive. Rob asked to 'sort the whole thing in one go' — upsell angle still live if deal is somehow alive.",
+      "upsell_signal": "Sort the whole thing in one go — strongest buying signal in the campaign",
+      "seasonal_note": "May-June is peak wedding and graduation print season.",
       "proposal_options": {
         "option_a": {
           "name": "Fixes Only",
@@ -123,35 +102,14 @@
           "timeline": "7-10 days setup"
         }
       },
-
-      "linkedin_approach": {
-        "status": "EXECUTE TODAY 08:00-08:10 — ABSOLUTE FINAL WINDOW",
-        "precondition": "IMAP sweep rob@pennineprint.co.uk. If reply found: act on reply, skip LinkedIn permanently.",
-        "find_profile": "Search: Rob [Pennine Print Design Sowerby Bridge] on LinkedIn. Check posts: wedding stationery, graduation, summer print run, client rebrand.",
-        "connection_note_generic": "Rob — Pennine Print & Design stood out when I was looking at print businesses in Sowerby Bridge. Noticed something about the website worth a quick mention. Connecting in case it's relevant.",
-        "connection_note_char_count": 188,
-        "post_reference_upgrade_template": "Rob — saw your post about [specific topic]. Pennine Print & Design came up looking at print businesses around Sowerby Bridge. Something about the website caught my attention. Connecting in case it's useful.",
-        "post_reference_char_count_note": "Template with 5-char topic = 200 chars exactly. Hard limit — do not exceed.",
-        "rules": [
-          "Zero reference to prior email, SSL, mobile, redesign, or any prior contact",
-          "Under 200 characters",
-          "Do NOT send a message at connection — wait for acceptance"
-        ],
-        "after_acceptance_wait": "3-5 days",
-        "first_message_after_acceptance": "Rob — noticed a couple of things about the Pennine Print & Design site worth mentioning. Happy to share if it's relevant.",
-        "if_no_connection_in_7_days": "Archive as LOST_NO_RESPONSE.",
-        "archive_if_linkedin_missed_today": "Permanent LOST_NO_RESPONSE. Log CHANGELOG.md."
+      "if_imap_reply_found": {
+        "if_deal_alive": "Cancel archive. Present Options A/B/C. Target close today. May is peak print season.",
+        "if_declined": "Confirm archive as LOST_DECLINED. Brief reply. No further contact.",
+        "no_further_linkedin_regardless": true
       },
-
-      "decision_tree_imap_today": {
-        "if_reply_found_deal_alive": "Present options A/B/C. Target close Thursday 2026-05-07. May is peak print season — timing is ideal. Skip LinkedIn.",
-        "if_reply_found_declined": "Mark LOST. Brief thank-you. No further contact. Skip LinkedIn.",
-        "if_no_reply": "LinkedIn connection note (above). Write linkedin_profiles.json."
-      },
-
       "block_all_email_followups": true,
-      "linkedin_available": true,
-      "linkedin_approach_date": "2026-05-06"
+      "linkedin_available": false,
+      "no_further_action": "Archive is final unless IMAP override fires today"
     },
 
     {
@@ -164,92 +122,65 @@
       "classification": "INTERESTED",
       "original_reply_date": "2026-04-04",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "days_since_reply": 32,
-      "brain_status": "PRESUMED_LOST_NO_RESPONSE",
+      "days_since_reply": 33,
+      "brain_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE",
+      "archive_date": "2026-05-07",
+      "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06 per Day 39 rules.",
       "email_channel": "CLOSED",
-      "priority": 3,
-
+      "linkedin_channel": "CLOSED — permanently",
+      "imap_override_active": true,
+      "imap_override_instruction": "If IMAP sweep today finds ANY reply: cancel archive. Tom asked about pricing for a quote form. If still interested: agree spec (3-4 fields, email notification, mobile-friendly), price at £100-150, set call this week.",
       "pricing_discussed": "£100-150 for quote form add-on",
-      "seasonal_note": "May is peak spring carpentry and joinery season in North Yorkshire. Tom may be busier — and therefore more motivated to systemise enquiries.",
-
-      "linkedin_approach": {
-        "status": "EXECUTE TODAY 08:10-08:20 — ABSOLUTE FINAL WINDOW",
-        "sector_note": "Low LinkedIn sector (trades). Attempt because lead showed genuine buying intent. SKIP if profile cannot be confirmed as the right person.",
-        "precondition": "IMAP sweep tom@riponroadcarpentry.co.uk. If reply found: act on reply, skip LinkedIn permanently.",
-        "find_profile": "Search: Tom [Ripon Road Carpentry Ripon] on LinkedIn. Trades sector — lower probability but attempt.",
-        "connection_note_generic": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
-        "connection_note_char_count": 193,
-        "post_reference_upgrade_template": "Tom — saw your post about [specific topic]. Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my eye. Connecting in case useful.",
-        "post_reference_char_count_note": "Template with 5-char topic = 199 chars. Check carefully.",
-        "rules": [
-          "Zero reference to prior email, website, quote form, or any prior contact",
-          "Under 200 characters",
-          "Trades owner — keep it brief and direct",
-          "SKIP if profile cannot be confidently confirmed as the owner/operator of Ripon Road Carpentry in Ripon"
-        ],
-        "after_acceptance_wait": "3-5 days",
-        "first_message_after_acceptance": "Tom — noticed the Ripon Road Carpentry site doesn't have a way for customers to request a quote directly. Happy to share what I spotted if it's useful.",
-        "if_no_connection_in_7_days": "Archive as LOST_NO_RESPONSE.",
-        "if_profile_not_found": "Log in linkedin_profiles.json as: profile_found: false, note_sent: false. Mark lead as LOST_NO_RESPONSE.",
-        "archive_if_linkedin_missed_today": "Permanent LOST_NO_RESPONSE. Log CHANGELOG.md."
+      "proposal": {
+        "scope": "Quote form: 3-4 fields, email notification, mobile-responsive, embedded on existing site",
+        "price": "£100-150 one-off",
+        "timeline": "1 day"
       },
-
-      "decision_tree_imap_today": {
-        "if_reply_found_wants_to_proceed": "Agree spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Set call this week. Skip LinkedIn.",
-        "if_reply_found_declined": "Mark LOST. Brief reply. No further contact. Skip LinkedIn.",
-        "if_no_reply": "LinkedIn connection note (above). Write linkedin_profiles.json. Mark LOST_NO_RESPONSE."
+      "if_imap_reply_found": {
+        "if_wants_to_proceed": "Cancel archive. Agree spec. Price: £100-150. Set call this week. Invoice on agreement.",
+        "if_declined": "Confirm archive as LOST_DECLINED. Brief reply. No further contact.",
+        "no_further_linkedin_regardless": true
       },
-
       "block_all_email_followups": true,
-      "linkedin_available": true,
-      "linkedin_approach_date": "2026-05-06"
+      "linkedin_available": false,
+      "no_further_action": "Archive is final unless IMAP override fires today"
     }
   ],
 
-  "post_resolution_protocol": {
-    "if_any_converted": {
-      "step_1": "Write CHANGELOG.md — 'Campaign Milestone #1: first revenue — [business name], [amount], [date].'",
-      "step_2": "Begin delivery immediately. Send invoice or agreement today.",
-      "step_3": "Update lead status to 'converted' in database.",
-      "step_4": "Update CRM pipeline record.",
-      "step_5": "Log in audit_log table."
-    },
-    "if_all_lost_no_response": {
-      "step_1": "Archive each lead: LOST_NO_RESPONSE.",
-      "step_2": "Log in CHANGELOG.md: 'Warm pipeline closed — leads 1, 3, 22 permanently archived LOST_NO_RESPONSE. LinkedIn executed/not executed 2026-05-06. Campaign depends on Batch 5 for next revenue opportunity.'",
-      "step_3": "Monitor LinkedIn for acceptance over 7 days if notes were sent.",
-      "step_4": "Records remain in CRM as closed pipeline data."
-    },
-    "if_linkedin_not_executed_today": {
-      "step_1": "Archive leads 1, 3, 22 permanently as LOST_NO_RESPONSE.",
-      "step_2": "Log in CHANGELOG.md: 'Warm pipeline permanently archived — LinkedIn never executed across 39 sessions. Leads 1/3/22 permanently closed 2026-05-06.'",
-      "step_3": "No further action on any channel."
-    },
-    "gdpr_note": "All three leads replied voluntarily to cold outreach. B2B legitimate interest. LinkedIn is a different channel — genuine business connection, not a continuation of cold email. Zero reference to prior contact in connection note is mandatory."
+  "post_archive_protocol": {
+    "changelog_entry": "HANDS must log in CHANGELOG.md: 'Warm pipeline closed — leads 1, 3, 22 formally archived LOST_NO_RESPONSE 2026-05-07. LinkedIn never executed across 40 sessions. Combined pipeline value written off: £800-1,175. IMAP override checked [today] — [outcome].'",
+    "database_update": "Update lead status to 'lost_no_response' for leads 1, 3, 22 in the leads table.",
+    "crm_update": "Mark pipeline records for leads 1, 3, 22 as closed-lost.",
+    "audit_log": "Log archive event in audit_log table with reason: linkedin_never_executed."
+  },
+
+  "lessons_applied_to_batch_5": {
+    "rule": "LinkedIn approach for Batch 5 leads MUST be activated within 7-14 days of initial send.",
+    "day3_linkedin_window": "Open Day 3 (alongside Day-3 email bump). Close Day 7.",
+    "day7_hard_deadline": "If LinkedIn not executed by Day 7: close the channel for that lead and mark email-only.",
+    "profiles_json_mandatory": "linkedin_profiles.json MUST be written same session as LinkedIn execution — no exceptions.",
+    "batch5_linkedin_brain_run": "BRAIN generates LinkedIn search queries and note templates when Batch 5 Day-3 copy is generated."
   },
 
   "batch_5_linkedin_preview": {
-    "status": "PENDING — no Batch 5 initial sends yet.",
-    "activation": "If Batch 5 initial sends fire today (Wednesday 2026-05-06): Day 3 = Saturday 2026-05-09 (weekend). LinkedIn Day-3 window: Friday 2026-05-09 or Monday 2026-05-11.",
-    "brain_generates_queries": "Friday 2026-05-09 BRAIN run",
-    "note": "Do not generate Batch 5 LinkedIn queries until initial sends confirmed."
+    "status": "PENDING — activates after Batch 5 initial sends",
+    "if_day0_thursday_07_may": {
+      "day3_linkedin_window": "FRIDAY 2026-05-09 (preferred) or MONDAY 2026-05-11",
+      "brain_run_for_queries": "Thursday 2026-05-07 evening (same day as initial sends) OR Friday 2026-05-09 morning"
+    },
+    "if_day0_tuesday_12_may": {
+      "day3_linkedin_window": "FRIDAY 2026-05-15 or MONDAY 2026-05-18",
+      "brain_run_for_queries": "Tuesday 2026-05-12 evening or Wednesday 2026-05-13 morning"
+    }
   },
 
   "summary": {
-    "imap_check_first": true,
-    "imap_sweep_time": "From 07:00 TODAY",
-    "imap_check_emails": [
-      "claire@westfieldhair.co.uk",
-      "rob@pennineprint.co.uk",
-      "tom@riponroadcarpentry.co.uk"
-    ],
-    "email_channel_status": "CLOSED — no further email to leads 1, 3, 22 under any scenario.",
-    "linkedin_channel_status": "OPEN. WINDOW: TODAY 07:45-08:20. Execute or archive.",
-    "linkedin_not_executed_in_days": 39,
-    "archive_trigger": "Not done today by 08:20: permanently archive leads 1, 3, 22.",
-    "linkedin_profiles_json_mandatory": true,
-    "pipeline_value_range": "£0-1,175",
-    "realistic_outcome": "Zero to one IMAP surprise conversion (small probability). LinkedIn adds a low-probability soft channel over 2-3 weeks if executed today.",
-    "hands_instruction": "1. IMAP sweep leads 3, 22, 1 from 07:00 TODAY. 2. Act per decision trees above per lead. 3. LinkedIn: approach each lead 07:45-08:20 (notes in linkedin_connection_notes.json). Check for recent posts first — post_reference note if found. 4. Write linkedin_profiles.json immediately after LinkedIn session. 5. If not done by 08:20: archive leads 1/3/22 permanently. 6. Log everything in CHANGELOG.md EOD."
+    "warm_pipeline_status": "CLOSED — all three leads archived LOST_NO_RESPONSE",
+    "imap_override_active": true,
+    "imap_override_deadline": "Today (2026-05-07) IMAP sweep only — last possible override window",
+    "pipeline_value_written_off": "£800-1,175",
+    "next_revenue_opportunity": "Batch 5 Ryedale: 2-3 INTERESTED leads at 15% SSL-PAS rate",
+    "lesson_logged": "LinkedIn must activate Day 7-14. Not Day 40.",
+    "hands_instructions": "1. IMAP sweep leads 3, 22, 1 — first. If any reply found: cancel archive for that lead, act on reply immediately, log CHANGELOG Campaign Milestone #1 if conversion. 2. If no reply: archive is confirmed. 3. Log CHANGELOG.md: archive declaration, LinkedIn never executed, value written off. 4. Update lead status and CRM for leads 1/3/22."
   }
 }
