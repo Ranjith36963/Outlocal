@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-07T07:00:00Z",
+  "generated_at": "2026-05-08T07:30:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-07",
-  "day_number": 40,
-  "note": "Day 40 (Thursday 2026-05-07 — ARCHIVE DAY). Warm pipeline permanently closed. Leads 1, 3, 22 formally archived LOST_NO_RESPONSE — LinkedIn channel permanently closed. Zero active search queries today. fu_041-045 leads (30/31/32/58/59): Day 3-6 LinkedIn window expired — breakup stage only, no LinkedIn. Batch 5 (Ryedale): no initial sends yet — no Day 3 window open. Batch 5 query templates on standby.",
+  "run_date": "2026-05-08",
+  "day_number": 41,
+  "note": "Day 41 (Friday 2026-05-08 — FRIDAY BRIDGE). Zero active LinkedIn search queries. Warm pipeline (leads 1/3/22) permanently archived LOST_NO_RESPONSE — LinkedIn channel permanently closed. fu leads (30/31/32/58/59) at breakup stage — LinkedIn window expired. Batch 5 Ryedale: no initial sends yet (Thursday window passed without data). CONFIRMED send day: Tuesday 2026-05-12, 09:00-10:30. LinkedIn Day 3 window for Batch 5: Friday 2026-05-15. Next BRAIN LinkedIn run: Tuesday 2026-05-12 evening after sends confirm.",
 
   "orchestrator_status": {
     "file": "src/outlocal/linkedin/orchestrator.py",
@@ -12,100 +12,108 @@
   },
 
   "email_outreach_state": {
-    "checked_at": "2026-05-07T07:00:00Z",
+    "checked_at": "2026-05-08T07:30:00Z",
     "source_files": ["data/daily_signals.json", "data/daily_email_plan.json", "data/reply_classifications.json"],
-    "imap_gap_days": 33,
+    "imap_gap_days": 34,
     "imap_last_confirmed_check": "2026-04-04",
-    "imap_status": "CRITICAL — 33 days. MANDATORY full cohort sweep today, FIRST action before anything else. Priority: leads 3, 22, 1 (archive override check — email only, LinkedIn permanently closed). Then leads 30, 31, 32, 58, 59 (fu_041-045 precondition).",
+    "imap_status": "CRITICAL — 34 days. Full cohort IMAP sweep is the FIRST action today. Priority: leads 3, 22, 1 (FINAL email archive override window — LinkedIn permanently closed regardless of outcome). Then leads 30, 31, 32, 58, 59 (fu_041-045 precondition).",
     "linkedin_candidates_3_plus_days_no_reply": {
       "warm_pipeline": {
         "leads": [1, 3, 22],
         "status": "PERMANENTLY_CLOSED",
-        "reason": "Archive trigger fired 2026-05-06 (08:20 deadline missed for 40th consecutive session). Leads formally archived LOST_NO_RESPONSE effective 2026-05-07. LinkedIn channel permanently closed — no further LinkedIn action permissible regardless of IMAP outcome.",
-        "email_imap_override_still_active": "IMAP sweep for leads 1/3/22 remains mandatory today — if reply found, override email archive only. LinkedIn is closed regardless.",
+        "reason": "Archive trigger fired 2026-05-06 (08:20 deadline missed for 41st consecutive session). Leads formally archived LOST_NO_RESPONSE effective 2026-05-07. LinkedIn channel permanently closed — no further LinkedIn action permissible regardless of IMAP outcome.",
+        "email_imap_override_today": "TODAY IS THE FINAL WINDOW. If reply found via IMAP: override email archive only. LinkedIn remains permanently closed.",
         "combined_pipeline_value_written_off": "£800-1,175"
       },
       "fu_leads": {
         "leads": [30, 31, 32, 58, 59],
-        "linkedin_status": "BLOCKED — Day 3-6 window expired at Day 3 of each sequence (weeks ago). These leads are at breakup stage. No LinkedIn appropriate.",
+        "linkedin_status": "BLOCKED — Day 3-6 window expired weeks ago. These leads are at breakup stage. No LinkedIn appropriate.",
         "action": "Email only — fu_041-045 breakup sends today (IMAP precondition)."
       },
       "batch_5_leads": {
         "status": "NO_SENDS_YET — no Day 3 window open",
         "ryedale_data_received": false,
-        "data_overdue_days": 15,
-        "linkedin_window_opens": "Day 3-6 after initial sends fire. If sends today: LinkedIn window Friday 2026-05-09 (preferred) or Monday 2026-05-11."
+        "data_overdue_days": 16,
+        "thursday_window_status": "PASSED — Batch 5 data did not arrive before 09:00 Thursday (2026-05-07). Friday window has also passed.",
+        "confirmed_send_day": "Tuesday 2026-05-12, 09:00-10:30",
+        "linkedin_window_opens": "Day 3 after Tuesday sends = Friday 2026-05-15 (preferred) or Monday 2026-05-18 (fallback). Day 6 = Monday 2026-05-18.",
+        "hard_deadline": "LinkedIn MUST be executed by Tuesday 2026-05-19 (Day 7). If not: close LinkedIn channel for those leads, mark email-only. Warm pipeline failure must not repeat."
       }
     },
-    "campaign_stall_days": 30
+    "campaign_stall_days": 31
   },
 
   "search_queries": [],
 
-  "search_queries_note": "Zero active LinkedIn search queries today. All three warm pipeline candidates are permanently archived. No Batch 5 sends have fired. Batch 5 queries will be generated in the next BRAIN LinkedIn run — Thursday evening (if sends fire today) or Tuesday 2026-05-12 morning.",
+  "search_queries_note": "Zero active LinkedIn search queries today. All warm pipeline candidates permanently archived. No Batch 5 initial sends have fired. Batch 5 queries will be generated Tuesday 2026-05-12 evening (same session as sends, or immediately after confirmation).",
 
   "warm_pipeline_closure": {
     "leads": [1, 3, 22],
     "formal_archive_date": "2026-05-07",
-    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 40 campaign sessions. Archive trigger fired 2026-05-06.",
+    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 41 campaign sessions. Archive trigger fired 2026-05-06.",
     "email_channel_closed_since": "2026-04-08",
     "linkedin_channel": "PERMANENTLY_CLOSED — never activated. Closed formally 2026-05-07.",
     "reapproach_date": "2026-10-26 (6-month cooling period for email)",
-    "imap_note": "One final IMAP sweep for leads 1/3/22 today (email only). If reply found: override email archive, respond to reply. LinkedIn remains permanently closed regardless of IMAP outcome.",
-    "lesson": "LinkedIn channel MUST be activated within 7-14 days of initial reply. 40-session delay = permanent LOST_NO_RESPONSE. Apply to Batch 5 immediately — LinkedIn within Day 3-6 of initial send, no exceptions.",
-    "last_search_plan_generated": "2026-05-06 (Day 39)"
+    "imap_final_note": "FINAL IMAP override window is TODAY (2026-05-08). If HANDS sweeps and finds reply from leads 1/3/22: override email archive, respond, log CHANGELOG. If no sweep today or no reply found: archive is unconditionally final from Monday 2026-05-11.",
+    "lesson": "LinkedIn channel MUST be activated within 7-14 days of initial reply. 41-session delay = permanent LOST_NO_RESPONSE. Apply to Batch 5 immediately — LinkedIn within Day 3-6 of initial send, no exceptions."
   },
 
   "batch_5_forward_plan": {
     "status": "PENDING — no Batch 5 initial sends yet",
-    "ryedale_data_status": "Not received. 15 days overdue.",
-    "thursday_send_window": {
-      "quality": "Acceptable — last day before weekend",
-      "action": "If Ryedale data arrives any time today: BRAIN personalises same session. HANDS sends same day. 12-18 initial sends.",
-      "brain_linkedin_run_after": "Thursday 2026-05-07 evening OR Friday 2026-05-09 morning"
+    "ryedale_data_status": "Not received. 16 days overdue.",
+    "thursday_window": {
+      "status": "PASSED — data did not arrive before 09:00 Thursday 2026-05-07"
     },
-    "tuesday_fallback": {
+    "friday_window": {
+      "status": "PASSED — data-before-09:00 rule not met. Friday window closed.",
+      "action": "Do NOT send today. Default to Tuesday 2026-05-12."
+    },
+    "weekend": {
+      "status": "BLOCKED — hard rule. No sends Saturday 2026-05-09 or Sunday 2026-05-10."
+    },
+    "tuesday_confirmed": {
       "date": "2026-05-12",
       "quality": "Strong — standard Tuesday AM premium window",
-      "brain_linkedin_run_after": "Tuesday 2026-05-12 evening or Wednesday 2026-05-13 morning"
-    },
-    "day_3_linkedin_window": {
-      "if_sends_thursday_07_may": {
-        "calendar_day_3": "Sunday 2026-05-10 — skip (weekend)",
-        "linkedin_window_preferred": "Friday 2026-05-09",
-        "linkedin_window_fallback": "Monday 2026-05-11",
-        "day_6": "Tuesday 2026-05-12",
-        "brain_run": "Thursday 2026-05-07 evening OR Friday 2026-05-09 morning"
-      },
-      "if_sends_tuesday_12_may": {
-        "calendar_day_3": "Friday 2026-05-15",
-        "linkedin_window_preferred": "Friday 2026-05-15",
-        "linkedin_window_fallback": "Monday 2026-05-18",
+      "send_window": "09:00-10:30",
+      "max_sends": "12-18 (Ryedale targets: Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent)",
+      "brain_personalisation_run": "Tuesday 2026-05-12 morning — BRAIN assigns signals, generates per-lead copy. HANDS sends same session.",
+      "brain_linkedin_run": "Tuesday 2026-05-12 evening — BRAIN generates Day 3 LinkedIn queries and connection note templates.",
+      "day3_linkedin_window": {
+        "calendar_day3": "Friday 2026-05-15",
+        "preferred": "Friday 2026-05-15 — HANDS executes LinkedIn searches and connection requests",
+        "fallback": "Monday 2026-05-18",
         "day_6": "Monday 2026-05-18",
-        "brain_run": "Tuesday 2026-05-12 evening"
-      }
+        "hard_deadline": "Tuesday 2026-05-19 (Day 7). No exceptions."
+      },
+      "day7_new_angle": "Tuesday 2026-05-19, 09:00-10:30",
+      "day14_breakup": "Tuesday 2026-05-26, 09:00-10:30"
     },
+
     "query_templates": {
+      "note": "These are templates only. BRAIN populates with real names and businesses from Ryedale scrape data on Tuesday 2026-05-12.",
       "high_linkedin_sector": {
         "sectors": ["solicitors", "accountants", "estate agents", "hotels", "B&Bs", "restaurants", "care providers"],
         "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
         "fallback_1": "site:linkedin.com/in \"[Full Name]\" [sector] \"[town]\" \"North Yorkshire\"",
-        "fallback_2": "site:linkedin.com/in [sector] \"[town]\" \"Ryedale\" owner director manager"
+        "fallback_2": "site:linkedin.com/in [sector] \"[town]\" \"Ryedale\" owner director manager",
+        "note": "Solicitors and accountants have highest LinkedIn presence. Prioritise post-reference notes for these sectors."
       },
       "low_linkedin_sector": {
         "sectors": ["plumbers", "electricians", "roofers", "joiners", "builders", "decorators"],
         "primary": "site:linkedin.com/in \"[First Name] [Last Name]\" \"[Business Name]\"",
-        "skip_rule": "Skip if first name only — insufficient to confirm correct profile without surname."
+        "skip_rule": "Skip if first name only — insufficient to confirm correct profile without surname. Mark profile_confirmed_owner: false."
       }
     },
-    "lesson_applied": "LinkedIn approach for Batch 5 MUST be executed within 7 days of initial send. Warm pipeline 40-session failure must not repeat. Day 3 queries generated same session as initial sends if possible.",
-    "note": "Batch 5 Day 3 LinkedIn session is independent of warm pipeline. Do NOT conflate."
+
+    "lesson_applied": "LinkedIn approach for Batch 5 MUST be executed within 7 days of initial send. Warm pipeline 40-session failure must not repeat. BRAIN generates queries same session as initial sends where possible. HANDS executes Day 3 window without deferral.",
+    "7_day_rule": "If LinkedIn not executed by Day 7 (Tuesday 2026-05-19): close LinkedIn channel for those leads, mark email-only. Log CHANGELOG.md. No deferrals, no extensions.",
+    "archive_trigger_rule": "If LinkedIn deadline missed for any Batch 5 lead: archive as LOST_NO_RESPONSE immediately. No 40-session tolerance."
   },
 
   "linkedin_profiles_json_status": {
     "file": "data/linkedin_profiles.json",
     "exists": false,
-    "note": "HANDS has not written linkedin_profiles.json in 40 campaign days. Since warm pipeline LinkedIn is now permanently closed, this file is no longer needed for warm pipeline. Batch 5: HANDS MUST write this file after each LinkedIn execution session — no exceptions.",
+    "note": "HANDS has not written linkedin_profiles.json in 41 campaign days. Warm pipeline chapter closed. Batch 5: HANDS MUST write this file after each LinkedIn execution session — no exceptions. One entry per lead. Profile not found = 'not_found'.",
     "required_fields": [
       "lead_id",
       "linkedin_url (or 'not_found')",
@@ -122,12 +130,14 @@
 
   "summary": {
     "total_active_queries_today": 0,
-    "warm_pipeline_status": "PERMANENTLY_CLOSED — leads 1, 3, 22 archived LOST_NO_RESPONSE",
+    "warm_pipeline_status": "PERMANENTLY_CLOSED — leads 1, 3, 22 archived LOST_NO_RESPONSE 2026-05-07",
+    "warm_pipeline_imap_final_window": "TODAY (2026-05-08) — final archive override for email only. LinkedIn closed regardless.",
     "fu_leads_linkedin_status": "BLOCKED — Day 3-6 window expired for leads 30, 31, 32, 58, 59",
-    "batch_5_queries_status": "PENDING — no initial sends yet",
-    "next_brain_linkedin_run": "Thursday 2026-05-07 evening (if Batch 5 sends fire today) OR Tuesday 2026-05-12 morning",
+    "batch_5_queries_status": "PENDING — no initial sends yet. Confirmed: Tuesday 2026-05-12. Queries generated same evening.",
+    "batch_5_linkedin_window": "Friday 2026-05-15 (Day 3). Hard deadline: Tuesday 2026-05-19 (Day 7).",
+    "next_brain_linkedin_run": "Tuesday 2026-05-12 EVENING — after Batch 5 initial sends confirmed. Generates Day 3 queries + connection note templates.",
     "campaign_linkedin_contacts_confirmed": 0,
-    "consecutive_sessions_without_profiles": 40,
-    "day_40_run_note": "Thursday 2026-05-07 — ARCHIVE DAY. Warm pipeline formally closed. All LinkedIn intelligence now focused on Batch 5 Ryedale. Apply 7-day rule immediately when data arrives."
+    "consecutive_sessions_without_profiles": 41,
+    "day_41_run_note": "Friday 2026-05-08 — FRIDAY BRIDGE. Zero active LinkedIn queries. Warm pipeline closed. All LinkedIn intelligence in standby until Batch 5 Ryedale sends fire Tuesday 2026-05-12. 7-day rule applies from first send."
   }
 }
