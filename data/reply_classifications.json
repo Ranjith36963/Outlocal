@@ -1,60 +1,61 @@
 {
-  "classified_at": "2026-05-07T06:30:00Z",
-  "date": "2026-05-07",
-  "day_number": 40,
-  "note": "BRAIN layer — Day 40 (Thursday 2026-05-07). No new replies received. new_replies.json unchanged from 2026-04-04. IMAP gap now 33 days. Archive trigger fired for leads 1/3/22 — formally archived LOST_NO_RESPONSE today, subject to IMAP override.",
+  "classified_at": "2026-05-08T07:00:00Z",
+  "date": "2026-05-08",
+  "day_number": 41,
+  "note": "BRAIN layer — Day 41 (Friday 2026-05-08). No new replies in new_replies.json. File unchanged since 2026-04-04. IMAP gap now 34 days. Archive for leads 1/3/22 confirmed as of Day 40 (2026-05-07). Today is the final IMAP override window.",
 
   "new_replies_this_run": 0,
-  "imap_gap_days": 33,
+  "imap_gap_days": 34,
   "imap_last_confirmed_check": "2026-04-04",
-  "imap_source": "new_replies.json — HANDS-written 2026-04-04. Unchanged for 33 days.",
+  "imap_source": "new_replies.json — HANDS-written 2026-04-04. Unchanged for 34 days.",
 
-  "imap_warning": "CRITICAL — 33-day IMAP gap. True inbox state unknown. Sweep MANDATORY before any action today. Priority: leads 3, 22, 1 (archive override check). If any reply found: override formal archive declaration below.",
+  "imap_warning": "CRITICAL — 34-day IMAP gap. True inbox state unknown. Sweep MANDATORY before any action today. Today is the final override window for leads 1/3/22 archive.",
 
   "imap_sweep_today": {
-    "execute": "First action today — before fu sends, before any other action",
-    "priority_1": [
-      "lead_3 (Claire — claire@westfieldhair.co.uk) — archive override: if reply found, cancel archive for lead 3",
-      "lead_22 (Rob — rob@pennineprint.co.uk) — archive override: if reply found, cancel archive for lead 22",
-      "lead_1 (Tom — tom@riponroadcarpentry.co.uk) — archive override: if reply found, cancel archive for lead 1"
+    "execute": "FIRST — before any sends",
+    "priority_1_final_override_window": [
+      "lead_3 (Claire — claire@westfieldhair.co.uk) — FINAL archive override. If reply found: cancel archive, act on reply immediately.",
+      "lead_22 (Rob — rob@pennineprint.co.uk) — FINAL archive override. If reply found: cancel archive.",
+      "lead_1 (Tom — tom@riponroadcarpentry.co.uk) — FINAL archive override. If reply found: cancel archive."
     ],
-    "priority_2": [
+    "priority_2_fu_precondition": [
       "lead_30 (Steve, Halifax Window Cleaning) — fu_041 precondition",
       "lead_31 (Pontefract Pharmacy) — fu_042 precondition",
       "lead_32 (Ann, Castleford Carpets) — fu_043 precondition",
       "lead_58 (Old Court Solicitors) — fu_044 precondition",
       "lead_59 (Tony, Scarborough Roofing) — fu_045 precondition"
     ],
-    "priority_3": "All remaining cohort leads — full sweep today"
+    "priority_3": "All remaining cohort",
+    "final_override_deadline": "If no IMAP sweep today, archive of leads 1/3/22 is unconditionally final from Monday 2026-05-11."
   },
 
   "archive_override_protocol": {
-    "description": "If IMAP reveals any reply from leads 1/3/22 — override the formal archive declared in this file",
+    "description": "FINAL window. If IMAP reveals any reply from leads 1/3/22 today: override the formal archive.",
     "lead_3_if_reply_found": {
       "if_conversion_or_still_interested": "Cancel archive. Respond warmly. Send Option B proposal (£350 — SSL + mobile + Fresha booking widget). Invoice same day. Log CHANGELOG.md — Campaign Milestone #1.",
-      "if_declined": "Confirm LOST. Brief polite response. No further contact. Archive as LOST_DECLINED."
+      "if_declined": "Confirm archive as LOST_DECLINED. Brief polite response. No further contact."
     },
     "lead_22_if_reply_found": {
-      "if_deal_alive": "Cancel archive. Present Options A/B/C. Close target today (Thursday). May is peak print season. Log CHANGELOG.",
-      "if_declined": "Confirm LOST. Brief reply. Archive as LOST_DECLINED."
+      "if_deal_alive": "Cancel archive. Present Options A/B/C. Target close today. May is peak print season.",
+      "if_declined": "Confirm archive as LOST_DECLINED. Brief reply. No further contact."
     },
     "lead_1_if_reply_found": {
-      "if_wants_to_proceed": "Cancel archive. Agree spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Set call this week. Log CHANGELOG.",
-      "if_declined": "Confirm LOST. Brief reply. Archive as LOST_DECLINED."
+      "if_wants_to_proceed": "Cancel archive. Agree spec: quote form, 3-4 fields, email notification, mobile-friendly. Price: £100-150. Set call this week.",
+      "if_declined": "Confirm archive as LOST_DECLINED. Brief reply. No further contact."
     },
-    "conversion_protocol": "Log CHANGELOG.md: 'Campaign Milestone #1: first revenue — [business], [amount], [date].' Invoice today. Begin delivery same day."
+    "conversion_protocol": "Log CHANGELOG.md: 'Campaign Milestone #1: first revenue — [business], [amount], [date].' Invoice today. Begin delivery."
   },
 
   "formal_archive_declaration": {
     "leads": [1, 3, 22],
     "archive_status": "LOST_NO_RESPONSE",
     "declared_by": "BRAIN — Day 40 run (2026-05-07)",
+    "confirmed_by": "BRAIN — Day 41 run (2026-05-08) — no contradicting IMAP data",
     "archive_trigger": "LinkedIn never executed. Archive trigger per Day 39 rules (2026-05-06 08:20 deadline missed).",
-    "email_channel": "CLOSED since 2026-04-08",
+    "email_channel": "CLOSED — since 2026-04-08",
     "linkedin_channel": "NEVER ACTIVATED — permanently closed",
-    "effective_date": "2026-05-07",
-    "condition": "SUBJECT TO IMAP override — if HANDS IMAP sweep today reveals any reply, this archive is superseded",
-    "changelog_entry_required": "HANDS must log in CHANGELOG.md: 'Warm pipeline permanently closed — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. LinkedIn never executed across 40 sessions. Combined pipeline value written off: £800-1,175.'"
+    "final_imap_override_window": "2026-05-08 (today). After today: unconditionally final. No further override attempts.",
+    "changelog_entry_required": "Log in CHANGELOG.md: 'Warm pipeline permanently closed — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. LinkedIn never executed across 41 sessions. Combined pipeline value written off: £800-1,175.'"
   },
 
   "action_on_new_reply_other_leads": {
@@ -80,12 +81,12 @@
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal.",
       "call_confirmed_at": "2026-04-07T14:00:00Z",
-      "current_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE — 33 days since reply. Archive trigger fired. SUBJECT TO IMAP OVERRIDE today.",
+      "current_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. FINAL IMAP override window today (2026-05-08).",
       "lead_status_update": "lost_no_response",
       "block_all_email_followups": true,
       "linkedin_available": false,
       "linkedin_blocked_reason": "Archive trigger fired — LinkedIn channel permanently closed",
-      "imap_override_active": true
+      "imap_override_final_window": "2026-05-08 (today)"
     },
     {
       "reply_id": 8,
@@ -98,13 +99,13 @@
       "confidence": "high",
       "reasoning": "Asked to bundle fixes into redesign — buyer's question. 'Sort the whole thing in one go' is the strongest upsell signal in the campaign.",
       "nudge_sent_at": "2026-04-07T17:00:00Z",
-      "current_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE — 33 days since reply. Archive trigger fired. SUBJECT TO IMAP OVERRIDE today.",
+      "current_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. FINAL IMAP override window today (2026-05-08).",
       "lead_status_update": "lost_no_response",
       "upsell_signal": true,
       "block_all_email_followups": true,
       "linkedin_available": false,
       "linkedin_blocked_reason": "Archive trigger fired — LinkedIn channel permanently closed",
-      "imap_override_active": true
+      "imap_override_final_window": "2026-05-08 (today)"
     },
     {
       "reply_id": 9,
@@ -117,12 +118,12 @@
       "confidence": "high",
       "reasoning": "Acknowledged pain unprompted, confirmed workflow problem (no quote form), asked for pricing.",
       "nudge_sent_at": "2026-04-08T17:00:00Z",
-      "current_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE — 33 days since reply. Archive trigger fired. SUBJECT TO IMAP OVERRIDE today.",
+      "current_status": "FORMALLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. FINAL IMAP override window today (2026-05-08).",
       "lead_status_update": "lost_no_response",
       "block_all_email_followups": true,
       "linkedin_available": false,
       "linkedin_blocked_reason": "Archive trigger fired — LinkedIn channel permanently closed",
-      "imap_override_active": true
+      "imap_override_final_window": "2026-05-08 (today)"
     },
     {
       "reply_id": 10,
@@ -159,16 +160,16 @@
     "new_replies_today": 0,
     "total_to_date": 11,
     "imap_check_mandatory_today": true,
-    "imap_gap_days": 33,
+    "imap_gap_days": 34,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
     "WRONG_PERSON": 0,
     "UNSUBSCRIBE": 0,
-    "formally_archived_today": [1, 3, 22],
-    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated",
-    "imap_override_possible": true,
+    "formally_archived": [1, 3, 22],
+    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated across 41 sessions",
+    "final_imap_override_window": "2026-05-08 (today)",
     "leads_to_suppress": [],
-    "hands_instructions": "1. IMAP sweep leads 3, 22, 1 FIRST. If reply found: override archive, act on reply, log CHANGELOG. 2. IMAP sweep leads 30, 31, 32, 58, 59 + full remaining cohort. 3. Write any new replies to new_replies.json immediately. 4. Log CHANGELOG.md EOD — including archive of leads 1/3/22."
+    "hands_instructions": "1. IMAP sweep leads 3, 22, 1 FIRST — FINAL override window today. If reply found: override archive, act on reply, log CHANGELOG Campaign Milestone #1 if conversion. 2. IMAP sweep leads 30, 31, 32, 58, 59 + full cohort. 3. Write any new replies to new_replies.json immediately. 4. Log CHANGELOG.md EOD — archive of leads 1/3/22, all fu outcomes, archive of leads 49/51."
   }
 }

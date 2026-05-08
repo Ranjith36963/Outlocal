@@ -1,18 +1,19 @@
 [
   {
-    "plan_date": "2026-05-07",
-    "generated_at": "2026-05-07T06:30:00Z",
-    "day_number": 40,
-    "note": "BRAIN layer — Day 40 (Thursday 2026-05-07). No new leads. fu_041-045 carry forward from Day 39 (status unknown — assume not sent). Batch 5 Ryedale templates on standby. Archive trigger fired for leads 1/3/22. Thursday is last acceptable send day this week.",
+    "plan_date": "2026-05-08",
+    "generated_at": "2026-05-08T07:00:00Z",
+    "day_number": 41,
+    "note": "BRAIN layer — Day 41 (Friday 2026-05-08). Bridge run. No new leads. No initial sends today. fu_041-045 carry forward from Days 39/40 — still appropriate to send Friday (breakup emails, not promotional). Batch 5 Ryedale deferred to Tuesday 2026-05-12. Weekend follows.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No Batch 5 data received. Zero new leads to personalise. All Batch 5 personalisation pending data delivery.",
+    "new_sends_note": "No Batch 5 data received. Friday window has passed (data-before-09:00 rule not met or not applicable). Zero new leads. All Batch 5 personalisation pending Tuesday 2026-05-12 BRAIN run.",
 
     "fu_carries_forward": {
-      "description": "fu_041-045 — Day-14 breakups. Status unknown from Day 39. Still appropriate to send today (14 days overdue, within professional range for a breakup email).",
+      "description": "fu_041-045 — Day-14 breakups. Carried forward from Day 39 (2026-05-06) and Day 40 (2026-05-07). Now 15 days overdue from original target. Still appropriate to send today — closing-the-loop emails are professionally acceptable whenever sent. IMAP precondition mandatory per lead.",
+      "send_day_assessment": "Friday mid-morning is acceptable for breakup emails. These are administrative closures, not campaign sends. No timing risk.",
       "imap_precondition": "MANDATORY — sweep leads 30, 31, 32, 58, 59 before each send. Any reply cancels that fu.",
-      "send_window": "After IMAP confirmed clean — stagger 10 minutes",
+      "send_window": "After IMAP confirmed clean — stagger 10 minutes between each",
       "sends": [
         {
           "followup_id": "fu_041",
@@ -23,12 +24,12 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
+          "overdue_days": 15,
           "subject": "Closing the loop — Halifax Window Cleaning",
           "body": "Steve,\n\nI've dropped you a couple of notes about the Halifax Window Cleaning website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
-          "send_condition": "IMAP clean (no reply from Steve, lead 30)",
-          "sequence_complete_after_send": true,
-          "days_overdue": 14
+          "send_condition": "IMAP clean — no reply from lead 30 (Steve) confirmed",
+          "sequence_complete_after_send": true
         },
         {
           "followup_id": "fu_042",
@@ -38,12 +39,12 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
+          "overdue_days": 15,
           "subject": "Closing the loop — Pontefract Pharmacy",
           "body": "Hi,\n\nI've sent a couple of notes about the Pontefract Pharmacy website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
-          "send_condition": "IMAP clean (no reply from lead 31)",
-          "sequence_complete_after_send": true,
-          "days_overdue": 14
+          "send_condition": "IMAP clean — no reply from lead 31 confirmed",
+          "sequence_complete_after_send": true
         },
         {
           "followup_id": "fu_043",
@@ -54,13 +55,13 @@
           "framework": "breakup",
           "signal_type": "mobile",
           "sequence_step": 3,
+          "overdue_days": 15,
           "subject": "Closing the loop — Castleford Carpets",
           "body": "Ann,\n\nI've sent a couple of notes about the Castleford Carpets website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
-          "send_condition": "IMAP clean (no reply from Ann, lead 32)",
+          "send_condition": "IMAP clean — no reply from Ann, lead 32",
           "sequence_complete_after_send": true,
-          "days_overdue": 14,
-          "seasonal_note": "May home-improvement season. Minor upside."
+          "seasonal_note": "May home-improvement season — minor upside even as a breakup."
         },
         {
           "followup_id": "fu_044",
@@ -70,12 +71,12 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
+          "overdue_days": 15,
           "subject": "Closing the loop — The Old Court Solicitors",
           "body": "Hi,\n\nI've sent a couple of notes about the Old Court Solicitors website — won't keep following up if now isn't the right time.\n\nIf things change down the line, feel free to get in touch.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
-          "send_condition": "IMAP clean (no reply from lead 58)",
-          "sequence_complete_after_send": true,
-          "days_overdue": 14
+          "send_condition": "IMAP clean — no reply from lead 58 confirmed",
+          "sequence_complete_after_send": true
         },
         {
           "followup_id": "fu_045",
@@ -86,23 +87,23 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
+          "overdue_days": 15,
           "subject": "Closing the loop — Scarborough Roofing Specialists",
           "body": "Tony,\n\nI've dropped you a couple of notes about the Scarborough Roofing Specialists site — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
-          "send_condition": "IMAP clean (no reply from Tony, lead 59)",
+          "send_condition": "IMAP clean — no reply from Tony, lead 59",
           "sequence_complete_after_send": true,
-          "days_overdue": 14,
-          "seasonal_note": "Peak roofing season May-August. Tony may now be motivated."
+          "seasonal_note": "Peak roofing season May-August. Tony may now be more motivated. Breakup still correct — do not upsell."
         }
       ]
     },
 
     "batch_5_copy_templates": {
-      "status": "STANDBY — personalisation fires on Ryedale data receipt",
-      "thursday_window": "Data arrives any time today → BRAIN personalises → HANDS sends same session. Last day before weekend.",
-      "friday_window": "Data arrives before 09:00 Friday 2026-05-08 → send by 10:30. After 09:00 Friday: hold until Tuesday.",
-      "tuesday_fallback": "Tuesday 2026-05-12, 09:00-10:30 — standard strong window. Use if no data today or Friday.",
-      "instruction": "HANDS delivers raw Ryedale scrape data. BRAIN personalises per lead — HANDS does NOT use templates directly.",
+      "status": "STANDBY — personalisation fires on Tuesday 2026-05-12 BRAIN run",
+      "friday_window": "PASSED — Friday data-before-09:00 rule not met. Default to Tuesday.",
+      "tuesday_confirmed": "Tuesday 2026-05-12, 09:00-10:30 — CONFIRMED Batch 5 send window. BRAIN personalises per lead from Ryedale data, HANDS sends same session.",
+      "instruction": "HANDS delivers Ryedale scrape data. BRAIN generates per-lead personalised copy. HANDS does NOT use templates directly.",
+      "note_on_weekend": "If Ryedale data arrives Saturday/Sunday: BRAIN can run Monday 2026-05-11 to generate copy in advance. But HANDS does NOT send until Tuesday 09:00.",
 
       "template_ssl_pas": {
         "framework": "PAS",
@@ -112,13 +113,6 @@
         "subject_fallback": "[Business name] — [town] [trade]: website flagged 'Not Secure'",
         "body_template": "[First name],\n\nI was looking at [business name]'s website just now — [specific URL].\n\nChrome is flagging it as 'Not Secure' because it's running on HTTP rather than HTTPS. Any customer who clicks through from Google or a recommendation will see that warning before they even read your homepage.\n\nFor a [trade/business type] in [town], that trust signal matters — particularly if customers are comparing you with competitors before calling.\n\nI fix this sort of thing for small businesses across Yorkshire. It's usually a one-day job and costs less than you'd think.\n\nWorth a quick chat?\n\n[Your name]",
         "personalisation_vars": ["First name", "business name", "specific URL", "trade/business type", "town"],
-        "subject_rules": [
-          "First name if known — outperforms business name only",
-          "Town name always included",
-          "Exact Chrome wording: 'Not Secure' (not 'unsecured')",
-          "No question marks in subject line"
-        ],
-        "day7_pivot": "Google ranking impact of Not Secure OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
         "confirmed_winner": "3/3 INTERESTED leads in campaign used this exact pattern"
       },
 
@@ -128,19 +122,17 @@
         "allocation": "20% of Batch 5 sends",
         "subject_pattern": "[First name] — [town] [business] site isn't mobile-friendly",
         "body_template": "[First name],\n\nI checked [business name]'s website on a mobile just now — [specific URL].\n\nThe text is tiny, the layout breaks on a smaller screen, and the phone number isn't tap-to-call. Anyone searching for a [trade] in [town] on their phone — which is most people — will likely give up and try the next result.\n\nI help small businesses across Yorkshire fix exactly this. It's usually a half-day job.\n\nWould it help to take a look?\n\n[Your name]",
-        "personalisation_vars": ["First name", "business name", "specific URL", "trade", "town"],
-        "day7_pivot": "SSL (if HTTP), OR missing tap-to-call, OR specific local competitor who IS mobile-friendly"
+        "personalisation_vars": ["First name", "business name", "specific URL", "trade", "town"]
       },
 
       "template_no_website_bab": {
         "framework": "BAB",
         "signal": "no_website",
         "allocation": "15% of Batch 5 sends",
-        "qualification": "4★+ AND 20+ reviews — Ryedale rural bar (lowered from 50+)",
+        "qualification": "4★+ AND 20+ reviews (Ryedale rural bar)",
         "subject_pattern": "[Business name] — [town] [trade]: customers can't find you online",
         "body_template": "Hi,\n\nI searched for '[trade] [town]' on Google just now — [business name] doesn't appear.\n\nCustomers who don't already know you will find your competitors instead. In a market like [town], the first business with a credible website often gets the call.\n\nA simple one-page website — your services, your area, a contact form — is usually enough to start ranking locally within a few weeks.\n\nWould that be useful?\n\n[Your name]",
-        "personalisation_vars": ["business name", "trade", "town"],
-        "day7_pivot": "Specific competitors ranking for the keyword, OR estimated missed enquiries per month"
+        "personalisation_vars": ["business name", "trade", "town"]
       },
 
       "template_aida_keyword_gap": {
@@ -150,8 +142,7 @@
         "qualification": "4.5★+ AND 100+ reviews ONLY",
         "subject_pattern": "[First name] — [N] reviews but '[keyword] [town]' isn't bringing your site up",
         "body_template": "[First name],\n\n[Business name] has [N] reviews — that's a strong local reputation.\n\nBut when I searched '[keyword] [town]' on Google just now, your website didn't appear in the top results. Your competitors with fewer reviews are ranking above you because their sites are technically better optimised.\n\nThe gap is fixable — usually a few hours of on-page SEO work and a small structural change.\n\nWould it be worth a look?\n\n[Your name]",
-        "personalisation_vars": ["First name", "business name", "N (review count)", "keyword", "town"],
-        "day7_pivot": "Page speed, OR missing LocalBusiness structured data, OR specific competitor comparison"
+        "personalisation_vars": ["First name", "business name", "N (review count)", "keyword", "town"]
       }
     },
 
@@ -159,17 +150,21 @@
     "suppressed_permanently": [7, 19],
     "lost_no_contact": [2],
     "warm_pipeline_email_closed": [1, 3, 22],
-    "archived_today": [1, 3, 22],
+    "archived_day_40": [1, 3, 22],
+    "archiving_today": [49, 51],
+    "final_attempt_today": [53, 54],
 
     "send_summary": {
       "new_sends_today": 0,
       "fu_carries_forward": 5,
       "fu_carry_forward_ids": "fu_041 (lead 30), fu_042 (lead 31), fu_043 (lead 32), fu_044 (lead 58), fu_045 (lead 59)",
-      "fu_send_condition": "Each requires IMAP clear (no prior reply for that lead)",
-      "batch_5_initial_sends_today": "0-18 conditional on data receipt",
-      "batch_5_send_window": "Any time today after data receipt — last day before weekend",
-      "domain_safety_limit": "40/day — max 23 sends today (5 fu + 18 Batch 5). Within limit.",
-      "next_send_window_if_no_data": "Tuesday 2026-05-12, 09:00-10:30"
+      "fu_overdue_days": 15,
+      "fu_send_condition": "Each requires IMAP clean for that lead. Friday acceptable for breakup emails.",
+      "batch_5_initial_sends_today": 0,
+      "batch_5_deferred_to": "Tuesday 2026-05-12, 09:00-10:30",
+      "domain_safety_limit": "40/day — 5 fu sends well within limit",
+      "weekend_blocked": "Saturday 2026-05-09, Sunday 2026-05-10 — no sends",
+      "next_send_window": "Tuesday 2026-05-12, 09:00-10:30"
     }
   }
 ]
