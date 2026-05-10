@@ -1,7 +1,7 @@
 # OUTLOCAL — Active Campaign Strategy
-**Updated:** 2026-05-03 (Week 5 intelligence report — BRAIN)  
+**Updated:** 2026-05-10 (Day 43 weekend bridge — validity extended)  
 **Replaces:** 2026-04-05 (Week 2 strategy)  
-**Valid until:** 2026-05-10 (next weekly review)
+**Valid until:** 2026-05-17 (next weekly review — after Batch 5 first-week data)
 
 ---
 
@@ -133,8 +133,8 @@ Examples:
 | **Post-bank-holiday premium** | First working day after bank holiday Monday is the peak yield window |
 | **No bank holiday sends** | No sends on UK bank holidays — business owners are offline |
 | **No weekend sends** | Saturday/Sunday always blocked |
-| **Batch 5 initial send** | **TUESDAY 2026-05-06 — hard rule** |
-| Do not send Monday 2026-05-05 | UK May Day bank holiday |
+| **Batch 5 initial send** | **TUESDAY 2026-05-12 — confirmed (2026-05-06 window passed)** |
+| Do not send weekends | Saturday/Sunday always blocked |
 
 ---
 
@@ -302,6 +302,6 @@ If Batch 5 initial sends fire Tuesday 2026-05-06:
 ---
 
 *Active strategy maintained by OUTLOCAL BRAIN layer.*  
-*Updated: 2026-05-03 (Week 5 intelligence run).*  
+*Updated: 2026-05-10 (Day 43 weekend bridge — validity extended, strategy unchanged).*  
 *HANDS layer agents must read this file before starting any daily run.*  
-*Next review: 2026-05-10 after Batch 5 first-week data collected.*
+*Next review: 2026-05-17 after Batch 5 first-week data collected.*
