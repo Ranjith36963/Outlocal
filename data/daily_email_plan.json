@@ -1,19 +1,21 @@
 [
   {
-    "plan_date": "2026-05-08",
-    "generated_at": "2026-05-08T07:00:00Z",
-    "day_number": 41,
-    "note": "BRAIN layer — Day 41 (Friday 2026-05-08). Bridge run. No new leads. No initial sends today. fu_041-045 carry forward from Days 39/40 — still appropriate to send Friday (breakup emails, not promotional). Batch 5 Ryedale deferred to Tuesday 2026-05-12. Weekend follows.",
+    "plan_date": "2026-05-10",
+    "generated_at": "2026-05-10T08:00:00Z",
+    "day_number": 43,
+    "note": "BRAIN layer — Day 43 (Sunday 2026-05-10). Weekend bridge. No sends today. fu_041-045 carry to Monday 2026-05-11 (assumed unsent Friday — no CHANGELOG confirmation in 43 days). Batch 5 Ryedale personalisation fires on data receipt, confirmed send window: Tuesday 2026-05-12, 09:00-10:30.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No Batch 5 data received. Friday window has passed (data-before-09:00 rule not met or not applicable). Zero new leads. All Batch 5 personalisation pending Tuesday 2026-05-12 BRAIN run.",
+    "new_sends_note": "WEEKEND — no sends. Saturday and Sunday are hard-blocked. Next send window: Monday for fu_041-045 (breakups), Tuesday for Batch 5 initial sends.",
 
     "fu_carries_forward": {
-      "description": "fu_041-045 — Day-14 breakups. Carried forward from Day 39 (2026-05-06) and Day 40 (2026-05-07). Now 15 days overdue from original target. Still appropriate to send today — closing-the-loop emails are professionally acceptable whenever sent. IMAP precondition mandatory per lead.",
-      "send_day_assessment": "Friday mid-morning is acceptable for breakup emails. These are administrative closures, not campaign sends. No timing risk.",
-      "imap_precondition": "MANDATORY — sweep leads 30, 31, 32, 58, 59 before each send. Any reply cancels that fu.",
-      "send_window": "After IMAP confirmed clean — stagger 10 minutes between each",
+      "description": "fu_041-045 — Day-14 breakups. First due Day 39 (2026-05-06). Assumed unsent across Days 39, 40, 41 (Friday). Now 17 days overdue from original target. Carry to Monday 2026-05-11. Monday is the final window — do not defer again.",
+      "send_monday": true,
+      "monday_assessment": "Monday 2026-05-11, 09:30-10:30. IMAP clean per lead mandatory. Stagger 10 minutes.",
+      "imap_precondition": "MANDATORY — sweep leads 30, 31, 32, 58, 59 before each send. Any reply from that lead cancels that fu.",
+      "stagger": "10 minutes between sends",
+      "final_window": "Monday is the last acceptable window for these breakups. If not sent Monday: sequences technically expired but BRAIN will re-evaluate on Tuesday.",
       "sends": [
         {
           "followup_id": "fu_041",
@@ -24,7 +26,8 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
-          "overdue_days": 15,
+          "overdue_days": 17,
+          "planned_send_date": "2026-05-11",
           "subject": "Closing the loop — Halifax Window Cleaning",
           "body": "Steve,\n\nI've dropped you a couple of notes about the Halifax Window Cleaning website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
@@ -39,7 +42,8 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
-          "overdue_days": 15,
+          "overdue_days": 17,
+          "planned_send_date": "2026-05-11",
           "subject": "Closing the loop — Pontefract Pharmacy",
           "body": "Hi,\n\nI've sent a couple of notes about the Pontefract Pharmacy website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
@@ -55,13 +59,14 @@
           "framework": "breakup",
           "signal_type": "mobile",
           "sequence_step": 3,
-          "overdue_days": 15,
+          "overdue_days": 17,
+          "planned_send_date": "2026-05-11",
           "subject": "Closing the loop — Castleford Carpets",
           "body": "Ann,\n\nI've sent a couple of notes about the Castleford Carpets website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
           "send_condition": "IMAP clean — no reply from Ann, lead 32",
           "sequence_complete_after_send": true,
-          "seasonal_note": "May home-improvement season — minor upside even as a breakup."
+          "seasonal_note": "May home-improvement season. Minor upside even as a breakup."
         },
         {
           "followup_id": "fu_044",
@@ -71,7 +76,8 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
-          "overdue_days": 15,
+          "overdue_days": 17,
+          "planned_send_date": "2026-05-11",
           "subject": "Closing the loop — The Old Court Solicitors",
           "body": "Hi,\n\nI've sent a couple of notes about the Old Court Solicitors website — won't keep following up if now isn't the right time.\n\nIf things change down the line, feel free to get in touch.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
@@ -87,23 +93,23 @@
           "framework": "breakup",
           "signal_type": "ssl",
           "sequence_step": 3,
-          "overdue_days": 15,
+          "overdue_days": 17,
+          "planned_send_date": "2026-05-11",
           "subject": "Closing the loop — Scarborough Roofing Specialists",
           "body": "Tony,\n\nI've dropped you a couple of notes about the Scarborough Roofing Specialists site — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
           "imap_check_required": true,
           "send_condition": "IMAP clean — no reply from Tony, lead 59",
           "sequence_complete_after_send": true,
-          "seasonal_note": "Peak roofing season May-August. Tony may now be more motivated. Breakup still correct — do not upsell."
+          "seasonal_note": "Peak roofing season May-August. Monday timing is fine for a professional closing-the-loop email."
         }
       ]
     },
 
     "batch_5_copy_templates": {
-      "status": "STANDBY — personalisation fires on Tuesday 2026-05-12 BRAIN run",
-      "friday_window": "PASSED — Friday data-before-09:00 rule not met. Default to Tuesday.",
-      "tuesday_confirmed": "Tuesday 2026-05-12, 09:00-10:30 — CONFIRMED Batch 5 send window. BRAIN personalises per lead from Ryedale data, HANDS sends same session.",
+      "status": "STANDBY — personalisation fires on Tuesday 2026-05-12 BRAIN run (or pre-generated Monday if data arrives today/Monday morning)",
+      "weekend_pre_generation_note": "If Ryedale scrape data arrives Sunday 2026-05-10 or Monday morning before HANDS is ready: BRAIN will pre-generate all per-lead personalised copy and update this file in advance. HANDS still does not send until Tuesday 09:00.",
+      "tuesday_confirmed": "Tuesday 2026-05-12, 09:00-10:30 — CONFIRMED Batch 5 send window.",
       "instruction": "HANDS delivers Ryedale scrape data. BRAIN generates per-lead personalised copy. HANDS does NOT use templates directly.",
-      "note_on_weekend": "If Ryedale data arrives Saturday/Sunday: BRAIN can run Monday 2026-05-11 to generate copy in advance. But HANDS does NOT send until Tuesday 09:00.",
 
       "template_ssl_pas": {
         "framework": "PAS",
@@ -150,21 +156,22 @@
     "suppressed_permanently": [7, 19],
     "lost_no_contact": [2],
     "warm_pipeline_email_closed": [1, 3, 22],
-    "archived_day_40": [1, 3, 22],
-    "archiving_today": [49, 51],
-    "final_attempt_today": [53, 54],
+    "archived_final": [1, 3, 22, 49, 51],
+    "archiving_monday": [53, 54],
 
     "send_summary": {
       "new_sends_today": 0,
+      "reason": "Weekend — hard blocked",
       "fu_carries_forward": 5,
       "fu_carry_forward_ids": "fu_041 (lead 30), fu_042 (lead 31), fu_043 (lead 32), fu_044 (lead 58), fu_045 (lead 59)",
-      "fu_overdue_days": 15,
-      "fu_send_condition": "Each requires IMAP clean for that lead. Friday acceptable for breakup emails.",
+      "fu_planned_send_date": "Monday 2026-05-11",
+      "fu_overdue_days": 17,
+      "fu_send_condition": "Each requires IMAP clean for that lead. Monday 09:30-10:30 acceptable for breakup emails.",
       "batch_5_initial_sends_today": 0,
       "batch_5_deferred_to": "Tuesday 2026-05-12, 09:00-10:30",
       "domain_safety_limit": "40/day — 5 fu sends well within limit",
       "weekend_blocked": "Saturday 2026-05-09, Sunday 2026-05-10 — no sends",
-      "next_send_window": "Tuesday 2026-05-12, 09:00-10:30"
+      "next_send_window": "Monday 2026-05-11 for fu_041-045, Tuesday 2026-05-12 for Batch 5 initial sends"
     }
   }
 ]
