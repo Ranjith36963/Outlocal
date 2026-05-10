@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-09T08:00:00Z",
+  "generated_at": "2026-05-10T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-09",
-  "day_number": 42,
-  "note": "Day 42 (Saturday 2026-05-09 — WEEKEND BRIDGE). Zero active connection notes. Weekend hard-blocked for LinkedIn execution. IMAP final override window for leads 1/3/22 expired yesterday (2026-05-08) — archive unconditionally final. Post-breakup contingency notes (leads 52/55/50/56) remain valid if any pending connection request is accepted. Batch 5 notes will be generated Tuesday 2026-05-12 evening after initial sends confirm.",
+  "run_date": "2026-05-10",
+  "day_number": 43,
+  "note": "Day 43 (Sunday 2026-05-10 — WEEKEND BRIDGE). Zero active connection notes. Weekend hard-blocked for LinkedIn execution. Warm pipeline (leads 1/3/22) archive unconditionally final — IMAP override window closed 2026-05-08 EOD (2 days ago). Post-breakup contingency notes (leads 52/55/50/56) remain valid if any pending connection request is accepted. Batch 5 notes will be generated Tuesday 2026-05-12 evening after initial sends confirm.",
 
   "strategy": {
     "character_limit": 200,
@@ -36,7 +36,7 @@
 
   "active_notes": [],
   "active_notes_count": 0,
-  "active_notes_note": "Zero active connection notes. Weekend hard-blocked. Warm pipeline (leads 1/3/22) archive unconditionally final as of 2026-05-09. Batch 5 notes generate Tuesday 2026-05-12 evening after initial send confirmation.",
+  "active_notes_note": "Zero active connection notes. Weekend hard-blocked. Warm pipeline (leads 1/3/22) archive unconditionally final. Batch 5 notes generate Tuesday 2026-05-12 evening after initial send confirmation.",
 
   "batch_5_note_templates": {
     "status": "STANDBY — activates on Batch 5 initial send confirmation (Tuesday 2026-05-12)",
@@ -68,45 +68,12 @@
       "generic_template": "[First name] — [Business name] has a strong reputation around [town]. Noticed something about how easy you are to find online — worth a quick mention. Connecting in case it's useful.",
       "post_reference_template": "[First name] — saw your post about [specific topic]. [Business name] has a strong local reputation. Something about the online visibility caught my attention. Connecting in case relevant.",
       "char_count_note": "Keep well under 200 chars — these leads have high-quality profiles with more scrutiny."
-    },
-
-    "ryedale_sector_guidance": {
-      "Malton": {
-        "expected_sectors": ["estate agents", "solicitors", "independent retail", "hospitality", "food & drink"],
-        "linkedin_likelihood": "medium-high for professional services, medium for hospitality",
-        "priority": "Solicitors and estate agents first — highest LinkedIn presence and most likely to accept cold connections"
-      },
-      "Pickering": {
-        "expected_sectors": ["tourism", "B&Bs", "independent retail", "trades"],
-        "linkedin_likelihood": "medium for tourism/hospitality, low for trades",
-        "priority": "B&Bs and tourism operators first"
-      },
-      "Helmsley": {
-        "expected_sectors": ["tourism", "fine dining", "boutique retail", "B&Bs"],
-        "linkedin_likelihood": "medium-high — affluent market, owners more likely to have LinkedIn",
-        "priority": "Restaurants and boutique retail — post-reference more likely"
-      },
-      "Kirkbymoorside": {
-        "expected_sectors": ["independent retail", "trades", "local services"],
-        "linkedin_likelihood": "low-medium — smaller market, fewer LinkedIn-active owners",
-        "priority": "Any professional services first"
-      },
-      "Hovingham": {
-        "expected_sectors": ["rural trades", "agriculture-adjacent", "hospitality"],
-        "linkedin_likelihood": "low",
-        "priority": "Generic note if profile found — post-reference unlikely"
-      },
-      "Norton-on-Derwent": {
-        "expected_sectors": ["trades", "retail", "local services"],
-        "linkedin_likelihood": "low-medium",
-        "priority": "Generic note — post-reference unlikely for most sectors here"
-      }
     }
   },
 
   "post_breakup_contingency": {
-    "note": "These leads had connection requests that MAY have been sent (unconfirmed — zero linkedin_profiles.json files received across 42 campaign days). If any pending request is accepted: use the if_accepted_message only. Do NOT reference the breakup email or email sequence. Do NOT pitch.",
-    "status": "STILL ACTIVE — if any pending connection request is accepted, use message below. This contingency remains valid indefinitely until connection is accepted or request expires (LinkedIn: ~6 months).",
+    "note": "These leads had connection requests that MAY have been sent (unconfirmed — zero linkedin_profiles.json files received across 43 campaign days). If any pending request is accepted: use the if_accepted_message only. Do NOT reference the breakup email or email sequence. Do NOT pitch.",
+    "status": "STILL ACTIVE — if any pending connection request is accepted, use message below. Valid until request expires or connection is accepted (LinkedIn: ~6 months from send date).",
     "pending_leads": [
       {
         "lead_id": 52,
@@ -159,12 +126,12 @@
       "town": "Leeds",
       "county": "West Yorkshire",
       "archive_date": "2026-05-07",
-      "archive_final_date": "2026-05-09",
-      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 42 campaign sessions. Archive trigger fired 2026-05-06 (08:20 deadline missed). Formally archived 2026-05-07. IMAP override window expired 2026-05-08. Archive unconditionally final as of 2026-05-09.",
+      "archive_final_date": "2026-05-08",
+      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 43 campaign sessions. Archive trigger fired 2026-05-06 (08:20 deadline missed). Formally archived 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
       "note_type": "generic",
       "note_prepared": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn across 42 sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn across 43 sessions.",
       "email_channel_closed": "2026-04-08",
       "linkedin_channel_closed": "2026-05-07",
       "reapproach_date_email": "2026-10-26",
@@ -179,12 +146,12 @@
       "town": "Sowerby Bridge",
       "county": "West Yorkshire",
       "archive_date": "2026-05-07",
-      "archive_final_date": "2026-05-09",
-      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 42 campaign sessions. Archive trigger fired 2026-05-06. Formally archived 2026-05-07. IMAP override window expired 2026-05-08. Archive unconditionally final as of 2026-05-09.",
+      "archive_final_date": "2026-05-08",
+      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 43 campaign sessions. Archive trigger fired 2026-05-06. Formally archived 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
       "note_type": "generic",
       "note_prepared": "Rob — Pennine Print & Design stood out when I was looking at print businesses in Sowerby Bridge. Noticed something about the website worth a quick mention. Connecting in case it's relevant.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn across 42 sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn across 43 sessions.",
       "email_channel_closed": "2026-04-08",
       "linkedin_channel_closed": "2026-05-07",
       "reapproach_date_email": "2026-10-26",
@@ -199,12 +166,12 @@
       "town": "Ripon",
       "county": "North Yorkshire",
       "archive_date": "2026-05-07",
-      "archive_final_date": "2026-05-09",
-      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 42 campaign sessions. Archive trigger fired 2026-05-06. Formally archived 2026-05-07. IMAP override window expired 2026-05-08. Archive unconditionally final as of 2026-05-09.",
+      "archive_final_date": "2026-05-08",
+      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 43 campaign sessions. Archive trigger fired 2026-05-06. Formally archived 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
       "note_type": "generic",
       "note_prepared": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn across 42 sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn across 43 sessions.",
       "email_channel_closed": "2026-04-08",
       "linkedin_channel_closed": "2026-05-07",
       "reapproach_date_email": "2026-10-26",
@@ -252,11 +219,11 @@
     "total_confirmed_connections_made": 0,
     "brain_runs_with_active_notes": 14,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 42,
-    "warm_pipeline_chapter": "PERMANENTLY_CLOSED — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08. Unconditionally final from 2026-05-09.",
-    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 42 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
-    "key_learning": "HANDS must execute LinkedIn within a single sitting immediately on the Day 3 window — estimated 10-12 minutes per lead. This was never done in 42 sessions. For Batch 5: HANDS completes LinkedIn by Friday 2026-05-15. No exceptions.",
-    "batch_5_rule": "LinkedIn for Batch 5 MUST execute within 7 days. Day 3 = Friday 2026-05-15. Hard deadline = Tuesday 2026-05-19. If missed: archive lead immediately. No 40-session tolerance.",
+    "consecutive_runs_without_profiles": 43,
+    "warm_pipeline_chapter": "PERMANENTLY_CLOSED — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08 EOD. Unconditionally final.",
+    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 43 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
+    "key_learning": "HANDS must execute LinkedIn within a single sitting immediately on the Day 3 window — estimated 10-12 minutes per lead. This was never done in 43 sessions. For Batch 5: HANDS completes LinkedIn by Friday 2026-05-15. No exceptions.",
+    "batch_5_rule": "LinkedIn for Batch 5 MUST execute within 7 days. Day 3 = Friday 2026-05-15. Hard deadline = Tuesday 2026-05-19. If missed: archive lead immediately. No 43-session tolerance.",
     "pipeline_value_written_off_total": "£800-1,175 (Claire £350 + Rob £550-675 + Tom £100-150)"
   },
 
@@ -269,10 +236,10 @@
     "archived_note_lead_ids": [3, 22, 1, 52, 55, 50, 56],
     "post_breakup_contingency_active": true,
     "post_breakup_lead_ids": [52, 55, 50, 56],
-    "warm_pipeline_status": "UNCONDITIONALLY_FINAL — leads 1/3/22 archive permanent as of 2026-05-09. No further override attempts.",
-    "consecutive_runs_without_profiles": 42,
+    "warm_pipeline_status": "UNCONDITIONALLY_FINAL — leads 1/3/22 archive permanent. IMAP override window closed 2026-05-08 EOD. No further override attempts.",
+    "consecutive_runs_without_profiles": 43,
     "campaign_linkedin_contacts_confirmed": 0,
     "next_brain_run": "Tuesday 2026-05-12 EVENING — after Batch 5 initial sends confirmed. Generates per-lead personalised notes from Ryedale profile data.",
-    "day_42_run_note": "Saturday 2026-05-09 — WEEKEND BRIDGE. Zero active notes. Weekend hard-blocked. Warm pipeline archive unconditionally final. All LinkedIn note intelligence in standby until Batch 5 Ryedale sends fire Tuesday 2026-05-12. 7-day rule applies — no deferrals."
+    "day_43_run_note": "Sunday 2026-05-10 — WEEKEND BRIDGE. Zero active notes. Weekend hard-blocked. Warm pipeline archive unconditionally final. All LinkedIn note intelligence in standby until Batch 5 Ryedale sends fire Tuesday 2026-05-12. 7-day rule applies — no deferrals, no extensions."
   }
 }

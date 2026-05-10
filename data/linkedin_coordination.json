@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-09T08:00:00Z",
+  "generated_at": "2026-05-10T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-09",
-  "day_number": 42,
-  "note": "Day 42 (Saturday 2026-05-09 — WEEKEND BRIDGE). Multi-channel coordination updated. IMAP final override window for leads 1/3/22 EXPIRED yesterday (2026-05-08) — archive now unconditionally final. Weekend hard-blocked: no sends, no LinkedIn execution. fu_041-045 carry forward to Monday 2026-05-11 (IMAP conditional). Leads 53/54: if not attempted Friday, archive Monday 2026-05-11. Batch 5: no coordination decisions yet. Tuesday 2026-05-12 confirmed send day. LinkedIn Day 3: Friday 2026-05-15.",
+  "run_date": "2026-05-10",
+  "day_number": 43,
+  "note": "Day 43 (Sunday 2026-05-10 — WEEKEND BRIDGE). Multi-channel coordination updated. Warm pipeline archive (leads 1/3/22) UNCONDITIONALLY FINAL — IMAP override window closed 2026-05-08 EOD, now 2 days confirmed closed. Weekend hard-blocked: no sends, no LinkedIn execution. fu_041-045 carry forward to Monday 2026-05-11 (assumed unsent Friday — no CHANGELOG confirmation in 43 days). Leads 53/54: archive Monday 2026-05-11 — no further deferral. Batch 5 Ryedale: no coordination decisions yet. Tuesday 2026-05-12 confirmed send day. LinkedIn Day 3: Friday 2026-05-15.",
 
   "rules_applied": {
     "block_linkedin_if_email_replied_with_active_conversation": true,
@@ -19,30 +19,30 @@
     "no_linkedin_on_weekends": true,
     "no_linkedin_on_bank_holidays": true,
     "imap_check_before_each_outreach": true,
-    "batch_5_linkedin_7_day_rule": "LinkedIn MUST be executed within 7 days of Batch 5 initial send. Day 3 (Friday 2026-05-15) is optimal. Hard deadline: Tuesday 2026-05-19. No extensions. No tolerance after 42-session warm pipeline failure.",
+    "batch_5_linkedin_7_day_rule": "LinkedIn MUST be executed within 7 days of Batch 5 initial send. Day 3 (Friday 2026-05-15) is optimal. Hard deadline: Tuesday 2026-05-19. No extensions. No tolerance after 43-session warm pipeline failure.",
     "archive_trigger_rule": "If LinkedIn not executed by declared deadline: permanently archive lead as LOST_NO_RESPONSE. Log CHANGELOG.md immediately. No deferral mechanism."
   },
 
   "imap_status_at_coordination_time": {
-    "gap_days": "35+",
+    "gap_days": 36,
     "last_confirmed_check": "2026-04-04",
-    "override_window_status": "EXPIRED — IMAP final override window for leads 1/3/22 was 2026-05-08. Window has now closed.",
-    "override_window_outcome": "UNKNOWN — no confirmation from HANDS that IMAP was swept on 2026-05-08. However, the window is now closed. No further override attempts are permissible.",
-    "next_imap_sweep": "Monday 2026-05-11 — before fu_041-045 sends (if not sent Friday). Standard IMAP sweep before any send."
+    "override_window_status": "EXPIRED — IMAP final override window for leads 1/3/22 was 2026-05-08 EOD. Now 2 days closed. Unconditionally final.",
+    "override_window_outcome": "UNKNOWN — no confirmation from HANDS that IMAP was swept on 2026-05-08. However the window is closed — no further override attempts permissible under any circumstances.",
+    "next_imap_sweep": "Monday 2026-05-11 — before fu_041-045 sends. Priority: leads 30, 31, 32, 58, 59 (fu precondition). Do NOT sweep leads 1/3/22."
   },
 
   "email_replies_checked": {
     "source": "data/new_replies.json + data/reply_classifications.json",
-    "checked_at": "2026-05-09T08:00:00Z",
-    "imap_gap_days": "35+ — last confirmed check 2026-04-04",
+    "checked_at": "2026-05-10T08:00:00Z",
+    "imap_gap_days": 36,
     "new_replies_confirmed": 0,
-    "imap_status": "UNVERIFIED — 35+ day gap. No new replies confirmed. Weekend: no IMAP action today.",
+    "imap_status": "UNVERIFIED — 36-day gap. No new replies confirmed. Weekend: no IMAP action today.",
     "replies_on_record": [
       {
         "lead_id": 1,
         "business_name": "Ripon Road Carpentry",
         "classification": "INTERESTED",
-        "archive_status": "UNCONDITIONALLY_FINAL — archive declared 2026-05-07, IMAP override window expired 2026-05-08",
+        "archive_status": "UNCONDITIONALLY_FINAL — archive declared 2026-05-07, IMAP override window expired 2026-05-08 EOD",
         "linkedin_status": "PERMANENTLY_CLOSED"
       },
       {
@@ -56,7 +56,7 @@
         "lead_id": 3,
         "business_name": "Westfield Hair & Beauty",
         "classification": "INTERESTED",
-        "archive_status": "UNCONDITIONALLY_FINAL — archive declared 2026-05-07, IMAP override window expired 2026-05-08",
+        "archive_status": "UNCONDITIONALLY_FINAL — archive declared 2026-05-07, IMAP override window expired 2026-05-08 EOD",
         "linkedin_status": "PERMANENTLY_CLOSED"
       },
       {
@@ -70,30 +70,32 @@
         "lead_id": 22,
         "business_name": "Pennine Print & Design",
         "classification": "INTERESTED",
-        "archive_status": "UNCONDITIONALLY_FINAL — archive declared 2026-05-07, IMAP override window expired 2026-05-08",
+        "archive_status": "UNCONDITIONALLY_FINAL — archive declared 2026-05-07, IMAP override window expired 2026-05-08 EOD",
         "linkedin_status": "PERMANENTLY_CLOSED"
       }
-    ]
+    ],
+    "leads_replied_do_not_linkedin": [1, 2, 3, 5, 22],
+    "note": "Leads 1/3/22 replied INTERESTED but are archived. Lead 2 replied NOT_INTERESTED. Lead 5 OOO (sequence complete). None are LinkedIn candidates under any rule."
   },
 
   "already_connected_linkedin": [],
   "moved_to_nurture": [],
   "confirmed_connections_to_date": 0,
 
-  "channel_status_today_2026_05_09": {
-    "date": "2026-05-09 (Saturday)",
+  "channel_status_today_2026_05_10": {
+    "date": "2026-05-10 (Sunday)",
     "email_channel": {
       "status": "WEEKEND_BLOCKED — no sends today",
-      "fu_041_045_status": "CARRY_FORWARD — not confirmed sent Friday 2026-05-08 (no CHANGELOG update). Carry to Monday 2026-05-11.",
+      "fu_041_045_status": "CARRY_FORWARD — not confirmed sent Friday 2026-05-08 (no CHANGELOG update in 43 days). Carry to Monday 2026-05-11.",
       "batch_5": "BLOCKED — weekend. Confirmed Tuesday 2026-05-12 09:00-10:30.",
       "do_not_email": [1, 2, 3, 7, 19, 22]
     },
     "linkedin_channel": {
-      "status": "WEEKEND_BLOCKED — no LinkedIn execution today or Sunday 2026-05-10",
-      "warm_pipeline": "UNCONDITIONALLY_FINAL — leads 1/3/22 archive permanent from today",
+      "status": "WEEKEND_BLOCKED — no LinkedIn execution today",
+      "warm_pipeline": "UNCONDITIONALLY_FINAL — leads 1/3/22 archive permanent. IMAP override window 2 days closed.",
       "fu_leads": "BLOCKED — Day 3-6 window expired (leads 30, 31, 32, 58, 59). No LinkedIn ever for these leads.",
       "batch_5": "PENDING — no initial sends yet. LinkedIn Day 3 window opens Friday 2026-05-15 after Tuesday sends confirm.",
-      "post_breakup_contingency": "ACTIVE — if pending connection (52/55/50/56) is accepted over the weekend: use if_accepted_message from linkedin_connection_notes.json. Do NOT pitch. Do NOT reference email sequence."
+      "post_breakup_contingency": "ACTIVE — if pending connection (52/55/50/56) accepted: use if_accepted_message from linkedin_connection_notes.json. Do NOT pitch. Do NOT reference email sequence."
     }
   },
 
@@ -104,14 +106,14 @@
       "owner_name": "Claire",
       "town": "Leeds",
       "decision": "UNCONDITIONALLY_FINAL_ARCHIVED",
-      "reason": "INTERESTED reply 2026-04-04. LinkedIn archive trigger fired 2026-05-06. Formally archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08. Archive unconditionally final as of 2026-05-09 — no further override attempts permissible.",
-      "email_status": "ARCHIVED_LOST_NO_RESPONSE — email channel closed since 2026-04-08. Final from 2026-05-09.",
+      "reason": "INTERESTED reply 2026-04-04. LinkedIn archive trigger fired 2026-05-06. Formally archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final — no further override attempts permissible.",
+      "email_status": "ARCHIVED_LOST_NO_RESPONSE — email channel closed since 2026-04-08. Final.",
       "linkedin_status": "PERMANENTLY_CLOSED — no LinkedIn outreach permissible until 2026-10-26.",
       "reapproach_date_email": "2026-10-26",
       "reapproach_date_linkedin": "2026-10-26",
       "pipeline_value_written_off": "£350",
       "formally_archived": "2026-05-07",
-      "archive_final_date": "2026-05-09"
+      "archive_final_date": "2026-05-08"
     },
     {
       "lead_id": 22,
@@ -119,14 +121,14 @@
       "owner_name": "Rob",
       "town": "Sowerby Bridge",
       "decision": "UNCONDITIONALLY_FINAL_ARCHIVED",
-      "reason": "INTERESTED reply 2026-04-04 with upsell signal. LinkedIn archive trigger fired 2026-05-06. Formally archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08. Archive unconditionally final as of 2026-05-09.",
-      "email_status": "ARCHIVED_LOST_NO_RESPONSE — final from 2026-05-09",
+      "reason": "INTERESTED reply 2026-04-04 with upsell signal. LinkedIn archive trigger fired 2026-05-06. Formally archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
+      "email_status": "ARCHIVED_LOST_NO_RESPONSE — final",
       "linkedin_status": "PERMANENTLY_CLOSED",
       "reapproach_date_email": "2026-10-26",
       "reapproach_date_linkedin": "2026-10-26",
       "pipeline_value_written_off": "£550-675",
       "formally_archived": "2026-05-07",
-      "archive_final_date": "2026-05-09"
+      "archive_final_date": "2026-05-08"
     },
     {
       "lead_id": 1,
@@ -134,14 +136,14 @@
       "owner_name": "Tom",
       "town": "Ripon",
       "decision": "UNCONDITIONALLY_FINAL_ARCHIVED",
-      "reason": "INTERESTED reply 2026-04-04. LinkedIn archive trigger fired 2026-05-06. Formally archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08. Archive unconditionally final as of 2026-05-09.",
-      "email_status": "ARCHIVED_LOST_NO_RESPONSE — final from 2026-05-09",
+      "reason": "INTERESTED reply 2026-04-04. LinkedIn archive trigger fired 2026-05-06. Formally archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
+      "email_status": "ARCHIVED_LOST_NO_RESPONSE — final",
       "linkedin_status": "PERMANENTLY_CLOSED",
       "reapproach_date_email": "2026-10-26",
       "reapproach_date_linkedin": "2026-10-26",
       "pipeline_value_written_off": "£100-150",
       "formally_archived": "2026-05-07",
-      "archive_final_date": "2026-05-09"
+      "archive_final_date": "2026-05-08"
     },
     {
       "lead_id": 2,
@@ -159,9 +161,9 @@
       "owner_name": "Steve",
       "town": "Halifax",
       "decision": "SEQUENCE_COMPLETE_PENDING_CONFIRMATION",
-      "reason": "Day-14 breakup fu_041 not confirmed sent Friday 2026-05-08. Carry forward to Monday 2026-05-11 (IMAP conditional).",
+      "reason": "Day-14 breakup fu_041 not confirmed sent Friday 2026-05-08. Carry forward to Monday 2026-05-11 (IMAP conditional). 17 days overdue from original target.",
       "linkedin_status": "BLOCKED — Day 3-6 window expired. No LinkedIn for this lead.",
-      "email_action_monday": "HANDS: IMAP confirm lead 30 not replied. Send fu_041 if IMAP clean. Sequence complete after send.",
+      "email_action_monday": "HANDS: IMAP confirm lead 30 not replied. Send fu_041 if IMAP clean. Sequence complete after send. Monday is the final window.",
       "reapproach_date": "2026-10-23"
     },
     {
@@ -210,7 +212,7 @@
       "lead_id": 49,
       "business_name": "East Riding Builders Ltd",
       "decision": "ARCHIVE_CONFIRMED_LOST_UNRESOLVED",
-      "reason": "No email address obtained. Final attempt deadline passed Day 40 (2026-05-07). Archive as LOST_UNRESOLVED — declared Day 41.",
+      "reason": "No email address obtained. Final attempt deadline passed Day 40 (2026-05-07). Archived LOST_UNRESOLVED — declared Day 41.",
       "archive_status": "LOST_UNRESOLVED",
       "linkedin_status": "BLOCKED — no email contact made.",
       "action": "Log CHANGELOG — archive confirmed. No further action."
@@ -219,7 +221,7 @@
       "lead_id": 51,
       "business_name": "Driffield Garden Centre",
       "decision": "ARCHIVE_CONFIRMED_LOST_UNRESOLVED",
-      "reason": "Contact form only. Phone attempt 38 days overdue. Final attempt deadline passed Day 40 (2026-05-07). Archive as LOST_UNRESOLVED — declared Day 41.",
+      "reason": "Contact form only. Phone attempt 38 days overdue. Final attempt deadline passed Day 40 (2026-05-07). Archived LOST_UNRESOLVED — declared Day 41.",
       "archive_status": "LOST_UNRESOLVED",
       "linkedin_status": "BLOCKED — no email contact made.",
       "action": "Log CHANGELOG — archive confirmed. No further action."
@@ -227,20 +229,20 @@
     {
       "lead_id": 53,
       "business_name": "Bridlington Bay Lettings",
-      "decision": "ARCHIVE_MONDAY_IF_NOT_ATTEMPTED_FRIDAY",
-      "reason": "No direct email obtained. Final attempt (info@ fallback) was due Friday 2026-05-08 — not confirmed attempted. If not attempted Friday: archive Monday 2026-05-11 as LOST_UNRESOLVED.",
-      "action": "HANDS Monday: confirm if info@ was tried Friday. If not: archive immediately. If tried and no response: archive anyway.",
+      "decision": "ARCHIVE_MONDAY_UNCONDITIONAL",
+      "reason": "No direct email obtained. Final attempt (info@ fallback) was due Friday 2026-05-08 — not confirmed attempted (no CHANGELOG update). Archive Monday 2026-05-11 — no further deferral.",
+      "action": "HANDS Monday: archive immediately as LOST_UNRESOLVED. Log CHANGELOG. No conditional — even if info@ was tried Friday with no response, outcome is still archive.",
       "linkedin_status": "BLOCKED — no email contact made.",
-      "blocked_days": 42
+      "blocked_days": 43
     },
     {
       "lead_id": 54,
       "business_name": "The Wolds Inn",
-      "decision": "ARCHIVE_MONDAY_IF_NOT_ATTEMPTED_FRIDAY",
-      "reason": "No email address obtained. Low priority. Final attempt (info@ fallback) due Friday. If not attempted: archive Monday 2026-05-11 as LOST_UNRESOLVED.",
-      "action": "HANDS Monday: if not tried Friday — archive immediately as LOST_UNRESOLVED.",
+      "decision": "ARCHIVE_MONDAY_UNCONDITIONAL",
+      "reason": "No email address obtained. Low priority. Final attempt (info@ fallback) due Friday — not confirmed attempted. Archive Monday 2026-05-11 — no further deferral.",
+      "action": "HANDS Monday: archive immediately as LOST_UNRESOLVED. Log CHANGELOG.",
       "linkedin_status": "BLOCKED — no email contact made.",
-      "blocked_days": 42
+      "blocked_days": 43
     },
     {
       "lead_id": 5,
@@ -342,7 +344,7 @@
   "batch_5_coordination": {
     "status": "NO_COORDINATION_DECISIONS_YET — no Batch 5 initial sends made",
     "ryedale_data_received": false,
-    "data_overdue_days": 17,
+    "data_overdue_days": 18,
     "weekend": "BLOCKED — Saturday 2026-05-09, Sunday 2026-05-10. No sends, no LinkedIn.",
     "weekend_use": "BRAIN may review Ryedale data if it arrives over the weekend and pre-generate copy in advance. HANDS does NOT send until Tuesday 09:00.",
     "tuesday_confirmed": {
@@ -372,27 +374,33 @@
 
   "hands_monday_actions": {
     "date": "2026-05-11",
-    "note": "Monday 2026-05-11 is an optional HANDS day — only needed if fu_041-045 not sent Friday, or leads 53/54 need archiving.",
+    "note": "Monday 2026-05-11 is a MANDATORY HANDS cleanup day. All Friday actions assumed unexecuted (no CHANGELOG update in 43 days).",
     "sequence": [
       {
         "priority": 1,
-        "action": "IMAP sweep — full cohort",
-        "notes": "Standard pre-send sweep. Leads 30, 31, 32, 58, 59 are the priority (fu precondition). Leads 1/3/22 override window CLOSED — no override action if replies found, just log."
+        "action": "IMAP sweep — priority: leads 30, 31, 32, 58, 59 + full cohort",
+        "notes": "fu_041-045 precondition — sweep these leads FIRST. Any lead that has replied: cancel that fu send. Do NOT sweep leads 1/3/22 — archive is unconditionally final. Write any new replies to new_replies.json immediately."
       },
       {
         "priority": 2,
-        "action": "fu_041-045 — Day-14 breakups (if not sent Friday 2026-05-08)",
-        "notes": "IMAP conditional. Monday morning is professionally acceptable for breakup emails. Stagger 10 minutes."
+        "action": "fu_041-045 — Day-14 breakups (17 days overdue)",
+        "lead_ids": [30, 31, 32, 58, 59],
+        "notes": "IMAP conditional. 09:30-10:30, 10-minute stagger. Monday is the final window for these breakups — do not defer again. Sequence complete after each send."
       },
       {
         "priority": 3,
-        "action": "Archive leads 53 (Bridlington Bay Lettings) and 54 (The Wolds Inn) if not attempted Friday",
-        "notes": "Log CHANGELOG — LOST_UNRESOLVED. No further action."
+        "action": "Archive leads 53 (Bridlington Bay Lettings) and 54 (The Wolds Inn)",
+        "notes": "UNCONDITIONAL — no further deferral. Archive both as LOST_UNRESOLVED. Log CHANGELOG. No LinkedIn, no further email."
       },
       {
         "priority": 4,
-        "action": "CHANGELOG.md update — MANDATORY",
-        "notes": "42 days unlogged. Log: IMAP outcomes (all days), fu_041-045 outcomes, archives of 1/3/22/49/51/53/54, LinkedIn never executed, campaign stall, Batch 5 schedule."
+        "action": "CHANGELOG.md update — MANDATORY (43 days unlogged)",
+        "notes": "MANDATORY before Tuesday sends. Log: IMAP outcomes, fu_041-045 outcomes, archive of leads 1/3/22 (Day 40 — final), archive of leads 49/51 (Day 40), archive of leads 53/54 (today), LinkedIn never executed across 43 sessions, campaign stall 33+ days, Batch 5 deferred to Tuesday 2026-05-12."
+      },
+      {
+        "priority": 5,
+        "action": "Confirm Ryedale scrape data is ready for Tuesday BRAIN personalisation run",
+        "notes": "If not ready: Monday is the absolute last window. BRAIN personalisation run precedes Tuesday sends."
       }
     ]
   },
@@ -400,7 +408,7 @@
   "approved_leads_summary": {
     "approved_for_linkedin_today": [],
     "approved_count": 0,
-    "reason": "Weekend hard-blocked. Zero approved candidates even if not weekend. Warm pipeline unconditionally final. fu leads at breakup. No Batch 5 sends yet.",
+    "reason": "Weekend hard-blocked. Zero approved candidates even if not weekend. Warm pipeline unconditionally final. fu leads at breakup — LinkedIn window expired. No Batch 5 sends yet.",
     "next_approved_candidates": "Batch 5 Ryedale leads — after initial sends fire Tuesday 2026-05-12 and Day 3 window opens Friday 2026-05-15."
   },
 
@@ -411,26 +419,26 @@
     "sequence_complete_pending_monday": [30, 31, 32, 58, 59],
     "permanently_suppressed": [7, 19],
     "archive_confirmed_lost_unresolved": [49, 51],
-    "archive_monday_if_not_attempted_friday": [53, 54]
+    "archive_monday_unconditional": [53, 54]
   },
 
   "summary": {
-    "total_leads_evaluated": 42,
+    "total_leads_evaluated": 43,
     "total_approved_for_linkedin_today": 0,
-    "warm_pipeline_status": "UNCONDITIONALLY_FINAL — leads 1, 3, 22 archive permanent from 2026-05-09. No override process remains.",
+    "warm_pipeline_status": "UNCONDITIONALLY_FINAL — leads 1, 3, 22 archive permanent. IMAP override window closed 2026-05-08 EOD. No override process remains.",
     "fu_leads_status": "EMAIL_ONLY — breakup sends carry to Monday 2026-05-11 (IMAP conditional). LinkedIn blocked.",
     "batch_5_linkedin_status": "PENDING — no initial sends yet. Day 3 LinkedIn window: Friday 2026-05-15 (after Tuesday sends). Hard deadline: Tuesday 2026-05-19.",
     "total_permanently_blocked": 3,
     "permanently_blocked_ids": [2, 7, 19],
     "unconditionally_final_archive_ids": [1, 3, 22],
     "archive_confirmed_ids": [49, 51],
-    "archive_monday_or_confirmed": [53, 54],
+    "archive_monday_unconditional_ids": [53, 54],
     "total_sequence_complete": 9,
     "total_moved_to_nurture": 0,
     "already_connected": 0,
     "confirmed_connections_ever": 0,
     "combined_pipeline_value_written_off": "£800-1,175",
     "next_linkedin_coordination_run": "Tuesday 2026-05-12 EVENING — after Batch 5 initial sends confirmed",
-    "day_42_run_note": "Saturday 2026-05-09 — WEEKEND BRIDGE. Archive of leads 1/3/22 unconditionally final. Warm pipeline chapter closed permanently. All LinkedIn coordination in standby. Batch 5 Ryedale is the only active pipeline. LinkedIn Day 3: Friday 2026-05-15. 7-day rule applies — no tolerance, no extensions."
+    "day_43_run_note": "Sunday 2026-05-10 — WEEKEND BRIDGE. Archive of leads 1/3/22 unconditionally final (IMAP override window 2 days closed). Warm pipeline chapter closed permanently. fu_041-045 carry to Monday 2026-05-11 — final window, email-only. Leads 53/54 archive Monday unconditional. All LinkedIn coordination in standby. Batch 5 Ryedale is the only active pipeline. LinkedIn Day 3: Friday 2026-05-15. 7-day rule applies — no tolerance, no extensions."
   }
 }
