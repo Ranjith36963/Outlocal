@@ -1,90 +1,148 @@
-# Daily Strategy — 2026-05-10 (Sunday) — Day 43
+# Daily Strategy — 2026-05-11 (Monday) — Day 44
 
-**Updated:** 2026-05-10 (BRAIN Day 43 run — weekend bridge)  
-**Replaces:** 2026-05-08 strategy (Day 41)  
-**Key changes from Day 41:** Friday IMAP override window for leads 1/3/22 has definitively closed — archive UNCONDITIONALLY FINAL. fu_041-045 assumed unsent (no CHANGELOG confirmation). Carry to Monday 2026-05-11. active_strategy.md validity extended to 2026-05-17. Leads 53/54: archive Monday if not actioned Friday.
-
----
-
-## TODAY — WEEKEND
-
-**2026-05-10 is Sunday — BLOCKED. No sends. No outreach. BRAIN run only.**
-
-Today's BRAIN run produces state management and a clean Monday/Tuesday execution brief for HANDS.
+**Updated:** 2026-05-11 (BRAIN Day 44 run — Monday cleanup day)  
+**Replaces:** 2026-05-10 strategy (Day 43 — weekend bridge)  
+**Key changes from Day 43:** Today is the final window for fu_041-045. Archive leads 53/54 today — final attempt deadline. CHANGELOG mandatory before tomorrow's Batch 5 sends. IMAP gap now 37 days — sweep FIRST. Campaign restart tomorrow: Batch 5 Ryedale, Tuesday 2026-05-12, 09:00-10:30.
 
 ---
 
-## EXECUTIVE SUMMARY — DAY 43
+## TODAY — MONDAY 2026-05-11
 
-Three facts define this moment:
+**Cleanup and preparation day. Tomorrow is Batch 5 Ryedale send day.**
 
-1. **The warm pipeline is gone — permanently.** Claire (lead 3), Rob (lead 22), and Tom (lead 1) are LOST_NO_RESPONSE. The Friday IMAP override window closed at EOD 2026-05-08. No further action, no further checks, no second-guessing. The £800-1,175 is written off. The lesson — LinkedIn must activate within Day 7-14 — is locked in as a hard rule for Batch 5.
-
-2. **Monday clears the decks.** fu_041-045 carry to Monday 2026-05-11 (now 17 days overdue). These close five sequences cleanly. CHANGELOG update is mandatory before Tuesday sends. Leads 53/54 get archived Monday if not actioned Friday. IMAP sweep comes first.
-
-3. **Tuesday is the reset.** Batch 5 Ryedale sends at 09:00-10:30. This is the campaign restart after a 33-day stall. The playbook is confirmed — SSL-PAS-Tuesday-first-name — and Ryedale is expected to be the highest SSL density batch yet. 2-3 INTERESTED replies are the realistic target.
-
----
-
-## CAMPAIGN STATUS — DAY 43
-
-| Metric | Value | Delta from Day 41 | Notes |
-|---|---|---|---|
-| Campaign day | 43 | +2 | Weekend (Sat 09 + Sun 10) |
-| Leads scraped | ~61 | 0 | Batch 5 data still not received |
-| Emails sent (est.) | ~91 | 0 | No sends since Day 39 or earlier |
-| Active sequences | 0 | 0 | Campaign stall: 33 days |
-| Total replies | 11 | 0 | 17.9% reply rate. No new replies. |
-| INTERESTED (active) | 0 | 0 | Archive confirmed and final |
-| Conversions | 0 | 0 | No revenue yet |
-| IMAP gap | 36 days | +2 | Last confirmed check 2026-04-04 |
-| CHANGELOG lag | 43 days | +2 | Session 1 was last update (2026-03-28) |
-| fu overdue | 17 days | +2 | fu_041-045 still pending |
-| active_strategy.md | Extended to 2026-05-17 | +7 validity | Previous expiry: 2026-05-10 (today) |
-
----
-
-## ARCHIVE CLOSURE — PERMANENT
-
-The Friday 2026-05-08 IMAP override window has closed. This is the last entry that mentions leads 1, 3, and 22 as an operational concern.
-
-| Lead | Business | Archive Status | Notes |
-|---|---|---|---|
-| 1 | Ripon Road Carpentry (Tom) | LOST_NO_RESPONSE — FINAL | Quote form, £100-150. 36 days since reply. |
-| 3 | Westfield Hair & Beauty (Claire) | LOST_NO_RESPONSE — FINAL | Booking widget, £350. 36 days since reply. |
-| 22 | Pennine Print & Design (Rob) | LOST_NO_RESPONSE — FINAL | Full redesign, £550-675. Strongest upsell. |
-
-**Combined pipeline value written off: £800-1,175**  
-**Root cause: LinkedIn never executed across 43 sessions**  
-**Fix applied to Batch 5: LinkedIn hard deadline Day 7 (2026-05-19). No exceptions.**
-
-HANDS must log this in CHANGELOG.md Monday. Also update database (lead status) and CRM (closed-lost).
-
----
-
-## MONDAY EXECUTION ORDER (2026-05-11)
-
-| Priority | Action | Condition |
+| Priority | Action | Status |
 |---|---|---|
-| 1 | IMAP sweep — leads 30, 31, 32, 58, 59 + full cohort | FIRST — fu precondition. Do NOT include leads 1/3/22. |
-| 2 | fu_041-045 breakup sends | After IMAP clean per lead — 10-min stagger, 09:30-10:30 |
-| 3 | CHANGELOG.md update | MANDATORY before Tuesday sends — 43 days unlogged |
-| 4 | Archive leads 53 and 54 | Final attempt deadline — archive LOST_UNRESOLVED Monday |
-| 5 | Confirm Ryedale data readiness | Ensure scrape data ready for Tuesday BRAIN personalisation run |
-
-**Do NOT send Batch 5 Monday.** Tuesday 09:00-10:30 is the confirmed window.
+| 1 | IMAP sweep — leads 30, 31, 32, 58, 59 + full cohort | MANDATORY — 37-day gap. fu_041-045 precondition. Do NOT include leads 1/3/22. |
+| 2 | fu_041-045 — Day-14 breakups | **SEND TODAY** — 09:30-10:10, 10-min stagger, IMAP clean per lead |
+| 3 | Archive leads 53 and 54 | **ARCHIVE TODAY** — LOST_UNRESOLVED. Final attempt deadline passed. Log CHANGELOG. |
+| 4 | CHANGELOG.md update | **MANDATORY** — 44 days unlogged. Must complete before Tuesday sends. |
+| 5 | Confirm Ryedale scrape data is ready | If data arrives today: BRAIN pre-generates Batch 5 copy. HANDS still sends Tuesday 09:00. |
 
 ---
 
-## TUESDAY EXECUTION ORDER (2026-05-12) — BATCH 5 SEND DAY
+## EXECUTIVE SUMMARY — DAY 44
+
+Today is the last cleanup day before the campaign restarts.
+
+1. **fu_041-045 send today.** Five Day-14 breakups (leads 30, 31, 32, 58, 59), 18 days overdue. IMAP sweep first — if any of these leads have replied in the 37-day gap: cancel that fu, classify reply, mark sequence complete. After IMAP clean: send 09:30-10:10, 10-minute stagger. These close five sequences permanently.
+
+2. **Archive leads 53 and 54 today.** Bridlington Bay Lettings and The Wolds Inn — enrichment opportunities exhausted over 40+ days, final attempt window closed Friday. No further deferrals. Archive LOST_UNRESOLVED and log CHANGELOG.
+
+3. **CHANGELOG is 44 days overdue.** No record of any send or action since Session 1 (2026-03-28). This must be logged today before tomorrow's Batch 5 sends. Operational credibility depends on it.
+
+4. **Tomorrow is the campaign restart.** Batch 5 Ryedale — 12-18 initial sends, Tuesday 2026-05-12, 09:00-10:30. BRAIN personalises per lead from Ryedale scrape data (pre-generated if data arrives today, otherwise Tuesday morning). Expected: 2-3 INTERESTED replies by Friday 2026-05-15.
+
+---
+
+## CAMPAIGN STATUS — DAY 44
+
+| Metric | Value | Delta from Day 43 | Notes |
+|---|---|---|---|
+| Campaign day | 44 | +1 | Monday 2026-05-11 |
+| Leads scraped | ~61 | 0 | Batch 5 data still pending |
+| Emails sent (est.) | ~91 | 0 | No sends Sunday (weekend blocked) |
+| Emails sending today | 5 | +5 | fu_041-045 breakups (IMAP clean) |
+| Active sequences | 0 | 0 | Campaign stall: 34 days |
+| Total replies | 11 | 0 | 17.9% reply rate |
+| INTERESTED (active) | 0 | 0 | Warm pipeline closed — unconditionally final |
+| IMAP gap | 37 days | +1 | Sweep first thing Monday |
+| CHANGELOG lag | 44 days | +1 | Must fix today |
+| fu overdue | 18 days | +1 | **SEND TODAY — FINAL WINDOW** |
+| Archived (total) | 7 | +2 | Leads 53/54 archived today |
+
+---
+
+## TODAY'S SEND BRIEF — fu_041-045
+
+| # | fu_id | Lead | Business | Subject | Send time |
+|---|---|---|---|---|---|
+| 1 | fu_041 | 30 | Halifax Window Cleaning (Steve) | Closing the loop — Halifax Window Cleaning | 09:30 |
+| 2 | fu_042 | 31 | Pontefract Pharmacy | Closing the loop — Pontefract Pharmacy | 09:40 |
+| 3 | fu_043 | 32 | Castleford Carpets (Ann) | Closing the loop — Castleford Carpets | 09:50 |
+| 4 | fu_044 | 58 | The Old Court Solicitors | Closing the loop — The Old Court Solicitors | 10:00 |
+| 5 | fu_045 | 59 | Scarborough Roofing Specialists (Tony) | Closing the loop — Scarborough Roofing Specialists | 10:10 |
+
+**Full copy in followup_queue.json and daily_email_plan.json.**  
+**IMAP clean per lead mandatory before each send.**  
+**10-minute stagger.**  
+**5 sends — well within 40/day domain limit.**
+
+---
+
+## IMAP SWEEP — PROTOCOL
+
+**37-day gap (last confirmed check: 2026-04-04). This is CRITICAL.**
+
+What to check:
+1. **Leads 30, 31, 32, 58, 59** — fu_041-045 precondition. If any reply found: cancel that fu, write to new_replies.json, classify.
+2. **Full remaining cohort** — any unsubscribe found: suppress within 24h (GDPR Article 21), log audit_log and CHANGELOG.
+3. **Do NOT check leads 1, 3, 22** — archive is UNCONDITIONALLY FINAL. If reply somehow found: acknowledge only (no sales attempt), log CHANGELOG, treat as closed-lost.
+
+---
+
+## ARCHIVE DECISIONS — FINAL
+
+| Lead | Business | Archive status | Reason |
+|---|---|---|---|
+| 1 | Ripon Road Carpentry (Tom) | LOST_NO_RESPONSE — FINAL | LinkedIn never executed. Override closed 2026-05-08 EOD. |
+| 3 | Westfield Hair & Beauty (Claire) | LOST_NO_RESPONSE — FINAL | LinkedIn never executed. Override closed 2026-05-08 EOD. |
+| 22 | Pennine Print & Design (Rob) | LOST_NO_RESPONSE — FINAL | LinkedIn never executed. Override closed 2026-05-08 EOD. |
+| 49 | East Riding Builders Ltd | LOST_UNRESOLVED — FINAL | Enrichment overdue 38+ days. Archived Day 40. |
+| 51 | Driffield Garden Centre | LOST_UNRESOLVED — FINAL | Enrichment overdue 38+ days. Archived Day 40. |
+| **53** | **Bridlington Bay Lettings** | **LOST_UNRESOLVED — ARCHIVE TODAY** | **Final attempt deadline passed. No further deferrals.** |
+| **54** | **The Wolds Inn** | **LOST_UNRESOLVED — ARCHIVE TODAY** | **Final attempt deadline passed. No further deferrals.** |
+
+**HANDS: update database and CRM for leads 53/54 today. Log CHANGELOG.**
+
+---
+
+## CHANGELOG — WHAT NEEDS LOGGING TODAY
+
+44 days since last entry (2026-03-28). Everything below must be logged Monday:
+
+```
+[2026-04-04] IMAP sweep — 11 replies received across all batches (reply_id 7-11).
+  - Lead 3 (Claire, Westfield Hair & Beauty): INTERESTED — call confirmed Tuesday 2pm 2026-04-07.
+  - Lead 22 (Rob, Pennine Print & Design): INTERESTED — bundle enquiry.
+  - Lead 1 (Tom, Ripon Road Carpentry): INTERESTED — asked for pricing.
+  - Lead 2 (Nidderdale Pet Supplies): NOT_INTERESTED — politely declined.
+  - Lead 5 (Harewood Accountants): OUT_OF_OFFICE — returned 2026-04-06.
+
+[2026-04-07 to 2026-04-08] Proposals / nudges sent to leads 1, 3, 22 (warm pipeline).
+  - No further replies received.
+
+[2026-05-07] Warm pipeline declared LOST_NO_RESPONSE — leads 1, 3, 22 archived.
+  - Root cause: LinkedIn never executed across 43 sessions.
+  - Combined pipeline value written off: £800-1,175.
+  - IMAP override window set to Friday 2026-05-08 EOD.
+
+[2026-05-08] IMAP override window closed EOD — archive is UNCONDITIONALLY FINAL.
+
+[2026-05-07] Leads 49 and 51 archived LOST_UNRESOLVED — enrichment overdue 38+ days.
+
+[2026-05-11] Leads 53 and 54 archived LOST_UNRESOLVED — final attempt deadline passed.
+
+[2026-05-11] fu_041-045 Day-14 breakups sent (or: UNSENT — sequence expired):
+  - fu_041: Steve, Halifax Window Cleaning — [IMAP clean / reply found — CANCELLED]
+  - fu_042: Pontefract Pharmacy — [IMAP clean / reply found — CANCELLED]
+  - fu_043: Ann, Castleford Carpets — [IMAP clean / reply found — CANCELLED]
+  - fu_044: The Old Court Solicitors — [IMAP clean / reply found — CANCELLED]
+  - fu_045: Tony, Scarborough Roofing Specialists — [IMAP clean / reply found — CANCELLED]
+
+[2026-05-11] IMAP sweep — 37-day gap. Results: [log outcomes]
+```
+
+---
+
+## TOMORROW — TUESDAY 2026-05-12 — BATCH 5 RYEDALE SEND DAY
 
 | Time | Action |
 |---|---|
 | 07:00-07:30 | IMAP sweep — full cohort (pre-send precondition) |
-| 07:30-09:00 | BRAIN personalisation run — assign signals, generate per-lead copy, write daily_email_plan.json |
-| 09:00-10:30 | HANDS sends: 12-18 emails, 10-minute stagger |
-| 10:30-11:00 | CHANGELOG — all Tuesday sends logged same day (mandatory) |
-| Evening | BRAIN Day-3 copy run — per-lead Day-3 bump copy + LinkedIn queries for Friday sends |
+| 07:30-09:00 | BRAIN personalisation run — per-lead copy, signal assignment, daily_email_plan.json |
+| 09:00-10:30 | HANDS sends — 12-18 emails, 10-minute stagger |
+| 10:30-11:00 | CHANGELOG — all sends logged same session |
+| Evening | BRAIN Day-3 copy run — per-lead Day-3 bump copy + Batch 5 LinkedIn queries |
 
 **Expected volume:** 12-18 initial sends  
 **Expected INTERESTED replies:** 2-3 (15% SSL-PAS rate)  
@@ -92,16 +150,16 @@ HANDS must log this in CHANGELOG.md Monday. Also update database (lead status) a
 
 ---
 
-## WINNING PLAYBOOK — CONFIRMED, UNCHANGED
+## WINNING PLAYBOOK — UNCHANGED
 
 These patterns produced 100% of INTERESTED leads. Non-negotiable for Batch 5.
 
 1. **SSL → PAS → first-name subject → town name → specific URL** — 3/3 INTERESTED
-2. **Tuesday AM send** — all 3 INTERESTED replies arrived after Tuesday AM sends
-3. **Day-7 genuinely different pain point** — not a reframe. Tom's conversion came from a new angle.
-4. **One pain point per email** — single clear signal; listing multiple kills response
+2. **Tuesday AM send** — all 3 INTERESTED replies arrived on the day following Tuesday AM sends
+3. **Day-7 genuinely different pain point** — not a reframe. Tom's conversion came from Day-7 new angle.
+4. **One pain point per email** — single signal only. Listing multiple issues kills response.
 5. **Town name in subject AND body** — local credibility confirmed by recipients
-6. **No question marks in subject** — statement of fact outperforms question hook
+6. **No question marks in subject** — statement of fact outperforms question hook for trades cold email
 7. **Chrome's exact wording** — `'Not Secure'` builds verifiable, testable credibility
 
 ---
@@ -110,46 +168,26 @@ These patterns produced 100% of INTERESTED leads. Non-negotiable for Batch 5.
 
 | Date | Day | Action | Type |
 |---|---|---|---|
-| Sat 2026-05-09 | — | BLOCKED | Weekend |
-| Sun 2026-05-10 | — | BRAIN: state management + archive closure | TODAY — no sends |
-| **Mon 2026-05-11** | **42** | **IMAP sweep. fu_041-045. CHANGELOG. Archive leads 53/54.** | **Cleanup day** |
-| **Tue 2026-05-12** | **43** | **BRAIN: Batch 5 personalisation run. HANDS: initial sends 09:00-10:30. CHANGELOG.** | **SEND DAY** |
-| Tue 2026-05-12 eve | 43 | BRAIN: Day-3 email copy + LinkedIn queries for Batch 5 leads | After sends |
-| Wed 2026-05-13 | 44 | Fallback: Day-3 BRAIN run if not done Tuesday evening | Optional |
-| **Fri 2026-05-15** | **45** | **HANDS: Batch 5 Day-3 bump emails + LinkedIn connection requests (09:00-10:30)** | **Day-3** |
-| Mon 2026-05-18 | — | LinkedIn fallback if Friday not done | Day-6 |
-| **Tue 2026-05-19** | — | **Batch 5 Day-7 new angle sends. LinkedIn HARD DEADLINE — close channel if not done.** | **Day-7** |
-| Tue 2026-05-26 | — | Batch 5 Day-14 breakup sends | Day-14 |
+| **Mon 2026-05-11** | **44** | **IMAP sweep. fu_041-045 sends. CHANGELOG. Archive 53/54.** | **TODAY** |
+| **Tue 2026-05-12** | **45** | **BRAIN: Batch 5 personalisation. HANDS: initial sends 09:00-10:30. CHANGELOG.** | **SEND DAY** |
+| Tue 2026-05-12 eve | 45 | BRAIN: Day-3 email copy + LinkedIn queries for Batch 5 | After sends |
+| Wed 2026-05-13 | 46 | Fallback: Day-3 BRAIN run if not done Tuesday evening | Optional |
+| **Fri 2026-05-15** | **48** | **HANDS: Batch 5 Day-3 bump emails + LinkedIn connection requests (09:00-10:30)** | **Day-3** |
+| Mon 2026-05-18 | 51 | LinkedIn fallback if Friday not executed | Day-6 |
+| **Tue 2026-05-19** | **52** | **Batch 5 Day-7 new angle sends. LinkedIn HARD DEADLINE — close channel if not done.** | **Day-7** |
+| Tue 2026-05-26 | 59 | Batch 5 Day-14 breakup sends | Day-14 |
+| Weekly review | After 2026-05-12 data | active_strategy.md review — first Batch 5 week results | Strategy |
 
 ---
 
-## ACTIVE STRATEGY STATUS
+## BATCH 5 RYEDALE — COPY BRIEF (TOMORROW)
 
-**active_strategy.md was valid until 2026-05-10 (today). Validity extended to 2026-05-17.**
+**Target towns:** Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent  
+**Signal allocation:** SSL → PAS (60%), mobile → PAS (20%), no-website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5% test)  
+**Subject line pattern:** `[First name] — [town] [trade] website flagged 'Not Secure'`  
+**BRAIN personalises per lead. HANDS does NOT use templates directly.**
 
-Strategy is unchanged — all signals, frameworks, timing rules, and playbook patterns remain correct. No new data has emerged to require revision. The only update is the validity extension.
-
-Full weekly review after Batch 5 first-week results (Tuesday 2026-05-12 evening or Wednesday 2026-05-13 morning).
-
----
-
-## BATCH 5 RYEDALE — SEND DAY BRIEF
-
-**Confirmed: Tuesday 2026-05-12, 09:00-10:30**
-
-**Signal allocation:**
-- SSL (HTTP site): PAS — 60% of sends
-- Mobile failure: PAS — 20% of sends
-- No website (4★+ 20+ reviews): BAB — 15% of sends
-- High review + poor rank (4.5★+ 100+ reviews): AIDA — 5% of sends test
-
-**Subject line rule:** `[First name] — [town] [trade] website flagged 'Not Secure'`
-
-**BRAIN personalises each lead individually.** HANDS does NOT use templates directly.
-
-**Expected volume:** 12-18 sends  
-**Expected INTERESTED replies:** 2-3 leads  
-**Expected reply window:** Wed 2026-05-13 to Fri 2026-05-15
+If Ryedale data arrives today (Monday): BRAIN pre-generates all per-lead copy now and updates daily_email_plan.json. HANDS still sends Tuesday 09:00 — pre-generation does not move the send window.
 
 ---
 
@@ -163,53 +201,27 @@ Full weekly review after Batch 5 first-week results (Tuesday 2026-05-12 evening 
 | LinkedIn window opens | Friday 2026-05-15 (Day 3) |
 | **LinkedIn HARD DEADLINE** | **Tuesday 2026-05-19 (Day 7)** |
 | If not done by Day 7 | Close LinkedIn channel for those leads immediately |
+| linkedin_profiles.json | MUST be written same session as LinkedIn execution |
 
-**Lesson from warm pipeline:** 43 sessions elapsed without LinkedIn execution. Cost: £800-1,175. This does not happen in Batch 5.
-
----
-
-## FU_041-045 — FINAL STATUS
-
-These are Day-14 breakup emails for leads 30, 31, 32, 58, 59. Due 2026-04-23. Now 17 days overdue.
-
-**Monday is the final acceptable window.** Send order: fu_041 → 042 → 043 → 044 → 045, 10 minutes apart, after IMAP clean per lead.
-
-After sending: all five sequences complete. Leads 30/31/32/58/59 → sequence_complete status.
+**Lesson from warm pipeline:** 44 sessions elapsed without LinkedIn execution. Cost: £800-1,175. This does not happen in Batch 5.
 
 ---
 
-## BLOCKED LEADS — FINAL DECISION
+## WINNING ANALYTICS — WHAT THE DATA SAYS
 
-| Lead | Business | Action |
+| Pattern | Performance | Status |
 |---|---|---|
-| 49 | East Riding Builders Ltd | ARCHIVED — LOST_UNRESOLVED (Day 40). Log CHANGELOG. |
-| 51 | Driffield Garden Centre | ARCHIVED — LOST_UNRESOLVED (Day 40). Log CHANGELOG. |
-| 53 | Bridlington Bay Lettings | **Archive Monday 2026-05-11 if not actioned Friday.** No further deferrals. |
-| 54 | The Wolds Inn | **Archive Monday 2026-05-11 if not actioned Friday.** No further deferrals. |
-
----
-
-## CHANGELOG — WHAT NEEDS LOGGING (MONDAY)
-
-43 days since last entry. HANDS must log Monday:
-
-- Warm pipeline permanently closed — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. LinkedIn never executed across 43 sessions. Value written off: £800-1,175. IMAP override closed 2026-05-08 EOD.
-- fu_041-045 send outcomes (Monday)
-- Archive of leads 49, 51 as LOST_UNRESOLVED (Day 40)
-- Archive of leads 53, 54 as LOST_UNRESOLVED (Monday)
-- Batch 5 Ryedale: data arrival date, send outcomes Tuesday (log same day)
-- Any IMAP findings from Monday sweep
-
----
-
-## WEEKEND UTILITY NOTE
-
-If Ryedale scrape data arrives Sunday 2026-05-10 or Monday morning (before HANDS session begins): BRAIN can pre-generate all Batch 5 per-lead personalised copy and update `daily_email_plan.json` in advance. This allows HANDS to execute more quickly on Tuesday morning.
-
-**HANDS still does NOT send until Tuesday 09:00. Pre-generation does not change the send window.**
+| SSL-PAS with first-name subject | 3/3 INTERESTED (campaign-best) | Non-negotiable for Batch 5 |
+| Tuesday AM send window | All 3 INTERESTED replies followed Tuesday sends | Confirmed — hard rule |
+| Day-7 new angle (not reframe) | 1 conversion (Tom) from fresh pain point | Required — BRAIN generates per lead |
+| Town name in subject | All INTERESTED leads referenced local angle in replies | Non-negotiable |
+| One pain point per email | 100% of replies engaged with the specific signal used | Non-negotiable |
+| LinkedIn (warm pipeline) | 0 connections sent — £800-1,175 written off | HARD DEADLINE: Day 7 enforced |
+| Generic signal | 0% reply rate | DO NOT USE |
 
 ---
 
 *Strategy maintained by OUTLOCAL BRAIN layer.*  
-*Day 43 — Sunday 2026-05-10. Weekend bridge.*  
-*Next major action: Monday 2026-05-11 — HANDS cleanup. Tuesday 2026-05-12 — Batch 5 Ryedale send day.*
+*Day 44 — Monday 2026-05-11. Cleanup and preparation day.*  
+*Tomorrow: Batch 5 Ryedale send day — 09:00-10:30.*  
+*active_strategy.md valid to 2026-05-17. Next full review: after Batch 5 first-week data.*
