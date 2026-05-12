@@ -1,79 +1,44 @@
 {
-  "generated_at": "2026-05-10T08:00:00Z",
+  "generated_at": "2026-05-12T18:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-10",
-  "day_number": 43,
-  "note": "Day 43 (Sunday 2026-05-10 — WEEKEND BRIDGE). Zero active connection notes. Weekend hard-blocked for LinkedIn execution. Warm pipeline (leads 1/3/22) archive unconditionally final — IMAP override window closed 2026-05-08 EOD (2 days ago). Post-breakup contingency notes (leads 52/55/50/56) remain valid if any pending connection request is accepted. Batch 5 notes will be generated Tuesday 2026-05-12 evening after initial sends confirm.",
+  "run_date": "2026-05-12",
+  "day_number": 45,
+  "run_type": "TUESDAY_EVENING — Day 3 note preparation for Batch 5",
+  "note": "Day 45 (Tuesday 2026-05-12 — EVENING). Zero active connection notes — no linkedin_profiles.json received in 45 campaign sessions. Post-breakup contingency remains active (leads 52/55/50/56). Batch 5 note templates are ready by sector — BRAIN will generate per-lead personalised notes once HANDS returns linkedin_profiles.json from Friday 2026-05-15 execution. Hard deadline for all Batch 5 notes: Tuesday 2026-05-19 (Day 7).",
 
   "strategy": {
     "character_limit": 200,
-    "char_limit_note": "200 characters is an absolute hard limit on LinkedIn free accounts. Count every character including spaces, punctuation, and name at the start. Test in a notepad before sending.",
-    "tone": "Slightly awkward genuine observation — the kind a real person makes when they noticed something but are not sure how to say it perfectly. Stands out from polished AI slop by being specific and slightly imperfect.",
+    "char_limit_note": "200 characters is an absolute hard limit on LinkedIn free accounts. Count every character including spaces and punctuation. Test in a plain-text editor before sending.",
+    "tone": "Slightly awkward genuine observation — specific and imperfect. Stands out from polished AI slop by being concrete and mildly unpolished.",
     "anti_patterns": [
       "Do not use 'I came across your profile'",
-      "Do not use 'I was impressed by'",
-      "Do not use 'I noticed your impressive work'",
-      "Do not mention AI or automation",
+      "Do not use 'I was impressed by' or 'I love what you do'",
+      "Do not mention AI, automation, digital marketing, web design, or SEO explicitly",
       "Do not pitch in the note — curiosity and connection only",
       "Do not use exclamation marks",
       "Do not use 'reach out', 'touch base', or 'synergies'",
-      "Do not mention 'digital marketing', 'web design', 'SEO', or 'website' explicitly",
-      "Do not reference the email outreach — treat as a cold connection from someone who noticed their business",
-      "Do not use generic 'I love what you do' phrases",
-      "Do not start with 'I' — start with the person's name or business"
+      "Do not reference the email sequence, the audit, or the SSL/mobile finding",
+      "Do not start with 'I' — start with their name or the business name"
     ],
     "what_works": [
-      "Start with their name — feels personal, cuts through",
-      "Name the specific business — shows you looked, not just searched",
+      "Start with their name — personal, cuts through noise",
+      "Name the specific business — shows real attention, not a mass blast",
       "One specific observation — not vague, not flattering, just real",
-      "End with low-pressure framing ('in case it's useful', 'connecting in case relevant')",
-      "Slightly awkward construction is fine — it reads human"
+      "End with low-pressure framing: 'in case it's useful', 'connecting in case relevant'",
+      "Slightly awkward construction is fine — reads human, not bot"
     ],
-    "priority_upgrade_rule": "HANDS: always check LinkedIn profile for posts from the last 60 days BEFORE sending any note. If post found: write bespoke post_reference note (3-4x higher acceptance rate). If no recent posts: use pre-generated generic note.",
-    "batch_5_note_rule": "Batch 5 notes must NOT reference the email sequence, campaign, or any specific website audit finding. Treat as cold LinkedIn connection from someone who noticed their business through general research.",
-    "post_reference_priority_for_batch_5": "Solicitors > Accountants > Hotels/B&Bs > Restaurants > Care providers > Trades"
+    "post_reference_priority": "HANDS: always check profile for posts from the last 60 days BEFORE sending any note. Post-reference note has 3-4x higher acceptance rate than generic.",
+    "sector_post_reference_priority": "Solicitors > Accountants > Estate agents > Hotels/B&Bs > Restaurants > Retail > Trades",
+    "batch_5_rule": "Do NOT reference the email sequence, website audit, or any specific technical finding (SSL, mobile, keyword gap) in any LinkedIn note. Treat as a completely cold connection from someone who noticed the business through general research."
   },
 
   "active_notes": [],
   "active_notes_count": 0,
-  "active_notes_note": "Zero active connection notes. Weekend hard-blocked. Warm pipeline (leads 1/3/22) archive unconditionally final. Batch 5 notes generate Tuesday 2026-05-12 evening after initial send confirmation.",
-
-  "batch_5_note_templates": {
-    "status": "STANDBY — activates on Batch 5 initial send confirmation (Tuesday 2026-05-12)",
-    "trigger": "BRAIN generates personalised notes Tuesday 2026-05-12 evening, after Ryedale sends confirmed. One note per lead where LinkedIn profile is findable.",
-    "note_generation_timing": "Tuesday 2026-05-12 evening — same session as initial sends. Latest: Day 3 BRAIN run (Friday 2026-05-15 morning if needed).",
-    "hands_execution_window": "Friday 2026-05-15 (preferred) or Monday 2026-05-18 (fallback). Hard deadline: Tuesday 2026-05-19 (Day 7). No tolerance after warm pipeline failure.",
-    "7_day_rule": "LinkedIn notes for Batch 5 MUST be sent within 7 days of initial email send. Archive lead immediately if deadline missed. No extensions.",
-
-    "ssl_pas_leads": {
-      "sector_note": "Generate note referencing the specific business, not the SSL issue. Do not mention 'Not Secure', SSL, HTTPS, or website in the note.",
-      "generic_template": "[First name] — [Business name] came up when I was looking at [sector] businesses in [town]. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
-      "post_reference_template": "[First name] — saw your post about [specific topic]. [Business name] caught my attention looking at [sector] businesses in [town]. Noticed something about the online presence. Connecting in case it's relevant.",
-      "char_count_generic": "~150-170 chars (varies by name/business/town length). Always count before sending.",
-      "char_count_post_ref": "~170-195 chars depending on post topic length. Tight — count carefully."
-    },
-    "mobile_pas_leads": {
-      "generic_template": "[First name] — [Business name] came up when I was looking at [sector] in [town]. Noticed something about how the site works on phones — worth a quick mention. Connecting in case useful.",
-      "post_reference_template": "[First name] — saw your post about [specific topic]. [Business name] caught my attention looking at [sector] businesses in [town]. Something about the online presence caught my eye. Connecting in case relevant.",
-      "char_count_note": "Adjust for name/business name length — 200 char hard limit. Always count."
-    },
-    "no_website_bab_leads": {
-      "note": "These leads have no website — note focuses on local presence and being easy to find online.",
-      "generic_template": "[First name] — [Business name] came up when I was looking at [sector] businesses around [town]. Something about local online visibility caught my attention. Connecting in case it's worth a conversation.",
-      "post_reference_template": "[First name] — saw your post about [specific topic]. [Business name] came up looking at [sector] businesses around [town]. Something about local visibility caught my attention. Connecting in case useful.",
-      "char_count_note": "Slightly shorter generic — 'local online visibility' phrasing uses characters efficiently. Count carefully."
-    },
-    "high_value_aida_leads": {
-      "qualification": "4.5★+ 100+ reviews — test only (5% of Batch 5)",
-      "generic_template": "[First name] — [Business name] has a strong reputation around [town]. Noticed something about how easy you are to find online — worth a quick mention. Connecting in case it's useful.",
-      "post_reference_template": "[First name] — saw your post about [specific topic]. [Business name] has a strong local reputation. Something about the online visibility caught my attention. Connecting in case relevant.",
-      "char_count_note": "Keep well under 200 chars — these leads have high-quality profiles with more scrutiny."
-    }
-  },
+  "active_notes_note": "Zero active notes. No linkedin_profiles.json has been received in 45 campaign sessions. Notes will be generated per-lead once HANDS returns profile data from Friday 2026-05-15 execution.",
 
   "post_breakup_contingency": {
-    "note": "These leads had connection requests that MAY have been sent (unconfirmed — zero linkedin_profiles.json files received across 43 campaign days). If any pending request is accepted: use the if_accepted_message only. Do NOT reference the breakup email or email sequence. Do NOT pitch.",
-    "status": "STILL ACTIVE — if any pending connection request is accepted, use message below. Valid until request expires or connection is accepted (LinkedIn: ~6 months from send date).",
+    "status": "ACTIVE — if any pending connection request (leads 52/55/50/56) is accepted: use if_accepted_message only. Do NOT pitch. Do NOT reference email sequence.",
+    "note": "These connection requests may have been sent previously (unconfirmed — no linkedin_profiles.json ever received). If a request is accepted at any point: send the if_accepted_message. LinkedIn request validity is approximately 6 months from send date.",
     "pending_leads": [
       {
         "lead_id": 52,
@@ -118,66 +83,114 @@
     ]
   },
 
+  "batch_5_note_templates": {
+    "status": "STANDBY — activates once HANDS returns linkedin_profiles.json from Friday 2026-05-15 execution",
+    "trigger": "HANDS finds profile → writes to linkedin_profiles.json → BRAIN generates per-lead personalised note → HANDS sends connection request with note",
+    "execution_window": "Friday 2026-05-15 (Day 3, preferred) or Monday 2026-05-18 (Day 6, fallback)",
+    "hard_deadline": "Tuesday 2026-05-19 (Day 7). No extensions. Archive trigger fires immediately if missed.",
+    "note_generation_by_brain": "BRAIN generates actual note text once profile data arrives — sector, post summary, name, business. HANDS does not write notes directly.",
+
+    "templates_by_signal": {
+      "ssl_pas": {
+        "post_reference": "[First name] — saw your post about [specific topic]. [Business name] caught my attention looking at [sector] businesses in [town]. Noticed something about the online presence. Connecting in case it's relevant.",
+        "generic": "[First name] — [Business name] came up when I was looking at [sector] businesses in [town]. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
+        "char_guidance": "Generic: ~155-170 chars depending on name/business/town length. Post-reference: ~170-195 chars — count carefully."
+      },
+      "mobile_pas": {
+        "post_reference": "[First name] — saw your post about [specific topic]. [Business name] caught my attention looking at [sector] in [town]. Something about how the site works on phones caught my eye. Connecting in case relevant.",
+        "generic": "[First name] — [Business name] came up when I was looking at [sector] in [town]. Noticed something about how the site works on phones — worth a quick mention. Connecting in case useful.",
+        "char_guidance": "Mobile phrasing runs slightly longer — always count. 'On phones' → 'on mobile' saves 3 chars if needed."
+      },
+      "no_website_bab": {
+        "post_reference": "[First name] — saw your post about [specific topic]. [Business name] came up looking at [sector] businesses around [town]. Something about local online visibility caught my attention. Connecting in case useful.",
+        "generic": "[First name] — [Business name] came up when I was looking at [sector] businesses around [town]. Something about local online visibility caught my attention. Connecting in case it's worth a conversation.",
+        "char_guidance": "No-website notes reference 'local online visibility' rather than 'online presence' — more accurate framing for a business with no site."
+      },
+      "aida_keyword_gap": {
+        "post_reference": "[First name] — saw your post about [specific topic]. [Business name] has a strong reputation around [town]. Something about how easy you are to find online caught my attention. Connecting in case it's useful.",
+        "generic": "[First name] — [Business name] has a strong reputation around [town]. Noticed something about how easy you are to find online — worth a quick mention. Connecting in case it's useful.",
+        "char_guidance": "High-review leads scrutinise requests more carefully. Keep well under 200 chars — aim for 160-175.",
+        "qualification": "4.5 stars+ AND 100+ reviews only — test batch (5% of Batch 5)"
+      }
+    },
+
+    "sector_specific_guidance": {
+      "solicitors": {
+        "post_likelihood": "HIGH — solicitors post about legal updates, case law, local events, charity work",
+        "example_post_reference": "[First name] — saw your post about [legal topic / local event]. [Firm name] caught my attention looking at professional services in Malton. Noticed something about the firm's online presence. Connecting in case relevant.",
+        "char_guidance": "Solicitor firm names tend to be long — count carefully. Trim '[Firm name] caught my attention' → '[Firm name] stood out' to save 4 chars if needed."
+      },
+      "estate_agents": {
+        "post_likelihood": "HIGH — estate agents post property market updates, area guides, sold listings",
+        "example_post_reference": "[First name] — saw your post about [market update / local area]. [Agency name] came up when I was looking at estate agents in [town]. Noticed something about the online presence. Connecting in case useful.",
+        "char_guidance": "Standard length — usually fits comfortably within 200 chars."
+      },
+      "hotels_bbs": {
+        "post_likelihood": "MEDIUM-HIGH — hospitality owners post events, seasonal offers, local area highlights",
+        "example_post_reference": "[First name] — saw your post about [event / local highlight]. [Business name] caught my attention looking at accommodation in [town]. Something about the online presence is worth mentioning. Connecting in case relevant.",
+        "char_guidance": "Hospitality business names vary widely in length — count carefully."
+      },
+      "restaurants": {
+        "post_likelihood": "MEDIUM-HIGH — fine dining owners post menus, seasonal specials, supplier stories",
+        "example_post_reference": "[First name] — saw your post about [menu / supplier / event]. [Restaurant name] came up looking at restaurants in [town]. Noticed something about the online presence. Connecting in case it's useful.",
+        "char_guidance": "Fine dining names in Helmsley tend to be short — usually fits well."
+      },
+      "trades": {
+        "post_likelihood": "LOW",
+        "note": "Use generic note only. Do not attempt post-reference for trades. Skip LinkedIn entirely if only first name known.",
+        "generic_fallback": "[First name] — [Business name] came up when I was looking at [trade] businesses in [town]. Noticed something about the online presence worth a quick mention. Connecting in case it's useful."
+      }
+    },
+
+    "char_count_troubleshooting": {
+      "if_too_long": [
+        "Shorten town name if possible ('North Yorkshire' → omit county entirely)",
+        "'caught my attention looking at' → 'came up when I looked at' (saves ~5 chars)",
+        "'worth a quick mention' → 'worth mentioning' (saves 6 chars)",
+        "'Connecting in case it's useful' → 'Connecting in case useful' (saves 3 chars)",
+        "Remove 'Connecting' opener entirely: 'Happy to share if useful' (saves more but loses the framing)"
+      ]
+    }
+  },
+
   "archived_notes": [
     {
-      "lead_id": 3,
-      "business_name": "Westfield Hair & Beauty",
-      "owner_name": "Claire",
-      "town": "Leeds",
-      "county": "West Yorkshire",
+      "lead_id": 1,
+      "owner_name": "Tom",
+      "business_name": "Ripon Road Carpentry",
+      "town": "Ripon",
       "archive_date": "2026-05-07",
-      "archive_final_date": "2026-05-08",
-      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 43 campaign sessions. Archive trigger fired 2026-05-06 (08:20 deadline missed). Formally archived 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
-      "note_type": "generic",
+      "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
+      "note_prepared": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
+      "note_sent": false,
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 45 campaign sessions.",
+      "pipeline_value_written_off": "£100-150"
+    },
+    {
+      "lead_id": 3,
+      "owner_name": "Claire",
+      "business_name": "Westfield Hair & Beauty",
+      "town": "Leeds",
+      "archive_date": "2026-05-07",
+      "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn across 43 sessions.",
-      "email_channel_closed": "2026-04-08",
-      "linkedin_channel_closed": "2026-05-07",
-      "reapproach_date_email": "2026-10-26",
-      "reapproach_date_linkedin": "2026-10-26",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 45 campaign sessions.",
       "pipeline_value_written_off": "£350",
-      "brain_classification": "strongest_warm_pipeline_lead — booked a call 2026-04-07, confirmed booking-gap pain"
+      "brain_classification": "Strongest warm pipeline lead — booked a call, confirmed booking-gap pain"
     },
     {
       "lead_id": 22,
-      "business_name": "Pennine Print & Design",
       "owner_name": "Rob",
+      "business_name": "Pennine Print & Design",
       "town": "Sowerby Bridge",
-      "county": "West Yorkshire",
       "archive_date": "2026-05-07",
-      "archive_final_date": "2026-05-08",
-      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 43 campaign sessions. Archive trigger fired 2026-05-06. Formally archived 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
-      "note_type": "generic",
+      "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Rob — Pennine Print & Design stood out when I was looking at print businesses in Sowerby Bridge. Noticed something about the website worth a quick mention. Connecting in case it's relevant.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn across 43 sessions.",
-      "email_channel_closed": "2026-04-08",
-      "linkedin_channel_closed": "2026-05-07",
-      "reapproach_date_email": "2026-10-26",
-      "reapproach_date_linkedin": "2026-10-26",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 45 campaign sessions.",
       "pipeline_value_written_off": "£550-675",
-      "brain_classification": "highest_revenue_potential — upsell signal ('sort the whole thing in one go')"
-    },
-    {
-      "lead_id": 1,
-      "business_name": "Ripon Road Carpentry",
-      "owner_name": "Tom",
-      "town": "Ripon",
-      "county": "North Yorkshire",
-      "archive_date": "2026-05-07",
-      "archive_final_date": "2026-05-08",
-      "archive_reason": "LOST_NO_RESPONSE — LinkedIn never executed across 43 campaign sessions. Archive trigger fired 2026-05-06. Formally archived 2026-05-07. IMAP override window expired 2026-05-08 EOD. Archive unconditionally final.",
-      "note_type": "generic",
-      "note_prepared": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
-      "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn across 43 sessions.",
-      "email_channel_closed": "2026-04-08",
-      "linkedin_channel_closed": "2026-05-07",
-      "reapproach_date_email": "2026-10-26",
-      "reapproach_date_linkedin": "2026-10-26",
-      "pipeline_value_written_off": "£100-150",
-      "brain_classification": "genuine_intent — acknowledged quote-form pain unprompted, asked for pricing"
+      "brain_classification": "Highest revenue potential — upsell signal ('sort the whole thing in one go')"
     },
     {
       "lead_id": 52,
@@ -185,7 +198,7 @@
       "owner_name": "Linda Walsh",
       "town": "Holderness",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_046 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed."
+      "archive_reason": "Breakup email fu_046 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed. Post-breakup contingency active."
     },
     {
       "lead_id": 55,
@@ -193,7 +206,7 @@
       "owner_name": "Craig Lawson",
       "town": "Beverley",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_047 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed."
+      "archive_reason": "Breakup email fu_047 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed. Post-breakup contingency active."
     },
     {
       "lead_id": 50,
@@ -201,7 +214,7 @@
       "owner_name": "Pete",
       "town": "Bridlington",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_048 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed."
+      "archive_reason": "Breakup email fu_048 assumed sent 2026-04-24. Email sequence complete. LinkedIn window closed. Post-breakup contingency active."
     },
     {
       "lead_id": 56,
@@ -209,7 +222,7 @@
       "owner_name": "Neil",
       "town": "Beverley",
       "archive_date": "2026-04-24",
-      "archive_reason": "Breakup email fu_049 assumed sent 2026-04-24. FINAL SEND OF CAMPAIGN COHORT. Email sequence complete. LinkedIn window closed."
+      "archive_reason": "Breakup email fu_049 assumed sent 2026-04-24. FINAL SEND OF CAMPAIGN COHORT. Email sequence complete. LinkedIn window closed. Post-breakup contingency active."
     }
   ],
   "archived_notes_count": 7,
@@ -217,29 +230,26 @@
   "campaign_linkedin_assessment": {
     "total_confirmed_notes_sent": 0,
     "total_confirmed_connections_made": 0,
-    "brain_runs_with_active_notes": 14,
+    "brain_runs_with_active_notes": 15,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 43,
-    "warm_pipeline_chapter": "PERMANENTLY_CLOSED — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. IMAP override window expired 2026-05-08 EOD. Unconditionally final.",
-    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 43 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
-    "key_learning": "HANDS must execute LinkedIn within a single sitting immediately on the Day 3 window — estimated 10-12 minutes per lead. This was never done in 43 sessions. For Batch 5: HANDS completes LinkedIn by Friday 2026-05-15. No exceptions.",
-    "batch_5_rule": "LinkedIn for Batch 5 MUST execute within 7 days. Day 3 = Friday 2026-05-15. Hard deadline = Tuesday 2026-05-19. If missed: archive lead immediately. No 43-session tolerance.",
-    "pipeline_value_written_off_total": "£800-1,175 (Claire £350 + Rob £550-675 + Tom £100-150)"
+    "consecutive_runs_without_profiles": 45,
+    "warm_pipeline_chapter": "PERMANENTLY CLOSED — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. Override window expired 2026-05-08 EOD. Unconditionally final.",
+    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 45 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
+    "batch_5_rule": "HANDS executes LinkedIn by Friday 2026-05-15. Hard deadline Tuesday 2026-05-19. Archive trigger fires immediately if missed. No 45-session tolerance."
   },
 
   "summary": {
     "total_active_notes": 0,
     "active_note_lead_ids": [],
-    "batch_5_notes_status": "STANDBY — generates Tuesday 2026-05-12 evening after initial send confirmation",
-    "batch_5_linkedin_execution_window": "Friday 2026-05-15 (Day 3, preferred) or Monday 2026-05-18 (fallback). Hard deadline: Tuesday 2026-05-19 (Day 7).",
-    "total_archived_notes": 7,
-    "archived_note_lead_ids": [3, 22, 1, 52, 55, 50, 56],
     "post_breakup_contingency_active": true,
     "post_breakup_lead_ids": [52, 55, 50, 56],
-    "warm_pipeline_status": "UNCONDITIONALLY_FINAL — leads 1/3/22 archive permanent. IMAP override window closed 2026-05-08 EOD. No further override attempts.",
-    "consecutive_runs_without_profiles": 43,
-    "campaign_linkedin_contacts_confirmed": 0,
-    "next_brain_run": "Tuesday 2026-05-12 EVENING — after Batch 5 initial sends confirmed. Generates per-lead personalised notes from Ryedale profile data.",
-    "day_43_run_note": "Sunday 2026-05-10 — WEEKEND BRIDGE. Zero active notes. Weekend hard-blocked. Warm pipeline archive unconditionally final. All LinkedIn note intelligence in standby until Batch 5 Ryedale sends fire Tuesday 2026-05-12. 7-day rule applies — no deferrals, no extensions."
+    "batch_5_notes_status": "STANDBY — generates from real profile data after HANDS executes searches Friday 2026-05-15",
+    "batch_5_linkedin_execution_window": "Friday 2026-05-15 (Day 3, preferred) or Monday 2026-05-18 (Day 6, fallback). Hard deadline: Tuesday 2026-05-19 (Day 7).",
+    "total_archived_notes": 7,
+    "archived_note_lead_ids": [1, 3, 22, 52, 55, 50, 56],
+    "campaign_notes_confirmed_sent": 0,
+    "consecutive_runs_without_profiles": 45,
+    "next_brain_run": "Friday 2026-05-15 morning — after HANDS executes Day-3 searches and returns linkedin_profiles.json",
+    "day_45_run_note": "Tuesday 2026-05-12 evening. Zero active notes. Post-breakup contingency active. Batch 5 templates ready by sector and signal. HANDS executes Day-3 (Friday 2026-05-15). Hard deadline: Tuesday 2026-05-19."
   }
 }

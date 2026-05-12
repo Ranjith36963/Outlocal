@@ -1,260 +1,218 @@
 {
-  "generated_at": "2026-05-10T08:00:00Z",
+  "generated_at": "2026-05-12T18:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-10",
-  "day_number": 43,
-  "note": "Day 43 (Sunday 2026-05-10 — WEEKEND BRIDGE). Zero active LinkedIn search queries. Weekend is hard-blocked for all LinkedIn execution. Warm pipeline (leads 1/3/22) archive is UNCONDITIONALLY FINAL — IMAP override window closed 2026-05-08 EOD (now 2 days confirmed closed). fu leads (30/31/32/58/59) at breakup stage — LinkedIn Day 3-6 window expired weeks ago, email-only breakups carry to Monday 2026-05-11. Batch 5 Ryedale: no initial sends yet, confirmed send day Tuesday 2026-05-12 09:00-10:30. LinkedIn Day 3 window: Friday 2026-05-15. Next BRAIN LinkedIn run: Tuesday 2026-05-12 evening after Batch 5 sends confirm.",
-
-  "orchestrator_status": {
-    "file": "src/outlocal/linkedin/orchestrator.py",
-    "exists": false,
-    "note": "All LinkedIn execution is manual (HANDS). BRAIN generates search plans and connection notes only. HANDS executes Google searches, opens profiles, checks posts, sends connection requests, and writes linkedin_profiles.json."
-  },
+  "run_date": "2026-05-12",
+  "day_number": 45,
+  "run_type": "TUESDAY_EVENING — Batch 5 Day-0 send day. LinkedIn Day-3 query generation.",
+  "note": "Day 45 (Tuesday 2026-05-12 — EVENING). Batch 5 Ryedale initial sends assumed completed this morning (09:00-10:30). HANDS confirmation not received — Ryedale scrape data not present as a structured file in data/. Day-3 LinkedIn window opens Friday 2026-05-15. Hard deadline: Tuesday 2026-05-19 (Day 7). Zero legacy leads have an open LinkedIn window — all prior batches at sequence complete or archived. This file is ready to populate from the Batch 5 morning session send list.",
 
   "email_outreach_state": {
-    "checked_at": "2026-05-10T08:00:00Z",
-    "source_files": ["data/daily_signals.json", "data/daily_email_plan.json", "data/reply_classifications.json"],
-    "imap_gap_days": 36,
+    "checked_at": "2026-05-12T18:00:00Z",
+    "source_files": ["data/daily_signals.json", "data/daily_email_plan.json"],
+    "imap_gap_days": 38,
     "imap_last_confirmed_check": "2026-04-04",
-    "imap_status": "CRITICAL — 36-day gap. True inbox state unknown. HANDS MUST sweep Monday 2026-05-11 before any sends.",
 
-    "archive_final_status": {
-      "leads": [1, 3, 22],
-      "archive_status": "UNCONDITIONALLY_FINAL",
-      "reason": "Archive declared 2026-05-07 (Day 40). IMAP override window was 2026-05-08 — now 2 days closed. No further override attempts under any circumstances.",
-      "reapproach_date_email": "2026-10-26",
-      "reapproach_date_linkedin": "2026-10-26",
-      "pipeline_value_written_off": "£800-1,175"
+    "batch_5_assumed_sent_today": {
+      "date": "2026-05-12",
+      "window": "09:00-10:30",
+      "confirmation_status": "UNCONFIRMED — no updated data file received from HANDS after morning session",
+      "ryedale_data_in_files": false,
+      "expected_sends": "12-18 leads across Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent",
+      "note": "HANDS morning session assumed completed. HANDS must confirm send list so Day-3 query entries can be populated below."
     },
 
-    "linkedin_candidates_evaluated": [
-      {
-        "lead_id": 1,
-        "business_name": "Ripon Road Carpentry",
-        "owner_name": "Tom",
-        "town": "Ripon",
-        "days_since_last_email": "32+ (email channel closed 2026-04-08)",
-        "reply_status": "INTERESTED — replied 2026-04-04 (archived)",
-        "linkedin_candidate": false,
-        "reason": "UNCONDITIONALLY_FINAL_ARCHIVED — LinkedIn permanently closed. Reapproach 2026-10-26."
-      },
-      {
-        "lead_id": 3,
-        "business_name": "Westfield Hair & Beauty",
-        "owner_name": "Claire",
-        "town": "Leeds",
-        "days_since_last_email": "32+ (email channel closed 2026-04-08)",
-        "reply_status": "INTERESTED — replied 2026-04-04 (archived)",
-        "linkedin_candidate": false,
-        "reason": "UNCONDITIONALLY_FINAL_ARCHIVED — LinkedIn permanently closed. Reapproach 2026-10-26."
-      },
-      {
-        "lead_id": 22,
-        "business_name": "Pennine Print & Design",
-        "owner_name": "Rob",
-        "town": "Sowerby Bridge",
-        "days_since_last_email": "32+ (email channel closed 2026-04-08)",
-        "reply_status": "INTERESTED — replied 2026-04-04 (archived)",
-        "linkedin_candidate": false,
-        "reason": "UNCONDITIONALLY_FINAL_ARCHIVED — LinkedIn permanently closed. Reapproach 2026-10-26."
-      },
-      {
-        "lead_id": 30,
-        "business_name": "Halifax Window Cleaning",
-        "owner_name": "Steve",
-        "town": "Halifax",
-        "days_since_last_email": "17+ (Day-3 bump sent ~2026-04-23, breakup pending)",
-        "reply_status": "No reply confirmed (IMAP gap)",
-        "linkedin_candidate": false,
-        "reason": "BLOCKED — at Day-14 breakup stage. LinkedIn Day 3-6 window expired. Email-only. fu_041 carry to Monday 2026-05-11."
-      },
-      {
-        "lead_id": 31,
-        "business_name": "Pontefract Pharmacy",
-        "town": "Pontefract",
-        "days_since_last_email": "17+",
-        "reply_status": "No reply confirmed (IMAP gap)",
-        "linkedin_candidate": false,
-        "reason": "BLOCKED — at Day-14 breakup stage. LinkedIn window expired. fu_042 carry to Monday."
-      },
-      {
-        "lead_id": 32,
-        "business_name": "Castleford Carpets",
-        "owner_name": "Ann",
-        "town": "Castleford",
-        "days_since_last_email": "17+",
-        "reply_status": "No reply confirmed (IMAP gap)",
-        "linkedin_candidate": false,
-        "reason": "BLOCKED — at Day-14 breakup stage. LinkedIn window expired. fu_043 carry to Monday."
-      },
-      {
-        "lead_id": 58,
-        "business_name": "The Old Court Solicitors",
-        "town": "Scarborough",
-        "days_since_last_email": "17+",
-        "reply_status": "No reply confirmed (IMAP gap)",
-        "linkedin_candidate": false,
-        "reason": "BLOCKED — at Day-14 breakup stage. LinkedIn window expired. fu_044 carry to Monday."
-      },
-      {
-        "lead_id": 59,
-        "business_name": "Scarborough Roofing Specialists",
-        "owner_name": "Tony Shields",
-        "town": "Scarborough",
-        "days_since_last_email": "17+",
-        "reply_status": "No reply confirmed (IMAP gap)",
-        "linkedin_candidate": false,
-        "reason": "BLOCKED — at Day-14 breakup stage. LinkedIn window expired. fu_045 carry to Monday."
-      }
-    ],
+    "fu_041_045_assumed_sent_monday": {
+      "date": "2026-05-11",
+      "status": "ASSUMED_COMPLETE — no HANDS confirmation in 45 sessions",
+      "leads": [30, 31, 32, 58, 59],
+      "linkedin_implication": "Sequence complete for all 5. LinkedIn Day 3-6 window expired weeks ago. NOT LinkedIn candidates."
+    },
 
-    "total_active_linkedin_candidates_today": 0
+    "leads_3_plus_days_no_reply_with_open_linkedin_window": 0,
+    "assessment": "Zero legacy leads fall within the LinkedIn Day 3-14 window. All prior batches have completed sequences or expired windows. Batch 5 Ryedale is the only active pipeline — Day 3 opens Friday 2026-05-15."
   },
 
   "search_queries": [],
+  "search_queries_status": "PENDING_BATCH5_CONFIRMATION — empty until HANDS reports morning session send list. Populate from send list using sector/town templates below.",
 
-  "search_queries_note": "Zero active LinkedIn search queries today. Weekend hard-blocked. All warm pipeline candidates permanently archived. fu leads at breakup stage — LinkedIn window expired. No Batch 5 initial sends yet. Queries will be generated Tuesday 2026-05-12 evening after Batch 5 sends confirm.",
+  "batch_5_search_plan": {
+    "status": "READY_FOR_POPULATION",
+    "sends_assumed_date": "2026-05-12",
+    "day_3_execution": "Friday 2026-05-15 (preferred)",
+    "day_6_fallback": "Monday 2026-05-18",
+    "hard_deadline": "Tuesday 2026-05-19 (Day 7). Archive leads immediately if missed. No deferrals.",
+    "7_day_rule": "Non-negotiable after 44-session warm pipeline failure. HANDS executes Day-3 or Day-6 — never Day-44.",
 
-  "warm_pipeline_closure": {
-    "leads": [1, 3, 22],
-    "formal_archive_date": "2026-05-07",
-    "imap_override_expiry": "2026-05-08 EOD (confirmed 2 days ago — unconditionally final)",
-    "archive_now": "UNCONDITIONALLY_FINAL — no further override attempts, no recheck, no appeal",
-    "email_channel_closed_since": "2026-04-08",
-    "linkedin_channel": "PERMANENTLY_CLOSED — never activated. Closed formally 2026-05-07.",
-    "reapproach_date": "2026-10-26 (6-month cooling period)",
-    "lesson": "LinkedIn channel MUST be activated within 7-14 days of initial reply. 43-session delay = permanent LOST_NO_RESPONSE. This rule is non-negotiable for Batch 5."
-  },
+    "sector_priority": [
+      {"rank": 1, "sector": "solicitors", "town": "Malton", "linkedin_likelihood": "HIGH", "note": "One or two likely in Malton — prioritise first. Post-reference note 3-4x higher acceptance."},
+      {"rank": 2, "sector": "estate_agents", "town": "Malton / Helmsley", "linkedin_likelihood": "HIGH"},
+      {"rank": 3, "sector": "hotels_bbs", "town": "Helmsley / Pickering / Hovingham", "linkedin_likelihood": "MEDIUM-HIGH"},
+      {"rank": 4, "sector": "restaurants_fine_dining", "town": "Helmsley", "linkedin_likelihood": "MEDIUM-HIGH", "note": "Helmsley fine dining owners often post on LinkedIn"},
+      {"rank": 5, "sector": "boutique_retail", "town": "Helmsley / Malton", "linkedin_likelihood": "MEDIUM"},
+      {"rank": 6, "sector": "trades", "town": "all", "linkedin_likelihood": "LOW", "note": "Search only if no higher-priority leads in that town"}
+    ],
 
-  "batch_5_forward_plan": {
-    "status": "PENDING — no Batch 5 initial sends yet",
-    "ryedale_data_status": "Not received. 18 days overdue.",
-    "weekend": {
-      "status": "BLOCKED — hard rule. No sends or LinkedIn execution Saturday 2026-05-09 or Sunday 2026-05-10."
-    },
-    "tuesday_confirmed": {
-      "date": "2026-05-12",
-      "quality": "Strong — standard Tuesday AM premium window",
-      "send_window": "09:00-10:30",
-      "max_sends": "12-18 (Ryedale targets: Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent)",
-      "brain_personalisation_run": "Tuesday 2026-05-12 morning — BRAIN assigns signals, generates per-lead copy. HANDS sends same session.",
-      "brain_linkedin_run": "Tuesday 2026-05-12 evening — BRAIN generates Day 3 LinkedIn search queries + connection note templates per lead.",
-      "day3_linkedin_window": {
-        "calendar_day3": "Friday 2026-05-15",
-        "preferred": "Friday 2026-05-15 — HANDS executes LinkedIn searches and connection requests",
-        "fallback": "Monday 2026-05-18",
-        "day6": "Monday 2026-05-18",
-        "hard_deadline": "Tuesday 2026-05-19 (Day 7). No exceptions. No extensions. No tolerance after 43-session warm pipeline failure."
-      },
-      "day7_new_angle": "Tuesday 2026-05-19, 09:00-10:30",
-      "day14_breakup": "Tuesday 2026-05-26, 09:00-10:30"
-    },
-
-    "query_templates": {
-      "note": "Templates only. BRAIN populates with real names and businesses from Ryedale scrape data on Tuesday 2026-05-12 evening.",
-      "sector_priority_for_linkedin": {
-        "high_likelihood": ["solicitors", "accountants", "estate agents", "hotels", "B&Bs", "restaurants", "care providers"],
-        "low_likelihood": ["plumbers", "electricians", "roofers", "joiners", "builders", "decorators"],
-        "ryedale_expected_mix": "Malton/Pickering/Helmsley mix likely: estate agents (high LinkedIn), independent retailers (medium), hospitality (medium-high), trades (low)"
-      },
-      "high_linkedin_sector": {
+    "query_templates_by_town": {
+      "Malton": {
         "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
-        "fallback_1": "site:linkedin.com/in \"[Full Name]\" [sector] \"[town]\" \"North Yorkshire\"",
-        "fallback_2": "site:linkedin.com/in [sector] \"[town]\" \"Ryedale\" owner director manager",
-        "note": "Solicitors and accountants have highest LinkedIn presence. Prioritise post-reference notes for these sectors."
+        "fallback_1": "site:linkedin.com/in \"[Full Name]\" [sector] \"Malton\" \"North Yorkshire\"",
+        "fallback_2": "site:linkedin.com/in [sector] \"Malton\" \"North Yorkshire\" owner director partner",
+        "sector_note": "Solicitors and estate agents first — highest LinkedIn presence in Malton market town"
       },
-      "low_linkedin_sector": {
-        "primary": "site:linkedin.com/in \"[First Name] [Last Name]\" \"[Business Name]\"",
-        "skip_rule": "Skip if first name only — insufficient to confirm correct profile without surname. Mark profile_confirmed_owner: false."
+      "Pickering": {
+        "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+        "fallback_1": "site:linkedin.com/in \"[Full Name]\" \"Pickering\" \"North Yorkshire\" owner director",
+        "sector_note": "B&B and tourism leads first — higher LinkedIn presence than trades"
       },
-      "ryedale_town_variants": {
-        "Malton": ["Malton", "\"Malton\" \"North Yorkshire\"", "Ryedale"],
-        "Pickering": ["Pickering", "\"Pickering\" \"North Yorkshire\""],
-        "Helmsley": ["Helmsley", "\"Helmsley\" \"North Yorkshire\""],
-        "Kirkbymoorside": ["Kirkbymoorside", "\"Kirkbymoorside\"", "\"Kirbymoorside\""],
-        "Hovingham": ["Hovingham", "\"Hovingham\" \"North Yorkshire\""],
-        "Norton-on-Derwent": ["Norton-on-Derwent", "Norton", "\"Norton\" \"Malton\""]
+      "Helmsley": {
+        "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+        "fallback_1": "site:linkedin.com/in \"[Full Name]\" \"Helmsley\" \"North Yorkshire\" owner director",
+        "sector_note": "Affluent market — highest post-reference likelihood in the Ryedale batch. Check posts for last 60 days."
       },
-      "ryedale_sector_guidance": {
-        "Malton": {
-          "expected_sectors": ["estate agents", "solicitors", "independent retail", "hospitality", "food & drink"],
-          "linkedin_likelihood": "medium-high for professional services, medium for hospitality",
-          "priority": "Solicitors and estate agents first — highest LinkedIn presence and most likely to accept cold connections"
-        },
-        "Pickering": {
-          "expected_sectors": ["tourism", "B&Bs", "independent retail", "trades"],
-          "linkedin_likelihood": "medium for tourism/hospitality, low for trades",
-          "priority": "B&Bs and tourism operators first"
-        },
-        "Helmsley": {
-          "expected_sectors": ["tourism", "fine dining", "boutique retail", "B&Bs"],
-          "linkedin_likelihood": "medium-high — affluent market, owners more likely to have LinkedIn",
-          "priority": "Restaurants and boutique retail — post-reference more likely"
-        },
-        "Kirkbymoorside": {
-          "expected_sectors": ["independent retail", "trades", "local services"],
-          "linkedin_likelihood": "low-medium — smaller market, fewer LinkedIn-active owners",
-          "priority": "Any professional services first"
-        },
-        "Hovingham": {
-          "expected_sectors": ["rural trades", "agriculture-adjacent", "hospitality"],
-          "linkedin_likelihood": "low",
-          "priority": "Generic note if profile found — post-reference unlikely"
-        },
-        "Norton-on-Derwent": {
-          "expected_sectors": ["trades", "retail", "local services"],
-          "linkedin_likelihood": "low-medium",
-          "priority": "Generic note — post-reference unlikely for most sectors here"
-        }
+      "Kirkbymoorside": {
+        "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+        "fallback_1": "site:linkedin.com/in \"[Full Name]\" \"Kirkbymoorside\" owner",
+        "fallback_2": "site:linkedin.com/in \"[Full Name]\" \"Kirbymoorside\" owner",
+        "sector_note": "Try both spellings — Kirkbymoorside / Kirbymoorside is a common variant in profiles"
+      },
+      "Hovingham": {
+        "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+        "fallback_1": "site:linkedin.com/in \"[Full Name]\" \"Hovingham\" \"North Yorkshire\"",
+        "sector_note": "Small village, low LinkedIn presence. Use generic note if profile found — post-reference unlikely."
+      },
+      "Norton-on-Derwent": {
+        "primary": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+        "fallback_1": "site:linkedin.com/in \"[Full Name]\" \"Norton\" \"Malton\"",
+        "fallback_2": "site:linkedin.com/in \"[Full Name]\" \"Norton-on-Derwent\" \"North Yorkshire\"",
+        "sector_note": "Generic note for most trades. Professional services: use fallback_1 with sector term."
       }
     },
 
-    "lesson_applied": "LinkedIn approach for Batch 5 MUST be executed within 7 days of initial send. Warm pipeline 43-session failure must not repeat. BRAIN generates queries same session as initial sends (Tuesday 2026-05-12 evening). HANDS executes Day 3 (Friday 2026-05-15) without deferral. Archive trigger fires on Day 7 — no tolerance.",
-    "7_day_rule": "If LinkedIn not executed by Day 7 (Tuesday 2026-05-19): close LinkedIn channel for those leads, mark email-only. Log CHANGELOG.md. No deferrals, no extensions.",
-    "archive_trigger_rule": "If LinkedIn deadline missed for any Batch 5 lead: archive as LOST_NO_RESPONSE immediately. Log CHANGELOG. No exceptions."
+    "signal_query_guidance": {
+      "ssl_leads": {
+        "note": "Do NOT mention SSL, HTTPS, or 'Not Secure' in the LinkedIn note. Treat as cold connection — no email reference.",
+        "query_note": "Standard primary query. Profile confirmation matters — SSL leads often have minimal social presence."
+      },
+      "mobile_leads": {
+        "note": "Standard query. Mobile-signal leads often skew slightly younger — marginally higher LinkedIn likelihood.",
+        "fallback_note": "If primary query fails: try first name + town + sector separately without business name in quotes."
+      },
+      "no_website_leads": {
+        "note": "Owner name may not be known — sourced from Google Maps listing only.",
+        "query_note": "If only business name known (no owner surname): site:linkedin.com/in [sector] \"[business name]\" OR site:linkedin.com/in [business name] \"[town]\"",
+        "skip_rule": "If first name only (no surname confirmed): mark profile_confirmed_owner: false. Do not send note unless profile unmistakably matches the business."
+      },
+      "aida_leads": {
+        "note": "High-review leads — scrutinise profile carefully before sending. These leads have strong reputations and are more selective.",
+        "query_note": "Standard primary query. Verify the profile matches before sending."
+      }
+    },
+
+    "entry_template_for_hands": {
+      "instruction": "For each lead sent this morning (Batch 5), add one entry to search_queries[] at the top of this file using this structure:",
+      "schema": {
+        "lead_id": "[id assigned in morning session]",
+        "name": "[owner_full_name or UNKNOWN_IF_NOT_AVAILABLE]",
+        "company": "[business_name]",
+        "town": "[town]",
+        "signal": "[ssl|mobile|no_website|aida]",
+        "sector": "[sector]",
+        "linkedin_priority": "[HIGH|MEDIUM|LOW — based on sector priority table above]",
+        "google_query": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+        "fallback_query": "[from town templates above]",
+        "day_3_date": "2026-05-15",
+        "day_7_deadline": "2026-05-19",
+        "status": "PENDING_HANDS_SEARCH"
+      }
+    }
   },
 
-  "linkedin_profiles_json_status": {
-    "file": "data/linkedin_profiles.json",
-    "exists": false,
-    "note": "HANDS has not written linkedin_profiles.json in 43 campaign days. Warm pipeline chapter permanently closed. Batch 5: HANDS MUST write this file after each LinkedIn execution session — one entry per lead.",
-    "required_fields": [
-      "lead_id",
-      "linkedin_url (or 'not_found')",
-      "profile_confirmed_owner (true/false/uncertain)",
-      "post_found_last_60_days (true/false)",
-      "post_summary_if_found",
-      "note_type_used (post_reference | generic | not_sent)",
-      "note_sent (true/false)",
-      "note_text_if_sent",
-      "imap_check_result_before_sending (no_reply | reply_found | unknown)",
-      "timestamp"
-    ]
-  },
+  "non_candidates": [
+    {
+      "lead_id": 30,
+      "business_name": "Halifax Window Cleaning",
+      "owner_name": "Steve",
+      "town": "Halifax",
+      "linkedin_eligible": false,
+      "reason": "Sequence complete. Breakup fu_041 assumed sent Monday 2026-05-11. LinkedIn Day 3-6 window expired 33+ days ago."
+    },
+    {
+      "lead_id": 31,
+      "business_name": "Pontefract Pharmacy",
+      "town": "Pontefract",
+      "linkedin_eligible": false,
+      "reason": "Sequence complete. Breakup fu_042 assumed sent Monday 2026-05-11. LinkedIn window expired."
+    },
+    {
+      "lead_id": 32,
+      "business_name": "Castleford Carpets",
+      "owner_name": "Ann",
+      "town": "Castleford",
+      "linkedin_eligible": false,
+      "reason": "Sequence complete. Breakup fu_043 assumed sent Monday 2026-05-11. LinkedIn window expired."
+    },
+    {
+      "lead_id": 58,
+      "business_name": "The Old Court Solicitors",
+      "town": "Scarborough",
+      "linkedin_eligible": false,
+      "reason": "Sequence complete. Breakup fu_044 assumed sent Monday 2026-05-11. LinkedIn window expired."
+    },
+    {
+      "lead_id": 59,
+      "business_name": "Scarborough Roofing Specialists",
+      "owner_name": "Tony Shields",
+      "town": "Scarborough",
+      "linkedin_eligible": false,
+      "reason": "Sequence complete. Breakup fu_045 assumed sent Monday 2026-05-11. LinkedIn window expired."
+    },
+    {
+      "lead_ids": [1, 3, 22],
+      "linkedin_eligible": false,
+      "reason": "UNCONDITIONALLY_FINAL_ARCHIVED — LOST_NO_RESPONSE. LinkedIn permanently closed. Reapproach: 2026-10-26."
+    },
+    {
+      "lead_id": 2,
+      "business_name": "Nidderdale Pet Supplies",
+      "town": "Pateley Bridge",
+      "linkedin_eligible": false,
+      "reason": "NOT_INTERESTED reply. All channels permanently blocked. Reapproach: 2026-10-06."
+    },
+    {
+      "lead_ids": [49, 51, 53, 54],
+      "linkedin_eligible": false,
+      "reason": "LOST_UNRESOLVED — archived. No email contact ever made. LinkedIn permanently blocked."
+    },
+    {
+      "lead_ids": [7, 19],
+      "linkedin_eligible": false,
+      "reason": "Permanently suppressed. No outreach on any channel."
+    },
+    {
+      "lead_ids": [4, 5, 6, 8, 12, 50, 52, 55, 56],
+      "linkedin_eligible": false,
+      "reason": "Sequence complete (Day-14 breakup sent April 2026). LinkedIn window expired."
+    }
+  ],
 
-  "weekend_block": {
-    "saturday_2026_05_09": "BLOCKED — no LinkedIn execution",
-    "sunday_2026_05_10": "BLOCKED — no LinkedIn execution today",
-    "note": "Weekend may be used by BRAIN to review Ryedale data if it arrives. HANDS does NOT execute any LinkedIn on Saturday or Sunday."
-  },
-
-  "monday_2026_05_11": {
-    "status": "HANDS cleanup day — no LinkedIn",
-    "fu_041_045": "Send breakups (IMAP conditional). No LinkedIn for these leads — window expired.",
-    "leads_53_54": "Archive as LOST_UNRESOLVED if not attempted Friday. Log CHANGELOG.",
-    "batch_5": "Do NOT send Batch 5 Monday — Tuesday premium window confirmed.",
-    "linkedin": "No LinkedIn on Monday. No active candidates until Batch 5 sends fire Tuesday."
+  "hard_deadline_rules": {
+    "batch_5_day_3": "Friday 2026-05-15 — preferred LinkedIn execution",
+    "batch_5_day_6": "Monday 2026-05-18 — fallback if Friday blocked",
+    "batch_5_day_7": "Tuesday 2026-05-19 — HARD DEADLINE. No exceptions. If LinkedIn not executed: archive all remaining Batch 5 leads as LOST_NO_RESPONSE. Log CHANGELOG immediately. No deferrals, no extensions.",
+    "rule": "7-day rule applies to every Batch 5 lead. 44-session warm pipeline failure must not repeat."
   },
 
   "summary": {
-    "total_active_queries_today": 0,
-    "warm_pipeline_status": "UNCONDITIONALLY_FINAL — archive of leads 1/3/22 is permanent. IMAP override window expired 2026-05-08 EOD.",
-    "fu_leads_linkedin_status": "BLOCKED — window expired. Carry forward email-only fu_041-045 to Monday 2026-05-11.",
-    "batch_5_queries_status": "PENDING — no initial sends yet. Tuesday 2026-05-12 confirmed. Queries generated same evening.",
-    "batch_5_linkedin_window": "Friday 2026-05-15 (Day 3). Hard deadline: Tuesday 2026-05-19 (Day 7).",
-    "next_brain_linkedin_run": "Tuesday 2026-05-12 EVENING — after Batch 5 initial sends confirmed. Generates per-lead Day 3 queries + connection note templates from Ryedale profile data.",
-    "campaign_linkedin_contacts_confirmed": 0,
-    "consecutive_sessions_without_profiles": 43,
-    "day_43_run_note": "Sunday 2026-05-10 — WEEKEND BRIDGE. Zero active LinkedIn queries. Warm pipeline archive unconditionally final (IMAP override window 2 days closed). All LinkedIn intelligence in standby until Batch 5 Ryedale sends fire Tuesday 2026-05-12. 7-day rule applies from first send — no deferrals."
+    "run_date": "2026-05-12 (Tuesday — evening)",
+    "day_number": 45,
+    "active_search_queries": 0,
+    "batch_5_sends_assumed": true,
+    "batch_5_send_date": "2026-05-12",
+    "day_3_window_opens": "2026-05-15 (Friday)",
+    "hard_deadline": "2026-05-19 (Tuesday, Day 7)",
+    "linkedin_profiles_received_ever": 0,
+    "campaign_sessions_without_linkedin_execution": 45,
+    "next_brain_linkedin_run": "Friday 2026-05-15 morning — after HANDS executes Day-3 searches and returns linkedin_profiles.json",
+    "urgent_action": "HANDS: confirm Batch 5 send list and populate search_queries[] above. Execute Google searches Friday 2026-05-15. Archive trigger fires Tuesday 2026-05-19 if not done."
   }
 }
