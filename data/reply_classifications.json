@@ -1,62 +1,66 @@
 {
-  "classified_at": "2026-05-11T07:00:00Z",
-  "date": "2026-05-11",
-  "day_number": 44,
-  "note": "BRAIN layer — Day 44 (Monday 2026-05-11). No new replies in new_replies.json — file unchanged since 2026-04-04 (37-day IMAP gap). IMAP sweep is the FIRST action today before any sends. Archive for leads 1/3/22 remains UNCONDITIONALLY FINAL — do NOT include in sweep.",
+  "classified_at": "2026-05-14T19:00:00Z",
+  "date": "2026-05-14",
+  "day_number": 47,
+  "note": "BRAIN layer — Day 47 (Thursday 2026-05-14). No new replies in new_replies.json — file unchanged since 2026-04-04 (40-day IMAP gap). IMAP sweep MANDATORY tomorrow (Friday 2026-05-15) before Day-3 bumps. Do NOT sweep leads 1/3/22 — archive is UNCONDITIONALLY FINAL. Batch 5 sends assumed Tuesday 2026-05-12 — any early replies from Batch 5 Ryedale could arrive from Wednesday 2026-05-13 onwards. Tomorrow's IMAP sweep is the first chance to catch these.",
 
   "new_replies_this_run": 0,
-  "imap_gap_days": 37,
+  "imap_gap_days": 40,
   "imap_last_confirmed_check": "2026-04-04",
-  "imap_source": "new_replies.json — HANDS-written 2026-04-04. Unchanged for 37 days.",
+  "imap_assumed_sweep": "2026-05-11 (Monday — assumed executed per BRAIN Day-44 instruction; no HANDS confirmation received)",
+  "imap_gap_since_assumed_sweep": 3,
 
-  "imap_warning": "CRITICAL — 37-day gap. True inbox state is unknown. Monday sweep is MANDATORY before any sends today. Priority: leads 30, 31, 32, 58, 59 (fu precondition) then full cohort.",
+  "imap_warning": "CRITICAL — 40 days since confirmed IMAP check. True inbox state is unknown for all active leads. Friday sweep is MANDATORY before any Day-3 bumps or LinkedIn connection requests.",
 
-  "imap_sweep_today": {
-    "execute": "FIRST — before any sends Monday 2026-05-11",
-    "priority_1_fu_precondition": [
-      "lead_30 (Steve, Halifax Window Cleaning) — fu_041 precondition",
-      "lead_31 (Pontefract Pharmacy) — fu_042 precondition",
-      "lead_32 (Ann, Castleford Carpets) — fu_043 precondition",
-      "lead_58 (The Old Court Solicitors) — fu_044 precondition",
-      "lead_59 (Tony Shields, Scarborough Roofing Specialists) — fu_045 precondition"
-    ],
-    "priority_2": "All remaining cohort (excluding archived leads: 1, 3, 22, 49, 51, 53, 54 and suppressed: 7, 19)",
-    "leads_1_3_22_instruction": "Do NOT include leads 1, 3, or 22. Archive is UNCONDITIONALLY FINAL — closed 2026-05-08 EOD. If a reply is somehow found: acknowledge only (brief, no sales attempt), log CHANGELOG, treat as permanently closed-lost."
+  "imap_sweep_tomorrow": {
+    "date": "2026-05-15 (Friday)",
+    "execute": "FIRST — before Day-3 bump sends (09:00) and before LinkedIn (after bumps)",
+    "priority_1_batch5": "All Batch 5 Ryedale leads (confirm IMAP state before Day-3 bump per lead)",
+    "priority_2_remaining": "Any remaining cohort not formally archived or suppressed",
+    "leads_never_to_sweep": [1, 3, 22],
+    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No further IMAP for leads 1, 3, or 22 under any circumstances.",
+    "batch_5_early_reply_window": "Batch 5 assumed sent 2026-05-12. Early replies possible from Wednesday 2026-05-13 onwards. This sweep will catch them.",
+    "what_to_write": "Any new replies found: write to data/new_replies.json immediately. Classify in this file. Update value_delivery_queue.json if INTERESTED."
   },
 
   "action_on_new_reply": {
-    "if_fu_lead_has_replied": "Cancel fu send for that lead. Write reply to new_replies.json immediately. Classify here. Mark sequence complete.",
-    "if_any_unsubscribe": "Suppress permanently within 24 hours (GDPR Article 21). Log audit_log. Log CHANGELOG.",
-    "if_new_interested": "Write to new_replies.json. Classify here. Activate warm pipeline protocol. LinkedIn within Day 7-14 of initial send — HARD DEADLINE. Prepare proposal within 24 hours.",
-    "if_ooo": "Log return date. Pause sequence. Resume day after stated return date.",
-    "if_not_interested": "Suppress email channel. Log CHANGELOG. No LinkedIn approach for this lead."
+    "if_interested": {
+      "action": "Write reply to new_replies.json. Classify here as INTERESTED. Prepare bespoke proposal within 24 hours — MANDATORY. Log CHANGELOG. Activate LinkedIn within Day 7 hard deadline (2026-05-19). Update CRM/pipeline stage to 'proposal_sent' after proposal sent.",
+      "24h_sla": "NON-NEGOTIABLE. Tom (Ripon Road Carpentry) asked for pricing and never got it. That does not repeat.",
+      "linkedin_deadline": "Day 7 = Tuesday 2026-05-19. Archive trigger fires immediately if missed."
+    },
+    "if_not_interested": {
+      "action": "Classify as NOT_INTERESTED. Suppress email channel permanently. Block LinkedIn permanently for this lead. Log CHANGELOG. Update lead status to 'lost'.",
+      "email_channel": "CLOSED",
+      "linkedin_channel": "BLOCKED — permanently",
+      "reapproach": "6 months minimum"
+    },
+    "if_ooo": {
+      "action": "Classify as OUT_OF_OFFICE. Note return date. Pause sequence. Resume Day-3 bump day after stated return. Do not re-send during OOO period.",
+      "resume_rule": "If OOO return date is past Friday: send bump on day after return, using the same Day-3 template."
+    },
+    "if_wrong_person": {
+      "action": "Classify as WRONG_PERSON. Pause sequence for this email address. Investigate correct contact via website/Companies House. Log CHANGELOG.",
+      "email_channel": "PAUSED — pending correct contact"
+    },
+    "if_unsubscribe": {
+      "action": "Classify as UNSUBSCRIBE. Suppress permanently within 24 hours (GDPR Article 21). Log audit_log and CHANGELOG. Block all channels.",
+      "compliance_deadline": "24 hours — no exceptions"
+    }
   },
 
   "archive_final_declaration": {
-    "description": "UNCONDITIONALLY FINAL. The Friday 2026-05-08 EOD override window has closed. No further action on leads 1, 3, or 22 under any scenario.",
-    "lead_3_claire": "Archive FINAL — LOST_NO_RESPONSE. Email channel closed since 2026-04-08. LinkedIn never activated.",
-    "lead_22_rob": "Archive FINAL — LOST_NO_RESPONSE. Email channel closed since 2026-04-08. LinkedIn never activated.",
-    "lead_1_tom": "Archive FINAL — LOST_NO_RESPONSE. Email channel closed since 2026-04-08. LinkedIn never activated.",
-    "override_window_closed": "2026-05-08 EOD. No exceptions, no further extensions.",
-    "changelog_entry_required": "Log Monday: 'Warm pipeline permanently closed — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. LinkedIn never executed across 44 sessions. Combined pipeline value written off: £800-1,175. IMAP override window closed 2026-05-08 EOD — unconditionally final.'"
-  },
-
-  "archive_today": {
-    "lead_53": {
-      "business_name": "Bridlington Bay Lettings",
-      "archive_reason": "LOST_UNRESOLVED — enrichment attempts overdue 40+ days. Final attempt deadline passed (Friday 2026-05-08 override window closed).",
-      "action": "Archive as LOST_UNRESOLVED. Log CHANGELOG Monday."
-    },
-    "lead_54": {
-      "business_name": "The Wolds Inn",
-      "archive_reason": "LOST_UNRESOLVED — enrichment attempts overdue 40+ days. Final attempt deadline passed (Friday 2026-05-08 override window closed).",
-      "action": "Archive as LOST_UNRESOLVED. Log CHANGELOG Monday."
-    }
+    "description": "UNCONDITIONALLY FINAL. No further action on leads 1, 3, or 22 under any scenario.",
+    "lead_1_tom": "Archive FINAL — LOST_NO_RESPONSE. Override window closed 2026-05-08 EOD.",
+    "lead_3_claire": "Archive FINAL — LOST_NO_RESPONSE. Override window closed 2026-05-08 EOD.",
+    "lead_22_rob": "Archive FINAL — LOST_NO_RESPONSE. Override window closed 2026-05-08 EOD.",
+    "override_window": "CLOSED — unconditionally final. No further override attempts under any circumstances."
   },
 
   "carried_forward_from": "2026-04-04",
   "total_replies_to_date": 11,
   "reply_rate": "17.9% overall (11 replies / ~61 leads)",
+  "batch_5_replies_to_date": 0,
 
   "classifications": [
     {
@@ -69,7 +73,6 @@
       "classification": "INTERESTED",
       "confidence": "high",
       "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal.",
-      "call_confirmed_at": "2026-04-07T14:00:00Z",
       "current_status": "PERMANENTLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. Override window closed 2026-05-08 EOD. UNCONDITIONALLY FINAL.",
       "lead_status_update": "lost_no_response",
       "block_all_email_followups": true,
@@ -87,7 +90,6 @@
       "classification": "INTERESTED",
       "confidence": "high",
       "reasoning": "Asked to bundle fixes into redesign — buyer's question. 'Sort the whole thing in one go' is the strongest upsell signal in the campaign.",
-      "nudge_sent_at": "2026-04-07T17:00:00Z",
       "current_status": "PERMANENTLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. Override window closed 2026-05-08 EOD. UNCONDITIONALLY FINAL.",
       "lead_status_update": "lost_no_response",
       "upsell_signal": true,
@@ -106,7 +108,6 @@
       "classification": "INTERESTED",
       "confidence": "high",
       "reasoning": "Acknowledged pain unprompted, confirmed workflow problem (no quote form), asked for pricing.",
-      "nudge_sent_at": "2026-04-08T17:00:00Z",
       "current_status": "PERMANENTLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. Override window closed 2026-05-08 EOD. UNCONDITIONALLY FINAL.",
       "lead_status_update": "lost_no_response",
       "block_all_email_followups": true,
@@ -148,19 +149,17 @@
   "summary": {
     "new_replies_today": 0,
     "total_to_date": 11,
-    "imap_check_mandatory_today": true,
-    "imap_gap_days": 37,
+    "batch_5_replies": 0,
+    "imap_check_mandatory_tomorrow": true,
+    "imap_gap_days": 40,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
     "WRONG_PERSON": 0,
     "UNSUBSCRIBE": 0,
     "permanently_archived": [1, 3, 22],
-    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated across 44 sessions",
+    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated across 47 sessions",
     "archive_override": "CLOSED — unconditionally final from 2026-05-08 EOD",
-    "archiving_today": [53, 54],
-    "archiving_today_reason": "LOST_UNRESOLVED — final attempt deadline passed",
-    "leads_to_suppress": [],
-    "hands_instructions": "1. IMAP sweep — leads 30, 31, 32, 58, 59 + full cohort (NOT 1/3/22). Write any new replies to new_replies.json and classify here. 2. If any fu lead has replied: cancel that fu, classify. 3. If any new INTERESTED: prepare proposal within 24 hours, activate LinkedIn Day 7-14 hard deadline. 4. Archive leads 53/54 LOST_UNRESOLVED. 5. Log all outcomes CHANGELOG.md today — mandatory before Tuesday Batch 5 sends."
+    "hands_instructions": "1. IMAP sweep tomorrow (Friday 2026-05-15) FIRST — all Batch 5 leads (NOT 1/3/22). Write any new replies to new_replies.json and classify here. 2. If any INTERESTED: proposal within 24h, LinkedIn by Day 7 (2026-05-19 hard close). 3. If any NOT_INTERESTED: cancel bump, block LinkedIn, log CHANGELOG. 4. If any UNSUBSCRIBE: suppress 24h, GDPR Article 21, log audit_log."
   }
 }

@@ -1,137 +1,115 @@
 {
-  "generated_at": "2026-05-11T07:00:00Z",
-  "date": "2026-05-11",
-  "day_number": 44,
-  "note": "BRAIN layer — Day 44 (Monday 2026-05-11). Monday cleanup day. fu_041-045 are SEND TODAY — final acceptable window, 18 days overdue. IMAP sweep FIRST before any sends (37-day gap). Archive leads 53 and 54 today (LOST_UNRESOLVED — final attempt deadline passed). CHANGELOG.md update mandatory before Tuesday sends. Batch 5 Ryedale data not yet received — confirmed send day remains Tuesday 2026-05-12. No new signal assignments today (zero new leads).",
+  "generated_at": "2026-05-14T19:00:00Z",
+  "date": "2026-05-14",
+  "day_number": 47,
+  "note": "BRAIN layer — Day 47 (Thursday 2026-05-14). Eve of Batch 5 Day-3 send day. Day-3 email bumps and LinkedIn connection requests are both due TOMORROW (Friday 2026-05-15). IMAP gap: 40 days — MANDATORY sweep before any Day-3 sends or LinkedIn. No new leads today. No new signals. No per-lead Batch 5 data file received from HANDS — Day-3 copy provided as per-signal templates; HANDS populates placeholders from their send records.",
 
   "day_assessment": {
-    "sunday_day_43": {
-      "date": "2026-05-10",
-      "imap_sweep_executed": "UNKNOWN — new_replies.json unchanged since 2026-04-04",
-      "fu_041_045_sent": "BLOCKED — Sunday, hard rule. Carry to Monday 2026-05-11.",
-      "batch_5_data_received": false,
-      "changelog_updated": false,
-      "conclusion": "Weekend bridge. No sends. BRAIN state management only. Carry all actions to Monday."
-    },
-    "today_monday": {
-      "date": "2026-05-11",
-      "day_of_week": "Monday",
-      "campaign_day": 44,
+    "today_thursday": {
+      "date": "2026-05-14",
+      "day_of_week": "Thursday",
+      "campaign_day": 47,
       "is_uk_bank_holiday": false,
       "send_day_quality": {
-        "initial_sends": "BLOCKED — Batch 5 confirmed Tuesday only. Do NOT accelerate.",
-        "breakup_emails": "AUTHORISED — fu_041-045. IMAP clean per lead required. Send 09:30-10:10, 10-min stagger.",
-        "batch_5": "BLOCKED — confirmed: Tuesday 2026-05-12, 09:00-10:30.",
-        "assessment": "Cleanup and preparation day. fu_041-045 close five sequences. Ryedale data prep."
+        "initial_sends": "BLOCKED — no new cohort ready. Batch 5 is Day-3 tomorrow, not Day-0 today.",
+        "day3_bumps": "BLOCKED TODAY — not yet Friday. Send window opens tomorrow 09:00.",
+        "linkedin": "BLOCKED TODAY — window opens Friday 2026-05-15 (Day 3). Execute tomorrow.",
+        "assessment": "Brain-only day. Generate Day-3 copy and LinkedIn templates tonight. No sends until Friday 09:00."
       }
     }
   },
 
   "imap_status": {
-    "gap_days": 37,
+    "gap_days": 40,
     "last_confirmed_check": "2026-04-04",
-    "status": "CRITICAL — 37 days. Monday sweep is the first action before any sends.",
+    "monday_sweep_status": "ASSUMED_EXECUTED (2026-05-11) — no HANDS confirmation ever received",
+    "current_gap_from_assumed_sweep": 3,
+    "status": "CRITICAL — 40 days since confirmed check. MANDATORY sweep Friday morning before Day-3 bumps or LinkedIn.",
     "priority_order": [
-      "lead_30 (Steve, Halifax Window Cleaning) — fu_041 precondition",
-      "lead_31 (Pontefract Pharmacy) — fu_042 precondition",
-      "lead_32 (Ann, Castleford Carpets) — fu_043 precondition",
-      "lead_58 (The Old Court Solicitors) — fu_044 precondition",
-      "lead_59 (Tony Shields, Scarborough Roofing Specialists) — fu_045 precondition",
-      "All remaining cohort (leads not in do_not_email / formally_archived)"
+      "All Batch 5 Ryedale leads (confirm no early replies before Day-3 bump)",
+      "Any remaining cohort not formally archived or suppressed"
     ],
-    "leads_1_3_22_instruction": "Do NOT sweep leads 1, 3, or 22. Archive is UNCONDITIONALLY FINAL — closed 2026-05-08 EOD. If a reply is somehow found: acknowledge only (brief, no sales attempt), log CHANGELOG, treat as permanently closed-lost."
+    "leads_never_to_sweep": [1, 3, 22],
+    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No further IMAP for these leads.",
+    "batch_5_imap_protocol": "If IMAP reveals a Batch 5 lead has replied INTERESTED before Day-3 bump: still send bump (it's a reply-thread touchpoint — reinforce). If NOT_INTERESTED: suppress email channel, block LinkedIn. If UNSUBSCRIBE: suppress within 24h (GDPR Article 21), log audit_log."
   },
 
-  "warm_pipeline": {
-    "leads": [1, 3, 22],
-    "status": "PERMANENTLY_CLOSED — UNCONDITIONALLY_FINAL",
-    "archive_date": "2026-05-07",
-    "imap_override_window": "CLOSED — 2026-05-08 EOD. No further override attempts under any circumstances.",
-    "email_channel": "CLOSED — permanently",
-    "linkedin_channel": "NEVER ACTIVATED — permanently closed",
-    "pipeline_value_written_off": "£800-1,175 (Claire £350 + Rob £550-675 + Tom £100-150)",
-    "lesson": "LinkedIn must activate within Day 7-14 of initial reply. Hard deadline enforced for Batch 5."
+  "batch_5_status": {
+    "initial_sends_date": "2026-05-12 (Tuesday)",
+    "initial_sends_status": "ASSUMED_SENT — HANDS confirmation not received",
+    "expected_sends": "12-18 Ryedale leads",
+    "per_lead_data_received": false,
+    "per_lead_data_note": "No structured Batch 5 send list received from HANDS. Day-3 copy generated as per-signal templates — HANDS populates [placeholders] from their send records.",
+    "day_3_date": "2026-05-15 (Friday) — TOMORROW",
+    "day_7_date": "2026-05-19 (Tuesday) — LinkedIn hard deadline",
+    "day_14_date": "2026-05-26 (Tuesday)",
+    "expected_interested_replies": "2-3 (15% SSL-PAS rate on 12-18 sends)",
+    "expected_reply_window": "Wednesday 2026-05-13 to Friday 2026-05-15 (first wave)",
+    "linkedin_window_opens": "2026-05-15 (Friday — TOMORROW)",
+    "linkedin_hard_deadline": "2026-05-19 (Tuesday, Day 7) — archive trigger fires immediately if missed"
   },
 
   "new_signals_today": 0,
   "new_leads_today": 0,
-  "batch_5_data_received": false,
-  "batch_5_data_overdue_days": 19,
-  "batch_5_campaign_stall_days": 34,
-  "batch_5_confirmed_send_day": "Tuesday 2026-05-12, 09:00-10:30",
-
   "signal_assignments": [],
-  "signal_assignment_note": "No new signal assignments. Zero new leads today. Batch 5 Ryedale personalisation fires on Tuesday 2026-05-12 BRAIN run, prior to sends. Signal waterfall unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%).",
+  "signal_assignment_note": "No new lead data today. Signal waterfall for any future leads unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%).",
 
-  "suppressed_lead_ids": [7, 19],
   "do_not_email": [1, 2, 3, 7, 19, 22],
+  "suppressed_lead_ids": [7, 19],
   "formally_archived": [1, 3, 22, 49, 51, 53, 54],
-  "archiving_today": [53, 54],
-  "archive_reason_1_3_22": "LOST_NO_RESPONSE — LinkedIn never executed. Archive declared Day 40 (2026-05-07). UNCONDITIONALLY FINAL from 2026-05-08 EOD.",
-  "archive_reason_49_51": "LOST_UNRESOLVED — enrichment overdue 38+ days. Final attempt deadline passed Day 40.",
-  "archive_reason_53_54": "LOST_UNRESOLVED — final attempt deadline passed. Friday 2026-05-08 override window closed. Archive Monday 2026-05-11.",
+  "sequences_complete": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
 
-  "today_execution_order": {
+  "tomorrow_execution_order": {
+    "date": "2026-05-15 (Friday)",
     "sequence": [
       {
         "priority": 1,
-        "action": "IMAP sweep — leads 30, 31, 32, 58, 59 + full cohort (NOT leads 1/3/22)",
+        "action": "IMAP sweep — all Batch 5 Ryedale leads (full cohort excluding archived/suppressed)",
         "type": "imap_mandatory",
-        "notes": "37-day gap. fu_041-045 precondition. If any fu lead has replied: cancel that fu, write reply to new_replies.json, classify."
+        "timing": "First action — before any email sends or LinkedIn",
+        "notes": "40-day gap. If INTERESTED reply found: proceed with Day-3 bump (same thread). If NOT_INTERESTED: cancel bump, block LinkedIn, log CHANGELOG. If UNSUBSCRIBE: suppress immediately, GDPR 24h rule."
       },
       {
         "priority": 2,
-        "action": "fu_041-045 — Day-14 breakups (18 days overdue) — SEND TODAY",
+        "action": "Day-3 email bumps — all Batch 5 leads (IMAP clean per lead)",
         "type": "send_authorised",
-        "lead_ids": [30, 31, 32, 58, 59],
-        "send_window": "09:30-10:10",
-        "stagger": "10 minutes",
-        "notes": "IMAP clean per lead required. Monday is the final window. Full copy in followup_queue.json and daily_email_plan.json."
+        "send_window": "09:00-10:30",
+        "stagger": "10 minutes between sends",
+        "copy_location": "data/daily_email_plan.json (per-signal templates) + data/followup_queue.json",
+        "notes": "Thread reply to original Day-0 email. 3-4 lines max. Signal-specific — reference the exact finding. Not a restatement of the full pitch."
       },
       {
         "priority": 3,
-        "action": "Archive leads 53 and 54 — LOST_UNRESOLVED",
-        "type": "maintenance",
-        "lead_ids": [53, 54],
-        "notes": "Bridlington Bay Lettings (53) and The Wolds Inn (54). Final attempt deadline passed. Archive today — no further deferral. Log in CHANGELOG."
+        "action": "LinkedIn connection requests — all Batch 5 leads where profile confirmed",
+        "type": "linkedin_authorised",
+        "timing": "After Day-3 emails. Minimum 1-hour gap between email bump and LinkedIn request.",
+        "notes": "Use templates from data/linkedin_connection_notes.json. 200-char hard limit. Post-reference preferred (check profile for posts from last 60 days FIRST). Do NOT reference email, SSL, or any audit finding in note."
       },
       {
         "priority": 4,
-        "action": "CHANGELOG.md update — 44 days unlogged",
-        "type": "mandatory",
-        "notes": "MANDATORY before Tuesday sends. Entries required: archive leads 1/3/22 (FINAL), archive 49/51, archive 53/54 (today), fu_041-045 outcomes, IMAP sweep outcomes, LinkedIn never executed, Batch 5 deferred to Tuesday, campaign stall 34 days."
+        "action": "Write data/linkedin_profiles.json",
+        "type": "mandatory_output",
+        "notes": "MANDATORY — one entry per lead searched. Required for BRAIN note generation. No exceptions. If not written same session: LinkedIn execution is unconfirmed (same failure mode as warm pipeline)."
       },
       {
         "priority": 5,
-        "action": "Confirm Ryedale scrape data is ready for Tuesday",
-        "type": "preparation",
-        "notes": "If Ryedale data arrives Monday: BRAIN generates Batch 5 per-lead copy immediately and updates daily_email_plan.json. HANDS still sends Tuesday 09:00. If data still not ready Monday EOD: BRAIN runs fresh Tuesday morning before sends."
+        "action": "CHANGELOG.md update",
+        "type": "mandatory",
+        "notes": "47 days overdue. MANDATORY before any Day-7 sends. Log: all Batch 5 Day-0 sends, fu_041-045 outcomes, archive decisions, IMAP sweep results, Day-3 outcomes. If not done Friday: MUST be done before Tuesday 2026-05-19."
       }
     ]
   },
 
-  "tuesday_preview": {
-    "date": "2026-05-12",
-    "type": "Batch 5 Ryedale send day",
-    "send_window": "09:00-10:30",
-    "brain_run_timing": "Tuesday morning, before sends",
-    "expected_sends": "12-18 initial emails",
-    "expected_interested": "2-3 (15% SSL-PAS rate)",
-    "changelog_required": "Same day — all sends logged Tuesday"
-  },
-
   "summary": {
+    "day": 47,
+    "date": "2026-05-14 (Thursday)",
     "new_signals_assigned": 0,
-    "imap_gap_days": 37,
-    "archive_status_leads_1_3_22": "UNCONDITIONALLY FINAL — closed 2026-05-08 EOD",
-    "fu_overdue_days": 18,
-    "fu_send_today": true,
-    "fu_due_today_ids": "fu_041 (lead 30), fu_042 (lead 31), fu_043 (lead 32), fu_044 (lead 58), fu_045 (lead 59)",
-    "archive_today_ids": [53, 54],
-    "batch_5_status": "Data not received. Confirmed send: Tuesday 2026-05-12, 09:00-10:30.",
-    "campaign_stall_days": 34,
-    "changelog_overdue_days": 44,
-    "today_is": "MONDAY — cleanup and preparation day",
-    "next_major_milestone": "Batch 5 Ryedale initial sends — Tuesday 2026-05-12, 09:00-10:30"
+    "imap_gap_days": 40,
+    "tomorrow_is": "Batch 5 Day-3 — email bumps + LinkedIn connection requests",
+    "day3_send_window": "Friday 2026-05-15, 09:00-10:30",
+    "linkedin_window_status": "Opens tomorrow (Friday 2026-05-15). Hard deadline Tuesday 2026-05-19. Archive trigger fires immediately if missed.",
+    "batch_5_per_lead_data": "NOT RECEIVED — HANDS must use their send records to fill template placeholders",
+    "changelog_overdue_days": 47,
+    "next_major_milestone": "Batch 5 Day-3 — Friday 2026-05-15, 09:00-10:30"
   }
 }

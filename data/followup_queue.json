@@ -1,195 +1,133 @@
 {
-  "generated_at": "2026-05-11T07:00:00Z",
-  "date": "2026-05-11",
-  "day_number": 44,
-  "note": "BRAIN layer — Day 44 (Monday 2026-05-11). fu_041-045 are SEND TODAY — this is the final acceptable window. 18 days overdue from original Day-14 target (due 2026-04-23). IMAP clean per lead is mandatory before each send. 10-minute stagger, 09:30-10:10.",
+  "generated_at": "2026-05-14T19:00:00Z",
+  "date": "2026-05-14",
+  "day_number": 47,
+  "note": "BRAIN layer — Day 47 (Thursday 2026-05-14). Eve of Batch 5 Day-3. Day-3 bump copy is ready for HANDS to send tomorrow (Friday 2026-05-15, 09:00-10:30). No per-lead data file received from HANDS — schedule and copy provided as templates. HANDS confirms actual lead IDs and details from their send records (Tuesday 2026-05-12 session).",
 
-  "suppressed_lead_ids": [7, 19],
-  "do_not_followup_replied_lead_ids": [1, 2, 3, 5, 22],
-  "sequences_completed_confirmed": [2, 5, 7, 8, 12, 19],
-  "sequences_completed_assumed": [4, 6, 30, 31, 32, 42, 44, 46, 50, 52, 55, 56, 57, 58, 59, 60],
-
-  "active_followups": [],
-  "active_count": 0,
+  "active_followups_legacy": [],
+  "active_legacy_count": 0,
+  "legacy_note": "All pre-Batch 5 sequences complete. fu_041-045 assumed sent Monday 2026-05-11 (unconfirmed). No remaining legacy follow-up obligations.",
 
   "send_today": {
-    "description": "fu_041-045 — Day-14 breakups. Due 2026-04-23. Now 18 days overdue. TODAY (Monday 2026-05-11) is the FINAL acceptable window. IMAP clean per lead is mandatory before each send.",
-    "send_window": "Monday 2026-05-11, 09:30-10:10 (AFTER full IMAP sweep is complete)",
-    "imap_precondition": "MANDATORY — sweep leads 30, 31, 32, 58, 59 (and full cohort) first. Any reply found for a fu lead: cancel that fu, write reply to new_replies.json, classify.",
-    "stagger": "10 minutes between sends",
-    "domain_safety": "5 sends — well within 40/day limit",
-    "final_window_note": "Monday is the last window. If somehow not sent Monday (e.g. HANDS unavailable): evaluate Tuesday 2026-05-12. However, breakup emails do not technically 'expire' — the main risk is CHANGELOG integrity, not deliverability.",
-    "sends": [
-      {
-        "followup_id": "fu_041",
-        "lead_id": 30,
-        "business_name": "Halifax Window Cleaning",
-        "owner_name": "Steve",
-        "town": "Halifax",
-        "original_sent_at": "2026-04-09",
-        "followup_number": 3,
-        "sequence_day": 14,
-        "overdue_days": 18,
-        "carry_forward_from": "2026-05-06 (Day 39) → 2026-05-07 (Day 40) → 2026-05-08 (Day 41) → 2026-05-10 (Day 43) → 2026-05-11 (Monday — FINAL WINDOW)",
-        "send_date": "2026-05-11",
-        "planned_send_time": "09:30",
-        "followup_type": "breakup",
-        "subject": "Closing the loop — Halifax Window Cleaning",
-        "body": "Steve,\n\nI've dropped you a couple of notes about the Halifax Window Cleaning website — won't keep following up if now isn't the right time.\n\nIf things change, feel free to get in touch.\n\nAll the best,\n[Your name]",
-        "imap_check_required": true,
-        "send_condition": "IMAP clean — no reply from lead 30 (Steve) since last confirmed check 2026-04-04",
-        "sequence_complete_after_send": true
-      },
-      {
-        "followup_id": "fu_042",
-        "lead_id": 31,
-        "business_name": "Pontefract Pharmacy",
-        "town": "Pontefract",
-        "original_sent_at": "2026-04-09",
-        "followup_number": 3,
-        "sequence_day": 14,
-        "overdue_days": 18,
-        "carry_forward_from": "2026-05-06 (Day 39) → 2026-05-07 (Day 40) → 2026-05-08 (Day 41) → 2026-05-10 (Day 43) → 2026-05-11 (Monday — FINAL WINDOW)",
-        "send_date": "2026-05-11",
-        "planned_send_time": "09:40",
-        "followup_type": "breakup",
-        "subject": "Closing the loop — Pontefract Pharmacy",
-        "body": "Hi,\n\nI've sent a couple of notes about the Pontefract Pharmacy website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-        "imap_check_required": true,
-        "send_condition": "IMAP clean — no reply from lead 31 confirmed",
-        "sequence_complete_after_send": true
-      },
-      {
-        "followup_id": "fu_043",
-        "lead_id": 32,
-        "business_name": "Castleford Carpets",
-        "owner_name": "Ann",
-        "town": "Castleford",
-        "original_sent_at": "2026-04-09",
-        "followup_number": 3,
-        "sequence_day": 14,
-        "overdue_days": 18,
-        "carry_forward_from": "2026-05-06 (Day 39) → 2026-05-07 (Day 40) → 2026-05-08 (Day 41) → 2026-05-10 (Day 43) → 2026-05-11 (Monday — FINAL WINDOW)",
-        "send_date": "2026-05-11",
-        "planned_send_time": "09:50",
-        "followup_type": "breakup",
-        "subject": "Closing the loop — Castleford Carpets",
-        "body": "Ann,\n\nI've sent a couple of notes about the Castleford Carpets website — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-        "imap_check_required": true,
-        "send_condition": "IMAP clean — no reply from Ann, lead 32",
-        "sequence_complete_after_send": true,
-        "seasonal_note": "May home-improvement season. Trades businesses in Castleford are active — breakup email is timely."
-      },
-      {
-        "followup_id": "fu_044",
-        "lead_id": 58,
-        "business_name": "The Old Court Solicitors",
-        "town": "Scarborough",
-        "original_sent_at": "2026-04-09",
-        "followup_number": 3,
-        "sequence_day": 14,
-        "overdue_days": 18,
-        "carry_forward_from": "2026-05-06 (Day 39) → 2026-05-07 (Day 40) → 2026-05-08 (Day 41) → 2026-05-10 (Day 43) → 2026-05-11 (Monday — FINAL WINDOW)",
-        "send_date": "2026-05-11",
-        "planned_send_time": "10:00",
-        "followup_type": "breakup",
-        "subject": "Closing the loop — The Old Court Solicitors",
-        "body": "Hi,\n\nI've sent a couple of notes about the Old Court Solicitors website — won't keep following up if now isn't the right time.\n\nIf things change down the line, feel free to get in touch.\n\nAll the best,\n[Your name]",
-        "imap_check_required": true,
-        "send_condition": "IMAP clean — no reply from lead 58 confirmed",
-        "sequence_complete_after_send": true
-      },
-      {
-        "followup_id": "fu_045",
-        "lead_id": 59,
-        "business_name": "Scarborough Roofing Specialists",
-        "owner_name": "Tony Shields",
-        "town": "Scarborough",
-        "original_sent_at": "2026-04-09",
-        "followup_number": 3,
-        "sequence_day": 14,
-        "overdue_days": 18,
-        "carry_forward_from": "2026-05-06 (Day 39) → 2026-05-07 (Day 40) → 2026-05-08 (Day 41) → 2026-05-10 (Day 43) → 2026-05-11 (Monday — FINAL WINDOW)",
-        "send_date": "2026-05-11",
-        "planned_send_time": "10:10",
-        "followup_type": "breakup",
-        "subject": "Closing the loop — Scarborough Roofing Specialists",
-        "body": "Tony,\n\nI've dropped you a couple of notes about the Scarborough Roofing Specialists site — won't keep following up if the timing isn't right.\n\nIf things change, you know where I am.\n\nAll the best,\n[Your name]",
-        "imap_check_required": true,
-        "send_condition": "IMAP clean — no reply from Tony, lead 59",
-        "sequence_complete_after_send": true,
-        "seasonal_note": "Peak roofing season May-August. Tony is likely busy — a short professional breakup is well-judged."
-      }
-    ]
+    "send_today": false,
+    "reason": "Thursday — no sends today. Day-3 window opens Friday 2026-05-15. Do not accelerate."
   },
 
-  "batch_5_followup_schedule": {
-    "status": "PENDING — no Batch 5 initial sends yet. Confirmed send day: Tuesday 2026-05-12, 09:00-10:30.",
-    "confirmed_batch5_day0_tuesday_12_may": {
-      "initial_send_date": "2026-05-12",
-      "send_window": "09:00-10:30",
-      "day3_bump": {
-        "calendar_day3": "Friday 2026-05-15",
-        "adjusted_send_date": "Friday 2026-05-15 (working day — no adjustment needed)",
-        "brain_run": "Tuesday 2026-05-12 evening or Wednesday 2026-05-13 morning",
-        "send_window": "09:00-10:30",
-        "type": "Thread reply — 3-4 lines. Reference specific Day-0 signal. Not a restatement."
+  "batch_5_day3_schedule": {
+    "status": "READY — send tomorrow Friday 2026-05-15",
+    "description": "Batch 5 Ryedale Day-3 email bumps. Assumed Day-0 sent Tuesday 2026-05-12. Day-3 = Friday 2026-05-15.",
+    "send_date": "2026-05-15 (Friday)",
+    "send_window": "09:00-10:30",
+    "stagger": "10 minutes between sends",
+    "type": "Thread reply to original Day-0 email — 3-4 lines. Signal-specific. Not a restatement.",
+    "imap_precondition": "MANDATORY — sweep each lead before sending their bump. 40-day IMAP gap.",
+    "expected_send_count": "12-18 (depends on confirmed Batch 5 send list from HANDS)",
+    "copy_location": "data/daily_email_plan.json — per-signal templates. HANDS fills placeholders.",
+    "per_lead_data_status": "NOT RECEIVED — HANDS populates from their Tuesday session send records",
+
+    "templates": {
+      "ssl_pas_bump": {
+        "signal": "ssl",
+        "send_type": "Thread reply",
+        "subject": "[Inherited from thread]",
+        "body": "[First name],\n\nJust wanted to make sure this landed — the 'Not Secure' warning on [specific URL] is still showing.\n\nHappy to talk through the fix if useful.\n\n[Your name]",
+        "personalisation": ["First name", "specific URL (from Day-0 send records)"],
+        "allocation": "~60% of sends"
       },
-      "day7_new_angle": {
-        "due": "Tuesday 2026-05-19, 09:00-10:30",
-        "brain_run": "Tuesday 2026-05-19 morning",
-        "type": "New angle — genuinely different pain point. NEVER restate Day-0 signal."
+      "mobile_pas_bump": {
+        "signal": "mobile",
+        "send_type": "Thread reply",
+        "subject": "[Inherited from thread]",
+        "body": "[First name],\n\nJust checking this got through — [business name]'s site is still not loading properly on a mobile screen.\n\nWorth a quick look if you've got 10 minutes.\n\n[Your name]",
+        "personalisation": ["First name", "business name (from Day-0 send records)"],
+        "allocation": "~20% of sends"
       },
-      "day14_breakup": {
-        "due": "Tuesday 2026-05-26, 09:00-10:30",
-        "brain_run": "Tuesday 2026-05-26 morning"
+      "no_website_bab_bump": {
+        "signal": "no_website",
+        "send_type": "Thread reply (or new email if no reply-thread exists)",
+        "subject": "[Inherited from thread, or: 'Following up — [Business name], [town]']",
+        "body": "Hi,\n\nFollowing up on my note from a few days ago — when I search for '[trade] [town]' on Google, [business name] still isn't coming up.\n\nCompetitors with websites are getting those calls instead. Worth 10 minutes to chat?\n\n[Your name]",
+        "personalisation": ["trade keyword", "town", "business name (all from Day-0 send records)"],
+        "allocation": "~15% of sends"
       },
-      "linkedin_day3_window": {
-        "opens": "Friday 2026-05-15",
-        "closes": "Tuesday 2026-05-19 — HARD DEADLINE",
-        "note": "LinkedIn executed by Day 7 or channel closed. No 43-session delays."
+      "aida_keyword_gap_bump": {
+        "signal": "aida",
+        "send_type": "Thread reply",
+        "subject": "[Inherited from thread]",
+        "body": "[First name],\n\nQuick follow-up — [business name] has [N] reviews but '[keyword] [town]' still isn't surfacing the website in Google.\n\nWorth a look?\n\n[Your name]",
+        "personalisation": ["First name", "business name", "N (review count)", "keyword", "town"],
+        "allocation": "~5% of sends — test only (4.5★+ 100+ reviews only)"
       }
     },
-    "day3_template": {
-      "type": "Short thread reply — reply to original email thread",
-      "template": "[First name],\n\nJust wanted to make sure this didn't get buried.\n\n[One sentence restating specific signal — e.g. 'The Not Secure warning on [URL] is still showing.']\n\n[Your name]",
-      "rules": "3-4 lines only. Same thread. Brief bump only — do not restate the full pitch.",
-      "brain_generates_per_lead_copy": true
-    },
-    "day7_pivot_rules": {
-      "if_day0_was_ssl": "Day-7: Google ranking impact of Not Secure, OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
-      "if_day0_was_mobile": "Day-7: SSL (if HTTP), OR missing tap-to-call, OR specific local competitor who IS mobile-friendly.",
-      "if_day0_was_no_website": "Day-7: competitors ranking for the keyword, OR estimated missed enquiries per month.",
-      "rule": "Day-7 MUST be a genuinely different pain point. Reframes do not perform."
+
+    "imap_handling_rules": {
+      "if_clean": "Send bump as templated. Log CHANGELOG.",
+      "if_interested_reply_found": "Send interested variant (see daily_email_plan.json). Write reply to new_replies.json. Classify in reply_classifications.json. Prepare proposal within 24 hours. Activate LinkedIn Day 7 hard deadline (2026-05-19).",
+      "if_not_interested": "Cancel bump. Suppress email channel. Block LinkedIn. Log CHANGELOG.",
+      "if_unsubscribe": "Cancel bump. Suppress within 24h (GDPR Article 21). Log audit_log and CHANGELOG.",
+      "if_ooo": "Note return date. Pause sequence. Resume bump day after stated return date.",
+      "if_wrong_person": "Cancel bump. Investigate correct contact. Log CHANGELOG."
     }
   },
 
-  "linkedin_batch5": {
-    "status": "PENDING — activates after Batch 5 Day-0 (Tuesday 2026-05-12)",
-    "day3_linkedin_window": "Friday 2026-05-15 (opens) to Tuesday 2026-05-19 (HARD DEADLINE)",
-    "brain_generates_queries": "Tuesday 2026-05-12 evening BRAIN run (alongside Day-3 email copy)",
-    "hard_rule": "LinkedIn executed by Day 7 or closed. No 43-session delays."
+  "batch_5_followup_schedule": {
+    "day_0": {
+      "date": "2026-05-12 (Tuesday)",
+      "status": "ASSUMED_SENT — UNCONFIRMED",
+      "sends": "12-18 Ryedale leads"
+    },
+    "day_3_bump": {
+      "date": "2026-05-15 (Friday)",
+      "status": "SEND TOMORROW — AUTHORISED",
+      "type": "Short thread reply — signal-specific bump",
+      "brain_copy_ready": true,
+      "copy_location": "data/daily_email_plan.json (copy_by_signal section)",
+      "send_window": "09:00-10:30",
+      "linkedin_same_day": "YES — after bumps. 1-hour gap minimum."
+    },
+    "day_7_new_angle": {
+      "date": "2026-05-19 (Tuesday)",
+      "status": "PENDING — brain generates copy Friday evening or Monday",
+      "type": "New angle — DIFFERENT pain point. Never restate Day-0 signal.",
+      "brain_run": "Friday 2026-05-15 evening (after HANDS returns linkedin_profiles.json) or Monday 2026-05-18 morning",
+      "day7_pivot_rules": {
+        "if_day0_ssl": "Day-7: Google ranking impact of Not Secure, OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
+        "if_day0_mobile": "Day-7: SSL (if HTTP), OR missing tap-to-call, OR specific local competitor who IS mobile-friendly.",
+        "if_day0_no_website": "Day-7: competitors ranking for trade + town keyword, OR estimated missed enquiries per month.",
+        "rule": "Day-7 MUST be a genuinely different pain point. A reframe of Day-0 does not perform (confirmed by campaign data)."
+      },
+      "linkedin_hard_deadline": "Tuesday 2026-05-19 — archive trigger fires immediately for any Batch 5 lead where LinkedIn not yet executed"
+    },
+    "day_14_breakup": {
+      "date": "2026-05-26 (Tuesday)",
+      "status": "PENDING",
+      "type": "3 lines max. No pressure. No question marks. Door open.",
+      "brain_run": "Tuesday 2026-05-26 morning"
+    }
   },
 
+  "legacy_sequences_status": {
+    "fu_041": {"lead_id": 30, "business": "Halifax Window Cleaning (Steve)", "status": "ASSUMED_COMPLETE (2026-05-11)", "reapproach": "2026-10-23"},
+    "fu_042": {"lead_id": 31, "business": "Pontefract Pharmacy", "status": "ASSUMED_COMPLETE (2026-05-11)", "reapproach": "2026-10-23"},
+    "fu_043": {"lead_id": 32, "business": "Castleford Carpets (Ann)", "status": "ASSUMED_COMPLETE (2026-05-11)", "reapproach": "2026-10-23"},
+    "fu_044": {"lead_id": 58, "business": "The Old Court Solicitors", "status": "ASSUMED_COMPLETE (2026-05-11)", "reapproach": "2026-10-23"},
+    "fu_045": {"lead_id": 59, "business": "Scarborough Roofing Specialists (Tony)", "status": "ASSUMED_COMPLETE (2026-05-11)", "reapproach": "2026-10-23"}
+  },
+
+  "do_not_followup": [1, 2, 3, 7, 19, 22],
+  "sequences_complete_no_more_touches": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
+  "formally_archived_no_contact": [1, 3, 22, 49, 51, 53, 54],
+
   "summary": {
-    "active_sequences": 0,
-    "fu_sends_today": 5,
-    "fu_send_today": true,
-    "fu_due_today_ids": "fu_041 (lead 30), fu_042 (lead 31), fu_043 (lead 32), fu_044 (lead 58), fu_045 (lead 59)",
-    "fu_due_today_type": "Day-14 breakups — 18 days overdue. Monday 2026-05-11 is the FINAL acceptable window.",
-    "imap_precondition": "MANDATORY — IMAP sweep before each send",
-    "send_window": "09:30-10:10 after IMAP sweep complete",
-    "batch_5_initial_sends": "0 today. CONFIRMED: Tuesday 2026-05-12, 09:00-10:30.",
-    "sequences_completing_today": [30, 31, 32, 58, 59],
-    "hands_actions_today": [
-      "FIRST: IMAP sweep — leads 30, 31, 32, 58, 59 + full cohort (NOT leads 1/3/22 — archive final)",
-      "THEN: fu_041 — Steve, Halifax Window Cleaning (09:30, IMAP clean)",
-      "THEN: fu_042 — Pontefract Pharmacy (09:40, IMAP clean)",
-      "THEN: fu_043 — Ann, Castleford Carpets (09:50, IMAP clean)",
-      "THEN: fu_044 — The Old Court Solicitors (10:00, IMAP clean)",
-      "THEN: fu_045 — Tony, Scarborough Roofing Specialists (10:10, IMAP clean)",
-      "THEN: Archive leads 53, 54 (LOST_UNRESOLVED — log CHANGELOG)",
-      "THEN: CHANGELOG.md update — 44 days unlogged — MANDATORY before Tuesday sends"
-    ]
+    "active_legacy_sequences": 0,
+    "day3_bumps_due": "TOMORROW — Friday 2026-05-15, 09:00-10:30",
+    "expected_day3_sends": "12-18 (pending HANDS confirmation of Batch 5 send list)",
+    "copy_ready": true,
+    "copy_location": "data/daily_email_plan.json",
+    "imap_precondition": "MANDATORY — 40-day gap. Sweep before each send.",
+    "linkedin_same_day": "Friday 2026-05-15 — after email bumps. HARD DEADLINE: Tuesday 2026-05-19.",
+    "changelog_mandatory": "Friday 2026-05-15 — 47 days overdue",
+    "day7_date": "Tuesday 2026-05-19",
+    "day14_date": "Tuesday 2026-05-26"
   }
 }
