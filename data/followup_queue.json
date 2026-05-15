@@ -1,73 +1,17 @@
 {
-  "generated_at": "2026-05-14T19:00:00Z",
-  "date": "2026-05-14",
-  "day_number": 47,
-  "note": "BRAIN layer — Day 47 (Thursday 2026-05-14). Eve of Batch 5 Day-3. Day-3 bump copy is ready for HANDS to send tomorrow (Friday 2026-05-15, 09:00-10:30). No per-lead data file received from HANDS — schedule and copy provided as templates. HANDS confirms actual lead IDs and details from their send records (Tuesday 2026-05-12 session).",
+  "generated_at": "2026-05-15T19:00:00Z",
+  "date": "2026-05-15",
+  "day_number": 48,
+  "batch_5_day": 3,
+  "note": "BRAIN layer — Day 48 (Friday 2026-05-15, Batch 5 Day 3). Day-3 bumps assumed sent 09:00-10:30 — UNCONFIRMED. Day-7 new-angle email copy is now ready (see daily_email_plan.json). LinkedIn execution UNCONFIRMED (linkedin_profiles.json missing). Monday 2026-05-18 is the last LinkedIn window. Day-7 hard deadline: Tuesday 2026-05-19 (both email sends and LinkedIn archive trigger). No legacy follow-up obligations remain.",
 
   "active_followups_legacy": [],
   "active_legacy_count": 0,
-  "legacy_note": "All pre-Batch 5 sequences complete. fu_041-045 assumed sent Monday 2026-05-11 (unconfirmed). No remaining legacy follow-up obligations.",
+  "legacy_note": "All pre-Batch 5 sequences complete or assumed complete. fu_041-045 assumed sent Monday 2026-05-11 (UNCONFIRMED). No remaining legacy follow-up obligations.",
 
   "send_today": {
     "send_today": false,
-    "reason": "Thursday — no sends today. Day-3 window opens Friday 2026-05-15. Do not accelerate."
-  },
-
-  "batch_5_day3_schedule": {
-    "status": "READY — send tomorrow Friday 2026-05-15",
-    "description": "Batch 5 Ryedale Day-3 email bumps. Assumed Day-0 sent Tuesday 2026-05-12. Day-3 = Friday 2026-05-15.",
-    "send_date": "2026-05-15 (Friday)",
-    "send_window": "09:00-10:30",
-    "stagger": "10 minutes between sends",
-    "type": "Thread reply to original Day-0 email — 3-4 lines. Signal-specific. Not a restatement.",
-    "imap_precondition": "MANDATORY — sweep each lead before sending their bump. 40-day IMAP gap.",
-    "expected_send_count": "12-18 (depends on confirmed Batch 5 send list from HANDS)",
-    "copy_location": "data/daily_email_plan.json — per-signal templates. HANDS fills placeholders.",
-    "per_lead_data_status": "NOT RECEIVED — HANDS populates from their Tuesday session send records",
-
-    "templates": {
-      "ssl_pas_bump": {
-        "signal": "ssl",
-        "send_type": "Thread reply",
-        "subject": "[Inherited from thread]",
-        "body": "[First name],\n\nJust wanted to make sure this landed — the 'Not Secure' warning on [specific URL] is still showing.\n\nHappy to talk through the fix if useful.\n\n[Your name]",
-        "personalisation": ["First name", "specific URL (from Day-0 send records)"],
-        "allocation": "~60% of sends"
-      },
-      "mobile_pas_bump": {
-        "signal": "mobile",
-        "send_type": "Thread reply",
-        "subject": "[Inherited from thread]",
-        "body": "[First name],\n\nJust checking this got through — [business name]'s site is still not loading properly on a mobile screen.\n\nWorth a quick look if you've got 10 minutes.\n\n[Your name]",
-        "personalisation": ["First name", "business name (from Day-0 send records)"],
-        "allocation": "~20% of sends"
-      },
-      "no_website_bab_bump": {
-        "signal": "no_website",
-        "send_type": "Thread reply (or new email if no reply-thread exists)",
-        "subject": "[Inherited from thread, or: 'Following up — [Business name], [town]']",
-        "body": "Hi,\n\nFollowing up on my note from a few days ago — when I search for '[trade] [town]' on Google, [business name] still isn't coming up.\n\nCompetitors with websites are getting those calls instead. Worth 10 minutes to chat?\n\n[Your name]",
-        "personalisation": ["trade keyword", "town", "business name (all from Day-0 send records)"],
-        "allocation": "~15% of sends"
-      },
-      "aida_keyword_gap_bump": {
-        "signal": "aida",
-        "send_type": "Thread reply",
-        "subject": "[Inherited from thread]",
-        "body": "[First name],\n\nQuick follow-up — [business name] has [N] reviews but '[keyword] [town]' still isn't surfacing the website in Google.\n\nWorth a look?\n\n[Your name]",
-        "personalisation": ["First name", "business name", "N (review count)", "keyword", "town"],
-        "allocation": "~5% of sends — test only (4.5★+ 100+ reviews only)"
-      }
-    },
-
-    "imap_handling_rules": {
-      "if_clean": "Send bump as templated. Log CHANGELOG.",
-      "if_interested_reply_found": "Send interested variant (see daily_email_plan.json). Write reply to new_replies.json. Classify in reply_classifications.json. Prepare proposal within 24 hours. Activate LinkedIn Day 7 hard deadline (2026-05-19).",
-      "if_not_interested": "Cancel bump. Suppress email channel. Block LinkedIn. Log CHANGELOG.",
-      "if_unsubscribe": "Cancel bump. Suppress within 24h (GDPR Article 21). Log audit_log and CHANGELOG.",
-      "if_ooo": "Note return date. Pause sequence. Resume bump day after stated return date.",
-      "if_wrong_person": "Cancel bump. Investigate correct contact. Log CHANGELOG."
-    }
+    "reason": "Day-3 bumps assumed sent this morning. No further sends today. Next scheduled sends: Day-7 new-angle, Tuesday 2026-05-19."
   },
 
   "batch_5_followup_schedule": {
@@ -77,32 +21,63 @@
       "sends": "12-18 Ryedale leads"
     },
     "day_3_bump": {
-      "date": "2026-05-15 (Friday)",
-      "status": "SEND TOMORROW — AUTHORISED",
+      "date": "2026-05-15 (Friday — TODAY)",
+      "status": "ASSUMED_SENT — UNCONFIRMED",
       "type": "Short thread reply — signal-specific bump",
-      "brain_copy_ready": true,
-      "copy_location": "data/daily_email_plan.json (copy_by_signal section)",
       "send_window": "09:00-10:30",
-      "linkedin_same_day": "YES — after bumps. 1-hour gap minimum."
+      "brain_copy_ready": true,
+      "copy_location": "Day 47 daily_email_plan.json — templates were ready",
+      "linkedin_same_day": "Day-3 LinkedIn assumed not executed (linkedin_profiles.json missing). Monday fallback active.",
+      "note": "If any Day-3 bumps were not sent today: treat as overdue. Send Monday 2026-05-18 as first priority — still within the 3-7 day response window."
     },
     "day_7_new_angle": {
       "date": "2026-05-19 (Tuesday)",
-      "status": "PENDING — brain generates copy Friday evening or Monday",
-      "type": "New angle — DIFFERENT pain point. Never restate Day-0 signal.",
-      "brain_run": "Friday 2026-05-15 evening (after HANDS returns linkedin_profiles.json) or Monday 2026-05-18 morning",
+      "status": "READY — copy generated in this BRAIN run (2026-05-15 evening)",
+      "type": "Standalone NEW email — NOT a thread reply. New subject. Different pain point.",
+      "copy_location": "data/daily_email_plan.json (day7_new_angle section)",
+      "send_window": "09:00-10:30",
+      "stagger": "10 minutes between sends",
+      "imap_precondition": "MANDATORY per lead before each send",
+      "linkedin_hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger fires for any Batch 5 lead without LinkedIn",
       "day7_pivot_rules": {
-        "if_day0_ssl": "Day-7: Google ranking impact of Not Secure, OR missing/incomplete Google Business Profile. NEVER repeat SSL angle.",
-        "if_day0_mobile": "Day-7: SSL (if HTTP), OR missing tap-to-call, OR specific local competitor who IS mobile-friendly.",
-        "if_day0_no_website": "Day-7: competitors ranking for trade + town keyword, OR estimated missed enquiries per month.",
-        "rule": "Day-7 MUST be a genuinely different pain point. A reframe of Day-0 does not perform (confirmed by campaign data)."
-      },
-      "linkedin_hard_deadline": "Tuesday 2026-05-19 — archive trigger fires immediately for any Batch 5 lead where LinkedIn not yet executed"
+        "if_day0_ssl": "Day-7: Google local ranking penalty for HTTP sites — genuinely different from trust/visitor angle. See daily_email_plan.json ssl_pas_day7.",
+        "if_day0_mobile": "Day-7: SSL ('Not Secure' for all visitors) OR missing click-to-call. Condition: SSL only if site is HTTP. See daily_email_plan.json mobile_pas_day7.",
+        "if_day0_no_website": "Day-7: Named competitor ranking for '[trade] [town]' (preferred) OR 'businesses from nearby area' framing. See daily_email_plan.json no_website_bab_day7.",
+        "if_day0_aida": "Day-7: Reviews not converting to search visibility — ranking gap persists. See daily_email_plan.json aida_keyword_gap_day7.",
+        "rule": "Day-7 MUST be a genuinely different pain point. Campaign data confirms reframes do not perform."
+      }
     },
     "day_14_breakup": {
       "date": "2026-05-26 (Tuesday)",
-      "status": "PENDING",
-      "type": "3 lines max. No pressure. No question marks. Door open.",
-      "brain_run": "Tuesday 2026-05-26 morning"
+      "status": "PENDING — BRAIN generates copy Tuesday 2026-05-26 morning",
+      "type": "3 lines max. No pressure. No question marks. Door open. UK English.",
+      "brain_run": "Tuesday 2026-05-26 morning (Day 59)",
+      "rule": "Maximum 4 total touchpoints — Day-14 breakup is the FINAL email. Hard limit. No exceptions."
+    }
+  },
+
+  "batch_5_day3_results_expected": {
+    "reply_probability": "Day-3 bump significantly increases reply probability. Most responses come within 24-72 hours of the bump.",
+    "expected_reply_window": "Saturday 2026-05-16 to Monday 2026-05-18 (first wave post-bump)",
+    "if_reply_received_weekend": {
+      "instruction": "If HANDS checks IMAP over the weekend and finds a Batch 5 reply: write to new_replies.json immediately. Classify in reply_classifications.json. If INTERESTED: prepare proposal draft — do not send until Monday morning. Log CHANGELOG.",
+      "proposal_sla": "24 hours from reply — non-negotiable. Tom asked for pricing and never got it. That does not repeat."
+    }
+  },
+
+  "linkedin_status": {
+    "day3_linkedin_status": "UNCONFIRMED — linkedin_profiles.json missing",
+    "linkedin_profiles_file": "MISSING — HANDS has not written this file",
+    "monday_fallback": {
+      "date": "2026-05-18 (Monday)",
+      "is_uk_bank_holiday": false,
+      "status": "MANDATORY if Friday LinkedIn not executed",
+      "instruction": "Execute LinkedIn searches and connection requests. Write linkedin_profiles.json same session. See linkedin_connection_notes.json (monday_fallback_notes section) for ready-to-use sector templates."
+    },
+    "hard_deadline": {
+      "date": "2026-05-19 (Tuesday) EOD",
+      "consequence": "Archive all Batch 5 leads without confirmed LinkedIn as LOST_NO_RESPONSE. Log CHANGELOG immediately. No deferrals, no extensions. 48-session failure does not repeat.",
+      "rule": "Non-negotiable. linkedin_profiles.json MUST be written same session as execution."
     }
   },
 
@@ -118,16 +93,25 @@
   "sequences_complete_no_more_touches": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
   "formally_archived_no_contact": [1, 3, 22, 49, 51, 53, 54],
 
+  "imap_handling_rules_day7": {
+    "if_clean": "Send Day-7 new-angle email. Log CHANGELOG.",
+    "if_interested_reply_found": "Do NOT send Day-7 email. Send interested variant instead (reply in thread). Classify. Proposal within 24h. LinkedIn by Day-7 hard deadline (still 2026-05-19). Update pipeline.",
+    "if_not_interested": "Cancel Day-7 permanently. Suppress email channel. Block LinkedIn. Log CHANGELOG.",
+    "if_unsubscribe": "Cancel Day-7. Suppress within 24h (GDPR Article 21). Log audit_log and CHANGELOG.",
+    "if_ooo": "Pause Day-7. Note return date. Resume day after return if within Day-14 window. 4-touchpoint limit applies.",
+    "if_wrong_person": "Pause Day-7. Investigate correct contact. Log CHANGELOG."
+  },
+
   "summary": {
     "active_legacy_sequences": 0,
-    "day3_bumps_due": "TOMORROW — Friday 2026-05-15, 09:00-10:30",
-    "expected_day3_sends": "12-18 (pending HANDS confirmation of Batch 5 send list)",
-    "copy_ready": true,
-    "copy_location": "data/daily_email_plan.json",
-    "imap_precondition": "MANDATORY — 40-day gap. Sweep before each send.",
-    "linkedin_same_day": "Friday 2026-05-15 — after email bumps. HARD DEADLINE: Tuesday 2026-05-19.",
-    "changelog_mandatory": "Friday 2026-05-15 — 47 days overdue",
-    "day7_date": "Tuesday 2026-05-19",
-    "day14_date": "Tuesday 2026-05-26"
+    "day3_bumps_status": "ASSUMED_SENT Friday 2026-05-15 — UNCONFIRMED",
+    "day7_send_date": "Tuesday 2026-05-19, 09:00-10:30",
+    "day7_copy_ready": true,
+    "day7_copy_location": "data/daily_email_plan.json (day7_new_angle section)",
+    "day14_send_date": "Tuesday 2026-05-26",
+    "imap_precondition_day7": "MANDATORY per lead before each send",
+    "linkedin_status": "UNCONFIRMED (profiles.json missing) — Monday 2026-05-18 fallback MANDATORY if Friday missed",
+    "linkedin_hard_deadline": "Tuesday 2026-05-19 EOD",
+    "changelog_mandatory": "Before Tuesday 2026-05-19 Day-7 sends — 48 days overdue"
   }
 }

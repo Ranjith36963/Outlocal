@@ -1,115 +1,145 @@
 {
-  "generated_at": "2026-05-14T19:00:00Z",
-  "date": "2026-05-14",
-  "day_number": 47,
-  "note": "BRAIN layer — Day 47 (Thursday 2026-05-14). Eve of Batch 5 Day-3 send day. Day-3 email bumps and LinkedIn connection requests are both due TOMORROW (Friday 2026-05-15). IMAP gap: 40 days — MANDATORY sweep before any Day-3 sends or LinkedIn. No new leads today. No new signals. No per-lead Batch 5 data file received from HANDS — Day-3 copy provided as per-signal templates; HANDS populates placeholders from their send records.",
+  "generated_at": "2026-05-15T19:00:00Z",
+  "date": "2026-05-15",
+  "day_number": 48,
+  "batch_5_day": 3,
+  "note": "BRAIN layer — Day 48 (Friday 2026-05-15, Batch 5 Day 3). Day-3 email bumps ASSUMED SENT (09:00-10:30) — UNCONFIRMED by HANDS. LinkedIn execution UNCONFIRMED: data/linkedin_profiles.json not written. IMAP sweep assumed today — UNCONFIRMED. No new replies in new_replies.json (consistent with clean sweep OR sweep not executed). No new leads or signals today. Day-7 new-angle copy now ready (see daily_email_plan.json). Monday 2026-05-18 is the LinkedIn last-chance window. Archive trigger fires Tuesday 2026-05-19 EOD for any Batch 5 lead without confirmed LinkedIn.",
 
   "day_assessment": {
-    "today_thursday": {
-      "date": "2026-05-14",
-      "day_of_week": "Thursday",
-      "campaign_day": 47,
+    "today_friday": {
+      "date": "2026-05-15",
+      "day_of_week": "Friday",
+      "campaign_day": 48,
+      "batch_5_day": 3,
       "is_uk_bank_holiday": false,
-      "send_day_quality": {
-        "initial_sends": "BLOCKED — no new cohort ready. Batch 5 is Day-3 tomorrow, not Day-0 today.",
-        "day3_bumps": "BLOCKED TODAY — not yet Friday. Send window opens tomorrow 09:00.",
-        "linkedin": "BLOCKED TODAY — window opens Friday 2026-05-15 (Day 3). Execute tomorrow.",
-        "assessment": "Brain-only day. Generate Day-3 copy and LinkedIn templates tonight. No sends until Friday 09:00."
+      "hands_execution_status": {
+        "imap_sweep": "ASSUMED_EXECUTED — UNCONFIRMED. new_replies.json unchanged from 2026-04-04, which is consistent with a clean IMAP sweep (no new replies found) OR sweep not executed.",
+        "day3_bumps": "ASSUMED_SENT — UNCONFIRMED. HANDS had 09:00-10:30 send window. No confirmation received. Treating as executed.",
+        "linkedin_searches": "UNCONFIRMED — data/linkedin_profiles.json NOT FOUND. This is the same failure mode as the warm pipeline. Either LinkedIn was executed and profiles.json not written (unacceptable) or LinkedIn was not executed (unacceptable).",
+        "linkedin_connection_notes": "UNCONFIRMED — see above.",
+        "changelog_update": "STILL OVERDUE — 48 days. Mandatory before Day-7 sends on Tuesday 2026-05-19. Absolute deadline."
+      },
+      "linkedin_profiles_json_alert": {
+        "status": "MISSING",
+        "severity": "CRITICAL",
+        "consequence": "BRAIN cannot generate per-lead personalised LinkedIn notes. Monday is the last window. Archive trigger fires Tuesday 2026-05-19 EOD.",
+        "instruction_for_hands": "If LinkedIn was executed Friday: write linkedin_profiles.json NOW (same session — required). If LinkedIn was NOT executed Friday: execute Monday 2026-05-18 AND write linkedin_profiles.json same session. No exceptions. No deferrals."
       }
     }
   },
 
   "imap_status": {
-    "gap_days": 40,
+    "gap_days_from_confirmed_check": 41,
     "last_confirmed_check": "2026-04-04",
-    "monday_sweep_status": "ASSUMED_EXECUTED (2026-05-11) — no HANDS confirmation ever received",
-    "current_gap_from_assumed_sweep": 3,
-    "status": "CRITICAL — 40 days since confirmed check. MANDATORY sweep Friday morning before Day-3 bumps or LinkedIn.",
-    "priority_order": [
-      "All Batch 5 Ryedale leads (confirm no early replies before Day-3 bump)",
-      "Any remaining cohort not formally archived or suppressed"
-    ],
+    "friday_sweep_assumption": "ASSUMED_EXECUTED — UNCONFIRMED. new_replies.json unchanged. Most likely interpretation: sweep ran clean. Second interpretation: sweep not run.",
+    "new_replies_written_friday": 0,
+    "batch_5_reply_status": "Zero replies after Day 3. Normal — reply peak is Day 3-7. Day-3 bump arriving today increases probability significantly.",
+    "next_mandatory_sweep": "Tuesday 2026-05-19 — MANDATORY before each Day-7 send. Per lead, not bulk.",
     "leads_never_to_sweep": [1, 3, 22],
-    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No further IMAP for these leads.",
-    "batch_5_imap_protocol": "If IMAP reveals a Batch 5 lead has replied INTERESTED before Day-3 bump: still send bump (it's a reply-thread touchpoint — reinforce). If NOT_INTERESTED: suppress email channel, block LinkedIn. If UNSUBSCRIBE: suppress within 24h (GDPR Article 21), log audit_log."
+    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No further IMAP under any circumstances.",
+    "batch_5_imap_protocol_day7": "Per lead before send: if INTERESTED reply found — send interested variant + classify + proposal within 24h. If NOT_INTERESTED — cancel Day-7 send, block all channels. If UNSUBSCRIBE — suppress within 24h (GDPR Article 21), log audit_log."
   },
 
-  "batch_5_status": {
-    "initial_sends_date": "2026-05-12 (Tuesday)",
-    "initial_sends_status": "ASSUMED_SENT — HANDS confirmation not received",
-    "expected_sends": "12-18 Ryedale leads",
-    "per_lead_data_received": false,
-    "per_lead_data_note": "No structured Batch 5 send list received from HANDS. Day-3 copy generated as per-signal templates — HANDS populates [placeholders] from their send records.",
-    "day_3_date": "2026-05-15 (Friday) — TOMORROW",
-    "day_7_date": "2026-05-19 (Tuesday) — LinkedIn hard deadline",
-    "day_14_date": "2026-05-26 (Tuesday)",
-    "expected_interested_replies": "2-3 (15% SSL-PAS rate on 12-18 sends)",
-    "expected_reply_window": "Wednesday 2026-05-13 to Friday 2026-05-15 (first wave)",
-    "linkedin_window_opens": "2026-05-15 (Friday — TOMORROW)",
-    "linkedin_hard_deadline": "2026-05-19 (Tuesday, Day 7) — archive trigger fires immediately if missed"
+  "batch_5_reply_status": {
+    "days_since_day0_send": 3,
+    "expected_reply_window": "Day 3-7 (Friday 2026-05-15 to Tuesday 2026-05-19) — peak window now open",
+    "batch_5_replies_received": 0,
+    "batch_5_interested_leads": 0,
+    "day3_bump_effect": "Day-3 bumps assumed sent today. These significantly increase the probability of a reply in the next 24-72 hours. Monitor inbox Saturday-Monday.",
+    "expected_interested_count": "2-3 leads at 15% SSL-PAS rate on 12-18 sends"
   },
 
   "new_signals_today": 0,
   "new_leads_today": 0,
   "signal_assignments": [],
-  "signal_assignment_note": "No new lead data today. Signal waterfall for any future leads unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%).",
+  "signal_assignment_note": "No new lead data today. Waterfall unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%).",
 
   "do_not_email": [1, 2, 3, 7, 19, 22],
   "suppressed_lead_ids": [7, 19],
   "formally_archived": [1, 3, 22, 49, 51, 53, 54],
   "sequences_complete": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
 
-  "tomorrow_execution_order": {
-    "date": "2026-05-15 (Friday)",
+  "monday_execution_order": {
+    "date": "2026-05-18 (Monday)",
+    "is_uk_bank_holiday": false,
+    "note": "LinkedIn execution fallback day — MANDATORY if Friday execution not confirmed. Also: CHANGELOG deadline before Tuesday Day-7 sends.",
     "sequence": [
       {
         "priority": 1,
-        "action": "IMAP sweep — all Batch 5 Ryedale leads (full cohort excluding archived/suppressed)",
-        "type": "imap_mandatory",
-        "timing": "First action — before any email sends or LinkedIn",
-        "notes": "40-day gap. If INTERESTED reply found: proceed with Day-3 bump (same thread). If NOT_INTERESTED: cancel bump, block LinkedIn, log CHANGELOG. If UNSUBSCRIBE: suppress immediately, GDPR 24h rule."
+        "action": "Check data/linkedin_profiles.json — does it exist?",
+        "type": "check",
+        "notes": "If linkedin_profiles.json EXISTS and has entries: LinkedIn executed Friday. Skip to priority 4. If MISSING: LinkedIn must execute today — Monday is the last window."
       },
       {
         "priority": 2,
-        "action": "Day-3 email bumps — all Batch 5 leads (IMAP clean per lead)",
-        "type": "send_authorised",
-        "send_window": "09:00-10:30",
-        "stagger": "10 minutes between sends",
-        "copy_location": "data/daily_email_plan.json (per-signal templates) + data/followup_queue.json",
-        "notes": "Thread reply to original Day-0 email. 3-4 lines max. Signal-specific — reference the exact finding. Not a restatement of the full pitch."
+        "action": "IMAP sweep — all Batch 5 leads before LinkedIn (if LinkedIn not yet done)",
+        "type": "imap_mandatory",
+        "notes": "IMAP per lead before LinkedIn connection note send. If NOT_INTERESTED: block LinkedIn. If UNSUBSCRIBE: suppress, GDPR 24h rule."
       },
       {
         "priority": 3,
-        "action": "LinkedIn connection requests — all Batch 5 leads where profile confirmed",
-        "type": "linkedin_authorised",
-        "timing": "After Day-3 emails. Minimum 1-hour gap between email bump and LinkedIn request.",
-        "notes": "Use templates from data/linkedin_connection_notes.json. 200-char hard limit. Post-reference preferred (check profile for posts from last 60 days FIRST). Do NOT reference email, SSL, or any audit finding in note."
+        "action": "LinkedIn connection requests — all Batch 5 leads (Monday fallback — FINAL WINDOW)",
+        "type": "linkedin_mandatory",
+        "deadline": "Monday is the absolute last window. Archive trigger fires Tuesday 2026-05-19 EOD.",
+        "copy_location": "data/linkedin_connection_notes.json (monday_fallback_notes section — ready to use directly)",
+        "notes": "200-char hard limit. Post-reference preferred — check profile for posts from last 60 days FIRST. Do NOT reference email, SSL, website, or audit finding. 1+ hour gap between any residual Day-3 bumps and LinkedIn."
       },
       {
         "priority": 4,
-        "action": "Write data/linkedin_profiles.json",
+        "action": "Write data/linkedin_profiles.json — MANDATORY",
         "type": "mandatory_output",
-        "notes": "MANDATORY — one entry per lead searched. Required for BRAIN note generation. No exceptions. If not written same session: LinkedIn execution is unconfirmed (same failure mode as warm pipeline)."
+        "notes": "One entry per Batch 5 lead searched. Required for BRAIN Day-7 personalisation. Must be written same session as LinkedIn execution. No exceptions."
       },
       {
         "priority": 5,
-        "action": "CHANGELOG.md update",
+        "action": "CHANGELOG.md update — MANDATORY before Tuesday",
         "type": "mandatory",
-        "notes": "47 days overdue. MANDATORY before any Day-7 sends. Log: all Batch 5 Day-0 sends, fu_041-045 outcomes, archive decisions, IMAP sweep results, Day-3 outcomes. If not done Friday: MUST be done before Tuesday 2026-05-19."
+        "notes": "48 days overdue. Log: all Batch 5 Day-0 sends (date, lead IDs, business names), fu_041-045 outcomes, archive decisions (leads 1/3/22, 49/51/53/54), IMAP sweep results, Day-3 bumps, LinkedIn outcomes. Must be done before Tuesday 2026-05-19 Day-7 sends."
+      }
+    ]
+  },
+
+  "tuesday_execution_order": {
+    "date": "2026-05-19 (Tuesday)",
+    "session_type": "Batch 5 Day-7 new-angle sends + LinkedIn hard deadline archive trigger",
+    "sequence": [
+      {
+        "priority": 1,
+        "action": "IMAP sweep — each Batch 5 lead before their individual Day-7 send",
+        "type": "imap_mandatory",
+        "notes": "Per lead, not bulk sweep. If INTERESTED reply found: send interested variant, classify, 24h proposal SLA. If NOT_INTERESTED: cancel Day-7 send permanently, block all channels. If UNSUBSCRIBE: suppress 24h, GDPR Article 21."
+      },
+      {
+        "priority": 2,
+        "action": "Day-7 new-angle email sends — all Batch 5 leads (IMAP clean)",
+        "type": "send_authorised",
+        "send_window": "09:00-10:30",
+        "stagger": "10 minutes between sends",
+        "copy_location": "data/daily_email_plan.json (day7_new_angle section)",
+        "notes": "New standalone email — NOT a thread reply. New subject line. Different pain point from Day-0. See daily_email_plan.json for per-signal copy and subject lines."
+      },
+      {
+        "priority": 3,
+        "action": "LinkedIn archive trigger — EOD Tuesday 2026-05-19",
+        "type": "archive_trigger",
+        "notes": "Any Batch 5 lead where LinkedIn connection request has NOT been sent by EOD Tuesday: archive immediately as LOST_NO_RESPONSE. Log CHANGELOG same session. No extensions, no deferrals. 48-session warm pipeline failure does not repeat."
       }
     ]
   },
 
   "summary": {
-    "day": 47,
-    "date": "2026-05-14 (Thursday)",
+    "day": 48,
+    "date": "2026-05-15 (Friday, Batch 5 Day 3)",
+    "day3_bumps_status": "ASSUMED_SENT — UNCONFIRMED",
+    "imap_sweep_friday": "ASSUMED — UNCONFIRMED (new_replies.json unchanged, consistent with clean sweep)",
+    "linkedin_profiles_json": "MISSING — LinkedIn execution unconfirmed",
+    "linkedin_hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger fires immediately if missed",
+    "linkedin_monday_fallback": "Monday 2026-05-18 — HANDS must execute if Friday was missed",
     "new_signals_assigned": 0,
-    "imap_gap_days": 40,
-    "tomorrow_is": "Batch 5 Day-3 — email bumps + LinkedIn connection requests",
-    "day3_send_window": "Friday 2026-05-15, 09:00-10:30",
-    "linkedin_window_status": "Opens tomorrow (Friday 2026-05-15). Hard deadline Tuesday 2026-05-19. Archive trigger fires immediately if missed.",
-    "batch_5_per_lead_data": "NOT RECEIVED — HANDS must use their send records to fill template placeholders",
-    "changelog_overdue_days": 47,
-    "next_major_milestone": "Batch 5 Day-3 — Friday 2026-05-15, 09:00-10:30"
+    "batch_5_interested_replies": 0,
+    "day7_send_date": "Tuesday 2026-05-19, 09:00-10:30",
+    "day7_copy_status": "READY — see data/daily_email_plan.json (day7_new_angle section)",
+    "changelog_overdue_days": 48,
+    "strategy_review_due": "Sunday/Monday 2026-05-17-18 — active_strategy.md valid to 2026-05-17"
   }
 }
