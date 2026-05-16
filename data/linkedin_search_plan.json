@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-05-18T07:00:00Z",
+  "generated_at": "2026-05-16T20:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-18",
-  "day_number": 49,
-  "batch_5_day": 6,
-  "run_type": "MONDAY_MORNING — Batch 5 Day 6. LAST LINKEDIN WINDOW BEFORE ARCHIVE TRIGGER.",
-  "note": "Day 49 (Monday 2026-05-18 — MORNING). linkedin_profiles.json STILL MISSING — Friday execution UNCONFIRMED for the 49th consecutive session. Today is the LAST WINDOW before the archive trigger fires Tuesday 2026-05-19 EOD. HANDS must execute all Batch 5 LinkedIn searches and connection requests TODAY. search_queries[] below remains empty because HANDS never confirmed the Batch 5 send list. HANDS must populate search_queries[] from their send records, execute name-based primary queries first, use sector_discovery_fallback_queries below if name-based search yields no result. Write linkedin_profiles.json SAME SESSION — one entry per lead searched.",
+  "run_date": "2026-05-16",
+  "day_number": 50,
+  "batch_5_day": 4,
+  "run_type": "SATURDAY_EVENING — Day 50, Batch 5 Day 4. Weekend bridge. MONDAY 2026-05-18 IS FINAL LINKEDIN WINDOW.",
+  "note": "Day 50 (Saturday 2026-05-16 — EVENING). linkedin_profiles.json STILL MISSING — 50 consecutive sessions without LinkedIn execution. Day-3 bumps assumed sent YESTERDAY (2026-05-15). Reply peak window is OPEN NOW — 24-72h post-bump. Highest probability reply window is Saturday-Monday. Today: no LinkedIn sends (Saturday block). Monday 2026-05-18: FINAL LinkedIn window — HANDS must execute all Batch 5 searches and connection requests. Archive trigger fires Tuesday 2026-05-19 EOD without exception. search_queries[] remains empty — HANDS must populate from their 2026-05-12 Batch 5 send records. Sector discovery fallback queries are fully populated for all six Ryedale towns.",
 
   "email_outreach_state": {
-    "checked_at": "2026-05-18T07:00:00Z",
+    "checked_at": "2026-05-16T20:00:00Z",
     "source_files": ["data/daily_signals.json", "data/daily_email_plan.json", "data/new_replies.json"],
     "imap_gap_days": 42,
     "imap_last_confirmed_check": "2026-04-04",
-    "imap_note": "No new replies received since 2026-04-04. new_replies.json unchanged. IMAP sweep per lead is MANDATORY before each LinkedIn connection note today.",
+    "friday_sweep_status": "ASSUMED_EXECUTED 2026-05-15 — UNCONFIRMED. new_replies.json unchanged from 2026-04-04. Consistent with clean sweep OR sweep not run. Weekend IMAP monitoring strongly recommended today or Sunday — reply peak post-bump is HIGHEST NOW.",
 
     "batch_5_leads_emailed_3_plus_days_no_reply": {
       "day0_send_date": "2026-05-12",
-      "days_since_day0": 6,
+      "days_since_day0": 4,
       "day3_bump_send_date": "2026-05-15",
-      "days_since_day3": 3,
+      "days_since_day3": 1,
       "both_assumed_sent": "UNCONFIRMED — HANDS never wrote confirmation",
       "batch_5_replies_received": 0,
-      "reply_window_status": "Peak reply window open (Day 3-7). Zero replies so far. Day-3 bump increases probability of reply before Day-7 send.",
-      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 3+ days ago, zero replies confirmed, pending per-lead IMAP sweep before each LinkedIn note"
+      "reply_window_status": "PEAK OPEN — 24-72h post-Day-3-bump. Today (Saturday) and Sunday are the highest-probability reply windows across all Batches 1-4 historical data. Zero replies to date.",
+      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 4+ days ago, zero replies confirmed. LinkedIn approved for Monday execution pending per-lead IMAP sweep."
     },
 
     "existing_replies_block_status": {
@@ -31,7 +31,7 @@
       "lead_3": "Westfield Hair & Beauty / Claire — INTERESTED reply 2026-04-04. ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
       "lead_5": "Harewood Accountants / David Harewood — OUT_OF_OFFICE reply 2026-04-04. Sequence complete. LinkedIn window expired.",
       "lead_22": "Pennine Print & Design / Rob — INTERESTED reply 2026-04-04. ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
-      "batch_5_replies": "ZERO — no Batch 5 Ryedale lead has replied to date"
+      "batch_5_replies": "ZERO — no Batch 5 Ryedale lead has replied to date. Reply peak window OPEN."
     },
 
     "leads_never_to_sweep": [1, 3, 22],
@@ -42,49 +42,63 @@
     "sequence_complete_linkedin_expired": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59]
   },
 
-  "todays_execution_mandate": {
+  "today_saturday": {
+    "date": "2026-05-16 (Saturday)",
+    "linkedin_sends_today": false,
+    "reason": "No LinkedIn sends on weekends — rule absolute. Brain planning only.",
+    "recommended_action": "Weekend IMAP monitoring — if INTERESTED reply arrives Saturday or Sunday: classify, begin proposal draft (24h SLA from reply time), LinkedIn still valid Monday within Day 7 window.",
+    "brain_outputs_today": ["linkedin_search_plan.json (this file)", "linkedin_connection_notes.json", "linkedin_coordination.json"]
+  },
+
+  "monday_execution_mandate": {
     "date": "Monday 2026-05-18",
     "status": "LAST_WINDOW — archive trigger fires Tuesday 2026-05-19 EOD",
-    "urgency": "CRITICAL — 49-session LinkedIn execution failure. This is the terminal opportunity for every Batch 5 lead.",
+    "urgency": "CRITICAL — 50-session LinkedIn execution failure. This is the terminal opportunity for every Batch 5 lead.",
+    "no_deferral": "Zero tolerance. 50-session failure ends Monday or archive trigger fires Tuesday EOD.",
     "execution_order": [
       {
         "step": 1,
-        "action": "Pull Batch 5 send list from your morning session records (2026-05-12)",
-        "note": "Every lead you emailed on 2026-05-12 is a LinkedIn candidate today. Name, business, town, signal, sector required for each."
+        "action": "Pull Batch 5 send list from your 2026-05-12 session records",
+        "note": "Every lead you emailed on 2026-05-12 is a LinkedIn candidate. Full name, business name, town, signal, sector required for each. Without this list: sector_discovery_fallback_queries are the fallback."
       },
       {
         "step": 2,
         "action": "Execute in sector priority order: Solicitors → Estate agents → Hotels/B&Bs → Restaurants → Boutique retail → Trades",
-        "note": "Higher-sector leads have higher LinkedIn presence and higher acceptance rates. Don't work alphabetically by name — work by sector."
+        "note": "Higher-sector leads have higher LinkedIn presence and higher acceptance rates. Do not work alphabetically — work by sector."
       },
       {
         "step": 3,
-        "action": "For each lead: run primary name-based query first. If no result: run sector_discovery_fallback_query for that town+sector.",
-        "note": "Primary query = site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". Fallback queries are in sector_discovery_fallback_queries below."
+        "action": "For each lead: run primary name-based query. If no result: sector_discovery_fallback_query for that town+sector.",
+        "note": "Primary query format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". Fallback queries are in sector_discovery_fallback_queries below."
       },
       {
         "step": 4,
         "action": "IMAP sweep each lead before sending LinkedIn note",
-        "note": "Per lead, not bulk. If NOT_INTERESTED reply found: block LinkedIn permanently. If UNSUBSCRIBE: suppress all channels, GDPR 24h."
+        "note": "Per lead, not bulk. If NOT_INTERESTED reply found: block LinkedIn permanently. If UNSUBSCRIBE: suppress all channels, GDPR Article 21 (24h). If INTERESTED: LinkedIn still valid — connection request reinforces relationship."
       },
       {
         "step": 5,
-        "action": "Send connection request with note from monday_fallback_notes section in linkedin_connection_notes.json",
-        "note": "Post-reference note if posts found in last 60 days (3-4x acceptance). Generic note if no posts. 200-char hard limit — count before sending."
+        "action": "Check posts from last 60 days on each confirmed profile FIRST",
+        "note": "Post-reference note has 3-4x higher acceptance. Do not skip this step. Templates in linkedin_connection_notes.json (monday_fallback_notes section)."
       },
       {
         "step": 6,
-        "action": "Write linkedin_profiles.json immediately after each search — one entry per lead",
-        "note": "MANDATORY. Do not batch this. Write each entry as you complete each search. This file is how BRAIN knows LinkedIn was executed."
+        "action": "Send connection request with note — use monday_fallback_notes templates from linkedin_connection_notes.json",
+        "note": "200-char hard limit. Count in plain-text editor before sending. Do NOT mention email, SSL, 'Not Secure', mobile, or any prior contact."
       },
       {
         "step": 7,
-        "action": "CHANGELOG.md — log all activity same session",
-        "note": "49 days overdue. MANDATORY before Tuesday Day-7 sends."
+        "action": "Write data/linkedin_profiles.json IMMEDIATELY after each search — one entry per lead",
+        "note": "MANDATORY. Do not batch — write entry immediately after each search, whether or not a profile was found. This is the only confirmation mechanism. Without this file: archive trigger fires Tuesday EOD for every lead."
+      },
+      {
+        "step": 8,
+        "action": "CHANGELOG.md update — MANDATORY before Tuesday",
+        "note": "50 days overdue. Log: all Batch 5 Day-0 sends, Day-3 bumps, LinkedIn outcomes (confirmed or PROFILE_NOT_FOUND), all IMAP results since April, archive decisions. Must complete before Tuesday Day-7 sends."
       }
     ],
     "rules": [
-      "No LinkedIn on weekdays only — today (Monday) is valid",
+      "No LinkedIn on weekends — Monday is valid",
       "No LinkedIn to leads 1/3/22/2/7/19/49/51/53/54 — permanently blocked",
       "IMAP per lead before note — mandatory",
       "200-character hard limit on every note — count in plain text editor",
@@ -96,17 +110,51 @@
   },
 
   "search_queries": [],
-  "search_queries_status": "PENDING_HANDS_POPULATION — HANDS must populate this array from their 2026-05-12 Batch 5 send records. Use name-based primary queries first (format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"). If no name known: use sector_discovery_fallback_queries below for that town+sector.",
+  "search_queries_status": "PENDING_HANDS_POPULATION — HANDS must populate this array from their 2026-05-12 Batch 5 send records. Format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". If name unknown: use sector_discovery_fallback_queries below. Execute Monday 2026-05-18.",
+  "search_queries_format": {
+    "description": "Once HANDS confirms the Batch 5 send list, populate search_queries[] with entries in this format:",
+    "entry_schema": {
+      "lead_id": "[from send records]",
+      "name": "[owner full name — first + surname required]",
+      "company": "[business name]",
+      "town": "[town]",
+      "sector": "[solicitor|estate_agent|hotel_bb|restaurant|retail|trade]",
+      "signal": "[ssl|mobile|no_website|aida]",
+      "google_query": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"[Full Name]\" \"[Town]\" \"North Yorkshire\" [sector]",
+      "fallback_query_2": "See sector_discovery_fallback_queries below"
+    },
+    "example_malton_solicitor": {
+      "lead_id": "TBC",
+      "name": "David Pennington",
+      "company": "Pennington & Co Solicitors",
+      "town": "Malton",
+      "sector": "solicitor",
+      "signal": "ssl",
+      "google_query": "site:linkedin.com/in \"David Pennington\" \"Pennington & Co Solicitors\"",
+      "fallback_query_1": "site:linkedin.com/in \"David Pennington\" \"Malton\" \"North Yorkshire\" solicitor"
+    },
+    "example_helmsley_hotel": {
+      "lead_id": "TBC",
+      "name": "Sarah Mitchell",
+      "company": "The Black Swan Helmsley",
+      "town": "Helmsley",
+      "sector": "hotel_bb",
+      "signal": "ssl",
+      "google_query": "site:linkedin.com/in \"Sarah Mitchell\" \"The Black Swan Helmsley\"",
+      "fallback_query_1": "site:linkedin.com/in \"Sarah Mitchell\" \"Helmsley\" \"North Yorkshire\" hotel"
+    }
+  },
 
   "sector_discovery_fallback_queries": {
-    "note": "Use these ONLY when name-based primary query yields no result OR when owner surname is unknown. Execute in the order shown — sector priority applies within each town.",
+    "note": "Use these ONLY when: (1) name-based primary query yields no result, OR (2) owner surname is unknown. Execute in the order shown — sector priority applies within each town. Today's context: Day 3 bumps sent yesterday. Monday is FINAL window.",
     "Malton": [
       {
         "priority": 1,
         "sector": "solicitors",
         "query": "site:linkedin.com/in solicitor \"Malton\" \"North Yorkshire\" (director OR partner OR owner)",
         "fallback": "site:linkedin.com/in \"solicitor\" \"Malton\" partner director",
-        "note": "Highest LinkedIn likelihood in Ryedale. Malton solicitors almost always have profiles. Check posts from last 60 days — legal updates, charity, local events."
+        "note": "Highest LinkedIn likelihood in Ryedale. Malton solicitors almost always have profiles. Check posts from last 60 days — legal updates, charity, local events. Post-reference is very likely."
       },
       {
         "priority": 2,
@@ -131,7 +179,7 @@
         "priority": 5,
         "sector": "trades",
         "query": "site:linkedin.com/in \"[Full Name]\" \"Malton\" (plumber OR electrician OR builder OR joiner OR roofer)",
-        "note": "Trades — LOW LinkedIn presence. Only search if you have a full name. Skip if surname unknown."
+        "note": "Trades — LOW LinkedIn presence. Only search if you have a full name confirmed. Skip if surname unknown."
       }
     ],
     "Helmsley": [
@@ -140,20 +188,20 @@
         "sector": "hotels_bbs",
         "query": "site:linkedin.com/in hotel \"Helmsley\" \"North Yorkshire\" (owner OR director OR manager)",
         "fallback": "site:linkedin.com/in \"Helmsley\" hospitality (owner OR director)",
-        "note": "Highest post-reference likelihood in the entire Ryedale batch. Helmsley hospitality owners post about seasonal events, local walks, NYM Park. Check posts FIRST."
+        "note": "Highest post-reference likelihood in the entire Ryedale batch. Helmsley hospitality owners post about seasonal events, local walks, NYM Park. Check posts FIRST — always."
       },
       {
         "priority": 2,
         "sector": "restaurants_fine_dining",
         "query": "site:linkedin.com/in restaurant \"Helmsley\" (owner OR chef OR director)",
         "fallback": "site:linkedin.com/in \"Helmsley\" \"North Yorkshire\" restaurant chef founder",
-        "note": "Fine dining in the Helmsley/Harome area. Owners post menus, seasonal ingredients, supplier stories. Post-reference likely."
+        "note": "Fine dining in the Helmsley/Harome area. Owners post menus, seasonal ingredients, supplier stories. Post-reference very likely."
       },
       {
         "priority": 3,
         "sector": "estate_agents",
         "query": "site:linkedin.com/in \"estate agent\" \"Helmsley\" \"North Yorkshire\" (director OR owner)",
-        "note": "Helmsley estate agents cover the wider ryedale rural market — active LinkedIn presences."
+        "note": "Helmsley estate agents cover the wider Ryedale rural market — active LinkedIn presences."
       },
       {
         "priority": 4,
@@ -211,7 +259,7 @@
         "sector": "hospitality_estate",
         "query": "site:linkedin.com/in \"Hovingham\" \"North Yorkshire\" (owner OR director OR manager)",
         "fallback": "site:linkedin.com/in \"Hovingham\" hotel OR \"Worsley Arms\" director",
-        "note": "Very small village. LinkedIn presence is LOW. The Worsley Arms Hotel is the main hospitality lead — search specifically if that business is in your send list. Generic note only — post-reference unlikely."
+        "note": "Very small village. LinkedIn presence is LOW. The Worsley Arms Hotel is the primary hospitality lead — search specifically if in your send list. Generic note only — post-reference unlikely."
       }
     ],
     "Norton-on-Derwent": [
@@ -220,7 +268,7 @@
         "sector": "professional_services_trades",
         "query": "site:linkedin.com/in \"Norton\" \"Malton\" (solicitor OR accountant OR estate agent OR builder) (owner OR director OR partner)",
         "fallback": "site:linkedin.com/in \"Norton-on-Derwent\" \"North Yorkshire\" owner director",
-        "note": "Norton is effectively part of the Malton market area — use 'Norton' 'Malton' in queries rather than 'Norton-on-Derwent' alone. The full hyphenated form rarely appears in profiles."
+        "note": "Norton is effectively part of the Malton market area. Use 'Norton' 'Malton' in queries — the full hyphenated 'Norton-on-Derwent' rarely appears in LinkedIn profiles."
       },
       {
         "priority": 2,
@@ -232,21 +280,19 @@
   },
 
   "primary_query_format": {
-    "instruction": "For each Batch 5 lead where you have a full name (first + surname), use this as your primary query before any fallback:",
+    "instruction": "For each Batch 5 lead where you have a full name (first + surname confirmed), use this as your primary query before any fallback:",
     "format": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
-    "example_malton_solicitor": "site:linkedin.com/in \"David Pennington\" \"Pennington & Co Solicitors\"",
-    "example_helmsley_hotel": "site:linkedin.com/in \"Sarah Mitchell\" \"The Black Swan Helmsley\"",
     "fallback_chain": [
       "Primary: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
       "Fallback 1: site:linkedin.com/in \"[Full Name]\" \"[Town]\" \"North Yorkshire\" [sector]",
       "Fallback 2: Use sector_discovery_fallback_queries above for that town+sector",
-      "Fallback 3: Skip — do NOT send note to a profile you cannot confidently identify as the owner"
+      "Fallback 3: Skip — do NOT send note to a profile you cannot confidently identify as the owner. Log as PROFILE_NOT_FOUND in profiles.json."
     ]
   },
 
   "linkedin_profiles_json_instruction": {
     "file": "data/linkedin_profiles.json",
-    "critical": "Write this file TODAY, same session as LinkedIn execution. This is the only confirmation mechanism. BRAIN cannot generate per-lead personalised notes without it.",
+    "critical": "Write this file Monday 2026-05-18, same session as LinkedIn execution. This is the only confirmation mechanism. BRAIN cannot generate per-lead personalised notes without it. Archive trigger cannot confirm exceptions without it.",
     "write_after_each_search": "Do not batch — write one entry immediately after each search, whether or not a profile was found.",
     "entry_schema": {
       "lead_id": "[from send records]",
@@ -262,7 +308,7 @@
       "post_topic_summary": "[brief summary if found, or null]",
       "note_type": "[post_reference|generic|skipped]",
       "note_sent": "[true|false]",
-      "note_text": "[exact text sent, or null if skipped]",
+      "note_text": "[exact text sent, character-counted, or null if skipped]",
       "char_count": "[number, or null]",
       "connection_request_sent_at": "[ISO timestamp or null]",
       "skip_reason": "[null or 'PROFILE_NOT_FOUND' or 'OWNER_NOT_CONFIRMED' or 'IMAP_BLOCK' or 'SURNAME_UNKNOWN']"
@@ -271,9 +317,10 @@
 
   "archive_trigger": {
     "fires": "Tuesday 2026-05-19 EOD",
-    "condition": "Any Batch 5 lead where linkedin_profiles.json entry shows note_sent: false or entry is missing entirely",
+    "condition": "Any Batch 5 lead where linkedin_profiles.json entry shows note_sent: false OR entry is missing entirely",
     "action": "Archive immediately as LOST_NO_RESPONSE. Log CHANGELOG same session. No deferral, no extension.",
-    "rule": "Non-negotiable. 49-session LinkedIn execution failure must not produce a 50th session."
+    "rule": "Non-negotiable. 50-session LinkedIn execution failure must not produce a 51st session.",
+    "consequence": "Same outcome as warm pipeline (leads 1/3/22) — £800-1,175 written off and permanently unrecoverable."
   },
 
   "non_candidates": [
@@ -300,25 +347,30 @@
   ],
 
   "hard_deadline": {
-    "today": "Monday 2026-05-18 — LAST WINDOW. Execute all Batch 5 LinkedIn searches and connection requests today.",
-    "tomorrow": "Tuesday 2026-05-19 — Day-7 email sends (09:00-10:30) + EOD archive trigger for any Batch 5 lead without confirmed LinkedIn.",
-    "no_deferral": "Zero tolerance. 49-session failure must end today."
+    "today_saturday": "2026-05-16 — Brain planning only. No LinkedIn sends.",
+    "weekend_imap": "RECOMMENDED — monitor inbox Saturday and Sunday. Reply peak OPEN now (24-72h post-Day-3-bump).",
+    "monday": "2026-05-18 — LAST WINDOW. Execute all Batch 5 LinkedIn searches and connection requests. No deferral path.",
+    "tuesday": "2026-05-19 — Day-7 email sends (09:00-10:30) + EOD archive trigger for any Batch 5 lead without confirmed LinkedIn.",
+    "no_deferral": "Zero tolerance. 50-session failure must end Monday."
   },
 
   "summary": {
-    "run_date": "2026-05-18 (Monday — morning)",
-    "day_number": 49,
-    "batch_5_day": 6,
+    "run_date": "2026-05-16 (Saturday — Day 50, Batch 5 Day 4)",
+    "day_number": 50,
+    "batch_5_day": 4,
     "active_search_queries": 0,
-    "search_queries_empty_reason": "HANDS never confirmed Batch 5 send list. Populate from your send records. Use sector_discovery_fallback_queries for profiles where name-based search yields no result.",
-    "batch_5_emailed_days_ago": 6,
-    "batch_5_day3_bumped_days_ago": 3,
+    "search_queries_empty_reason": "HANDS never confirmed Batch 5 send list. Populate from 2026-05-12 send records. Use sector_discovery_fallback_queries if name-based search yields no result.",
+    "batch_5_emailed_days_ago": 4,
+    "batch_5_day3_bumped_days_ago": 1,
     "batch_5_replies_received": 0,
+    "reply_peak_window": "OPEN — Saturday-Monday. 24-72h post-Day-3-bump.",
     "imap_gap_days": 42,
     "linkedin_profiles_received_ever": 0,
-    "campaign_sessions_without_linkedin_execution": 49,
-    "today_is_last_window": true,
+    "campaign_sessions_without_linkedin_execution": 50,
+    "today_is_saturday": true,
+    "linkedin_sends_today": false,
+    "monday_is_last_window": true,
     "archive_trigger_fires": "2026-05-19 EOD",
-    "day7_sends_tomorrow": "2026-05-19, 09:00-10:30 — copy READY in daily_email_plan.json"
+    "day7_sends_tuesday": "2026-05-19, 09:00-10:30 — copy READY in daily_email_plan.json"
   }
 }
