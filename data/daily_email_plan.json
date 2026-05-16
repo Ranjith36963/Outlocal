@@ -1,10 +1,10 @@
 [
   {
-    "plan_date": "2026-05-15",
-    "generated_at": "2026-05-15T19:00:00Z",
-    "day_number": 48,
-    "batch_5_day": 3,
-    "note": "BRAIN layer — Day 48 (Friday 2026-05-15, Batch 5 Day 3 — EVENING). Day-3 bumps assumed sent 09:00-10:30 (UNCONFIRMED). This file now contains Day-7 new-angle copy ready for Tuesday 2026-05-19, 09:00-10:30. Day-7 sends are standalone NEW emails — not thread replies. Different pain point from Day-0. New subject line per lead. No per-lead data file received from HANDS — copy provided as per-signal templates. HANDS fills [bracketed placeholders] from their send records.",
+    "plan_date": "2026-05-16",
+    "generated_at": "2026-05-16T09:00:00Z",
+    "day_number": 50,
+    "batch_5_day": 4,
+    "note": "BRAIN layer — Day 50 (Saturday 2026-05-16, Batch 5 Day 4 — weekend bridge). No new copy generated today — no new leads. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY and unchanged below. Day-7 sends: Tuesday 2026-05-19, 09:00-10:30. Day-7 sends are standalone NEW emails — not thread replies. Different pain point from Day-0. New subject line per lead. HANDS fills [bracketed placeholders] from 2026-05-12 send records. Day-14 breakup copy: to be generated Tuesday 2026-05-26 morning.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
