@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T09:00:00Z",
-  "date": "2026-05-16",
-  "day_number": 50,
-  "batch_5_day": 4,
-  "note": "BRAIN layer — Day 50 (Saturday 2026-05-16, Batch 5 Day 4). Weekend bridge — no sends today. Day-3 bumps assumed sent Friday (UNCONFIRMED). Day-7 new-angle copy READY in daily_email_plan.json (day7_new_angle section). Day-14 breakup copy to be generated Tuesday 2026-05-26 morning. No legacy follow-up obligations remain. LinkedIn UNCONFIRMED (profiles.json missing) — Monday 2026-05-18 is final window, archive trigger fires Tuesday EOD.",
+  "generated_at": "2026-05-17T09:00:00Z",
+  "date": "2026-05-17",
+  "day_number": 51,
+  "batch_5_day": 5,
+  "note": "BRAIN layer — Day 51 (Sunday 2026-05-17, Batch 5 Day 5). Sunday bridge — no sends today. Day-3 bumps assumed sent Friday (UNCONFIRMED). Day-7 new-angle copy READY in daily_email_plan.json (day7_new_angle section). Day-14 breakup copy GENERATED EARLY this run — ahead of Tuesday 2026-05-19 evening schedule. All 4 signal variants in daily_email_plan.json (day14_breakup section). No legacy follow-up obligations remain. LinkedIn UNCONFIRMED (profiles.json missing) — TOMORROW Monday 2026-05-18 is FINAL window, archive trigger fires Tuesday EOD.",
 
   "active_followups_legacy": [],
   "active_legacy_count": 0,
@@ -11,7 +11,7 @@
 
   "send_today": {
     "send_today": false,
-    "reason": "Saturday — weekend block. No sends on Saturdays under any circumstances."
+    "reason": "Sunday — weekend block. No sends on Saturdays or Sundays under any circumstances."
   },
 
   "batch_5_followup_schedule": {
@@ -49,9 +49,10 @@
     },
     "day_14_breakup": {
       "date": "2026-05-26 (Tuesday)",
-      "status": "PENDING — BRAIN generates copy Tuesday 2026-05-26 morning",
+      "status": "READY — copy generated early (Day 51 BRAIN run, Sunday 2026-05-17). Ahead of Tuesday 2026-05-19 evening schedule.",
       "type": "3 lines max. No pressure. No question marks. Door open. UK English.",
-      "brain_run": "Tuesday 2026-05-26 morning (BRAIN run before HANDS sends)",
+      "copy_location": "data/daily_email_plan.json (day14_breakup section — all 4 signal variants ready)",
+      "brain_run": "NOT REQUIRED for Day-14 copy — already generated. Tuesday 2026-05-19 evening BRAIN run will focus on Day-7 results and Batch 6 scoping.",
       "rule": "Maximum 4 total touchpoints — Day-14 breakup is the FINAL email. Hard limit. No exceptions."
     }
   },

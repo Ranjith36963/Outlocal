@@ -1,21 +1,21 @@
 [
   {
-    "plan_date": "2026-05-16",
-    "generated_at": "2026-05-16T09:00:00Z",
-    "day_number": 50,
-    "batch_5_day": 4,
-    "note": "BRAIN layer — Day 50 (Saturday 2026-05-16, Batch 5 Day 4 — weekend bridge). No new copy generated today — no new leads. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY and unchanged below. Day-7 sends: Tuesday 2026-05-19, 09:00-10:30. Day-7 sends are standalone NEW emails — not thread replies. Different pain point from Day-0. New subject line per lead. HANDS fills [bracketed placeholders] from 2026-05-12 send records. Day-14 breakup copy: to be generated Tuesday 2026-05-26 morning.",
+    "plan_date": "2026-05-17",
+    "generated_at": "2026-05-17T09:00:00Z",
+    "day_number": 51,
+    "batch_5_day": 5,
+    "note": "BRAIN layer — Day 51 (Sunday 2026-05-17, Batch 5 Day 5 — Sunday bridge). No new copy generated for new sends — no new leads. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY and unchanged. Day-14 breakup copy GENERATED EARLY this run — ahead of Tuesday 2026-05-19 evening schedule. All 4 signal variants ready in day14_breakup section below. HANDS does not need to wait for Tuesday evening BRAIN run. Day-7 sends: Tuesday 2026-05-19, 09:00-10:30. Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No new initial sends today. No new cohort ready. Batch 5 is Day-3 (assumed sent this morning).",
+    "new_sends_note": "No new initial sends today. Sunday weekend block. Next send window: Tuesday 2026-05-19 (Day-7 new-angle).",
 
     "day3_bumps_status": {
       "send_date": "2026-05-15 (Friday)",
       "status": "ASSUMED_SENT — UNCONFIRMED",
       "send_window": "09:00-10:30",
       "copy_location": "Day 47 version of this file — templates carried forward",
-      "note": "Day-3 bump copy was ready in the Day 47 run (2026-05-14). HANDS assumed to have sent today. No confirmation received. If any bumps were not sent today: they are now 1 day overdue — send Monday."
+      "note": "If any Day-3 bumps were NOT sent Friday: they are now 2 days overdue. Send Monday 2026-05-18 as second priority (after IMAP sweep, before LinkedIn). Still within the 3-7 day window — barely."
     },
 
     "day7_new_angle": {
@@ -24,7 +24,7 @@
       "stagger": "10 minutes between sends",
       "type": "Standalone NEW email — NOT a thread reply",
       "subject_type": "New subject line — do not inherit Day-0 thread subject",
-      "imap_precondition": "MANDATORY per lead before each send. If INTERESTED reply found: send interested variant (in daily_email_plan.json conditional_handling). If NOT_INTERESTED: cancel permanently.",
+      "imap_precondition": "MANDATORY per lead before each send. If INTERESTED reply found: send interested variant (conditional_handling below). If NOT_INTERESTED: cancel permanently.",
       "max_lines": 6,
       "rules": [
         "New standalone email — not a reply to the Day-0 thread",
@@ -212,9 +212,159 @@
         "send_window": "Tuesday 2026-05-19, 09:00-10:30",
         "total_expected_sends": "12-18 (depends on confirmed Batch 5 send list)",
         "after_sends": [
-          "Log all Day-7 sends in CHANGELOG.md same session (48 days overdue — mandatory)",
+          "Log all Day-7 sends in CHANGELOG.md same session (50 days overdue — mandatory)",
           "EOD Tuesday: archive trigger fires for any Batch 5 lead where LinkedIn not executed"
         ]
+      }
+    },
+
+    "day14_breakup": {
+      "generated_at": "2026-05-17 (Day 51 — EARLY, ahead of Tuesday 2026-05-19 evening schedule)",
+      "send_date": "2026-05-26 (Tuesday)",
+      "send_window": "09:00-10:30",
+      "stagger": "10 minutes between sends",
+      "type": "Breakup email — final touchpoint. Maximum 4 total touchpoints.",
+      "imap_precondition": "MANDATORY per lead before each send — same rule as every send.",
+      "rules": [
+        "3 lines body maximum — no exceptions",
+        "No question marks anywhere — subject or body",
+        "No pressure — this is a door left open, not a final pitch",
+        "No new signal or pain point — do not introduce new issues on Day-14",
+        "UK English throughout",
+        "Do NOT mention how many times you've followed up — implied, not stated",
+        "End with warmth — 'Best of luck' or 'happy to help' — not 'let me know' or 'looking forward to hearing from you'",
+        "First name in subject if known (SSL, mobile, AIDA leads) — consistent with full sequence",
+        "DO NOT SEND to any lead who replied INTERESTED before this date — use proposal flow instead",
+        "This is the 4th and FINAL touchpoint — hard limit. No further contact after Day-14."
+      ],
+
+      "copy_by_signal": {
+        "ssl_pas_day14": {
+          "signal": "ssl",
+          "framework": "Breakup",
+          "allocation": "~60% of Batch 5 Day-14 sends",
+          "touch_count": "4th and final (Day-0, Day-3 bump, Day-7 new angle, Day-14 breakup)",
+
+          "subject_options": [
+            "[First name] — closing the loop on [business name]",
+            "[First name] — last note from me on [business name]",
+            "[First name] — [business name]: leaving it with you"
+          ],
+          "recommended_subject": "[First name] — closing the loop on [business name]",
+          "subject_personalisation": ["First name (from send records)", "business name (from send records)"],
+
+          "body": "[First name],\n\nSent a couple of notes about the 'Not Secure' issue on [business name]'s site — I'll leave it there.\n\nIf it becomes worth looking at, you know where I am.\n\n[Your name]",
+
+          "personalisation_required": ["First name", "business name"],
+          "rules": [
+            "Reference 'Not Secure' — maintains thread continuity without repeating the full pitch",
+            "No specific URL in Day-14 — brief reference only",
+            "Do not mention Google ranking angle from Day-7 — this is a clean exit, not a recap",
+            "'You know where I am' — warm door open, no friction, no deadline",
+            "3 lines — do not add a 4th"
+          ]
+        },
+
+        "mobile_pas_day14": {
+          "signal": "mobile",
+          "framework": "Breakup",
+          "allocation": "~20% of Batch 5 Day-14 sends",
+          "touch_count": "4th and final",
+
+          "subject_options": [
+            "[First name] — [business name]: last note from me",
+            "[First name] — closing the loop on [business name]",
+            "[First name] — leaving it with you on [business name]"
+          ],
+          "recommended_subject": "[First name] — [business name]: last note from me",
+          "subject_personalisation": ["First name", "business name"],
+
+          "body": "[First name],\n\nSent a few notes about [business name]'s site — won't keep nudging.\n\nIf it's ever worth sorting, happy to help.\n\n[Your name]",
+
+          "personalisation_required": ["First name", "business name"],
+          "rules": [
+            "'A few notes' acknowledges the sequence without listing touchpoints",
+            "'Won't keep nudging' — self-aware, respectful, not apologetic",
+            "'Happy to help' — open door, no pressure",
+            "Do NOT re-specify the mobile issue — implicit from the sequence context",
+            "3 lines only"
+          ]
+        },
+
+        "no_website_bab_day14": {
+          "signal": "no_website",
+          "framework": "Breakup",
+          "allocation": "~15% of Batch 5 Day-14 sends",
+          "touch_count": "4th and final",
+          "note": "Owner name often unknown for no-website leads — use 'Hi' opener and business-type framing",
+
+          "subject_options": [
+            "Last note — [business name]",
+            "Following up one last time — [business name]",
+            "[Business name]: leaving it with you"
+          ],
+          "recommended_subject": "Last note — [business name]",
+          "subject_personalisation": ["business name"],
+          "subject_note": "No first name in subject if owner name is unknown. Never guess.",
+
+          "body_with_known_owner": "[First name],\n\nFollowed up a couple of times about [business name] not appearing in online searches — won't keep at it.\n\nIf getting found online becomes a priority, I'm easy to reach.\n\n[Your name]",
+
+          "body_unknown_owner": "Hi,\n\nFollowed up a couple of times about [business name] not appearing in '[trade] in [town]' searches — won't keep at it.\n\nIf getting found online becomes a priority, I'm easy to reach.\n\n[Your name]",
+
+          "personalisation_required": ["business name", "trade keyword (if unknown owner)", "town (if unknown owner)"],
+          "rules": [
+            "Use 'Hi' if owner name is unknown — never guess a name",
+            "'Not appearing in searches' references the original angle without full detail",
+            "'Won't keep at it' — self-aware, respectful",
+            "'I'm easy to reach' — open door, no pressure, no specific next step",
+            "3 lines only"
+          ]
+        },
+
+        "aida_keyword_gap_day14": {
+          "signal": "aida",
+          "framework": "Breakup",
+          "allocation": "~5% of Batch 5 Day-14 sends",
+          "touch_count": "4th and final",
+
+          "subject_options": [
+            "[First name] — last note on [business name]",
+            "[First name] — [business name]: closing the loop",
+            "[First name] — leaving it with you"
+          ],
+          "recommended_subject": "[First name] — last note on [business name]",
+          "subject_personalisation": ["First name", "business name"],
+
+          "body": "[First name],\n\nSent a couple of notes about the search visibility gap for [business name] — I'll leave it with you.\n\nIf the timing changes, happy to pick it up.\n\n[Your name]",
+
+          "personalisation_required": ["First name", "business name"],
+          "rules": [
+            "'Search visibility gap' — brief reference to the AIDA angle without re-pitching",
+            "'Leave it with you' — warm, non-pressured exit",
+            "'If the timing changes' — acknowledges that some AIDA leads are busy established businesses who may revisit later",
+            "3 lines only"
+          ]
+        }
+      },
+
+      "send_brief_for_hands": {
+        "instruction": "For each Batch 5 lead that has NOT replied INTERESTED before 2026-05-26: apply the correct Day-14 template from copy_by_signal above. Fill [bracketed placeholders] from send records. Send as a NEW standalone email. New subject. 10-minute stagger. IMAP clean per lead required before each send. This is the FINAL email in the sequence — maximum 4 touchpoints enforced.",
+        "send_window": "Tuesday 2026-05-26, 09:00-10:30",
+        "stagger": "10 minutes between sends",
+        "exclusions": [
+          "Any lead that replied INTERESTED — do NOT send Day-14. Use proposal flow instead.",
+          "Any lead that replied NOT_INTERESTED — already suppressed. Do not contact.",
+          "Any lead that UNSUBSCRIBED — already suppressed. Do not contact.",
+          "Formally archived leads: 1, 3, 22, 49, 51, 53, 54 — do not contact.",
+          "Suppressed leads: 7, 19 — do not contact.",
+          "Sequences already complete: 4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59 — not applicable."
+        ],
+        "after_sends": [
+          "Log all Day-14 sends in CHANGELOG.md same session",
+          "Update lead status to 'sequence_complete' for all Day-14 recipients",
+          "Note reapproach dates: 6 months minimum for no-reply leads (reapproach: 2026-11-26)"
+        ],
+        "note": "Day-14 breakup copy generated early (Day 51, Sunday 2026-05-17) ahead of Tuesday 2026-05-19 evening schedule. No Tuesday evening BRAIN run required solely for Day-14 copy. BRAIN will still run Tuesday evening to assess Day-7 results and Batch 6 scoping."
       }
     },
 
@@ -224,14 +374,14 @@
 
     "send_summary": {
       "new_initial_sends_today": 0,
-      "day3_bumps_assumed_sent_today": "12-18 (UNCONFIRMED)",
+      "day3_bumps_assumed_sent": "2026-05-15 (Friday) — UNCONFIRMED",
       "day7_new_angle_sends_date": "Tuesday 2026-05-19, 09:00-10:30",
       "day7_copy_status": "READY — per-signal templates in day7_new_angle section above",
       "day14_breakup_date": "Tuesday 2026-05-26, 09:00-10:30",
-      "day14_copy_status": "PENDING — BRAIN generates Day-14 breakup copy Tuesday 2026-05-26 morning",
-      "imap_precondition": "MANDATORY per lead before each Day-7 send",
+      "day14_copy_status": "READY — generated early, per-signal templates in day14_breakup section above",
+      "imap_precondition": "MANDATORY per lead before every send",
       "linkedin_hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger fires immediately if not executed",
-      "next_brain_run": "Monday 2026-05-18 (if HANDS provides linkedin_profiles.json) or Tuesday 2026-05-26 morning (Day-14 breakup generation)"
+      "next_brain_run": "Monday 2026-05-18 (if HANDS provides linkedin_profiles.json) or Tuesday 2026-05-19 evening (Day-7 results + Batch 6 scoping)"
     }
   }
 ]

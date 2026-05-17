@@ -68,11 +68,12 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 | **2026-05-18** | **49** | **Daily LinkedIn research (Monday morning, Batch 5 Day 6 — LAST WINDOW)** | **linkedin_profiles.json STILL MISSING (49-session failure). Today is the absolute last LinkedIn window — archive trigger fires Tuesday 2026-05-19 EOD. All 3 output files updated. IMAP gap: 42 days, zero Batch 5 replies. Sector-prioritised discovery queries added to search_plan for all Ryedale towns. monday_fallback_notes marked as ACTIVE EXECUTION PLAN (not backup). Coordination file updated — all Batch 5 Ryedale leads approved pending per-lead IMAP. HANDS must execute today: IMAP → LinkedIn search → connection note → write profiles.json → CHANGELOG.** |
 | **2026-05-16** | **50** | **Daily email + followup (Saturday bridge, Batch 5 Day 4 — full weekly review)** | **Reply peak window OPEN (24-72h post-bump). LinkedIn STILL MISSING (49+ sessions). active_strategy.md full weekly review completed — valid to 2026-05-24. All 6 data files updated. Monday = FINAL LinkedIn window. Tuesday = Day-7 sends + LinkedIn archive trigger EOD. IMAP gap: 42 days. No new replies or signals. CHANGELOG: 49+ days overdue — mandatory before Tuesday sends.** |
 | **2026-05-16** | **50** | **Daily LinkedIn research (Saturday evening, Batch 5 Day 4 — weekend bridge)** | **50-session LinkedIn failure. All 3 LinkedIn files updated to Day 50 / 2026-05-16. linkedin_profiles.json STILL MISSING. Day-3 bumps assumed sent yesterday — reply peak OPEN NOW (Saturday-Monday). monday_fallback_notes marked ACTIVE EXECUTION PLAN. All Batch 5 Ryedale leads approved pending IMAP per lead Monday. Archive trigger confirmed Tuesday 2026-05-19 EOD. Weekend IMAP monitoring recommended. src/outlocal/linkedin/orchestrator.py NOT FOUND — LinkedIn module not yet implemented.** |
-| **2026-05-17** | **51** | **Weekly intelligence report (Sunday — Week 8 close)** | **week_2026-05-17.md + week_2026-05-17_summary.json written. active_strategy.md updated to Week 9. Key findings: SSL-PAS 15% INTERESTED rate (non-negotiable), 0 Batch 5 replies (peak OPEN), LinkedIn FINAL WINDOW Monday, Day-7 sends Tuesday, Batch 6 trigger if Day-7 replies ≥ 2 (Harrogate/Craven). £800-1,175 warm pipeline written off (50-session LinkedIn failure). CHANGELOG 50+ days overdue.** |
+| **2026-05-17** | **51** | **Weekly intelligence report (Sunday — Week 8 close)** | **week_2026-05-17.md + week_2026-05-17_summary.json written. active_strategy.md updated (Week 8 close, valid to 2026-05-24). Key findings: SSL-PAS 15% INTERESTED rate (non-negotiable), 0 Batch 5 replies (peak OPEN), LinkedIn FINAL WINDOW Monday, Day-7 sends Tuesday, Batch 6 trigger if Day-7 replies ≥ 2 (Harrogate/Craven). £800-1,175 warm pipeline written off (50-session LinkedIn failure). CHANGELOG 50+ days overdue.** |
+| **2026-05-17** | **51** | **Daily email + followup (Sunday bridge, Batch 5 Day 5)** | **Reply peak 48h post-bump (still open, closes Monday morning). IMAP gap 43 days. Zero Batch 5 replies. LinkedIn STILL MISSING — TOMORROW Monday is the ABSOLUTE FINAL window. Day-14 breakup copy GENERATED EARLY — all 4 signal variants added to daily_email_plan.json (day14_breakup section), ahead of Tuesday evening schedule. All 7 data files updated. No sends today (Sunday block). CHANGELOG: 50+ days overdue — Monday mandatory.** |
 
 ---
 
-## CRITICAL STATE — 2026-05-17 (Day 51 — BATCH 5 DAY-5 SUNDAY — REPLY PEAK OPEN — MONDAY FINAL LINKEDIN WINDOW — WEEK 8 INTELLIGENCE REPORT COMPLETE)
+## CRITICAL STATE — 2026-05-17 (Day 51 — BATCH 5 DAY-5 SUNDAY — REPLY PEAK 48H POST-BUMP — TOMORROW MONDAY FINAL LINKEDIN WINDOW — DAY-14 COPY GENERATED EARLY — WEEK 8 REPORT COMPLETE)
 
 ### WARM PIPELINE — PERMANENTLY CLOSED (UNCONDITIONALLY FINAL)
 - **Archive trigger fired 2026-05-06** — LinkedIn deadline missed for 47 consecutive sessions
@@ -82,37 +83,38 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 - Combined pipeline value written off: £800-1,175
 
 ### Active Data Files
-- `data/daily_signals.json` — **Day 50 (2026-05-16 SATURDAY) — UPDATED. Reply peak OPEN. Monday/Tuesday execution orders. IMAP gap 42 days.**
-- `data/daily_email_plan.json` — **Day 50 (2026-05-16 SATURDAY) — HEADER UPDATED. Day-7 new-angle copy READY — all 4 signal variants. Tuesday 2026-05-19, 09:00-10:30.**
-- `data/daily_strategy.md` — **Day 50 (2026-05-16 SATURDAY) — UPDATED. Saturday bridge. Monday FINAL LinkedIn window. Tuesday Day-7 sends. Archive trigger brief.**
-- `data/followup_queue.json` — **Day 50 (2026-05-16 SATURDAY) — UPDATED. Day-3 assumed. Day-7 schedule LIVE. Day-14 pending. No sends today.**
-- `data/reply_classifications.json` — **Day 50 (2026-05-16 SATURDAY) — UPDATED. IMAP gap 42 days. Weekend monitoring recommended. No new replies.**
-- `data/value_delivery_queue.json` — **Day 50 (2026-05-16 SATURDAY) — UPDATED. Reply peak open. 24h SLA live. Monday LinkedIn FINAL alert.**
-- `data/active_strategy.md` — **Day 51 (2026-05-17 SUNDAY) — WEEK 9 PRIORITIES UPDATED. Valid to 2026-05-24. Weekly report linked. Batch 6 trigger confirmed.**
-- `data/linkedin_connection_notes.json` — **Day 50 (2026-05-16 SATURDAY EVENING) — UPDATED. monday_fallback_notes ACTIVE EXECUTION PLAN. Sector templates for all Ryedale towns. 200-char hard limit. Post-reference priority. 50-session failure noted.**
-- `data/linkedin_search_plan.json` — **Day 50 (2026-05-16 SATURDAY EVENING) — UPDATED. Sector discovery queries for all Ryedale towns. search_queries[] still empty (HANDS to populate from send records Monday). FINAL WINDOW — archive trigger Tuesday EOD.**
-- `data/linkedin_coordination.json` — **Day 50 (2026-05-16 SATURDAY EVENING) — UPDATED. All Batch 5 leads approved pending per-lead IMAP Monday. Archive trigger fires Tuesday 2026-05-19 EOD. Weekend monitoring recommended.**
-- `data/weekly_reports/week_2026-05-17.md` — **Day 51 (2026-05-17 SUNDAY) — WEEK 8 INTELLIGENCE REPORT COMPLETE. Full campaign analysis. Week 9 recommendations.**
+- `data/daily_signals.json` — **Day 51 (2026-05-17 SUNDAY) — UPDATED. Reply peak 48h post-bump (open, closes Monday morning). Tomorrow/Tuesday execution orders. IMAP gap 43 days. Day-14 copy early generation noted.**
+- `data/daily_email_plan.json` — **Day 51 (2026-05-17 SUNDAY) — UPDATED. Day-7 new-angle copy READY (unchanged). Day-14 breakup copy ADDED (new — all 4 signal variants: ssl, mobile, no_website, aida). Tuesday 2026-05-26, 09:00-10:30.**
+- `data/daily_strategy.md` — **Day 51 (2026-05-17 SUNDAY) — UPDATED. Sunday bridge. Tomorrow FINAL LinkedIn window. Tuesday Day-7 sends. Day-14 copy ready early. Day-14 send brief included.**
+- `data/followup_queue.json` — **Day 51 (2026-05-17 SUNDAY) — UPDATED. Day-3 assumed. Day-7 schedule LIVE. Day-14 status updated to READY (copy generated early). No sends today.**
+- `data/reply_classifications.json` — **Day 51 (2026-05-17 SUNDAY) — UPDATED. IMAP gap 43 days. Sunday monitoring recommended. No new replies.**
+- `data/value_delivery_queue.json` — **Day 51 (2026-05-17 SUNDAY) — UPDATED. Reply peak 48h post-bump. 24h SLA live. Tomorrow LinkedIn FINAL alert.**
+- `data/active_strategy.md` — **Day 51 (2026-05-17 SUNDAY) — UPDATED by weekly report run. Valid to 2026-05-24. Week 8 close logged. Batch 6 trigger confirmed.**
+- `data/linkedin_connection_notes.json` — **Day 50 (2026-05-16 SATURDAY EVENING) — monday_fallback_notes ACTIVE EXECUTION PLAN. No changes today — copy is ready for tomorrow.**
+- `data/linkedin_search_plan.json` — **Day 50 (2026-05-16 SATURDAY EVENING) — Sector discovery queries ready. FINAL WINDOW TOMORROW — archive trigger Tuesday EOD.**
+- `data/linkedin_coordination.json` — **Day 50 (2026-05-16 SATURDAY EVENING) — All Batch 5 leads approved pending per-lead IMAP Monday. Archive trigger fires Tuesday 2026-05-19 EOD.**
+- `data/weekly_reports/week_2026-05-17.md` — **Day 51 (2026-05-17 SUNDAY) — WEEK 8 INTELLIGENCE REPORT COMPLETE. Full campaign analysis. Week 9 operational priorities.**
 - `data/weekly_reports/week_2026-05-17_summary.json` — **Day 51 (2026-05-17 SUNDAY) — Week 8 summary JSON. Machine-readable KPIs and recommendations.**
 
 ### IMAP Status
-- **42 days overdue** (last confirmed check: 2026-04-04)
-- Friday 2026-05-15 sweep ASSUMED — UNCONFIRMED (new_replies.json unchanged — consistent with clean sweep)
-- Zero Batch 5 replies to date. **Reply peak window OPEN NOW — 24-72h post-bump (Saturday-Monday)**
+- **43 days overdue** (last confirmed check: 2026-04-04)
+- Weekend sweep UNCONFIRMED — new_replies.json unchanged (consistent with clean sweep or no sweep)
+- Zero Batch 5 replies to date. **Reply peak window 48h post-bump — OPEN NOW Sunday, closes Monday morning**
 - **Do NOT sweep leads 1/3/22 — archive is unconditionally final**
-- **RECOMMENDED: Weekend sweep today Saturday or Sunday — post-bump reply peak is highest now**
-- **MANDATORY per lead before each LinkedIn note Monday 2026-05-18**
+- **RECOMMENDED: Sunday sweep today — 48h post-bump peak is still live**
+- **MANDATORY per lead before each LinkedIn note TOMORROW Monday 2026-05-18**
 - **MANDATORY per lead before each Day-7 send Tuesday 2026-05-19**
 
 ### Batch 5 Status
 - **Day-0 sends assumed completed Tuesday 2026-05-12, 09:00-10:30 — UNCONFIRMED**
 - **Day-3 bumps assumed sent Friday 2026-05-15, 09:00-10:30 — UNCONFIRMED**
-- No per-lead data file received from HANDS (49+ consecutive sessions)
+- No per-lead data file received from HANDS (50+ consecutive sessions)
 - Ryedale targets: Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent
 - Signal: SSL-primary (PAS, 60%), mobile-secondary (PAS, 20%), no-website BAB (15%), AIDA keyword-gap (5%)
-- **Day 4 = TODAY SATURDAY 2026-05-16 — Reply peak OPEN. Weekend monitoring recommended. No sends.**
-- **Day 6 = MONDAY 2026-05-18 — FINAL LINKEDIN WINDOW. Execute immediately Monday morning.**
+- **Day 5 = TODAY SUNDAY 2026-05-17 — Reply peak 48h post-bump (OPEN, closes Monday morning). No sends.**
+- **Day 6 = TOMORROW MONDAY 2026-05-18 — ABSOLUTE FINAL LINKEDIN WINDOW. Execute first thing Monday morning.**
 - **Day 7 = TUESDAY 2026-05-19 — Day-7 new-angle sends (09:00-10:30) + LinkedIn archive trigger EOD.**
+- **Day 14 = TUESDAY 2026-05-26 — Day-14 breakup sends. Copy READY in daily_email_plan.json (day14_breakup section — generated early Day 51).**
 
 ### fu_041-045 Status
 - **ASSUMED SEQUENCE COMPLETE** — breakups for leads 30/31/32/58/59 assumed sent Monday 2026-05-11
@@ -126,17 +128,17 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 - Lead 54 (The Wolds Inn): ASSUMED ARCHIVED Monday 2026-05-11 (LOST_UNRESOLVED).
 
 ### CHANGELOG
-- No HANDS updates since 2026-03-28 (**49+ days**). **MANDATORY — must be completed Monday 2026-05-18. Absolute deadline: before Day-7 sends on Tuesday 2026-05-19. No further deferrals.**
+- No HANDS updates since 2026-03-28 (**50+ days**). **MANDATORY — must be completed Monday 2026-05-18. Absolute deadline: before Day-7 sends on Tuesday 2026-05-19. No further deferrals.**
 
 ---
 
-## HANDS Execution Order for TODAY SATURDAY 2026-05-16 (Weekend — Reply Peak Open)
+## HANDS Execution Order for TODAY SUNDAY 2026-05-17 (Weekend — Reply Peak 48h Post-Bump — Still Open)
 
-No sends today (Saturday block). Weekend IMAP monitoring recommended.
+No sends today (Sunday block). Reply peak 48h post-bump — closing Monday morning. IMAP monitoring recommended now.
 
 | Priority | Action | Condition |
 |---|---|---|
-| 1 | Weekend IMAP sweep — all Batch 5 leads (NOT leads 1/3/22) | RECOMMENDED (not mandatory today). Per lead. If INTERESTED reply found: write new_replies.json immediately, classify, begin proposal draft. 24h SLA from reply time. If NOT_INTERESTED: block all channels. If UNSUBSCRIBE: suppress within 24h (GDPR Article 21 — applies weekends). |
+| 1 | Sunday IMAP sweep — all Batch 5 leads (NOT leads 1/3/22) | RECOMMENDED (not mandatory today, but peak closes Monday morning). Per lead. If INTERESTED reply found: write new_replies.json immediately, classify, begin proposal draft. 24h SLA from reply time (Sunday evening reply = Monday evening proposal deadline). If NOT_INTERESTED: block all channels. If UNSUBSCRIBE: suppress within 24h (GDPR Article 21 — applies 24/7). |
 
 ## HANDS Execution Order for MONDAY 2026-05-18 (LinkedIn FINAL Last Window)
 
@@ -161,5 +163,5 @@ linkedin_profiles.json is STILL MISSING — LinkedIn was NOT executed. Monday is
 
 ## Next BRAIN Runs
 - **MONDAY 2026-05-18 EVENING** — If HANDS writes linkedin_profiles.json from Monday's execution: BRAIN generates per-lead personalised LinkedIn notes (post-reference preferred).
-- **TUESDAY 2026-05-19 EVENING** — Day-14 breakup copy generation (for sends Tuesday 2026-05-26).
-- **TUESDAY 2026-05-26 (Day 14)** — HANDS: Day-14 breakup sends 09:00-10:30 (copy from Tuesday evening BRAIN run).
+- **TUESDAY 2026-05-19 EVENING** — Day-7 results analysis + Batch 6 scoping decision. Day-14 breakup copy NOT required (generated early Day 51 — already in daily_email_plan.json).
+- **TUESDAY 2026-05-26 (Day 14)** — HANDS: Day-14 breakup sends 09:00-10:30 (copy in data/daily_email_plan.json day14_breakup section — READY NOW).
