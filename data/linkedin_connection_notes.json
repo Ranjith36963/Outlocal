@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-16T20:00:00Z",
+  "generated_at": "2026-05-17T18:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-16",
-  "day_number": 50,
-  "batch_5_day": 4,
-  "run_type": "SATURDAY_EVENING — Day 50, Batch 5 Day 4. Weekend bridge. monday_fallback_notes is the ACTIVE EXECUTION PLAN for Monday 2026-05-18.",
-  "note": "Day 50 (Saturday 2026-05-16 — EVENING). linkedin_profiles.json STILL MISSING after 50 campaign sessions — per-lead personalised notes remain BLOCKED. Today: no LinkedIn sends (Saturday block). Monday 2026-05-18: HANDS executes LinkedIn using monday_fallback_notes templates below — ACTIVE EXECUTION PLAN, not a backup. No further BRAIN run needed to execute Monday LinkedIn. If HANDS writes linkedin_profiles.json from Monday searches: BRAIN can run Monday evening and generate per-lead personalised (post-reference) notes for immediate use. Archive trigger fires Tuesday 2026-05-19 EOD — zero tolerance.",
+  "run_date": "2026-05-17",
+  "day_number": 51,
+  "batch_5_day": 5,
+  "run_type": "SUNDAY_EVENING — Day 51, Batch 5 Day 5. FINAL PLANNING DAY. monday_fallback_notes is the ACTIVE EXECUTION PLAN for tomorrow.",
+  "note": "Day 51 (Sunday 2026-05-17 — EVENING). linkedin_profiles.json STILL MISSING after 51 campaign sessions — per-lead personalised notes remain BLOCKED. Today: no LinkedIn sends (Sunday block). Tomorrow Monday 2026-05-18: HANDS executes LinkedIn using monday_fallback_notes templates below — ACTIVE EXECUTION PLAN, not a backup. Archive trigger fires Tuesday 2026-05-19 EOD. If HANDS writes linkedin_profiles.json from Monday searches: BRAIN can run Monday evening and generate per-lead personalised (post-reference) notes for immediate use. Reply peak 48h post-bump — OPEN NOW (Sunday). IMAP gap 43 days.",
 
   "today_execution_status": {
-    "date": "Saturday 2026-05-16",
+    "date": "Sunday 2026-05-17",
     "is_send_day": false,
-    "reason_no_sends": "Saturday — no LinkedIn on weekends (rule absolute).",
-    "brain_outputs": "Planning files updated. monday_fallback_notes confirmed as active execution plan. No new per-lead notes generated (linkedin_profiles.json still missing).",
-    "reply_peak_window": "OPEN — Day 3 bumps assumed sent yesterday (2026-05-15). 24-72h post-bump peak = Saturday through Monday. Weekend IMAP monitoring strongly recommended."
+    "reason_no_sends": "Sunday — no LinkedIn on weekends (rule absolute).",
+    "brain_outputs": "Planning files updated. monday_fallback_notes confirmed as active execution plan — no changes to templates (copy is confirmed ready from Day 50). No new per-lead notes generated (linkedin_profiles.json still missing after 51 sessions).",
+    "reply_peak_window": "OPEN — Day-3 bumps assumed sent Friday 2026-05-15. 48h post-bump peak = Saturday through Monday morning. Sunday IMAP monitoring STRONGLY RECOMMENDED — an INTERESTED reply today enables a same-day proposal draft with Monday send."
   },
 
   "strategy": {
@@ -44,7 +44,7 @@
 
   "active_notes": [],
   "active_notes_count": 0,
-  "active_notes_note": "Zero active notes. Per-lead personalised notes blocked — linkedin_profiles.json not received in 50 campaign sessions. Use monday_fallback_notes section below directly for Monday execution.",
+  "active_notes_note": "Zero active notes. Per-lead personalised notes blocked — linkedin_profiles.json not received in 51 campaign sessions. Use monday_fallback_notes section below directly for Monday execution.",
 
   "post_breakup_contingency": {
     "status": "ACTIVE — if any pending connection request (leads 52/55/50/56) is accepted: use if_accepted_message only. Do NOT pitch. Do NOT reference email sequence.",
@@ -94,11 +94,11 @@
   },
 
   "monday_fallback_notes": {
-    "generated_at": "2026-05-16T20:00:00Z",
-    "day_number": 50,
+    "generated_at": "2026-05-17T18:00:00Z",
+    "day_number": 51,
     "status": "ACTIVE EXECUTION PLAN — direct-use Monday 2026-05-18. No further BRAIN run required to use these templates.",
-    "note": "Day 50 (Saturday 2026-05-16 evening). These templates are the live execution plan for Monday 2026-05-18. HANDS fills [bracketed placeholders] from their LinkedIn search results. Count every note in a plain-text editor before sending — 200-char hard limit. Archive trigger fires Tuesday 2026-05-19 EOD.",
-    "trigger": "linkedin_profiles.json missing after 50 sessions. Monday is the last window. Archive trigger fires Tuesday EOD.",
+    "note": "Day 51 (Sunday 2026-05-17 evening). These templates are the live execution plan for Monday 2026-05-18. HANDS fills [bracketed placeholders] from their LinkedIn search results. Count every note in a plain-text editor before sending — 200-char hard limit. Archive trigger fires Tuesday 2026-05-19 EOD.",
+    "trigger": "linkedin_profiles.json missing after 51 sessions. Monday is the last window. Archive trigger fires Tuesday EOD.",
     "hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger fires for any Batch 5 lead without confirmed LinkedIn.",
     "preferred_path": "If HANDS writes linkedin_profiles.json from Monday searches: BRAIN can run Monday evening and generate fully personalised per-lead notes (post-reference where available). This is the highest-acceptance path. Write profiles.json entry IMMEDIATELY after each search.",
     "rules": [
@@ -250,7 +250,7 @@
   "batch_5_note_templates": {
     "status": "STANDBY — activates if HANDS writes linkedin_profiles.json from Monday searches. BRAIN can run Monday evening to generate per-lead personalised notes.",
     "preferred_path": "HANDS searches all Batch 5 leads → writes linkedin_profiles.json → BRAIN runs Monday evening → generates post-reference notes per lead → HANDS sends notes same Monday session if possible.",
-    "fallback_path": "If profiles.json not written before end of Monday session: use monday_fallback_notes templates above directly.",
+    "fallback_path": "If profiles.json not written before end of Monday session: use monday_fallback_notes templates above directly. They are ready now.",
     "hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger. No path after this."
   },
 
@@ -264,7 +264,7 @@
       "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn in 50 campaign sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 51 campaign sessions.",
       "pipeline_value_written_off": "£100-150"
     },
     {
@@ -276,7 +276,7 @@
       "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn in 50 campaign sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 51 campaign sessions.",
       "pipeline_value_written_off": "£350",
       "brain_classification": "Strongest warm pipeline lead — booked a call, confirmed booking-gap pain"
     },
@@ -289,7 +289,7 @@
       "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Rob — Pennine Print & Design stood out when I was looking at print businesses in Sowerby Bridge. Noticed something about the website worth a quick mention. Connecting in case it's relevant.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn in 50 campaign sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 51 campaign sessions.",
       "pipeline_value_written_off": "£550-675",
       "brain_classification": "Highest revenue potential — upsell signal ('sort the whole thing in one go')"
     },
@@ -331,13 +331,13 @@
   "campaign_linkedin_assessment": {
     "total_confirmed_notes_sent": 0,
     "total_confirmed_connections_made": 0,
-    "brain_runs_with_active_notes": 18,
+    "brain_runs_with_active_notes": 19,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 50,
+    "consecutive_runs_without_profiles": 51,
     "warm_pipeline_chapter": "PERMANENTLY CLOSED — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. Override window expired 2026-05-08 EOD. Unconditionally final.",
-    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 50 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
-    "batch_5_rule": "HANDS executes LinkedIn Monday 2026-05-18 — LAST WINDOW. Archive trigger fires Tuesday 2026-05-19 EOD. No 50-session tolerance.",
-    "monday_fallback_active": "monday_fallback_notes section is the ACTIVE EXECUTION PLAN. No further BRAIN run needed to use these templates."
+    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 51 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
+    "batch_5_rule": "HANDS executes LinkedIn Monday 2026-05-18 — LAST WINDOW. Archive trigger fires Tuesday 2026-05-19 EOD. No 51-session tolerance.",
+    "monday_fallback_active": "monday_fallback_notes section is the ACTIVE EXECUTION PLAN. No further BRAIN run needed to use these templates. They are confirmed ready."
   },
 
   "summary": {
@@ -345,19 +345,19 @@
     "active_note_lead_ids": [],
     "post_breakup_contingency_active": true,
     "post_breakup_lead_ids": [52, 55, 50, 56],
-    "today_saturday": "2026-05-16 — brain planning only. No LinkedIn sends.",
-    "monday_execution_status": "LAST WINDOW — Monday 2026-05-18",
+    "today_sunday": "2026-05-17 — brain planning only. No LinkedIn sends.",
+    "monday_execution_status": "ABSOLUTE LAST WINDOW — Monday 2026-05-18",
     "monday_fallback_notes_ready": true,
     "monday_fallback_location": "monday_fallback_notes section above — active execution plan. No further BRAIN run needed.",
-    "batch_5_notes_status": "BLOCKED — linkedin_profiles.json not written across 50 sessions. Per-lead personalised notes cannot be generated. Use monday_fallback_notes section directly.",
+    "batch_5_notes_status": "BLOCKED — linkedin_profiles.json not written across 51 sessions. Per-lead personalised notes cannot be generated. Use monday_fallback_notes section directly.",
     "batch_5_linkedin_execution_window": "Monday 2026-05-18 only. Hard deadline: Tuesday 2026-05-19 EOD.",
     "archive_trigger": "Tuesday 2026-05-19 EOD — any Batch 5 lead without confirmed LinkedIn is immediately archived LOST_NO_RESPONSE",
     "total_archived_notes": 7,
     "archived_note_lead_ids": [1, 3, 22, 52, 55, 50, 56],
     "campaign_notes_confirmed_sent": 0,
-    "consecutive_runs_without_profiles": 50,
+    "consecutive_runs_without_profiles": 51,
     "next_brain_run_if_profiles_received": "Monday 2026-05-18 EVENING — if HANDS writes linkedin_profiles.json, BRAIN generates per-lead personalised notes. Preferred path.",
     "next_brain_run_if_no_profiles": "Tuesday 2026-05-26 — Day-14 breakup copy generation. LinkedIn chapter closes Tuesday 2026-05-19 EOD.",
-    "day_50_run_note": "Saturday 2026-05-16 evening. 50-session failure ends Monday or archive trigger fires Tuesday EOD. monday_fallback_notes is the active execution plan. Post-reference preferred — check posts first for every lead before using generic template."
+    "day_51_run_note": "Sunday 2026-05-17 evening. Day 51. 51-session LinkedIn execution failure. Monday is the absolute last window — no deferral path exists. Archive trigger fires Tuesday EOD. All Batch 5 Ryedale leads approved pending IMAP per lead Monday. Post-breakup contingency active for leads 50/52/55/56."
   }
 }

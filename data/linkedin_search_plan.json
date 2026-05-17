@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-05-16T20:00:00Z",
+  "generated_at": "2026-05-17T18:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-16",
-  "day_number": 50,
-  "batch_5_day": 4,
-  "run_type": "SATURDAY_EVENING — Day 50, Batch 5 Day 4. Weekend bridge. MONDAY 2026-05-18 IS FINAL LINKEDIN WINDOW.",
-  "note": "Day 50 (Saturday 2026-05-16 — EVENING). linkedin_profiles.json STILL MISSING — 50 consecutive sessions without LinkedIn execution. Day-3 bumps assumed sent YESTERDAY (2026-05-15). Reply peak window is OPEN NOW — 24-72h post-bump. Highest probability reply window is Saturday-Monday. Today: no LinkedIn sends (Saturday block). Monday 2026-05-18: FINAL LinkedIn window — HANDS must execute all Batch 5 searches and connection requests. Archive trigger fires Tuesday 2026-05-19 EOD without exception. search_queries[] remains empty — HANDS must populate from their 2026-05-12 Batch 5 send records. Sector discovery fallback queries are fully populated for all six Ryedale towns.",
+  "run_date": "2026-05-17",
+  "day_number": 51,
+  "batch_5_day": 5,
+  "run_type": "SUNDAY_EVENING — Day 51, Batch 5 Day 5. FINAL PLANNING DAY. MONDAY 2026-05-18 IS THE ABSOLUTE LAST EXECUTION WINDOW.",
+  "note": "Day 51 (Sunday 2026-05-17 — EVENING). linkedin_profiles.json STILL MISSING — 51 consecutive sessions without LinkedIn execution. Today is Sunday — no LinkedIn sends (rule absolute). Tomorrow Monday 2026-05-18 is the ABSOLUTE FINAL window. Archive trigger fires Tuesday 2026-05-19 EOD for any Batch 5 lead without confirmed LinkedIn. No extensions exist. search_queries[] remains empty — HANDS must populate from their 2026-05-12 Batch 5 send records. All sector_discovery_fallback_queries remain fully populated. Reply peak window is OPEN NOW (48h post-Day-3-bump, closes Monday morning). IMAP gap: 43 days. src/outlocal/linkedin/orchestrator.py NOT YET IMPLEMENTED — LinkedIn module absent from codebase.",
 
   "email_outreach_state": {
-    "checked_at": "2026-05-16T20:00:00Z",
+    "checked_at": "2026-05-17T18:00:00Z",
     "source_files": ["data/daily_signals.json", "data/daily_email_plan.json", "data/new_replies.json"],
-    "imap_gap_days": 42,
+    "imap_gap_days": 43,
     "imap_last_confirmed_check": "2026-04-04",
-    "friday_sweep_status": "ASSUMED_EXECUTED 2026-05-15 — UNCONFIRMED. new_replies.json unchanged from 2026-04-04. Consistent with clean sweep OR sweep not run. Weekend IMAP monitoring strongly recommended today or Sunday — reply peak post-bump is HIGHEST NOW.",
+    "sunday_sweep_status": "UNCONFIRMED — new_replies.json last entry 2026-04-04 (43 days). Sunday sweep RECOMMENDED — reply peak 48h post-bump is still open. Peak closes Monday morning.",
 
     "batch_5_leads_emailed_3_plus_days_no_reply": {
       "day0_send_date": "2026-05-12",
-      "days_since_day0": 4,
+      "days_since_day0": 5,
       "day3_bump_send_date": "2026-05-15",
-      "days_since_day3": 1,
+      "days_since_day3": 2,
       "both_assumed_sent": "UNCONFIRMED — HANDS never wrote confirmation",
       "batch_5_replies_received": 0,
-      "reply_window_status": "PEAK OPEN — 24-72h post-Day-3-bump. Today (Saturday) and Sunday are the highest-probability reply windows across all Batches 1-4 historical data. Zero replies to date.",
-      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 4+ days ago, zero replies confirmed. LinkedIn approved for Monday execution pending per-lead IMAP sweep."
+      "reply_window_status": "PEAK OPEN — 48h post-Day-3-bump. Sunday 2026-05-17 is second-highest probability reply day. Peak closes Monday morning (~72h post-bump).",
+      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 5 days ago (Day-0), bumped 2 days ago (Day-3), zero replies. LinkedIn approved for Monday execution pending per-lead IMAP sweep."
     },
 
     "existing_replies_block_status": {
-      "lead_1": "Ripon Road Carpentry / Tom — INTERESTED reply 2026-04-04. ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
-      "lead_2": "Nidderdale Pet Supplies — NOT_INTERESTED reply 2026-04-04. All channels PERMANENTLY BLOCKED.",
-      "lead_3": "Westfield Hair & Beauty / Claire — INTERESTED reply 2026-04-04. ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
-      "lead_5": "Harewood Accountants / David Harewood — OUT_OF_OFFICE reply 2026-04-04. Sequence complete. LinkedIn window expired.",
-      "lead_22": "Pennine Print & Design / Rob — INTERESTED reply 2026-04-04. ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
-      "batch_5_replies": "ZERO — no Batch 5 Ryedale lead has replied to date. Reply peak window OPEN."
+      "lead_1_ripon_road_carpentry": "INTERESTED (2026-04-04). ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
+      "lead_2_nidderdale_pet_supplies": "NOT_INTERESTED (2026-04-04). All channels PERMANENTLY BLOCKED.",
+      "lead_3_westfield_hair_beauty": "INTERESTED (2026-04-04). ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
+      "lead_5_harewood_accountants": "OUT_OF_OFFICE (2026-04-04). Sequence complete. LinkedIn window expired.",
+      "lead_22_pennine_print_design": "INTERESTED (2026-04-04). ARCHIVED LOST_NO_RESPONSE. LinkedIn PERMANENTLY CLOSED.",
+      "batch_5_replies": "ZERO — no Batch 5 Ryedale lead has replied to date."
     },
 
     "leads_never_to_sweep": [1, 3, 22],
@@ -42,59 +42,62 @@
     "sequence_complete_linkedin_expired": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59]
   },
 
-  "today_saturday": {
-    "date": "2026-05-16 (Saturday)",
+  "orchestrator_status": {
+    "file": "src/outlocal/linkedin/orchestrator.py",
+    "status": "NOT_IMPLEMENTED — file does not exist in codebase",
+    "impact": "BRAIN layer unaffected — BRAIN operates on JSON data files only. HANDS executes LinkedIn manually. Orchestrator is a future automation layer.",
+    "note": "LinkedIn automation (Playwright-based connection request sending) is not yet coded. All LinkedIn execution is manual by HANDS. This does not block Monday's execution — HANDS operates the browser directly."
+  },
+
+  "today_sunday": {
+    "date": "2026-05-17 (Sunday)",
+    "batch_5_day": 5,
     "linkedin_sends_today": false,
     "reason": "No LinkedIn sends on weekends — rule absolute. Brain planning only.",
-    "recommended_action": "Weekend IMAP monitoring — if INTERESTED reply arrives Saturday or Sunday: classify, begin proposal draft (24h SLA from reply time), LinkedIn still valid Monday within Day 7 window.",
+    "reply_peak_status": "OPEN — 48h post-bump (Day-3 sent Friday 2026-05-15). Peak closes Monday morning (~72h post-bump = approx 09:00 Mon). Sunday IMAP monitoring STRONGLY RECOMMENDED — an INTERESTED reply today enables a Monday morning proposal.",
     "brain_outputs_today": ["linkedin_search_plan.json (this file)", "linkedin_connection_notes.json", "linkedin_coordination.json"]
   },
 
   "monday_execution_mandate": {
     "date": "Monday 2026-05-18",
-    "status": "LAST_WINDOW — archive trigger fires Tuesday 2026-05-19 EOD",
-    "urgency": "CRITICAL — 50-session LinkedIn execution failure. This is the terminal opportunity for every Batch 5 lead.",
-    "no_deferral": "Zero tolerance. 50-session failure ends Monday or archive trigger fires Tuesday EOD.",
+    "status": "ABSOLUTE_LAST_WINDOW — archive trigger fires Tuesday 2026-05-19 EOD",
+    "urgency": "CRITICAL — 51-session LinkedIn execution failure. This is the terminal opportunity for every Batch 5 lead. No deferral path exists.",
+    "no_deferral": "Zero tolerance. 51-session failure ends Monday execution or archive trigger fires Tuesday EOD.",
     "execution_order": [
       {
         "step": 1,
         "action": "Pull Batch 5 send list from your 2026-05-12 session records",
-        "note": "Every lead you emailed on 2026-05-12 is a LinkedIn candidate. Full name, business name, town, signal, sector required for each. Without this list: sector_discovery_fallback_queries are the fallback."
+        "note": "Every lead emailed 2026-05-12 is a LinkedIn candidate. Full name, business name, town, signal, sector required. Without this list: sector_discovery_fallback_queries below are the fallback — use town+sector discovery approach."
       },
       {
         "step": 2,
-        "action": "Execute in sector priority order: Solicitors → Estate agents → Hotels/B&Bs → Restaurants → Boutique retail → Trades",
-        "note": "Higher-sector leads have higher LinkedIn presence and higher acceptance rates. Do not work alphabetically — work by sector."
+        "action": "IMAP sweep — ALL Batch 5 leads (NOT leads 1/3/22). Per lead, not bulk.",
+        "note": "FIRST THING Monday morning — before any LinkedIn search. Per lead. If NOT_INTERESTED: block LinkedIn permanently, cancel Day-7 send. If UNSUBSCRIBE: suppress all channels within 24h (GDPR Article 21). If INTERESTED: LinkedIn still valid — proceed with note, do NOT reference email in note. If OOO: LinkedIn still valid — proceed."
       },
       {
         "step": 3,
-        "action": "For each lead: run primary name-based query. If no result: sector_discovery_fallback_query for that town+sector.",
-        "note": "Primary query format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". Fallback queries are in sector_discovery_fallback_queries below."
+        "action": "Execute LinkedIn searches in sector priority order: Solicitors → Estate agents → Accountants → Hotels/B&Bs → Restaurants → Boutique retail → Trades",
+        "note": "Primary query format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". If no result: use fallback chain. If surname unknown: use sector_discovery_fallback_queries for that town+sector."
       },
       {
         "step": 4,
-        "action": "IMAP sweep each lead before sending LinkedIn note",
-        "note": "Per lead, not bulk. If NOT_INTERESTED reply found: block LinkedIn permanently. If UNSUBSCRIBE: suppress all channels, GDPR Article 21 (24h). If INTERESTED: LinkedIn still valid — connection request reinforces relationship."
+        "action": "Check posts from last 60 days on EVERY confirmed profile BEFORE drafting note",
+        "note": "Post-reference note has 3-4x higher acceptance. Do not skip. Templates in linkedin_connection_notes.json (monday_fallback_notes section)."
       },
       {
         "step": 5,
-        "action": "Check posts from last 60 days on each confirmed profile FIRST",
-        "note": "Post-reference note has 3-4x higher acceptance. Do not skip this step. Templates in linkedin_connection_notes.json (monday_fallback_notes section)."
+        "action": "Send connection request with note — use monday_fallback_notes from linkedin_connection_notes.json",
+        "note": "200-char HARD limit. Count in plain-text editor before sending. Do NOT mention email, SSL, mobile, 'Not Secure', website audit, or any prior contact."
       },
       {
         "step": 6,
-        "action": "Send connection request with note — use monday_fallback_notes templates from linkedin_connection_notes.json",
-        "note": "200-char hard limit. Count in plain-text editor before sending. Do NOT mention email, SSL, 'Not Secure', mobile, or any prior contact."
+        "action": "Write data/linkedin_profiles.json IMMEDIATELY after each search",
+        "note": "MANDATORY. One entry per lead searched. Do not batch — write each entry immediately after the search, whether or not a profile was found. This is the ONLY confirmation mechanism. Without this file: archive trigger fires Tuesday EOD for EVERY Batch 5 lead."
       },
       {
         "step": 7,
-        "action": "Write data/linkedin_profiles.json IMMEDIATELY after each search — one entry per lead",
-        "note": "MANDATORY. Do not batch — write entry immediately after each search, whether or not a profile was found. This is the only confirmation mechanism. Without this file: archive trigger fires Tuesday EOD for every lead."
-      },
-      {
-        "step": 8,
-        "action": "CHANGELOG.md update — MANDATORY before Tuesday",
-        "note": "50 days overdue. Log: all Batch 5 Day-0 sends, Day-3 bumps, LinkedIn outcomes (confirmed or PROFILE_NOT_FOUND), all IMAP results since April, archive decisions. Must complete before Tuesday Day-7 sends."
+        "action": "CHANGELOG.md update — MANDATORY before Tuesday Day-7 sends",
+        "note": "51 days overdue. Log: all Batch 5 Day-0 sends, Day-3 bumps, LinkedIn outcomes (confirmed or PROFILE_NOT_FOUND), all IMAP results since April, archive decisions. Must complete before Tuesday 2026-05-19 sends."
       }
     ],
     "rules": [
@@ -146,8 +149,19 @@
     }
   },
 
+  "primary_query_format": {
+    "instruction": "For each Batch 5 lead where you have a full name (first + surname confirmed), use this as your primary query before any fallback:",
+    "format": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+    "fallback_chain": [
+      "Primary: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "Fallback 1: site:linkedin.com/in \"[Full Name]\" \"[Town]\" \"North Yorkshire\" [sector]",
+      "Fallback 2: Use sector_discovery_fallback_queries below for that town+sector",
+      "Fallback 3: Skip — do NOT send note to a profile you cannot confidently identify as the owner. Log as PROFILE_NOT_FOUND in profiles.json."
+    ]
+  },
+
   "sector_discovery_fallback_queries": {
-    "note": "Use these ONLY when: (1) name-based primary query yields no result, OR (2) owner surname is unknown. Execute in the order shown — sector priority applies within each town. Today's context: Day 3 bumps sent yesterday. Monday is FINAL window.",
+    "note": "Use these when: (1) name-based primary query yields no result, OR (2) owner surname is unknown. Execute in the order shown — sector priority applies within each town. Today: Day-3 bumps assumed sent Friday. Monday is FINAL window. Archives fire Tuesday EOD.",
     "Malton": [
       {
         "priority": 1,
@@ -279,20 +293,9 @@
     ]
   },
 
-  "primary_query_format": {
-    "instruction": "For each Batch 5 lead where you have a full name (first + surname confirmed), use this as your primary query before any fallback:",
-    "format": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
-    "fallback_chain": [
-      "Primary: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
-      "Fallback 1: site:linkedin.com/in \"[Full Name]\" \"[Town]\" \"North Yorkshire\" [sector]",
-      "Fallback 2: Use sector_discovery_fallback_queries above for that town+sector",
-      "Fallback 3: Skip — do NOT send note to a profile you cannot confidently identify as the owner. Log as PROFILE_NOT_FOUND in profiles.json."
-    ]
-  },
-
   "linkedin_profiles_json_instruction": {
     "file": "data/linkedin_profiles.json",
-    "critical": "Write this file Monday 2026-05-18, same session as LinkedIn execution. This is the only confirmation mechanism. BRAIN cannot generate per-lead personalised notes without it. Archive trigger cannot confirm exceptions without it.",
+    "critical": "Write this file Monday 2026-05-18, same session as LinkedIn execution. This is the only confirmation mechanism. Archive trigger fires Tuesday EOD for any lead without an entry showing note_sent: true.",
     "write_after_each_search": "Do not batch — write one entry immediately after each search, whether or not a profile was found.",
     "entry_schema": {
       "lead_id": "[from send records]",
@@ -319,7 +322,7 @@
     "fires": "Tuesday 2026-05-19 EOD",
     "condition": "Any Batch 5 lead where linkedin_profiles.json entry shows note_sent: false OR entry is missing entirely",
     "action": "Archive immediately as LOST_NO_RESPONSE. Log CHANGELOG same session. No deferral, no extension.",
-    "rule": "Non-negotiable. 50-session LinkedIn execution failure must not produce a 51st session.",
+    "rule": "Non-negotiable. 51-session LinkedIn execution failure must not produce a 52nd session.",
     "consequence": "Same outcome as warm pipeline (leads 1/3/22) — £800-1,175 written off and permanently unrecoverable."
   },
 
@@ -347,27 +350,28 @@
   ],
 
   "hard_deadline": {
-    "today_saturday": "2026-05-16 — Brain planning only. No LinkedIn sends.",
-    "weekend_imap": "RECOMMENDED — monitor inbox Saturday and Sunday. Reply peak OPEN now (24-72h post-Day-3-bump).",
-    "monday": "2026-05-18 — LAST WINDOW. Execute all Batch 5 LinkedIn searches and connection requests. No deferral path.",
+    "today_sunday": "2026-05-17 — Brain planning only. No LinkedIn sends.",
+    "sunday_imap": "STRONGLY RECOMMENDED — reply peak 48h post-bump is OPEN NOW. Peak closes Monday morning.",
+    "monday": "2026-05-18 — ABSOLUTE LAST WINDOW. Execute all Batch 5 LinkedIn searches and connection requests. No deferral path exists.",
     "tuesday": "2026-05-19 — Day-7 email sends (09:00-10:30) + EOD archive trigger for any Batch 5 lead without confirmed LinkedIn.",
-    "no_deferral": "Zero tolerance. 50-session failure must end Monday."
+    "no_deferral": "Zero tolerance. 51-session failure must end Monday."
   },
 
   "summary": {
-    "run_date": "2026-05-16 (Saturday — Day 50, Batch 5 Day 4)",
-    "day_number": 50,
-    "batch_5_day": 4,
+    "run_date": "2026-05-17 (Sunday — Day 51, Batch 5 Day 5)",
+    "day_number": 51,
+    "batch_5_day": 5,
     "active_search_queries": 0,
     "search_queries_empty_reason": "HANDS never confirmed Batch 5 send list. Populate from 2026-05-12 send records. Use sector_discovery_fallback_queries if name-based search yields no result.",
-    "batch_5_emailed_days_ago": 4,
-    "batch_5_day3_bumped_days_ago": 1,
+    "batch_5_emailed_days_ago": 5,
+    "batch_5_day3_bumped_days_ago": 2,
     "batch_5_replies_received": 0,
-    "reply_peak_window": "OPEN — Saturday-Monday. 24-72h post-Day-3-bump.",
-    "imap_gap_days": 42,
+    "reply_peak_window": "OPEN — 48h post-Day-3-bump. Closes Monday morning.",
+    "imap_gap_days": 43,
     "linkedin_profiles_received_ever": 0,
-    "campaign_sessions_without_linkedin_execution": 50,
-    "today_is_saturday": true,
+    "campaign_sessions_without_linkedin_execution": 51,
+    "orchestrator_py_status": "NOT_IMPLEMENTED — src/outlocal/linkedin/orchestrator.py does not exist",
+    "today_is_sunday": true,
     "linkedin_sends_today": false,
     "monday_is_last_window": true,
     "archive_trigger_fires": "2026-05-19 EOD",
