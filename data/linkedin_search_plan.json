@@ -1,28 +1,29 @@
 {
-  "generated_at": "2026-05-17T18:00:00Z",
+  "generated_at": "2026-05-18T09:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-17",
-  "day_number": 51,
-  "batch_5_day": 5,
-  "run_type": "SUNDAY_EVENING — Day 51, Batch 5 Day 5. FINAL PLANNING DAY. MONDAY 2026-05-18 IS THE ABSOLUTE LAST EXECUTION WINDOW.",
-  "note": "Day 51 (Sunday 2026-05-17 — EVENING). linkedin_profiles.json STILL MISSING — 51 consecutive sessions without LinkedIn execution. Today is Sunday — no LinkedIn sends (rule absolute). Tomorrow Monday 2026-05-18 is the ABSOLUTE FINAL window. Archive trigger fires Tuesday 2026-05-19 EOD for any Batch 5 lead without confirmed LinkedIn. No extensions exist. search_queries[] remains empty — HANDS must populate from their 2026-05-12 Batch 5 send records. All sector_discovery_fallback_queries remain fully populated. Reply peak window is OPEN NOW (48h post-Day-3-bump, closes Monday morning). IMAP gap: 43 days. src/outlocal/linkedin/orchestrator.py NOT YET IMPLEMENTED — LinkedIn module absent from codebase.",
+  "run_date": "2026-05-18",
+  "day_number": 52,
+  "batch_5_day": 6,
+  "run_type": "MONDAY_EXECUTION_DAY — Day 52, Batch 5 Day 6. ABSOLUTE FINAL LINKEDIN WINDOW. Execute NOW. Archive trigger fires TONIGHT at EOD tomorrow (Tuesday 2026-05-19 EOD).",
+  "note": "Day 52 (Monday 2026-05-18 — EXECUTION DAY). linkedin_profiles.json STILL MISSING after 52 consecutive campaign sessions. TODAY is the last window — no deferral path exists. IMAP gap: 44 days. Day-3 bumps assumed sent Friday 2026-05-15 (3 days ago). Reply peak 72h post-bump — closing now. Zero Batch 5 replies. Day-7 new-angle sends TOMORROW Tuesday 2026-05-19, 09:00-10:30. src/outlocal/linkedin/orchestrator.py NOT YET IMPLEMENTED — LinkedIn execution remains manual by HANDS. BRAIN layer unaffected.",
 
   "email_outreach_state": {
-    "checked_at": "2026-05-17T18:00:00Z",
+    "checked_at": "2026-05-18T09:00:00Z",
     "source_files": ["data/daily_signals.json", "data/daily_email_plan.json", "data/new_replies.json"],
-    "imap_gap_days": 43,
+    "imap_gap_days": 44,
     "imap_last_confirmed_check": "2026-04-04",
-    "sunday_sweep_status": "UNCONFIRMED — new_replies.json last entry 2026-04-04 (43 days). Sunday sweep RECOMMENDED — reply peak 48h post-bump is still open. Peak closes Monday morning.",
+    "monday_sweep_status": "NOT YET EXECUTED — new_replies.json unchanged from 2026-04-04. Execute TODAY per Batch 5 lead before LinkedIn.",
 
     "batch_5_leads_emailed_3_plus_days_no_reply": {
       "day0_send_date": "2026-05-12",
-      "days_since_day0": 5,
+      "days_since_day0": 6,
       "day3_bump_send_date": "2026-05-15",
-      "days_since_day3": 2,
+      "days_since_day3": 3,
       "both_assumed_sent": "UNCONFIRMED — HANDS never wrote confirmation",
       "batch_5_replies_received": 0,
-      "reply_window_status": "PEAK OPEN — 48h post-Day-3-bump. Sunday 2026-05-17 is second-highest probability reply day. Peak closes Monday morning (~72h post-bump).",
-      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 5 days ago (Day-0), bumped 2 days ago (Day-3), zero replies. LinkedIn approved for Monday execution pending per-lead IMAP sweep."
+      "reply_window_status": "CLOSING — 72h post-Day-3-bump marks the end of the post-bump reply peak. IMAP sweep today will confirm inbox state.",
+      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 6 days ago (Day-0), bumped 3 days ago (Day-3), zero replies. LinkedIn approved TODAY (absolute final window) pending per-lead IMAP sweep.",
+      "email_linkedin_gap_satisfied": "3 days post-bump — gap rule fully satisfied. LinkedIn can proceed today as soon as per-lead IMAP confirms clean."
     },
 
     "existing_replies_block_status": {
@@ -35,165 +36,291 @@
     },
 
     "leads_never_to_sweep": [1, 3, 22],
-    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No IMAP, no LinkedIn, no contact of any kind.",
-
+    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No IMAP, no LinkedIn, no contact.",
     "do_not_linkedin": [1, 2, 3, 7, 19, 22, 49, 51, 53, 54],
-    "do_not_linkedin_reason": "Archived (1/3/22), NOT_INTERESTED (2), permanently suppressed (7/19), LOST_UNRESOLVED (49/51/53/54).",
     "sequence_complete_linkedin_expired": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59]
   },
 
   "orchestrator_status": {
     "file": "src/outlocal/linkedin/orchestrator.py",
     "status": "NOT_IMPLEMENTED — file does not exist in codebase",
-    "impact": "BRAIN layer unaffected — BRAIN operates on JSON data files only. HANDS executes LinkedIn manually. Orchestrator is a future automation layer.",
-    "note": "LinkedIn automation (Playwright-based connection request sending) is not yet coded. All LinkedIn execution is manual by HANDS. This does not block Monday's execution — HANDS operates the browser directly."
+    "impact": "BRAIN layer unaffected. HANDS executes LinkedIn manually. Orchestrator is a future automation layer.",
+    "note": "All LinkedIn execution is manual. This does not block today's execution."
   },
 
-  "today_sunday": {
-    "date": "2026-05-17 (Sunday)",
-    "batch_5_day": 5,
-    "linkedin_sends_today": false,
-    "reason": "No LinkedIn sends on weekends — rule absolute. Brain planning only.",
-    "reply_peak_status": "OPEN — 48h post-bump (Day-3 sent Friday 2026-05-15). Peak closes Monday morning (~72h post-bump = approx 09:00 Mon). Sunday IMAP monitoring STRONGLY RECOMMENDED — an INTERESTED reply today enables a Monday morning proposal.",
-    "brain_outputs_today": ["linkedin_search_plan.json (this file)", "linkedin_connection_notes.json", "linkedin_coordination.json"]
-  },
-
-  "monday_execution_mandate": {
-    "date": "Monday 2026-05-18",
-    "status": "ABSOLUTE_LAST_WINDOW — archive trigger fires Tuesday 2026-05-19 EOD",
-    "urgency": "CRITICAL — 51-session LinkedIn execution failure. This is the terminal opportunity for every Batch 5 lead. No deferral path exists.",
-    "no_deferral": "Zero tolerance. 51-session failure ends Monday execution or archive trigger fires Tuesday EOD.",
+  "execution_mandate": {
+    "date": "TODAY Monday 2026-05-18 — ABSOLUTE LAST WINDOW",
+    "status": "EXECUTE NOW — 52-session failure ends today or archive trigger fires tomorrow EOD",
+    "no_deferral": "Zero tolerance. No path exists after today. Archive trigger fires Tuesday 2026-05-19 EOD unconditionally.",
     "execution_order": [
       {
         "step": 1,
-        "action": "Pull Batch 5 send list from your 2026-05-12 session records",
-        "note": "Every lead emailed 2026-05-12 is a LinkedIn candidate. Full name, business name, town, signal, sector required. Without this list: sector_discovery_fallback_queries below are the fallback — use town+sector discovery approach."
+        "action": "PULL your 2026-05-12 Batch 5 send records",
+        "note": "Every lead emailed 2026-05-12 is a LinkedIn candidate. Full name, business name, town, signal, sector required. If records unavailable: use search_queries[] below (sector discovery entries) — they will find the right profiles via sector+town approach."
       },
       {
         "step": 2,
         "action": "IMAP sweep — ALL Batch 5 leads (NOT leads 1/3/22). Per lead, not bulk.",
-        "note": "FIRST THING Monday morning — before any LinkedIn search. Per lead. If NOT_INTERESTED: block LinkedIn permanently, cancel Day-7 send. If UNSUBSCRIBE: suppress all channels within 24h (GDPR Article 21). If INTERESTED: LinkedIn still valid — proceed with note, do NOT reference email in note. If OOO: LinkedIn still valid — proceed."
+        "note": "FIRST. Before any LinkedIn search. If NOT_INTERESTED: block LinkedIn permanently, cancel Day-7 send. If UNSUBSCRIBE: suppress all channels within 24h (GDPR Article 21). If INTERESTED: LinkedIn still valid — proceed, do NOT reference email. If OOO: LinkedIn valid — note return date."
       },
       {
         "step": 3,
-        "action": "Execute LinkedIn searches in sector priority order: Solicitors → Estate agents → Accountants → Hotels/B&Bs → Restaurants → Boutique retail → Trades",
-        "note": "Primary query format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". If no result: use fallback chain. If surname unknown: use sector_discovery_fallback_queries for that town+sector."
+        "action": "Execute LinkedIn searches using search_queries[] below",
+        "note": "If you have confirmed lead names from 2026-05-12: replace with name-specific primary queries. If name unknown: use sector_discovery entries as-is. Sector priority order: Solicitors → Estate agents → Accountants → Hotels/B&Bs → Restaurants → Boutique retail → Trades."
       },
       {
         "step": 4,
         "action": "Check posts from last 60 days on EVERY confirmed profile BEFORE drafting note",
-        "note": "Post-reference note has 3-4x higher acceptance. Do not skip. Templates in linkedin_connection_notes.json (monday_fallback_notes section)."
+        "note": "Post-reference note has 3-4x higher acceptance. Do not skip. Takes 2 minutes per profile."
       },
       {
         "step": 5,
-        "action": "Send connection request with note — use monday_fallback_notes from linkedin_connection_notes.json",
-        "note": "200-char HARD limit. Count in plain-text editor before sending. Do NOT mention email, SSL, mobile, 'Not Secure', website audit, or any prior contact."
+        "action": "Send connection request + note — use monday_fallback_notes in linkedin_connection_notes.json",
+        "note": "200-char HARD limit. Count in plain-text editor before sending. Do NOT mention email, SSL, 'Not Secure', mobile, website audit, or any prior contact."
       },
       {
         "step": 6,
-        "action": "Write data/linkedin_profiles.json IMMEDIATELY after each search",
-        "note": "MANDATORY. One entry per lead searched. Do not batch — write each entry immediately after the search, whether or not a profile was found. This is the ONLY confirmation mechanism. Without this file: archive trigger fires Tuesday EOD for EVERY Batch 5 lead."
+        "action": "Write data/linkedin_profiles.json — ONE ENTRY PER LEAD, IMMEDIATELY AFTER EACH SEARCH",
+        "note": "MANDATORY. Do not batch. Write each entry as you go, whether or not a profile was found. This is the ONLY confirmation mechanism. Without this file: archive trigger fires Tuesday EOD for EVERY Batch 5 lead."
       },
       {
         "step": 7,
-        "action": "CHANGELOG.md update — MANDATORY before Tuesday Day-7 sends",
-        "note": "51 days overdue. Log: all Batch 5 Day-0 sends, Day-3 bumps, LinkedIn outcomes (confirmed or PROFILE_NOT_FOUND), all IMAP results since April, archive decisions. Must complete before Tuesday 2026-05-19 sends."
+        "action": "CHANGELOG.md — 50+ days overdue. Mandatory before tomorrow's Day-7 sends.",
+        "note": "Log: all Batch 5 Day-0 sends, Day-3 bumps, LinkedIn outcomes, IMAP results since April, archive decisions (leads 1/3/22, 49/51/53/54). Absolute deadline today."
       }
-    ],
-    "rules": [
-      "No LinkedIn on weekends — Monday is valid",
-      "No LinkedIn to leads 1/3/22/2/7/19/49/51/53/54 — permanently blocked",
-      "IMAP per lead before note — mandatory",
-      "200-character hard limit on every note — count in plain text editor",
-      "Do NOT reference the email sequence, SSL, mobile, audit findings, or 'Not Secure' in any note",
-      "Do NOT start a note with 'I'",
-      "If owner surname is NOT confirmed: skip LinkedIn for that lead (no guessing profiles)",
-      "Write profiles.json entry after EVERY search — not just confirmed profiles"
     ]
   },
 
-  "search_queries": [],
-  "search_queries_status": "PENDING_HANDS_POPULATION — HANDS must populate this array from their 2026-05-12 Batch 5 send records. Format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". If name unknown: use sector_discovery_fallback_queries below. Execute Monday 2026-05-18.",
-  "search_queries_format": {
-    "description": "Once HANDS confirms the Batch 5 send list, populate search_queries[] with entries in this format:",
-    "entry_schema": {
-      "lead_id": "[from send records]",
-      "name": "[owner full name — first + surname required]",
-      "company": "[business name]",
-      "town": "[town]",
-      "sector": "[solicitor|estate_agent|hotel_bb|restaurant|retail|trade]",
-      "signal": "[ssl|mobile|no_website|aida]",
-      "google_query": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
-      "fallback_query_1": "site:linkedin.com/in \"[Full Name]\" \"[Town]\" \"North Yorkshire\" [sector]",
-      "fallback_query_2": "See sector_discovery_fallback_queries below"
-    },
-    "example_malton_solicitor": {
-      "lead_id": "TBC",
-      "name": "David Pennington",
-      "company": "Pennington & Co Solicitors",
+  "search_queries": [
+    {
+      "lead_id": "BATCH5_MALTON_SOLICITOR_01",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "solicitor firm, Malton",
       "town": "Malton",
       "sector": "solicitor",
       "signal": "ssl",
-      "google_query": "site:linkedin.com/in \"David Pennington\" \"Pennington & Co Solicitors\"",
-      "fallback_query_1": "site:linkedin.com/in \"David Pennington\" \"Malton\" \"North Yorkshire\" solicitor"
+      "execution_priority": 1,
+      "google_query": "site:linkedin.com/in solicitor \"Malton\" \"North Yorkshire\" (director OR partner OR owner)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Malton\" solicitor partner director",
+      "note": "Highest priority in Ryedale. Malton solicitors are almost always on LinkedIn. Check posts from last 60 days — legal updates, charity, local events. Post-reference very likely. REPLACE with name-specific query if you have the full name from 2026-05-12 records."
     },
-    "example_helmsley_hotel": {
-      "lead_id": "TBC",
-      "name": "Sarah Mitchell",
-      "company": "The Black Swan Helmsley",
+    {
+      "lead_id": "BATCH5_MALTON_ESTATEAGENT_02",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "estate agency, Malton",
+      "town": "Malton",
+      "sector": "estate_agent",
+      "signal": "ssl",
+      "execution_priority": 2,
+      "google_query": "site:linkedin.com/in \"estate agent\" \"Malton\" \"North Yorkshire\" (director OR owner OR manager)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Agency Name]\"",
+      "fallback_query_1": "site:linkedin.com/in estate agent \"Malton\" property director",
+      "note": "Estate agents in Malton post market updates and sold listings. High post-reference opportunity."
+    },
+    {
+      "lead_id": "BATCH5_MALTON_ACCOUNTANT_03",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "accountancy firm, Malton",
+      "town": "Malton",
+      "sector": "accountant",
+      "signal": "ssl",
+      "execution_priority": 3,
+      "google_query": "site:linkedin.com/in accountant \"Malton\" \"North Yorkshire\" (director OR partner OR owner)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Firm Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Malton\" accountant director founder",
+      "note": "High LinkedIn presence. Post frequently about tax deadlines, Making Tax Digital, self-assessment. Good post-reference likelihood."
+    },
+    {
+      "lead_id": "BATCH5_MALTON_RETAIL_04",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "independent retail, Malton",
+      "town": "Malton",
+      "sector": "boutique_retail",
+      "signal": "ssl",
+      "execution_priority": 4,
+      "google_query": "site:linkedin.com/in \"Malton\" \"North Yorkshire\" retail (owner OR director OR founder)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Shop Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Malton\" food OR shop OR boutique owner founder",
+      "note": "Malton has a strong independent food and retail scene. Food Festival presence often generates posts."
+    },
+    {
+      "lead_id": "BATCH5_HELMSLEY_HOTEL_05",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "hotel or B&B, Helmsley",
       "town": "Helmsley",
       "sector": "hotel_bb",
       "signal": "ssl",
-      "google_query": "site:linkedin.com/in \"Sarah Mitchell\" \"The Black Swan Helmsley\"",
-      "fallback_query_1": "site:linkedin.com/in \"Sarah Mitchell\" \"Helmsley\" \"North Yorkshire\" hotel"
+      "execution_priority": 5,
+      "google_query": "site:linkedin.com/in hotel \"Helmsley\" \"North Yorkshire\" (owner OR director OR manager)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Hotel Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Helmsley\" hospitality (owner OR director)",
+      "note": "HIGHEST post-reference likelihood in the entire Ryedale batch. Helmsley hospitality owners post about seasonal events, North York Moors, local walks. ALWAYS check posts before using generic note."
+    },
+    {
+      "lead_id": "BATCH5_HELMSLEY_RESTAURANT_06",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "restaurant or fine dining, Helmsley area",
+      "town": "Helmsley",
+      "sector": "restaurant",
+      "signal": "ssl",
+      "execution_priority": 6,
+      "google_query": "site:linkedin.com/in restaurant \"Helmsley\" (owner OR chef OR director)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Restaurant Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Helmsley\" OR \"Harome\" \"North Yorkshire\" restaurant chef founder",
+      "note": "Fine dining in Helmsley and Harome area. Owners post menus, seasonal ingredients, supplier stories, awards. Post-reference very likely."
+    },
+    {
+      "lead_id": "BATCH5_HELMSLEY_ESTATEAGENT_07",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "estate agency, Helmsley",
+      "town": "Helmsley",
+      "sector": "estate_agent",
+      "signal": "ssl",
+      "execution_priority": 7,
+      "google_query": "site:linkedin.com/in \"estate agent\" \"Helmsley\" \"North Yorkshire\" (director OR owner)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Agency Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Helmsley\" property director rural",
+      "note": "Helmsley estate agents cover the wider Ryedale rural market — active LinkedIn presences. Ryedale rural property generates consistent posting."
+    },
+    {
+      "lead_id": "BATCH5_PICKERING_HOTEL_08",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "hotel or B&B, Pickering",
+      "town": "Pickering",
+      "sector": "hotel_bb",
+      "signal": "ssl",
+      "execution_priority": 8,
+      "google_query": "site:linkedin.com/in (hotel OR \"B&B\" OR \"bed and breakfast\") \"Pickering\" \"North Yorkshire\" (owner OR director)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Pickering\" hospitality owner accommodation",
+      "note": "Pickering is a gateway to the North York Moors and the North Yorkshire Moors Railway. B&B and hotel owners post about tourism, steam railway, seasonal offers."
+    },
+    {
+      "lead_id": "BATCH5_PICKERING_ESTATEAGENT_09",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "estate agency, Pickering",
+      "town": "Pickering",
+      "sector": "estate_agent",
+      "signal": "ssl",
+      "execution_priority": 9,
+      "google_query": "site:linkedin.com/in \"estate agent\" \"Pickering\" (director OR owner OR manager)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Agency Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Pickering\" property rural estate director",
+      "note": "Medium LinkedIn presence. Rural property market generates some posting activity."
+    },
+    {
+      "lead_id": "BATCH5_PICKERING_RESTAURANT_10",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "restaurant, Pickering",
+      "town": "Pickering",
+      "sector": "restaurant",
+      "signal": "ssl",
+      "execution_priority": 10,
+      "google_query": "site:linkedin.com/in restaurant \"Pickering\" \"North Yorkshire\" (owner OR chef)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Restaurant Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Pickering\" food owner chef founder",
+      "note": "Modest LinkedIn presence for Pickering restaurants. Generic note if profile found with no recent posts."
+    },
+    {
+      "lead_id": "BATCH5_KIRKBYMOORSIDE_PROFSVC_11",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "professional services, Kirkbymoorside",
+      "town": "Kirkbymoorside",
+      "sector": "any_professional_services",
+      "signal": "ssl",
+      "execution_priority": 11,
+      "google_query": "site:linkedin.com/in \"Kirkbymoorside\" \"North Yorkshire\" (solicitor OR accountant OR estate agent) (owner OR director OR partner)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Kirbymoorside\" \"North Yorkshire\" (owner OR director)",
+      "note": "Try BOTH spellings — 'Kirkbymoorside' and 'Kirbymoorside' both appear in LinkedIn profiles. Small town — cast a slightly wider net. Also try the abbreviated 'KbM' form some locals use."
+    },
+    {
+      "lead_id": "BATCH5_KIRKBYMOORSIDE_HOSPITALITY_12",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "hotel, retail, or restaurant, Kirkbymoorside",
+      "town": "Kirkbymoorside",
+      "sector": "hotels_bbs_retail",
+      "signal": "ssl",
+      "execution_priority": 12,
+      "google_query": "site:linkedin.com/in \"Kirkbymoorside\" (hotel OR retail OR restaurant) owner director",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Kirbymoorside\" owner director",
+      "note": "Small market town. LinkedIn presence is modest. Generic note if profile found."
+    },
+    {
+      "lead_id": "BATCH5_NORTON_PROFSVC_13",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "professional services or trade, Norton-on-Derwent",
+      "town": "Norton-on-Derwent",
+      "sector": "professional_services_trades",
+      "signal": "ssl",
+      "execution_priority": 13,
+      "google_query": "site:linkedin.com/in \"Norton\" \"Malton\" (solicitor OR accountant OR estate agent OR builder) (owner OR director OR partner)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Norton-on-Derwent\" \"North Yorkshire\" owner director",
+      "note": "Norton is effectively part of the Malton market area. Use 'Norton' 'Malton' in queries — the full 'Norton-on-Derwent' rarely appears in LinkedIn profiles."
+    },
+    {
+      "lead_id": "BATCH5_HOVINGHAM_HOSPITALITY_14",
+      "name": "CONFIRM_FROM_2026-05-12_RECORDS",
+      "company": "hospitality or hotel, Hovingham",
+      "town": "Hovingham",
+      "sector": "hospitality_estate",
+      "signal": "ssl",
+      "execution_priority": 14,
+      "google_query": "site:linkedin.com/in \"Hovingham\" \"North Yorkshire\" (owner OR director OR manager)",
+      "primary_query_if_name_known": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
+      "fallback_query_1": "site:linkedin.com/in \"Hovingham\" hotel OR \"Worsley Arms\" director",
+      "note": "Very small village. LinkedIn presence is LOW. The Worsley Arms Hotel is the primary hospitality lead — search specifically if in your send list. Generic note only — post-reference unlikely. Do NOT send if profile cannot be confirmed as owner."
     }
-  },
+  ],
+
+  "search_queries_count": 14,
+  "search_queries_note": "14 sector-discovery entries created for Day 52 execution. These represent the expected Batch 5 Ryedale lead sectors and towns at execution priority. HANDS: if you have confirmed lead names from your 2026-05-12 records, replace each google_query with the name-specific primary query format: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\". Use sector discovery entries as-is if full name is not confirmed for a lead.",
 
   "primary_query_format": {
-    "instruction": "For each Batch 5 lead where you have a full name (first + surname confirmed), use this as your primary query before any fallback:",
+    "instruction": "For each Batch 5 lead where you have a confirmed full name (first + surname), ALWAYS use the name-specific query first:",
     "format": "site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
     "fallback_chain": [
       "Primary: site:linkedin.com/in \"[Full Name]\" \"[Business Name]\"",
       "Fallback 1: site:linkedin.com/in \"[Full Name]\" \"[Town]\" \"North Yorkshire\" [sector]",
-      "Fallback 2: Use sector_discovery_fallback_queries below for that town+sector",
-      "Fallback 3: Skip — do NOT send note to a profile you cannot confidently identify as the owner. Log as PROFILE_NOT_FOUND in profiles.json."
+      "Fallback 2: Use sector_discovery entry for that town+sector (already populated above)",
+      "Fallback 3: Skip — log as PROFILE_NOT_FOUND in linkedin_profiles.json. Do NOT send a note to an unconfirmed profile."
     ]
   },
 
   "sector_discovery_fallback_queries": {
-    "note": "Use these when: (1) name-based primary query yields no result, OR (2) owner surname is unknown. Execute in the order shown — sector priority applies within each town. Today: Day-3 bumps assumed sent Friday. Monday is FINAL window. Archives fire Tuesday EOD.",
+    "note": "Retained from Day 51 for reference. The search_queries[] array above incorporates these in execution order. Use search_queries[] as the primary execution list — these are the underlying source queries.",
     "Malton": [
       {
         "priority": 1,
         "sector": "solicitors",
         "query": "site:linkedin.com/in solicitor \"Malton\" \"North Yorkshire\" (director OR partner OR owner)",
         "fallback": "site:linkedin.com/in \"solicitor\" \"Malton\" partner director",
-        "note": "Highest LinkedIn likelihood in Ryedale. Malton solicitors almost always have profiles. Check posts from last 60 days — legal updates, charity, local events. Post-reference is very likely."
+        "note": "Highest LinkedIn likelihood in Ryedale. Post-reference very likely."
       },
       {
         "priority": 2,
         "sector": "estate_agents",
         "query": "site:linkedin.com/in \"estate agent\" \"Malton\" \"North Yorkshire\" (director OR owner OR manager)",
-        "fallback": "site:linkedin.com/in estate agent \"Malton\" property director",
-        "note": "Estate agents in Malton post market updates and sold listings. High post-reference opportunity."
+        "fallback": "site:linkedin.com/in estate agent \"Malton\" property director"
       },
       {
         "priority": 3,
         "sector": "accountants",
-        "query": "site:linkedin.com/in accountant \"Malton\" \"North Yorkshire\" (director OR partner OR owner)",
-        "note": "High LinkedIn presence. Post frequently about tax deadlines, Making Tax Digital."
+        "query": "site:linkedin.com/in accountant \"Malton\" \"North Yorkshire\" (director OR partner OR owner)"
       },
       {
         "priority": 4,
         "sector": "boutique_retail",
-        "query": "site:linkedin.com/in \"Malton\" \"North Yorkshire\" retail (owner OR director OR founder)",
-        "note": "Malton has a strong independent food and retail scene. Food Festival presence often generates posts."
+        "query": "site:linkedin.com/in \"Malton\" \"North Yorkshire\" retail (owner OR director OR founder)"
       },
       {
         "priority": 5,
         "sector": "trades",
         "query": "site:linkedin.com/in \"[Full Name]\" \"Malton\" (plumber OR electrician OR builder OR joiner OR roofer)",
-        "note": "Trades — LOW LinkedIn presence. Only search if you have a full name confirmed. Skip if surname unknown."
+        "note": "LOW LinkedIn presence. Only search if you have a full name confirmed. Skip if surname unknown."
       }
     ],
     "Helmsley": [
@@ -202,26 +329,23 @@
         "sector": "hotels_bbs",
         "query": "site:linkedin.com/in hotel \"Helmsley\" \"North Yorkshire\" (owner OR director OR manager)",
         "fallback": "site:linkedin.com/in \"Helmsley\" hospitality (owner OR director)",
-        "note": "Highest post-reference likelihood in the entire Ryedale batch. Helmsley hospitality owners post about seasonal events, local walks, NYM Park. Check posts FIRST — always."
+        "note": "Highest post-reference likelihood in entire Ryedale batch."
       },
       {
         "priority": 2,
         "sector": "restaurants_fine_dining",
         "query": "site:linkedin.com/in restaurant \"Helmsley\" (owner OR chef OR director)",
-        "fallback": "site:linkedin.com/in \"Helmsley\" \"North Yorkshire\" restaurant chef founder",
-        "note": "Fine dining in the Helmsley/Harome area. Owners post menus, seasonal ingredients, supplier stories. Post-reference very likely."
+        "fallback": "site:linkedin.com/in \"Helmsley\" \"North Yorkshire\" restaurant chef founder"
       },
       {
         "priority": 3,
         "sector": "estate_agents",
-        "query": "site:linkedin.com/in \"estate agent\" \"Helmsley\" \"North Yorkshire\" (director OR owner)",
-        "note": "Helmsley estate agents cover the wider Ryedale rural market — active LinkedIn presences."
+        "query": "site:linkedin.com/in \"estate agent\" \"Helmsley\" \"North Yorkshire\" (director OR owner)"
       },
       {
         "priority": 4,
         "sector": "boutique_retail",
-        "query": "site:linkedin.com/in \"Helmsley\" retail (owner OR director OR founder)",
-        "note": "Independent shops — medium presence. Helmsley market day generates some activity."
+        "query": "site:linkedin.com/in \"Helmsley\" retail (owner OR director OR founder)"
       }
     ],
     "Pickering": [
@@ -229,26 +353,23 @@
         "priority": 1,
         "sector": "hotels_bbs",
         "query": "site:linkedin.com/in (hotel OR \"B&B\" OR \"bed and breakfast\") \"Pickering\" \"North Yorkshire\" (owner OR director)",
-        "fallback": "site:linkedin.com/in \"Pickering\" hospitality owner accommodation",
-        "note": "Pickering is a gateway to the North York Moors and NYMR. B&B and hotel owners post about tourism, the steam railway, seasonal offers."
+        "fallback": "site:linkedin.com/in \"Pickering\" hospitality owner accommodation"
       },
       {
         "priority": 2,
         "sector": "estate_agents",
-        "query": "site:linkedin.com/in \"estate agent\" \"Pickering\" (director OR owner OR manager)",
-        "note": "Medium presence. Rural property market generates some posting activity."
+        "query": "site:linkedin.com/in \"estate agent\" \"Pickering\" (director OR owner OR manager)"
       },
       {
         "priority": 3,
         "sector": "restaurants",
-        "query": "site:linkedin.com/in restaurant \"Pickering\" \"North Yorkshire\" (owner OR chef)",
-        "note": "Modest LinkedIn presence for Pickering restaurants — generic note if profile found."
+        "query": "site:linkedin.com/in restaurant \"Pickering\" \"North Yorkshire\" (owner OR chef)"
       },
       {
         "priority": 4,
         "sector": "trades",
         "query": "site:linkedin.com/in \"[Full Name]\" \"Pickering\" (builder OR plumber OR joiner OR electrician)",
-        "note": "Trades — LOW. Only if full name confirmed. Skip if surname unknown."
+        "note": "LOW. Only if full name confirmed."
       }
     ],
     "Kirkbymoorside": [
@@ -257,14 +378,13 @@
         "sector": "any_professional_services",
         "query": "site:linkedin.com/in \"Kirkbymoorside\" \"North Yorkshire\" (solicitor OR accountant OR estate agent) (owner OR director OR partner)",
         "fallback": "site:linkedin.com/in \"Kirbymoorside\" \"North Yorkshire\" (owner OR director)",
-        "note": "Try BOTH spellings — 'Kirkbymoorside' and 'Kirbymoorside' both appear in LinkedIn profiles. Small town — cast a slightly wider net."
+        "note": "Try BOTH spellings."
       },
       {
         "priority": 2,
         "sector": "hotels_bbs_retail",
         "query": "site:linkedin.com/in \"Kirkbymoorside\" (hotel OR retail OR restaurant) owner director",
-        "fallback": "site:linkedin.com/in \"Kirbymoorside\" owner director",
-        "note": "Small market town. LinkedIn presence is modest. Use generic note if profile found."
+        "fallback": "site:linkedin.com/in \"Kirbymoorside\" owner director"
       }
     ],
     "Hovingham": [
@@ -273,7 +393,7 @@
         "sector": "hospitality_estate",
         "query": "site:linkedin.com/in \"Hovingham\" \"North Yorkshire\" (owner OR director OR manager)",
         "fallback": "site:linkedin.com/in \"Hovingham\" hotel OR \"Worsley Arms\" director",
-        "note": "Very small village. LinkedIn presence is LOW. The Worsley Arms Hotel is the primary hospitality lead — search specifically if in your send list. Generic note only — post-reference unlikely."
+        "note": "Very small village. LOW LinkedIn presence. Generic note only."
       }
     ],
     "Norton-on-Derwent": [
@@ -282,23 +402,23 @@
         "sector": "professional_services_trades",
         "query": "site:linkedin.com/in \"Norton\" \"Malton\" (solicitor OR accountant OR estate agent OR builder) (owner OR director OR partner)",
         "fallback": "site:linkedin.com/in \"Norton-on-Derwent\" \"North Yorkshire\" owner director",
-        "note": "Norton is effectively part of the Malton market area. Use 'Norton' 'Malton' in queries — the full hyphenated 'Norton-on-Derwent' rarely appears in LinkedIn profiles."
+        "note": "Use 'Norton' 'Malton' in queries — hyphenated form rarely appears in LinkedIn profiles."
       },
       {
         "priority": 2,
         "sector": "trades",
         "query": "site:linkedin.com/in \"[Full Name]\" \"Norton\" \"Malton\" (builder OR plumber OR joiner OR roofer)",
-        "note": "Trades — LOW LinkedIn presence. Full name required. Skip if surname unknown."
+        "note": "Trades — LOW. Full name required."
       }
     ]
   },
 
   "linkedin_profiles_json_instruction": {
     "file": "data/linkedin_profiles.json",
-    "critical": "Write this file Monday 2026-05-18, same session as LinkedIn execution. This is the only confirmation mechanism. Archive trigger fires Tuesday EOD for any lead without an entry showing note_sent: true.",
+    "critical": "Write this file TODAY Monday 2026-05-18, same session as LinkedIn execution. This is the only confirmation mechanism. Archive trigger fires Tuesday EOD for any lead without an entry showing note_sent: true.",
     "write_after_each_search": "Do not batch — write one entry immediately after each search, whether or not a profile was found.",
     "entry_schema": {
-      "lead_id": "[from send records]",
+      "lead_id": "[from send records — use BATCH5_TOWN_SECTOR_NN if ID unknown]",
       "name": "[owner name as on LinkedIn profile]",
       "company": "[business name as on LinkedIn]",
       "town": "[town]",
@@ -322,59 +442,52 @@
     "fires": "Tuesday 2026-05-19 EOD",
     "condition": "Any Batch 5 lead where linkedin_profiles.json entry shows note_sent: false OR entry is missing entirely",
     "action": "Archive immediately as LOST_NO_RESPONSE. Log CHANGELOG same session. No deferral, no extension.",
-    "rule": "Non-negotiable. 51-session LinkedIn execution failure must not produce a 52nd session.",
     "consequence": "Same outcome as warm pipeline (leads 1/3/22) — £800-1,175 written off and permanently unrecoverable."
   },
 
+  "rules": [
+    "IMAP per lead before note — mandatory. NOT leads 1/3/22.",
+    "No LinkedIn to leads 1/3/22/2/7/19/49/51/53/54 — permanently blocked",
+    "200-character hard limit on every note — count in plain text editor",
+    "Do NOT reference the email sequence, SSL, mobile, audit findings, or 'Not Secure' in any note",
+    "Do NOT start a note with 'I'",
+    "If owner surname NOT confirmed: skip LinkedIn for that lead. Never guess a profile. Log as SURNAME_UNKNOWN in profiles.json.",
+    "Write profiles.json entry after EVERY search — not just confirmed profiles",
+    "No LinkedIn on weekends — today Monday is valid"
+  ],
+
   "non_candidates": [
-    {
-      "lead_ids": [1, 3, 22],
-      "reason": "UNCONDITIONALLY_FINAL_ARCHIVED — LOST_NO_RESPONSE. LinkedIn permanently closed. Reapproach: 2026-10-26."
-    },
-    {
-      "lead_id": 2,
-      "reason": "NOT_INTERESTED reply. All channels permanently blocked. Reapproach: 2026-10-06."
-    },
-    {
-      "lead_ids": [7, 19],
-      "reason": "Permanently suppressed."
-    },
-    {
-      "lead_ids": [49, 51, 53, 54],
-      "reason": "LOST_UNRESOLVED — archived. No email contact ever made."
-    },
-    {
-      "lead_ids": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
-      "reason": "Sequence complete. LinkedIn window expired."
-    }
+    {"lead_ids": [1, 3, 22], "reason": "UNCONDITIONALLY_FINAL_ARCHIVED — LOST_NO_RESPONSE. LinkedIn permanently closed."},
+    {"lead_id": 2, "reason": "NOT_INTERESTED reply. All channels permanently blocked."},
+    {"lead_ids": [7, 19], "reason": "Permanently suppressed."},
+    {"lead_ids": [49, 51, 53, 54], "reason": "LOST_UNRESOLVED — archived. No email contact ever made."},
+    {"lead_ids": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59], "reason": "Sequence complete. LinkedIn window expired."}
   ],
 
   "hard_deadline": {
-    "today_sunday": "2026-05-17 — Brain planning only. No LinkedIn sends.",
-    "sunday_imap": "STRONGLY RECOMMENDED — reply peak 48h post-bump is OPEN NOW. Peak closes Monday morning.",
-    "monday": "2026-05-18 — ABSOLUTE LAST WINDOW. Execute all Batch 5 LinkedIn searches and connection requests. No deferral path exists.",
-    "tuesday": "2026-05-19 — Day-7 email sends (09:00-10:30) + EOD archive trigger for any Batch 5 lead without confirmed LinkedIn.",
-    "no_deferral": "Zero tolerance. 51-session failure must end Monday."
+    "today_monday": "2026-05-18 — ABSOLUTE LAST WINDOW. Execute all Batch 5 LinkedIn searches and connection requests.",
+    "tomorrow_tuesday": "2026-05-19 — Day-7 email sends (09:00-10:30) + EOD archive trigger for any Batch 5 lead without confirmed LinkedIn.",
+    "no_deferral": "Zero tolerance. 52-session failure ends today."
   },
 
   "summary": {
-    "run_date": "2026-05-17 (Sunday — Day 51, Batch 5 Day 5)",
-    "day_number": 51,
-    "batch_5_day": 5,
-    "active_search_queries": 0,
-    "search_queries_empty_reason": "HANDS never confirmed Batch 5 send list. Populate from 2026-05-12 send records. Use sector_discovery_fallback_queries if name-based search yields no result.",
-    "batch_5_emailed_days_ago": 5,
-    "batch_5_day3_bumped_days_ago": 2,
+    "run_date": "2026-05-18 (Monday — Day 52, Batch 5 Day 6 — EXECUTION DAY)",
+    "day_number": 52,
+    "batch_5_day": 6,
+    "search_queries_populated": 14,
+    "search_queries_type": "SECTOR_DISCOVERY — replace with name-specific queries if full name confirmed from 2026-05-12 records",
+    "batch_5_emailed_days_ago": 6,
+    "batch_5_day3_bumped_days_ago": 3,
     "batch_5_replies_received": 0,
-    "reply_peak_window": "OPEN — 48h post-Day-3-bump. Closes Monday morning.",
-    "imap_gap_days": 43,
+    "reply_peak_window": "CLOSING — 72h post-Day-3-bump. Today's IMAP sweep confirms state.",
+    "imap_gap_days": 44,
     "linkedin_profiles_received_ever": 0,
-    "campaign_sessions_without_linkedin_execution": 51,
-    "orchestrator_py_status": "NOT_IMPLEMENTED — src/outlocal/linkedin/orchestrator.py does not exist",
-    "today_is_sunday": true,
-    "linkedin_sends_today": false,
-    "monday_is_last_window": true,
-    "archive_trigger_fires": "2026-05-19 EOD",
-    "day7_sends_tuesday": "2026-05-19, 09:00-10:30 — copy READY in daily_email_plan.json"
+    "campaign_sessions_without_linkedin_execution": 52,
+    "orchestrator_py_status": "NOT_IMPLEMENTED",
+    "today_is_execution_day": true,
+    "linkedin_sends_today": true,
+    "archive_trigger_fires": "2026-05-19 EOD — unconditional",
+    "day7_sends_tomorrow": "2026-05-19, 09:00-10:30 — copy READY in daily_email_plan.json",
+    "critical_action": "Write data/linkedin_profiles.json — one entry per lead searched, immediately after each search. This is the only confirmation mechanism."
   }
 }

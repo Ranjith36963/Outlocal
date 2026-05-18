@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-05-17T18:00:00Z",
+  "generated_at": "2026-05-18T09:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-17",
-  "day_number": 51,
-  "batch_5_day": 5,
-  "run_type": "SUNDAY_EVENING — Day 51, Batch 5 Day 5. FINAL PLANNING DAY. monday_fallback_notes is the ACTIVE EXECUTION PLAN for tomorrow.",
-  "note": "Day 51 (Sunday 2026-05-17 — EVENING). linkedin_profiles.json STILL MISSING after 51 campaign sessions — per-lead personalised notes remain BLOCKED. Today: no LinkedIn sends (Sunday block). Tomorrow Monday 2026-05-18: HANDS executes LinkedIn using monday_fallback_notes templates below — ACTIVE EXECUTION PLAN, not a backup. Archive trigger fires Tuesday 2026-05-19 EOD. If HANDS writes linkedin_profiles.json from Monday searches: BRAIN can run Monday evening and generate per-lead personalised (post-reference) notes for immediate use. Reply peak 48h post-bump — OPEN NOW (Sunday). IMAP gap 43 days.",
+  "run_date": "2026-05-18",
+  "day_number": 52,
+  "batch_5_day": 6,
+  "run_type": "MONDAY_EXECUTION_DAY — Day 52, Batch 5 Day 6. monday_fallback_notes is the ACTIVE EXECUTION PLAN. Archive trigger fires TOMORROW Tuesday 2026-05-19 EOD.",
+  "note": "Day 52 (Monday 2026-05-18 — EXECUTION DAY). linkedin_profiles.json STILL MISSING after 52 campaign sessions — per-lead personalised notes remain blocked. TODAY: HANDS executes LinkedIn using monday_fallback_notes templates below — ACTIVE EXECUTION PLAN, not a backup. Archive trigger fires Tuesday 2026-05-19 EOD. Reply peak 72h post-bump — closing now. IMAP gap 44 days. src/outlocal/linkedin/orchestrator.py NOT YET IMPLEMENTED — LinkedIn execution is manual by HANDS.",
 
   "today_execution_status": {
-    "date": "Sunday 2026-05-17",
-    "is_send_day": false,
-    "reason_no_sends": "Sunday — no LinkedIn on weekends (rule absolute).",
-    "brain_outputs": "Planning files updated. monday_fallback_notes confirmed as active execution plan — no changes to templates (copy is confirmed ready from Day 50). No new per-lead notes generated (linkedin_profiles.json still missing after 51 sessions).",
-    "reply_peak_window": "OPEN — Day-3 bumps assumed sent Friday 2026-05-15. 48h post-bump peak = Saturday through Monday morning. Sunday IMAP monitoring STRONGLY RECOMMENDED — an INTERESTED reply today enables a same-day proposal draft with Monday send."
+    "date": "Monday 2026-05-18",
+    "is_execution_day": true,
+    "reason": "Monday — LinkedIn window is valid today. ABSOLUTE FINAL window. No further deferral.",
+    "brain_outputs": "All 3 LinkedIn output files updated to Day 52. monday_fallback_notes confirmed ACTIVE EXECUTION PLAN. No new per-lead notes generated (linkedin_profiles.json still missing after 52 sessions). Sector-discovery search_queries[] populated in search_plan for HANDS execution.",
+    "reply_peak_window": "CLOSING — Day-3 bumps assumed sent Friday 2026-05-15. 72h post-bump = closing boundary Monday morning. IMAP sweep today confirms final state of reply peak."
   },
 
   "strategy": {
     "character_limit": 200,
-    "char_limit_note": "200 characters is an absolute hard limit on LinkedIn free accounts. Count every character including spaces and punctuation. Test in a plain-text editor before sending.",
+    "char_limit_note": "200 characters is a hard LinkedIn limit on free accounts. Count every character including spaces and punctuation. Test in a plain-text editor before sending.",
     "tone": "Slightly awkward genuine observation — specific and imperfect. Stands out from polished AI slop by being concrete and mildly unpolished.",
     "anti_patterns": [
       "Do not use 'I came across your profile'",
@@ -26,7 +26,7 @@
       "Do not pitch in the note — curiosity and connection only",
       "Do not use exclamation marks",
       "Do not use 'reach out', 'touch base', or 'synergies'",
-      "Do not reference the email sequence, the audit, SSL, mobile, 'Not Secure', or any prior contact",
+      "Do not reference the email sequence, SSL, mobile, 'Not Secure', website audit, or any prior contact",
       "Do not start with 'I' — start with their name or the business name"
     ],
     "what_works": [
@@ -37,14 +37,14 @@
       "Slightly awkward construction is fine — reads human, not bot",
       "Post-reference is always preferred when available — 3-4x higher acceptance"
     ],
-    "post_reference_priority": "HANDS: always check profile for posts from the last 60 days BEFORE sending any note. Post-reference note has 3-4x higher acceptance rate. Do not skip this check.",
-    "sector_post_reference_priority": "Solicitors > Accountants > Estate agents > Hotels/B&Bs > Restaurants > Retail > Trades",
+    "post_reference_priority": "HANDS: always check profile for posts from the last 60 days BEFORE sending any note. Post-reference note has 3-4x higher acceptance rate. This takes 2 minutes per profile. Do not skip.",
+    "sector_post_reference_likelihood": "Solicitors (very likely) > Accountants (very likely) > Estate agents (likely) > Hotels/B&Bs Helmsley (likely) > Restaurants Helmsley (medium) > Retail Malton (medium) > Trades (low)",
     "batch_5_rule": "Do NOT reference the email sequence, website audit, or any specific technical finding (SSL, mobile, keyword gap) in any LinkedIn note. Treat as a completely cold connection."
   },
 
   "active_notes": [],
   "active_notes_count": 0,
-  "active_notes_note": "Zero active notes. Per-lead personalised notes blocked — linkedin_profiles.json not received in 51 campaign sessions. Use monday_fallback_notes section below directly for Monday execution.",
+  "active_notes_note": "Zero active notes. Per-lead personalised notes blocked — linkedin_profiles.json not received in 52 campaign sessions. Use monday_fallback_notes section directly for TODAY's execution.",
 
   "post_breakup_contingency": {
     "status": "ACTIVE — if any pending connection request (leads 52/55/50/56) is accepted: use if_accepted_message only. Do NOT pitch. Do NOT reference email sequence.",
@@ -94,16 +94,16 @@
   },
 
   "monday_fallback_notes": {
-    "generated_at": "2026-05-17T18:00:00Z",
-    "day_number": 51,
-    "status": "ACTIVE EXECUTION PLAN — direct-use Monday 2026-05-18. No further BRAIN run required to use these templates.",
-    "note": "Day 51 (Sunday 2026-05-17 evening). These templates are the live execution plan for Monday 2026-05-18. HANDS fills [bracketed placeholders] from their LinkedIn search results. Count every note in a plain-text editor before sending — 200-char hard limit. Archive trigger fires Tuesday 2026-05-19 EOD.",
-    "trigger": "linkedin_profiles.json missing after 51 sessions. Monday is the last window. Archive trigger fires Tuesday EOD.",
+    "generated_at": "2026-05-18T09:00:00Z",
+    "day_number": 52,
+    "status": "ACTIVE EXECUTION PLAN — direct-use TODAY Monday 2026-05-18. No further BRAIN run required.",
+    "note": "Day 52 (Monday 2026-05-18 — EXECUTION DAY). HANDS fills [bracketed placeholders] from their LinkedIn search results. Count every note in a plain-text editor before sending — 200-char hard limit. Archive trigger fires Tuesday 2026-05-19 EOD.",
+    "trigger": "linkedin_profiles.json missing after 52 sessions. TODAY is the last window. Archive trigger fires tomorrow EOD.",
     "hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger fires for any Batch 5 lead without confirmed LinkedIn.",
-    "preferred_path": "If HANDS writes linkedin_profiles.json from Monday searches: BRAIN can run Monday evening and generate fully personalised per-lead notes (post-reference where available). This is the highest-acceptance path. Write profiles.json entry IMMEDIATELY after each search.",
+    "preferred_path": "If HANDS writes linkedin_profiles.json from today's searches: BRAIN can run this evening and generate fully personalised per-lead notes (post-reference where available). Highest-acceptance path. Write profiles.json entry IMMEDIATELY after each search.",
     "rules": [
       "Check profile for posts from last 60 days FIRST — post-reference is strongly preferred (3-4x acceptance)",
-      "If post found: use post_reference_any_sector template below — works for all sectors",
+      "If post found: use post_reference_any_sector template — works for all sectors",
       "If no post: use the sector-appropriate generic template",
       "200 characters is a hard LinkedIn limit — count every character including spaces and punctuation",
       "Do NOT mention email, SSL, 'Not Secure', mobile, website audit, or any prior contact",
@@ -122,82 +122,125 @@
       "char_count_example_2": 113,
       "example_3": "David — saw your post about Making Tax Digital changes. Good timing for local firms to take note. Good to connect. Chris",
       "char_count_example_3": 120,
-      "note": "This template works for any sector and any topic. The honest observation must reflect what the post actually said — do not fabricate. Keep the observation specific but not fawning. You have up to ~175 chars — use them if it makes the note more genuine.",
-      "if_post_is_personal_not_business": "Personal posts (family, sports, travel) are fine to reference — makes the note warmer. 'Saw your post about [topic]' + any genuine reaction. Do not force a business angle."
+      "example_4_ryedale_legal": "Rachel — saw your post about the leasehold reform consultation. Worth following closely for Ryedale clients. Good to connect. Chris",
+      "char_count_example_4": 131,
+      "example_5_ryedale_hospitality": "Mark — saw your post about the North York Moors walking season. Strong summer bookings territory. Good to connect. Chris",
+      "char_count_example_5": 120,
+      "note": "Works for any sector and any topic. The observation must reflect what the post actually said — do not fabricate. Keep it specific but not fawning. Up to ~175 chars. Personal posts (family, sports, travel) are fine to reference — makes the note warmer.",
+      "if_post_is_personal_not_business": "Personal posts are fine. 'Saw your post about [topic]' + any genuine reaction. Do not force a business angle."
     },
 
     "solicitors_post_reference": {
       "template": "[First name] — saw your post about [legal topic / local charity / community event]. [Firm name] stood out looking at professional services in [town]. Good to connect. [Your first name]",
-      "example": "David — saw your post about the new leasehold reform changes. Pennington Solicitors stood out looking at professional services in Malton. Good to connect. Chris",
-      "char_count_example": 162,
-      "note": "Solicitors post frequently — legal updates, case law changes, charity sponsorship, local events. Always check posts before using generic note."
+      "example_malton": "David — saw your post about the new leasehold reform changes. Pennington Solicitors stood out looking at professional services in Malton. Good to connect. Chris",
+      "char_count_malton": 162,
+      "example_helmsley": "Rachel — saw your post about estate planning after the Budget. Helmsley Law stood out looking at professional services in Helmsley. Good to connect. Chris",
+      "char_count_helmsley": 155,
+      "note": "Solicitors post frequently — legal updates, case law, charity sponsorship, local events. ALWAYS check posts before using generic note. Malton solicitors: very high post-reference likelihood."
     },
 
     "solicitors_generic": {
       "template": "[First name] — [Firm name] stood out looking at professional services in [town]. Good to see an established local firm. Would be good to connect. [Your first name]",
-      "example": "David — Malton & Co Solicitors stood out looking at professional services in Malton. Good to see an established local firm. Would be good to connect. Chris",
-      "char_count_example": 156,
+      "example_malton": "David — Malton & Co Solicitors stood out looking at professional services in Malton. Good to see an established local firm. Would be good to connect. Chris",
+      "char_count_malton": 156,
       "sector_note": "Use only if no posts found. Solicitors almost always post — check thoroughly first."
+    },
+
+    "accountants_post_reference": {
+      "template": "[First name] — saw your post about [tax / MTD / financial topic]. [Firm name] came up looking at accountants in [town]. Good to connect. [Your first name]",
+      "example_malton": "Peter — saw your post about the Making Tax Digital April timeline. Malton Accounts came up looking at accountants in Malton. Good to connect. Chris",
+      "char_count_malton": 150,
+      "note": "Accountants post about tax deadlines, self-assessment, MTD. High post-reference likelihood."
+    },
+
+    "accountants_generic": {
+      "template": "[First name] — [Firm name] came up looking at accountants in [town]. Good to see a local firm keeping up with the MTD changes. Connecting in case useful. [Your first name]",
+      "example_malton": "Peter — Ryedale Accounts came up looking at accountants in Malton. Good to see a local firm keeping up with the MTD changes. Connecting in case useful. Chris",
+      "char_count_malton": 160
     },
 
     "estate_agents_post_reference": {
       "template": "[First name] — saw your post about [market update / sold listing / local area topic]. [Agency name] came up looking at estate agents in [town]. Good to connect. [Your first name]",
-      "example": "Andrew — saw your post about the Ryedale spring property market. Ryedale Property came up looking at estate agents in Malton. Good to connect. Chris",
-      "char_count_example": 150,
+      "example_malton": "Andrew — saw your post about the Ryedale spring property market. Ryedale Property came up looking at estate agents in Malton. Good to connect. Chris",
+      "char_count_malton": 150,
+      "example_helmsley": "Helen — saw your post about the rural property demand in North Yorkshire. The Helmsley Property Shop came up looking at agents in Helmsley. Good to connect. Chris",
+      "char_count_helmsley": 163,
       "note": "Estate agents post market updates, sold listings, area guides. High post-reference likelihood in Malton and Helmsley."
     },
 
     "estate_agents_generic": {
-      "template": "[First name] — [Agency name] came up when I was looking at estate agents in [town]. Something about the local market coverage caught my attention. Good to connect. [Your first name]",
-      "example": "Andrew — Ryedale Property came up when I was looking at estate agents in Malton. Something about the local market coverage caught my attention. Good to connect. Chris",
-      "char_count_example": 164
+      "template": "[First name] — [Agency name] came up when looking at estate agents in [town]. Something about the local market coverage caught my attention. Good to connect. [Your first name]",
+      "example_malton": "Andrew — Ryedale Property came up when looking at estate agents in Malton. Something about the local market coverage caught my attention. Good to connect. Chris",
+      "char_count_malton": 163
     },
 
     "hotels_bbs_post_reference": {
       "template": "[First name] — saw your post about [event / local highlight / seasonal topic]. [Business name] caught my eye looking at accommodation in [town]. Good to connect. [Your first name]",
-      "example": "Sarah — saw your post about the Helmsley autumn walking festival. The Feversham Arms caught my eye looking at accommodation in Helmsley. Good to connect. Chris",
-      "char_count_example": 161,
-      "note": "Helmsley and Pickering hospitality owners post about seasonal events, NYM walks, local food. Helmsley has the highest post-reference likelihood in the Ryedale batch."
+      "example_helmsley": "Sarah — saw your post about the Helmsley autumn walking festival. The Feversham Arms caught my eye looking at accommodation in Helmsley. Good to connect. Chris",
+      "char_count_helmsley": 161,
+      "example_pickering": "John — saw your post about the NYMR steam gala weekend. The White Swan caught my eye looking at accommodation in Pickering. Good to connect. Chris",
+      "char_count_pickering": 147,
+      "note": "Helmsley hospitality: HIGHEST post-reference likelihood in Ryedale batch. Pickering: B&B and hotel owners post about NYMR, NYM walks, seasonal offers. ALWAYS check posts first."
     },
 
     "hotels_bbs_generic": {
-      "template": "[First name] — [Business name] caught my eye when I was exploring [town]. Good to see independent hospitality doing well in North Yorkshire. Connecting in case useful. [Your first name]",
-      "example": "Sarah — The Feversham Arms caught my eye when I was exploring Helmsley. Good to see independent hospitality doing well in North Yorkshire. Connecting in case useful. Chris",
-      "char_count_example": 169,
-      "sector_note": "Helmsley hospitality: highest post-reference likelihood — check posts FIRST. Pickering: medium."
+      "template": "[First name] — [Business name] caught my eye when exploring [town]. Good to see independent hospitality doing well in North Yorkshire. Connecting in case useful. [Your first name]",
+      "example_helmsley": "Sarah — The Feversham Arms caught my eye when exploring Helmsley. Good to see independent hospitality doing well in North Yorkshire. Connecting in case useful. Chris",
+      "char_count_helmsley": 169,
+      "example_pickering": "John — The White Swan caught my eye when exploring Pickering. Good to see independent hospitality doing well in North Yorkshire. Connecting in case useful. Chris",
+      "char_count_pickering": 163,
+      "sector_note": "Helmsley: ALWAYS check posts before using this generic note. Pickering: medium post-reference likelihood."
     },
 
     "restaurants_post_reference": {
       "template": "[First name] — saw your post about [menu / seasonal ingredient / supplier / event]. [Restaurant name] came up looking at restaurants in [town]. Good to connect. [Your first name]",
-      "example": "Emma — saw your post about the autumn game menu launch. The Star Inn came up looking at restaurants in Harome. Good to connect. Chris",
-      "char_count_example": 134,
-      "note": "Fine dining owners in Helmsley/Harome post menus, seasonal ingredients, supplier stories, event nights."
+      "example_helmsley": "Emma — saw your post about the autumn game menu launch. The Star Inn came up looking at restaurants in Harome. Good to connect. Chris",
+      "char_count_helmsley": 134,
+      "example_pickering": "Tom — saw your post about sourcing local lamb from the moors. The Pickering Dining Room came up looking at restaurants in Pickering. Good to connect. Chris",
+      "char_count_pickering": 157,
+      "note": "Fine dining owners in Helmsley and Harome post menus, seasonal ingredients, supplier stories, award mentions. Good post-reference likelihood."
     },
 
     "restaurants_generic": {
-      "template": "[First name] — [Restaurant name] came up when I was looking at restaurants in [town]. Good to see independent places doing well in North Yorkshire. Good to connect. [Your first name]",
-      "example": "Emma — The Star Inn came up when I was looking at restaurants in Harome. Good to see independent places doing well in North Yorkshire. Good to connect. Chris",
-      "char_count_example": 157
+      "template": "[First name] — [Restaurant name] came up when looking at restaurants in [town]. Good to see independent places doing well in North Yorkshire. Good to connect. [Your first name]",
+      "example_helmsley": "Emma — The Star Inn came up when looking at restaurants in Harome. Good to see independent places doing well in North Yorkshire. Good to connect. Chris",
+      "char_count_helmsley": 155
     },
 
     "boutique_retail_post_reference": {
       "template": "[First name] — saw your post about [product / event / local topic]. [Business name] stood out looking at independent retail in [town]. Good to connect. [Your first name]",
-      "example": "Helen — saw your post about the Malton food festival stand. Malton Cheese Shop stood out looking at independent retail in Malton. Good to connect. Chris",
-      "char_count_example": 151
+      "example_malton": "Helen — saw your post about the Malton food festival stand. Malton Cheese Shop stood out looking at independent retail in Malton. Good to connect. Chris",
+      "char_count_malton": 151,
+      "example_malton_general": "Mike — saw your post about the Yorkshire Day market. The Malton Deli stood out looking at independent retail in Malton. Good to connect. Chris",
+      "char_count_malton_general": 142
     },
 
     "boutique_retail_generic": {
-      "template": "[First name] — [Business name] stood out when I was looking at independent retail in [town]. Great to see local shops doing well in North Yorkshire. Good to connect. [Your first name]",
-      "example": "Helen — Malton Cheese Shop stood out when I was looking at independent retail in Malton. Great to see local shops doing well in North Yorkshire. Good to connect. Chris",
-      "char_count_example": 163
+      "template": "[First name] — [Business name] stood out when looking at independent retail in [town]. Great to see local shops doing well in North Yorkshire. Good to connect. [Your first name]",
+      "example_malton": "Helen — Malton Cheese Shop stood out when looking at independent retail in Malton. Great to see local shops doing well in North Yorkshire. Good to connect. Chris",
+      "char_count_malton": 163
     },
 
     "trades_generic": {
-      "template": "[First name] — [Business name] came up when I was looking at [trade] businesses in [town]. Noticed something about the online presence. Connecting in case it's useful. [Your first name]",
-      "example": "James — Malton Plumbing came up when I was looking at plumbing businesses in Malton. Noticed something about the online presence. Connecting in case it's useful. Chris",
-      "char_count_example": 166,
-      "sector_note": "Trades LinkedIn presence is LOW. Skip if: (1) no confirmed LinkedIn profile found, (2) only first name known (no surname confirmed).",
+      "template": "[First name] — [Business name] came up when looking at [trade] businesses in [town]. Noticed something about the online presence. Connecting in case it's useful. [Your first name]",
+      "example_malton": "James — Malton Plumbing came up when looking at plumbing businesses in Malton. Noticed something about the online presence. Connecting in case it's useful. Chris",
+      "char_count_malton": 166,
+      "sector_note": "LOW LinkedIn presence for trades. Skip if: (1) no confirmed LinkedIn profile found, (2) only first name known (no surname confirmed).",
       "skip_rule": "If no confirmed profile for a trade lead: mark skip_reason: PROFILE_NOT_FOUND in profiles.json. Do not invent a match."
+    },
+
+    "kirkbymoorside_generic": {
+      "template": "[First name] — [Business name] came up when looking at [sector] businesses around Kirkbymoorside. Good to see a local [sector] established in the area. Connecting in case useful. [Your first name]",
+      "example_profsvc": "Richard — Ryedale Law came up when looking at solicitors around Kirkbymoorside. Good to see a local firm established in the area. Connecting in case useful. Chris",
+      "char_count_profsvc": 163,
+      "note": "Small market town — lower LinkedIn presence. Keep note warm and local-specific. Generic note likely as post-reference probability is lower."
+    },
+
+    "hovingham_generic": {
+      "template": "[First name] — [Business name] caught my attention looking at [sector] businesses in the Ryedale area. Good to see independent [sector] in a village like Hovingham. Connecting in case useful. [Your first name]",
+      "example_hospitality": "James — The Worsley Arms caught my attention looking at hospitality in the Ryedale area. Good to see independent hotels in a village like Hovingham. Connecting in case useful. Chris",
+      "char_count_hospitality": 181,
+      "note": "Very small village. Generic note only — post-reference unlikely. Keep the local Ryedale angle."
     },
 
     "char_count_troubleshooting": {
@@ -207,16 +250,17 @@
         "'Connecting in case it's useful' → 'Good to connect' (saves 16 chars)",
         "'when I was looking at' → 'looking at' (saves 11 chars)",
         "Trim 'Good to see [X] doing well in North Yorkshire' → 'Good to connect' (saves ~30 chars)",
-        "Shorten post observation to 4-5 words if needed"
+        "Shorten post observation to 4-5 words if needed",
+        "Remove your first name at the end if necessary — gains 6-10 chars"
       ],
-      "note": "Always count in a plain-text editor before sending. LinkedIn counts characters including spaces and punctuation."
+      "if_at_limit": "Always count in a plain-text editor before sending. LinkedIn counts all characters including spaces and punctuation."
     },
 
     "linkedin_profiles_json_schema": {
-      "instruction": "For each Batch 5 lead searched Monday, add one entry to data/linkedin_profiles.json immediately after the search. Do not batch — write each entry as you go.",
+      "instruction": "For each Batch 5 lead searched today, add one entry to data/linkedin_profiles.json immediately after the search. Do not batch — write each entry as you go.",
       "critical_note": "Writing profiles.json is HOW BRAIN KNOWS LINKEDIN WAS EXECUTED. Without it: archive trigger fires Tuesday EOD for every Batch 5 lead. Non-negotiable.",
       "entry_schema": {
-        "lead_id": "[from send records]",
+        "lead_id": "[from send records or use BATCH5_TOWN_SECTOR_NN]",
         "name": "[owner name as on LinkedIn profile]",
         "company": "[business name as on LinkedIn]",
         "town": "[town]",
@@ -237,20 +281,20 @@
     },
 
     "sector_priority": [
-      {"rank": 1, "sector": "solicitors", "town": "Malton", "note": "Highest priority — professional services always on LinkedIn. Post-reference very likely."},
-      {"rank": 2, "sector": "accountants", "towns": ["Malton", "Helmsley"], "note": "High LinkedIn presence, frequent posters (tax deadlines, Making Tax Digital)"},
-      {"rank": 3, "sector": "estate_agents", "towns": ["Malton", "Helmsley"], "note": "High LinkedIn presence, frequent posters (market updates, sold listings)"},
-      {"rank": 4, "sector": "hotels_bbs", "towns": ["Helmsley", "Pickering", "Hovingham"], "note": "Medium-high — Helmsley hospitality owners often active. Post-reference likely in Helmsley."},
-      {"rank": 5, "sector": "restaurants", "town": "Helmsley", "note": "Fine dining owners post seasonally. Post-reference likely."},
-      {"rank": 6, "sector": "boutique_retail", "towns": ["Helmsley", "Malton"], "note": "Medium presence. Malton food scene generates posts."},
-      {"rank": 7, "sector": "trades", "towns": ["all"], "note": "Low presence — skip if profile uncertain or surname unknown"}
+      {"rank": 1, "sector": "solicitors", "town": "Malton", "post_reference_likelihood": "VERY HIGH"},
+      {"rank": 2, "sector": "accountants", "towns": ["Malton", "Helmsley"], "post_reference_likelihood": "VERY HIGH"},
+      {"rank": 3, "sector": "estate_agents", "towns": ["Malton", "Helmsley"], "post_reference_likelihood": "HIGH"},
+      {"rank": 4, "sector": "hotels_bbs", "towns": ["Helmsley", "Pickering", "Hovingham"], "post_reference_likelihood": "HIGH (Helmsley), MEDIUM (Pickering), LOW (Hovingham)"},
+      {"rank": 5, "sector": "restaurants", "town": "Helmsley", "post_reference_likelihood": "MEDIUM"},
+      {"rank": 6, "sector": "boutique_retail", "towns": ["Helmsley", "Malton"], "post_reference_likelihood": "MEDIUM"},
+      {"rank": 7, "sector": "trades", "towns": ["all"], "post_reference_likelihood": "LOW — skip if profile uncertain or surname unknown"}
     ]
   },
 
   "batch_5_note_templates": {
-    "status": "STANDBY — activates if HANDS writes linkedin_profiles.json from Monday searches. BRAIN can run Monday evening to generate per-lead personalised notes.",
-    "preferred_path": "HANDS searches all Batch 5 leads → writes linkedin_profiles.json → BRAIN runs Monday evening → generates post-reference notes per lead → HANDS sends notes same Monday session if possible.",
-    "fallback_path": "If profiles.json not written before end of Monday session: use monday_fallback_notes templates above directly. They are ready now.",
+    "status": "STANDBY — activates if HANDS writes linkedin_profiles.json from today's searches. BRAIN can run this evening and generate fully personalised per-lead notes.",
+    "preferred_path": "HANDS searches all Batch 5 leads → writes linkedin_profiles.json → BRAIN runs Monday evening → generates post-reference notes per lead → HANDS sends notes same session if possible.",
+    "fallback_path": "If profiles.json not written before end of today's session: use monday_fallback_notes templates above directly. They are confirmed ready.",
     "hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger. No path after this."
   },
 
@@ -264,7 +308,7 @@
       "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Tom — Ripon Road Carpentry came up when I was looking at trades businesses around Ripon. Something about the online presence caught my attention. Connecting in case it's worth a conversation.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn in 51 campaign sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 52 campaign sessions.",
       "pipeline_value_written_off": "£100-150"
     },
     {
@@ -276,7 +320,7 @@
       "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Claire — Westfield Hair & Beauty came up when I was looking at independent salons in Leeds. Noticed something about the online presence worth a quick mention. Connecting in case it's useful.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn in 51 campaign sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 52 campaign sessions.",
       "pipeline_value_written_off": "£350",
       "brain_classification": "Strongest warm pipeline lead — booked a call, confirmed booking-gap pain"
     },
@@ -289,7 +333,7 @@
       "archive_reason": "LOST_NO_RESPONSE — UNCONDITIONALLY FINAL 2026-05-08. LinkedIn permanently closed. Reapproach: 2026-10-26.",
       "note_prepared": "Rob — Pennine Print & Design stood out when I was looking at print businesses in Sowerby Bridge. Noticed something about the website worth a quick mention. Connecting in case it's relevant.",
       "note_sent": false,
-      "note_never_sent_reason": "HANDS never executed LinkedIn in 51 campaign sessions.",
+      "note_never_sent_reason": "HANDS never executed LinkedIn in 52 campaign sessions.",
       "pipeline_value_written_off": "£550-675",
       "brain_classification": "Highest revenue potential — upsell signal ('sort the whole thing in one go')"
     },
@@ -331,13 +375,13 @@
   "campaign_linkedin_assessment": {
     "total_confirmed_notes_sent": 0,
     "total_confirmed_connections_made": 0,
-    "brain_runs_with_active_notes": 19,
+    "brain_runs_with_active_notes": 20,
     "linkedin_profiles_json_received": 0,
-    "consecutive_runs_without_profiles": 51,
+    "consecutive_runs_without_profiles": 52,
     "warm_pipeline_chapter": "PERMANENTLY CLOSED — leads 1/3/22 archived LOST_NO_RESPONSE 2026-05-07. Override window expired 2026-05-08 EOD. Unconditionally final.",
-    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 51 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
-    "batch_5_rule": "HANDS executes LinkedIn Monday 2026-05-18 — LAST WINDOW. Archive trigger fires Tuesday 2026-05-19 EOD. No 51-session tolerance.",
-    "monday_fallback_active": "monday_fallback_notes section is the ACTIVE EXECUTION PLAN. No further BRAIN run needed to use these templates. They are confirmed ready."
+    "root_cause": "HANDS execution latency — LinkedIn window missed for every batch across all 52 campaign days. Notes generated correctly by BRAIN. Zero notes confirmed sent by HANDS.",
+    "batch_5_rule": "HANDS executes LinkedIn TODAY Monday 2026-05-18 — LAST WINDOW. Archive trigger fires TOMORROW Tuesday 2026-05-19 EOD. No 52-session tolerance.",
+    "monday_fallback_active": "monday_fallback_notes section is the ACTIVE EXECUTION PLAN. Templates confirmed ready. No further BRAIN run needed to use these templates."
   },
 
   "summary": {
@@ -345,19 +389,19 @@
     "active_note_lead_ids": [],
     "post_breakup_contingency_active": true,
     "post_breakup_lead_ids": [52, 55, 50, 56],
-    "today_sunday": "2026-05-17 — brain planning only. No LinkedIn sends.",
-    "monday_execution_status": "ABSOLUTE LAST WINDOW — Monday 2026-05-18",
+    "today_monday": "2026-05-18 — EXECUTION DAY. LinkedIn sends valid today.",
+    "monday_execution_status": "ABSOLUTE LAST WINDOW — TODAY Monday 2026-05-18",
     "monday_fallback_notes_ready": true,
     "monday_fallback_location": "monday_fallback_notes section above — active execution plan. No further BRAIN run needed.",
-    "batch_5_notes_status": "BLOCKED — linkedin_profiles.json not written across 51 sessions. Per-lead personalised notes cannot be generated. Use monday_fallback_notes section directly.",
-    "batch_5_linkedin_execution_window": "Monday 2026-05-18 only. Hard deadline: Tuesday 2026-05-19 EOD.",
+    "batch_5_notes_status": "BLOCKED — linkedin_profiles.json not written across 52 sessions. Per-lead personalised notes cannot be generated. Use monday_fallback_notes section directly.",
+    "batch_5_linkedin_execution_window": "TODAY Monday 2026-05-18 only. Hard deadline: Tuesday 2026-05-19 EOD.",
     "archive_trigger": "Tuesday 2026-05-19 EOD — any Batch 5 lead without confirmed LinkedIn is immediately archived LOST_NO_RESPONSE",
     "total_archived_notes": 7,
     "archived_note_lead_ids": [1, 3, 22, 52, 55, 50, 56],
     "campaign_notes_confirmed_sent": 0,
-    "consecutive_runs_without_profiles": 51,
-    "next_brain_run_if_profiles_received": "Monday 2026-05-18 EVENING — if HANDS writes linkedin_profiles.json, BRAIN generates per-lead personalised notes. Preferred path.",
-    "next_brain_run_if_no_profiles": "Tuesday 2026-05-26 — Day-14 breakup copy generation. LinkedIn chapter closes Tuesday 2026-05-19 EOD.",
-    "day_51_run_note": "Sunday 2026-05-17 evening. Day 51. 51-session LinkedIn execution failure. Monday is the absolute last window — no deferral path exists. Archive trigger fires Tuesday EOD. All Batch 5 Ryedale leads approved pending IMAP per lead Monday. Post-breakup contingency active for leads 50/52/55/56."
+    "consecutive_runs_without_profiles": 52,
+    "next_brain_run_if_profiles_received": "TODAY EVENING Monday 2026-05-18 — if HANDS writes linkedin_profiles.json, BRAIN generates per-lead personalised notes. Preferred path.",
+    "next_brain_run_if_no_profiles": "Tuesday 2026-05-19 evening — Day-7 results analysis + Batch 6 scoping. LinkedIn chapter closes Tuesday 2026-05-19 EOD.",
+    "day_52_run_note": "Monday 2026-05-18 — EXECUTION DAY. Day 52. 52-session LinkedIn execution failure ends today or archive trigger fires tomorrow EOD. All Batch 5 Ryedale leads approved pending IMAP per lead. monday_fallback_notes is the active execution plan — confirmed ready. Post-breakup contingency active for leads 50/52/55/56."
   }
 }
