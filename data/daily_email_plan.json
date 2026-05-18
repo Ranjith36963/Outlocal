@@ -1,10 +1,10 @@
 [
   {
-    "plan_date": "2026-05-17",
-    "generated_at": "2026-05-17T09:00:00Z",
-    "day_number": 51,
-    "batch_5_day": 5,
-    "note": "BRAIN layer — Day 51 (Sunday 2026-05-17, Batch 5 Day 5 — Sunday bridge). No new copy generated for new sends — no new leads. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY and unchanged. Day-14 breakup copy GENERATED EARLY this run — ahead of Tuesday 2026-05-19 evening schedule. All 4 signal variants ready in day14_breakup section below. HANDS does not need to wait for Tuesday evening BRAIN run. Day-7 sends: Tuesday 2026-05-19, 09:00-10:30. Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
+    "plan_date": "2026-05-18",
+    "generated_at": "2026-05-18T08:00:00Z",
+    "day_number": 52,
+    "batch_5_day": 6,
+    "note": "BRAIN layer — Day 52 (Monday 2026-05-18, Batch 5 Day 6 — FINAL LINKEDIN WINDOW). No new copy generated — all email copy is complete. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY and unchanged. Day-14 breakup copy generated early Day 51 — all 4 signal variants ready in day14_breakup section below. TODAY: LinkedIn execution (FINAL WINDOW). TOMORROW: Day-7 sends 09:00-10:30 (IMAP per lead before each send). Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
 
     "new_sends_today": [],
     "new_sends_count": 0,

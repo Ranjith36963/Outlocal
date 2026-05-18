@@ -1,59 +1,44 @@
 {
-  "classified_at": "2026-05-17T09:00:00Z",
-  "date": "2026-05-17",
-  "day_number": 51,
-  "batch_5_day": 5,
-  "note": "BRAIN layer — Day 51 (Sunday 2026-05-17, Batch 5 Day 5). new_replies.json still unchanged from 2026-04-04 (43 days). IMAP gap: 43 days from last confirmed check. Either HANDS swept IMAP Saturday or Sunday (clean) or sweep was not executed — both interpretations are consistent with unchanged file. Day-3 bumps assumed sent Friday — reply peak window STILL OPEN (48h post-bump, peak closes Monday morning at 72h). No new classifications this run. Batch 5 zero replies to date. Sunday IMAP monitoring strongly recommended while peak is still open.",
+  "classified_at": "2026-05-18T08:00:00Z",
+  "date": "2026-05-18",
+  "day_number": 52,
+  "batch_5_day": 6,
+  "note": "BRAIN layer — Day 52 (Monday 2026-05-18, Batch 5 Day 6). new_replies.json unchanged from 2026-04-04 (44 days). Zero Batch 5 replies confirmed to date. IMAP gap: 44 days from last confirmed check. Reply peak 72h post-bump — at closing boundary. IMAP sweep mandatory TODAY before each LinkedIn note. IMAP sweep mandatory TOMORROW before each Day-7 send. No new classifications this run.",
 
   "new_replies_this_run": 0,
-  "imap_gap_days_from_confirmed_check": 43,
+  "imap_gap_days_from_confirmed_check": 44,
   "imap_last_confirmed_check": "2026-04-04",
-  "weekend_sweep_status": "UNCONFIRMED — new_replies.json unchanged across Saturday and Sunday (consistent with clean sweep on either day OR no sweep executed).",
-  "most_likely_interpretation": "Clean IMAP sweep at some point over the weekend — zero Batch 5 replies in first 5 days is within normal range (15% expected INTERESTED rate = 2-3 from 12-18 sends, typically arrives within Day 3-7 window). Reply peak still open Sunday.",
+  "monday_sweep_status": "NOT YET EXECUTED — new_replies.json unchanged. Execute per Batch 5 lead this morning (before LinkedIn notes).",
+  "reply_peak_post_day3_bump": "CLOSING — 72h post-bump boundary. Monday morning IMAP sweep will confirm state of inbox.",
 
-  "imap_warning": "43 days since confirmed IMAP check. True inbox state unknown. Sunday monitoring recommended while 48h post-bump peak is still open. Monday IMAP sweep (before LinkedIn) and Tuesday IMAP sweep (per lead before Day-7 send) are both mandatory.",
-
-  "weekend_monitoring": {
-    "dates": ["Saturday 2026-05-16 (past)", "Sunday 2026-05-17 (today)"],
-    "instruction": "If HANDS has IMAP access Sunday: sweep all Batch 5 leads (NOT leads 1/3/22). Reply peak post-bump is open now (48h post-bump). Peak closes Monday morning. An INTERESTED reply today enables a same-day proposal draft and Monday morning send.",
-    "if_interested_reply_weekend": {
-      "action": "Write to data/new_replies.json immediately. Classify here as INTERESTED with full reasoning. Prepare proposal draft. Do NOT wait until Monday business hours — 24h SLA runs from reply time (24/7). Send Monday morning if reply arrives Saturday/Sunday evening.",
-      "24h_sla": "NON-NEGOTIABLE. Tom (Ripon Road Carpentry) asked for pricing and never got it. That does not repeat.",
-      "linkedin_activation": "Activate within Day 7 hard deadline (Tuesday 2026-05-19). If reply is weekend: LinkedIn Monday morning."
-    },
-    "if_not_interested": "Classify as NOT_INTERESTED. Suppress email permanently. Block LinkedIn permanently. Log CHANGELOG.",
-    "if_unsubscribe": "Suppress ALL channels within 24h (GDPR Article 21 — applies 24/7 including weekends). Log audit_log and CHANGELOG immediately.",
-    "leads_never_to_sweep": [1, 3, 22]
-  },
-
-  "imap_sweep_monday": {
+  "imap_mandatory_today": {
     "date": "2026-05-18 (Monday)",
-    "execute": "FIRST — before each LinkedIn connection note. Per lead, not bulk.",
-    "priority": "All Batch 5 Ryedale leads",
-    "leads_never_to_sweep": [1, 3, 22],
+    "execute": "Per Batch 5 lead — before each LinkedIn connection note send. NOT leads 1/3/22.",
+    "priority": "First action of the day — before LinkedIn",
     "outcomes_and_actions": {
-      "if_interested": "Classify here immediately. Proposal within 24h. Still proceed with LinkedIn (do not reference email in note). Log CHANGELOG.",
-      "if_not_interested": "Classify here. Block LinkedIn permanently. Cancel Day-7 send. Suppress email. Log CHANGELOG.",
-      "if_unsubscribe": "Classify here. Suppress ALL channels within 24h (GDPR Article 21). Log audit_log and CHANGELOG. Cancel Day-7 send.",
-      "if_ooo": "Classify here. Note return date. LinkedIn still valid (passive — send request). Day-7: send day after OOO return if within 14-day window.",
-      "if_clean": "LinkedIn approved. Proceed with connection request. Log CHANGELOG entry."
+      "if_interested": "Write immediately to data/new_replies.json. Classify here as INTERESTED with full reasoning. Still proceed with LinkedIn note (do NOT reference email). Prepare proposal within 24h. Cancel Day-7 send — use interested variant from daily_email_plan.json (conditional_handling section). Log CHANGELOG.",
+      "if_not_interested": "Classify here as NOT_INTERESTED. Block LinkedIn permanently. Cancel Day-7 send. Suppress email channel permanently. Log CHANGELOG.",
+      "if_unsubscribe": "Classify here as UNSUBSCRIBE. Suppress ALL channels within 24h (GDPR Article 21). Log audit_log and CHANGELOG. Cancel Day-7 send.",
+      "if_ooo": "Classify here as OUT_OF_OFFICE. Note return date. LinkedIn still valid — connection request is passive. Proceed with LinkedIn note. Day-7: send day after stated OOO return if within 14-day window.",
+      "if_wrong_person": "Classify here as WRONG_PERSON. Pause sequence. Investigate correct contact via website/Companies House. Log CHANGELOG.",
+      "if_clean": "LinkedIn approved. Proceed with connection request. Log CHANGELOG."
     }
   },
 
-  "imap_sweep_tuesday": {
+  "imap_mandatory_tomorrow": {
     "date": "2026-05-19 (Tuesday)",
     "execute": "Before each individual Day-7 send — per lead, not bulk.",
     "priority": "All Batch 5 Ryedale leads, in send order (09:00-10:30 window)",
     "leads_never_to_sweep": [1, 3, 22],
     "what_to_write_if_new_reply": "Write immediately to data/new_replies.json. Classify in this file. Update value_delivery_queue.json if INTERESTED. Log CHANGELOG same session.",
-    "batch_5_reply_peak_closing": "Reply peak window closes Tuesday (Day 7). Post-Day-7 bump replies are less likely but still possible through Day 14."
+    "day7_batch_classification_context": "Day-7 new-angle sends (tomorrow) will generate a fresh reply wave 24-72h post-send (Wednesday-Friday). Classify any new replies from that wave in this file as they arrive."
   },
 
   "action_on_new_reply": {
     "if_interested": {
-      "action": "Write reply to new_replies.json immediately. Classify here as INTERESTED. Cancel Day-7 send — use interested variant from daily_email_plan.json (conditional_handling section) instead. Prepare bespoke proposal within 24h (from reply time — NON-NEGOTIABLE). Log CHANGELOG. Activate LinkedIn within Day 7 hard deadline (2026-05-19). Update CRM stage to 'proposal_sent' after proposal sent. Update value_delivery_queue.json.",
-      "24h_sla": "NON-NEGOTIABLE. Tom (Ripon Road Carpentry) asked for pricing and never got it. That does not repeat.",
-      "linkedin_deadline": "Day 7 = Tuesday 2026-05-19. Archive trigger fires immediately if missed."
+      "action": "Write reply to new_replies.json immediately. Classify here as INTERESTED with full reasoning. Cancel Day-7 send — use interested variant from daily_email_plan.json (conditional_handling section). Reply in thread to their message. Prepare bespoke proposal within 24h (from reply time — NON-NEGOTIABLE). Activate LinkedIn within Day 7 hard deadline (2026-05-19). Update CRM stage to 'proposal_sent' after proposal sent. Add entry to value_delivery_queue.json batch_5_interested_leads.",
+      "24h_sla": "NON-NEGOTIABLE. Tom (Ripon Road Carpentry) asked for pricing and never received it. That does not repeat.",
+      "linkedin_deadline": "Day 7 = Tuesday 2026-05-19 EOD. Archive trigger fires immediately if missed."
     },
     "if_not_interested": {
       "action": "Classify as NOT_INTERESTED. Suppress email channel permanently. Block LinkedIn permanently. Log CHANGELOG. Update lead status to 'lost'.",
@@ -62,16 +47,16 @@
       "reapproach": "6 months minimum"
     },
     "if_ooo": {
-      "action": "Classify as OUT_OF_OFFICE. Note return date. Pause email sequence. LinkedIn still valid (passive request). Resume Day-7 bump day after stated return. If return date is after Day-14 window (2026-05-26): sequence ends — do not contact further.",
-      "linkedin_note": "LinkedIn connection request is passive — OK to send during OOO period. Do not follow up with value message until OOO period ends."
+      "action": "Classify as OUT_OF_OFFICE. Note return date. Pause Day-7 send. LinkedIn still valid (passive request). Send Day-7 on day after stated return if within 14-day window (i.e. return date must be before 2026-05-25).",
+      "linkedin_note": "Connection request is passive — OK to send during OOO period. Do not follow up with value message until OOO period ends."
     },
     "if_wrong_person": {
       "action": "Classify as WRONG_PERSON. Pause sequence. Investigate correct contact via website/Companies House. Log CHANGELOG.",
       "email_channel": "PAUSED — pending correct contact"
     },
     "if_unsubscribe": {
-      "action": "Classify as UNSUBSCRIBE. Suppress ALL channels permanently within 24h (GDPR Article 21). Log audit_log and CHANGELOG. Block LinkedIn. Cancel any remaining sends.",
-      "compliance_deadline": "24 hours — applies 24/7, including weekends"
+      "action": "Classify as UNSUBSCRIBE. Suppress ALL channels permanently within 24h (GDPR Article 21). Log audit_log and CHANGELOG. Block LinkedIn. Cancel Day-7 and Day-14 sends.",
+      "compliance_deadline": "24 hours — applies 24/7"
     }
   },
 
@@ -176,19 +161,18 @@
     "new_replies_today": 0,
     "total_to_date": 11,
     "batch_5_replies": 0,
-    "batch_5_reply_peak": "OPEN — Day-3 bumps assumed sent Friday. 48h post-bump — peak closes Monday morning at 72h. Sunday is still in peak window.",
-    "imap_gap_days_from_confirmed": 43,
-    "imap_check_mandatory_monday": "Before LinkedIn (per lead)",
-    "imap_check_mandatory_tuesday": "Before each Day-7 send (per lead)",
-    "weekend_imap_recommended": true,
+    "batch_5_reply_peak": "CLOSING — 72h post-bump boundary (Day-3 assumed sent Friday 2026-05-15). IMAP sweep today confirms inbox state.",
+    "imap_gap_days_from_confirmed": 44,
+    "imap_check_mandatory_monday": "TODAY — before each LinkedIn note (per lead)",
+    "imap_check_mandatory_tuesday": "TOMORROW — before each Day-7 send (per lead)",
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
     "WRONG_PERSON": 0,
     "UNSUBSCRIBE": 0,
     "permanently_archived": [1, 3, 22],
-    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated across 49+ sessions",
+    "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated across 52+ sessions",
     "archive_override": "CLOSED — unconditionally final from 2026-05-08 EOD",
-    "hands_instructions": "1. Weekend IMAP monitoring recommended — post-bump peak Saturday-Monday. Write any new replies to new_replies.json immediately. 2. If INTERESTED: 24h proposal SLA (from reply time, not next business day). LinkedIn by Day 7 hard deadline (2026-05-19). 3. If NOT_INTERESTED: cancel Day-7 send, block all channels, log CHANGELOG. 4. If UNSUBSCRIBE: suppress within 24h (GDPR Article 21), log audit_log. 5. Monday IMAP: per lead before each LinkedIn note. 6. Tuesday IMAP: per lead before each Day-7 send."
+    "hands_instructions": "1. IMAP sweep per Batch 5 lead TODAY (Monday) before LinkedIn — per lead, not bulk. Write any new reply to new_replies.json immediately. 2. If INTERESTED: classify here, 24h proposal SLA from reply time, still send LinkedIn note (do not reference email), cancel Day-7 (use interested variant). 3. If NOT_INTERESTED: classify, cancel Day-7, block all channels. 4. If UNSUBSCRIBE: classify, suppress within 24h (GDPR Article 21), cancel Day-7 and Day-14. 5. TOMORROW Tuesday: IMAP per lead before each Day-7 send. 6. Do NOT sweep leads 1/3/22 under any circumstances."
   }
 }
