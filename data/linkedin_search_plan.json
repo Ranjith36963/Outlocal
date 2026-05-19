@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-05-18T09:00:00Z",
+  "generated_at": "2026-05-19T09:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-18",
-  "day_number": 52,
-  "batch_5_day": 6,
-  "run_type": "MONDAY_EXECUTION_DAY — Day 52, Batch 5 Day 6. ABSOLUTE FINAL LINKEDIN WINDOW. Execute NOW. Archive trigger fires TONIGHT at EOD tomorrow (Tuesday 2026-05-19 EOD).",
-  "note": "Day 52 (Monday 2026-05-18 — EXECUTION DAY). linkedin_profiles.json STILL MISSING after 52 consecutive campaign sessions. TODAY is the last window — no deferral path exists. IMAP gap: 44 days. Day-3 bumps assumed sent Friday 2026-05-15 (3 days ago). Reply peak 72h post-bump — closing now. Zero Batch 5 replies. Day-7 new-angle sends TOMORROW Tuesday 2026-05-19, 09:00-10:30. src/outlocal/linkedin/orchestrator.py NOT YET IMPLEMENTED — LinkedIn execution remains manual by HANDS. BRAIN layer unaffected.",
+  "run_date": "2026-05-19",
+  "day_number": 53,
+  "batch_5_day": 7,
+  "run_type": "TUESDAY_ARCHIVE_TRIGGER_DAY — Day 53, Batch 5 Day 7. ARCHIVE TRIGGER FIRES TODAY EOD. HANDS: if LinkedIn not yet executed — last window is NOW (before EOD today). Day-7 email sends 09:00-10:30.",
+  "note": "Day 53 (Tuesday 2026-05-19 — ARCHIVE TRIGGER DAY). linkedin_profiles.json STILL MISSING after 53 consecutive campaign sessions. TODAY is the Day-7 send day AND the LinkedIn archive trigger fires at EOD tonight. IMAP gap: 45 days. Day-3 bumps assumed sent Friday 2026-05-15 (4 days ago). Day-7 new-angle sends TODAY 09:00-10:30 (copy ready in daily_email_plan.json day7_new_angle section). Post-Day-7 reply wave opens after sends: peak Wednesday-Friday 2026-05-21-23. src/outlocal/linkedin/orchestrator.py NOT YET IMPLEMENTED — LinkedIn execution remains manual by HANDS. BRAIN layer unaffected.",
 
   "email_outreach_state": {
-    "checked_at": "2026-05-18T09:00:00Z",
+    "checked_at": "2026-05-19T09:00:00Z",
     "source_files": ["data/daily_signals.json", "data/daily_email_plan.json", "data/new_replies.json"],
-    "imap_gap_days": 44,
+    "imap_gap_days": 45,
     "imap_last_confirmed_check": "2026-04-04",
-    "monday_sweep_status": "NOT YET EXECUTED — new_replies.json unchanged from 2026-04-04. Execute TODAY per Batch 5 lead before LinkedIn.",
+    "tuesday_sweep_status": "MANDATORY TODAY — per Batch 5 lead before each Day-7 send. NOT bulk. NOT leads 1/3/22. Day-7 sends 09:00-10:30.",
 
     "batch_5_leads_emailed_3_plus_days_no_reply": {
       "day0_send_date": "2026-05-12",
-      "days_since_day0": 6,
+      "days_since_day0": 7,
       "day3_bump_send_date": "2026-05-15",
-      "days_since_day3": 3,
+      "days_since_day3": 4,
       "both_assumed_sent": "UNCONFIRMED — HANDS never wrote confirmation",
       "batch_5_replies_received": 0,
-      "reply_window_status": "CLOSING — 72h post-Day-3-bump marks the end of the post-bump reply peak. IMAP sweep today will confirm inbox state.",
-      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 6 days ago (Day-0), bumped 3 days ago (Day-3), zero replies. LinkedIn approved TODAY (absolute final window) pending per-lead IMAP sweep.",
-      "email_linkedin_gap_satisfied": "3 days post-bump — gap rule fully satisfied. LinkedIn can proceed today as soon as per-lead IMAP confirms clean."
+      "reply_window_status": "POST-DAY-7 opens after today's sends. Post-Day-3 peak CLOSED (72h+ passed). Peak: Wednesday-Friday 2026-05-21-23.",
+      "linkedin_candidate_status": "ALL Batch 5 Ryedale leads — emailed 7 days ago (Day-0), bumped 4 days ago (Day-3), zero replies. LinkedIn window closes TODAY EOD. Archive trigger fires tonight unconditionally.",
+      "email_linkedin_gap_satisfied": "4 days post-bump — gap rule fully satisfied. LinkedIn can proceed before EOD today as soon as per-lead IMAP confirms clean."
     },
 
     "existing_replies_block_status": {
@@ -49,9 +49,9 @@
   },
 
   "execution_mandate": {
-    "date": "TODAY Monday 2026-05-18 — ABSOLUTE LAST WINDOW",
-    "status": "EXECUTE NOW — 52-session failure ends today or archive trigger fires tomorrow EOD",
-    "no_deferral": "Zero tolerance. No path exists after today. Archive trigger fires Tuesday 2026-05-19 EOD unconditionally.",
+    "date": "TODAY Tuesday 2026-05-19 — ARCHIVE TRIGGER DAY",
+    "status": "LAST WINDOW BEFORE EOD — 53-session failure ends today with either LinkedIn execution or archive trigger at EOD",
+    "no_deferral": "Zero tolerance. Archive trigger fires TODAY Tuesday 2026-05-19 EOD unconditionally. No 54th session.",
     "execution_order": [
       {
         "step": 1,
@@ -439,10 +439,11 @@
   },
 
   "archive_trigger": {
-    "fires": "Tuesday 2026-05-19 EOD",
+    "fires": "TODAY Tuesday 2026-05-19 EOD — UNCONDITIONAL",
     "condition": "Any Batch 5 lead where linkedin_profiles.json entry shows note_sent: false OR entry is missing entirely",
     "action": "Archive immediately as LOST_NO_RESPONSE. Log CHANGELOG same session. No deferral, no extension.",
-    "consequence": "Same outcome as warm pipeline (leads 1/3/22) — £800-1,175 written off and permanently unrecoverable."
+    "consequence": "Same outcome as warm pipeline (leads 1/3/22) — £800-1,175 written off and permanently unrecoverable.",
+    "post_archive_next_steps": "If archive fires tonight: update leads to LOST_NO_RESPONSE, log CHANGELOG, include in Day-7 results analysis. Batch 6 decision remains on Wednesday based on Day-7 reply count."
   },
 
   "rules": [
@@ -465,29 +466,30 @@
   ],
 
   "hard_deadline": {
-    "today_monday": "2026-05-18 — ABSOLUTE LAST WINDOW. Execute all Batch 5 LinkedIn searches and connection requests.",
-    "tomorrow_tuesday": "2026-05-19 — Day-7 email sends (09:00-10:30) + EOD archive trigger for any Batch 5 lead without confirmed LinkedIn.",
-    "no_deferral": "Zero tolerance. 52-session failure ends today."
+    "today_tuesday": "2026-05-19 — ARCHIVE TRIGGER DAY. Day-7 email sends 09:00-10:30. LinkedIn: last window is NOW before EOD tonight. Execute or archive fires unconditionally at EOD.",
+    "next_week_tuesday": "2026-05-26 — Day-14 breakup sends (copy in daily_email_plan.json day14_breakup section — READY). Post-Day-7 reply wave monitoring Wednesday-Friday 2026-05-21-23.",
+    "no_deferral": "Zero tolerance. 53-session failure ends TODAY — either LinkedIn execution before EOD or archive trigger fires unconditionally at EOD. No 54th session."
   },
 
   "summary": {
-    "run_date": "2026-05-18 (Monday — Day 52, Batch 5 Day 6 — EXECUTION DAY)",
-    "day_number": 52,
-    "batch_5_day": 6,
+    "run_date": "2026-05-19 (Tuesday — Day 53, Batch 5 Day 7 — ARCHIVE TRIGGER DAY)",
+    "day_number": 53,
+    "batch_5_day": 7,
     "search_queries_populated": 14,
     "search_queries_type": "SECTOR_DISCOVERY — replace with name-specific queries if full name confirmed from 2026-05-12 records",
-    "batch_5_emailed_days_ago": 6,
-    "batch_5_day3_bumped_days_ago": 3,
+    "batch_5_emailed_days_ago": 7,
+    "batch_5_day3_bumped_days_ago": 4,
     "batch_5_replies_received": 0,
-    "reply_peak_window": "CLOSING — 72h post-Day-3-bump. Today's IMAP sweep confirms state.",
-    "imap_gap_days": 44,
+    "reply_peak_window": "POST-DAY-7 opens after today's sends. Peak: Wednesday-Friday 2026-05-21-23 (24-72h post-send).",
+    "imap_gap_days": 45,
     "linkedin_profiles_received_ever": 0,
-    "campaign_sessions_without_linkedin_execution": 52,
+    "campaign_sessions_without_linkedin_execution": 53,
     "orchestrator_py_status": "NOT_IMPLEMENTED",
-    "today_is_execution_day": true,
-    "linkedin_sends_today": true,
-    "archive_trigger_fires": "2026-05-19 EOD — unconditional",
-    "day7_sends_tomorrow": "2026-05-19, 09:00-10:30 — copy READY in daily_email_plan.json",
-    "critical_action": "Write data/linkedin_profiles.json — one entry per lead searched, immediately after each search. This is the only confirmation mechanism."
+    "today_is_archive_trigger_day": true,
+    "linkedin_window_still_open_before_eod": true,
+    "archive_trigger_fires": "TODAY Tuesday 2026-05-19 EOD — UNCONDITIONAL",
+    "day7_sends_today": "2026-05-19, 09:00-10:30 — copy READY in daily_email_plan.json (day7_new_angle section)",
+    "day14_breakup_date": "Tuesday 2026-05-26, 09:00-10:30 — copy READY in daily_email_plan.json (day14_breakup section)",
+    "critical_action": "Write data/linkedin_profiles.json — one entry per lead searched, immediately after each search. This is the only confirmation mechanism. Archive trigger fires TONIGHT EOD for every Batch 5 lead without a confirmed entry."
   }
 }
