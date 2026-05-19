@@ -1,14 +1,14 @@
 [
   {
-    "plan_date": "2026-05-18",
-    "generated_at": "2026-05-18T08:00:00Z",
-    "day_number": 52,
-    "batch_5_day": 6,
-    "note": "BRAIN layer — Day 52 (Monday 2026-05-18, Batch 5 Day 6 — FINAL LINKEDIN WINDOW). No new copy generated — all email copy is complete. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY and unchanged. Day-14 breakup copy generated early Day 51 — all 4 signal variants ready in day14_breakup section below. TODAY: LinkedIn execution (FINAL WINDOW). TOMORROW: Day-7 sends 09:00-10:30 (IMAP per lead before each send). Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
+    "plan_date": "2026-05-19",
+    "generated_at": "2026-05-19T06:00:00Z",
+    "day_number": 53,
+    "batch_5_day": 7,
+    "note": "BRAIN layer — Day 53 (Tuesday 2026-05-19, Batch 5 Day 7 — SEND DAY). No new copy generated — all email copy is complete and unchanged. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY. Day-14 breakup copy generated early Day 51 — all 4 signal variants ready in day14_breakup section below. TODAY: Day-7 new-angle sends 09:00-10:30 (IMAP per lead before each send). LinkedIn archive trigger fires TODAY EOD. Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No new initial sends today. Sunday weekend block. Next send window: Tuesday 2026-05-19 (Day-7 new-angle).",
+    "new_sends_note": "No new initial sends today. Day-7 new-angle sends are TODAY Tuesday 2026-05-19, 09:00-10:30. See day7_new_angle section for all copy.",
 
     "day3_bumps_status": {
       "send_date": "2026-05-15 (Friday)",
