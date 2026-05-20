@@ -266,12 +266,12 @@
   ],
 
   "archive_trigger_today": {
-    "fires": "TODAY Tuesday 2026-05-19 EOD — UNCONDITIONAL",
-    "condition": "Any Batch 5 lead without confirmed LinkedIn (note_sent: true in linkedin_profiles.json)",
-    "action": "Archive immediately as LOST_NO_RESPONSE. Log CHANGELOG same session. No extension. No deferral.",
-    "urgency": "Non-negotiable. 53-session failure ends TODAY — either execution before EOD or archive fires unconditionally at EOD.",
-    "context": "Warm pipeline failure (leads 1/3/22) wrote off £800-1,175 over 44 sessions. Same trigger mechanism — same outcome if missed. No 54th session.",
-    "post_archive_next_steps": "If archive fires tonight: update leads to LOST_NO_RESPONSE status, log CHANGELOG, include in Day-7 results analysis (Tuesday evening BRAIN run). Batch 6 decision remains on Wednesday based on Day-7 reply count (replies ≥ 2 → fire Harrogate/Craven scoping)."
+    "fires": "ASSUMED FIRED — Tuesday 2026-05-19 EOD (unconditional)",
+    "condition": "linkedin_profiles.json never written — 54-session failure",
+    "action_taken": "All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn channel effective 2026-05-19 EOD",
+    "status": "COMPLETE — LinkedIn channel PERMANENTLY CLOSED for all Batch 5 leads",
+    "context": "Same outcome as warm pipeline (leads 1/3/22 — £800-1,175 written off). Second consecutive LinkedIn archive event in 54 sessions. linkedin_profiles.json never written.",
+    "post_archive_next_steps": "Email is the only remaining channel for Batch 5. Day-14 breakup Tuesday 2026-05-26. Post-mortem Tuesday 2026-05-27. Batch 6 LinkedIn must activate within Day 3-7 — same-session execution mandatory."
   },
 
   "suppressed_leads": {

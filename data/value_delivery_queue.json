@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-05-19T06:00:00Z",
-  "date": "2026-05-19",
-  "day_number": 53,
-  "batch_5_day": 7,
-  "note": "BRAIN layer — Day 53 (Tuesday 2026-05-19, Batch 5 Day 7 SEND DAY). Warm pipeline permanently closed (leads 1/3/22 — UNCONDITIONALLY FINAL). No Batch 5 INTERESTED replies confirmed. Day-7 sends today open a fresh reply wave: post-Day-7 peak Wednesday-Friday 2026-05-21-23 is historically the strongest window for undecided leads. 24h proposal SLA live from any INTERESTED reply found during IMAP sweep today or reply wave Wednesday-Friday.",
+  "generated_at": "2026-05-20T07:00:00Z",
+  "date": "2026-05-20",
+  "day_number": 54,
+  "batch_5_day": 8,
+  "note": "BRAIN layer — Day 54 (Wednesday 2026-05-20, Batch 5 Day 8 — POST-DAY-7 MONITORING). Warm pipeline permanently closed (leads 1/3/22 — UNCONDITIONALLY FINAL). LinkedIn channel PERMANENTLY CLOSED for all Batch 5 leads (archive trigger assumed fired 2026-05-19 EOD). No Batch 5 INTERESTED replies confirmed. Day-7 sends assumed yesterday (UNCONFIRMED). Post-Day-7 reply wave OPEN NOW — peak 24-48h = TODAY and Thursday 2026-05-21. 24h proposal SLA live from any INTERESTED reply found today or Thursday. Day-14 breakup: Tuesday 2026-05-26 (6 days, copy READY). Email is the only remaining channel for Batch 5.",
 
   "pipeline_summary": {
     "total_interested_to_date": 3,
     "outcomes_confirmed": 0,
     "archived_permanently": 3,
-    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 53+ sessions",
+    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 54+ sessions",
     "override_window": "CLOSED — 2026-05-08 EOD. Unconditionally final.",
-    "email_channel": "CLOSED — permanently for leads 1, 3, 22",
-    "linkedin_channel": "PERMANENTLY CLOSED — never activated for leads 1, 3, 22",
-    "pipeline_value_written_off": "£800-1,175 (Claire £350 + Rob £550-675 + Tom £100-150)",
-    "realistic_remaining_probability": "Zero. Do not reopen.",
-    "next_revenue_opportunity": "Batch 5 Ryedale — 2-3 INTERESTED leads expected across full sequence at 15% SSL-PAS rate. Day-7 new-angle sends today open a fresh reply wave Wednesday-Friday 2026-05-21-23. Expected revenue if converted: £300-1,050 (SSL+mobile £150-200, no-website £500)."
+    "email_channel_warm_pipeline": "CLOSED — permanently for leads 1, 3, 22",
+    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads including Batch 5. Archive trigger fired 2026-05-19 EOD.",
+    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale pipeline TBD.",
+    "realistic_remaining_probability": "Warm pipeline (leads 1/3/22): Zero. Batch 5: 0-3 INTERESTED replies still possible via email channel.",
+    "next_revenue_opportunity": "Batch 5 Ryedale — post-Day-7 reply wave OPEN NOW. Any INTERESTED reply triggers 24h proposal SLA. Expected revenue if converted: £150-500 per lead (SSL+mobile £150-200, no-website £500). Day-14 breakup Tuesday 2026-05-26 may produce final replies."
   },
 
   "archived_items": [
@@ -32,7 +32,7 @@
       "override_window_closed": "2026-05-08 EOD",
       "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
       "no_further_action": "NONE. All channels closed. Historical record only.",
-      "historical_note": "Claire confirmed booking gap issue and agreed to call Tuesday 2pm (2026-04-07). Call and all follow-up missed. LinkedIn never executed across 53+ sessions.",
+      "historical_note": "Claire confirmed booking gap issue and agreed to call Tuesday 2pm (2026-04-07). Call and all follow-up missed. LinkedIn never executed across 54+ sessions.",
       "block_all_email_followups": true,
       "linkedin_available": false
     },
@@ -49,7 +49,7 @@
       "override_window_closed": "2026-05-08 EOD",
       "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
       "no_further_action": "NONE. All channels closed. Historical record only.",
-      "historical_note": "Rob asked to 'sort the whole thing in one go' — strongest upsell signal in the campaign. Highest-value lead lost. LinkedIn never executed across 53+ sessions.",
+      "historical_note": "Rob asked to 'sort the whole thing in one go' — strongest upsell signal in the campaign. Highest-value lead lost. LinkedIn never executed across 54+ sessions.",
       "block_all_email_followups": true,
       "linkedin_available": false
     },
@@ -66,92 +66,96 @@
       "override_window_closed": "2026-05-08 EOD",
       "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
       "no_further_action": "NONE. All channels closed. Historical record only.",
-      "historical_note": "Tom asked for pricing on quote form. Acknowledged workflow pain unprompted — strong buying signal. LinkedIn never executed across 53+ sessions.",
+      "historical_note": "Tom asked for pricing on quote form. Acknowledged workflow pain unprompted — strong buying signal. LinkedIn never executed across 54+ sessions.",
       "block_all_email_followups": true,
       "linkedin_available": false
     }
   ],
 
   "batch_5_value_delivery_protocol": {
-    "status": "LIVE — Day-7 sends TODAY Tuesday 2026-05-19, 09:00-10:30. Reply wave opens post-send: peak Wednesday-Friday 2026-05-21-23.",
+    "status": "MONITORING — Day-7 sends assumed yesterday 2026-05-19 (UNCONFIRMED). Post-Day-7 reply wave OPEN NOW.",
     "batch5_day0": "Tuesday 2026-05-12 (assumed)",
-    "batch5_day3": "Friday 2026-05-15 (assumed sent, window now closed)",
-    "batch5_day7": "TODAY Tuesday 2026-05-19, 09:00-10:30",
+    "batch5_day3": "Friday 2026-05-15 (assumed sent)",
+    "batch5_day7": "Tuesday 2026-05-19 (assumed sent, UNCONFIRMED)",
     "batch5_day14": "Tuesday 2026-05-26, 09:00-10:30 (copy READY)",
-    "expected_interested_replies": "2-3 leads total across full sequence (15% SSL-PAS rate on 12-18 sends)",
-    "expected_reply_windows": {
-      "post_day3_bump": "CLOSED — 4+ days post-bump. Window passed.",
-      "post_day7_send": "OPENS TODAY after sends. Peak: Wednesday-Friday 2026-05-21-23 (24-72h post-Day-7). Historically strongest window for undecided leads — 7 days to consider Day-0 pain point + new angle creates fresh urgency."
+    "post_day7_reply_window": {
+      "peak": "TODAY Wednesday 2026-05-20 (24-48h post-send assumed yesterday)",
+      "secondary": "Thursday 2026-05-21 (48-72h post-send)",
+      "window_closes": "Friday 2026-05-22 (72h+ post-send)",
+      "historical_significance": "Day-7 post-send window is historically the strongest reply window for undecided leads — 7 days to consider Day-0 pain point + new angle creates fresh urgency."
     },
-    "next_confirmed_imap_check": "TODAY per lead before each Day-7 send. Wednesday-Friday per lead during reply wave.",
+    "expected_interested_replies": "0-3 leads total across full sequence. 0 confirmed to date. Full sequence not yet complete (Day-14 outstanding).",
+    "next_confirmed_imap_check": "TODAY per Batch 5 lead (post-Day-7 peak). Thursday per Batch 5 lead (secondary peak). Tuesday 2026-05-26 per lead before each Day-14 send.",
     "response_sla": "Proposal within 24 hours of INTERESTED reply — MANDATORY. This is not negotiable. Tom asked for pricing and never got it. That does not repeat.",
-    "linkedin_deadline": "Day 7 = TODAY Tuesday 2026-05-19 EOD. Archive trigger fires immediately for any lead without confirmed LinkedIn.",
-    "linkedin_status": "STILL MISSING (linkedin_profiles.json not written) — archive trigger fires TODAY EOD",
+    "linkedin_status": "PERMANENTLY CLOSED — archive trigger assumed fired 2026-05-19 EOD. Email only channel remaining for Batch 5.",
 
     "on_interested_reply": {
-      "step_1": "Write reply to data/new_replies.json immediately. Timestamp it.",
+      "step_1": "Write reply to data/new_replies.json immediately. Include full raw text. Timestamp it.",
       "step_2": "Classify in data/reply_classifications.json as INTERESTED with full reasoning.",
-      "step_3": "Cancel Day-7 send for this lead (if not yet sent). Use interested variant from daily_email_plan.json (conditional_handling section) — reply in their email thread.",
+      "step_3": "Cancel Day-14 send for this lead (use proposal flow instead — do NOT send breakup to an interested lead).",
       "step_4": "Prepare bespoke proposal within 24h (from reply time — 24/7). Match scope to their signal. Give 3 options (see value_delivery_on_interested below).",
       "step_5": "Log CHANGELOG same session.",
-      "step_6": "LinkedIn: archive trigger fires TODAY EOD for all leads without confirmed LinkedIn — do NOT rely on LinkedIn as a channel for any Batch 5 lead where profiles.json not written today.",
-      "step_7": "Update CRM/pipeline stage to 'proposal_sent'.",
-      "step_8": "Add new entry to batch_5_interested_leads array in this file."
+      "step_6": "Update CRM/pipeline stage to 'proposal_sent'.",
+      "step_7": "Add new entry to batch_5_interested_leads array in this file."
     },
 
     "value_delivery_on_interested": {
       "ssl_trades": {
-        "option_a": "SSL cert only — £75-100 one-off",
-        "option_b": "SSL + mobile fix — £150-200 one-off (recommended entry point for most Ryedale trades)",
-        "option_c": "SSL + mobile + local SEO optimisation — £300-350 one-off",
-        "note": "Lead with Option B as the recommended option. Option A as the quick-fix minimum. Option C as the full-service upsell. Rural trades — Option B is usually the right entry point."
+        "option_a": "SSL certificate fix only — £75-100 one-off. Quick entry point, lowest friction.",
+        "option_b": "SSL + mobile fix — £150-200 one-off. Recommended entry point for Ryedale trades.",
+        "option_c": "SSL + mobile + local SEO optimisation (title tags, meta, Google Business Profile) — £300-350 one-off. Full fix.",
+        "lead_with": "Option B as the recommended option. Option A as quick-fix minimum. Option C as full-service upsell.",
+        "framing": "'Small job, fast turnaround. Here are three options — most Ryedale businesses I've worked with go for Option B.'"
       },
       "no_website_rural": {
-        "option_a": "Single-page site — £300 one-off",
-        "option_b": "5-page site with contact form + Google Business Profile setup — £500 one-off",
-        "option_c": "Option B + monthly local SEO — £550 one-off + £75/month",
-        "note": "For rural Ryedale with 20+ reviews but no site — Option B is the right pitch. Reference the Google Maps listing they already have as social proof."
+        "option_a": "Single-page contact site — £300 one-off. Gets them found immediately.",
+        "option_b": "5-page site + contact form + Google Business Profile setup — £500 one-off. The full package.",
+        "option_c": "Option B + 3 months local SEO — £550 one-off + £75/month. Builds ranking over time.",
+        "lead_with": "Option B for most Ryedale rural businesses (20+ reviews = social proof already exists).",
+        "reference_maps": "Reference their Google Maps listing as social proof — 'You already have X reviews, the site just needs to catch up.'"
       },
       "aida_high_review": {
-        "option_a": "On-page SEO — title tags, meta, Google Business Profile optimisation — £150-200 one-off",
-        "option_b": "Option A + one month of local citation building — £250 one-off",
-        "note": "AIDA leads (4.5★+ 100+ reviews) — keyword-gap fix only."
+        "option_a": "On-page SEO (title tags, meta, Google Business Profile optimisation) — £150-200 one-off.",
+        "option_b": "Option A + one month of local citation building — £250 one-off.",
+        "note": "AIDA leads (4.5★+ 100+ reviews) — keyword-gap fix only. Do not upsell redesign."
       }
     },
 
     "proposal_copy_rules": {
       "personalisation": "Reference their exact signal and exact URL/issue from Day-0 email. Do not use a generic proposal template.",
-      "framing": "Small job, fast turnaround, local specialist. Not 'digital marketing agency'.",
-      "options": "Always give 2-3 options — let them self-select. Reduces friction and back-and-forth.",
-      "price_anchoring": "Lead with Option B as recommended. Mention Option A as the quick-fix minimum. Option C as the full-service upsell.",
-      "proof": "Reference Yorkshire businesses helped — 'I've done this for other local businesses.' Do not name them.",
-      "call_to_action": "Offer a 15-minute call to talk through options. Not a discovery call. Not a consultation. 15 minutes."
+      "framing": "Small job, fast turnaround, local specialist. Not 'digital marketing agency'. Not 'web design company'.",
+      "options": "Always give 2-3 options — let them self-select. Reduces friction and negotiation back-and-forth.",
+      "price_anchoring": "Lead with Option B as recommended. Mention Option A as quick-fix minimum. Option C as full-service upsell.",
+      "proof": "Reference Yorkshire businesses helped — 'I've done this for other local businesses in North Yorkshire.' Do not name them.",
+      "call_to_action": "Offer a 15-minute call to talk through options. Not a discovery call. Not a consultation. 15 minutes.",
+      "urgency": "Do not manufacture urgency. Their reply IS the signal — respect it, respond promptly."
     }
   },
 
   "batch_5_interested_leads": [],
   "batch_5_interested_count": 0,
-  "batch_5_interested_note": "No confirmed INTERESTED replies yet. Day-7 sends today open a fresh reply wave — peak Wednesday-Friday 2026-05-21-23 (historically the strongest window). Also check IMAP per lead before each send today — any reply from Day-3 bump period will be found there.",
+  "batch_5_interested_note": "No confirmed INTERESTED replies in new_replies.json. Day-7 sends assumed yesterday — reply wave OPEN NOW (peak today and Thursday). Day-14 breakup Tuesday 2026-05-26 may produce final replies. IMAP mandatory today to check for any replies since 2026-04-04 (46-day gap).",
 
   "lessons_applied_to_batch_5": {
     "proposal_sla": "24 hours — non-negotiable. Ripon Road Carpentry (Tom) asked for pricing and never got it. That does not repeat.",
-    "linkedin_deadline": "Day 7 hard close (TODAY 2026-05-19 EOD). linkedin_profiles.json still missing — archive trigger fires tonight.",
-    "profiles_json_mandatory": "linkedin_profiles.json written same session as LinkedIn execution — no exceptions.",
+    "linkedin_deadline": "Day 7 hard close. linkedin_profiles.json NEVER written — archive trigger fired 2026-05-19 EOD. Same outcome as warm pipeline.",
+    "profiles_json_mandatory": "linkedin_profiles.json written same session as LinkedIn execution — no exceptions. Batch 6 lesson.",
     "single_pain_point": "One signal per proposal option. Rob's redesign ask came from a single clear mobile/SSL signal.",
     "options_not_quotes": "Present 3 options, not a single quote. Reduces friction. Let them self-select.",
-    "weekend_response": "24h SLA runs from reply time — not from next business day."
+    "weekend_response": "24h SLA runs from reply time — not from next business day. Applies 24/7."
   },
 
   "summary": {
     "warm_pipeline_status": "PERMANENTLY CLOSED — leads 1/3/22 LOST_NO_RESPONSE (2026-05-07). Override closed 2026-05-08 EOD. Unconditionally final.",
-    "pipeline_value_written_off": "£800-1,175",
+    "pipeline_value_written_off": "£800-1,175 confirmed",
+    "linkedin_channel": "PERMANENTLY CLOSED — all leads including Batch 5. Archive trigger fired 2026-05-19 EOD.",
     "batch_5_replies_received": 0,
     "batch_5_interested_count": 0,
-    "day7_sends_today": "TODAY Tuesday 2026-05-19, 09:00-10:30 — SEND DAY",
-    "post_day7_reply_window": "OPENS TODAY after sends — peak Wednesday-Friday 2026-05-21-23",
-    "next_imap_check": "TODAY per lead before each Day-7 send + Wednesday-Friday reply wave monitoring",
+    "post_day7_reply_window": "OPEN NOW — peak TODAY Wednesday (24-48h) and Thursday 2026-05-21 (48-72h)",
+    "next_imap_check": "TODAY per Batch 5 lead (46-day gap — urgent) + Thursday secondary peak + Tuesday 2026-05-26 before each Day-14 send",
     "proposal_sla": "24 hours from INTERESTED reply — mandatory (24/7)",
-    "linkedin_hard_deadline": "TODAY Tuesday 2026-05-19 EOD — archive trigger fires for any lead without confirmed LinkedIn",
-    "hands_instructions": "1. TODAY: IMAP per lead before each Day-7 send → sends 09:00-10:30 → LinkedIn archive trigger EOD. 2. If INTERESTED reply found before send: write new_replies.json immediately, classify, cancel Day-7 (use interested variant), 24h proposal SLA from reply time. 3. Wednesday-Friday: monitor post-Day-7 reply wave, IMAP daily, classify new replies, 24h proposal SLA. 4. If NOT_INTERESTED: cancel all pending sends, suppress all channels. 5. If UNSUBSCRIBE: suppress within 24h (GDPR Article 21). 6. Do NOT contact leads 1/3/22 under any circumstances."
+    "day14_send_date": "Tuesday 2026-05-26, 09:00-10:30",
+    "day14_copy_location": "data/daily_email_plan.json (day14_breakup section — 4 signal variants READY)",
+    "hands_instructions": "1. TODAY: IMAP per Batch 5 lead (NOT leads 1/3/22). 46-day gap. Reply wave peak TODAY. 2. If INTERESTED: write new_replies.json immediately, classify, prepare proposal within 24h from reply time (24/7). 3. Thursday: IMAP secondary peak check. 4. Tuesday 2026-05-26: Day-14 breakup sends 09:00-10:30 (IMAP per lead before each send, copy in daily_email_plan.json day14_breakup section). 5. CHANGELOG mandatory today — 52+ days overdue."
   }
 }

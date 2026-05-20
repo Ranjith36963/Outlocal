@@ -1,24 +1,24 @@
 # OUTLOCAL — Active Campaign Strategy
-**Updated:** 2026-05-17 (Day 51 Sunday — weekly intelligence report, Week 8 close)  
-**Replaces:** 2026-05-16 strategy (valid to 2026-05-24)  
-**Valid until:** 2026-05-24 (after Batch 5 Day-7 + Day-14 results and Batch 6 scoping decision)  
+**Updated:** 2026-05-20 (Day 54 Wednesday — LinkedIn channel closed, post-Day-7 monitoring)  
+**Replaces:** 2026-05-17 strategy (Day 51 — weekly intelligence report, Week 8 close)  
+**Valid until:** 2026-05-26 (after Batch 5 Day-14 results and Batch 6 scoping decision)  
 **Weekly report:** data/weekly_reports/week_2026-05-17.md
 
 ---
 
 ## CURRENT CAMPAIGN STATUS
 
-- **Week:** 9 (live since 28 March 2026 — 51 days)
-- **Batch 5 Ryedale:** Day 5 (Sunday). Day-0: Tue 2026-05-12 (assumed). Day-3 bump: Fri 2026-05-15 (assumed). Day-7: Tue 2026-05-19 (copy READY).
+- **Week:** 9 (live since 28 March 2026 — 54 days)
+- **Batch 5 Ryedale:** Day 8 (Wednesday). Day-0: Tue 2026-05-12 (assumed). Day-3 bump: Fri 2026-05-15 (assumed). Day-7: Tue 2026-05-19 (assumed sent, UNCONFIRMED). Day-14: Tue 2026-05-26 (copy READY).
 - **Leads scraped:** ~61 confirmed (Batches 1–4) + 12-18 Batch 5 Ryedale (UNCONFIRMED)
-- **Emails sent (estimated):** ~115-127 total (Batches 1–5 Day-0 + Day-3 + all follow-ups, all UNCONFIRMED beyond Batch 1–3)
+- **Emails sent (estimated):** ~115-145 total (Batches 1–5 Day-0 + Day-3 + Day-7 + all follow-ups, all UNCONFIRMED beyond Batch 1–3)
 - **Total replies:** 11 (17.9% overall reply rate — all from Batches 1–4)
-- **Batch 5 replies:** 0 confirmed. Reply peak window OPEN Saturday-Tuesday post-bump.
+- **Batch 5 replies:** 0 confirmed. Post-Day-7 reply wave OPEN NOW (peak today-Thursday).
 - **INTERESTED leads (ever):** 3 (leads 1, 3, 22) — ALL PERMANENTLY ARCHIVED LOST_NO_RESPONSE
 - **Conversions confirmed:** 0
-- **LinkedIn:** Never activated (0 connections in 50 sessions) — **FINAL WINDOW MONDAY 2026-05-18, ARCHIVE TRIGGER TUESDAY 2026-05-19 EOD**
-- **IMAP gap:** 42 days from confirmed check (2026-04-04) — SWEEP MANDATORY before every send (Monday before LinkedIn, Tuesday before each Day-7 send, per lead)
-- **CHANGELOG:** 50+ days overdue — **MANDATORY before Tuesday 2026-05-19 Day-7 sends**
+- **LinkedIn:** **PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD (54-session failure). All Batch 5 leads archived LOST_NO_RESPONSE on LinkedIn channel. Email is the only remaining channel.**
+- **IMAP gap:** 46 days from confirmed check (2026-04-04) — SWEEP MANDATORY TODAY (post-Day-7 reply wave peak)
+- **CHANGELOG:** 52+ days overdue — **MANDATORY TODAY same session as IMAP**
 - **Weekly intelligence report:** data/weekly_reports/week_2026-05-17.md (generated 2026-05-17)
 
 ---
@@ -141,7 +141,7 @@ Examples:
 
 ---
 
-## BATCH 5 RYEDALE — CURRENT STATUS (Week 8, Day 4)
+## BATCH 5 RYEDALE — CURRENT STATUS (Week 9, Day 8)
 
 **Target towns:** Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent  
 **Minimum review bar for no-website leads:** 4★+ AND 20+ reviews (rural offline economy adjustment)
@@ -150,11 +150,12 @@ Examples:
 |---|---|---|
 | Day-0 sends | Tue 2026-05-12 | ASSUMED SENT — UNCONFIRMED |
 | Day-3 bumps | Fri 2026-05-15 | ASSUMED SENT — UNCONFIRMED |
-| Reply peak | Sat 2026-05-16 — Mon 2026-05-18 | OPEN NOW — 24-72h post-bump |
-| LinkedIn execution | Mon 2026-05-18 | **FINAL WINDOW** — profiles.json MISSING (49+ sessions) |
-| LinkedIn archive trigger | Tue 2026-05-19 EOD | Fires for any lead without confirmed LinkedIn |
-| Day-7 sends | Tue 2026-05-19, 09:00-10:30 | Copy READY in data/daily_email_plan.json |
-| Day-14 sends | Tue 2026-05-26, 09:00-10:30 | BRAIN generates copy Tue morning |
+| Day-7 sends | Tue 2026-05-19, 09:00-10:30 | ASSUMED SENT — UNCONFIRMED |
+| LinkedIn archive trigger | Tue 2026-05-19 EOD | **FIRED — all Batch 5 leads LOST_NO_RESPONSE on LinkedIn** |
+| Post-Day-7 reply wave | Wed 2026-05-20 — Fri 2026-05-22 | **OPEN NOW — peak TODAY 24-48h** |
+| IMAP monitoring | TODAY Wed 2026-05-20 + Thu 2026-05-21 | **MANDATORY — 46-day gap** |
+| Day-14 breakup sends | Tue 2026-05-26, 09:00-10:30 | Copy READY in data/daily_email_plan.json (day14_breakup section) |
+| Batch 5 post-mortem | Tue 2026-05-27 BRAIN run | Full analysis after Day-14 results |
 
 ---
 
@@ -175,40 +176,30 @@ Examples:
 
 ---
 
-## LINKEDIN CHANNEL RULES — WEEK 8
+## LINKEDIN CHANNEL RULES — WEEK 9
 
-**STATUS: NEVER ACTIVATED (0 notes sent in 49+ sessions). HARD DEADLINE: Tuesday 2026-05-19 EOD.**
+**STATUS: PERMANENTLY CLOSED — archive trigger fired Tuesday 2026-05-19 EOD (54-session failure).**
 
-### Batch 5 LinkedIn — Monday 2026-05-18 (FINAL WINDOW)
+### Archive Event — Tuesday 2026-05-19 EOD
 
-1. IMAP sweep per lead first (mandatory)
-2. LinkedIn profile searches — sector priority queries in linkedin_search_plan.json
-3. Open profile, scroll posts from last 60 days
-4. If post found: write bespoke post_reference note (3–4x higher acceptance — always check first)
-5. If no post: use monday_fallback_notes from linkedin_connection_notes.json (sector templates — direct-use)
-6. Send connection request (200-char hard limit — count in plain-text editor)
-7. **Write linkedin_profiles.json IMMEDIATELY after each search — one entry per lead. No batching.**
+- linkedin_profiles.json was never written across 54 campaign sessions
+- Archive trigger fired unconditionally at Tuesday 2026-05-19 EOD
+- All Batch 5 Ryedale leads are archived LOST_NO_RESPONSE on LinkedIn channel
+- Email is the only remaining channel for Batch 5
+- Pipeline value lost on LinkedIn channel: TBD (combined with warm pipeline: £800-1,175+ written off)
 
-### LinkedIn Note Rules (non-negotiable)
+### No Further LinkedIn Action
 
-- 200 character HARD LIMIT — count every character including spaces and punctuation
-- Start with their name — never start with "I"
-- Mention the specific business name — shows you looked
-- One specific observation — not vague, not flattering, just real
-- End with low-pressure framing ("in case it's useful")
-- Do NOT mention: email outreach, the website, SSL, any prior contact, 'Not Secure'
-- Do NOT use: "I came across your profile", "I was impressed by", "synergies", "reach out"
-- Do NOT use exclamation marks
+No LinkedIn for any Batch 5 lead under any circumstances. Archive is final and unconditional.
 
-### Archive Trigger — Tuesday 2026-05-19 EOD
+### Lessons for Batch 6 LinkedIn (mandatory before any future batch)
 
-**Any Batch 5 lead without confirmed LinkedIn (note_sent: true in linkedin_profiles.json) by EOD Tuesday: archive immediately as LOST_NO_RESPONSE. Log CHANGELOG same session. No extensions. No deferrals.**
-
-The warm pipeline failure (49+ sessions, £800-1,175 written off) does not repeat. This trigger is unconditional.
-
-### After LinkedIn Connection Accepted
-
-Wait 3-5 days. Send ONE short value message — a specific observation. Not a pitch. Do not reference the email unless they mention it first.
+1. LinkedIn MUST be executed within Day 3-7 of initial email send — zero tolerance for deferral
+2. linkedin_profiles.json MUST be written same session as execution — one entry per lead, no batching
+3. If profiles.json not written same session: that session's LinkedIn did not happen for BRAIN purposes
+4. Connection note: 200-char hard limit, start with name, mention specific business, end with low-pressure framing
+5. After connection accepted: wait 3-5 days, send ONE short value message (no pitch, no email reference)
+6. Archive trigger for Batch 6: Day 7 from initial send — fires unconditionally if profiles.json missing at that point
 
 ---
 
@@ -267,38 +258,37 @@ Wait 3-5 days. Send ONE short value message — a specific observation. Not a pi
 
 ---
 
-## OPERATIONAL PRIORITIES — WEEK 9 (Days 51-57)
+## OPERATIONAL PRIORITIES — WEEK 9 REMAINDER (Days 54-60)
 
 | Priority | Action | Deadline | Blocker if missed |
 |---|---|---|---|
-| **1** | **IMAP sweep per Batch 5 lead** — before LinkedIn (Mon) and before each Day-7 send (Tue) | Mon 2026-05-18 + Tue 2026-05-19 | Compliance risk, missed INTERESTED replies |
-| **2** | **LinkedIn execution — ALL Batch 5 leads** (FINAL WINDOW) | Mon 2026-05-18 | Archive trigger fires Tue EOD — same outcome as warm pipeline (£800-1,175 written off) |
-| **3** | **Write data/linkedin_profiles.json** — same session as execution | Mon 2026-05-18 same session | Archive trigger cannot confirm exceptions |
-| **4** | **CHANGELOG.md update** — 50+ days overdue | Before Tue 2026-05-19 Day-7 sends | Compliance audit risk |
-| **5** | **Day-7 new-angle sends** — 12-18 Batch 5 leads, 09:00-10:30 | Tue 2026-05-19 | Sequence expires, Day-14 becomes irrelevant |
-| **6** | **LinkedIn archive trigger** — archive any Batch 5 lead without confirmed LinkedIn | Tue 2026-05-19 EOD | Warm pipeline repeat failure |
-| **7** | **Batch 6 scoping decision** — if Day-7 replies ≥ 2, scrape Harrogate/Craven | From Wed 2026-05-20 | Campaign stall without next batch |
-| **8** | **BRAIN: Day-14 breakup copy** generation | Tue 2026-05-26 morning | Day-14 sends miss Tuesday window |
-| **9** | **HANDS: Day-14 breakup sends** | Tue 2026-05-26, 09:00-10:30 | 4-touchpoint sequence incomplete |
+| **1** | **IMAP sweep per Batch 5 lead** — post-Day-7 reply wave peak | TODAY Wed 2026-05-20 | 46-day gap; missing INTERESTED replies; compliance risk |
+| **2** | **Classify any new replies** — write new_replies.json, classify reply_classifications.json | Same session as IMAP | Reply classification drives all downstream decisions |
+| **3** | **24h proposal SLA** — if INTERESTED reply found | 24h from reply time (24/7) | Tom pattern repeats — lead lost due to no response |
+| **4** | **CHANGELOG.md** — 52+ days overdue | TODAY same session as IMAP | Compliance audit risk |
+| **5** | **Batch 6 trigger decision** — if Day-7 replies ≥ 2 after IMAP | TODAY if IMAP ≥ 2 INTERESTED | Campaign stall without next batch |
+| **6** | **Thursday IMAP** — secondary reply peak (48-72h post-Day-7) | Thu 2026-05-21 | Missing late replies in reply wave |
+| **7** | **Day-14 breakup sends** — final touchpoint | Tue 2026-05-26, 09:00-10:30 | 4-touchpoint sequence incomplete |
+| **8** | **Full Batch 5 post-mortem** | Tue 2026-05-27 BRAIN run | Cannot assess signal performance for Batch 6 |
+| **9** | **Batch 6 launch prep** — if triggered | From Wed 2026-05-20 | Campaign stall without next batch |
 
 ---
 
-## WEEK 9 VOLUME TARGETS
+## WEEK 9 REMAINDER VOLUME TARGETS (Days 54-60)
 
-| Activity | Target |
-|---|---|
-| Batch 5 Day-7 sends | 12-18 (Tuesday 2026-05-19) |
-| LinkedIn connection requests | 12-18 Batch 5 leads (Monday — FINAL WINDOW) |
-| Expected INTERESTED (Batch 5, Day-7) | 2-3 (15% SSL-PAS rate on 12-18 sends) |
-| IMAP checks | Per Batch 5 lead (Monday before LinkedIn + before each Tuesday send) |
-| CHANGELOG entries | All historical (50 days) + Batch 5 Day-0 + Day-3 + LinkedIn outcomes |
-| Batch 6 scrape (if triggered) | 18-22 leads (Harrogate District + Craven District) |
-| Batch 6 trigger condition | Batch 5 Day-7 replies ≥ 2 by Wednesday 2026-05-20 |
+| Activity | Target | Date |
+|---|---|---|
+| Post-Day-7 IMAP checks | Per Batch 5 lead | TODAY Wed + Thu 2026-05-20-21 |
+| Day-14 breakup sends | 12-18 Batch 5 leads | Tue 2026-05-26, 09:00-10:30 |
+| Expected INTERESTED (full sequence) | 2-3 cumulative (15% SSL-PAS rate) | Any point Day 7-14 |
+| CHANGELOG entries | 52+ days historical + Day-7 send outcomes + LinkedIn archive | TODAY |
+| Batch 6 scrape (if triggered by today's IMAP) | 18-22 leads (Harrogate + Craven) | From today if triggered |
+| Batch 6 trigger condition | Batch 5 INTERESTED replies ≥ 2 by Wednesday 2026-05-20 | TODAY — PENDING IMAP |
 
 ---
 
 *Active strategy maintained by OUTLOCAL BRAIN layer.*  
-*Updated: 2026-05-17 (Day 51 — Sunday, weekly intelligence report, Week 8 close).*  
+*Updated: 2026-05-20 (Day 54 — Wednesday, Batch 5 Day 8, post-Day-7 monitoring, LinkedIn channel formally closed).*  
 *HANDS layer agents must read this file before starting any daily run.*  
-*Next review: 2026-05-24 after Batch 5 Day-7 + Day-14 results and Batch 6 scoping decision.*  
-*Weekly intelligence report: data/weekly_reports/week_2026-05-17.md*
+*Next review: 2026-05-26 after Batch 5 Day-14 results and Batch 6 scoping decision.*  
+*Weekly intelligence report: data/weekly_reports/week_2026-05-17.md (Week 8 close — next weekly report: Week 9 close ~2026-05-24)*

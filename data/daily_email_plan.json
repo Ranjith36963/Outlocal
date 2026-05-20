@@ -1,10 +1,10 @@
 [
   {
-    "plan_date": "2026-05-19",
-    "generated_at": "2026-05-19T06:00:00Z",
-    "day_number": 53,
-    "batch_5_day": 7,
-    "note": "BRAIN layer — Day 53 (Tuesday 2026-05-19, Batch 5 Day 7 — SEND DAY). No new copy generated — all email copy is complete and unchanged. Day-7 new-angle copy (generated Day 48, 2026-05-15 evening) is READY. Day-14 breakup copy generated early Day 51 — all 4 signal variants ready in day14_breakup section below. TODAY: Day-7 new-angle sends 09:00-10:30 (IMAP per lead before each send). LinkedIn archive trigger fires TODAY EOD. Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
+    "plan_date": "2026-05-20",
+    "generated_at": "2026-05-20T07:00:00Z",
+    "day_number": 54,
+    "batch_5_day": 8,
+    "note": "BRAIN layer — Day 54 (Wednesday 2026-05-20, Batch 5 Day 8 — POST-DAY-7 MONITORING). No new copy generated today. All email copy unchanged and complete. Day-7 new-angle copy (generated Day 48, 2026-05-15) assumed sent yesterday Tuesday 2026-05-19 (UNCONFIRMED). Day-14 breakup copy (generated early Day 51) READY for Tuesday 2026-05-26. NO SENDS TODAY. LinkedIn archive trigger assumed fired yesterday EOD — all Batch 5 leads archived LOST_NO_RESPONSE on LinkedIn. Email only channel remaining. Post-Day-7 reply wave OPEN — IMAP mandatory today. Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
@@ -375,13 +375,15 @@
     "send_summary": {
       "new_initial_sends_today": 0,
       "day3_bumps_assumed_sent": "2026-05-15 (Friday) — UNCONFIRMED",
-      "day7_new_angle_sends_date": "Tuesday 2026-05-19, 09:00-10:30",
-      "day7_copy_status": "READY — per-signal templates in day7_new_angle section above",
+      "day7_new_angle_sends_date": "Tuesday 2026-05-19 — ASSUMED SENT (UNCONFIRMED)",
+      "day7_copy_status": "USED — per-signal templates sent (assumed) yesterday. Retained for CHANGELOG reference.",
       "day14_breakup_date": "Tuesday 2026-05-26, 09:00-10:30",
-      "day14_copy_status": "READY — generated early, per-signal templates in day14_breakup section above",
-      "imap_precondition": "MANDATORY per lead before every send",
-      "linkedin_hard_deadline": "Tuesday 2026-05-19 EOD — archive trigger fires immediately if not executed",
-      "next_brain_run": "Monday 2026-05-18 (if HANDS provides linkedin_profiles.json) or Tuesday 2026-05-19 evening (Day-7 results + Batch 6 scoping)"
+      "day14_copy_status": "READY — generated early Day 51. All 4 signal variants in day14_breakup section. Next send event.",
+      "imap_precondition": "MANDATORY per lead before every send — next send Tuesday 2026-05-26",
+      "linkedin_status": "PERMANENTLY CLOSED — archive trigger assumed fired 2026-05-19 EOD. 54-session failure.",
+      "post_day7_reply_window": "OPEN — peak TODAY Wednesday 2026-05-20 (24-48h) and Thursday 2026-05-21 (48-72h)",
+      "next_send_event": "Tuesday 2026-05-26 — Day-14 breakup sends 09:00-10:30. IMAP per lead before each send.",
+      "next_brain_run": "Wednesday 2026-05-20 (TODAY — Day-14 copy already READY). Tuesday 2026-05-26 (Day-14 results + Batch 5 post-mortem + Batch 6 decision)."
     }
   }
 ]
