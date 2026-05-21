@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-20T07:00:00Z",
-  "date": "2026-05-20",
-  "day_number": 54,
-  "batch_5_day": 8,
-  "note": "BRAIN layer — Day 54 (Wednesday 2026-05-20, Batch 5 Day 8). NO SENDS TODAY. Post-Day-7 monitoring only. Day-7 sends assumed yesterday 2026-05-19 (UNCONFIRMED). LinkedIn archive trigger ASSUMED FIRED Tuesday 2026-05-19 EOD — all Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn channel. Email is the only remaining channel. Day-14 breakup (Tuesday 2026-05-26) is the final touchpoint. IMAP mandatory today — post-Day-7 reply wave peak (24-48h = today and Thursday).",
+  "generated_at": "2026-05-21T07:00:00Z",
+  "date": "2026-05-21",
+  "day_number": 55,
+  "batch_5_day": 9,
+  "note": "BRAIN layer — Day 55 (Thursday 2026-05-21, Batch 5 Day 9). NO SENDS TODAY. Secondary post-Day-7 monitoring. Day-7 sends assumed Tuesday 2026-05-19 (UNCONFIRMED — 55-session pattern). Wednesday IMAP sweep UNCONFIRMED (HANDS pattern). Secondary post-Day-7 reply peak: TODAY Thursday (48-72h). Reply wave closes FRIDAY 2026-05-22. LinkedIn archive trigger FIRED Tuesday 2026-05-19 EOD — all Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn channel. Email is the only remaining channel. Day-14 breakup (Tuesday 2026-05-26) is the final touchpoint — 5 days away. IMAP mandatory today — secondary post-Day-7 reply peak.",
 
   "active_followups_legacy": [],
   "active_legacy_count": 0,
@@ -11,8 +11,9 @@
 
   "send_today": {
     "send_today": false,
-    "reason": "Post-Day-7 monitoring day. No outbound sends. Day-14 breakup is next send event — Tuesday 2026-05-26.",
-    "imap_today": "MANDATORY — per Batch 5 lead. Post-Day-7 reply wave peak (24-48h post-send assumed yesterday). 46-day IMAP gap."
+    "reason": "Secondary post-Day-7 monitoring day. No outbound sends. Day-14 breakup is next send event — Tuesday 2026-05-26 (5 days).",
+    "imap_today": "MANDATORY — per Batch 5 lead. Secondary post-Day-7 reply peak (48-72h post-send assumed Tuesday). 47-day IMAP gap. Wednesday sweep UNCONFIRMED. Reply wave closes FRIDAY.",
+    "friday_imap": "MANDATORY — final pre-weekend check (72h+ post-Day-7). Last IMAP before Day-14 (Tuesday 2026-05-26)."
   },
 
   "batch_5_followup_schedule": {
@@ -31,12 +32,12 @@
     },
     "day_7_new_angle": {
       "date": "2026-05-19 (Tuesday)",
-      "status": "ASSUMED_SENT — UNCONFIRMED (54-session HANDS execution pattern)",
-      "days_since_sent": 1,
+      "status": "ASSUMED_SENT — UNCONFIRMED (55-session HANDS execution pattern)",
+      "days_since_sent": 2,
       "type": "Standalone NEW email — new subject, different pain point",
       "copy_location": "data/daily_email_plan.json (day7_new_angle section)",
-      "reply_window": "OPEN NOW — peak TODAY Wednesday (24-48h) and Thursday 2026-05-21 (48-72h)",
-      "imap_monitoring": "MANDATORY today and Thursday minimum. Per-lead. Post-Day-7 wave is historically the strongest reply window in the full sequence."
+      "reply_window": "SECONDARY PEAK — TODAY Thursday (48-72h). Closes FRIDAY 2026-05-22.",
+      "imap_monitoring": "MANDATORY TODAY (secondary peak, 48-72h) + FRIDAY (final pre-weekend check, 72h+). Per-lead. Reply wave closes after Friday."
     },
     "day_14_breakup": {
       "date": "2026-05-26 (Tuesday)",
@@ -75,10 +76,10 @@
   },
 
   "today_monitoring_brief": {
-    "date": "2026-05-20 (Wednesday) — Batch 5 Day 8 — POST-DAY-7 MONITORING",
+    "date": "2026-05-21 (Thursday) — Batch 5 Day 9 — SECONDARY POST-DAY-7 MONITORING",
     "no_outbound_sends": true,
     "imap_mandatory": true,
-    "imap_purpose": "Post-Day-7 reply wave monitoring. Peak window TODAY (24-48h post-send assumed yesterday). 46-day IMAP gap is a compliance risk.",
+    "imap_purpose": "Secondary post-Day-7 reply monitoring. Secondary peak window TODAY (48-72h post-send assumed Tuesday). 47-day IMAP gap. Wednesday sweep UNCONFIRMED. Reply wave closes FRIDAY.",
     "reply_handling": {
       "if_interested": {
         "step_1": "Write reply to new_replies.json immediately with full raw text",
@@ -119,16 +120,18 @@
 
   "summary": {
     "active_legacy_sequences": 0,
-    "day7_sends": "ASSUMED SENT Tuesday 2026-05-19 (UNCONFIRMED)",
-    "day7_reply_window": "OPEN NOW — peak TODAY Wednesday (24-48h) and Thursday (48-72h)",
+    "day7_sends": "ASSUMED SENT Tuesday 2026-05-19 (UNCONFIRMED — 55-session pattern)",
+    "day7_reply_window": "SECONDARY PEAK — TODAY Thursday (48-72h). Closes FRIDAY.",
+    "wednesday_imap_status": "UNCONFIRMED — 55-session HANDS pattern",
     "day14_send_date": "Tuesday 2026-05-26, 09:00-10:30",
+    "day14_days_away": 5,
     "day14_copy_status": "READY — generated Day 51. daily_email_plan.json (day14_breakup section).",
     "day14_copy_location": "data/daily_email_plan.json (day14_breakup section — 4 signal variants)",
     "imap_precondition_day14": "MANDATORY per lead before each send on 2026-05-26",
     "linkedin_status": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. Email only channel remaining.",
-    "post_day7_reply_window": "OPEN — peak TODAY and Thursday 2026-05-21",
-    "batch_6_trigger": "PENDING IMAP — 0 confirmed replies. Cannot fire without IMAP confirmation today.",
-    "changelog_overdue_days": "52+",
-    "changelog_mandatory": "TODAY — write same session as IMAP execution"
+    "post_day7_reply_window": "SECONDARY PEAK — TODAY Thursday 2026-05-21 (48-72h). Closes FRIDAY.",
+    "batch_6_trigger": "PENDING IMAP — 0 confirmed replies. Last practical trigger window: TODAY or Friday.",
+    "changelog_overdue_days": "53+",
+    "changelog_mandatory": "TODAY — write same session as IMAP execution. Absolute final deadline."
   }
 }

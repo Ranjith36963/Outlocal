@@ -1,10 +1,10 @@
 [
   {
-    "plan_date": "2026-05-20",
-    "generated_at": "2026-05-20T07:00:00Z",
-    "day_number": 54,
-    "batch_5_day": 8,
-    "note": "BRAIN layer — Day 54 (Wednesday 2026-05-20, Batch 5 Day 8 — POST-DAY-7 MONITORING). No new copy generated today. All email copy unchanged and complete. Day-7 new-angle copy (generated Day 48, 2026-05-15) assumed sent yesterday Tuesday 2026-05-19 (UNCONFIRMED). Day-14 breakup copy (generated early Day 51) READY for Tuesday 2026-05-26. NO SENDS TODAY. LinkedIn archive trigger assumed fired yesterday EOD — all Batch 5 leads archived LOST_NO_RESPONSE on LinkedIn. Email only channel remaining. Post-Day-7 reply wave OPEN — IMAP mandatory today. Day-14 sends: Tuesday 2026-05-26, 09:00-10:30.",
+    "plan_date": "2026-05-21",
+    "generated_at": "2026-05-21T07:00:00Z",
+    "day_number": 55,
+    "batch_5_day": 9,
+    "note": "BRAIN layer — Day 55 (Thursday 2026-05-21, Batch 5 Day 9 — SECONDARY POST-DAY-7 MONITORING). No new copy generated today. All email copy UNCHANGED and READY. Day-7 new-angle copy assumed sent Tuesday 2026-05-19 (UNCONFIRMED — 55-session pattern). Wednesday IMAP sweep UNCONFIRMED (HANDS pattern). Secondary post-Day-7 reply peak: TODAY (48-72h post-send). Reply wave closes FRIDAY. Day-14 breakup copy (generated early Day 51) READY for Tuesday 2026-05-26 (5 days). NO SENDS TODAY. LinkedIn PERMANENTLY CLOSED (archive trigger fired 2026-05-19 EOD). Email only channel remaining.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
@@ -376,14 +376,16 @@
       "new_initial_sends_today": 0,
       "day3_bumps_assumed_sent": "2026-05-15 (Friday) — UNCONFIRMED",
       "day7_new_angle_sends_date": "Tuesday 2026-05-19 — ASSUMED SENT (UNCONFIRMED)",
-      "day7_copy_status": "USED — per-signal templates sent (assumed) yesterday. Retained for CHANGELOG reference.",
+      "day7_copy_status": "USED — per-signal templates sent (assumed) Tuesday 2026-05-19. Retained for CHANGELOG reference.",
       "day14_breakup_date": "Tuesday 2026-05-26, 09:00-10:30",
+      "day14_days_away": 5,
       "day14_copy_status": "READY — generated early Day 51. All 4 signal variants in day14_breakup section. Next send event.",
-      "imap_precondition": "MANDATORY per lead before every send — next send Tuesday 2026-05-26",
-      "linkedin_status": "PERMANENTLY CLOSED — archive trigger assumed fired 2026-05-19 EOD. 54-session failure.",
-      "post_day7_reply_window": "OPEN — peak TODAY Wednesday 2026-05-20 (24-48h) and Thursday 2026-05-21 (48-72h)",
+      "imap_precondition": "MANDATORY per lead before every send — next send Tuesday 2026-05-26. Also MANDATORY today (secondary post-Day-7 peak) and Friday (final pre-weekend check).",
+      "wednesday_imap_status": "UNCONFIRMED — 55-session HANDS pattern. No new entries in new_replies.json.",
+      "linkedin_status": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. 54-session failure.",
+      "post_day7_reply_window": "SECONDARY PEAK — TODAY Thursday 2026-05-21 (48-72h). Reply wave closes FRIDAY 2026-05-22.",
       "next_send_event": "Tuesday 2026-05-26 — Day-14 breakup sends 09:00-10:30. IMAP per lead before each send.",
-      "next_brain_run": "Wednesday 2026-05-20 (TODAY — Day-14 copy already READY). Tuesday 2026-05-26 (Day-14 results + Batch 5 post-mortem + Batch 6 decision)."
+      "next_brain_run": "Tuesday 2026-05-26 morning (Day-14 results + Batch 5 post-mortem + Batch 6 decision). No BRAIN run required Thursday or Friday unless INTERESTED reply received."
     }
   }
 ]
