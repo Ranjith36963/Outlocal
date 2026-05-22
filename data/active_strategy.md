@@ -1,6 +1,6 @@
 # OUTLOCAL — Active Campaign Strategy
-**Updated:** 2026-05-21 (Day 55 Thursday — secondary post-Day-7 monitoring, reply wave closes Friday)  
-**Replaces:** 2026-05-20 strategy (Day 54 — Wednesday, post-Day-7 primary monitoring)  
+**Updated:** 2026-05-22 (Day 56 Friday — final pre-weekend IMAP check, reply wave CLOSES TODAY)  
+**Replaces:** 2026-05-21 strategy (Day 55 — Thursday, secondary post-Day-7 monitoring)  
 **Valid until:** 2026-05-26 (after Batch 5 Day-14 results and Batch 6 scoping decision)  
 **Weekly report:** data/weekly_reports/week_2026-05-17.md
 
@@ -8,17 +8,17 @@
 
 ## CURRENT CAMPAIGN STATUS
 
-- **Week:** 9 (live since 28 March 2026 — 55 days)
-- **Batch 5 Ryedale:** Day 9 (Thursday). Day-0: Tue 2026-05-12 (assumed). Day-3 bump: Fri 2026-05-15 (assumed). Day-7: Tue 2026-05-19 (assumed sent, UNCONFIRMED). Day-14: Tue 2026-05-26 (copy READY — 5 days).
+- **Week:** 9 (live since 28 March 2026 — 56 days)
+- **Batch 5 Ryedale:** Day 10 (Friday). Day-0: Tue 2026-05-12 (assumed). Day-3 bump: Fri 2026-05-15 (assumed). Day-7: Tue 2026-05-19 (assumed sent, UNCONFIRMED). Day-14: Tue 2026-05-26 (copy READY — 4 days).
 - **Leads scraped:** ~61 confirmed (Batches 1–4) + 12-18 Batch 5 Ryedale (UNCONFIRMED)
 - **Emails sent (estimated):** ~115-145 total (Batches 1–5 Day-0 + Day-3 + Day-7 + all follow-ups, all UNCONFIRMED beyond Batch 1–3)
 - **Total replies:** 11 (17.9% overall reply rate — all from Batches 1–4)
-- **Batch 5 replies:** 0 confirmed. Secondary post-Day-7 reply peak TODAY Thursday (48-72h). Reply wave closes FRIDAY.
+- **Batch 5 replies:** 0 confirmed. Reply wave CLOSES TODAY (72h+ post-Day-7). Final pre-weekend IMAP check — mandatory now. Wednesday + Thursday sweeps both UNCONFIRMED.
 - **INTERESTED leads (ever):** 3 (leads 1, 3, 22) — ALL PERMANENTLY ARCHIVED LOST_NO_RESPONSE
 - **Conversions confirmed:** 0
 - **LinkedIn:** **PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD (54-session failure). All Batch 5 leads archived LOST_NO_RESPONSE on LinkedIn channel. Email is the only remaining channel.**
-- **IMAP gap:** 47 days from confirmed check (2026-04-04). Wednesday sweep UNCONFIRMED (55-session pattern). **IMAP MANDATORY TODAY** (secondary post-Day-7 peak) + **FRIDAY** (final pre-weekend, 72h+).
-- **CHANGELOG:** 53+ days overdue — **MANDATORY TODAY same session as IMAP**
+- **IMAP gap:** 48 days from confirmed check (2026-04-04). Wednesday + Thursday sweeps UNCONFIRMED (56-session pattern). **IMAP MANDATORY TODAY** (reply wave closes, 72h+ post-Day-7) — final check before Day-14.
+- **CHANGELOG:** 54+ days overdue — **MANDATORY TODAY same session as IMAP**
 - **Weekly intelligence report:** data/weekly_reports/week_2026-05-17.md (generated 2026-05-17)
 
 ---
@@ -152,12 +152,12 @@ Examples:
 | Day-3 bumps | Fri 2026-05-15 | ASSUMED SENT — UNCONFIRMED |
 | Day-7 sends | Tue 2026-05-19, 09:00-10:30 | ASSUMED SENT — UNCONFIRMED |
 | LinkedIn archive trigger | Tue 2026-05-19 EOD | **FIRED — all Batch 5 leads LOST_NO_RESPONSE on LinkedIn** |
-| Post-Day-7 reply wave | Wed 2026-05-20 — Fri 2026-05-22 | **SECONDARY PEAK TODAY Thursday — closes FRIDAY** |
-| Wednesday IMAP sweep | Wed 2026-05-20 | **UNCONFIRMED — 55-session HANDS pattern** |
-| Thursday IMAP monitoring | TODAY Thu 2026-05-21 | **MANDATORY — secondary peak (48-72h) — 47-day gap** |
-| Friday IMAP monitoring | Fri 2026-05-22 | **MANDATORY — final pre-weekend check (72h+)** |
-| Day-14 breakup sends | Tue 2026-05-26, 09:00-10:30 | Copy READY — data/daily_email_plan.json (day14_breakup section) — 5 days |
-| Batch 5 post-mortem | Tue 2026-05-27 BRAIN run | Full analysis after Day-14 results |
+| Post-Day-7 reply wave | Wed 2026-05-20 — Fri 2026-05-22 | **CLOSES TODAY Friday (72h+). Wed + Thu sweeps UNCONFIRMED.** |
+| Wednesday IMAP sweep | Wed 2026-05-20 | **UNCONFIRMED — 56-session HANDS pattern** |
+| Thursday IMAP monitoring | Thu 2026-05-21 | **UNCONFIRMED — 56-session HANDS pattern** |
+| Friday IMAP monitoring | **TODAY Fri 2026-05-22** | **MANDATORY — reply wave CLOSES TODAY (72h+). 48-day gap. Covers all 3 missed sweeps.** |
+| Day-14 breakup sends | Tue 2026-05-26, 09:00-10:30 | Copy READY — data/daily_email_plan.json (day14_breakup section) — 4 days |
+| Batch 5 post-mortem | Wed 2026-05-27 BRAIN run | Full analysis after Day-14 results |
 
 ---
 
@@ -264,15 +264,14 @@ No LinkedIn for any Batch 5 lead under any circumstances. Archive is final and u
 
 | Priority | Action | Deadline | Blocker if missed |
 |---|---|---|---|
-| **1** | **IMAP sweep per Batch 5 lead** — secondary post-Day-7 peak (48-72h) | TODAY Thu 2026-05-21 — reply wave closes TOMORROW | 47-day gap; Wednesday sweep UNCONFIRMED; missing INTERESTED replies; compliance risk |
+| **1** | **IMAP sweep per Batch 5 lead** — reply wave CLOSES TODAY (72h+ post-Day-7) | TODAY Fri 2026-05-22 — immediate | 48-day gap; Wed + Thu sweeps UNCONFIRMED; reply wave closes after today |
 | **2** | **Classify any new replies** — write new_replies.json, classify reply_classifications.json | Same session as IMAP | Reply classification drives all downstream decisions |
-| **3** | **24h proposal SLA** — if INTERESTED reply found | 24h from reply time (24/7) | Tom pattern repeats — lead lost due to no response |
-| **4** | **CHANGELOG.md** — 53+ days overdue | TODAY same session as IMAP | Compliance audit risk. No further deferrals. |
-| **5** | **Batch 6 trigger decision** — after today's IMAP confirms reply count | TODAY — last practical trigger window before Day-14 | Campaign stall without next batch |
-| **6** | **Friday IMAP** — final pre-weekend check (72h+ post-Day-7) | Fri 2026-05-22 | Reply wave closes after Friday |
-| **7** | **Day-14 breakup sends** — final touchpoint | Tue 2026-05-26, 09:00-10:30 | 4-touchpoint sequence incomplete |
-| **8** | **Full Batch 5 post-mortem** | Tue 2026-05-27 BRAIN run | Cannot assess signal performance for Batch 6 |
-| **9** | **Batch 6 launch prep** — if triggered today | From today if IMAP confirms ≥ 2 INTERESTED | Campaign stall without next batch |
+| **3** | **24h proposal SLA** — if INTERESTED reply found | 24h from reply time (24/7 — applies over weekend) | Tom pattern repeats — lead lost due to no response |
+| **4** | **CHANGELOG.md** — 54+ days overdue | TODAY same session as IMAP | Compliance audit risk. No further deferrals. |
+| **5** | **Batch 6 trigger decision** — after today's IMAP confirms reply count | TODAY — last practical trigger window | Campaign stall without next batch |
+| **6** | **Day-14 breakup sends** — final touchpoint | Tue 2026-05-26, 09:00-10:30 | 4-touchpoint sequence incomplete |
+| **7** | **Full Batch 5 post-mortem** | Wed 2026-05-27 BRAIN run | Cannot assess signal performance for Batch 6 |
+| **8** | **Batch 6 launch prep** — if triggered today | From today if IMAP confirms ≥ 2 INTERESTED | Campaign stall without next batch |
 
 ---
 
@@ -280,17 +279,17 @@ No LinkedIn for any Batch 5 lead under any circumstances. Archive is final and u
 
 | Activity | Target | Date |
 |---|---|---|
-| Post-Day-7 IMAP checks | Per Batch 5 lead | TODAY Thu 2026-05-21 (secondary peak) + Fri 2026-05-22 (final pre-weekend) |
+| Post-Day-7 IMAP final check | Per Batch 5 lead | TODAY Fri 2026-05-22 — reply wave closes, covers Wed + Thu missed sweeps |
 | Day-14 breakup sends | 12-18 Batch 5 leads | Tue 2026-05-26, 09:00-10:30 |
-| Expected INTERESTED (full sequence) | 2-3 cumulative (15% SSL-PAS rate) | Any point Day 7-14 |
-| CHANGELOG entries | 53+ days historical + Day-7 send outcomes + LinkedIn archive | TODAY — absolute final deadline |
+| Expected INTERESTED (full sequence) | 0-2 cumulative (15% SSL-PAS rate; 0 confirmed to date) | Any point Day 7-14 |
+| CHANGELOG entries | 54+ days historical + Day-7 send outcomes + LinkedIn archive | TODAY — absolute final deadline |
 | Batch 6 scrape (if triggered by today's IMAP) | 18-22 leads (Harrogate + Craven) | From today if triggered |
-| Batch 6 trigger condition | Batch 5 INTERESTED replies ≥ 2 — last practical check TODAY or Friday | TODAY — PENDING IMAP |
+| Batch 6 trigger condition | Batch 5 INTERESTED replies ≥ 2 — LAST PRACTICAL CHECK TODAY | TODAY — PENDING IMAP |
 
 ---
 
 *Active strategy maintained by OUTLOCAL BRAIN layer.*  
-*Updated: 2026-05-21 (Day 55 — Thursday, Batch 5 Day 9, secondary post-Day-7 monitoring, reply wave closes Friday).*  
+*Updated: 2026-05-22 (Day 56 — Friday, Batch 5 Day 10, final pre-weekend IMAP check, reply wave CLOSES TODAY).*  
 *HANDS layer agents must read this file before starting any daily run.*  
-*Next review: 2026-05-26 after Batch 5 Day-14 results and Batch 6 scoping decision.*  
+*Next review: 2026-05-27 after Batch 5 Day-14 results and Batch 6 scoping decision.*  
 *Weekly intelligence report: data/weekly_reports/week_2026-05-17.md (Week 8 close — next weekly report: Week 9 close ~2026-05-24)*

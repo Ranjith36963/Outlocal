@@ -1,87 +1,90 @@
 {
-  "generated_at": "2026-05-21T07:00:00Z",
-  "date": "2026-05-21",
-  "day_number": 55,
-  "batch_5_day": 9,
-  "note": "BRAIN layer — Day 55 (Thursday 2026-05-21, Batch 5 Day 9 — SECONDARY POST-DAY-7 REPLY PEAK). No sends today. Secondary post-Day-7 reply peak: 48-72h post-send assumed Tuesday 2026-05-19. Wednesday IMAP sweep: UNCONFIRMED — no new entries in new_replies.json (HANDS pattern — 55+ consecutive sessions). IMAP gap: 47 days from last confirmed check (2026-04-04). IMAP MANDATORY today — per Batch 5 lead — secondary peak is RIGHT NOW. Post-Day-7 reply wave closes Friday 2026-05-22 (72h+ post-send). Day-14 breakup: Tuesday 2026-05-26 (5 days away — copy READY in daily_email_plan.json day14_breakup section). LinkedIn: PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD (54-session failure). Email is the only remaining channel. CHANGELOG: 53+ days overdue — MANDATORY today same session as IMAP.",
+  "generated_at": "2026-05-22T07:00:00Z",
+  "date": "2026-05-22",
+  "day_number": 56,
+  "batch_5_day": 10,
+  "note": "BRAIN layer — Day 56 (Friday 2026-05-22, Batch 5 Day 10 — FINAL PRE-WEEKEND IMAP CHECK). Reply wave CLOSES TODAY (72h+ post-Day-7 sends assumed Tuesday 2026-05-19). Thursday IMAP sweep: UNCONFIRMED — 56-session HANDS execution pattern. IMAP gap: 48 days from last confirmed check (2026-04-04). IMAP MANDATORY TODAY — per Batch 5 lead — this is the absolute final check before Day-14 (Tuesday 2026-05-26). After today, remaining replies will be sporadic; post-Day-14 reply window opens Wednesday 2026-05-27. Day-14 breakup: 4 days away — copy READY in daily_email_plan.json (day14_breakup section). LinkedIn: PERMANENTLY CLOSED. CHANGELOG: 54+ days overdue.",
 
   "day_assessment": {
-    "today_thursday": {
-      "date": "2026-05-21",
-      "day_of_week": "Thursday",
-      "campaign_day": 55,
-      "batch_5_day": 9,
+    "today_friday": {
+      "date": "2026-05-22",
+      "day_of_week": "Friday",
+      "campaign_day": 56,
+      "batch_5_day": 10,
       "is_uk_bank_holiday": false,
       "is_send_day": false,
-      "send_type": "MONITORING ONLY — secondary post-Day-7 reply peak. No outbound sends today.",
+      "send_type": "MONITORING ONLY — final pre-weekend IMAP check. Reply wave closes after today. No outbound sends.",
       "primary_actions_today": [
-        "1. IMAP sweep — per Batch 5 lead (NOT leads 1/3/22). Secondary post-Day-7 peak: 48-72h post-send assumed Tuesday. 47-day IMAP gap. Wednesday sweep UNCONFIRMED. This is the LAST monitoring day before the reply wave closes Friday.",
-        "2. Classify any new replies immediately in reply_classifications.json. Write raw text to new_replies.json.",
+        "1. IMAP sweep — per Batch 5 lead (NOT leads 1/3/22). 72h+ post-Day-7. Reply wave CLOSES TODAY. Final pre-weekend check. 48-day IMAP gap. Thursday sweep UNCONFIRMED.",
+        "2. Classify any new replies immediately. Write raw text to new_replies.json. Classify in reply_classifications.json.",
         "3. If INTERESTED reply found: 24h proposal SLA from reply time (NON-NEGOTIABLE — 24/7). Cancel Day-14 for that lead. Use value_delivery_queue.json (value_delivery_on_interested section) for 3-option pricing.",
-        "4. Batch 6 trigger check: if post-IMAP INTERESTED count ≥ 2 → fire Batch 6 scoping (Harrogate District + Craven District) immediately. Start data collection today.",
-        "5. CHANGELOG.md — 53+ days overdue. Write today same session as IMAP. Final deadline before reply wave closes.",
-        "6. Friday: final IMAP check before weekend (72h+ post-send). Reply wave closes after Friday."
+        "4. Batch 6 trigger: LAST WINDOW TODAY. If INTERESTED count ≥ 2 after IMAP → fire Batch 6 scoping immediately (Harrogate District + Craven District). If < 2: defer to post-Day-14 post-mortem (Wednesday 2026-05-27 BRAIN run).",
+        "5. CHANGELOG.md — 54+ days overdue. Write today same session as IMAP. Final deadline."
       ],
-      "wednesday_imap_status": {
-        "wednesday_sweep_executed": "UNCONFIRMED — no new entries in new_replies.json since 2026-04-04. 55-session HANDS execution pattern.",
-        "consequence": "If Wednesday sweep was not executed, total IMAP gap is 47 days. Thursday sweep is NOW the primary monitoring action.",
-        "note": "This is the same pattern as every prior session. BRAIN cannot confirm HANDS execution. Thursday sweep covers both the Wednesday and Thursday windows."
+      "thursday_imap_status": {
+        "thursday_sweep_executed": "UNCONFIRMED — no new entries in new_replies.json since 2026-04-04. 56-session HANDS execution pattern.",
+        "consequence": "If Thursday sweep was not executed, total IMAP gap is 48 days. Friday sweep covers both the Thursday and Friday windows.",
+        "note": "This is the same pattern as every prior session. BRAIN cannot confirm HANDS execution. Friday sweep is the absolute final window before Day-14."
+      },
+      "reply_wave_status": {
+        "wave_status": "CLOSING TODAY — 72h+ post-Day-7 sends assumed Tuesday 2026-05-19",
+        "after_friday": "Remaining replies will be sporadic. Post-Day-14 reply window opens Wednesday 2026-05-27.",
+        "significance": "Any undecided lead who has been sitting on the Day-7 email for 72h is at the peak of the reply curve. After today, that curve drops sharply."
       },
       "linkedin_status": {
         "archive_trigger_status": "FIRED — Tuesday 2026-05-19 EOD (unconditional, 54-session failure)",
-        "consequence": "All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn effective Tuesday 2026-05-19 EOD. PERMANENTLY CLOSED.",
+        "consequence": "All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn channel. PERMANENTLY CLOSED.",
         "email_channel_only": "Day-14 breakup (Tuesday 2026-05-26) is the FINAL touchpoint on the only remaining channel."
       }
     }
   },
 
   "imap_status": {
-    "gap_days_from_confirmed_check": 47,
+    "gap_days_from_confirmed_check": 48,
     "last_confirmed_check": "2026-04-04",
-    "wednesday_sweep_status": "UNCONFIRMED — no new entries in new_replies.json. Wednesday per-lead sweep either not executed or returned zero replies.",
-    "today_sweep_requirement": "MANDATORY — per Batch 5 lead. Secondary post-Day-7 reply peak is TODAY (48-72h post-send assumed Tuesday). Reply wave closes Friday. Do not delay.",
+    "thursday_sweep_status": "UNCONFIRMED — no new entries in new_replies.json. Thursday per-lead sweep either not executed or returned zero replies.",
+    "today_sweep_requirement": "MANDATORY — per Batch 5 lead. Reply wave CLOSES TODAY (72h+ post-Day-7 assumed Tuesday). This is the absolute final check before Day-14 (Tuesday 2026-05-26). Do not delay.",
     "new_replies_since_april": 0,
-    "batch_5_reply_status": "Zero Batch 5 replies confirmed in new_replies.json. 47-day IMAP gap means inbox state unconfirmed.",
+    "batch_5_reply_status": "Zero Batch 5 replies confirmed in new_replies.json. 48-day IMAP gap means inbox state unconfirmed.",
     "reply_peak_post_day7": {
       "expected_window": "Wednesday-Friday 2026-05-20-22 (24-72h post-Day-7 sends assumed 2026-05-19)",
-      "secondary_peak_day": "TODAY Thursday 2026-05-21 — 48-72h post-send peak",
-      "window_closes": "Friday 2026-05-22 (72h+ post-send). After Friday, remaining replies will be sporadic.",
-      "imap_check_required": "TODAY (secondary peak) + Friday (final pre-weekend check).",
-      "priority": "HIGHEST URGENCY — reply wave closes in 24-48h. This is the last window before Day-14 (Tuesday 2026-05-26)."
+      "wave_closes": "TODAY Friday 2026-05-22 (72h+ post-send). After today, remaining replies will be sporadic.",
+      "imap_check_required": "TODAY — final pre-weekend check. This is the last window before Day-14 (Tuesday 2026-05-26).",
+      "priority": "HIGHEST URGENCY — reply wave closes today. Last window before Day-14."
     },
     "leads_never_to_sweep": [1, 3, 22],
     "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No further IMAP under any circumstances.",
     "outcomes_and_actions_today": {
-      "if_interested_reply_found": "Write to new_replies.json immediately. Classify in reply_classifications.json. CANCEL Day-14 for that lead — use proposal flow instead. Prepare proposal within 24h from reply time (NON-NEGOTIABLE — 24/7). Update value_delivery_queue.json batch_5_interested_leads. Log CHANGELOG. Update CRM to proposal_sent.",
+      "if_interested_reply_found": "Write to new_replies.json immediately. Classify in reply_classifications.json as INTERESTED with full reasoning. CANCEL Day-14 for that lead — use proposal flow instead. Prepare bespoke proposal within 24h from reply time (NON-NEGOTIABLE — 24/7). Update value_delivery_queue.json batch_5_interested_leads. Log CHANGELOG. Update CRM to proposal_sent.",
       "if_not_interested": "Classify NOT_INTERESTED. Cancel Day-14 permanently for that lead. Suppress all channels. Log CHANGELOG.",
       "if_unsubscribe": "Classify UNSUBSCRIBE. Cancel Day-14. Suppress all channels within 24h (GDPR Article 21). Log audit_log and CHANGELOG.",
-      "if_ooo": "Classify OUT_OF_OFFICE. Note return date. Return must be before 2026-05-25 to receive Day-14 (4-touchpoint limit applies).",
-      "if_wrong_person": "Classify WRONG_PERSON. Pause sequence. Investigate correct contact. Log CHANGELOG.",
-      "if_clean_or_unconfirmed": "Friday IMAP check. Proceed with Day-14 on 2026-05-26 for all non-suppressed Batch 5 leads."
+      "if_ooo": "Classify OUT_OF_OFFICE. Note return date. Return must be BEFORE 2026-05-25 to receive Day-14 (4-touchpoint hard limit). If return is after 2026-05-25: mark sequence complete for that lead.",
+      "if_wrong_person": "Classify WRONG_PERSON. Pause sequence. Investigate correct contact via website/Companies House. Log CHANGELOG.",
+      "if_clean_or_unconfirmed": "Proceed with Day-14 on 2026-05-26 for all non-suppressed Batch 5 leads."
     }
   },
 
   "batch_5_reply_status": {
-    "batch_5_day": 9,
-    "days_since_day0_send": 9,
-    "days_since_day3_bump": 6,
-    "days_since_day7_send": 2,
+    "batch_5_day": 10,
+    "days_since_day0_send": 10,
+    "days_since_day3_bump": 7,
+    "days_since_day7_send": 3,
     "batch_5_replies_received": 0,
-    "post_day7_reply_window": "SECONDARY PEAK — TODAY Thursday (48-72h). Window closes Friday 2026-05-22 (72h+).",
+    "post_day7_reply_window": "CLOSING TODAY — 72h+ post-send. After today, remaining replies will be sporadic.",
     "batch_6_trigger": {
       "condition": "Batch 5 INTERESTED replies ≥ 2 after full post-Day-7 IMAP sweep",
       "current_count": 0,
-      "status": "PENDING IMAP CONFIRMATION — 0 confirmed replies but 47-day IMAP gap means inbox state unknown. Execute IMAP today before declaring trigger NOT MET.",
-      "deadline_for_trigger": "Today (Thursday) or Friday — after reply wave closes, probability of hitting ≥ 2 INTERESTED before Day-14 is very low. If trigger NOT met: defer Batch 6 to after Day-14 post-mortem (Tuesday 2026-05-27).",
+      "status": "LAST WINDOW TODAY — reply wave closes after Friday. If IMAP confirms ≥ 2 INTERESTED today: fire Batch 6 immediately. If not: defer to post-Day-14 post-mortem (Wednesday 2026-05-27).",
+      "deadline_for_trigger": "TODAY Friday 2026-05-22 — absolute final window before reply wave closes.",
       "action_if_triggered": "Fire Batch 6 scoping immediately. Territory: Harrogate District (Knaresborough, Ripon new leads only, Boroughbridge) + Craven District (Skipton, Settle, Grassington, Gargrave). Data collection from today. Initial sends: Tuesday 2026-06-02. LinkedIn: MUST activate within Day 3-7 (absolute deadline Friday 2026-06-06 — no deferrals).",
-      "action_if_not_triggered": "Full Batch 5 post-mortem after Day-14 (Tuesday 2026-05-27 BRAIN run). Batch 6 geography confirmed; start date deferred. Review signal mix and sector targeting before expanding."
+      "action_if_not_triggered": "Full Batch 5 post-mortem after Day-14 (Wednesday 2026-05-27 BRAIN run). Batch 6 geography confirmed; start date deferred. Review signal mix and sector targeting before expanding."
     }
   },
 
   "new_signals_today": 0,
   "new_leads_today": 0,
   "signal_assignments": [],
-  "signal_assignment_note": "No new lead data received from HANDS (55+ consecutive sessions). All Batch 5 copy READY in daily_email_plan.json. Waterfall unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%).",
+  "signal_assignment_note": "No new lead data received from HANDS (56+ consecutive sessions). All Batch 5 copy READY in daily_email_plan.json. Waterfall unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%).",
 
   "do_not_email": [1, 2, 3, 7, 19, 22],
   "suppressed_lead_ids": [7, 19],
@@ -90,52 +93,56 @@
   "sequences_complete": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
 
   "today_execution_brief": {
-    "date": "2026-05-21 (Thursday) — Batch 5 Day 9 — SECONDARY POST-DAY-7 MONITORING",
+    "date": "2026-05-22 (Friday) — Batch 5 Day 10 — FINAL PRE-WEEKEND IMAP CHECK",
     "sequence": [
       {
         "priority": 1,
-        "action": "IMAP sweep — all Batch 5 leads immediately (NOT leads 1/3/22)",
-        "notes": "Per lead. 47-day IMAP gap. Wednesday sweep UNCONFIRMED. Secondary post-Day-7 peak is NOW (48-72h). This is the penultimate reply window — closes Friday. If INTERESTED: write new_replies.json, classify reply_classifications.json, CANCEL Day-14 (use proposal flow), 24h proposal SLA from reply time (24/7). If NOT_INTERESTED: cancel Day-14, suppress. If UNSUBSCRIBE: suppress within 24h GDPR Article 21. If OOO: note return date (must be before 2026-05-25 to receive Day-14)."
+        "action": "IMAP sweep — all Batch 5 leads (NOT leads 1/3/22)",
+        "notes": "Per lead. 48-day IMAP gap. Thursday sweep UNCONFIRMED. Reply wave CLOSES TODAY (72h+ post-Day-7). This is the absolute final check before Day-14. If INTERESTED: write new_replies.json, classify reply_classifications.json, CANCEL Day-14 (use proposal flow), 24h proposal SLA from reply time (24/7). If NOT_INTERESTED: cancel Day-14, suppress. If UNSUBSCRIBE: suppress within 24h GDPR Article 21. If OOO: note return date — must return BEFORE 2026-05-25 to receive Day-14."
       },
       {
         "priority": 2,
-        "action": "CHANGELOG.md update — MANDATORY",
-        "notes": "53+ days overdue. Write today same session as IMAP. Final opportunity before post-Day-7 monitoring window closes. Absolute deadline."
+        "action": "Classify any new replies",
+        "notes": "Write raw text to new_replies.json immediately. Classify in reply_classifications.json same session. Update value_delivery_queue.json if INTERESTED. Log CHANGELOG same session."
       },
       {
         "priority": 3,
-        "action": "Batch 6 trigger decision — after IMAP results",
-        "notes": "If INTERESTED count ≥ 2 post-IMAP: fire Batch 6 scoping immediately (Harrogate + Craven). If < 2: defer Batch 6 to after Day-14 post-mortem (Tuesday 2026-05-27). Reply wave closes Friday — this is the last practical trigger window before Day-14."
+        "action": "Batch 6 trigger decision",
+        "notes": "LAST WINDOW TODAY. If INTERESTED count ≥ 2 post-IMAP: fire Batch 6 scoping immediately (Harrogate + Craven). If < 2: defer to post-Day-14 post-mortem (Wednesday 2026-05-27). Reply wave closes after today."
       },
       {
         "priority": 4,
-        "action": "Friday IMAP — final pre-weekend check",
-        "notes": "72h+ post-Day-7. Reply wave closes after Friday. Last check before Day-14 send window (Tuesday 2026-05-26). Per lead. NOT leads 1/3/22."
+        "action": "CHANGELOG.md update — MANDATORY",
+        "notes": "54+ days overdue. Write today same session as IMAP. This is the final window before Day-14. No further deferrals."
       }
     ]
   },
 
   "forward_calendar": {
-    "friday_2026_05_22": {"batch_5_day": 10, "action": "IMAP per Batch 5 lead — 72h+ post-Day-7. Final pre-weekend check. Reply wave closes after Friday. Per lead. NOT leads 1/3/22."},
-    "tuesday_2026_05_26": {"batch_5_day": 14, "action": "Day-14 breakup sends 09:00-10:30. Copy READY in daily_email_plan.json (day14_breakup section). IMAP per lead before each send. Final touchpoint — 4-touchpoint sequence complete. Log CHANGELOG same session."},
-    "wednesday_2026_05_27": {"batch_5_day": 15, "action": "Post-Day-14 reply monitoring. Full Batch 5 post-mortem BRAIN run. Batch 6 decision final. Total campaign assessment."}
+    "saturday_2026_05_23": {"action": "No sends. No IMAP. Weekend block. Post-Day-14 reply window does not open until after Day-14 sends."},
+    "sunday_2026_05_24": {"action": "No sends. No IMAP. Weekend block."},
+    "monday_2026_05_25": {"action": "Day before Day-14. No sends today. Final preparation only. Review Day-14 copy in daily_email_plan.json (day14_breakup section) — ensure all placeholders ready from Batch 5 send records."},
+    "tuesday_2026_05_26": {"batch_5_day": 14, "action": "Day-14 breakup sends 09:00-10:30. IMAP per lead before each send. Copy READY in daily_email_plan.json (day14_breakup section). Final touchpoint — 4-touchpoint sequence complete. Update lead status to sequence_complete. Log CHANGELOG same session. Note reapproach 2026-11-26."},
+    "wednesday_2026_05_27": {"batch_5_day": 15, "action": "Post-Day-14 reply monitoring begins. Full Batch 5 post-mortem BRAIN run. Batch 6 decision final. Total campaign assessment."}
   },
 
+  "ooo_deadline_note": "Day-14 is Tuesday 2026-05-26. Any lead with an OOO return date AFTER 2026-05-25 cannot receive Day-14 (4-touchpoint hard limit). Mark sequence complete for those leads — Day-14 not sent.",
+
   "summary": {
-    "day": 55,
-    "date": "2026-05-21 (Thursday, Batch 5 Day 9 — SECONDARY POST-DAY-7 PEAK)",
-    "today_primary_action": "IMAP sweep per Batch 5 lead — secondary post-Day-7 reply peak (48-72h). Reply wave closes Friday.",
-    "imap_gap_days": 47,
-    "wednesday_imap_status": "UNCONFIRMED — 55-session HANDS pattern",
+    "day": 56,
+    "date": "2026-05-22 (Friday, Batch 5 Day 10 — FINAL PRE-WEEKEND IMAP CHECK)",
+    "today_primary_action": "IMAP sweep per Batch 5 lead — reply wave CLOSES TODAY (72h+ post-Day-7). Final check before Day-14.",
+    "imap_gap_days": 48,
+    "thursday_imap_status": "UNCONFIRMED — 56-session HANDS pattern",
     "batch_5_interested_replies": 0,
-    "day7_sends": "ASSUMED SENT Tuesday 2026-05-19 (UNCONFIRMED — 55-session pattern)",
+    "day7_sends": "ASSUMED SENT Tuesday 2026-05-19 (UNCONFIRMED — 56-session pattern)",
     "linkedin_channel": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD",
-    "post_day7_reply_window": "SECONDARY PEAK — TODAY Thursday (48-72h). Closes Friday.",
-    "batch_6_trigger": "PENDING IMAP — 0 confirmed replies. Cannot fire without IMAP confirmation today.",
+    "post_day7_reply_window": "CLOSING TODAY — 72h+ post-Day-7. Final window.",
+    "batch_6_trigger": "LAST WINDOW TODAY — 0 confirmed replies. Cannot fire without IMAP confirmation.",
     "day14_send_date": "Tuesday 2026-05-26, 09:00-10:30",
-    "day14_days_away": 5,
+    "day14_days_away": 4,
     "day14_copy_status": "READY — daily_email_plan.json (day14_breakup section — 4 signal variants)",
-    "changelog_overdue_days": "53+",
+    "changelog_overdue_days": "54+",
     "new_leads": 0,
     "new_signals": 0
   }
