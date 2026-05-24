@@ -1,0 +1,218 @@
+{
+  "report_date": "2026-05-24",
+  "campaign_weeks": "9",
+  "period": "2026-05-18 to 2026-05-24",
+  "days": "52-58",
+  "generated_by": "brain-intelligence-agent",
+  "previous_report": "week_2026-05-17",
+  "next_report_due": "2026-05-31",
+
+  "total_sent": 142,
+  "total_sent_note": "Estimated midpoint (range 127-145). All Batch 4+ sends UNCONFIRMED. CHANGELOG required to confirm.",
+
+  "this_week_sends_estimated": {
+    "batch_5_day7_new_angle": 15,
+    "batch_5_day7_note": "Estimated midpoint (12-18) — ASSUMED SENT Tuesday 2026-05-19, UNCONFIRMED",
+    "new_initial_sends": 0,
+    "total_estimated_this_week": 15
+  },
+
+  "reply_rate": 0.179,
+  "reply_rate_note": "17.9% overall (11 confirmed replies / ~61 confirmed initial contacts). No new replies confirmed this week.",
+
+  "new_replies_this_week": 0,
+  "batch_5_replies": 0,
+  "batch_5_reply_wave": "CLOSED — post-Day-7 72h+ cutoff passed Friday 2026-05-22 evening. Zero confirmed replies.",
+
+  "email_channel": {
+    "total_leads_scraped_campaign": 79,
+    "total_leads_scraped_campaign_note": "~61 confirmed + 12-18 Batch 5 UNCONFIRMED",
+    "total_initial_sends_campaign": 79,
+    "total_initial_sends_note": "Estimated — Batch 5 Day-0 UNCONFIRMED",
+    "total_followups_sent_campaign": 63,
+    "total_followups_note": "Estimated — Day-3 + Day-7 + all legacy follow-ups. All Batch 4+ UNCONFIRMED.",
+    "total_emails_sent_campaign": 142,
+    "total_replies_campaign": 11,
+    "reply_rate": 0.179,
+    "interested": 3,
+    "positive_reply_rate": 0.05,
+    "not_interested": 1,
+    "out_of_office": 1,
+    "wrong_person": 0,
+    "unsubscribe": 1,
+    "unsubscribe_rate": 0.017,
+    "conversions": 0,
+    "revenue_gbp": 0,
+    "active_sequences": 1,
+    "active_sequences_note": "Batch 5 Ryedale — Day-14 Tuesday 2026-05-26 (final touchpoint)",
+    "warm_pipeline_leads": [1, 3, 22],
+    "warm_pipeline_status": "PERMANENTLY_ARCHIVED_LOST_NO_RESPONSE",
+    "warm_pipeline_value_written_off_gbp": "800-1175",
+    "imap_gap_days": 50,
+    "imap_status": "CRITICAL — 50-day gap. Sweep MANDATORY per Batch 5 lead before each Day-14 send Tuesday 2026-05-26."
+  },
+
+  "linkedin_channel": {
+    "status": "PERMANENTLY_CLOSED",
+    "closure_date": "2026-05-19 EOD",
+    "closure_reason": "Archive trigger fired — linkedin_profiles.json never written (54-session failure)",
+    "connection_requests_sent": 0,
+    "acceptance_rate": null,
+    "moved_to_nurture": 0,
+    "profiles_json_written": 0,
+    "consecutive_runs_without_execution": 54,
+    "root_cause": "HANDS execution latency — notes generated on 20+ BRAIN runs, zero sent in 54 sessions",
+    "warm_pipeline_linkedin_value_lost_gbp": "800-1175",
+    "batch_5_linkedin_outcome": "ALL Batch 5 Ryedale leads archived LOST_NO_RESPONSE — PERMANENT",
+    "further_linkedin_permitted": false,
+    "lesson_for_batch_6": "LinkedIn MUST activate within Day 3-7. profiles.json written same session. Archive trigger Day 7 fires unconditionally."
+  },
+
+  "best_framework": "pas-ssl",
+  "framework_performance": {
+    "pas_ssl": {
+      "positive_replies": 3,
+      "estimated_sends": 20,
+      "interested_rate": 0.15,
+      "week_10_allocation": 0.60,
+      "notes": "Non-negotiable. Only proven winner. 15% INTERESTED rate from ~20 sends."
+    },
+    "pas_mobile": {
+      "positive_replies": 0,
+      "day7_indirect_conversions": 1,
+      "estimated_sends": 12,
+      "interested_rate_direct": 0.0,
+      "combined_rate": 0.083,
+      "week_10_allocation": 0.20,
+      "notes": "0% direct. ~8% combined (Day-7 SSL pivot only). Secondary channel."
+    },
+    "bab_no_website": {
+      "positive_replies": 0,
+      "estimated_sends": 8,
+      "interested_rate": 0.0,
+      "week_10_allocation": 0.15,
+      "notes": "0% at 50+ bar. Batch 5 test at 20+ reviews pending Day-14 results."
+    },
+    "aida_keyword_gap": {
+      "positive_replies": 0,
+      "estimated_sends": 6,
+      "interested_rate": 0.0,
+      "week_10_allocation": 0.05,
+      "notes": "Abstract angle 0%. Batch 5 keyword-specific angle test pending Day-14 results."
+    },
+    "question": {"positive_replies": 0, "estimated_sends": 4, "week_10_allocation": 0.0},
+    "cliffhanger": {"positive_replies": 0, "estimated_sends": 0, "week_10_allocation": 0.0},
+    "observation": {"positive_replies": 0, "estimated_sends": 0, "week_10_allocation": 0.0}
+  },
+
+  "best_signal_type": "ssl",
+  "signal_performance": {
+    "ssl": {"positive_replies": 3, "estimated_sends": 20, "interested_rate": 0.15, "week_10_allocation": 0.60},
+    "mobile": {"positive_replies": 0, "day7_indirect": 1, "estimated_sends": 12, "combined_rate": 0.083, "week_10_allocation": 0.20},
+    "no_website": {"positive_replies": 0, "estimated_sends": 8, "interested_rate": 0.0, "week_10_allocation": 0.15},
+    "aida_keyword_gap": {"positive_replies": 0, "estimated_sends": 6, "interested_rate": 0.0, "week_10_allocation": 0.05},
+    "generic": {"positive_replies": 0, "estimated_sends": 4, "interested_rate": 0.0, "week_10_allocation": 0.0, "deprecated": true}
+  },
+
+  "best_town": "Ripon",
+  "town_performance": {
+    "Ripon": {"interested": 1, "est_leads": 3, "est_rate": 0.33, "verdict": "strong"},
+    "Leeds": {"interested": 1, "est_leads": 5, "est_rate": 0.20, "verdict": "strong"},
+    "Sowerby_Bridge": {"interested": 1, "est_leads": 2, "est_rate": 0.50, "verdict": "strong_small_sample"},
+    "Halifax": {"interested": 0, "est_leads": 3, "verdict": "inconclusive"},
+    "Scarborough": {"interested": 0, "est_leads": 4, "verdict": "inconclusive"},
+    "Ryedale_District": {"interested": 0, "est_leads": 15, "verdict": "pending_day14_results", "note": "Day-14 Tuesday 2026-05-26. Post-window IMAP Wed 2026-05-27+."}
+  },
+
+  "best_score_range": "70-100",
+  "score_range_performance": {
+    "70_to_100": {"interested": 3, "est_leads_emailed": 15, "rate": 0.20, "notes": "100% of positives"},
+    "55_to_69": {"interested": 0, "est_leads_emailed": 25, "rate": 0.0},
+    "40_to_54": {"interested": 0, "est_leads_emailed": 15, "rate": 0.0},
+    "below_40": {"interested": 0, "est_leads_emailed": 5, "rate": 0.0}
+  },
+
+  "best_subject_pattern": "[First name] — [town] [business type] flagged 'Not Secure'",
+
+  "send_timing": {
+    "confirmed_best_day": "Tuesday",
+    "confirmed_best_window": "09:00-10:30",
+    "batch_5_day14_send_date": "Tuesday 2026-05-26, 09:00-10:30",
+    "batch_6_initial_send_date": "Tuesday 2026-06-02, 09:00-10:30"
+  },
+
+  "linkedin_acceptance_rate": null,
+  "linkedin_execution_rate": 0.0,
+
+  "batch_5_status": {
+    "day_in_sequence": 12,
+    "day0_status": "ASSUMED_SENT Tuesday 2026-05-12 — UNCONFIRMED",
+    "day3_status": "ASSUMED_SENT Friday 2026-05-15 — UNCONFIRMED",
+    "day7_status": "ASSUMED_SENT Tuesday 2026-05-19 — UNCONFIRMED",
+    "linkedin_status": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD",
+    "post_day7_reply_wave": "CLOSED — 72h+ cutoff passed Friday 2026-05-22 evening. Zero confirmed replies.",
+    "replies_received": 0,
+    "day14_send_date": "Tuesday 2026-05-26, 09:00-10:30",
+    "day14_copy_status": "READY — data/daily_email_plan.json (day14_breakup section, 4 signal variants)",
+    "post_day14_reply_peak": "Wednesday-Friday 2026-05-27-29",
+    "batch_5_post_mortem": "Wednesday 2026-05-27 BRAIN run"
+  },
+
+  "week_9_key_events": [
+    "LinkedIn archive trigger fired Tuesday 2026-05-19 EOD — 54-session failure, PERMANENTLY CLOSED",
+    "Day-7 new-angle sends assumed complete Tuesday 2026-05-19 (UNCONFIRMED)",
+    "Post-Day-7 reply wave opened and closed Wednesday-Friday 2026-05-20-22 — zero confirmed replies",
+    "IMAP sweeps Wednesday, Thursday, Friday ALL UNCONFIRMED",
+    "Batch 6 trigger formally deferred to Wednesday 2026-05-27 post-mortem",
+    "IMAP gap grew from 42 days (Week 8) to 50 days (Week 9 close)",
+    "CHANGELOG grew from 50 days overdue to 56+ days overdue"
+  ],
+
+  "week_9_operational_failures": [
+    "LinkedIn archive trigger fired — 54-session execution failure — £800-1,175 pipeline confirmed written off",
+    "IMAP not executed Wednesday, Thursday or Friday — 4 additional missed sweeps (50-day total gap)",
+    "CHANGELOG still not updated — 56 days overdue",
+    "No per-lead confirmation data from HANDS — 58 consecutive sessions",
+    "Batch 6 trigger window passed (Friday 2026-05-22) without IMAP confirmation"
+  ],
+
+  "recommendations": [
+    "IMAP per Batch 5 lead before each Day-14 send — Tuesday 2026-05-26, in send order (NOT leads 1/3/22) — mandatory, covers entire 50-day gap",
+    "Day-14 breakup sends Tuesday 2026-05-26, 09:00-10:30 — copy READY in daily_email_plan.json (day14_breakup section)",
+    "CHANGELOG.md mandatory same session as Day-14 sends — 56+ days overdue, absolute final deadline",
+    "Update all Day-14 recipient lead statuses to sequence_complete, note reapproach 2026-11-26",
+    "Full Batch 5 post-mortem Wednesday 2026-05-27 BRAIN run — confirmed sends, reply rate, signal performance",
+    "Batch 6 launch decision Wednesday 2026-05-27 — Harrogate District + Craven District. Launch even if Batch 5 = 0 INTERESTED (IMAP gap prevents valid assessment)",
+    "Batch 6 initial sends Tuesday 2026-06-02 (SSL-PAS 60%, mobile-PAS 20%, BAB 15%, AIDA 5%)",
+    "LinkedIn activation Batch 6 on Day 3 (Friday 2026-06-05) — profiles.json same session — archive trigger Day 7 (Tuesday 2026-06-10) unconditional",
+    "Minimum lead score: maintain 55 (50+ exception: no-website 4*+ 20+ reviews owner known)",
+    "Post-reference check MANDATORY before every Batch 6 LinkedIn note — 3-4x acceptance rate premium"
+  ],
+
+  "batch_6_plan": {
+    "decision_date": "Wednesday 2026-05-27 BRAIN post-mortem",
+    "territory": "Harrogate District (Knaresborough, Boroughbridge, Ripon new leads) + Craven District (Skipton, Settle, Grassington, Gargrave)",
+    "scrape_start": "Wednesday 2026-05-27",
+    "initial_sends": "Tuesday 2026-06-02",
+    "linkedin_activation_day": 3,
+    "linkedin_activation_date": "Friday 2026-06-05",
+    "linkedin_archive_trigger_date": "Tuesday 2026-06-10 EOD",
+    "target_leads": "18-22",
+    "signal_mix": {"ssl_pas": 0.60, "mobile_pas": 0.20, "no_website_bab": 0.15, "aida_keyword_gap": 0.05}
+  },
+
+  "compliance": {
+    "unsubscribes_actioned": 1,
+    "gdpr_compliant": true,
+    "suppressed_leads": [7, 19],
+    "not_interested_all_channels": [2],
+    "permanently_archived": [1, 3, 22],
+    "lost_unresolved": [49, 51, 53, 54],
+    "all_outreach_b2b": true,
+    "legitimate_interest_documented": true,
+    "imap_gap_risk": "CRITICAL — 50 days without confirmed IMAP check",
+    "changelog_gap_risk": "CRITICAL — 56 days of unlogged sends",
+    "touchpoint_maximum": "4 — hard limit, respected in all confirmed sequences",
+    "linkedin_channel": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD"
+  }
+}
