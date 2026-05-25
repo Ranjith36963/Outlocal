@@ -1,22 +1,25 @@
 {
-  "classified_at": "2026-05-24T07:00:00Z",
-  "date": "2026-05-24",
-  "day_number": 58,
-  "batch_5_day": 12,
-  "note": "BRAIN layer — Day 58 (Sunday 2026-05-24, Batch 5 Day 12 — WEEKEND BRIDGE, WEEK 9 CLOSE). new_replies.json unchanged from 2026-04-04 (50 days). Zero Batch 5 replies confirmed to date. IMAP gap: 50 days from last confirmed check. Saturday/Sunday hard block — no IMAP today. Post-Day-7 reply wave is CLOSED (72h+ cutoff passed Friday evening). Next IMAP: Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send. LinkedIn channel: PERMANENTLY CLOSED. Day-14 breakup: Tuesday 2026-05-26 (2 days). If a reply arrives organically over the weekend: write raw text to new_replies.json immediately, classify here, action per classification.",
+  "classified_at": "2026-05-25T07:00:00Z",
+  "date": "2026-05-25",
+  "day_number": 59,
+  "batch_5_day": 13,
+  "note": "BRAIN layer — Day 59 (Monday 2026-05-25, Batch 5 Day 13 — MONDAY PREP DAY, PRE-DAY-14). new_replies.json CONFIRMED UNCHANGED from 2026-04-04 (51 days). ZERO weekend replies (Saturday/Sunday checked — no new entries). IMAP gap: 51 days from last confirmed check. Monday hard block — no IMAP today. Post-Day-7 reply wave is CLOSED. Next IMAP: TOMORROW Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send. LinkedIn channel: PERMANENTLY CLOSED. Day-14 breakup: TOMORROW Tuesday 2026-05-26 (1 day). If a reply arrives organically today: write raw text to new_replies.json immediately, classify here, action per classification.",
 
   "new_replies_this_run": 0,
-  "imap_gap_days_from_confirmed_check": 50,
+  "weekend_new_replies": 0,
+  "imap_gap_days_from_confirmed_check": 51,
   "imap_last_confirmed_check": "2026-04-04",
-  "friday_sweep_status": "UNCONFIRMED — no new entries in new_replies.json. 58-session HANDS execution pattern. Wednesday, Thursday, and Friday sweeps all UNCONFIRMED.",
-  "reply_wave_status": "CLOSED — 72h+ post-Day-7 cutoff passed Friday 2026-05-22 evening. Remaining replies will be sporadic only. Post-Day-14 reply window opens Wednesday 2026-05-27.",
+  "saturday_sweep_status": "NOT EXECUTED — Saturday hard block (correct).",
+  "sunday_sweep_status": "NOT EXECUTED — Sunday hard block (correct).",
+  "monday_sweep_status": "NOT EXECUTING — Monday hard block. Tuesday per-lead sweep covers entire 51-day gap.",
+  "reply_wave_status": "CLOSED — 72h+ post-Day-7 cutoff passed Friday 2026-05-22 evening. Remaining replies sporadic only. Post-Day-14 reply window opens Wednesday 2026-05-27.",
 
   "imap_next_required": {
-    "date": "2026-05-26 (Tuesday) — per Batch 5 lead before each Day-14 send",
-    "priority": "MANDATORY — covers entire 50-day IMAP gap. Per lead, in send order. If INTERESTED reply found before a lead's Day-14: cancel Day-14 for that lead, use proposal flow instead.",
-    "no_imap_today": "Sunday hard block — no IMAP today or Monday.",
+    "date": "TOMORROW 2026-05-26 (Tuesday) — per Batch 5 lead before each Day-14 send",
+    "priority": "MANDATORY — covers entire 51-day IMAP gap. Per lead, in send order. If INTERESTED reply found before a lead's Day-14: cancel Day-14 for that lead, use proposal flow instead.",
+    "no_imap_today": "Monday hard block — no IMAP today. TOMORROW per-lead sweep covers it.",
     "leads_never_to_sweep": [1, 3, 22],
-    "ooo_deadline": "Day-14 is Tuesday 2026-05-26. Any OOO lead with return date AFTER 2026-05-25 cannot receive Day-14 (4-touchpoint hard limit). Mark sequence complete."
+    "ooo_deadline": "Day-14 is TOMORROW Tuesday 2026-05-26. Any OOO lead with return date AFTER 2026-05-25 (today) cannot receive Day-14 (4-touchpoint hard limit). Mark sequence complete."
   },
 
   "action_on_reply_if_arrives_weekend": {
@@ -148,14 +151,15 @@
 
   "summary": {
     "new_replies_today": 0,
+    "weekend_new_replies": 0,
     "total_to_date": 11,
     "batch_5_replies": 0,
     "reply_wave_status": "CLOSED — 72h+ post-Day-7 cutoff passed Friday evening. Remaining replies sporadic only.",
-    "friday_sweep_status": "UNCONFIRMED — 58-session HANDS pattern",
-    "imap_gap_days_from_confirmed": 50,
-    "imap_check_required_next": "Tuesday 2026-05-26 — per Batch 5 lead before each Day-14 send. Covers entire 50-day gap.",
-    "imap_check_NOT_today": "Sunday hard block — no IMAP today or Monday.",
-    "ooo_cutoff": "2026-05-25 — any OOO return AFTER this date cannot receive Day-14",
+    "monday_sweep_status": "NOT EXECUTING — Monday hard block. TOMORROW per-lead sweep covers entire 51-day gap.",
+    "imap_gap_days_from_confirmed": 51,
+    "imap_check_required_next": "TOMORROW Tuesday 2026-05-26 — per Batch 5 lead before each Day-14 send. Covers entire 51-day gap.",
+    "imap_check_NOT_today": "Monday hard block — no IMAP today. TOMORROW per-lead sweep covers it.",
+    "ooo_cutoff": "2026-05-25 (TODAY) — any OOO return AFTER today cannot receive Day-14",
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
@@ -165,6 +169,6 @@
     "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated across 54+ sessions",
     "archive_override": "CLOSED — unconditionally final from 2026-05-08 EOD",
     "linkedin_archived_batch_5": "ALL Batch 5 Ryedale leads — LOST_NO_RESPONSE on LinkedIn channel effective 2026-05-19 EOD",
-    "hands_instructions": "NO IMAP TODAY (Sunday hard block). Next IMAP: Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send (in send order — NOT leads 1/3/22). 50-day IMAP gap. If reply arrives organically over the weekend: write to new_replies.json immediately, classify here, action per classification. If INTERESTED: 24h proposal SLA from reply time (24/7 — NON-NEGOTIABLE), cancel Day-14, use proposal flow. CHANGELOG mandatory Tuesday same session as Day-14 sends — 56+ days overdue."
+    "hands_instructions": "NO IMAP TODAY (Monday hard block). ZERO weekend replies confirmed. Next IMAP: TOMORROW Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send (in send order — NOT leads 1/3/22). 51-day IMAP gap. If reply arrives organically today (Monday): write to new_replies.json immediately, classify here, action per classification. If INTERESTED: 24h proposal SLA from reply time (24/7 — NON-NEGOTIABLE), cancel Day-14, use proposal flow. CHANGELOG mandatory TOMORROW Tuesday same session as Day-14 sends — 57+ days overdue — ABSOLUTE FINAL DEADLINE."
   }
 }

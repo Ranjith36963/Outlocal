@@ -1,96 +1,105 @@
 {
-  "generated_at": "2026-05-24T07:00:00Z",
-  "date": "2026-05-24",
-  "day_number": 58,
-  "batch_5_day": 12,
-  "note": "BRAIN layer — Day 58 (Sunday 2026-05-24, Batch 5 Day 12 — WEEKEND BRIDGE, WEEK 9 CLOSE). Post-Day-7 reply wave is CLOSED (72h+ cutoff passed Friday evening). IMAP gap: 50 days from last confirmed check (2026-04-04). Saturday, Sunday hard block — no IMAP today. No sends today. Day-14 breakup: 2 days away — copy READY in daily_email_plan.json (day14_breakup section). Batch 6 trigger: FORMALLY DEFERRED to Wednesday 2026-05-27 post-mortem. LinkedIn PERMANENTLY CLOSED. CHANGELOG: 56+ days overdue — mandatory Tuesday same session as Day-14 sends. Week 9 intelligence report generated: data/weekly_reports/week_2026-05-24.md",
+  "generated_at": "2026-05-25T07:00:00Z",
+  "date": "2026-05-25",
+  "day_number": 59,
+  "batch_5_day": 13,
+  "note": "BRAIN layer — Day 59 (Monday 2026-05-25, Batch 5 Day 13 — MONDAY PREP DAY, PRE-DAY-14). No new replies over the weekend (new_replies.json unchanged from 2026-04-04 — 51 days). IMAP gap: 51 days from last confirmed check (2026-04-04). No IMAP today — Monday hard block, Tuesday per-lead sweep covers it. No sends today — Day-14 breakup is TOMORROW Tuesday 2026-05-26, 09:00-10:30. Copy READY in daily_email_plan.json (day14_breakup section). Batch 6 trigger: FORMALLY DEFERRED to Wednesday 2026-05-27 post-mortem. LinkedIn PERMANENTLY CLOSED. CHANGELOG: 57+ days overdue — MANDATORY TOMORROW Tuesday same session as Day-14 sends. ABSOLUTE FINAL DEADLINE.",
 
   "day_assessment": {
-    "today_sunday": {
-      "date": "2026-05-24",
-      "day_of_week": "Sunday",
-      "campaign_day": 58,
-      "batch_5_day": 12,
+    "today_monday": {
+      "date": "2026-05-25",
+      "day_of_week": "Monday",
+      "campaign_day": 59,
+      "batch_5_day": 13,
       "is_uk_bank_holiday": false,
       "is_send_day": false,
-      "send_type": "WEEKEND BLOCK — no outbound sends, no IMAP. Weekend hard block.",
+      "send_type": "PREP DAY — no outbound sends. Final Day-14 prep. Review send list from 2026-05-12 records.",
       "primary_actions_today": [
-        "NO ACTIONS TODAY — Sunday hard block. No sends. No IMAP.",
-        "If an INTERESTED reply arrives organically over the weekend: write to new_replies.json immediately, classify in reply_classifications.json, CANCEL Day-14 for that lead, prepare proposal within 24h from reply time (24/7 — NON-NEGOTIABLE).",
-        "Day-14 breakup copy is READY in daily_email_plan.json — no further BRAIN work needed before Tuesday.",
-        "Week 9 intelligence report generated this session: data/weekly_reports/week_2026-05-24.md"
+        "NO IMAP TODAY — Monday hard block. Tuesday per-lead sweep covers the entire 51-day gap.",
+        "Review Day-14 copy in daily_email_plan.json (day14_breakup section) — 4 signal variants READY. Confirm against 2026-05-12 send list.",
+        "Consider CHANGELOG if time allows — 57+ days overdue, mandatory TOMORROW.",
+        "If an INTERESTED reply arrives organically today: write to new_replies.json immediately, classify in reply_classifications.json, CANCEL Day-14 for that lead, prepare proposal within 24h from reply time (24/7 — NON-NEGOTIABLE)."
       ],
+      "weekend_check": {
+        "new_replies_received": false,
+        "new_replies_json_status": "UNCHANGED from 2026-04-04 — 5 historical replies only. Zero weekend arrivals confirmed.",
+        "imap_status": "NOT EXECUTED — Saturday/Sunday hard block (correct). 51-day gap as of today.",
+        "consequence": "No spontaneous INTERESTED replies over the weekend. All Batch 5 leads proceed to Day-14 tomorrow (subject to IMAP check per lead before each send)."
+      },
       "reply_wave_status": {
         "wave_status": "CLOSED — 72h+ post-Day-7 cutoff passed Friday 2026-05-22 evening",
-        "after_wave_closure": "Remaining replies will be sporadic only. Post-Day-14 reply window opens Wednesday 2026-05-27.",
-        "significance": "The structured post-Day-7 reply wave is over. Any replies arriving Saturday-Monday are late spontaneous responders. Day-14 breakup Tuesday 2026-05-26 opens the next structured reply window — and the final structured window in the Batch 5 sequence."
+        "after_wave_closure": "Remaining replies will be sporadic only. Post-Day-14 reply window opens Wednesday 2026-05-27 (24h post-Tuesday send).",
+        "significance": "No structured reply window active. Day-14 breakup TOMORROW opens the final structured reply window for Batch 5."
       },
       "imap_status": {
-        "saturday_sweep_executed": "NOT EXECUTED — Saturday hard block (expected, correct).",
-        "sunday_today": "NOT EXECUTING — Sunday hard block.",
-        "consequence": "Total IMAP gap is now 50 days. Next IMAP: Tuesday 2026-05-26 per lead before each Day-14 send. IMAP covers: the full 50-day gap.",
-        "note": "BRAIN cannot confirm HANDS execution. Proceeding on basis that inbox may contain replies. Tuesday IMAP per lead mandatory before each Day-14 send."
+        "saturday_sweep_executed": "NOT EXECUTED — Saturday hard block (correct).",
+        "sunday_executed": "NOT EXECUTED — Sunday hard block (correct).",
+        "monday_today": "NOT EXECUTING — Monday hard block.",
+        "consequence": "Total IMAP gap is now 51 days. Next IMAP: Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send in send order. This sweep covers the entire 51-day gap.",
+        "note": "IMAP per lead MANDATORY before each Day-14 send tomorrow. In send order. NOT leads 1/3/22."
       },
       "linkedin_status": {
         "archive_trigger_status": "FIRED — Tuesday 2026-05-19 EOD (unconditional, 54-session failure)",
         "consequence": "All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn channel. PERMANENTLY CLOSED.",
-        "email_channel_only": "Day-14 breakup (Tuesday 2026-05-26) is the FINAL touchpoint on the only remaining channel."
+        "email_channel_only": "Day-14 breakup (TOMORROW Tuesday 2026-05-26) is the FINAL touchpoint on the only remaining channel."
       }
     }
   },
 
   "imap_status": {
-    "gap_days_from_confirmed_check": 50,
+    "gap_days_from_confirmed_check": 51,
     "last_confirmed_check": "2026-04-04",
     "recent_sweep_statuses": {
-      "wednesday_2026_05_20": "UNCONFIRMED — no new entries in new_replies.json. 58-session HANDS pattern.",
-      "thursday_2026_05_21": "UNCONFIRMED — no new entries in new_replies.json. 58-session HANDS pattern.",
-      "friday_2026_05_22": "UNCONFIRMED — no new entries in new_replies.json. 58-session HANDS pattern.",
+      "wednesday_2026_05_20": "UNCONFIRMED — no new entries in new_replies.json. 59-session HANDS pattern.",
+      "thursday_2026_05_21": "UNCONFIRMED — no new entries in new_replies.json. 59-session HANDS pattern.",
+      "friday_2026_05_22": "UNCONFIRMED — no new entries in new_replies.json. 59-session HANDS pattern.",
       "saturday_2026_05_23": "NOT EXECUTED — Saturday hard block (correct).",
-      "sunday_2026_05_24": "NOT EXECUTING — Sunday hard block (correct)."
+      "sunday_2026_05_24": "NOT EXECUTED — Sunday hard block (correct).",
+      "monday_2026_05_25": "NOT EXECUTING — Monday hard block. Tuesday per-lead sweep covers it."
     },
-    "today_sweep_requirement": "NO IMAP TODAY — Sunday hard block. Next IMAP: Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send in send order. This single sweep covers the entire 50-day gap.",
+    "today_sweep_requirement": "NO IMAP TODAY — Monday hard block. Next IMAP: Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send in send order. This single sweep covers the entire 51-day gap.",
     "new_replies_since_april": 0,
-    "batch_5_reply_status": "Zero Batch 5 replies confirmed in new_replies.json. 50-day IMAP gap means inbox state unconfirmed. Reply wave has closed — remaining replies will be sporadic.",
+    "weekend_new_replies": 0,
+    "batch_5_reply_status": "Zero Batch 5 replies confirmed in new_replies.json. 51-day IMAP gap means inbox state unconfirmed. Post-Day-7 reply wave has closed — remaining replies will be sporadic.",
     "post_day7_reply_window": {
       "expected_window": "Wednesday-Friday 2026-05-20-22 (24-72h post-Day-7 sends assumed 2026-05-19)",
       "wave_status": "CLOSED — 72h+ cutoff passed Friday 2026-05-22 evening. The structured reply window is over.",
-      "after_wave_closure": "Any replies arriving Saturday-Monday are late spontaneous responses — possible but not the peak. Day-14 breakup Tuesday opens the final structured reply window.",
+      "after_wave_closure": "Any replies arriving over the weekend or Monday are late spontaneous responses — possible but not the peak. Day-14 breakup TOMORROW opens the final structured reply window.",
       "priority": "IMAP next required: Tuesday 2026-05-26 before Day-14 sends."
     },
     "leads_never_to_sweep": [1, 3, 22],
     "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No further IMAP under any circumstances.",
-    "outcomes_and_actions_if_reply_arrives_weekend": {
-      "if_interested_reply_found": "Write to new_replies.json immediately. Classify in reply_classifications.json as INTERESTED with full reasoning. CANCEL Day-14 for that lead — use proposal flow instead. Prepare bespoke proposal within 24h from reply time (NON-NEGOTIABLE — 24/7 — applies over weekend). Update value_delivery_queue.json batch_5_interested_leads. Log CHANGELOG. Update CRM to proposal_sent.",
+    "outcomes_and_actions_if_reply_arrives_today_monday": {
+      "if_interested_reply_found": "Write to new_replies.json immediately. Classify in reply_classifications.json as INTERESTED with full reasoning. CANCEL Day-14 for that lead — use proposal flow instead. Prepare bespoke proposal within 24h from reply time (NON-NEGOTIABLE — 24/7 — applies on Monday). Update value_delivery_queue.json batch_5_interested_leads. Log CHANGELOG.",
       "if_not_interested": "Classify NOT_INTERESTED. Cancel Day-14 permanently for that lead. Suppress all channels. Log CHANGELOG.",
       "if_unsubscribe": "Classify UNSUBSCRIBE. Cancel Day-14. Suppress all channels within 24h (GDPR Article 21). Log audit_log and CHANGELOG.",
-      "if_ooo": "Classify OUT_OF_OFFICE. Note return date. Return MUST be before 2026-05-25 for Day-14. Return after 2026-05-25: mark sequence complete — 4-touchpoint hard limit.",
+      "if_ooo": "Classify OUT_OF_OFFICE. Note return date. Return MUST be before 2026-05-25 (today) for Day-14. Return after 2026-05-25: mark sequence complete — 4-touchpoint hard limit. Return date is today or earlier: lead is back — proceed with Day-14 tomorrow.",
       "if_wrong_person": "Classify WRONG_PERSON. Pause sequence. Investigate correct contact. Log CHANGELOG.",
       "if_clean": "No action. Proceed with Day-14 on 2026-05-26 for all non-suppressed Batch 5 leads."
     }
   },
 
   "batch_5_reply_status": {
-    "batch_5_day": 12,
-    "days_since_day0_send": 12,
-    "days_since_day3_bump": 9,
-    "days_since_day7_send": 5,
+    "batch_5_day": 13,
+    "days_since_day0_send": 13,
+    "days_since_day3_bump": 10,
+    "days_since_day7_send": 6,
     "batch_5_replies_received": 0,
+    "weekend_replies_received": 0,
     "post_day7_reply_window": "CLOSED — 72h+ cutoff passed Friday evening. Remaining replies sporadic only.",
     "batch_6_trigger": {
       "condition": "Batch 5 INTERESTED replies ≥ 2 after full post-Day-7 IMAP sweep",
       "current_count": 0,
       "status": "FORMALLY DEFERRED — last trigger window (Friday 2026-05-22) passed with UNCONFIRMED IMAP and 0 confirmed replies. Trigger decision deferred to Wednesday 2026-05-27 BRAIN run (Batch 5 full post-mortem after Day-14).",
-      "deadline_was": "Friday 2026-05-22 — last practical trigger window. Now passed.",
-      "deferred_to": "Wednesday 2026-05-27 BRAIN run — full Batch 5 post-mortem + Batch 6 launch decision. Post-mortem will include: signal mix review, sector targeting analysis, SSL-PAS rate confirmation, Batch 6 geography confirmation (Harrogate + Craven).",
-      "action_on_wednesday": "If post-mortem confirms SSL-PAS model viable (even with 0 Batch 5 INTERESTED): launch Batch 6 Harrogate + Craven. Initial sends: Tuesday 2026-06-02. LinkedIn: activate within Day 3-7 — ABSOLUTE DEADLINE Friday 2026-06-06. Archive trigger: Day 7 (Tuesday 2026-06-09) fires unconditionally if profiles.json missing."
+      "deferred_to": "Wednesday 2026-05-27 BRAIN run — full Batch 5 post-mortem + Batch 6 launch decision.",
+      "action_on_wednesday": "Launch Batch 6 Harrogate + Craven regardless of Batch 5 reply count (SSL-PAS model structurally sound). Initial sends: Tuesday 2026-06-02."
     }
   },
 
   "new_signals_today": 0,
   "new_leads_today": 0,
   "signal_assignments": [],
-  "signal_assignment_note": "No new lead data received from HANDS (58+ consecutive sessions). All Batch 5 copy READY in daily_email_plan.json. Waterfall unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%). No new signal assignments required today.",
+  "signal_assignment_note": "No new lead data received from HANDS (59+ consecutive sessions). All Batch 5 copy READY in daily_email_plan.json. Waterfall unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%). No new signal assignments required today.",
 
   "do_not_email": [1, 2, 3, 7, 19, 22],
   "suppressed_lead_ids": [7, 19],
@@ -99,44 +108,54 @@
   "sequences_complete": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
 
   "today_execution_brief": {
-    "date": "2026-05-24 (Sunday) — Batch 5 Day 12 — WEEKEND BRIDGE — WEEK 9 CLOSE",
+    "date": "2026-05-25 (Monday) — Batch 5 Day 13 — MONDAY PREP DAY — DAY-14 TOMORROW",
     "sequence": [
       {
         "priority": 1,
-        "action": "NO ACTIONS TODAY — Sunday hard block",
-        "notes": "No sends. No IMAP. Weekend block. Post-Day-7 reply wave is CLOSED. Day-14 copy is READY. Week 9 intelligence report generated this session. If an INTERESTED reply arrives organically: 24h proposal SLA from reply time (24/7 — NON-NEGOTIABLE). Write new_replies.json, classify, cancel Day-14, prepare proposal within 24h."
+        "action": "Review Day-14 send list and copy",
+        "notes": "Review daily_email_plan.json (day14_breakup section — 4 signal variants). Confirm against 2026-05-12 send records. Ensure every lead's signal type, first name, business name, town, and trade keyword are noted. No IMAP today. No sends today."
+      },
+      {
+        "priority": 2,
+        "action": "CHANGELOG.md — write if time allows",
+        "notes": "57+ days overdue. Mandatory TOMORROW. Writing today clears the Tuesday load. Content: all Batch 5 sends (Day-0 assumed 2026-05-12, Day-3 assumed 2026-05-15, Day-7 assumed 2026-05-19), fu_041-045 outcomes, archive decisions, all IMAP results since April, LinkedIn archive outcome."
+      },
+      {
+        "priority": 3,
+        "action": "Monitor inbox passively (no IMAP tool — just natural email check)",
+        "notes": "If INTERESTED reply arrives today: write new_replies.json immediately, classify, CANCEL Day-14 for that lead, prepare proposal within 24h from reply time (24/7 — NON-NEGOTIABLE). Use value_delivery_queue.json (value_delivery_on_interested section) for 3-option pricing."
       }
     ]
   },
 
   "forward_calendar": {
-    "sunday_2026_05_24": {"action": "No sends. No IMAP. Weekend block. THIS SESSION. Post-Day-7 reply wave closed. Day-14: 2 days away. Week 9 close."},
-    "monday_2026_05_25": {"batch_5_day": 13, "action": "No sends today. Final Day-14 prep day. Review copy in daily_email_plan.json (day14_breakup section). Confirm send list from 2026-05-12 records. No IMAP today (Tuesday per-lead sweep covers it). CHANGELOG mandatory — do not defer again. Consider writing CHANGELOG if time allows — 56+ days overdue."},
-    "tuesday_2026_05_26": {"batch_5_day": 14, "action": "Day-14 breakup sends 09:00-10:30. IMAP per Batch 5 lead before each individual send (in send order — NOT leads 1/3/22). Copy READY in daily_email_plan.json (day14_breakup section). Final touchpoint — 4-touchpoint sequence complete for all recipients. Update lead status to sequence_complete. Note reapproach: 2026-11-26. Log ALL Day-14 sends in CHANGELOG same session. Batch 6 trigger: confirm deferred decision at Wednesday BRAIN run."},
-    "wednesday_2026_05_27": {"batch_5_day": 15, "action": "Post-Day-14 reply monitoring begins (opens 24-48h post-Day-14 — peak Thursday 2026-05-28). Full Batch 5 post-mortem BRAIN run. Batch 6 launch decision — final. Total campaign assessment (Day-0 to Day-14: sends, reply rate, INTERESTED count, conversion rate, signal performance by type)."}
+    "monday_2026_05_25": {"action": "THIS SESSION. No sends. No IMAP. Final Day-14 prep day. Review copy + confirm send list. CHANGELOG if time allows. Monitor for spontaneous INTERESTED reply."},
+    "tuesday_2026_05_26": {"batch_5_day": 14, "action": "Day-14 breakup sends 09:00-10:30. IMAP per Batch 5 lead before each individual send (in send order — NOT leads 1/3/22). Copy READY in daily_email_plan.json (day14_breakup section). CHANGELOG MANDATORY same session — ABSOLUTE FINAL DEADLINE. Update lead status to sequence_complete. Reapproach: 2026-11-26."},
+    "wednesday_2026_05_27": {"batch_5_day": 15, "action": "Post-Day-14 reply monitoring begins (opens 24-48h post-Day-14 — peak Thursday 2026-05-28). Full Batch 5 post-mortem BRAIN run. Batch 6 launch decision — final. Total campaign assessment."}
   },
 
-  "ooo_deadline_note": "Day-14 is Tuesday 2026-05-26. Any lead with an OOO return date AFTER 2026-05-25 cannot receive Day-14 (4-touchpoint hard limit). Mark sequence complete for those leads.",
+  "ooo_deadline_note": "Day-14 is TOMORROW Tuesday 2026-05-26. Any lead with an OOO return date AFTER 2026-05-25 (today) cannot receive Day-14 (4-touchpoint hard limit). Mark sequence complete for those leads. If OOO return is today or earlier: lead is back — proceed with Day-14 tomorrow.",
 
-  "weekend_proposal_sla_reminder": "24h SLA from INTERESTED reply time — NON-NEGOTIABLE. Applies 24/7 including Saturday and Sunday. A Sunday reply requires a proposal by Monday. Use value_delivery_queue.json (value_delivery_on_interested section) for 3-option pricing. This is not negotiable. Ripon Road Carpentry (Tom) asked for pricing and never got it. That does not repeat.",
+  "day14_tomorrow_sla": "24h proposal SLA from any INTERESTED reply today — NON-NEGOTIABLE. Applies 24/7 including Monday. A Monday reply requires a proposal by Tuesday. Use value_delivery_queue.json (value_delivery_on_interested section) for 3-option pricing.",
 
   "summary": {
-    "day": 58,
-    "date": "2026-05-24 (Sunday, Batch 5 Day 12 — WEEKEND BRIDGE — WEEK 9 CLOSE)",
-    "today_primary_action": "NO ACTIONS TODAY — Sunday hard block. Post-Day-7 reply wave is CLOSED. Week 9 intelligence report generated.",
-    "imap_gap_days": 50,
+    "day": 59,
+    "date": "2026-05-25 (Monday, Batch 5 Day 13 — MONDAY PREP DAY — DAY-14 TOMORROW)",
+    "today_primary_action": "PREP ONLY — No sends. No IMAP. Review Day-14 copy + send list. CHANGELOG if time allows.",
+    "imap_gap_days": 51,
     "last_confirmed_check": "2026-04-04",
+    "weekend_new_replies": 0,
     "batch_5_interested_replies": 0,
-    "day7_sends": "ASSUMED SENT Tuesday 2026-05-19 (UNCONFIRMED — 58-session pattern)",
+    "day7_sends": "ASSUMED SENT Tuesday 2026-05-19 (UNCONFIRMED — 59-session pattern)",
     "linkedin_channel": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD",
     "post_day7_reply_window": "CLOSED — 72h+ cutoff passed Friday evening",
-    "batch_6_trigger": "DEFERRED to Wednesday 2026-05-27 post-mortem — 0 confirmed replies, last window (Friday) passed",
-    "day14_send_date": "Tuesday 2026-05-26, 09:00-10:30",
-    "day14_days_away": 2,
+    "batch_6_trigger": "DEFERRED to Wednesday 2026-05-27 post-mortem",
+    "day14_send_date": "TOMORROW — Tuesday 2026-05-26, 09:00-10:30",
+    "day14_days_away": 1,
     "day14_copy_status": "READY — daily_email_plan.json (day14_breakup section — 4 signal variants)",
-    "changelog_overdue_days": "56+",
+    "changelog_overdue_days": "57+",
+    "changelog_mandatory": "TOMORROW Tuesday 2026-05-26 — ABSOLUTE FINAL DEADLINE. No further deferrals.",
     "new_leads": 0,
-    "new_signals": 0,
-    "weekly_report": "data/weekly_reports/week_2026-05-24.md — GENERATED THIS SESSION (Week 9 close)"
+    "new_signals": 0
   }
 }
