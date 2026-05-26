@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-25T07:00:00Z",
-  "date": "2026-05-25",
-  "day_number": 59,
-  "batch_5_day": 13,
-  "note": "BRAIN layer — Day 59 (Monday 2026-05-25, Batch 5 Day 13 — MONDAY PREP DAY, PRE-DAY-14). Warm pipeline permanently closed (leads 1/3/22 — UNCONDITIONALLY FINAL). LinkedIn channel PERMANENTLY CLOSED for all Batch 5 leads (archive trigger fired 2026-05-19 EOD — 54-session failure). No Batch 5 INTERESTED replies confirmed. Zero weekend replies (new_replies.json unchanged). Post-Day-7 reply wave is CLOSED. Any INTERESTED reply arriving organically today (Monday): 24h proposal SLA from reply time (24/7 — NON-NEGOTIABLE). Day-14 breakup: TOMORROW Tuesday 2026-05-26 (1 day, copy READY). Email is the only remaining channel for Batch 5.",
+  "generated_at": "2026-05-26T07:00:00Z",
+  "date": "2026-05-26",
+  "day_number": 60,
+  "batch_5_day": 14,
+  "note": "BRAIN layer — Day 60 (Tuesday 2026-05-26, Batch 5 Day 14 — DAY-14 SEND DAY). Day-14 breakup sends TODAY. LinkedIn PERMANENTLY CLOSED for all leads including Batch 5 (archive trigger fired 2026-05-19 EOD — 54-session failure). Warm pipeline permanently closed (leads 1/3/22 — UNCONDITIONALLY FINAL). No Batch 5 INTERESTED replies confirmed. Zero overnight replies. IMAP per lead MANDATORY today before each send — any INTERESTED reply surfaced in IMAP triggers 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Post-Day-14 reply window opens TOMORROW Wednesday 2026-05-27.",
 
   "pipeline_summary": {
     "total_interested_to_date": 3,
@@ -14,8 +14,8 @@
     "email_channel_warm_pipeline": "CLOSED — permanently for leads 1, 3, 22",
     "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads including Batch 5. Archive trigger fired 2026-05-19 EOD.",
     "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale pipeline TBD.",
-    "realistic_remaining_probability": "Warm pipeline (leads 1/3/22): Zero. Batch 5: 0-2 INTERESTED replies still possible — sporadic arrival any time before Day-14 or post-Day-14. Day-14 breakup (Tuesday 2026-05-26) will trigger the next structured reply window.",
-    "next_revenue_opportunity": "Day-14 breakup Tuesday 2026-05-26. Expected reply window: Wednesday-Friday 2026-05-27-29. Expected revenue if converted: £150-500 per lead (SSL+mobile £150-200, no-website £500). Any spontaneous weekend reply: 24h proposal SLA from reply time."
+    "realistic_remaining_probability": "Warm pipeline (leads 1/3/22): Zero. Batch 5: 0-2 INTERESTED replies possible from today's IMAP or post-Day-14 window. Day-14 breakup TODAY opens the final structured reply window. Post-Day-14 peak: Wednesday-Friday 2026-05-27-29.",
+    "next_revenue_opportunity": "Day-14 breakup today + post-Day-14 reply window Wednesday-Friday. Expected revenue if converted: £150-500 per lead (SSL+mobile £150-200, no-website £500). Any INTERESTED reply in today's IMAP or post-Day-14 window: 24h proposal SLA from reply/IMAP time."
   },
 
   "archived_items": [
@@ -73,29 +73,27 @@
   ],
 
   "batch_5_value_delivery_protocol": {
-    "status": "MONDAY PREP DAY — post-Day-7 reply wave is CLOSED. Zero weekend replies. Day-14 breakup TOMORROW Tuesday 2026-05-26 will open the final structured reply window.",
+    "status": "DAY-14 SEND DAY — TODAY Tuesday 2026-05-26. IMAP per lead MANDATORY before each send. 52-day gap covered today. Any INTERESTED reply in IMAP triggers proposal flow immediately (24h SLA from IMAP time). Post-Day-14 reply window opens TOMORROW Wednesday 2026-05-27.",
     "batch5_day0": "Tuesday 2026-05-12 (assumed)",
     "batch5_day3": "Friday 2026-05-15 (assumed sent)",
-    "batch5_day7": "Tuesday 2026-05-19 (assumed sent, UNCONFIRMED — 59-session pattern)",
-    "batch5_day14": "TOMORROW — Tuesday 2026-05-26, 09:00-10:30 (1 day — copy READY)",
-    "post_day7_reply_window": {
-      "wednesday_peak": "Wed 2026-05-20 (24-48h) — IMAP sweep UNCONFIRMED",
-      "thursday_secondary": "Thu 2026-05-21 (48-72h) — IMAP sweep UNCONFIRMED",
-      "friday_final": "Fri 2026-05-22 (72h+ post-send) — IMAP sweep UNCONFIRMED (57-session pattern)",
-      "wave_status": "CLOSED — 72h+ cutoff passed Friday evening. Remaining replies sporadic only.",
-      "after_wave_closure": "Any replies arriving Saturday-Tuesday are late spontaneous responses. Day-14 breakup Tuesday will trigger the final structured reply window (post-Day-14 peak: Wednesday-Friday 2026-05-27-29).",
-      "historical_significance": "Day-7 post-send window is historically the strongest reply window for undecided leads. 72h is the peak. That peak has now closed. Sporadic late replies remain possible but declining."
+    "batch5_day7": "Tuesday 2026-05-19 (assumed sent, UNCONFIRMED — 60-session pattern)",
+    "batch5_day14": "TODAY — Tuesday 2026-05-26, 09:00-10:30",
+    "post_day14_reply_window": {
+      "opens": "TOMORROW — Wednesday 2026-05-27 (24h post-send)",
+      "peak": "Thursday 2026-05-28 (48h post-send)",
+      "closes": "Friday 2026-05-29 (72h post-send)",
+      "after_wave": "Any replies arriving after Friday are late sporadic responses. Batch 6 launches Tuesday 2026-06-02.",
+      "historical_significance": "Day-14 breakup historically generates 0-1 INTERESTED replies per batch. Some leads appreciate the clean exit — occasionally they reply to say they'll circle back. Any response is an open door."
     },
-    "expected_interested_replies": "0-2 leads total across weekend + Day-14 + post-Day-14. 0 confirmed to date. Full sequence ends Tuesday 2026-05-26.",
-    "next_confirmed_imap_check": "TOMORROW Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send. This covers the entire 51-day IMAP gap.",
-    "response_sla": "Proposal within 24 hours of INTERESTED reply — MANDATORY (24/7). Tom asked for pricing and never got it. That does not repeat.",
-    "linkedin_status": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. Email only channel remaining for Batch 5.",
+    "expected_interested_replies": "0-2 leads total from today's IMAP + post-Day-14 window. 0 confirmed to date.",
+    "response_sla": "Proposal within 24 hours of INTERESTED reply — MANDATORY (24/7 — from IMAP time, not next business day). Tom asked for pricing and never got it. That does not repeat.",
+    "linkedin_status": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. Email only channel. Day-14 is the final email.",
 
     "on_interested_reply": {
       "step_1": "Write reply to data/new_replies.json immediately. Include full raw text. Timestamp it.",
       "step_2": "Classify in data/reply_classifications.json as INTERESTED with full reasoning.",
-      "step_3": "Cancel Day-14 send for this lead (use proposal flow instead — do NOT send breakup to an interested lead).",
-      "step_4": "Prepare bespoke proposal within 24h (from reply time — 24/7). Match scope to their signal. Give 3 options (see value_delivery_on_interested below).",
+      "step_3": "Cancel Day-14 send for this lead (do NOT send breakup to an interested lead). If discovered in IMAP before send: skip Day-14 entirely.",
+      "step_4": "Prepare bespoke proposal within 24h from reply/IMAP time (24/7 — NON-NEGOTIABLE). Match scope to their signal. Give 3 options (see value_delivery_on_interested below).",
       "step_5": "Log CHANGELOG same session.",
       "step_6": "Update CRM/pipeline stage to 'proposal_sent'.",
       "step_7": "Add new entry to batch_5_interested_leads array in this file."
@@ -136,15 +134,15 @@
 
   "batch_5_interested_leads": [],
   "batch_5_interested_count": 0,
-  "batch_5_interested_note": "No confirmed INTERESTED replies in new_replies.json. ZERO weekend replies (new_replies.json unchanged). Post-Day-7 reply wave is CLOSED. 51-day IMAP gap means inbox state unconfirmed. Day-14 breakup TOMORROW Tuesday 2026-05-26 (1 day) will trigger the final structured reply window (post-Day-14 peak: Wednesday-Thursday 2026-05-27-28).",
+  "batch_5_interested_note": "No confirmed INTERESTED replies in new_replies.json (zero overnight arrivals). IMAP sweeps per lead TODAY will cover 52-day gap — any replies in inbox will surface then. Post-Day-14 reply window opens TOMORROW Wednesday 2026-05-27 (peak Thursday 2026-05-28). Full Batch 5 post-mortem: TOMORROW Wednesday 2026-05-27 BRAIN run.",
 
-  "lessons_applied_to_batch_5": {
-    "proposal_sla": "24 hours — non-negotiable. Ripon Road Carpentry (Tom) asked for pricing and never got it. That does not repeat.",
-    "linkedin_deadline": "Day 7 hard close. linkedin_profiles.json NEVER written — archive trigger fired 2026-05-19 EOD. Same outcome as warm pipeline.",
-    "profiles_json_mandatory": "linkedin_profiles.json written same session as LinkedIn execution — no exceptions. Batch 6 lesson.",
+  "lessons_applied": {
+    "proposal_sla": "24 hours — non-negotiable. From IMAP time or reply time, not next business day. Ripon Road Carpentry (Tom) asked for pricing and never got it. That does not repeat.",
+    "linkedin_deadline": "Day 7 hard close. linkedin_profiles.json NEVER written — archive trigger fired 2026-05-19 EOD. Batch 6 lesson: profiles.json written same session as execution or it didn't happen.",
     "single_pain_point": "One signal per proposal option. Rob's redesign ask came from a single clear mobile/SSL signal.",
     "options_not_quotes": "Present 3 options, not a single quote. Reduces friction. Let them self-select.",
-    "weekend_response": "24h SLA runs from reply time — not from next business day. Applies 24/7."
+    "weekend_response": "24h SLA runs from reply/IMAP time — not from next business day. Applies 24/7.",
+    "batch_6_linkedin_rule": "LinkedIn activated within Day 3-7 of initial email. profiles.json written same session. Archive trigger fires Day 7 unconditionally. Zero tolerance for the 54-session failure pattern."
   },
 
   "summary": {
@@ -153,15 +151,14 @@
     "linkedin_channel": "PERMANENTLY CLOSED — all leads including Batch 5. Archive trigger fired 2026-05-19 EOD.",
     "batch_5_replies_received": 0,
     "batch_5_interested_count": 0,
-    "weekend_new_replies": 0,
-    "monday_imap_status": "NOT EXECUTING — Monday hard block. TOMORROW per-lead sweep covers entire 51-day gap.",
-    "reply_wave_status": "CLOSED — 72h+ post-Day-7 cutoff passed Friday evening. Sporadic replies possible today (Monday).",
-    "next_imap_check": "TOMORROW Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send. Covers entire 51-day gap.",
-    "proposal_sla": "24 hours from INTERESTED reply — mandatory (24/7 — applies on Monday)",
-    "day14_send_date": "TOMORROW — Tuesday 2026-05-26, 09:00-10:30",
+    "overnight_new_replies": 0,
+    "imap_status_today": "EXECUTING — per Batch 5 lead before each Day-14 send. Covers entire 52-day gap.",
+    "post_day7_reply_window": "CLOSED — late arrivals surface in today's IMAP.",
+    "day14_send_date": "TODAY — Tuesday 2026-05-26, 09:00-10:30",
     "day14_copy_location": "data/daily_email_plan.json (day14_breakup section — 4 signal variants READY)",
-    "ooo_cutoff": "2026-05-25 (TODAY) — any OOO return after today cannot receive Day-14",
-    "post_day14_reply_window": "Wednesday-Friday 2026-05-27-29 (24-72h post-Day-14). Full Batch 5 post-mortem: Wednesday 2026-05-27 BRAIN run.",
-    "hands_instructions": "NO IMAP TODAY (Monday hard block). Zero weekend replies confirmed. If INTERESTED reply arrives organically today: write new_replies.json immediately, classify, CANCEL Day-14 (use proposal flow), prepare proposal within 24h from reply time (24/7 — NON-NEGOTIABLE). Add to batch_5_interested_leads. IMAP mandatory TOMORROW Tuesday 2026-05-26 per Batch 5 lead before each Day-14 send. Day-14 breakup sends 09:00-10:30 Tuesday. CHANGELOG mandatory TOMORROW same session — 57+ days overdue — ABSOLUTE FINAL DEADLINE."
+    "post_day14_reply_window": "Opens TOMORROW Wednesday 2026-05-27 (24-72h). Peak Thursday 2026-05-28.",
+    "proposal_sla": "24 hours from INTERESTED reply/IMAP time — mandatory (24/7)",
+    "batch_6_launch_decision": "TOMORROW Wednesday 2026-05-27 BRAIN run — full Batch 5 post-mortem + Batch 6 Harrogate + Craven launch",
+    "hands_instructions": "IMAP TODAY per Batch 5 lead before each Day-14 send. If INTERESTED reply found in IMAP: 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE), cancel Day-14, use proposal flow above, add to batch_5_interested_leads. Day-14 breakup sends 09:00-10:30 for all clean leads. CHANGELOG MANDATORY TODAY same session — 58+ days overdue — ABSOLUTE FINAL DEADLINE. Update sequence_complete after sends. Reapproach: 2026-11-26."
   }
 }
