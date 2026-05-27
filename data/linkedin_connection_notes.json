@@ -1,27 +1,362 @@
 {
-  "generated_at": "2026-05-26T07:00:00Z",
+  "generated_at": "2026-05-27T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-26",
-  "day_number": 60,
-  "batch_5_day": 14,
-  "run_type": "DAY_60_STATUS_CONFIRMATION — Tuesday 2026-05-26, Batch 5 Day 14 (DAY-14 BREAKUP SEND DAY — FINAL TOUCHPOINT). LinkedIn permanently closed. Zero active notes. Day-14 breakup TODAY 09:00-10:30.",
+  "run_date": "2026-05-27",
+  "day_number": 61,
+  "run_type": "DAY_61_BATCH6_NOTE_TEMPLATES — Wednesday 2026-05-27, Batch 5 Day 15 (Post-Day-14 reply peak). LinkedIn permanently closed for all Batch 5 leads. Batch 6 sector connection note templates generated for Harrogate District + Craven District. Templates ready for Day 3 (Fri 2026-06-05) execution via orchestrator.py.",
 
-  "note": "Day 60 (Tuesday 2026-05-26 — BATCH 5 DAY 14 — DAY-14 BREAKUP SEND DAY — FINAL TOUCHPOINT). LinkedIn channel PERMANENTLY CLOSED — archive trigger fired Tuesday 2026-05-19 EOD (Day 53). linkedin_profiles.json NEVER WRITTEN in 60 consecutive campaign sessions. Zero active LinkedIn connection notes. Email is the only remaining channel — Day-14 breakup is TODAY Tuesday 2026-05-26, 09:00-10:30. After today's sends: all Batch 5 Ryedale leads → sequence_complete. Post-breakup_contingency section (leads 50/52/55/56) remains technically active — if any pending connection request accepted, use if_accepted_message. No new notes generated today. Next LinkedIn connection note generation: Wednesday 2026-05-27 BRAIN run — Batch 6 (Harrogate District + Craven District). Note strategy: 'slightly awkward compliment' — reference specific post, headline quirk, or genuine interest. Under 200 characters. No mention of email campaign.",
+  "note": "Day 61 (Wednesday 2026-05-27 — Post-Day-14 reply peak — Batch 6 launch day). LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 61 consecutive sessions without execution). Zero Batch 5 active notes. linkedin_profiles.json never written. Batch 6 confirmed: Harrogate District + Craven District. This file contains: (1) 6 sector-level connection note templates for Batch 6 (to be matched to specific leads once HANDS writes batch_6_leads.json and finds LinkedIn profiles), (2) 19 placeholder lead entries linked to linkedin_search_plan.json BATCH6_P0xx IDs — HANDS personalises each note using actual profile data (posts, headline, interests) before sending. Strategy: 'slightly awkward compliment' — specific, human, non-AI-sounding. Under 200 characters. No mention of email. No question marks. No pitch. (3) Post-breakup contingency notes for leads 50/52/55/56 — technically active if any pending connection request accepted. (4) orchestrator.py build requirement: BEFORE 2026-06-05.",
 
   "channel_status": {
-    "linkedin": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). Unconditional. No further LinkedIn for any active lead.",
-    "email": "ACTIVE — ONLY remaining channel. Day-14 breakup TODAY Tuesday 2026-05-26, 09:00-10:30. Final touchpoint (4-touchpoint hard limit). Copy READY in daily_email_plan.json (day14_breakup section — 4 signal variants).",
-    "session_failure_count": 60,
-    "linkedin_profiles_json_ever_written": false
+    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written. 61-session failure. All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead.",
+    "linkedin_batch6": "PRE_ACTIVATION — note templates READY. Day-0 estimated Tue 2026-06-02. LinkedIn window Day 3 (Fri 2026-06-05) — Day 7 (Tue 2026-06-10). Archive trigger: Tue 2026-06-10 EOD — unconditional. orchestrator.py MUST be deployed before 2026-06-05.",
+    "session_failure_count": 61,
+    "linkedin_profiles_json_ever_written": false,
+    "campaign_notes_ever_sent": 0
+  },
+
+  "note_strategy": {
+    "name": "slightly_awkward_compliment",
+    "description": "Reference something specific about the person's LinkedIn profile — a recent post topic, an unusual headline observation, or a genuine niche interest. Must feel written by a human who actually looked at their profile. Avoids the AI-slop pattern of generic praise ('love your work', 'impressed by your journey'). One authentic observation + low-key reason to connect. No pitch in the note — relationship first.",
+    "note_type_priority": [
+      "post_reference — reference a specific post from last 60 days (highest engagement rate — HANDS checks posts tab during search execution)",
+      "headline — reference something specific or unusual in their profile headline",
+      "interest — reference a genuine niche or hobby listed on their profile",
+      "generic — fallback if no posts, headline is bland, and no interests visible"
+    ],
+    "hard_constraints": [
+      "Under 200 characters (LinkedIn free account limit for connection note)",
+      "No mention of email campaign or any prior outreach",
+      "No pitch, no service offer in the connection note",
+      "No question marks — declarative or statement-based ending ('Good to connect.' not 'Would love to connect?')",
+      "No emoji",
+      "No 'I came across your profile' — too generic",
+      "No 'I'd love to' — too sycophantic",
+      "IMAP check per lead before sending connection request",
+      "Do NOT send if lead replied NOT_INTERESTED or UNSUBSCRIBE in email channel"
+    ],
+    "character_count_note": "200 chars is ~30-35 words. Keep it to 3 clauses max. Count includes spaces and punctuation."
   },
 
   "active_notes": [],
   "active_notes_count": 0,
-  "active_notes_note": "Zero active notes. LinkedIn permanently closed — archive trigger fired 2026-05-19 EOD. No active leads eligible for LinkedIn under any circumstances. No connection notes permitted or required.",
+  "active_notes_note": "Zero active notes. LinkedIn permanently closed for all Batch 5 leads. No active leads with LinkedIn profile data (linkedin_profiles.json never written in 61 campaign sessions). Batch 6 note templates below — activated on Day 3 (Fri 2026-06-05) once HANDS writes batch_6_leads.json and finds LinkedIn profiles.",
+
+  "batch_6_lead_notes": {
+    "status": "BATCH6_PLACEHOLDER — 19 entries pre-populated matching linkedin_search_plan.json BATCH6_P0xx IDs. HANDS must: (1) find LinkedIn profile for each lead during Day 3 search execution, (2) match correct sector template below, (3) personalise the note using actual profile data (post topic, headline text, or interest), (4) confirm note is under 200 chars before sending, (5) write entry to linkedin_profiles.json immediately after sending.",
+    "notes": [
+      {
+        "lead_id": "BATCH6_P001",
+        "town": "Knaresborough",
+        "sector": "Plumber / Heating Engineer",
+        "linkedin_url": "[TBD — populate from search execution]",
+        "note": "[TBD — personalise using sector template below: trades_post_reference OR trades_headline OR trades_generic]",
+        "note_type": "[TBD — post_reference | headline | interest | generic]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P001 search query. Check posts tab. Use post_reference template if post found in last 60 days. Otherwise use trades_generic. Fill all [bracketed] fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P002",
+        "town": "Knaresborough",
+        "sector": "Electrician",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P002 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P003",
+        "town": "Knaresborough",
+        "sector": "Joiner / Carpenter",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P003 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P004",
+        "town": "Knaresborough",
+        "sector": "Builder / General Contractor",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P004 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P005",
+        "town": "Knaresborough",
+        "sector": "Estate Agent",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use estate_agent template]",
+        "note_type": "[TBD]",
+        "template_key": "estate_agent",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P005 search query. Use estate_agent sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P006",
+        "town": "Ripon",
+        "sector": "Roofer",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "exclusion_check": "Confirm this is NOT lead 1 (Ripon Road Carpentry) before sending. If match: abort, log, skip.",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P006 search query. Confirm NOT Ripon Road Carpentry / Tom [lead 1]. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P007",
+        "town": "Ripon",
+        "sector": "Plumber",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "exclusion_check": "Confirm this is NOT lead 1 (Ripon Road Carpentry) before sending.",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P007 search query. Confirm NOT lead 1. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P008",
+        "town": "Ripon",
+        "sector": "Solicitor",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use professional_services template]",
+        "note_type": "[TBD]",
+        "template_key": "professional_services",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P008 search query. Use professional_services sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P009",
+        "town": "Ripon",
+        "sector": "Accountant",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use professional_services template]",
+        "note_type": "[TBD]",
+        "template_key": "professional_services",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P009 search query. Use professional_services sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P010",
+        "town": "Boroughbridge",
+        "sector": "Builder / General Contractor",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P010 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P011",
+        "town": "Boroughbridge",
+        "sector": "Plumber",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P011 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P012",
+        "town": "Skipton",
+        "sector": "Plumber",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P012 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P013",
+        "town": "Skipton",
+        "sector": "Electrician",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P013 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P014",
+        "town": "Skipton",
+        "sector": "Joiner / Carpenter",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P014 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P015",
+        "town": "Skipton",
+        "sector": "Beauty Salon / Hair",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use salon_beauty template]",
+        "note_type": "[TBD]",
+        "template_key": "salon_beauty",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P015 search query. Use salon_beauty sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P016",
+        "town": "Skipton",
+        "sector": "Estate Agent",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use estate_agent template]",
+        "note_type": "[TBD]",
+        "template_key": "estate_agent",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P016 search query. Use estate_agent sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P017",
+        "town": "Settle",
+        "sector": "Builder / General Contractor",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use trades template]",
+        "note_type": "[TBD]",
+        "template_key": "trades",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P017 search query. Use trades sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P018",
+        "town": "Settle",
+        "sector": "B&B / Guest House",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use hospitality template]",
+        "note_type": "[TBD]",
+        "template_key": "hospitality",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P018 search query. Use hospitality sector template. Fill all fields. Confirm under 200 chars."
+      },
+      {
+        "lead_id": "BATCH6_P019",
+        "town": "Grassington",
+        "sector": "Pub / Tearoom / Hospitality",
+        "linkedin_url": "[TBD]",
+        "note": "[TBD — use hospitality template]",
+        "note_type": "[TBD]",
+        "template_key": "hospitality",
+        "hands_instruction": "Find LinkedIn profile via BATCH6_P019 search query. Use hospitality sector template. Fill all fields. Confirm under 200 chars."
+      }
+    ]
+  },
+
+  "sector_templates": {
+    "_usage_note": "Match template to lead by template_key field in batch_6_lead_notes. Fill all [bracketed] placeholders using actual profile data. Confirm final note is under 200 characters before sending. Priority: post_reference > headline > interest > generic.",
+
+    "trades": {
+      "sector_label": "Plumber / Electrician / Joiner / Builder / Roofer / General Contractor",
+      "post_reference": {
+        "template": "Hi [Name] — your post about [specific post topic, e.g. 'the bathroom refit in Knaresborough'] caught my eye. Not many tradespeople share the detail. Good to connect.",
+        "character_count_estimate": "~165 chars with typical fill values",
+        "usage": "Use if HANDS finds a post from last 60 days in the profile posts tab",
+        "fill_instructions": "[Name] = owner first name from batch_6_leads.json. [specific post topic] = actual topic from post — be specific, not generic. Keep it to one clause."
+      },
+      "headline": {
+        "template": "Hi [Name] — your headline made me look twice. [Specific observation about headline]. Good to connect.",
+        "character_count_estimate": "~100 chars + observation",
+        "usage": "Use if headline contains something specific, unusual, or unexpectedly honest — e.g. '20 years in the Dales', 'Dad, plumber, occasional rambler'",
+        "fill_instructions": "[Specific observation] = 1 clause referencing the actual headline text. Not 'interesting headline' — be specific."
+      },
+      "generic": {
+        "template": "Hi [Name] — noticed you run [Business Name] in [Town]. Hard to find a good independent [sector] on LinkedIn. Good to connect.",
+        "character_count_estimate": "~130 chars with typical fill values. Confirm under 200.",
+        "usage": "Fallback — use only if no post found and headline is generic",
+        "fill_instructions": "[Name] = first name. [Business Name] = exact business name. [Town] = town. [sector] = plumber / electrician / joiner / builder / roofer (match to actual sector)."
+      }
+    },
+
+    "estate_agent": {
+      "sector_label": "Estate Agent / Letting Agent",
+      "post_reference": {
+        "template": "Hi [Name] — your post about [specific topic, e.g. 'the Harrogate market this spring'] was more honest than most agents manage. Good to connect.",
+        "character_count_estimate": "~145 chars with typical fill",
+        "usage": "Use if recent post found — market commentary, local insight, buyer/seller tip",
+        "fill_instructions": "[Name] = owner first name. [specific topic] = actual post subject. 'More honest than most agents manage' is the awkward compliment — adjust if tone feels off for the post."
+      },
+      "headline": {
+        "template": "Hi [Name] — your headline is a bit different from the usual agency boilerplate. [Observation]. Good to connect.",
+        "character_count_estimate": "~110 chars + observation",
+        "usage": "Use if headline is unusually direct, personal, or sector-specific",
+        "fill_instructions": "[Observation] = 1 specific clause referencing their actual headline. Not 'interesting' — quote or paraphrase it."
+      },
+      "generic": {
+        "template": "Hi [Name] — noticed you cover [Town] as an independent agent. Rare in this market. Good to connect.",
+        "character_count_estimate": "~100 chars with typical fill",
+        "usage": "Fallback — use only if no post found and headline is generic",
+        "fill_instructions": "[Name] = first name. [Town] = town. 'Independent' only if they are — remove if they're part of a chain."
+      }
+    },
+
+    "hospitality": {
+      "sector_label": "B&B / Guest House / Pub / Tearoom / Café / Glamping",
+      "post_reference": {
+        "template": "Hi [Name] — your post about [specific topic, e.g. 'the lambing season guests'] was a proper read. Not many [town] hospitality owners use LinkedIn like this. Good to connect.",
+        "character_count_estimate": "~175 chars with typical fill",
+        "usage": "Use if recent post found — guest stories, seasonal updates, local events, behind-the-scenes",
+        "fill_instructions": "[Name] = first name. [specific topic] = actual post subject — be specific. [town] = town name."
+      },
+      "headline": {
+        "template": "Hi [Name] — your headline is the most honest description of running a [B&B/pub/café] I've seen on here. Good to connect.",
+        "character_count_estimate": "~122 chars",
+        "usage": "Use if headline is unusually candid or charming",
+        "fill_instructions": "[B&B/pub/café] = match to their actual business type."
+      },
+      "generic": {
+        "template": "Hi [Name] — [Business Name] looks brilliant. Rare to see a [town] [sector] on LinkedIn. Good to connect.",
+        "character_count_estimate": "~105 chars with typical fill",
+        "usage": "Fallback if no post and headline is generic",
+        "fill_instructions": "[Name] = first name. [Business Name] = exact name. [town] = town. [sector] = B&B / pub / tearoom / guest house."
+      }
+    },
+
+    "professional_services": {
+      "sector_label": "Solicitor / Accountant / Financial Adviser",
+      "post_reference": {
+        "template": "Hi [Name] — your post about [specific topic, e.g. 'the probate backlog'] was genuinely useful. Not many local [solicitors/accountants] share that. Good to connect.",
+        "character_count_estimate": "~163 chars with typical fill",
+        "usage": "Use if recent post found — legal/financial commentary, local business advice, regulatory updates",
+        "fill_instructions": "[Name] = first name. [specific topic] = actual post topic. [solicitors/accountants] = match their sector."
+      },
+      "headline": {
+        "template": "Hi [Name] — your headline is more direct than the usual firm boilerplate. [Observation]. Good to connect.",
+        "character_count_estimate": "~105 chars + observation",
+        "usage": "Use if headline is unusually specific or candid for a professional services firm",
+        "fill_instructions": "[Observation] = 1 clause referencing their actual headline text."
+      },
+      "generic": {
+        "template": "Hi [Name] — noticed you practice in [Town]. Good to see local independents still holding ground. Good to connect.",
+        "character_count_estimate": "~114 chars",
+        "usage": "Fallback if no post and headline is generic",
+        "fill_instructions": "[Name] = first name. [Town] = town. 'Independents' only if they are not part of a national chain."
+      }
+    },
+
+    "salon_beauty": {
+      "sector_label": "Hair Salon / Beauty Salon / Nail Studio / Barber",
+      "post_reference": {
+        "template": "Hi [Name] — your post about [specific topic, e.g. 'the balayage technique'] was good. Salons on LinkedIn are surprisingly rare. Good to connect.",
+        "character_count_estimate": "~145 chars with typical fill",
+        "usage": "Use if recent post found — transformation results, technique posts, behind-the-scenes, team news",
+        "fill_instructions": "[Name] = first name. [specific topic] = actual post subject — be specific about the technique or topic they posted about."
+      },
+      "headline": {
+        "template": "Hi [Name] — your headline caught my eye. [Specific observation]. Salons on LinkedIn are rare. Good to connect.",
+        "character_count_estimate": "~112 chars + observation",
+        "usage": "Use if headline is specific or charming",
+        "fill_instructions": "[Observation] = 1 clause about their actual headline."
+      },
+      "generic": {
+        "template": "Hi [Name] — [Business Name] in [Town] looks great. Rare to see an independent salon on LinkedIn. Good to connect.",
+        "character_count_estimate": "~115 chars with typical fill",
+        "usage": "Fallback if no post and headline is generic",
+        "fill_instructions": "[Name] = first name. [Business Name] = exact name. [Town] = town."
+      }
+    }
+  },
 
   "post_breakup_contingency": {
-    "status": "TECHNICALLY_ACTIVE — if any pending connection request (leads 52/55/50/56) is accepted, use if_accepted_message. Do NOT pitch. Do NOT reference email sequence.",
-    "note": "Connection requests may have been sent in prior sessions (unconfirmed). LinkedIn request validity approximately 6 months. If a request is accepted at any point before expiry: send the if_accepted_message for that lead. These leads are sequence complete after TODAY — this is a warm-nurture opportunity only.",
+    "status": "TECHNICALLY_ACTIVE — if any pending connection request (leads 50/52/55/56) is accepted spontaneously, use if_accepted_message below. Do NOT pitch. Do NOT reference email sequence. These leads are sequence complete (reapproach 2026-11-26) — this is a warm-nurture opportunity only. No proactive action from BRAIN or HANDS required.",
+    "note": "Connection requests may have been sent in prior sessions (unconfirmed — linkedin_profiles.json never written). LinkedIn request validity approximately 6 months from send date. If a request is accepted: send the if_accepted_message for that lead's sector. These notes are under 200 chars each.",
     "pending_leads": [
       {
         "lead_id": 52,
@@ -29,10 +364,11 @@
         "owner_name": "Linda Walsh",
         "town": "Holderness",
         "sector": "Care Services",
-        "sequence_status": "COMPLETE after today's Day-14 send",
-        "reapproach_date": "2026-11-26",
-        "if_accepted_message": "Hi Linda — thanks for connecting. I work with care providers on digital presence. Happy to share a few thoughts if ever useful, no strings. Hope business is going well.",
-        "note_type": "generic_warm_nurture"
+        "sequence_status": "COMPLETE — Day-14 assumed sent Tue 2026-05-26. Reapproach 2026-11-26.",
+        "linkedin_status": "ARCHIVED_LOST_NO_RESPONSE on LinkedIn (Batch 5 archive trigger). Post-breakup contingency only.",
+        "if_accepted_message": "Hi Linda — thanks for connecting. I work with care providers on their digital presence. Happy to share a few thoughts if ever useful, no strings. Hope business is going well.",
+        "note_type": "generic_warm_nurture",
+        "char_count": 174
       },
       {
         "lead_id": 55,
@@ -40,10 +376,11 @@
         "owner_name": "Fiona Barker",
         "town": "Malton",
         "sector": "Interior Design",
-        "sequence_status": "COMPLETE — sequence already complete prior to Day 14",
-        "reapproach_date": "2026-11-26",
+        "sequence_status": "COMPLETE — sequence complete prior to Day 14. Reapproach 2026-11-26.",
+        "linkedin_status": "ARCHIVED_LOST_NO_RESPONSE on LinkedIn. Post-breakup contingency only.",
         "if_accepted_message": "Hi Fiona — lovely to connect. I work with interior design studios on visibility. Happy to have a chat if anything's ever useful — no agenda, just a friendly connection.",
-        "note_type": "generic_warm_nurture"
+        "note_type": "generic_warm_nurture",
+        "char_count": 168
       },
       {
         "lead_id": 50,
@@ -51,10 +388,11 @@
         "owner_name": "Janet Howarth",
         "town": "Pickering",
         "sector": "Crafts / Retail",
-        "sequence_status": "COMPLETE — sequence already complete prior to Day 14",
-        "reapproach_date": "2026-11-26",
+        "sequence_status": "COMPLETE — sequence complete prior to Day 14. Reapproach 2026-11-26.",
+        "linkedin_status": "ARCHIVED_LOST_NO_RESPONSE on LinkedIn. Post-breakup contingency only.",
         "if_accepted_message": "Hi Janet — great to connect. I follow a few local Yorkshire makers online — lovely work. Happy to share ideas on digital reach if it's ever useful. No pressure at all.",
-        "note_type": "generic_warm_nurture"
+        "note_type": "generic_warm_nurture",
+        "char_count": 167
       },
       {
         "lead_id": 56,
@@ -62,66 +400,64 @@
         "owner_name": "Gareth Price",
         "town": "Hovingham",
         "sector": "Glamping / Hospitality",
-        "sequence_status": "COMPLETE — sequence already complete prior to Day 14",
-        "reapproach_date": "2026-11-26",
+        "sequence_status": "COMPLETE — sequence complete prior to Day 14. Reapproach 2026-11-26.",
+        "linkedin_status": "ARCHIVED_LOST_NO_RESPONSE on LinkedIn. Post-breakup contingency only.",
         "if_accepted_message": "Hi Gareth — thanks for connecting. I help hospitality and tourism businesses with their online presence. Happy to share ideas if it's ever useful — no strings attached.",
-        "note_type": "generic_warm_nurture"
+        "note_type": "generic_warm_nurture",
+        "char_count": 168
       }
     ]
   },
 
-  "batch_6_note_strategy": {
-    "status": "PENDING — Wednesday 2026-05-27 BRAIN run (Harrogate District + Craven District scoping after full Batch 5 post-mortem)",
-    "strategy": "slightly_awkward_compliment",
-    "strategy_description": "Reference a specific recent post, headline quirk, or genuine niche interest. Avoids AI-slop pattern. Must feel human and slightly personal — not generic praise. One authentic observation + low-key reason to connect.",
-    "note_types_priority": [
-      "post_reference — reference a specific post from last 60 days (best engagement)",
-      "headline — reference something specific/unusual in their profile headline",
-      "interest — reference a genuine shared professional interest",
-      "generic — fallback: sector + location warm intro, no pitch"
-    ],
-    "hard_constraints": [
-      "Under 200 characters (LinkedIn free account limit)",
-      "No mention of email campaign or prior outreach",
-      "No pitch in connection note — relationship first",
-      "No question marks — declarative or statement-based",
-      "No emoji",
-      "Confirm IMAP per lead before sending connection request"
-    ],
-    "note_template_example": "Hi [Name] — your post about [specific topic] caught my eye. Rare to see a [sector] owner thinking that way. Good to connect.",
-    "generation_date": "Wednesday 2026-05-27 BRAIN run",
-    "territory": "Harrogate District + Craven District",
-    "day3_earliest": "Friday 2026-06-05",
-    "day7_archive_trigger": "Tuesday 2026-06-10 EOD"
-  },
-
   "leads_with_profiles_data": [],
-  "leads_with_profiles_data_note": "linkedin_profiles.json never written (60-session failure). Zero profile data available for personalised note generation. All Batch 6 notes will be generated from scratch on Wednesday 2026-05-27 based on HANDS-executed profile research.",
+  "leads_with_profiles_data_note": "linkedin_profiles.json never written in 61 campaign sessions. Zero profile data available. All Batch 6 notes generated from sector templates — personalised by HANDS using actual profile data found during Day 3 execution.",
 
   "do_not_linkedin": {
     "permanently_blocked_all_channels": [2, 7, 19],
     "unconditionally_archived_no_contact": [1, 3, 22],
     "lost_unresolved_archived": [49, 51, 53, 54],
-    "batch_5_ryedale_archived_lost_no_response": "ALL — effective 2026-05-19 EOD",
+    "batch_5_ryedale_archived_lost_no_response": "ALL — effective 2026-05-19 EOD (archive trigger fired Day 53). No notes permitted.",
     "sequence_complete_window_expired": [4, 5, 6, 8, 12, 30, 31, 32],
-    "sequence_complete_today_after_day14": "ALL remaining Batch 5 Ryedale leads (subject to IMAP per lead before send)",
-    "note": "No LinkedIn for any lead listed above under any circumstances. Post_breakup_contingency leads (50/52/55/56) may receive warm-nurture if_accepted_message ONLY if connection request accepted spontaneously."
+    "sequence_complete_after_day14": "ALL Batch 5 Ryedale leads. Reapproach 2026-11-26. LinkedIn permanently closed.",
+    "ripon_exclusion": "Lead 1 (Ripon Road Carpentry, Tom) — ARCHIVED LOST_NO_RESPONSE. No LinkedIn approach in Ripon for any business matching this name or owner. Confirm NOT lead 1 before any Ripon note is sent."
+  },
+
+  "orchestrator_status": {
+    "file": "src/outlocal/linkedin/orchestrator.py",
+    "status": "NOT_IMPLEMENTED — src/outlocal/linkedin/ directory does not exist",
+    "build_deadline": "BEFORE 2026-06-05 (Batch 6 Day 3). 9 days remaining.",
+    "build_urgency": "CRITICAL — 61-session manual delivery failure. orchestrator.py is the ONLY mechanism that guarantees same-session execution. Without it: Batch 6 repeats the failure, archive trigger fires Tue 2026-06-10 EOD, all Batch 6 leads archived LOST_NO_RESPONSE on LinkedIn. No recovery.",
+    "note_sending_steps": [
+      "1. Read lead entry from batch_6_lead_notes by lead_id",
+      "2. Get profile URL from data/linkedin_profiles.json (written during search step)",
+      "3. Match sector template from sector_templates using template_key",
+      "4. If recent post found (flagged during search): fill post_reference template with actual post topic",
+      "5. If no recent post: check headline — if notable, fill headline template",
+      "6. Fallback: fill generic template with business name + town + sector",
+      "7. Confirm final note under 200 characters — hard limit",
+      "8. IMAP check per lead — if NOT_INTERESTED or UNSUBSCRIBE found: abort, skip this lead",
+      "9. Drive LinkedIn: open profile URL → click Connect → add note → send",
+      "10. Write entry to linkedin_profiles.json IMMEDIATELY after send attempt (success or failure)"
+    ]
   },
 
   "summary": {
-    "run_date": "2026-05-26 (Tuesday — Day 60, Batch 5 Day 14 — DAY-14 BREAKUP SEND DAY — FINAL TOUCHPOINT)",
-    "day_number": 60,
-    "batch_5_day": 14,
-    "linkedin_channel": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53)",
+    "run_date": "2026-05-27 (Wednesday — Day 61, Batch 5 Day 15 — Post-Day-14 Reply Peak — Batch 6 Launch Day)",
+    "day_number": 61,
+    "linkedin_channel_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53)",
     "active_notes_today": 0,
-    "notes_generated_today": 0,
+    "batch6_templates_ready": 5,
+    "batch6_lead_notes_prepopulated": 19,
+    "batch6_lead_notes_status": "PLACEHOLDER — awaiting batch_6_leads.json from HANDS for personalisation",
     "post_breakup_contingency_leads": [50, 52, 55, 56],
     "post_breakup_contingency_status": "TECHNICALLY_ACTIVE — if_accepted_message ready for each. No proactive action needed.",
-    "active_channel": "EMAIL ONLY — Day-14 breakup TODAY Tuesday 2026-05-26, 09:00-10:30. FINAL TOUCHPOINT.",
-    "post_day14_all_leads": "sequence_complete after today's sends. Reapproach: 2026-11-26 minimum.",
-    "next_linkedin_brain_run": "Wednesday 2026-05-27 — Batch 6 note generation (Harrogate + Craven). Day-0 estimated 2026-06-02. Day 3 LinkedIn window: 2026-06-05. Day 7 archive trigger: 2026-06-10 EOD.",
-    "orchestrator_py_build_deadline": "BEFORE 2026-06-05 — CRITICAL. 60-session manual delivery failure. Build window: 2026-05-27 to 2026-06-04.",
+    "execution_date": "Fri 2026-06-05 (Day 3) — MANDATORY. orchestrator.py must be deployed.",
+    "archive_trigger": "Tue 2026-06-10 EOD — unconditional",
+    "imap_gap_days": 53,
+    "post_day14_reply_window": "OPEN — 24h peak TODAY (Wed). 48h Thu. 72h Fri. Closes Friday evening.",
+    "overnight_new_replies": 0,
+    "orchestrator_py_build_deadline": "BEFORE 2026-06-05 — 9 days remaining — CRITICAL",
     "campaign_notes_ever_sent": 0,
-    "consecutive_sessions_without_linkedin_execution": 60
+    "consecutive_sessions_without_linkedin_execution": 61
   }
 }
