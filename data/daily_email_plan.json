@@ -1,397 +1,257 @@
 [
   {
-    "plan_date": "2026-05-26",
-    "generated_at": "2026-05-26T07:00:00Z",
-    "day_number": 60,
-    "batch_5_day": 14,
-    "note": "BRAIN layer — Day 60 (Tuesday 2026-05-26, Batch 5 Day 14 — DAY-14 BREAKUP SEND DAY). TODAY is the final touchpoint. All Day-14 breakup copy READY in day14_breakup section below (4 signal variants). IMAP per Batch 5 lead MANDATORY before each send (52-day gap from last confirmed check 2026-04-04). Send window: 09:00-10:30, 10-min stagger. After sends: update sequence_complete, reapproach 2026-11-26. CHANGELOG MANDATORY today same session — 58+ days overdue — ABSOLUTE FINAL DEADLINE. Post-Day-14 reply window opens TOMORROW Wednesday 2026-05-27. Batch 6 post-mortem + launch decision: TOMORROW Wednesday BRAIN run. LinkedIn PERMANENTLY CLOSED. No new leads or signals from HANDS (60-session pattern).",
+    "plan_date": "2026-05-27",
+    "generated_at": "2026-05-27T07:00:00Z",
+    "day_number": 61,
+    "batch_5_day": 15,
+    "note": "BRAIN layer — Day 61 (Wednesday 2026-05-27, Batch 5 Day 15 — Post-Day-14 Reply Peak — Batch 6 Launch Decision). NO SENDS TODAY. Day-14 breakup ASSUMED SENT yesterday Tuesday 2026-05-26 (UNCONFIRMED — 61-session HANDS pattern). Post-Day-14 reply window NOW OPEN (24h peak today). IMAP per Batch 5 lead MANDATORY today-Friday. Zero Batch 5 replies to date. Batch 6 Harrogate + Craven: launch CONFIRMED — scraping starts today. Day-0 sends: Tuesday 2026-06-02. Batch 6 initial email templates included below (to be personalised from batch_6_leads.json once HANDS completes scrape). LinkedIn MANDATORY Day 3-7 (Fri 2026-06-05). CHANGELOG: 59+ days overdue — MANDATORY THIS SESSION.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No new INITIAL sends today. TODAY'S send event is Day-14 breakup — copy in day14_breakup section below. All 4 signal variants READY. Send window: 09:00-10:30. IMAP per lead before each send.",
+    "new_sends_note": "No sends today — post-Day-14 monitoring day. Next send: Batch 6 Day-0 Tuesday 2026-06-02.",
 
-    "day3_bumps_status": {
-      "send_date": "2026-05-15 (Friday)",
-      "status": "ASSUMED_SENT — UNCONFIRMED",
-      "send_window": "09:00-10:30",
-      "copy_location": "Day 47 version of this file — templates carried forward",
-      "note": "If any Day-3 bumps were NOT sent Friday: they are now 2 days overdue. Send Monday 2026-05-18 as second priority (after IMAP sweep, before LinkedIn). Still within the 3-7 day window — barely."
+    "batch_5_summary": {
+      "status": "SEQUENCE ASSUMED COMPLETE (UNCONFIRMED — all 4 touchpoints assumed sent)",
+      "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED SENT — UNCONFIRMED"},
+      "day_3": {"date": "2026-05-15 (Friday)", "status": "ASSUMED SENT — UNCONFIRMED"},
+      "day_7": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED SENT — UNCONFIRMED"},
+      "day_14": {"date": "2026-05-26 (Tuesday)", "status": "ASSUMED SENT YESTERDAY — UNCONFIRMED"},
+      "post_day14_reply_window": "OPEN — 24h peak TODAY (Wed 2026-05-27), 48h Thu 28, 72h Fri 29. Window closes Friday evening.",
+      "reapproach_date": "2026-11-26 minimum (6 months from Day-14 assumed send date)"
     },
 
-    "day7_new_angle": {
-      "send_date": "2026-05-19 (Tuesday)",
+    "batch_6_email_templates": {
+      "launch_date": "2026-06-02 (Tuesday)",
+      "territory": "Harrogate District + Craven District",
       "send_window": "09:00-10:30",
       "stagger": "10 minutes between sends",
-      "type": "Standalone NEW email — NOT a thread reply",
-      "subject_type": "New subject line — do not inherit Day-0 thread subject",
-      "imap_precondition": "MANDATORY per lead before each send. If INTERESTED reply found: send interested variant (conditional_handling below). If NOT_INTERESTED: cancel permanently.",
-      "max_lines": 6,
-      "rules": [
-        "New standalone email — not a reply to the Day-0 thread",
-        "New subject line — different from Day-0. See subject lines per signal below.",
-        "Different pain point — NOT a reframe of Day-0. Completely new angle.",
-        "First name in subject if known — same rule as Day-0",
-        "Town name in subject — local credibility",
-        "No question marks in subject — statement of fact",
-        "4-6 lines body. Not a long pitch — this is still light touch.",
-        "One pain point only — new signal, single clear angle",
-        "Do NOT mention the Day-3 bump or Day-0 email explicitly — the new subject line handles the context reset",
-        "Reference the original Day-0 finding only briefly ('the Not Secure warning from last week') as a bridge, then pivot hard to the new angle"
-      ],
-
-      "copy_by_signal": {
-        "ssl_pas_day7": {
-          "signal": "ssl",
-          "day0_angle": "Trust / 'Not Secure' visitor warning",
-          "day7_angle": "Google local search ranking penalty for HTTP sites",
-          "framework": "PAS (new Problem: ranking, new Agitate: losing visibility to competitors, new Solution: fix both at once)",
-          "allocation": "~60% of Batch 5 Day-7 sends",
-
-          "subject_options": [
-            "[First name] — the 'Not Secure' warning is also a Google ranking issue for [business name]",
-            "[First name] — why [business name] may be ranking lower in [town] searches",
-            "[First name] — [business name]: SSL affects your Google visibility in [town] too"
-          ],
-          "recommended_subject": "[First name] — the 'Not Secure' warning is also a Google ranking issue for [business name]",
-          "subject_personalisation": ["First name (from send records)", "business name (from send records)"],
-
-          "body": "[First name],\n\nSent a note last week about the 'Not Secure' warning on [specific URL from Day-0].\n\nOne more thing worth knowing: Google uses HTTPS as a ranking signal for local searches. HTTP sites don't just put visitors off — they rank lower when someone searches for '[trade] in [town]'. So the warning is costing [business name] both trust and visibility at the same time.\n\nWorth sorting before a competitor moves above you. Happy to talk through what the fix looks like.\n\n[Your name]",
-
-          "personalisation_required": [
-            "First name (from send records)",
-            "specific URL (from Day-0 send records — the exact URL referenced in Day-0)",
-            "trade keyword (from Day-0 records — e.g. 'plumber', 'roofer', 'joiner')",
-            "town (from send records)",
-            "business name (from send records)"
-          ],
-
-          "rules": [
-            "Use the same specific URL from Day-0 as the anchor — consistency builds credibility",
-            "The new angle is ranking, not trust — this is a genuinely different pain point",
-            "'Ranking lower in local searches' is verifiable — builds credibility",
-            "'Before a competitor moves above you' is competitive framing — low pressure but motivating",
-            "Do NOT mention Google Business Profile unless HANDS has confirmed from per-lead research that GBP is incomplete — that is an additional angle, not a replacement",
-            "5 lines body max — this is still cold email, not a report"
-          ],
-
-          "alternative_angle_if_gbp_known_incomplete": {
-            "trigger": "Use ONLY if HANDS can confirm from their research that the lead's Google Business Profile is incomplete or unverified",
-            "subject": "[First name] — [business name]: 'Not Secure' AND an incomplete Google listing",
-            "body_addition": "Add after the ranking paragraph: 'Your Google Business Profile also appears [incomplete / unverified / missing key details] — which compounds the ranking issue. Worth sorting both at the same time.'"
-          }
-        },
-
-        "mobile_pas_day7": {
-          "signal": "mobile",
-          "day0_angle": "Mobile layout broken / site not loading on mobile screens",
-          "day7_angle": "SSL ('Not Secure' warning for all visitors) — or missing click-to-call",
-          "framework": "PAS (new Problem: 'Not Secure' for ALL visitors, not just mobile — new and broader)",
-          "allocation": "~20% of Batch 5 Day-7 sends",
-          "condition": "Use SSL angle ONLY if the site is confirmed HTTP (which it should be for most Ryedale leads — check Day-0 send records). If site is already HTTPS: use click-to-call angle instead.",
-
-          "subject_options": [
-            "[First name] — [business name]: one more issue I noticed on the website",
-            "[First name] — [business name]'s site also has a 'Not Secure' warning for all visitors",
-            "[First name] — [business name]: the mobile issue comes with another problem"
-          ],
-          "recommended_subject_ssl_angle": "[First name] — [business name]: one more issue I noticed on the website",
-          "recommended_subject_click_to_call_angle": "[First name] — [business name]: one quick win worth looking at",
-          "subject_personalisation": ["First name", "business name"],
-
-          "body_ssl_angle": "[First name],\n\nFollowed up last week about [business name]'s site not loading well on mobile.\n\nLooked at it again — the site is also running on HTTP, which means Chrome shows a 'Not Secure' warning to every visitor, not just mobile users. So the mobile layout issue and the security warning are both working against [business name] at the same time.\n\nBoth are a quick fix in the same session. Happy to put a rough number on it if useful.\n\n[Your name]",
-
-          "body_click_to_call_angle": "[First name],\n\nFollowed up last week about [business name]'s site not loading well on mobile.\n\nNoticed one more thing: there's no click-to-call button on the mobile version. Anyone on their phone who wants to get in touch has to copy and paste the number manually — most won't bother.\n\nEasy to add as part of the mobile fix. Happy to talk through what's involved.\n\n[Your name]",
-
-          "personalisation_required": ["First name", "business name"],
-
-          "rules": [
-            "SSL angle: only use if Day-0 signal was mobile AND site is HTTP — check send records",
-            "Click-to-call angle: use if site is already HTTPS or if SSL angle feels redundant given Day-0",
-            "Do NOT repeat the mobile layout description from Day-0 — pivot fully to the new angle",
-            "Both angles are 4-5 lines — short and specific"
-          ]
-        },
-
-        "no_website_bab_day7": {
-          "signal": "no_website",
-          "day0_angle": "Business not appearing in Google search for '[trade] [town]'",
-          "day7_angle": "Named competitor currently ranking for that search — or specific missed enquiry estimate",
-          "framework": "BAB (new Before: competitor is capturing all the calls, After: [business name] captures its share, Bridge: a basic site + GBP is all it takes)",
-          "allocation": "~15% of Batch 5 Day-7 sends",
-
-          "subject_options": [
-            "Following up — who's getting the [trade] calls in [town]",
-            "Following up — [business name]: a competitor is ranking where you could be",
-            "[Business name] — [town] [trade] searches: still worth a look"
-          ],
-          "recommended_subject": "Following up — who's getting the [trade] calls in [town]",
-          "subject_personalisation": ["trade keyword", "town"],
-          "subject_note": "No first name in subject if owner not known — use business-type framing instead. Never guess a name.",
-
-          "body_with_named_competitor": "Hi,\n\nSent a note last week about [business name] not coming up when people search for '[trade] in [town]'.\n\nChecked again this morning — [Competitor Name] in [town/nearby area] is ranking in the top three for that search. Those are enquiries that would naturally go to [business name] if the online presence was there.\n\nGetting a basic site and Google Business Profile live is usually a fortnight's work. Happy to put a rough cost together if you'd like to see what it would take.\n\n[Your name]",
-
-          "body_without_named_competitor": "Hi,\n\nSent a note last week about [business name] not coming up when people search for '[trade] in [town]'.\n\nChecked again — businesses from [nearby town / the surrounding area] are showing up ahead in that search. They're getting enquiries that could be going to [business name] instead.\n\nGetting a basic site and Google Business Profile live is usually a fortnight's work. Happy to put a cost together.\n\n[Your name]",
-
-          "personalisation_required": [
-            "business name",
-            "trade keyword",
-            "town",
-            "competitor name (if HANDS can identify one from a quick Google search) OR 'nearby area' framing"
-          ],
-
-          "rules": [
-            "Specific competitor name is strongly preferred — verifiable and impactful. Takes 30 seconds to Google.",
-            "If no clear named competitor: use 'businesses from [nearby town]' — still concrete, still real",
-            "Do NOT use 'Hi' and then a first name — use 'Hi' as opener only (no name) if owner unknown",
-            "Breakup framing must still feel like an open door — not pressured",
-            "'Fortnight's work' framing is UK English and sets realistic expectations"
-          ]
-        },
-
-        "aida_keyword_gap_day7": {
-          "signal": "aida",
-          "day0_angle": "Business has strong reviews but site not ranking for '[keyword] [town]'",
-          "day7_angle": "Review reputation not converting into search visibility — Google amplification opportunity",
-          "framework": "AIDA (Attention: great reviews but invisible in search; Interest: competitors with fewer reviews rank above you; Desire: closing the gap would redirect that traffic; Action: 15-minute call)",
-          "allocation": "~5% of Batch 5 sends — test batch only (4.5★+ 100+ reviews qualification)",
-
-          "subject_options": [
-            "[First name] — [business name] has great reviews but low search visibility in [town]",
-            "[First name] — [N] reviews and still not ranking for '[keyword] in [town]'",
-            "[First name] — [business name]: the reviews are there, the ranking isn't"
-          ],
-          "recommended_subject": "[First name] — [business name] has [N] great reviews but low search visibility in [town]",
-          "subject_personalisation": ["First name", "business name", "N (review count)", "town"],
-
-          "body": "[First name],\n\nFollowed up last week about [business name] and the '[keyword] in [town]' ranking.\n\n[Business name] has [N] reviews — more than most competitors in the area. The gap is that Google isn't surfacing the site at the top of local search results, so the reputation isn't converting into as many new enquiries as it could.\n\nA few on-page changes would close that gap. Happy to show you what's holding back the ranking — 15 minutes would cover it.\n\n[Your name]",
-
-          "personalisation_required": [
-            "First name",
-            "business name",
-            "keyword (from Day-0 records)",
-            "town",
-            "N (review count from Day-0)"
-          ],
-
-          "rules": [
-            "Use exact review count from Day-0 — credibility anchor, shows real research",
-            "Use exact keyword from Day-0 — consistency",
-            "'More reviews than most competitors' must be verifiable — check before sending",
-            "Shorter is better for high-review leads — they receive more approaches",
-            "'15 minutes would cover it' — low-friction call to action for established businesses"
-          ]
-        }
+      "signal_mix": {
+        "ssl_pas": "60%",
+        "mobile_pas": "20%",
+        "no_website_bab": "15%",
+        "aida": "5%"
       },
+      "note": "Templates below are production-ready with [bracketed placeholders]. Fill from data/batch_6_leads.json once HANDS completes scrape. Assign signal per lead before populating. These templates are unchanged from the winning Batch 5 / Batch 1-4 copy — the model is proven.",
 
-      "conditional_handling": {
-        "if_imap_finds_interested_reply_before_day7": {
-          "action": "Cancel Day-7 send. Use interested variant below instead. Reply in thread to their message. Classify. Prepare proposal within 24h.",
-          "ssl_interested_variant": "[First name],\n\nThanks for coming back to me.\n\nHappy to put together a few options and walk you through what makes sense for [business name]. Are you free for a quick call this week?\n\n[Your name]",
-          "no_website_interested_variant": "Hi,\n\nThanks for getting back to me.\n\nI can pull together a few options for getting [business name] visible online. Are you free for a quick call this week?\n\n[Your name]",
-          "rules": [
-            "Reply to their email thread — not a new email",
-            "Acknowledge promptly — do not re-pitch the original angle",
-            "Offer a call — one ask only",
-            "Match their tone and formality level",
-            "Log in CHANGELOG same session"
-          ]
-        },
-        "if_imap_finds_not_interested": {
-          "action": "CANCEL Day-7 send. Suppress email channel permanently. Block LinkedIn permanently. Log CHANGELOG. Update lead status to lost."
-        },
-        "if_imap_finds_unsubscribe": {
-          "action": "CANCEL Day-7 send. Suppress all channels within 24h. GDPR Article 21. Log audit_log and CHANGELOG."
-        },
-        "if_imap_finds_ooo": {
-          "action": "PAUSE Day-7 send. Note return date. Send Day-7 on day after stated return (within the 14-day window). Do not exceed 4 total touchpoints."
-        }
-      },
+      "ssl_pas_day0": {
+        "framework": "PAS",
+        "signal": "ssl",
+        "allocation": "60%",
+        "applicable_towns": ["Knaresborough", "Ripon", "Boroughbridge", "Skipton", "Settle", "Grassington", "Gargrave"],
 
-      "send_brief_for_hands": {
-        "instruction": "For each lead in your Batch 5 send records, apply the correct Day-7 template from copy_by_signal above. Fill all [bracketed placeholders] from your Tuesday 2026-05-12 send records. Send as a NEW standalone email — not a thread reply. New subject line. 10-minute stagger. IMAP clean per lead required before each send.",
-        "send_window": "Tuesday 2026-05-19, 09:00-10:30",
-        "total_expected_sends": "12-18 (depends on confirmed Batch 5 send list)",
-        "after_sends": [
-          "Log all Day-7 sends in CHANGELOG.md same session (50 days overdue — mandatory)",
-          "EOD Tuesday: archive trigger fires for any Batch 5 lead where LinkedIn not executed"
+        "subject_primary": "[First name] — your [town] [business type] site is flagged 'Not Secure'",
+        "subject_fallback_no_owner_name": "[Business name] — [town] [trade]: website flagged 'Not Secure'",
+        "subject_rules": [
+          "First name in subject if owner name is known — non-negotiable",
+          "Town name always included",
+          "Use Chrome's exact wording: 'Not Secure'",
+          "No question marks — statement of fact",
+          "Keep under 60 characters"
+        ],
+
+        "subject_examples": [
+          "Mark — your Knaresborough plumbing site is flagged 'Not Secure'",
+          "Julie — your Skipton B&B website is flagged 'Not Secure'",
+          "David — your Ripon estate agency site isn't secure",
+          "Helen — your Boroughbridge joinery site is flagged 'Not Secure'",
+          "Sarah — your Settle builder website is flagged 'Not Secure'"
+        ],
+
+        "body": "Hi [First name],\n\nI was looking up [trade] in [town] this morning and noticed [specific URL] comes up with a 'Not Secure' warning in Chrome.\n\nFor visitors searching for a [trade] in [town], that warning appears before they've even read your page — it's the first thing they see. A lot will click away immediately.\n\nThe fix is quick and doesn't touch your existing site or content. Would it be worth a quick chat?\n\n[Your name]",
+
+        "personalisation_required": [
+          "First name (from enrichment — Companies House, website about page, Google Maps)",
+          "Trade keyword (e.g. 'plumber', 'roofer', 'joiner', 'electrician', 'estate agent')",
+          "Town name (from scrape data)",
+          "Specific URL (from SSL check — the exact URL flagged as HTTP, e.g. http://www.smithsplumbing.co.uk)",
+          "Business name (from scrape data)"
+        ],
+
+        "rules": [
+          "Use the specific HTTP URL — not the domain alone. Shows you actually checked.",
+          "Town name in body opening line — builds local credibility",
+          "'Customers search for you online before calling' framing for trades",
+          "One pain point only — trust/warning. Do NOT mention mobile, ranking, or other issues in Day-0.",
+          "4-5 lines maximum — not a report",
+          "No attachments, no links"
         ]
-      }
-    },
+      },
 
-    "day14_breakup": {
-      "generated_at": "2026-05-17 (Day 51 — EARLY, ahead of Tuesday 2026-05-19 evening schedule)",
-      "send_date": "2026-05-26 (Tuesday)",
-      "send_window": "09:00-10:30",
-      "stagger": "10 minutes between sends",
-      "type": "Breakup email — final touchpoint. Maximum 4 total touchpoints.",
-      "imap_precondition": "MANDATORY per lead before each send — same rule as every send.",
-      "rules": [
-        "3 lines body maximum — no exceptions",
-        "No question marks anywhere — subject or body",
-        "No pressure — this is a door left open, not a final pitch",
-        "No new signal or pain point — do not introduce new issues on Day-14",
-        "UK English throughout",
-        "Do NOT mention how many times you've followed up — implied, not stated",
-        "End with warmth — 'Best of luck' or 'happy to help' — not 'let me know' or 'looking forward to hearing from you'",
-        "First name in subject if known (SSL, mobile, AIDA leads) — consistent with full sequence",
-        "DO NOT SEND to any lead who replied INTERESTED before this date — use proposal flow instead",
-        "This is the 4th and FINAL touchpoint — hard limit. No further contact after Day-14."
-      ],
+      "mobile_pas_day0": {
+        "framework": "PAS",
+        "signal": "mobile",
+        "allocation": "20%",
+        "condition": "ssl=false AND mobile clearly broken — confirm you tested it on a phone before sending",
 
-      "copy_by_signal": {
-        "ssl_pas_day14": {
-          "signal": "ssl",
-          "framework": "Breakup",
-          "allocation": "~60% of Batch 5 Day-14 sends",
-          "touch_count": "4th and final (Day-0, Day-3 bump, Day-7 new angle, Day-14 breakup)",
+        "subject_primary": "[First name] — [business name]: your [town] website doesn't work on mobile",
+        "subject_fallback_no_owner_name": "[Business name] — [town]: website broken on mobile",
 
-          "subject_options": [
-            "[First name] — closing the loop on [business name]",
-            "[First name] — last note from me on [business name]",
-            "[First name] — [business name]: leaving it with you"
-          ],
-          "recommended_subject": "[First name] — closing the loop on [business name]",
-          "subject_personalisation": ["First name (from send records)", "business name (from send records)"],
+        "subject_examples": [
+          "Paul — Knaresborough Roofing: your website doesn't work on mobile",
+          "James — your Skipton joinery site has a mobile problem"
+        ],
 
-          "body": "[First name],\n\nSent a couple of notes about the 'Not Secure' issue on [business name]'s site — I'll leave it there.\n\nIf it becomes worth looking at, you know where I am.\n\n[Your name]",
+        "body": "Hi [First name],\n\nI was looking up [business name] on my phone and the site [specific issue: text too small to read / menu not working / images not loading / contact number not clickable].\n\nMost people searching for a [trade] in [town] are on their phones. If the site doesn't work, they'll find the next result instead.\n\nWorth a quick look? Happy to show you what the fix involves.\n\n[Your name]",
 
-          "personalisation_required": ["First name", "business name"],
-          "rules": [
-            "Reference 'Not Secure' — maintains thread continuity without repeating the full pitch",
-            "No specific URL in Day-14 — brief reference only",
-            "Do not mention Google ranking angle from Day-7 — this is a clean exit, not a recap",
-            "'You know where I am' — warm door open, no friction, no deadline",
-            "3 lines — do not add a 4th"
-          ]
+        "personalisation_required": [
+          "First name",
+          "Business name",
+          "Town",
+          "Specific mobile issue (must be confirmed by actual phone test — not assumed)",
+          "Trade keyword"
+        ],
+
+        "rules": [
+          "ONLY use if you have personally tested the site on a phone and confirmed the specific failure",
+          "Name the exact failure — 'text too small' or 'menu not working' builds credibility vs. 'mobile problem'",
+          "Do NOT use if site is also HTTP — use SSL-PAS instead (higher signal priority)",
+          "4-5 lines max"
+        ]
+      },
+
+      "no_website_bab_day0": {
+        "framework": "BAB",
+        "signal": "no_website",
+        "allocation": "15%",
+        "condition": "No website at all AND 4★+ AND 20+ reviews (rural bar — lowered from 50 for Harrogate/Craven rural towns)",
+
+        "subject_primary": "[First name] — [business name] has [X] Google reviews but no website to send people to",
+        "subject_fallback_no_owner_name": "[Business name] — [town]: great Google reviews, no website",
+
+        "subject_examples": [
+          "Mike — Boroughbridge Builders has 34 reviews but no website to send people to",
+          "Karen — your Grassington B&B has 47 reviews and nothing to back them up"
+        ],
+
+        "body": "Hi [First name],\n\n[Business name] has [X] reviews on Google and a [star rating] rating — that's a strong reputation.\n\nRight now, anyone who finds you through Google can see the reviews but has nowhere to go next. No contact form, no booking page, no way to find your prices or availability. Most of them will call a competitor who has a site.\n\nA simple one-page site with your services, area, and contact details would capture those searchers. I build them quickly and they're designed around what [trade] customers in [town] are actually looking for.\n\nWorth five minutes?\n\n[Your name]",
+
+        "personalisation_required": [
+          "First name",
+          "Business name",
+          "Review count (from Google Maps — exact number)",
+          "Star rating (e.g. '4.6-star')",
+          "Town",
+          "Trade keyword"
+        ],
+
+        "rules": [
+          "Must have 4★+ AND 20+ reviews — no exceptions",
+          "Reference the exact review count — shows you actually looked at their Google listing",
+          "BAB structure: Before (great reviews, no site) → After (site captures searchers) → Bridge (I build them)",
+          "NOT a deficit framing — lead with their strength (reviews), then reveal the gap",
+          "No-website leads in rural towns often have owner-operated businesses — direct, warm tone"
+        ]
+      },
+
+      "aida_day0": {
+        "framework": "AIDA",
+        "signal": "aida",
+        "allocation": "5%",
+        "condition": "4.5★+ AND 100+ reviews only AND verifiable keyword gap — confirm in Google search before sending",
+
+        "subject_primary": "[First name] — [business name] isn't showing up for '[trade] [town]' searches",
+        "subject_fallback_no_owner_name": "[Business name] — [town]: not ranking for your main keyword",
+
+        "body": "Hi [First name],\n\n[Business name] has [X] reviews and a [star rating] rating on Google — that's exceptional for [town].\n\nBut when someone searches '[trade] [town]' today, [business name] is [position/not appearing] in the results — [competitor name] and [competitor 2] are above you despite fewer reviews.\n\nThe gap is usually fixable with a few specific changes to the site. I checked this morning and can see exactly what's holding the ranking back.\n\nWould it be worth a quick look together?\n\n[Your name]",
+
+        "personalisation_required": [
+          "First name",
+          "Business name",
+          "Review count and star rating (exact)",
+          "Town",
+          "Trade keyword",
+          "Specific search query (verified by HANDS in Google today)",
+          "Competitor names appearing above (from actual search — do not guess)",
+          "Current position (if visible)"
+        ],
+
+        "rules": [
+          "ONLY use if you have personally searched '[trade] [town]' today and confirmed the ranking gap",
+          "Name the specific competitors appearing above — builds verifiable credibility",
+          "4.5★+ AND 100+ reviews ONLY — this is the only angle that justifies the contrast claim",
+          "5% allocation — test only. Do not scale until conversion rate confirmed.",
+          "Avoid for sectors where PAS is proven (SSL leads) — PAS outperforms AIDA for HTTP sites"
+        ]
+      },
+
+      "day3_bump_template": {
+        "send_date": "2026-06-05 (Friday — Batch 6 Day 3)",
+        "type": "Thread reply — reply to Day-0 thread. Do NOT start new email.",
+        "lines_max": 5,
+        "imap_precondition": "MANDATORY per lead before bump. If INTERESTED found: skip bump, use proposal flow (24h SLA). If NOT_INTERESTED: cancel sequence permanently. If UNSUBSCRIBE: suppress immediately.",
+        "linkedin_note": "LINKEDIN MANDATORY DAY 3 — execute LinkedIn connection AND write profiles.json SAME SESSION as Day-3 bumps. Archive trigger Tue 2026-06-10 EOD fires unconditionally.",
+
+        "ssl_bump": {
+          "body": "Hi [First name],\n\nJust wanted to make sure this didn't get buried — the 'Not Secure' warning on [URL] is still live as of today.\n\nHappy to give you 10 minutes to show you exactly what the fix looks like.\n\n[Your name]"
         },
-
-        "mobile_pas_day14": {
-          "signal": "mobile",
-          "framework": "Breakup",
-          "allocation": "~20% of Batch 5 Day-14 sends",
-          "touch_count": "4th and final",
-
-          "subject_options": [
-            "[First name] — [business name]: last note from me",
-            "[First name] — closing the loop on [business name]",
-            "[First name] — leaving it with you on [business name]"
-          ],
-          "recommended_subject": "[First name] — [business name]: last note from me",
-          "subject_personalisation": ["First name", "business name"],
-
-          "body": "[First name],\n\nSent a few notes about [business name]'s site — won't keep nudging.\n\nIf it's ever worth sorting, happy to help.\n\n[Your name]",
-
-          "personalisation_required": ["First name", "business name"],
-          "rules": [
-            "'A few notes' acknowledges the sequence without listing touchpoints",
-            "'Won't keep nudging' — self-aware, respectful, not apologetic",
-            "'Happy to help' — open door, no pressure",
-            "Do NOT re-specify the mobile issue — implicit from the sequence context",
-            "3 lines only"
-          ]
+        "mobile_bump": {
+          "body": "Hi [First name],\n\nJust following up on the mobile issue with [business name] — still showing the [specific issue] when I tested this morning.\n\nWould it be useful to talk through the fix? Shouldn't take long.\n\n[Your name]"
         },
-
-        "no_website_bab_day14": {
-          "signal": "no_website",
-          "framework": "Breakup",
-          "allocation": "~15% of Batch 5 Day-14 sends",
-          "touch_count": "4th and final",
-          "note": "Owner name often unknown for no-website leads — use 'Hi' opener and business-type framing",
-
-          "subject_options": [
-            "Last note — [business name]",
-            "Following up one last time — [business name]",
-            "[Business name]: leaving it with you"
-          ],
-          "recommended_subject": "Last note — [business name]",
-          "subject_personalisation": ["business name"],
-          "subject_note": "No first name in subject if owner name is unknown. Never guess.",
-
-          "body_with_known_owner": "[First name],\n\nFollowed up a couple of times about [business name] not appearing in online searches — won't keep at it.\n\nIf getting found online becomes a priority, I'm easy to reach.\n\n[Your name]",
-
-          "body_unknown_owner": "Hi,\n\nFollowed up a couple of times about [business name] not appearing in '[trade] in [town]' searches — won't keep at it.\n\nIf getting found online becomes a priority, I'm easy to reach.\n\n[Your name]",
-
-          "personalisation_required": ["business name", "trade keyword (if unknown owner)", "town (if unknown owner)"],
-          "rules": [
-            "Use 'Hi' if owner name is unknown — never guess a name",
-            "'Not appearing in searches' references the original angle without full detail",
-            "'Won't keep at it' — self-aware, respectful",
-            "'I'm easy to reach' — open door, no pressure, no specific next step",
-            "3 lines only"
-          ]
-        },
-
-        "aida_keyword_gap_day14": {
-          "signal": "aida",
-          "framework": "Breakup",
-          "allocation": "~5% of Batch 5 Day-14 sends",
-          "touch_count": "4th and final",
-
-          "subject_options": [
-            "[First name] — last note on [business name]",
-            "[First name] — [business name]: closing the loop",
-            "[First name] — leaving it with you"
-          ],
-          "recommended_subject": "[First name] — last note on [business name]",
-          "subject_personalisation": ["First name", "business name"],
-
-          "body": "[First name],\n\nSent a couple of notes about the search visibility gap for [business name] — I'll leave it with you.\n\nIf the timing changes, happy to pick it up.\n\n[Your name]",
-
-          "personalisation_required": ["First name", "business name"],
-          "rules": [
-            "'Search visibility gap' — brief reference to the AIDA angle without re-pitching",
-            "'Leave it with you' — warm, non-pressured exit",
-            "'If the timing changes' — acknowledges that some AIDA leads are busy established businesses who may revisit later",
-            "3 lines only"
-          ]
+        "no_website_bump": {
+          "body": "Hi [First name],\n\nJust wanted to follow up — [business name] still has [X] reviews with nowhere to send people next.\n\nA quick call would let me show you what a simple site would do for enquiries.\n\n[Your name]"
         }
       },
 
-      "send_brief_for_hands": {
-        "instruction": "For each Batch 5 lead that has NOT replied INTERESTED before 2026-05-26: apply the correct Day-14 template from copy_by_signal above. Fill [bracketed placeholders] from send records. Send as a NEW standalone email. New subject. 10-minute stagger. IMAP clean per lead required before each send. This is the FINAL email in the sequence — maximum 4 touchpoints enforced.",
-        "send_window": "Tuesday 2026-05-26, 09:00-10:30",
-        "stagger": "10 minutes between sends",
-        "exclusions": [
-          "Any lead that replied INTERESTED — do NOT send Day-14. Use proposal flow instead.",
-          "Any lead that replied NOT_INTERESTED — already suppressed. Do not contact.",
-          "Any lead that UNSUBSCRIBED — already suppressed. Do not contact.",
-          "Formally archived leads: 1, 3, 22, 49, 51, 53, 54 — do not contact.",
-          "Suppressed leads: 7, 19 — do not contact.",
-          "Sequences already complete: 4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59 — not applicable."
-        ],
-        "after_sends": [
-          "Log all Day-14 sends in CHANGELOG.md same session",
-          "Update lead status to 'sequence_complete' for all Day-14 recipients",
-          "Note reapproach dates: 6 months minimum for no-reply leads (reapproach: 2026-11-26)"
-        ],
-        "note": "Day-14 breakup copy generated early (Day 51, Sunday 2026-05-17) ahead of Tuesday 2026-05-19 evening schedule. No Tuesday evening BRAIN run required solely for Day-14 copy. BRAIN will still run Tuesday evening to assess Day-7 results and Batch 6 scoping."
+      "day7_new_angle_template": {
+        "send_date": "2026-06-09 (Tuesday — Batch 6 Day 7)",
+        "type": "Standalone NEW email — NOT a thread reply. New subject line. Different pain point.",
+        "lines_max": 6,
+        "imap_precondition": "MANDATORY per lead before send.",
+
+        "ssl_day7": {
+          "subject": "[First name] — the 'Not Secure' warning is also a Google ranking issue for [business name]",
+          "body": "[First name],\n\nSent a note last week about the 'Not Secure' warning on [URL].\n\nOne more thing worth knowing: Google uses HTTPS as a ranking signal for local searches. HTTP sites don't just put visitors off — they rank lower when someone searches for '[trade] in [town]'. So the warning is costing [business name] both trust and visibility at the same time.\n\nWorth sorting before a competitor moves above you. Happy to talk through what the fix looks like.\n\n[Your name]"
+        },
+        "mobile_day7": {
+          "subject": "[First name] — [business name]: the mobile issue also affects your Google ranking",
+          "body": "[First name],\n\nFollowed up last week about the mobile display issue on [URL].\n\nGoogle's ranking algorithm uses mobile-friendliness as a signal for local searches. A site that doesn't work on phones ranks lower — so the issue you're seeing on mobile is also costing you visibility when someone searches '[trade] [town]'.\n\nHappy to walk you through what both fixes look like together.\n\n[Your name]"
+        },
+        "no_website_day7": {
+          "subject": "[First name] — every month without a site, a competitor in [town] moves further ahead",
+          "body": "[First name],\n\nFollowed up last week about your Google reviews — [X] reviews with no site to back them up.\n\nSearches for '[trade] in [town]' are going to competitors with sites right now. Each month without one is another month of those enquiries going elsewhere.\n\nA simple site takes about a week to build. Happy to show you what it would look like for [business name].\n\n[Your name]"
+        }
+      },
+
+      "day14_breakup_template": {
+        "send_date": "2026-06-16 (Tuesday — Batch 6 Day 14)",
+        "type": "Standalone NEW email — NOT a thread reply. New subject line. 3 lines max.",
+        "lines_max": 3,
+        "imap_precondition": "MANDATORY per lead before send.",
+
+        "ssl_day14": {
+          "subject": "[First name] — last note on the [town] site issue",
+          "body": "[First name],\n\nSent a few notes about the 'Not Secure' warning on [URL]. No pressure — if the timing isn't right I completely understand.\n\nIf you ever want to revisit it, you know where I am.\n\n[Your name]"
+        },
+        "mobile_day14": {
+          "subject": "[First name] — last note on the [business name] mobile issue",
+          "body": "[First name],\n\nSent a couple of notes about the mobile display on [URL]. No bother if it's not the right time.\n\nHappy to help if it ever moves up the list.\n\n[Your name]"
+        },
+        "no_website_day14": {
+          "subject": "[First name] — last word on getting [business name] online",
+          "body": "[First name],\n\nFollowed up a few times about a site for [business name]. No pressure — these things have their own timing.\n\nIf it becomes a priority later in the year, just drop me a line.\n\n[Your name]"
+        }
       }
     },
 
-    "do_not_email": [1, 2, 3, 7, 19, 22],
-    "formally_archived": [1, 3, 22, 49, 51, 53, 54],
-    "sequences_complete_no_further_sends": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
+    "signal_assignment_pending": {
+      "note": "Signal assignments for Batch 6 cannot be written until data/batch_6_leads.json is received from HANDS (scrape results). BRAIN will update this file with per-lead assignments before 2026-06-02. Templates above are ready for all four signals.",
+      "leads_file_expected": "data/batch_6_leads.json — HANDS to write after scraping Harrogate + Craven towns",
+      "brain_review_date": "Monday 2026-06-01 or sooner if batch_6_leads.json is received earlier"
+    },
 
-    "send_summary": {
-      "new_initial_sends_today": 0,
-      "day3_bumps_assumed_sent": "2026-05-15 (Friday) — UNCONFIRMED",
-      "day7_new_angle_sends_date": "Tuesday 2026-05-19 — ASSUMED SENT (UNCONFIRMED)",
-      "day7_copy_status": "USED — per-signal templates sent (assumed) Tuesday 2026-05-19. Retained for CHANGELOG reference.",
-      "day14_breakup_date": "TODAY — Tuesday 2026-05-26, 09:00-10:30",
-      "day14_days_away": 0,
-      "day14_copy_status": "READY — generated early Day 51. All 4 signal variants in day14_breakup section. SENDING TODAY.",
-      "imap_precondition": "MANDATORY per Batch 5 lead before every Day-14 send — in send order, NOT leads 1/3/22. 52-day gap covered today.",
-      "tuesday_imap_status": "EXECUTING TODAY — per lead before each Day-14 send. Covers entire 52-day gap from 2026-04-04.",
-      "overnight_new_replies": "ZERO — new_replies.json unchanged from 2026-04-04. No overnight arrivals. All Batch 5 leads eligible for Day-14 subject to per-lead IMAP.",
-      "linkedin_status": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. 54-session failure.",
-      "post_day7_reply_window": "CLOSED — 72h+ cutoff passed Friday evening. Late arrivals surface in today's per-lead IMAP.",
-      "today_send_event": "TODAY — Tuesday 2026-05-26 — Day-14 breakup sends 09:00-10:30. IMAP per lead before each send. This is the FINAL touchpoint.",
-      "after_sends_today": [
-        "Update lead status to sequence_complete for all Day-14 recipients",
-        "Note reapproach date: 2026-11-26 minimum",
-        "Log all Day-14 sends in CHANGELOG.md same session — ABSOLUTE FINAL DEADLINE (58+ days overdue)"
-      ],
-      "next_brain_run": "Wednesday 2026-05-27 (Day-14 results + Batch 5 post-mortem + Batch 6 launch decision — Harrogate + Craven)."
+    "summary": {
+      "day": 61,
+      "date": "2026-05-27 (Wednesday, Batch 5 Day 15 — Post-Day-14 Reply Peak — Batch 6 Launch Decision)",
+      "sends_today": 0,
+      "next_send_date": "2026-06-02 (Tuesday) — Batch 6 Day-0",
+      "next_send_type": "Initial outreach — Harrogate District + Craven District — 18-22 leads",
+      "post_day14_reply_window": "OPEN — 24h peak TODAY. 48h Thu 28. 72h Fri 29. Window closes Fri evening.",
+      "batch_5_status": "SEQUENCE ASSUMED COMPLETE",
+      "batch_6_status": "LAUNCH CONFIRMED — scraping starts today",
+      "linkedin_b5_status": "PERMANENTLY CLOSED",
+      "linkedin_b6_status": "MANDATORY Day 3-7 (Fri 2026-06-05). Archive trigger: Tue 2026-06-10 EOD unconditional.",
+      "changelog_overdue_days": "59+",
+      "changelog_mandatory": "THIS SESSION — CANNOT BE DEFERRED"
     }
   }
 ]

@@ -1,169 +1,263 @@
 {
-  "generated_at": "2026-05-26T07:00:00Z",
-  "date": "2026-05-26",
-  "day_number": 60,
-  "batch_5_day": 14,
-  "note": "BRAIN layer — Day 60 (Tuesday 2026-05-26, Batch 5 Day 14 — DAY-14 BREAKUP SEND DAY). TODAY is the final touchpoint for all Batch 5 Ryedale leads. IMAP per lead MANDATORY before each Day-14 send — covers 52-day gap (last confirmed check 2026-04-04). Send window: 09:00-10:30, 10-min stagger. Copy READY in daily_email_plan.json (day14_breakup section — 4 signal variants). CHANGELOG: 58+ days overdue — MANDATORY TODAY same session as Day-14 sends — ABSOLUTE FINAL DEADLINE. Post-Day-14 reply window opens TOMORROW Wednesday 2026-05-27 (24h post-send). Batch 6 scoping: TOMORROW Wednesday 2026-05-27 BRAIN run (post-mortem + Harrogate + Craven launch decision). LinkedIn PERMANENTLY CLOSED. No new leads or signals from HANDS (60-session pattern).",
+  "generated_at": "2026-05-27T07:00:00Z",
+  "date": "2026-05-27",
+  "day_number": 61,
+  "batch_5_day": 15,
+  "note": "BRAIN layer — Day 61 (Wednesday 2026-05-27, Batch 5 Day 15 — Post-Day-14 Reply Peak, Batch 5 Post-Mortem, Batch 6 Launch Decision). Day-14 breakup sends ASSUMED SENT yesterday Tuesday 2026-05-26 (UNCONFIRMED — 61-session HANDS pattern). Post-Day-14 reply window NOW OPEN: TODAY is 24h peak, Thursday 48h peak, Friday 72h close. IMAP per Batch 5 lead MANDATORY today-Friday — covers 53-day gap (last confirmed 2026-04-04). Zero Batch 5 replies confirmed. Batch 6 launch confirmed: Harrogate District + Craven District — scraping starts TODAY. CHANGELOG: 59+ days overdue — was ABSOLUTE FINAL DEADLINE yesterday — MANDATORY IMMEDIATELY in next HANDS session.",
 
   "day_assessment": {
-    "today_tuesday": {
-      "date": "2026-05-26",
-      "day_of_week": "Tuesday",
-      "campaign_day": 60,
-      "batch_5_day": 14,
+    "today_wednesday": {
+      "date": "2026-05-27",
+      "day_of_week": "Wednesday",
+      "campaign_day": 61,
+      "batch_5_day": 15,
       "is_uk_bank_holiday": false,
-      "is_send_day": true,
-      "send_type": "Day-14 breakup — FINAL TOUCHPOINT. 4-touchpoint hard limit enforced. IMAP per lead before each send.",
+      "is_send_day": false,
+      "send_type": "NO SENDS TODAY. Post-Day-14 monitoring day. IMAP per Batch 5 lead. Batch 6 scraping begins.",
       "primary_actions_today": [
-        "IMAP per Batch 5 lead — before each individual Day-14 send, in send order. NOT leads 1/3/22. Covers 52-day gap. If INTERESTED found: cancel Day-14 for that lead, use proposal flow, 24h SLA from IMAP time.",
-        "Day-14 breakup sends — 09:00-10:30, 10-minute stagger. Copy in daily_email_plan.json (day14_breakup section). Standalone new email — not a thread reply. New subject line. 3 lines body max.",
-        "CHANGELOG.md — MANDATORY today same session as Day-14 sends. 58+ days overdue. ABSOLUTE FINAL DEADLINE. Log: all Batch 5 sends (Day-0 assumed 2026-05-12, Day-3 assumed 2026-05-15, Day-7 assumed 2026-05-19, Day-14 TODAY), fu_041-045 outcomes, all archive decisions, all IMAP gaps since April, LinkedIn archive (54-session failure, trigger fired 2026-05-19 EOD), today's IMAP + send results.",
-        "Update lead status to sequence_complete for all Day-14 recipients. Reapproach: 2026-11-26 minimum (6 months)."
+        "IMAP per Batch 5 lead — post-Day-14 monitoring (24h peak). Covers entire 53-day gap. NOT leads 1/3/22. If INTERESTED found: 24h proposal SLA from IMAP time (NON-NEGOTIABLE — 24/7). Cancel sequence for that lead. Update value_delivery_queue.json.",
+        "Full Batch 5 post-mortem review — see daily_strategy.md for complete analysis.",
+        "Batch 6 scraping starts TODAY — Harrogate District + Craven District. Target 18-22 leads. See batch_6_scrape_plan section below.",
+        "CHANGELOG.md — NOW 59+ DAYS OVERDUE — MANDATORY THIS SESSION — CANNOT BE DEFERRED A SINGLE ADDITIONAL DAY."
       ],
       "overnight_check": {
         "new_replies_received": false,
-        "new_replies_json_status": "UNCHANGED from 2026-04-04 — 5 historical replies only. Zero overnight arrivals. All Batch 5 leads proceed to Day-14.",
-        "imap_status": "NOT EXECUTED overnight — Monday hard block (correct). 52-day gap resolved TODAY per-lead before each send.",
-        "consequence": "No overnight INTERESTED replies. All Batch 5 leads eligible for Day-14 subject to per-lead IMAP check today."
+        "new_replies_json_status": "UNCHANGED from 2026-04-04 — 5 historical replies only. Zero overnight arrivals. 61-session HANDS pattern confirmed.",
+        "imap_status": "NOT EXECUTED overnight (correct — post-Day-14 sweep begins TODAY in business hours)",
+        "consequence": "No overnight INTERESTED replies. Post-Day-14 window opened this morning."
       },
       "imap_status": {
         "last_confirmed_check": "2026-04-04",
-        "gap_days": 52,
-        "today_plan": "MANDATORY — per Batch 5 lead before their individual Day-14 send, in send order. If INTERESTED reply found: cancel Day-14 for that lead, use proposal flow immediately (24h SLA from IMAP time — not from next business day). If NOT_INTERESTED: cancel Day-14 permanently. If UNSUBSCRIBE: suppress all channels within 24h (GDPR Article 21). If OOO with return AFTER 2026-05-25: mark sequence complete — cannot send Day-14 (4-touchpoint limit).",
+        "gap_days": 53,
+        "today_plan": "MANDATORY — per Batch 5 lead in priority order. Post-Day-14 24h peak. If INTERESTED reply found: 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Cancel send sequence for that lead (sequence already complete — no further sends). Prepare bespoke proposal. Update value_delivery_queue.json.",
         "leads_never_to_sweep": [1, 3, 22],
-        "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD."
-      },
-      "linkedin_status": {
-        "archive_trigger_status": "FIRED — Tuesday 2026-05-19 EOD (unconditional, 54-session failure)",
-        "consequence": "All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. PERMANENTLY CLOSED. Email is the only remaining channel.",
-        "today_sends": "Day-14 breakup is the ABSOLUTE FINAL touchpoint for all Batch 5 leads on the only remaining channel."
+        "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. Not even post-Day-14.",
+        "sweep_priority": "Sweep in Day-0 send order (highest score first). SSL-primary leads first as per signal priority."
       }
     }
   },
 
   "imap_status": {
-    "gap_days_from_confirmed_check": 52,
+    "gap_days_from_confirmed_check": 53,
     "last_confirmed_check": "2026-04-04",
     "recent_sweep_statuses": {
-      "wednesday_2026_05_20": "UNCONFIRMED — no new entries in new_replies.json. 60-session HANDS pattern.",
-      "thursday_2026_05_21": "UNCONFIRMED",
-      "friday_2026_05_22": "UNCONFIRMED",
-      "saturday_2026_05_23": "NOT EXECUTED — weekend block (correct)",
-      "sunday_2026_05_24": "NOT EXECUTED — weekend block (correct)",
-      "monday_2026_05_25": "NOT EXECUTED — Monday hard block (correct)",
-      "tuesday_2026_05_26": "EXECUTING TODAY — per Batch 5 lead before each Day-14 send in send order. This sweep covers the entire 52-day gap."
+      "tuesday_2026_05_26": "ASSUMED EXECUTED — per Batch 5 lead before each Day-14 send (UNCONFIRMED — 61-session HANDS pattern)",
+      "wednesday_2026_05_27": "EXECUTING TODAY — per Batch 5 lead. Post-Day-14 24h peak. Covers full 53-day gap.",
+      "thursday_2026_05_28": "REQUIRED — per Batch 5 lead. 48h post-Day-14 peak.",
+      "friday_2026_05_29": "REQUIRED — per Batch 5 lead. 72h post-Day-14. Reply window closes Friday evening."
     },
-    "today_sweep_requirement": "MANDATORY — per Batch 5 lead before each Day-14 send. In send order. NOT leads 1/3/22. Covers entire 52-day gap.",
+    "today_sweep_requirement": "MANDATORY — per Batch 5 lead. Post-Day-14 24h peak. NOT leads 1/3/22.",
     "new_replies_since_april": 0,
     "overnight_new_replies": 0,
-    "batch_5_reply_status": "Zero Batch 5 replies confirmed in new_replies.json. 52-day IMAP gap means inbox state unconfirmed until today's per-lead sweeps. Post-Day-7 reply wave closed. Sporadic late arrivals possible — will surface in today's IMAP.",
+    "batch_5_reply_status": "Zero Batch 5 replies confirmed in new_replies.json across entire 53-day period. Post-Day-14 reply window NOW OPEN. 24h peak today. Any replies expected Wednesday-Friday.",
     "leads_never_to_sweep": [1, 3, 22],
     "outcomes_if_imap_surfaces_reply_today": {
-      "if_interested_reply_found": "Cancel Day-14 for that lead immediately. Use proposal flow. Prepare proposal within 24h from IMAP time (24/7 — NON-NEGOTIABLE). Update value_delivery_queue.json. Log CHANGELOG same session.",
-      "if_not_interested": "Cancel Day-14 permanently. Suppress all channels. Log CHANGELOG.",
-      "if_unsubscribe": "Cancel Day-14. Suppress ALL channels within 24h (GDPR Article 21). Log audit_log and CHANGELOG.",
-      "if_ooo_return_after_today": "Mark sequence complete — cannot send Day-14 (4-touchpoint hard limit). OOO return cutoff was 2026-05-25.",
-      "if_ooo_return_today_or_earlier": "Lead is back — proceed with Day-14 send after confirming return date.",
-      "if_clean": "Proceed with Day-14 for this lead. 10-minute stagger after previous send."
+      "if_interested_reply_found": "Sequence already complete — no further sends due. Prepare bespoke proposal within 24h from IMAP time (24/7 — NON-NEGOTIABLE). 3 pricing options. Update value_delivery_queue.json. Log CHANGELOG same session. Reapproach date (2026-11-26) cancels — convert NOW.",
+      "if_not_interested": "Log CHANGELOG. No further action — sequence already complete. Reapproach not before 2026-11-26.",
+      "if_unsubscribe": "Suppress ALL channels permanently. Log audit_log + CHANGELOG. GDPR Article 21 — within 24h.",
+      "if_ooo": "Note OOO return date. If return date is within post-Day-14 window (before 2026-06-03): follow up by phone if number available. Sequence complete — no further emails.",
+      "if_wrong_person": "Log, investigate correct contact. Sequence complete — no email follow-up. Consider phone if number available.",
+      "if_clean": "No reply received. No action required. Continue monitoring through Thursday/Friday."
     }
   },
 
-  "batch_5_reply_status": {
-    "batch_5_day": 14,
-    "days_since_day0_send": 14,
-    "days_since_day3_bump": 11,
-    "days_since_day7_send": 7,
-    "batch_5_replies_received": 0,
-    "overnight_replies_received": 0,
-    "post_day7_reply_window": "CLOSED — 72h+ cutoff passed Friday 2026-05-22 evening. Any late arrivals surface in today's IMAP.",
-    "batch_6_trigger": {
-      "condition": "Batch 5 INTERESTED replies ≥ 2 — assessed in full post-mortem",
-      "current_count": 0,
-      "status": "DECISION TODAY AFTER DAY-14 RESULTS — full Batch 5 post-mortem TOMORROW Wednesday 2026-05-27 BRAIN run. Launch Batch 6 Harrogate + Craven regardless of Batch 5 reply count (SSL-PAS model structurally sound). Expected sends: Tuesday 2026-06-02.",
-      "deferred_to": "Wednesday 2026-05-27 BRAIN run — full Batch 5 post-mortem + Batch 6 launch decision."
-    }
+  "batch_5_post_mortem": {
+    "territory": "Ryedale District — Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent",
+    "campaign_period": "Tue 2026-05-12 (Day-0 assumed) — Tue 2026-05-26 (Day-14 assumed)",
+    "total_leads_targeted": "12-18 (UNCONFIRMED — HANDS never wrote per-lead data file)",
+    "sends_assumed": {
+      "day_0": "Tue 2026-05-12, 09:00-10:30 — ASSUMED SENT (UNCONFIRMED)",
+      "day_3": "Fri 2026-05-15, 09:00-10:30 — ASSUMED SENT (UNCONFIRMED)",
+      "day_7": "Tue 2026-05-19, 09:00-10:30 — ASSUMED SENT (UNCONFIRMED)",
+      "day_14": "Tue 2026-05-26, 09:00-10:30 — ASSUMED SENT (UNCONFIRMED)"
+    },
+    "replies_confirmed": 0,
+    "reply_rate_confirmed": "0% (cannot confirm true rate without per-lead HANDS data — sends may not have happened)",
+    "imap_status": "53-day gap — per-lead sweeps executing today-Friday post-Day-14",
+    "linkedin_outcome": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. linkedin_profiles.json never written (54-session failure). All Batch 5 leads archived LOST_NO_RESPONSE on LinkedIn.",
+    "signal_mix_planned": {
+      "ssl_pas": "60%",
+      "mobile_pas": "20%",
+      "no_website_bab": "15%",
+      "aida": "5%"
+    },
+    "model_assessment": "SSL-PAS model structurally sound (15% INTERESTED rate confirmed Batches 1-4). 0% Batch 5 confirmed reply rate most likely reflects: (a) sends may never have happened (HANDS pattern), (b) rural Ryedale vs. urban Leeds/West Yorkshire behavioral difference. Model not invalidated. Proceed with Batch 6.",
+    "lessons": [
+      "HANDS execution must be confirmed before BRAIN writes 'ASSUMED SENT'. Per-lead data file mandatory for every batch from Batch 6.",
+      "LinkedIn must be activated Day 3-7 with profiles.json written same session — archive trigger unconditional at Day 7.",
+      "Rural market (Ryedale) baseline: no reference data yet. Batch 6 will establish Harrogate/Craven baseline for comparison.",
+      "IMAP must be executed weekly at minimum — 53-day gap is an operational and compliance risk."
+    ]
+  },
+
+  "batch_6_scrape_plan": {
+    "decision": "CONFIRMED LAUNCH — proceeds regardless of Batch 5 reply count",
+    "territory": "Harrogate District + Craven District",
+    "send_date": "Tuesday 2026-06-02, 09:00-10:30",
+    "target_leads": 18,
+    "target_range": "18-22",
+    "linkedin_mandatory": true,
+    "linkedin_window": "Day 3-7 (Fri 2026-06-05 — Tue 2026-06-10)",
+    "linkedin_archive_trigger": "Tuesday 2026-06-10 EOD — fires unconditionally if profiles.json missing",
+
+    "target_towns": {
+      "harrogate_district": [
+        {
+          "town": "Knaresborough",
+          "priority": 1,
+          "rationale": "Market town, strong trades economy, tourism crossover. Expected high SSL density in older local business sites.",
+          "target_sectors": ["plumber", "electrician", "joiner", "builder", "estate agent", "B&B"],
+          "volume_estimate": "5-7 leads"
+        },
+        {
+          "town": "Ripon",
+          "priority": 2,
+          "rationale": "Cathedral city, heritage tourism + established trades economy. DO NOT reapproach leads from Batch 1 (Ripon Road Carpentry — lead 1, ARCHIVED).",
+          "target_sectors": ["roofer", "plumber", "electrician", "joiner", "solicitor", "accountant"],
+          "volume_estimate": "4-5 new leads only",
+          "exclusion_note": "Do NOT target lead 1 (Ripon Road Carpentry) under any circumstances — ARCHIVED LOST_NO_RESPONSE"
+        },
+        {
+          "town": "Boroughbridge",
+          "priority": 3,
+          "rationale": "Small market town — A1 corridor trades. Fewer businesses = less competition from other outreach agencies.",
+          "target_sectors": ["builder", "plumber", "electrician", "pub/restaurant"],
+          "volume_estimate": "2-3 leads"
+        }
+      ],
+      "craven_district": [
+        {
+          "town": "Skipton",
+          "priority": 1,
+          "rationale": "Largest Craven market town. Broad sector mix. Expected highest SSL density.",
+          "target_sectors": ["plumber", "electrician", "joiner", "roofer", "beauty/salon", "estate agent", "solicitor"],
+          "volume_estimate": "6-8 leads"
+        },
+        {
+          "town": "Settle",
+          "priority": 2,
+          "rationale": "Rural market town, Dales gateway. Strong trades + hospitality. No-website leads possible.",
+          "target_sectors": ["builder", "plumber", "B&B", "pub", "joiner"],
+          "volume_estimate": "2-3 leads"
+        },
+        {
+          "town": "Grassington",
+          "priority": 3,
+          "rationale": "Tourist village — hospitality and trades. No-website BAB angle strong (National Park visitors rely on Google search).",
+          "target_sectors": ["B&B", "pub/tearoom", "builder", "joiner"],
+          "volume_estimate": "1-2 leads"
+        },
+        {
+          "town": "Gargrave",
+          "priority": 4,
+          "rationale": "Small village — limited volume but very low outreach competition. Any lead here is likely first-touch.",
+          "target_sectors": ["plumber", "builder", "electrician"],
+          "volume_estimate": "1 lead (stretch)"
+        }
+      ]
+    },
+
+    "signal_mix": {
+      "ssl_pas": {"allocation": "60%", "minimum_bar": "HTTP (not HTTPS), any sector except fitness/wellness"},
+      "mobile_pas": {"allocation": "20%", "minimum_bar": "SSL clean AND mobile clearly broken — show you tested it"},
+      "no_website_bab": {"allocation": "15%", "minimum_bar": "4★+ AND 20+ reviews — rural bar (same as Ryedale)"},
+      "aida": {"allocation": "5%", "minimum_bar": "4.5★+ AND 100+ reviews only — verifiable keyword gap"}
+    },
+
+    "lead_scoring_minimum": 55,
+    "no_website_exception": "4★+ AND 20+ reviews with confirmed owner name — can email at 50+",
+
+    "enrichment_priority_order": [
+      "Owner name known + website URL → fastest, highest reply rate",
+      "Website only → crawl contact page",
+      "No website, 4★+ 20+ reviews → Companies House + phone lookup",
+      "Score <50 → deprioritise"
+    ],
+
+    "linkedin_rules_batch_6": [
+      "MUST execute Day 3-7 from initial send (Fri 2026-06-05 is Day 3 — DO NOT DEFER)",
+      "profiles.json MUST be written same session as execution — one entry per lead, no batching",
+      "If profiles.json not written same session: that session's LinkedIn did not happen for BRAIN purposes",
+      "Archive trigger Tue 2026-06-10 EOD fires unconditionally if profiles.json missing — NO EXCEPTIONS",
+      "Connection note: 200-char hard limit, start with name, mention specific business, end low-pressure",
+      "After connection accepted: wait 3-5 days, send ONE short value message (no pitch, no email reference)"
+    ],
+
+    "hands_scraping_instructions": "Use Google Maps scraper (src/outlocal/scrapers/) to search '[sector] [town]' for each target town. Export per-lead data file (leads.json) with: business_name, owner_name (if findable), email, website_url, ssl_status, mobile_score, review_count, star_rating, signal_type, signal_notes, lead_score. Write to data/batch_6_leads.json same session. Share with BRAIN for signal assignment before Day-0 sends."
   },
 
   "new_signals_today": 0,
   "new_leads_today": 0,
   "signal_assignments": [],
-  "signal_assignment_note": "No new lead data received from HANDS (60+ consecutive sessions). All Batch 5 copy READY and in use today. Waterfall unchanged: ssl → PAS (60%), mobile → PAS (20%), no_website 4★+ 20+ reviews → BAB (15%), 4.5★+ 100+ reviews → AIDA (5%). Next signal assignments: Batch 6 Harrogate + Craven — decision and scraping start TOMORROW Wednesday 2026-05-27.",
+  "signal_assignment_note": "No new lead data received from HANDS (61+ consecutive sessions). No signal assignments this run — Batch 5 sequences complete or assumed complete. Next signal assignments: Batch 6 Harrogate + Craven — after HANDS writes data/batch_6_leads.json from today's scrape. BRAIN will assign signals and write email plan before 2026-06-02 send date.",
 
   "do_not_email": [1, 2, 3, 7, 19, 22],
   "suppressed_lead_ids": [7, 19],
   "formally_archived": [1, 3, 22, 49, 51, 53, 54],
-  "linkedin_archived_eod_tuesday": "ALL_BATCH_5_RYEDALE — archive trigger fired 2026-05-19 EOD (linkedin_profiles.json never written, 54-session failure)",
+  "linkedin_archived_eod": "ALL_BATCH_5_RYEDALE — archive trigger fired 2026-05-19 EOD (linkedin_profiles.json never written, 54-session failure). PERMANENTLY CLOSED.",
   "sequences_complete": [4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59],
-  "day14_recipients_after_sends_today": "All Batch 5 Ryedale leads not excluded above → add to sequences_complete after sends",
+  "batch_5_sequences_complete_after_day14": "All Batch 5 Ryedale leads assumed sequence_complete after yesterday's Day-14 sends (UNCONFIRMED). HANDS: update lead status to sequence_complete in database for all Batch 5 leads. Reapproach: 2026-11-26 minimum.",
 
-  "today_execution_brief": {
-    "date": "2026-05-26 (Tuesday) — Batch 5 Day 14 — DAY-14 BREAKUP SEND DAY — FINAL TOUCHPOINT",
-    "sequence": [
-      {
-        "priority": 1,
-        "action": "IMAP sweep — per Batch 5 lead in send order (NOT leads 1/3/22)",
-        "notes": "Before each individual Day-14 send. Covers 52-day gap. Action per classification outcome (see imap_status.outcomes above). Proceed immediately to Day-14 send if inbox clean."
-      },
-      {
-        "priority": 2,
-        "action": "Day-14 breakup sends",
-        "notes": "09:00-10:30. 10-minute stagger. Copy in daily_email_plan.json (day14_breakup section — 4 signal variants). NEW standalone email — not a thread reply. New subject line. 3 lines body max. No question marks. Fill all [bracketed placeholders] from 2026-05-12 send records. Do NOT send to excluded leads."
-      },
-      {
-        "priority": 3,
-        "action": "Update lead status to sequence_complete",
-        "notes": "All Day-14 recipients. Reapproach date: 2026-11-26 minimum."
-      },
-      {
-        "priority": 4,
-        "action": "CHANGELOG.md — ABSOLUTE FINAL DEADLINE TODAY",
-        "notes": "58+ days overdue. Same session as Day-14 sends. Log: Day-0 (assumed 2026-05-12), Day-3 (assumed 2026-05-15), Day-7 (assumed 2026-05-19), Day-14 (TODAY 2026-05-26). Log all IMAP gaps. fu_041-045 outcomes. Archive decisions (leads 1/3/22, 49/51/53/54). LinkedIn archive (trigger fired 2026-05-19 EOD). Today's IMAP results + send results. CANNOT BE DEFERRED AGAIN."
-      }
-    ],
-    "exclusions_from_day14": [
-      "Any lead with INTERESTED reply surfaced in today's IMAP — use proposal flow instead",
-      "Any lead with NOT_INTERESTED reply — cancel permanently",
-      "Any lead with UNSUBSCRIBE — suppress all channels",
-      "Any OOO lead with return date AFTER 2026-05-25",
-      "Formally archived: 1, 3, 22, 49, 51, 53, 54",
-      "Suppressed: 7, 19",
-      "Sequences already complete: 4, 5, 6, 8, 12, 30, 31, 32, 50, 52, 55, 56, 58, 59"
+  "forward_calendar": {
+    "wednesday_2026_05_27": {
+      "batch_5_day": 15,
+      "action": "THIS SESSION. Post-Day-14 24h reply peak — IMAP per Batch 5 lead (NOT 1/3/22). Full Batch 5 post-mortem. Batch 6 launch decision (CONFIRMED — proceed). Batch 6 scraping begins today. CHANGELOG MANDATORY TODAY (59+ days overdue — was ABSOLUTE FINAL DEADLINE yesterday)."
+    },
+    "thursday_2026_05_28": {
+      "batch_5_day": 16,
+      "action": "Post-Day-14 48h reply peak. IMAP per Batch 5 lead. Batch 6 scraping continues."
+    },
+    "friday_2026_05_29": {
+      "batch_5_day": 17,
+      "action": "Post-Day-14 72h secondary peak. IMAP per lead. Reply window closes Friday evening. Batch 6 scrape expected complete — HANDS writes batch_6_leads.json."
+    },
+    "saturday_2026_05_30": {
+      "action": "No sends, no IMAP. Post-Day-14 reply window closed. Weekend bridge. Batch 6 enrichment review."
+    },
+    "monday_2026_06_01": {
+      "action": "Batch 6 pre-send prep. BRAIN reviews batch_6_leads.json from HANDS. Signal assignments written. Email copy generated."
+    },
+    "tuesday_2026_06_02": {
+      "action": "BATCH 6 DAY-0 SENDS. Harrogate District + Craven District. 18-22 leads. SSL-PAS 60% primary. 09:00-10:30. IMAP per lead before each send. linkedin_profiles.json MUST be written Fri 2026-06-05 (Day 3). Archive trigger: Tue 2026-06-10 EOD."
+    },
+    "friday_2026_06_05": {
+      "action": "Batch 6 Day 3 bump sends. LinkedIn MANDATORY — execute AND write profiles.json same session. Archive trigger fires Tue 2026-06-10 EOD unconditionally."
+    }
+  },
+
+  "changelog_status": {
+    "days_overdue": "59+",
+    "was_absolute_deadline": "Tuesday 2026-05-26 — NOT COMPLETED (61-session HANDS pattern)",
+    "current_status": "MANDATORY THIS SESSION — CANNOT BE DEFERRED FURTHER. Zero tolerance.",
+    "minimum_entries_required": [
+      "Batch 5 Day-0 sends (assumed 2026-05-12) — include per-lead results if known",
+      "Batch 5 Day-3 bumps (assumed 2026-05-15) — include per-lead results if known",
+      "Batch 5 Day-7 sends (assumed 2026-05-19) — include per-lead results if known",
+      "Batch 5 Day-14 sends (assumed 2026-05-26) — include per-lead IMAP results and send outcomes",
+      "fu_041-045 outcomes (assumed sent Mon 2026-05-11)",
+      "Archive decisions: leads 1/3/22 (LOST_NO_RESPONSE, 2026-05-07), leads 49/51 (LOST_UNRESOLVED, Day 40), leads 53/54 (LOST_UNRESOLVED, Day 44)",
+      "All IMAP gaps and results since 2026-04-04",
+      "LinkedIn archive outcome: 54-session failure, trigger fired 2026-05-19 EOD — all Batch 5 leads LOST_NO_RESPONSE LinkedIn",
+      "Post-Day-14 IMAP results (when executed)",
+      "Batch 6 launch decision and scrape start"
     ]
   },
 
-  "forward_calendar": {
-    "tuesday_2026_05_26": {"action": "THIS SESSION. Day-14 breakup sends 09:00-10:30. IMAP per Batch 5 lead before each send. CHANGELOG mandatory same session (58+ days overdue — ABSOLUTE FINAL DEADLINE). Update lead status to sequence_complete. Reapproach: 2026-11-26."},
-    "wednesday_2026_05_27": {"batch_5_day": 15, "action": "Post-Day-14 reply window opens (24h post-send). Full Batch 5 post-mortem BRAIN run. Batch 6 launch decision final (Harrogate District + Craven District). Batch 6 scraping starts today."},
-    "thursday_2026_05_28": {"batch_5_day": 16, "action": "Post-Day-14 reply peak (48h). IMAP per Batch 5 lead."},
-    "friday_2026_05_29": {"batch_5_day": 17, "action": "Post-Day-14 secondary peak (72h+). IMAP per lead. Reply wave closes. Batch 6 scraping continues."},
-    "tuesday_2026_06_02": {"action": "Batch 6 Day-0 sends (Harrogate District + Craven District). SSL-PAS 60% primary. LinkedIn MANDATORY — execute Day 3-7, profiles.json same session."}
-  },
-
-  "ooo_deadline_note": "Day-14 is TODAY 2026-05-26. Any lead with an OOO return date AFTER 2026-05-25 (yesterday) cannot receive Day-14 (4-touchpoint hard limit). Mark sequence complete for those leads. OOO return date must be 2026-05-25 or earlier for Day-14 to be sent.",
-
-  "day14_sla_note": "24h proposal SLA from any INTERESTED reply surfaced in today's IMAP — NON-NEGOTIABLE. Applies 24/7. Prepare bespoke proposal with 3 options (see value_delivery_queue.json). Use the signal-specific pricing from value_delivery_on_interested section.",
-
   "summary": {
-    "day": 60,
-    "date": "2026-05-26 (Tuesday, Batch 5 Day 14 — DAY-14 BREAKUP SEND DAY — FINAL TOUCHPOINT)",
-    "today_primary_action": "IMAP per Batch 5 lead → Day-14 breakup sends 09:00-10:30 → update sequence_complete → CHANGELOG mandatory",
-    "imap_gap_days": 52,
+    "day": 61,
+    "date": "2026-05-27 (Wednesday, Batch 5 Day 15 — Post-Day-14 Reply Peak — Batch 6 Launch Decision)",
+    "today_primary_action": "IMAP per Batch 5 lead (post-Day-14 24h peak) → Batch 6 scraping starts → CHANGELOG MANDATORY",
+    "imap_gap_days": 53,
     "last_confirmed_check": "2026-04-04",
-    "imap_status_today": "EXECUTING — per lead before each send. Covers 52-day gap.",
+    "post_day14_reply_window": "OPEN — 24h peak TODAY (Wed). 48h peak Thu. 72h peak Fri. Window closes Friday evening.",
     "overnight_new_replies": 0,
     "batch_5_interested_replies": 0,
-    "day0_sends": "ASSUMED SENT Tuesday 2026-05-12 (UNCONFIRMED)",
-    "day3_sends": "ASSUMED SENT Friday 2026-05-15 (UNCONFIRMED)",
-    "day7_sends": "ASSUMED SENT Tuesday 2026-05-19 (UNCONFIRMED — 60-session pattern)",
-    "day14_send_date": "TODAY — Tuesday 2026-05-26, 09:00-10:30",
-    "day14_days_away": 0,
-    "day14_copy_status": "READY — daily_email_plan.json (day14_breakup section — 4 signal variants)",
-    "post_day14_reply_window": "Opens TOMORROW Wednesday 2026-05-27 (24h post-send). Peak: Thursday 2026-05-28 (48h).",
-    "linkedin_channel": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD",
-    "post_day7_reply_window": "CLOSED — 72h+ cutoff passed Friday evening. Any late arrivals surface in today's IMAP.",
-    "batch_6_trigger": "Full post-mortem TOMORROW Wednesday 2026-05-27 BRAIN run. Launch Harrogate + Craven regardless.",
-    "changelog_overdue_days": "58+",
-    "changelog_mandatory": "TODAY 2026-05-26 — same session as Day-14 sends. ABSOLUTE FINAL DEADLINE. No further deferrals.",
+    "day14_send_date": "ASSUMED Tuesday 2026-05-26 (UNCONFIRMED — 61-session HANDS pattern)",
+    "batch_5_sequences": "ASSUMED COMPLETE after yesterday's Day-14. Update database to sequence_complete.",
+    "batch_6_decision": "CONFIRMED LAUNCH — Harrogate District + Craven District. Scraping TODAY. Send date: Tue 2026-06-02.",
+    "linkedin_channel": "PERMANENTLY CLOSED for Batch 5 (archive trigger fired 2026-05-19 EOD). MANDATORY for Batch 6 Day 3-7.",
+    "changelog_overdue_days": "59+",
+    "changelog_mandatory": "THIS SESSION — yesterday's ABSOLUTE FINAL DEADLINE not met — MANDATORY NOW",
     "new_leads": 0,
     "new_signals": 0
   }
