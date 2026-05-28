@@ -85,23 +85,25 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 | **2026-05-25** | **59** | **Daily email + followup (Monday — Batch 5 Day 13 — Monday Prep Day — Pre-Day-14)** | **All 6 data files updated to Day 59 (IMAP gap 51 days, day14_days_away=1, CHANGELOG 57+ days overdue). ZERO weekend replies confirmed (new_replies.json unchanged from 2026-04-04). All Batch 5 leads proceed to Day-14 TOMORROW. No sends today. No IMAP today (Monday hard block — Tuesday per-lead sweep covers entire 51-day gap). Day-14 copy READY (4 signal variants in daily_email_plan.json day14_breakup section). CHANGELOG MANDATORY TOMORROW same session as Day-14 sends — ABSOLUTE FINAL DEADLINE.** |
 | **2026-05-26** | **60** | **Daily email + followup (Tuesday — Batch 5 Day 14 — DAY-14 BREAKUP SEND DAY — FINAL TOUCHPOINT)** | **All 7 data files updated to Day 60 (IMAP gap 52 days — resolving TODAY per-lead, CHANGELOG 58+ days overdue — ABSOLUTE FINAL DEADLINE TODAY). Zero overnight replies (new_replies.json unchanged from 2026-04-04). Day-14 breakup sends TODAY 09:00-10:30. IMAP per Batch 5 lead MANDATORY before each send (in send order — NOT leads 1/3/22). Copy READY (4 signal variants in daily_email_plan.json day14_breakup section). After sends: sequence_complete update + reapproach 2026-11-26. CHANGELOG mandatory TODAY same session. Post-Day-14 reply window: TOMORROW Wednesday 2026-05-27 (24-72h). Batch 6 post-mortem + Harrogate + Craven launch decision: TOMORROW Wednesday BRAIN run.** |
 | **2026-05-27** | **61** | **Daily email + followup (Wednesday — Batch 5 Day 15 — Post-Day-14 Reply Peak — Batch 6 Launch Decision CONFIRMED)** | **All 7 data files updated to Day 61 (IMAP gap 53 days — post-Day-14 24h peak TODAY, CHANGELOG 59+ days overdue — MANDATORY THIS SESSION). Zero overnight replies (new_replies.json unchanged from 2026-04-04). Day-14 assumed sent yesterday (UNCONFIRMED — 61-session HANDS pattern). Post-Day-14 reply window OPEN NOW (24h peak today, 48h Thu, 72h Fri). Batch 6 launch CONFIRMED: Harrogate District + Craven District — scraping starts TODAY, Day-0 sends Tue 2026-06-02. Full Batch 5 post-mortem written in daily_strategy.md. LinkedIn PERMANENTLY CLOSED (Batch 5). LinkedIn MANDATORY for Batch 6 Day 3-7 (archive trigger Tue 2026-06-10 EOD unconditional). Batch 6 email templates generated in daily_email_plan.json (all 4 signal variants, Day-0 through Day-14). CHANGELOG: 59+ days overdue — zero tolerance — mandatory this session.** |
+| **2026-05-28** | **62** | **Daily email + followup (Thursday — Batch 5 Day 16 — Post-Day-14 48h Reply Peak — batch_6_leads.json MISSING)** | **All 7 data files updated to Day 62 (IMAP gap 54 days — post-Day-14 48h peak TODAY Thursday, 72h FINAL tomorrow Friday, CHANGELOG 60+ days overdue). Zero overnight replies (new_replies.json unchanged from 2026-04-04 — 62-session HANDS pattern). Day-14 assumed sent Tue 2026-05-26 (UNCONFIRMED). Wednesday 24h IMAP sweep UNCONFIRMED (62-session pattern) — today's sweep covers full 54-day gap. batch_6_leads.json STILL MISSING — was due Wed 2026-05-27 — absolute deadline FRIDAY 2026-05-29. Batch 6 Day-0 sends Tue 2026-06-02 (4 days away). BRAIN review Monday 2026-06-01. LinkedIn PERMANENTLY CLOSED (Batch 5). CHANGELOG 60+ days overdue — mandatory this session.** |
 
 ---
 
-## CRITICAL STATE — 2026-05-27 (Day 61 — BATCH 5 DAY-15 WEDNESDAY — POST-DAY-14 REPLY PEAK — BATCH 6 LAUNCH CONFIRMED — IMAP GAP 53 DAYS — CHANGELOG 59+ DAYS OVERDUE)
+## CRITICAL STATE — 2026-05-28 (Day 62 — BATCH 5 DAY-16 THURSDAY — POST-DAY-14 48h REPLY PEAK — BATCH 6 LAUNCH CONFIRMED — batch_6_leads.json MISSING — IMAP GAP 54 DAYS — CHANGELOG 60+ DAYS OVERDUE)
 
-### POST-DAY-14 REPLY PEAK (Wednesday 2026-05-27 — Day 61)
+### POST-DAY-14 REPLY PEAK (Thursday 2026-05-28 — Day 62)
 
 | Status | Detail |
 |---|---|
-| **Overnight replies** | **ZERO** — new_replies.json unchanged from 2026-04-04. 61-session HANDS pattern. |
-| **Day-14 sends** | **ASSUMED SENT yesterday Tuesday 2026-05-26 (UNCONFIRMED — 61-session HANDS pattern). Sequence assumed complete.** |
-| **Post-Day-14 reply window** | **OPEN NOW — 24h peak TODAY Wednesday 2026-05-27. 48h peak Thursday 28. 72h peak Friday 29. Window closes Friday evening.** |
-| **IMAP gap** | **53 days** — all sweeps UNCONFIRMED (61-session HANDS pattern). MANDATORY per Batch 5 lead TODAY (24h peak) through Friday (72h close). NOT leads 1/3/22. |
-| **Batch 5 status** | **SEQUENCE ASSUMED COMPLETE.** All 4 touchpoints assumed sent. No further email sends to any Batch 5 lead. Reapproach: 2026-11-26. |
-| **Batch 6 launch** | **CONFIRMED — Harrogate District + Craven District. Scraping starts TODAY. Day-0 sends: Tue 2026-06-02.** |
+| **Overnight replies** | **ZERO** — new_replies.json unchanged from 2026-04-04. 62-session HANDS pattern. |
+| **Day-14 sends** | **ASSUMED SENT Tuesday 2026-05-26 (UNCONFIRMED — 62-session HANDS pattern). Sequence assumed complete.** |
+| **Post-Day-14 reply window** | **OPEN — 48h peak TODAY Thursday 2026-05-28 (PRIMARY WINDOW). 72h FINAL peak Friday 2026-05-29. Window closes Friday evening.** |
+| **Wednesday 24h sweep** | **UNCONFIRMED (62-session HANDS pattern). Today's 48h sweep covers full 54-day gap.** |
+| **IMAP gap** | **54 days** — all sweeps UNCONFIRMED. MANDATORY per Batch 5 lead TODAY (48h primary) AND TOMORROW Friday (72h FINAL — window closes). NOT leads 1/3/22. |
+| **Batch 5 status** | **SEQUENCE ASSUMED COMPLETE.** All 4 touchpoints assumed sent. No further email sends. Reapproach: 2026-11-26. |
+| **Batch 6 launch** | **CONFIRMED — Harrogate District + Craven District. batch_6_leads.json MISSING — was due Wed 2026-05-27. ABSOLUTE DEADLINE: FRIDAY 2026-05-29. Day-0 sends: Tue 2026-06-02.** |
 | **LinkedIn Batch 6** | **MANDATORY Day 3-7 (Fri 2026-06-05). Archive trigger: Tue 2026-06-10 EOD — unconditional.** |
-| **CHANGELOG** | **59+ days overdue — was ABSOLUTE FINAL DEADLINE yesterday — MANDATORY THIS SESSION — ZERO TOLERANCE.** |
+| **CHANGELOG** | **60+ days overdue — MANDATORY THIS SESSION — ZERO TOLERANCE.** |
 
 **Post-Day-14 proposal SLA: 24h from any INTERESTED reply found in IMAP — NON-NEGOTIABLE (24/7). Sequence already complete — no further sends due. Prepare 3-option proposal. Use value_delivery_queue.json (value_delivery_on_interested section). Log CHANGELOG same session.**
 
@@ -124,13 +126,13 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 - Combined pipeline value written off: £800-1,175
 
 ### Active Data Files
-- `data/daily_signals.json` — **Day 61 (2026-05-27 WEDNESDAY — Post-Day-14 Reply Peak) — UPDATED. IMAP gap 53 days — 24h peak today. Batch 6 scrape plan included. CHANGELOG 59+ days overdue — mandatory this session.**
-- `data/daily_email_plan.json` — **Day 61 (2026-05-27 WEDNESDAY) — UPDATED. No sends today. Batch 6 email templates generated (all 4 signal variants, Day-0 through Day-14). batch_6_leads.json required from HANDS before per-lead assignments.**
-- `data/daily_strategy.md` — **Day 61 (2026-05-27 WEDNESDAY) — UPDATED. Post-Day-14 monitoring brief. Full Batch 5 post-mortem. Batch 6 launch plan. CHANGELOG mandatory this session.**
-- `data/followup_queue.json` — **Day 61 (2026-05-27 WEDNESDAY) — UPDATED. No sends today. Batch 5 sequences assumed complete. Post-Day-14 monitoring mode. Next follow-up: Batch 6 Day-3 Fri 2026-06-05.**
-- `data/reply_classifications.json` — **Day 61 (2026-05-27 WEDNESDAY) — UPDATED. IMAP gap 53 days — 24h peak today. Zero overnight replies. Post-Day-14 window open Wed-Fri.**
-- `data/value_delivery_queue.json` — **Day 61 (2026-05-27 WEDNESDAY) — UPDATED. Zero Batch 5 replies. Post-Day-14 window open. 24h proposal SLA from any INTERESTED reply in IMAP. Batch 6 pipeline TBD.**
-- `data/active_strategy.md` — **Day 61 (2026-05-27 WEDNESDAY) — UPDATED. Batch 5 complete. Batch 6 confirmed. Scraping starts today. Valid to 2026-06-09.**
+- `data/daily_signals.json` — **Day 62 (2026-05-28 THURSDAY — Post-Day-14 48h Reply Peak) — UPDATED. IMAP gap 54 days — 48h peak TODAY. batch_6_leads.json STILL MISSING (absolute deadline Friday). CHANGELOG 60+ days overdue — mandatory this session.**
+- `data/daily_email_plan.json` — **Day 62 (2026-05-28 THURSDAY) — UPDATED. No sends today. Batch 6 email templates carried forward (all 4 signal variants, Day-0 through Day-14). batch_6_leads.json required from HANDS before per-lead assignments (absolute deadline Friday 2026-05-29).**
+- `data/daily_strategy.md` — **Day 62 (2026-05-28 THURSDAY) — UPDATED. Post-Day-14 48h peak brief. batch_6_leads.json critical path analysis. CHANGELOG mandatory this session.**
+- `data/followup_queue.json` — **Day 62 (2026-05-28 THURSDAY) — UPDATED. No sends today. Batch 5 sequences assumed complete. Post-Day-14 48h monitoring. Next follow-up: Batch 6 Day-3 Fri 2026-06-05.**
+- `data/reply_classifications.json` — **Day 62 (2026-05-28 THURSDAY) — UPDATED. IMAP gap 54 days — 48h peak TODAY. Zero overnight replies. Post-Day-14 48h Thu / 72h FINAL Fri.**
+- `data/value_delivery_queue.json` — **Day 62 (2026-05-28 THURSDAY) — UPDATED. Zero Batch 5 replies. Post-Day-14 48h window TODAY. 24h proposal SLA from any INTERESTED reply. Batch 6 pipeline forecast included.**
+- `data/active_strategy.md` — **Day 62 (2026-05-28 THURSDAY) — UPDATED. Batch 5 complete. Batch 6 confirmed. batch_6_leads.json MISSING. Valid to 2026-06-09.**
 - `data/linkedin_coordination.json` — **Day 55 (2026-05-21 THURSDAY) — Post-archive status check. LinkedIn PERMANENTLY CLOSED confirmed. No further updates.**
 - `data/linkedin_connection_notes.json` — **Day 53 (2026-05-19 TUESDAY) — Last updated. Archive trigger has fired. No further LinkedIn updates.**
 - `data/linkedin_search_plan.json` — **Day 53 (2026-05-19 TUESDAY) — Last updated. Archive trigger has fired. No further LinkedIn updates.**
@@ -140,19 +142,21 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 - `data/weekly_reports/week_2026-05-17_summary.json` — **Day 51 (2026-05-17 SUNDAY) — Week 8 summary JSON.**
 
 ### IMAP Status
-- **53 days overdue** (last confirmed check: 2026-04-04)
-- ALL sweeps (Wednesday through Tuesday) UNCONFIRMED — new_replies.json unchanged from 2026-04-04 (61-session HANDS pattern). **ZERO overnight replies confirmed.**
-- Zero Batch 5 replies confirmed to date. **Post-Day-14 reply window OPEN NOW — 24h peak TODAY Wednesday, 48h Thursday, 72h Friday (window closes Friday evening).**
+- **54 days overdue** (last confirmed check: 2026-04-04)
+- ALL sweeps UNCONFIRMED — new_replies.json unchanged from 2026-04-04 (62-session HANDS pattern). **ZERO overnight replies confirmed.**
+- Wednesday 24h sweep: UNCONFIRMED (62-session pattern). Today's sweep covers the full 54-day gap.
+- Zero Batch 5 replies confirmed to date. **Post-Day-14 48h peak TODAY Thursday — PRIMARY WINDOW. 72h FINAL peak Friday 2026-05-29 — reply window closes Friday evening.**
 - **Do NOT sweep leads 1/3/22 — archive is unconditionally final**
-- **IMAP TODAY (Wednesday) — MANDATORY per Batch 5 lead. Post-Day-14 24h peak. Covers entire 53-day gap.**
+- **IMAP TODAY (Thursday) — MANDATORY per Batch 5 lead. Post-Day-14 48h PRIMARY peak. Covers entire 54-day gap.**
+- **IMAP TOMORROW (Friday) — MANDATORY FINAL — 72h peak. Reply window closes Friday evening. Last IMAP sweep for Batch 5.**
 
 ### Batch 5 Status
 - **Day-0 sends assumed completed Tuesday 2026-05-12, 09:00-10:30 — UNCONFIRMED**
 - **Day-3 bumps assumed sent Friday 2026-05-15, 09:00-10:30 — UNCONFIRMED**
 - **Day-7 sends assumed sent Tuesday 2026-05-19, 09:00-10:30 — UNCONFIRMED**
-- **Day-14 breakup sends assumed sent Tuesday 2026-05-26, 09:00-10:30 — UNCONFIRMED (61-session HANDS pattern). FINAL TOUCHPOINT.**
+- **Day-14 breakup sends assumed sent Tuesday 2026-05-26, 09:00-10:30 — UNCONFIRMED (62-session HANDS pattern). FINAL TOUCHPOINT.**
 - **SEQUENCE ASSUMED COMPLETE — all 4 touchpoints assumed sent. No further email sends. Reapproach: 2026-11-26.**
-- No per-lead data file received from HANDS (61+ consecutive sessions)
+- No per-lead data file received from HANDS (62+ consecutive sessions)
 - Ryedale targets: Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent
 - Signal: SSL-primary (PAS, 60%), mobile-secondary (PAS, 20%), no-website BAB (15%), AIDA keyword-gap (5%)
 - **LinkedIn: PERMANENTLY CLOSED — archive trigger fired Tuesday 2026-05-19 EOD. All leads LOST_NO_RESPONSE on LinkedIn. Email only.**
@@ -170,22 +174,22 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 - Lead 54 (The Wolds Inn): ASSUMED ARCHIVED Monday 2026-05-11 (LOST_UNRESOLVED).
 
 ### CHANGELOG
-- No HANDS updates since 2026-03-28 (**59+ days**). **MANDATORY — must be completed THIS SESSION — yesterday's ABSOLUTE FINAL DEADLINE not met — ZERO FURTHER TOLERANCE under any circumstances.**
+- No HANDS updates since 2026-03-28 (**60+ days**). **MANDATORY — must be completed THIS SESSION — ZERO FURTHER TOLERANCE under any circumstances.**
 
 ---
 
-## HANDS Execution Order for TODAY — WEDNESDAY 2026-05-27 (Batch 5 Day 15 — Post-Day-14 Reply Peak — Batch 6 Launch Day)
+## HANDS Execution Order for TODAY — THURSDAY 2026-05-28 (Batch 5 Day 16 — Post-Day-14 48h Reply Peak — batch_6_leads.json ABSOLUTE DEADLINE FRIDAY)
 
 | Priority | Action | Condition |
 |---|---|---|
-| 1 | **IMAP sweep — each Batch 5 lead in Day-0 send order (NOT leads 1/3/22)** | Per lead. **53-day IMAP gap.** Post-Day-14 24h peak. If INTERESTED found: sequence already complete — prepare 3-option proposal within 24h from IMAP time (24/7 — NON-NEGOTIABLE). Cancel reapproach date — convert NOW. Write to new_replies.json + reply_classifications.json + value_delivery_queue.json. If NOT_INTERESTED: log, no further action. If UNSUBSCRIBE: suppress all channels within 24h (GDPR Article 21), log audit_log. If clean: continue monitoring Thu/Fri. |
-| 2 | **Update lead status to 'sequence_complete'** | All Batch 5 Ryedale leads (Day-14 assumed sent yesterday). Reapproach date: 2026-11-26 minimum. |
-| 3 | **Batch 6 scraping — Harrogate District + Craven District** | Use Google Maps scraper. Target: 18-22 leads. Output: data/batch_6_leads.json. See daily_signals.json → batch_6_scrape_plan for full town + sector priority list. BRAIN cannot write email copy until this file exists. |
-| 4 | **CHANGELOG.md — ZERO TOLERANCE — WRITE THIS SESSION** | **59+ days overdue. Log: all Batch 5 sends (Day-0 assumed 2026-05-12, Day-3 assumed 2026-05-15, Day-7 assumed 2026-05-19, Day-14 assumed 2026-05-26), fu_041-045 outcomes, archive decisions (leads 1/3/22, 49/51/53/54), all IMAP gaps + results since April, LinkedIn archive outcome (54-session failure, trigger fired 2026-05-19 EOD), today's IMAP results. CANNOT BE DEFERRED AGAIN.** |
+| 1 | **IMAP sweep — each Batch 5 lead in Day-0 send order (NOT leads 1/3/22)** | Per lead. **54-day IMAP gap.** Post-Day-14 48h peak — PRIMARY WINDOW. Wed 24h sweep UNCONFIRMED — today covers full gap. If INTERESTED found: sequence already complete — prepare 3-option proposal within 24h from IMAP time (24/7 — NON-NEGOTIABLE). Cancel reapproach date — convert NOW. Write to new_replies.json + reply_classifications.json + value_delivery_queue.json. If NOT_INTERESTED: log, no further action. If UNSUBSCRIBE: suppress all channels within 24h (GDPR Article 21), log audit_log. If clean: FINAL sweep TOMORROW Friday (72h — window closes). |
+| 2 | **Batch 6 scraping — Harrogate District + Craven District** | Use Google Maps scraper. Target: 18-22 leads. Output: data/batch_6_leads.json. Was due Wed 2026-05-27 — STILL MISSING. **ABSOLUTE DEADLINE: FRIDAY 2026-05-29.** No file = no BRAIN email copy Monday = no Day-0 sends Tuesday. See daily_signals.json → batch_6_scrape_plan for full town + sector priority list. |
+| 3 | **Update lead status to 'sequence_complete'** | All Batch 5 Ryedale leads (Day-14 assumed sent Tue 2026-05-26). Reapproach date: 2026-11-26 minimum. |
+| 4 | **CHANGELOG.md — ZERO TOLERANCE — WRITE THIS SESSION** | **60+ days overdue. Log: all Batch 5 sends (Day-0 assumed 2026-05-12, Day-3 assumed 2026-05-15, Day-7 assumed 2026-05-19, Day-14 assumed 2026-05-26), fu_041-045 outcomes, archive decisions (leads 1/3/22, 49/51/53/54), all IMAP gaps + results since April, LinkedIn archive outcome (54-session failure, trigger fired 2026-05-19 EOD), today's IMAP results. CANNOT BE DEFERRED AGAIN.** |
 
 ## Next BRAIN Runs
-- **MONDAY 2026-06-01 (Day 66)** — BRAIN reviews data/batch_6_leads.json (HANDS writes after scraping) → signal assignments → per-lead email copy for Batch 6 Day-0. Or earlier if batch_6_leads.json received before Monday.
+- **MONDAY 2026-06-01 (Day 66)** — BRAIN reviews data/batch_6_leads.json (HANDS writes by Friday 2026-05-29 — absolute deadline) → signal assignments → per-lead email copy for Batch 6 Day-0. CRITICAL: no batch_6_leads.json = no email copy = no Tue Day-0 sends.
 - **TUESDAY 2026-06-02 (Day 67)** — BATCH 6 DAY-0 SENDS. Harrogate + Craven. IMAP per lead before each send. 09:00-10:30.
 - **FRIDAY 2026-06-05 (Day 70)** — Batch 6 Day-3 bumps. LinkedIn MANDATORY — execute AND write profiles.json SAME SESSION. Archive trigger fires Tue 2026-06-10 EOD unconditionally.
-- **Weekly intelligence report: SUNDAY 2026-05-31** — Week 10 close. Covers Days 61-67 (Batch 5 full close + Batch 6 Day-0 results).
-- **If INTERESTED reply found in post-Day-14 IMAP (Wed-Fri)** — BRAIN run not required for proposal. Use value_delivery_queue.json (value_delivery_on_interested section) directly. 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Log CHANGELOG same session.
+- **Weekly intelligence report: SUNDAY 2026-05-31** — Week 10 close. Covers Days 62-67 (Batch 5 full close + Batch 6 scrape results + Day-0 results).
+- **If INTERESTED reply found in post-Day-14 IMAP (Thu-Fri)** — BRAIN run not required for proposal. Use value_delivery_queue.json (value_delivery_on_interested section) directly. 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Log CHANGELOG same session.

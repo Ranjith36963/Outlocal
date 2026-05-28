@@ -1,42 +1,42 @@
 {
-  "classified_at": "2026-05-27T07:00:00Z",
-  "date": "2026-05-27",
-  "day_number": 61,
-  "batch_5_day": 15,
-  "note": "BRAIN layer — Day 61 (Wednesday 2026-05-27, Batch 5 Day 15 — Post-Day-14 Reply Peak). new_replies.json CONFIRMED UNCHANGED from 2026-04-04 (53 days, zero overnight arrivals — 61-session HANDS pattern). IMAP gap: 53 days from last confirmed check. Post-Day-14 reply window NOW OPEN (24h peak today). IMAP per Batch 5 lead MANDATORY today (24h), Thursday (48h), Friday (72h — window closes). LinkedIn PERMANENTLY CLOSED. No new replies to classify this run.",
+  "classified_at": "2026-05-28T07:00:00Z",
+  "date": "2026-05-28",
+  "day_number": 62,
+  "batch_5_day": 16,
+  "note": "BRAIN layer — Day 62 (Thursday 2026-05-28, Batch 5 Day 16 — Post-Day-14 48h Reply Peak). new_replies.json CONFIRMED UNCHANGED from 2026-04-04 (54 days, zero overnight arrivals — 62-session HANDS pattern). IMAP gap: 54 days from last confirmed check. Post-Day-14 48h peak is TODAY (primary window). 72h FINAL sweep TOMORROW Friday. Wednesday 24h sweep UNCONFIRMED — today's sweep covers full 54-day gap. LinkedIn PERMANENTLY CLOSED. No new replies to classify this run.",
 
   "new_replies_this_run": 0,
   "overnight_new_replies": 0,
-  "imap_gap_days_from_confirmed_check": 53,
+  "imap_gap_days_from_confirmed_check": 54,
   "imap_last_confirmed_check": "2026-04-04",
-  "tuesday_day14_sweep_status": "ASSUMED EXECUTED per Batch 5 lead before each Day-14 send (UNCONFIRMED — 61-session HANDS pattern — no new entries in new_replies.json)",
-  "reply_wave_status": "Post-Day-14 window NOW OPEN. 24h peak TODAY (Wed 2026-05-27). 48h peak Thu 28. 72h peak Fri 29. Window closes Friday evening.",
+  "wednesday_day_24h_sweep_status": "UNCONFIRMED (62-session HANDS pattern — no new entries in new_replies.json). Today's sweep covers the entire 54-day gap.",
+  "reply_wave_status": "Post-Day-14 48h peak TODAY (Thu 2026-05-28). 72h FINAL Fri 29 — reply window closes Friday evening.",
 
   "imap_today_required": {
-    "date": "TODAY 2026-05-27 (Wednesday) — per Batch 5 lead. Post-Day-14 24h peak.",
-    "priority": "MANDATORY — covers 53-day IMAP gap. Per lead. NOT leads 1/3/22.",
+    "date": "TODAY 2026-05-28 (Thursday) — per Batch 5 lead. Post-Day-14 48h peak.",
+    "priority": "MANDATORY — primary window. Covers 54-day IMAP gap. NOT leads 1/3/22.",
     "action_per_classification": {
       "if_interested": "Sequence already complete — no further sends due. Prepare bespoke proposal within 24h from IMAP discovery time (24/7 — NON-NEGOTIABLE). 3 pricing options. Write to new_replies.json, classify below, update value_delivery_queue.json. Log CHANGELOG same session. Reapproach date (2026-11-26) cancels — convert NOW.",
-      "if_not_interested": "Log in new_replies.json, classify below. No further action — sequence already complete. Reapproach 2026-11-26 blocked until then.",
-      "if_unsubscribe": "Suppress ALL channels permanently within 24h (GDPR Article 21). Log audit_log + CHANGELOG. Reapproach blocked permanently.",
-      "if_ooo": "Note return date. Sequence complete — no further email sends regardless of OOO date. Phone follow-up optional if return date within next 2 weeks and number available.",
-      "if_wrong_person": "Log. Investigate correct contact. Sequence complete — no email follow-up possible without new contact. Note for potential re-scrape.",
-      "if_clean": "No reply received. No action. Continue monitoring Thursday/Friday."
+      "if_not_interested": "Log in new_replies.json, classify below. No further action — sequence already complete.",
+      "if_unsubscribe": "Suppress ALL channels permanently within 24h (GDPR Article 21). Log audit_log + CHANGELOG. Permanently blocked.",
+      "if_ooo": "Note return date. Sequence complete — no further email sends. Phone follow-up optional if return date within 2 weeks and number available.",
+      "if_wrong_person": "Log. Investigate correct contact. Sequence complete — no email follow-up.",
+      "if_clean": "No reply received. FINAL sweep TOMORROW Friday (72h — window closes)."
     },
     "leads_never_to_sweep": [1, 3, 22],
-    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. Batch 5 post-Day-14 IMAP does not override."
+    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. Post-Day-14 IMAP does not override."
   },
 
   "post_day14_imap_schedule": {
-    "wednesday_2026_05_27": {"requirement": "MANDATORY — 24h peak. Per Batch 5 lead. NOT 1/3/22.", "gap_days": 53},
-    "thursday_2026_05_28": {"requirement": "MANDATORY — 48h peak. Per Batch 5 lead.", "gap_days": 54},
-    "friday_2026_05_29": {"requirement": "MANDATORY — 72h peak. Reply window closes Friday evening.", "gap_days": 55},
+    "wednesday_2026_05_27": {"requirement": "24h peak — UNCONFIRMED (62-session HANDS pattern). Gap covered by today's sweep.", "gap_days": 53},
+    "thursday_2026_05_28": {"requirement": "MANDATORY — 48h PRIMARY PEAK. Per Batch 5 lead. NOT 1/3/22. TODAY.", "gap_days": 54},
+    "friday_2026_05_29": {"requirement": "MANDATORY FINAL — 72h peak. Reply window closes Friday evening.", "gap_days": 55},
     "weekend_saturday_sunday": {"requirement": "NOT REQUIRED — weekend block. Window closed after Friday."},
-    "monday_2026_06_02": {"requirement": "IMAP before Batch 6 Day-0 sends. New leads — per lead before each initial send."}
+    "monday_2026_06_02": {"requirement": "IMAP before Batch 6 Day-0 sends (new leads only — not Batch 5 sweep)."}
   },
 
   "archive_final_declaration": {
-    "description": "UNCONDITIONALLY FINAL. No further action on leads 1, 3, or 22 under any scenario, including post-Day-14 IMAP.",
+    "description": "UNCONDITIONALLY FINAL. No further action on leads 1, 3, or 22 under any scenario.",
     "lead_1_tom": "Archive FINAL — LOST_NO_RESPONSE. Override window closed 2026-05-08 EOD.",
     "lead_3_claire": "Archive FINAL — LOST_NO_RESPONSE. Override window closed 2026-05-08 EOD.",
     "lead_22_rob": "Archive FINAL — LOST_NO_RESPONSE. Override window closed 2026-05-08 EOD."
@@ -46,8 +46,7 @@
     "trigger_date": "2026-05-19 EOD (Tuesday) — FIRED",
     "profiles_json_status": "NEVER WRITTEN — 54-session failure",
     "consequence": "All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn channel effective 2026-05-19 EOD",
-    "email_channel_note": "Day-14 breakup assumed sent yesterday — sequence complete. Email channel now closed for Batch 5 (4-touchpoint limit reached).",
-    "no_linkedin_exceptions": "No further LinkedIn for any lead, any batch, under any circumstances.",
+    "email_channel_note": "Day-14 breakup assumed sent 2026-05-26 — sequence assumed complete. Email channel now closed for Batch 5 (4-touchpoint limit reached).",
     "batch_6_linkedin": "MANDATORY Day 3-7 (Fri 2026-06-05). Archive trigger: Tue 2026-06-10 EOD — fires unconditionally if profiles.json missing."
   },
 
@@ -55,7 +54,7 @@
   "total_replies_to_date": 11,
   "reply_rate": "17.9% overall (11 replies / ~61 leads, Batches 1-4 only)",
   "batch_5_replies_to_date": 0,
-  "batch_5_reply_rate_note": "0 confirmed replies across 53 days (12-18 leads, all 4 touchpoints assumed sent). Post-Day-14 reply window open — 0-2 replies possible in next 72h.",
+  "batch_5_reply_rate_note": "0 confirmed replies across 54 days (12-18 leads, all 4 touchpoints assumed sent). Post-Day-14 48h peak TODAY — 0-2 replies possible in next 48h (closes Friday). 54-day IMAP gap means replies may exist unread.",
 
   "classifications": [
     {
@@ -72,7 +71,6 @@
       "lead_status_update": "lost_no_response",
       "block_all_email_followups": true,
       "linkedin_available": false,
-      "linkedin_blocked_reason": "Archive trigger fired — LinkedIn channel permanently closed. 2026-05-19 EOD confirmation.",
       "imap_override": "CLOSED — no further override attempts under any circumstances"
     },
     {
@@ -90,7 +88,6 @@
       "upsell_signal": true,
       "block_all_email_followups": true,
       "linkedin_available": false,
-      "linkedin_blocked_reason": "Archive trigger fired — LinkedIn channel permanently closed. 2026-05-19 EOD confirmation.",
       "imap_override": "CLOSED — no further override attempts under any circumstances"
     },
     {
@@ -107,7 +104,6 @@
       "lead_status_update": "lost_no_response",
       "block_all_email_followups": true,
       "linkedin_available": false,
-      "linkedin_blocked_reason": "Archive trigger fired — LinkedIn channel permanently closed. 2026-05-19 EOD confirmation.",
       "imap_override": "CLOSED — no further override attempts under any circumstances"
     },
     {
@@ -142,17 +138,17 @@
   ],
 
   "batch_5_new_classifications": [],
-  "batch_5_new_classifications_note": "No new Batch 5 reply classifications this run. Zero replies received in 53 days. Post-Day-14 IMAP may surface replies Wed-Fri — any new Batch 5 reply must be appended to classifications[] above and new_replies.json immediately upon IMAP discovery.",
+  "batch_5_new_classifications_note": "No new Batch 5 reply classifications this run. Zero replies received in 54 days. Post-Day-14 IMAP 48h TODAY (Thu) and 72h FINAL Fri may surface replies — any new Batch 5 reply must be appended to classifications[] above and new_replies.json immediately upon IMAP discovery.",
 
   "summary": {
     "new_replies_today": 0,
     "overnight_new_replies": 0,
     "total_to_date": 11,
     "batch_5_replies": 0,
-    "imap_status_today": "MANDATORY — per Batch 5 lead. Post-Day-14 24h peak. NOT leads 1/3/22. 53-day gap.",
-    "post_day14_reply_window": "OPEN NOW — 24h peak TODAY, 48h Thu, 72h Fri. Closes Fri evening.",
-    "imap_gap_days_from_confirmed": 53,
-    "imap_check_today": "MANDATORY per Batch 5 lead. Post-Day-14 24h peak. NOT leads 1/3/22.",
+    "imap_status_today": "MANDATORY — per Batch 5 lead. Post-Day-14 48h peak TODAY. NOT leads 1/3/22. 54-day gap.",
+    "imap_status_friday": "MANDATORY FINAL — per Batch 5 lead. 72h peak. Reply window closes Friday evening.",
+    "post_day14_reply_window": "OPEN — 48h peak TODAY, 72h FINAL Fri. Closes Fri evening.",
+    "imap_gap_days_from_confirmed": 54,
     "INTERESTED": 3,
     "NOT_INTERESTED": 1,
     "OUT_OF_OFFICE": 1,
@@ -161,7 +157,6 @@
     "permanently_archived": [1, 3, 22],
     "archive_reason": "LOST_NO_RESPONSE — LinkedIn never activated across 54+ sessions",
     "archive_override": "CLOSED — unconditionally final from 2026-05-08 EOD",
-    "linkedin_archived_batch_5": "ALL Batch 5 Ryedale leads — LOST_NO_RESPONSE on LinkedIn channel effective 2026-05-19 EOD",
-    "hands_instructions": "IMAP TODAY per Batch 5 lead (post-Day-14 24h peak, NOT leads 1/3/22). 53-day IMAP gap. Any new replies: write to new_replies.json AND classify here immediately. If INTERESTED found: 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Sequence complete — no further email sends to Batch 5. CHANGELOG MANDATORY THIS SESSION (59+ days overdue)."
+    "hands_instructions": "IMAP TODAY per Batch 5 lead (post-Day-14 48h peak, NOT leads 1/3/22). 54-day IMAP gap. Any new replies: write to new_replies.json AND classify here immediately. If INTERESTED found: 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Sequence complete — no further email sends to Batch 5. CHANGELOG MANDATORY THIS SESSION (60+ days overdue)."
   }
 }

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-27T07:00:00Z",
-  "date": "2026-05-27",
-  "day_number": 61,
-  "batch_5_day": 15,
-  "note": "BRAIN layer — Day 61 (Wednesday 2026-05-27, Batch 5 Day 15 — Post-Day-14 Reply Peak). Day-14 breakup assumed sent yesterday. Zero Batch 5 replies confirmed across 53 days. LinkedIn PERMANENTLY CLOSED for all leads. Warm pipeline permanently closed (leads 1/3/22 — UNCONDITIONALLY FINAL). Post-Day-14 reply window OPEN NOW (24h peak today) — any INTERESTED reply surfaced in IMAP triggers 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Batch 6 launch confirmed.",
+  "generated_at": "2026-05-28T07:00:00Z",
+  "date": "2026-05-28",
+  "day_number": 62,
+  "batch_5_day": 16,
+  "note": "BRAIN layer — Day 62 (Thursday 2026-05-28, Batch 5 Day 16 — Post-Day-14 48h Reply Peak). Zero Batch 5 replies confirmed. Day-14 assumed sent Tue 2026-05-26. LinkedIn PERMANENTLY CLOSED for all leads. Post-Day-14 48h peak TODAY — any INTERESTED reply surfaced in IMAP triggers 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). 72h FINAL sweep TOMORROW Friday. Batch 6 pipeline activates after Tuesday 2026-06-02 sends.",
 
   "pipeline_summary": {
     "total_interested_to_date": 3,
@@ -12,88 +12,40 @@
     "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 54+ sessions",
     "override_window": "CLOSED — 2026-05-08 EOD. Unconditionally final.",
     "email_channel_warm_pipeline": "CLOSED — permanently for leads 1, 3, 22",
-    "email_channel_batch_5": "CLOSED — Day-14 assumed sent yesterday. 4-touchpoint limit reached. No further email sends.",
-    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads including Batch 5. Archive trigger fired 2026-05-19 EOD.",
-    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale pipeline TBD (0 confirmed replies).",
-    "post_day14_reply_window": "OPEN — 24h peak TODAY (Wed 2026-05-27). 48h Thu 28. 72h Fri 29. Reply window closes Friday evening.",
+    "email_channel_batch_5": "CLOSED — Day-14 assumed sent 2026-05-26. 4-touchpoint limit reached. No further email sends.",
+    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD.",
+    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: TBD (0 confirmed replies, post-Day-14 48h window open today).",
+    "post_day14_reply_window": "OPEN — 48h peak TODAY (Thu 2026-05-28). 72h FINAL Fri 29. Reply window closes Friday evening.",
     "realistic_remaining_probability": {
       "warm_pipeline_leads_1_3_22": "ZERO. Permanently archived. No further action.",
-      "batch_5_ryedale": "0-2 INTERESTED replies possible in post-Day-14 72h window (24h peak TODAY). Historical SSL-PAS rate 15%; 0 confirmed to date — partially explained by 53-day IMAP gap.",
-      "next_revenue_opportunity": "Any INTERESTED reply surfaced in Wed-Fri IMAP. Expected revenue if converted: £150-250 (SSL fix only), £250-400 (SSL + mobile), £500-800 (full site for no-website lead). OR Batch 6 (Harrogate + Craven, Day-0 Tuesday 2026-06-02)."
+      "batch_5_ryedale": "0-2 INTERESTED replies possible in post-Day-14 48h-72h window (today/Friday). Historical SSL-PAS rate 15%. 0 confirmed to date — partially explained by 54-day IMAP gap.",
+      "next_revenue_opportunity": "Any INTERESTED reply surfaced in Thu-Fri IMAP. Expected revenue if converted: £150-250 (SSL fix only), £250-400 (SSL + mobile), £500-800 (full site for no-website lead). OR Batch 6 (Harrogate + Craven, Day-0 Tuesday 2026-06-02). Batch 6 expected INTERESTED: 1-3 (18-22 leads × 15% SSL-PAS historical rate)."
     }
   },
 
   "value_delivery_on_interested": {
     "sla": "24 HOURS from IMAP discovery time — NON-NEGOTIABLE. Applies 24/7 including weekends and evenings.",
-    "trigger": "Any Batch 5 Ryedale lead classified INTERESTED in post-Day-14 IMAP (Wed-Fri 2026-05-27-29). Sequence already complete — no further email sends — proceed directly to proposal.",
+    "trigger": "Any Batch 5 Ryedale lead classified INTERESTED in post-Day-14 IMAP (Thu 2026-05-28 — Fri 2026-05-29). Sequence already complete — no further email sends — proceed directly to proposal.",
     "proposal_structure": "3-option pricing. Presented by email within 24h of IMAP discovery (or phone call if lead has called). Follow up with call if no response within 48h.",
 
     "pricing_options_by_signal": {
       "ssl_only_fix": {
         "trigger": "Lead's stated concern is ONLY the SSL / 'Not Secure' warning",
-        "option_1": {
-          "name": "SSL Certificate Fix",
-          "scope": "Install + configure SSL certificate, redirect HTTP to HTTPS, fix mixed content warnings",
-          "price": "£150-£200",
-          "timeline": "1-2 working days",
-          "note": "Present this as the minimum fix that resolves the immediate issue"
-        },
-        "option_2": {
-          "name": "SSL + Speed Optimisation",
-          "scope": "SSL fix + basic speed improvements (image compression, caching) + Google Search Console setup",
-          "price": "£250-£350",
-          "timeline": "2-3 working days",
-          "note": "Position as the fix + one upgrade that compounds the benefit"
-        },
-        "option_3": {
-          "name": "SSL + Full Performance Audit + Fix",
-          "scope": "SSL + speed + mobile + Google Business Profile audit and fixes + 30-day monitoring",
-          "price": "£450-£600",
-          "timeline": "5-7 working days",
-          "note": "Full solution — best for leads who engaged on Google ranking angle (Day-7 pivot)"
-        }
+        "option_1": {"name": "SSL Certificate Fix", "scope": "Install + configure SSL certificate, redirect HTTP to HTTPS, fix mixed content warnings", "price": "£150-£200", "timeline": "1-2 working days"},
+        "option_2": {"name": "SSL + Speed Optimisation", "scope": "SSL fix + basic speed improvements (image compression, caching) + Google Search Console setup", "price": "£250-£350", "timeline": "2-3 working days"},
+        "option_3": {"name": "SSL + Full Performance Audit + Fix", "scope": "SSL + speed + mobile + Google Business Profile audit and fixes + 30-day monitoring", "price": "£450-£600", "timeline": "5-7 working days"}
       },
       "ssl_plus_mobile": {
         "trigger": "Lead has both SSL and mobile issues, or Day-7 new angle landed",
-        "option_1": {
-          "name": "SSL + Mobile Fix",
-          "scope": "SSL certificate + mobile responsiveness fix (existing site framework)",
-          "price": "£250-£350",
-          "timeline": "2-4 working days"
-        },
-        "option_2": {
-          "name": "SSL + Mobile + Speed Package",
-          "scope": "SSL + mobile + basic speed + Google Business Profile setup",
-          "price": "£400-£550",
-          "timeline": "5-7 working days"
-        },
-        "option_3": {
-          "name": "New Mobile-First Site",
-          "scope": "New clean site: mobile-first, HTTPS, fast, with contact form / booking link. Migrate existing content.",
-          "price": "£800-£1,200",
-          "timeline": "2-3 weeks"
-        }
+        "option_1": {"name": "SSL + Mobile Fix", "scope": "SSL certificate + mobile responsiveness fix (existing site framework)", "price": "£250-£350", "timeline": "2-4 working days"},
+        "option_2": {"name": "SSL + Mobile + Speed Package", "scope": "SSL + mobile + basic speed + Google Business Profile setup", "price": "£400-£550", "timeline": "5-7 working days"},
+        "option_3": {"name": "New Mobile-First Site", "scope": "New clean site: mobile-first, HTTPS, fast, with contact form / booking link. Migrate existing content.", "price": "£800-£1,200", "timeline": "2-3 weeks"}
       },
       "no_website": {
-        "trigger": "Lead has no website at all (BAB signal — came in from 4★+ 20+ reviews)",
-        "option_1": {
-          "name": "Single-Page Starter Site",
-          "scope": "1-page site: services, area covered, contact form, mobile-first, HTTPS. Live within 5 working days.",
-          "price": "£400-£500",
-          "timeline": "5 working days"
-        },
-        "option_2": {
-          "name": "3-Page Local Business Site",
-          "scope": "Home + Services + Contact. Google Business Profile integration. Mobile-first, HTTPS, basic SEO.",
-          "price": "£650-£850",
-          "timeline": "7-10 working days"
-        },
-        "option_3": {
-          "name": "Full Local Business Website",
-          "scope": "5+ pages, portfolio/gallery, booking/quote form, Google Business Profile + local SEO setup.",
-          "price": "£1,100-£1,600",
-          "timeline": "2-3 weeks"
-        }
+        "trigger": "Lead has no website at all (BAB signal — 4★+ 20+ reviews)",
+        "option_1": {"name": "Single-Page Starter Site", "scope": "1-page site: services, area covered, contact form, mobile-first, HTTPS. Live within 5 working days.", "price": "£400-£500", "timeline": "5 working days"},
+        "option_2": {"name": "3-Page Local Business Site", "scope": "Home + Services + Contact. Google Business Profile integration. Mobile-first, HTTPS, basic SEO.", "price": "£650-£850", "timeline": "7-10 working days"},
+        "option_3": {"name": "Full Local Business Website", "scope": "5+ pages, portfolio/gallery, booking/quote form, Google Business Profile + local SEO setup.", "price": "£1,100-£1,600", "timeline": "2-3 weeks"}
       }
     },
 
@@ -104,7 +56,7 @@
         "Send within 24h of IMAP discovery time — NON-NEGOTIABLE",
         "Fill all [brackets] from lead data and IMAP context",
         "Option 2 is typically the recommended anchor price (middle option closes best)",
-        "Keep tone warm and low-pressure — they already engaged, don't oversell",
+        "Keep tone warm and low-pressure",
         "Follow up with call within 48h if no reply to proposal email"
       ]
     }
@@ -124,10 +76,9 @@
       "override_window_closed": "2026-05-08 EOD",
       "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
       "no_further_action": "NONE. All channels closed. Historical record only.",
-      "historical_note": "Claire confirmed booking gap issue and agreed to call Tuesday 2pm (2026-04-07). Call and all follow-up missed. LinkedIn never executed across 54+ sessions.",
+      "pipeline_value_lost": "£350 estimated",
       "block_all_email_followups": true,
-      "linkedin_available": false,
-      "pipeline_value_lost": "£350 estimated"
+      "linkedin_available": false
     },
     {
       "queue_id": "vd_002",
@@ -142,10 +93,9 @@
       "override_window_closed": "2026-05-08 EOD",
       "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
       "no_further_action": "NONE. All channels closed. Historical record only.",
-      "historical_note": "Rob asked to bundle SSL + mobile into a full redesign ('sort the whole thing in one go'). Strongest upsell signal in the campaign. Call and all follow-up missed.",
+      "pipeline_value_lost": "£550-675 estimated (full redesign)",
       "block_all_email_followups": true,
-      "linkedin_available": false,
-      "pipeline_value_lost": "£550-675 estimated (full redesign)"
+      "linkedin_available": false
     },
     {
       "queue_id": "vd_003",
@@ -160,24 +110,32 @@
       "override_window_closed": "2026-05-08 EOD",
       "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
       "no_further_action": "NONE. All channels closed. Historical record only.",
-      "historical_note": "Tom acknowledged missing quote form, asked for pricing ('if it's a quick job then yes'). Small job signal — £100-150 expected. Call and all follow-up missed.",
+      "pipeline_value_lost": "£100-150 estimated",
       "block_all_email_followups": true,
-      "linkedin_available": false,
-      "pipeline_value_lost": "£100-150 estimated"
+      "linkedin_available": false
     }
   ],
 
   "batch_5_interested_queue": [],
-  "batch_5_interested_note": "Zero Batch 5 INTERESTED replies confirmed. Queue empty. Post-Day-14 IMAP (Wed-Fri) may populate this queue. Any new INTERESTED entry: write here immediately and prepare proposal within 24h from IMAP time.",
+  "batch_5_interested_note": "Zero Batch 5 INTERESTED replies confirmed. Queue empty. Post-Day-14 IMAP 48h TODAY (Thu) and 72h FINAL Fri may populate this queue. Any new INTERESTED entry: write here immediately and prepare proposal within 24h from IMAP time.",
+
+  "batch_6_pipeline_forecast": {
+    "send_date": "Tue 2026-06-02",
+    "expected_leads": "18-22",
+    "expected_interested": "1-3 (18-22 leads × 15% SSL-PAS historical rate × execution quality)",
+    "expected_revenue_range": "£150-1,600 per conversion depending on signal type and scope",
+    "pipeline_activates": "After Day-0 sends confirmed. Day-3 (Fri 2026-06-05) first reply window. Day-7 (Tue 2026-06-09) secondary peak.",
+    "note": "batch_6_leads.json STILL MISSING — HANDS must write by Friday 2026-05-29."
+  },
 
   "summary": {
     "active_interested_leads": 0,
-    "pipeline_value_available": "£0 confirmed — post-Day-14 reply window open (0-2 possible in 72h)",
-    "post_day14_window": "OPEN — 24h peak TODAY (Wed 2026-05-27). Closes Fri evening.",
+    "pipeline_value_available": "£0 confirmed — post-Day-14 48h window open TODAY (0-2 INTERESTED possible Thu-Fri)",
+    "post_day14_window": "OPEN — 48h peak TODAY (Thu 2026-05-28). 72h FINAL Fri 29. Window closes Friday evening.",
     "proposal_sla": "24h from IMAP discovery time — NON-NEGOTIABLE (24/7)",
     "archived_permanently": 3,
     "pipeline_written_off": "£800-1,175 (warm pipeline) + Batch 5 Ryedale TBD",
-    "batch_6_pipeline": "Activates after Batch 6 Day-0 sends (Tue 2026-06-02). Expected INTERESTED leads: 1-3 (18-22 leads × 15% SSL-PAS rate × execution quality).",
-    "next_action": "IMAP per Batch 5 lead TODAY (post-Day-14 24h peak). If INTERESTED found: 24h proposal SLA. CHANGELOG MANDATORY THIS SESSION (59+ days overdue)."
+    "batch_6_pipeline": "Activates after Batch 6 Day-0 sends (Tue 2026-06-02). Expected INTERESTED: 1-3.",
+    "next_action": "IMAP per Batch 5 lead TODAY (48h peak) AND TOMORROW Friday (72h FINAL). If INTERESTED found: 24h proposal SLA. CHANGELOG MANDATORY THIS SESSION (60+ days overdue)."
   }
 }
