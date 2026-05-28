@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-05-27T08:00:00Z",
+  "generated_at": "2026-05-28T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-27",
-  "day_number": 61,
-  "run_type": "DAY_61_BATCH6_PRE_POPULATION — Wednesday 2026-05-27, Batch 5 Day 15 (Post-Day-14 reply peak). LinkedIn permanently closed for all Batch 5 leads. First Batch 6 LinkedIn BRAIN run — sector-discovery search queries pre-populated for Harrogate District + Craven District. batch_6_leads.json not yet written — HANDS replaces placeholders with name-specific queries after scraping.",
+  "run_date": "2026-05-28",
+  "day_number": 62,
+  "run_type": "DAY_62_BATCH6_PRE_POPULATION_UPDATE — Thursday 2026-05-28, Batch 5 Day 16 (Post-Day-14 48h Reply Peak). LinkedIn permanently closed for all Batch 5 leads (62-session failure). Zero Batch 5 LinkedIn candidates. 19 Batch 6 sector-discovery search queries retained from Day 61 — unchanged pending batch_6_leads.json. batch_6_leads.json STILL MISSING — HANDS absolute deadline FRIDAY 2026-05-29. orchestrator.py build: 8 days remaining to 2026-06-05.",
 
-  "note": "Day 61 (Wednesday 2026-05-27 — Post-Day-14 reply peak — Batch 6 launch day). LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 61 consecutive sessions without execution). Zero Batch 5 LinkedIn candidates. Batch 6 confirmed: Harrogate District + Craven District. This file contains sector-discovery placeholder search queries for all 19 projected Batch 6 leads across 7 target towns. HANDS must: (1) execute Batch 6 scraping and write data/batch_6_leads.json, (2) replace each placeholder google_query with the name-specific form site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\" using actual data from batch_6_leads.json, (3) execute searches and write linkedin_profiles.json on Day 3 (Fri 2026-06-05). Archive trigger fires Tue 2026-06-10 EOD unconditionally. orchestrator.py MUST be built before 2026-06-05.",
+  "note": "Day 62 (Thursday 2026-05-28 — Post-Day-14 48h Reply Peak — Batch 5 Day 16). LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 62 consecutive sessions without execution). Zero Batch 5 LinkedIn candidates. Batch 6 confirmed: Harrogate District + Craven District. This file retains the 19 sector-discovery placeholder search queries from Day 61 — no updates to the queries themselves since batch_6_leads.json is still missing. HANDS must: (1) complete Batch 6 scraping and write data/batch_6_leads.json TODAY or TOMORROW (ABSOLUTE DEADLINE: FRIDAY 2026-05-29), (2) replace each placeholder google_query with the name-specific form site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\" using actual data from batch_6_leads.json, (3) execute searches and write linkedin_profiles.json on Day 3 (Fri 2026-06-05). Archive trigger fires Tue 2026-06-10 EOD unconditionally. orchestrator.py MUST be built before 2026-06-05 — 8 days remaining.",
 
   "channel_status": {
-    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (61-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
+    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (62-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
     "linkedin_batch6": "PRE_ACTIVATION — Batch 6 Day-0 estimated Tue 2026-06-02. LinkedIn window: Day 3 (Fri 2026-06-05) — Day 7 (Tue 2026-06-10). Archive trigger: Tue 2026-06-10 EOD — unconditional. orchestrator.py MUST be deployed before 2026-06-05.",
-    "email_batch5": "POST_DAY14_MONITORING — Day-14 assumed sent yesterday (Tue 2026-05-26, UNCONFIRMED). Post-Day-14 reply window OPEN NOW: 24h peak TODAY (Wed), 48h Thu, 72h Fri. IMAP per Batch 5 lead mandatory today-Friday (53-day gap). No further Batch 5 sends.",
-    "email_batch6": "PENDING — Day-0 scheduled Tue 2026-06-02. Copy generation after HANDS writes batch_6_leads.json."
+    "email_batch5": "POST_DAY14_MONITORING — Day-14 assumed sent Tue 2026-05-26 (UNCONFIRMED — 62-session HANDS pattern). Post-Day-14 48h peak is TODAY Thursday 2026-05-28 (PRIMARY WINDOW). 72h FINAL peak Fri 2026-05-29 — reply window closes Friday evening. IMAP per Batch 5 lead mandatory today (48h peak) AND tomorrow Friday (72h FINAL). 54-day gap. No further Batch 5 sends.",
+    "email_batch6": "PENDING — Day-0 scheduled Tue 2026-06-02. Copy generation after HANDS writes batch_6_leads.json (ABSOLUTE DEADLINE: FRIDAY 2026-05-29)."
   },
 
   "email_outreach_state": {
-    "checked_at": "2026-05-27T08:00:00Z",
+    "checked_at": "2026-05-28T08:00:00Z",
     "source_files": ["data/daily_signals.json", "data/daily_email_plan.json"],
-    "imap_gap_days": 53,
+    "imap_gap_days": 54,
     "imap_last_confirmed_check": "2026-04-04",
-    "post_day14_reply_window": "OPEN — 24h peak TODAY Wednesday 2026-05-27. 48h peak Thu 2026-05-28. 72h peak Fri 2026-05-29. Window closes Friday evening.",
+    "post_day14_reply_window": "OPEN — 24h peak Wed 2026-05-27 PASSED (UNCONFIRMED sweep). 48h peak TODAY Thursday 2026-05-28 (PRIMARY WINDOW). 72h peak Fri 2026-05-29 (FINAL). Window closes Friday evening.",
     "overnight_replies_received": 0,
     "batch_5_total_replies_confirmed": 0,
     "batch_5_sends_assumed": {
       "day_0": "Tue 2026-05-12 (UNCONFIRMED)",
       "day_3": "Fri 2026-05-15 (UNCONFIRMED)",
       "day_7": "Tue 2026-05-19 (UNCONFIRMED)",
-      "day_14": "Tue 2026-05-26 (UNCONFIRMED — 61-session HANDS pattern)"
+      "day_14": "Tue 2026-05-26 (UNCONFIRMED — 62-session HANDS pattern)"
     },
     "leads_emailed_3plus_days_no_reply": {
       "batch_5_all_ryedale": {
-        "days_since_day0": 15,
-        "days_since_day3": 12,
-        "days_since_day7": 8,
-        "days_since_day14": 1,
+        "days_since_day0": 16,
+        "days_since_day3": 13,
+        "days_since_day7": 9,
+        "days_since_day14": 2,
         "replies_confirmed": 0,
         "linkedin_eligibility": "NONE — LinkedIn permanently closed (archive trigger fired 2026-05-19 EOD)",
         "email_status": "Day-14 assumed sent — sequence assumed complete. Reapproach 2026-11-26. Post-Day-14 IMAP monitoring only."
@@ -50,7 +50,7 @@
     "batch_5_ryedale": "ARCHIVED_LOST_NO_RESPONSE — effective 2026-05-19 EOD",
     "warm_pipeline_1_3_22": "ARCHIVED_LOST_NO_RESPONSE — effective 2026-05-08 EOD",
     "all_other_prior_leads": "Sequence complete, suppressed, blocked, or never eligible",
-    "batch_6_leads": "PENDING — batch_6_leads.json not yet written. 19 placeholder queries pre-populated below."
+    "batch_6_leads": "PENDING — batch_6_leads.json STILL MISSING (62-session HANDS pattern). ABSOLUTE DEADLINE: FRIDAY 2026-05-29. 19 placeholder queries pre-populated below — await name-specific replacement after HANDS completes scraping."
   },
 
   "search_queries_note": "Sector-discovery placeholders for Batch 6 (Harrogate District + Craven District). 19 entries covering all projected leads. HANDS must replace each google_query with name-specific form using data from batch_6_leads.json. Execute queries Fri 2026-06-05 (Day 3). Write linkedin_profiles.json entry immediately after each search and connection attempt. Do NOT batch — write per lead, same session.",
@@ -316,8 +316,8 @@
   "orchestrator_status": {
     "file": "src/outlocal/linkedin/orchestrator.py",
     "status": "NOT_IMPLEMENTED — src/outlocal/linkedin/ directory does not exist",
-    "build_deadline": "BEFORE 2026-06-05 (Batch 6 Day 3). 9 days remaining.",
-    "build_urgency": "CRITICAL — 61-session manual delivery failure cannot repeat. orchestrator.py is the ONLY solution that guarantees same-session execution.",
+    "build_deadline": "BEFORE 2026-06-05 (Batch 6 Day 3). 8 days remaining.",
+    "build_urgency": "CRITICAL — 62-session manual delivery failure cannot repeat. orchestrator.py is the ONLY solution that guarantees same-session execution.",
     "minimum_viable_implementation": [
       "Read data/linkedin_search_plan.json — extract search_queries[]",
       "Drive Playwright: Google search per query → extract LinkedIn profile URL",
@@ -347,19 +347,19 @@
   },
 
   "summary": {
-    "run_date": "2026-05-27 (Wednesday — Day 61, Batch 5 Day 15 — Post-Day-14 Reply Peak — Batch 6 Launch Day)",
-    "day_number": 61,
+    "run_date": "2026-05-28 (Thursday — Day 62, Batch 5 Day 16 — Post-Day-14 48h Reply Peak)",
+    "day_number": 62,
     "linkedin_channel_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53)",
     "linkedin_channel_batch6": "PRE_ACTIVATION — Day 3 window opens Fri 2026-06-05. Archive trigger Tue 2026-06-10 EOD.",
     "search_queries_today": 19,
-    "search_queries_status": "BATCH6_SECTOR_DISCOVERY_PLACEHOLDERS — awaiting batch_6_leads.json from HANDS for name-specific replacement",
+    "search_queries_status": "BATCH6_SECTOR_DISCOVERY_PLACEHOLDERS — awaiting batch_6_leads.json from HANDS (ABSOLUTE DEADLINE: FRIDAY 2026-05-29) for name-specific replacement",
     "execution_date": "Fri 2026-06-05 (Day 3) — MANDATORY. orchestrator.py must be deployed by then.",
     "archive_trigger": "Tue 2026-06-10 EOD — unconditional",
-    "imap_gap_days": 53,
-    "post_day14_reply_window": "OPEN — 24h peak TODAY (Wed). 48h Thu. 72h Fri. Closes Friday evening.",
+    "imap_gap_days": 54,
+    "post_day14_reply_window": "OPEN — 24h peak Wed PASSED (UNCONFIRMED). 48h peak TODAY (Thu). 72h Fri (FINAL). Closes Friday evening.",
     "overnight_new_replies": 0,
-    "batch_5_sequences": "ASSUMED COMPLETE after yesterday's Day-14. Reapproach 2026-11-26.",
-    "orchestrator_py_build_deadline": "BEFORE 2026-06-05 — 9 days remaining — CRITICAL",
-    "consecutive_sessions_without_linkedin_execution": 61
+    "batch_5_sequences": "ASSUMED COMPLETE. Reapproach 2026-11-26.",
+    "orchestrator_py_build_deadline": "BEFORE 2026-06-05 — 8 days remaining — CRITICAL",
+    "consecutive_sessions_without_linkedin_execution": 62
   }
 }
