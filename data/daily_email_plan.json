@@ -1,14 +1,14 @@
 [
   {
-    "plan_date": "2026-05-28",
-    "generated_at": "2026-05-28T07:00:00Z",
-    "day_number": 62,
-    "batch_5_day": 16,
-    "note": "BRAIN layer — Day 62 (Thursday 2026-05-28, Batch 5 Day 16 — Post-Day-14 48h Reply Peak). NO SENDS TODAY. All Batch 5 sequences ASSUMED COMPLETE. Post-Day-14 48h peak is TODAY. 72h FINAL sweep TOMORROW Friday — reply window closes. batch_6_leads.json STILL MISSING (62-session HANDS pattern). Batch 6 email templates carried forward unchanged from Day 61 — ready for per-lead population once HANDS writes batch_6_leads.json. BRAIN review + copy finalisation: Monday 2026-06-01. Batch 6 Day-0: Tuesday 2026-06-02.",
+    "plan_date": "2026-05-29",
+    "generated_at": "2026-05-29T07:00:00Z",
+    "day_number": 63,
+    "batch_5_day": 17,
+    "note": "BRAIN layer — Day 63 (Friday 2026-05-29, Batch 5 Day 17 — Post-Day-14 72h FINAL Reply Peak — REPLY WINDOW CLOSES TODAY). NO SENDS TODAY. All Batch 5 sequences ASSUMED COMPLETE. Post-Day-14 72h FINAL peak is TODAY — window closes this evening. batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY (was due Wednesday — 63-session HANDS pattern — no further extension). Batch 6 email templates carried forward unchanged — ready for per-lead population once HANDS writes batch_6_leads.json TODAY. BRAIN review + copy finalisation: Monday 2026-06-01. Batch 6 Day-0: Tuesday 2026-06-02 (CONTINGENT on batch_6_leads.json received today).",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No sends today — post-Day-14 48h monitoring peak. Next send: Batch 6 Day-0 Tuesday 2026-06-02 (pending batch_6_leads.json from HANDS).",
+    "new_sends_note": "No sends today — post-Day-14 72h FINAL monitoring peak (window closes this evening). Weekend block starts tomorrow. Next send: Batch 6 Day-0 Tuesday 2026-06-02 (CONTINGENT on batch_6_leads.json received from HANDS TODAY).",
 
     "batch_5_summary": {
       "status": "SEQUENCE ASSUMED COMPLETE (UNCONFIRMED — all 4 touchpoints assumed sent)",
@@ -25,7 +25,7 @@
       "territory": "Harrogate District + Craven District",
       "send_window": "09:00-10:30",
       "stagger": "10 minutes between sends",
-      "batch_6_leads_file_status": "MISSING — batch_6_leads.json not yet written by HANDS. Templates below are production-ready with [bracketed placeholders]. Per-lead signal assignments and populated copy to be written Monday 2026-06-01 after HANDS writes batch_6_leads.json. Absolute deadline for batch_6_leads.json: FRIDAY 2026-05-29.",
+      "batch_6_leads_file_status": "MISSING — batch_6_leads.json not yet written by HANDS (63-session pattern). ABSOLUTE FINAL DEADLINE: TODAY FRIDAY 2026-05-29. No further extension. Templates below are production-ready with [bracketed placeholders]. Per-lead signal assignments and populated copy to be written Monday 2026-06-01 ONLY after HANDS writes batch_6_leads.json today. If not received today: Day-0 cannot proceed Tuesday 2026-06-02.",
       "signal_mix": {
         "ssl_pas": "60%",
         "mobile_pas": "20%",
@@ -176,9 +176,10 @@
     },
 
     "forward_plan": {
-      "today_thursday_2026_05_28": "NO SENDS. Post-Day-14 48h IMAP peak. batch_6_leads.json STILL MISSING — HANDS must write today or Friday.",
-      "friday_2026_05_29": "FINAL post-Day-14 IMAP sweep (72h — window closes). batch_6_leads.json ABSOLUTE DEADLINE (HANDS).",
-      "monday_2026_06_01": "BRAIN reviews batch_6_leads.json. Assigns signals per lead. Writes populated per-lead copy in this file replacing [bracketed placeholders].",
+      "today_friday_2026_05_29": "NO SENDS. FINAL post-Day-14 IMAP sweep (72h — window closes this evening). batch_6_leads.json ABSOLUTE FINAL DEADLINE — TODAY. CHANGELOG MANDATORY.",
+      "saturday_2026_05_30": "No sends, no IMAP. Weekend block. Post-Day-14 window closed after Friday evening.",
+      "sunday_2026_05_31": "Weekly intelligence report — Week 10 close. No sends, no IMAP.",
+      "monday_2026_06_01": "BRAIN reviews batch_6_leads.json (ONLY if received today). Assigns signals per lead. Writes populated per-lead copy in this file replacing [bracketed placeholders]. If batch_6_leads.json still missing Monday: no per-lead copy possible — BRAIN notifies HANDS immediately.",
       "tuesday_2026_06_02": "BATCH 6 DAY-0 SENDS. 09:00-10:30. IMAP per lead before each send. Use ssl_pas_day0 / mobile_pas_day0 / no_website_bab_day0 / aida_day0 templates as assigned.",
       "friday_2026_06_05": "Day-3 bumps using day3 templates. LinkedIn MANDATORY — execute AND write profiles.json SAME SESSION. Archive trigger Tue 2026-06-10 EOD.",
       "tuesday_2026_06_09": "Day-7 new angle using day7 templates. IMAP per lead before each send.",

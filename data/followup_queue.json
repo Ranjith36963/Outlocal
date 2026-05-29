@@ -1,40 +1,41 @@
 {
-  "generated_at": "2026-05-28T07:00:00Z",
-  "date": "2026-05-28",
-  "day_number": 62,
-  "batch_5_day": 16,
-  "note": "BRAIN layer — Day 62 (Thursday 2026-05-28, Batch 5 Day 16 — Post-Day-14 48h Reply Peak). All Batch 5 follow-up sequences ASSUMED COMPLETE after Day-14 breakup (ASSUMED SENT Tue 2026-05-26 — UNCONFIRMED — 62-session HANDS pattern). No active follow-ups due today. Post-Day-14 48h reply peak TODAY — IMAP per Batch 5 lead mandatory. 72h FINAL sweep TOMORROW Friday. Reply window closes Friday evening. Next follow-up obligation: Batch 6 Day-3 bump Friday 2026-06-05.",
+  "generated_at": "2026-05-29T07:00:00Z",
+  "date": "2026-05-29",
+  "day_number": 63,
+  "batch_5_day": 17,
+  "note": "BRAIN layer — Day 63 (Friday 2026-05-29, Batch 5 Day 17 — Post-Day-14 72h FINAL Reply Peak). All Batch 5 follow-up sequences ASSUMED COMPLETE. No active follow-ups due today. Post-Day-14 72h FINAL peak TODAY — reply window CLOSES THIS EVENING. IMAP per Batch 5 lead MANDATORY TODAY (72h FINAL — last sweep). batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY. CHANGELOG: 61+ days overdue — MANDATORY THIS SESSION. No sends today. Weekend block starts tomorrow. Next follow-up obligation: Batch 6 Day-3 bump Friday 2026-06-05 (only after Day-0 confirmed sent on Tuesday 2026-06-02).",
 
   "active_followups_today": [],
   "active_followups_count": 0,
-  "followup_note": "No follow-ups due today. All Batch 5 sequences assumed complete after Day-14. All legacy sequences (fu_041-045, Batches 1-4) assumed complete. Next follow-up obligation: Batch 6 Day-3 bump Friday 2026-06-05 (ONLY after Day-0 confirmed sent).",
+  "followup_note": "No follow-ups due today. All Batch 5 sequences assumed complete after Day-14 (assumed sent Tue 2026-05-26 — UNCONFIRMED). All legacy sequences (fu_041-045, Batches 1-4) assumed complete. Post-Day-14 window closes TODAY Friday evening. Next follow-up obligation: Batch 6 Day-3 bump Friday 2026-06-05.",
 
   "send_today": {
     "send_today": false,
-    "reason": "Post-Day-14 monitoring day (48h peak). All Batch 5 sequences assumed complete. Batch 6 not yet sent (Day-0 is Tuesday 2026-06-02)."
+    "reason": "Post-Day-14 FINAL monitoring day (72h peak). All Batch 5 sequences assumed complete. Batch 6 not yet sent (Day-0 is Tuesday 2026-06-02, contingent on batch_6_leads.json received today). Weekend block starts tomorrow."
   },
 
   "batch_5_sequence_status": {
     "territory": "Ryedale District — Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent",
-    "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 16},
-    "day_3_bump": {"date": "2026-05-15 (Friday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 13},
-    "day_7_new_angle": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 9},
+    "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 17},
+    "day_3_bump": {"date": "2026-05-15 (Friday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 14},
+    "day_7_new_angle": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 10},
     "day_14_breakup": {
       "date": "2026-05-26 (Tuesday)",
-      "status": "ASSUMED SENT — UNCONFIRMED (62-session HANDS pattern)",
-      "days_ago": 2,
+      "status": "ASSUMED SENT — UNCONFIRMED (63-session HANDS pattern)",
+      "days_ago": 3,
       "note": "Day-14 was the FINAL touchpoint. 4-touchpoint hard limit enforced. No further email sends to any Batch 5 lead. Reapproach: 2026-11-26 minimum."
     },
     "sequence_complete": "ASSUMED — all 4 touchpoints assumed sent. HANDS: update lead status to sequence_complete in database for all Batch 5 leads. Reapproach date: 2026-11-26.",
     "post_day14_reply_window": {
-      "status": "OPEN — 48h PEAK TODAY",
+      "status": "OPEN — FINAL 72h PEAK TODAY — CLOSES THIS EVENING",
       "window_24h": "Wednesday 2026-05-27 (PASSED — IMAP sweep UNCONFIRMED)",
-      "window_48h": "Thursday 2026-05-28 (TODAY — PRIMARY ACTIVE WINDOW)",
-      "window_72h": "Friday 2026-05-29 (FINAL SWEEP — window closes Friday evening)",
-      "window_closes": "Friday 2026-05-29 evening",
-      "expected_replies": "0-2 INTERESTED (SSL-PAS 15% historical; 0 confirmed Batch 5 to date)",
-      "imap_required": "MANDATORY per Batch 5 lead today (48h peak) AND tomorrow Friday (72h — final). NOT leads 1/3/22.",
-      "if_interested_found": "24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Sequence already complete — no further sends. Prepare 3-option proposal. Update value_delivery_queue.json. Log CHANGELOG same session."
+      "window_48h": "Thursday 2026-05-28 (PASSED — IMAP sweep UNCONFIRMED)",
+      "window_72h": "Friday 2026-05-29 (TODAY — FINAL. Window closes this evening.)",
+      "window_closed_after": "Friday 2026-05-29 evening",
+      "expected_replies": "0-2 INTERESTED (SSL-PAS 15% historical; 0 confirmed Batch 5 to date across 55 days)",
+      "imap_required": "MANDATORY TODAY (72h FINAL — LAST BATCH 5 SWEEP). NOT leads 1/3/22.",
+      "if_interested_found": "24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). Sequence already complete — no further sends. Prepare 3-option proposal. Update value_delivery_queue.json. Log CHANGELOG same session.",
+      "after_window_closes": "No further IMAP for Batch 5. Any reply arriving after Friday evening still qualifies for 24h proposal SLA from discovery time if found during Monday Batch 6 IMAP (before each Day-0 send). 24/7 SLA applies."
     }
   },
 
@@ -56,12 +57,12 @@
   },
 
   "batch_6_followup_schedule": {
-    "note": "Batch 6 sends begin Tuesday 2026-06-02. Follow-up schedule below is PRE-PLANNED — activate once Day-0 sends confirmed. batch_6_leads.json STILL MISSING — HANDS must write by Friday 2026-05-29.",
+    "note": "Batch 6 sends begin Tuesday 2026-06-02 ONLY IF batch_6_leads.json received today (Friday absolute deadline). Follow-up schedule below is PRE-PLANNED — activate once Day-0 sends confirmed.",
     "day_0": {
       "planned_date": "2026-06-02 (Tuesday)",
       "territory": "Harrogate District + Craven District",
       "target_leads": "18-22",
-      "status": "PENDING — batch_6_leads.json MISSING (scraping overdue)",
+      "status": "CONTINGENT — batch_6_leads.json MUST be written TODAY (absolute final deadline). Cannot send without BRAIN per-lead copy (Monday 2026-06-01).",
       "send_window": "09:00-10:30",
       "stagger": "10 minutes between sends",
       "imap_precondition": "MANDATORY per lead before each send — no exceptions"
@@ -88,20 +89,23 @@
   },
 
   "imap_monitoring_schedule": {
-    "thursday_2026_05_28_today": {
-      "requirement": "MANDATORY — per Batch 5 lead. 48h post-Day-14 PRIMARY PEAK. NOT leads 1/3/22. Covers 54-day gap including Wednesday sweep (UNCONFIRMED).",
-      "action_on_interested": "24h proposal SLA from IMAP time (NON-NEGOTIABLE). Update value_delivery_queue.json. Log CHANGELOG."
+    "friday_2026_05_29_today": {
+      "requirement": "MANDATORY FINAL — per Batch 5 lead. 72h post-Day-14 FINAL. NOT leads 1/3/22. Window closes Friday evening. THIS IS THE LAST BATCH 5 IMAP SWEEP.",
+      "imap_gap": "55 days — covers Wed and Thu sweeps (both UNCONFIRMED)",
+      "action_on_interested": "24h proposal SLA from IMAP time (NON-NEGOTIABLE). Sequence complete — no further email sends. Update value_delivery_queue.json. Log CHANGELOG."
     },
-    "friday_2026_05_29": {
-      "requirement": "MANDATORY — per Batch 5 lead. 72h post-Day-14 FINAL. Reply window closes Friday evening.",
-      "note": "Last IMAP sweep for Batch 5. After Friday evening: window closed. Any Monday-discovered replies still qualify for 24h proposal SLA from discovery time."
-    },
-    "weekend_2026_05_30_31": {
+    "saturday_2026_05_30": {
       "requirement": "NOT REQUIRED — weekend block. Post-Day-14 window closed after Friday evening.",
-      "note": "Any post-Friday replies discovered Monday qualify for 24h proposal SLA from discovery time."
+      "note": "No IMAP Saturday or Sunday."
     },
-    "monday_2026_06_02": {
-      "requirement": "IMAP before each Batch 6 Day-0 send. New leads — per lead before each initial send (not Batch 5 sweep)."
+    "sunday_2026_05_31": {
+      "requirement": "NOT REQUIRED — weekend block. Weekly intelligence report (Week 10 close) — no IMAP required for this run."
+    },
+    "monday_2026_06_01": {
+      "requirement": "IMAP before each Batch 6 Day-0 send ONLY. New Batch 6 leads only — not a Batch 5 sweep. If any Batch 5 reply discovered during Monday IMAP (incidentally): treat as new reply, classify, 24h proposal SLA from discovery time."
+    },
+    "tuesday_2026_06_02": {
+      "requirement": "IMAP per Batch 6 lead before each Day-0 send. Standard pre-send IMAP protocol."
     }
   },
 
@@ -109,13 +113,16 @@
     "active_followups_today": 0,
     "send_today": false,
     "batch_5_status": "SEQUENCE ASSUMED COMPLETE",
-    "post_day14_window": "OPEN — 48h peak TODAY (Thu). 72h FINAL Fri. Window closes Friday evening.",
+    "post_day14_window": "OPEN — 72h FINAL TODAY (Fri). Closes Friday evening.",
     "imap_mandatory_today": true,
-    "imap_mandatory_friday": true,
+    "imap_mandatory_note": "FINAL SWEEP — covers 55-day gap. NOT leads 1/3/22.",
+    "imap_mandatory_saturday": false,
+    "imap_mandatory_sunday": false,
     "next_followup_obligation": "Batch 6 Day-3 bump — Friday 2026-06-05 (ONLY after Day-0 confirmed sent)",
     "legacy_sequences": "ALL ASSUMED COMPLETE",
-    "changelog_overdue_days": "60+",
-    "changelog_mandatory": "THIS SESSION",
-    "batch_6_leads_file": "MISSING — absolute deadline Friday 2026-05-29"
+    "changelog_overdue_days": "61+",
+    "changelog_mandatory": "THIS SESSION — ABSOLUTE FINAL",
+    "batch_6_leads_file": "MISSING — ABSOLUTE FINAL DEADLINE TODAY FRIDAY 2026-05-29",
+    "batch_6_day0_contingency": "If batch_6_leads.json not received today — Day-0 cannot send Tuesday — delay to Tuesday 2026-06-09 at earliest"
   }
 }

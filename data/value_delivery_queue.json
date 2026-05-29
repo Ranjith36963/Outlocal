@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-05-28T07:00:00Z",
-  "date": "2026-05-28",
-  "day_number": 62,
-  "batch_5_day": 16,
-  "note": "BRAIN layer — Day 62 (Thursday 2026-05-28, Batch 5 Day 16 — Post-Day-14 48h Reply Peak). Zero Batch 5 replies confirmed. Day-14 assumed sent Tue 2026-05-26. LinkedIn PERMANENTLY CLOSED for all leads. Post-Day-14 48h peak TODAY — any INTERESTED reply surfaced in IMAP triggers 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). 72h FINAL sweep TOMORROW Friday. Batch 6 pipeline activates after Tuesday 2026-06-02 sends.",
+  "generated_at": "2026-05-29T07:00:00Z",
+  "date": "2026-05-29",
+  "day_number": 63,
+  "batch_5_day": 17,
+  "note": "BRAIN layer — Day 63 (Friday 2026-05-29, Batch 5 Day 17 — Post-Day-14 72h FINAL Reply Peak). Zero Batch 5 replies confirmed across 55 days. Day-14 assumed sent Tue 2026-05-26. Post-Day-14 72h FINAL peak TODAY — window closes this evening. Any INTERESTED reply surfaced in today's IMAP sweep triggers 24h proposal SLA from IMAP time (24/7 — NON-NEGOTIABLE). After Friday evening: post-Day-14 window closed. 24h SLA applies to any spontaneous future discovery until reapproach date (2026-11-26). LinkedIn PERMANENTLY CLOSED for all leads. Batch 6 pipeline activates after Tuesday 2026-06-02 sends (contingent on batch_6_leads.json received today).",
 
   "pipeline_summary": {
     "total_interested_to_date": 3,
     "outcomes_confirmed": 0,
     "archived_permanently": 3,
-    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 54+ sessions",
+    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 55+ sessions",
     "override_window": "CLOSED — 2026-05-08 EOD. Unconditionally final.",
     "email_channel_warm_pipeline": "CLOSED — permanently for leads 1, 3, 22",
     "email_channel_batch_5": "CLOSED — Day-14 assumed sent 2026-05-26. 4-touchpoint limit reached. No further email sends.",
     "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD.",
-    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: TBD (0 confirmed replies, post-Day-14 48h window open today).",
-    "post_day14_reply_window": "OPEN — 48h peak TODAY (Thu 2026-05-28). 72h FINAL Fri 29. Reply window closes Friday evening.",
+    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: 0 confirmed replies — post-Day-14 72h FINAL window open TODAY (closes this evening).",
+    "post_day14_reply_window": "OPEN — 72h FINAL TODAY (Fri 2026-05-29). Window closes this evening.",
     "realistic_remaining_probability": {
       "warm_pipeline_leads_1_3_22": "ZERO. Permanently archived. No further action.",
-      "batch_5_ryedale": "0-2 INTERESTED replies possible in post-Day-14 48h-72h window (today/Friday). Historical SSL-PAS rate 15%. 0 confirmed to date — partially explained by 54-day IMAP gap.",
-      "next_revenue_opportunity": "Any INTERESTED reply surfaced in Thu-Fri IMAP. Expected revenue if converted: £150-250 (SSL fix only), £250-400 (SSL + mobile), £500-800 (full site for no-website lead). OR Batch 6 (Harrogate + Craven, Day-0 Tuesday 2026-06-02). Batch 6 expected INTERESTED: 1-3 (18-22 leads × 15% SSL-PAS historical rate)."
+      "batch_5_ryedale": "0-2 INTERESTED replies possible in final 72h window (TODAY ONLY). Historical SSL-PAS rate 15%. 0 confirmed to date — partially explained by 55-day IMAP gap. Window closes today.",
+      "next_revenue_opportunity": "Any INTERESTED reply surfaced in today's IMAP. Expected revenue if converted: £150-250 (SSL fix only), £250-400 (SSL + mobile), £500-800 (full site for no-website lead). OR Batch 6 (Harrogate + Craven, Day-0 Tuesday 2026-06-02 — contingent on batch_6_leads.json today). Batch 6 expected INTERESTED: 1-3 (18-22 leads × 15% SSL-PAS historical rate)."
     }
   },
 
   "value_delivery_on_interested": {
     "sla": "24 HOURS from IMAP discovery time — NON-NEGOTIABLE. Applies 24/7 including weekends and evenings.",
-    "trigger": "Any Batch 5 Ryedale lead classified INTERESTED in post-Day-14 IMAP (Thu 2026-05-28 — Fri 2026-05-29). Sequence already complete — no further email sends — proceed directly to proposal.",
+    "trigger": "Any Batch 5 Ryedale lead classified INTERESTED in post-Day-14 IMAP (TODAY Fri 2026-05-29 — last window). After today: any incidentally discovered reply from Batch 5 still qualifies for 24h SLA from discovery time.",
     "proposal_structure": "3-option pricing. Presented by email within 24h of IMAP discovery (or phone call if lead has called). Follow up with call if no response within 48h.",
 
     "pricing_options_by_signal": {
@@ -53,7 +53,7 @@
       "subject": "[First name] — [business name]: three options to fix this",
       "body": "Hi [First name],\n\nThanks for getting back to me — glad the timing works.\n\nI've put together three options for [business name] depending on how far you'd like to go with it:\n\n**Option 1 — [Name]:** [Scope] — £[price]. [Timeline].\n**Option 2 — [Name]:** [Scope] — £[price]. [Timeline].\n**Option 3 — [Name]:** [Scope] — £[price]. [Timeline].\n\nMost clients in [town] start with Option [recommended] and add more later once they've seen the results.\n\nHappy to jump on a quick call to talk through which makes most sense for you — what does your diary look like this week?\n\n[Your name]",
       "rules": [
-        "Send within 24h of IMAP discovery time — NON-NEGOTIABLE",
+        "Send within 24h of IMAP discovery time — NON-NEGOTIABLE (24/7 including weekends)",
         "Fill all [brackets] from lead data and IMAP context",
         "Option 2 is typically the recommended anchor price (middle option closes best)",
         "Keep tone warm and low-pressure",
@@ -117,25 +117,25 @@
   ],
 
   "batch_5_interested_queue": [],
-  "batch_5_interested_note": "Zero Batch 5 INTERESTED replies confirmed. Queue empty. Post-Day-14 IMAP 48h TODAY (Thu) and 72h FINAL Fri may populate this queue. Any new INTERESTED entry: write here immediately and prepare proposal within 24h from IMAP time.",
+  "batch_5_interested_note": "Zero Batch 5 INTERESTED replies confirmed. Queue empty. Post-Day-14 IMAP 72h FINAL TODAY (Fri — window closes this evening) — last opportunity to surface any replies. Any new INTERESTED entry: write here immediately, prepare proposal within 24h from IMAP time (24/7 — NON-NEGOTIABLE).",
 
   "batch_6_pipeline_forecast": {
-    "send_date": "Tue 2026-06-02",
+    "send_date": "Tue 2026-06-02 (CONTINGENT on batch_6_leads.json received TODAY)",
     "expected_leads": "18-22",
     "expected_interested": "1-3 (18-22 leads × 15% SSL-PAS historical rate × execution quality)",
     "expected_revenue_range": "£150-1,600 per conversion depending on signal type and scope",
     "pipeline_activates": "After Day-0 sends confirmed. Day-3 (Fri 2026-06-05) first reply window. Day-7 (Tue 2026-06-09) secondary peak.",
-    "note": "batch_6_leads.json STILL MISSING — HANDS must write by Friday 2026-05-29."
+    "note": "batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY FRIDAY 2026-05-29. If not received: Day-0 cannot proceed Tuesday 2026-06-02."
   },
 
   "summary": {
     "active_interested_leads": 0,
-    "pipeline_value_available": "£0 confirmed — post-Day-14 48h window open TODAY (0-2 INTERESTED possible Thu-Fri)",
-    "post_day14_window": "OPEN — 48h peak TODAY (Thu 2026-05-28). 72h FINAL Fri 29. Window closes Friday evening.",
-    "proposal_sla": "24h from IMAP discovery time — NON-NEGOTIABLE (24/7)",
+    "pipeline_value_available": "£0 confirmed — post-Day-14 72h FINAL window TODAY (0-2 INTERESTED still possible before close of business)",
+    "post_day14_window": "OPEN — 72h FINAL TODAY (Fri 2026-05-29). Closes this evening.",
+    "proposal_sla": "24h from IMAP discovery time — NON-NEGOTIABLE (24/7, including weekends)",
     "archived_permanently": 3,
-    "pipeline_written_off": "£800-1,175 (warm pipeline) + Batch 5 Ryedale TBD",
-    "batch_6_pipeline": "Activates after Batch 6 Day-0 sends (Tue 2026-06-02). Expected INTERESTED: 1-3.",
-    "next_action": "IMAP per Batch 5 lead TODAY (48h peak) AND TOMORROW Friday (72h FINAL). If INTERESTED found: 24h proposal SLA. CHANGELOG MANDATORY THIS SESSION (60+ days overdue)."
+    "pipeline_written_off": "£800-1,175 (warm pipeline — FINAL) + Batch 5 Ryedale TBD (window closes today)",
+    "batch_6_pipeline": "Activates after Batch 6 Day-0 sends (Tue 2026-06-02 — contingent on batch_6_leads.json today). Expected INTERESTED: 1-3.",
+    "next_action": "IMAP per Batch 5 lead TODAY (72h FINAL — last sweep). If INTERESTED found: 24h proposal SLA. batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY. CHANGELOG MANDATORY THIS SESSION (61+ days overdue)."
   }
 }
