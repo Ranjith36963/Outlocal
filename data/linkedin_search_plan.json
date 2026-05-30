@@ -1,59 +1,74 @@
 {
-  "generated_at": "2026-05-29T07:30:00Z",
+  "generated_at": "2026-05-30T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-29",
-  "day_number": 63,
-  "run_type": "DAY_63_BATCH6_PRE_POPULATION_UPDATE — Friday 2026-05-29, Batch 5 Day 17 (Post-Day-14 72h FINAL Reply Peak — window closes tonight). LinkedIn permanently closed for all Batch 5 leads (63-session failure). Zero Batch 5 LinkedIn candidates. 19 Batch 6 sector-discovery search queries retained from Day 62 — unchanged pending batch_6_leads.json. batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY FRIDAY 2026-05-29 — no further extension. orchestrator.py build: 7 days remaining to 2026-06-05.",
+  "run_date": "2026-05-30",
+  "day_number": 64,
+  "run_type": "DAY_64_WEEKEND_BRIDGE — Saturday 2026-05-30. Batch 5 FORMALLY CLOSED (Friday 2026-05-29 evening — post-Day-14 reply window closed, 0 confirmed replies). LinkedIn permanently closed for all Batch 5 leads (64-session failure). Zero LinkedIn candidates today. batch_6_leads.json MISSED FRIDAY ABSOLUTE DEADLINE — emergency revised deadline: Sunday 2026-05-31 EOD. 19 sector-discovery placeholder queries retained unchanged — await batch_6_leads.json delivery. orchestrator.py: 6 days remaining to build deadline (BEFORE 2026-06-05). CHANGELOG: 62+ days overdue.",
 
-  "note": "Day 63 (Friday 2026-05-29 — Post-Day-14 72h FINAL Reply Peak — Batch 5 Day 17). Post-Day-14 reply window CLOSES THIS EVENING — final IMAP sweep per Batch 5 lead mandatory today (NOT leads 1/3/22). LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 63 consecutive sessions without execution). Zero Batch 5 LinkedIn candidates. Batch 6 confirmed: Harrogate District + Craven District. This file retains the 19 sector-discovery placeholder search queries from Day 62 — no updates possible since batch_6_leads.json is STILL MISSING. HANDS must: (1) complete Batch 6 scraping and write data/batch_6_leads.json TODAY (ABSOLUTE FINAL DEADLINE — no further extension — Day-0 sends Tue 2026-06-02 CANNOT PROCEED without it), (2) replace each placeholder google_query with the name-specific form site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\" using actual data from batch_6_leads.json, (3) execute searches and write linkedin_profiles.json on Day 3 (Fri 2026-06-05). Archive trigger fires Tue 2026-06-10 EOD unconditionally. orchestrator.py MUST be built before 2026-06-05 — 7 days remaining.",
+  "note": "Day 64 (Saturday 2026-05-30 — Weekend Bridge). Batch 5 is formally closed as of Friday 2026-05-29 evening: all 4 touchpoints assumed sent (all UNCONFIRMED), post-Day-14 72h reply window closed, 0 confirmed replies across the full Ryedale campaign. LinkedIn archived all Batch 5 leads LOST_NO_RESPONSE on 2026-05-19 EOD (archive trigger Day 53 — 64-session failure). No further IMAP, no further LinkedIn for any Batch 5 lead under any circumstances. batch_6_leads.json missed its absolute Friday deadline (64-session HANDS pattern). Emergency revised deadline: Sunday 2026-05-31 EOD. If received by Sunday EOD: BRAIN generates signal assignments + email copy during Sunday's weekly intelligence report run (Week 10 close) → Day-0 sends Tuesday 2026-06-02 CAN STILL PROCEED (Scenario A). If not: Day-0 defers to Tuesday 2026-06-09 (Scenario B). Batch 6 LinkedIn window opens Day 3 (Fri 2026-06-05 Scenario A / Fri 2026-06-12 Scenario B). Archive trigger fires Day 7 from Day-0 EOD unconditionally. orchestrator.py MUST be built BEFORE 2026-06-05 — 6 days remaining from today. 19 placeholder search queries pre-populated for all projected Batch 6 leads (Harrogate District + Craven District) — HANDS replaces each google_query with name-specific form after writing batch_6_leads.json. No search execution until Day 3. No LinkedIn on weekends.",
 
   "channel_status": {
-    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (63-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
-    "linkedin_batch6": "PRE_ACTIVATION — Batch 6 Day-0 estimated Tue 2026-06-02. LinkedIn window: Day 3 (Fri 2026-06-05) — Day 7 (Tue 2026-06-10). Archive trigger: Tue 2026-06-10 EOD — unconditional. orchestrator.py MUST be deployed before 2026-06-05.",
-    "email_batch5": "POST_DAY14_MONITORING_FINAL — Day-14 assumed sent Tue 2026-05-26 (UNCONFIRMED — 63-session HANDS pattern). Post-Day-14 72h FINAL peak is TODAY Friday 2026-05-29. Reply window CLOSES THIS EVENING. IMAP per Batch 5 lead mandatory TODAY (72h FINAL — LAST BATCH 5 SWEEP). NOT leads 1/3/22. 55-day gap. No further Batch 5 sends after tonight. Window permanently closed after Friday evening.",
-    "email_batch6": "PENDING — Day-0 scheduled Tue 2026-06-02. batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY FRIDAY 2026-05-29. Copy generation after HANDS writes batch_6_leads.json (BRAIN Monday 2026-06-01). No file today = Day-0 cannot proceed Tuesday — minimum 4-day delay."
+    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (64-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
+    "linkedin_batch6": "PRE_ACTIVATION — 19 placeholder search queries ready. Activation date: Fri 2026-06-05 (Scenario A, Day-0 Tue 2026-06-02) OR Fri 2026-06-12 (Scenario B, Day-0 Tue 2026-06-09). Contingent on batch_6_leads.json received by Sunday 2026-05-31 EOD. Archive trigger: Day 7 from Day-0 EOD unconditional.",
+    "email_batch5": "PERMANENTLY_CLOSED — post-Day-14 reply window closed Friday 2026-05-29 evening. 0 confirmed replies. No further IMAP. No further sends. Reapproach 2026-11-26 minimum.",
+    "email_batch6": "PENDING — Day-0 estimated Tue 2026-06-02 (Scenario A) or Tue 2026-06-09 (Scenario B). Contingent on batch_6_leads.json received Sunday EOD."
   },
 
   "email_outreach_state": {
-    "checked_at": "2026-05-29T07:30:00Z",
+    "checked_at": "2026-05-30T08:00:00Z",
     "source_files": ["data/daily_signals.json", "data/daily_email_plan.json"],
-    "imap_gap_days": 55,
+    "imap_gap_days": 56,
     "imap_last_confirmed_check": "2026-04-04",
-    "post_day14_reply_window": "OPEN — 72h FINAL peak TODAY Friday 2026-05-29. Window closes this evening. 24h peak Wed PASSED (UNCONFIRMED). 48h peak Thu PASSED (UNCONFIRMED). This is the LAST IMAP sweep for Batch 5. Window PERMANENTLY CLOSED after today.",
+    "post_day14_reply_window": "CLOSED — effective Friday 2026-05-29 evening. Unconditional. No further Batch 5 IMAP under any circumstances.",
     "overnight_replies_received": 0,
     "batch_5_total_replies_confirmed": 0,
-    "batch_5_sends_assumed": {
-      "day_0": "Tue 2026-05-12 (UNCONFIRMED)",
-      "day_3": "Fri 2026-05-15 (UNCONFIRMED)",
-      "day_7": "Tue 2026-05-19 (UNCONFIRMED)",
-      "day_14": "Tue 2026-05-26 (UNCONFIRMED — 63-session HANDS pattern)"
-    },
+    "batch_5_formal_closure": "2026-05-29 evening — FINAL. 0 confirmed replies across full 4-touchpoint sequence (Day-0 assumed 2026-05-12 through Day-14 assumed 2026-05-26). Reapproach 2026-11-26.",
     "leads_emailed_3plus_days_no_reply": {
+      "note": "All Batch 5 leads (Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent) have been emailed at multiple touchpoints with no confirmed reply. Day-0 assumed 18 days ago. All are beyond the 3-day threshold. LinkedIn eligibility: NONE — LinkedIn permanently closed (archive trigger fired 2026-05-19 EOD). Batch 5 formally closed. No LinkedIn coordination required.",
       "batch_5_all_ryedale": {
-        "days_since_day0": 17,
-        "days_since_day3": 14,
-        "days_since_day7": 10,
-        "days_since_day14": 3,
+        "days_since_day0_assumed": 18,
+        "days_since_day3_assumed": 15,
+        "days_since_day7_assumed": 11,
+        "days_since_day14_assumed": 4,
         "replies_confirmed": 0,
-        "linkedin_eligibility": "NONE — LinkedIn permanently closed (archive trigger fired 2026-05-19 EOD)",
-        "email_status": "Day-14 assumed sent — sequence assumed complete. Post-Day-14 72h FINAL IMAP peak TODAY (Friday). Window CLOSES THIS EVENING. Reapproach 2026-11-26. No further Batch 5 IMAP after today."
+        "linkedin_eligibility": "NONE — permanently closed",
+        "email_status": "FORMALLY CLOSED. Sequence assumed complete. Reapproach 2026-11-26. No further contact any channel."
       }
     },
     "linkedin_candidates_from_email_state": {
       "count": 0,
-      "reason": "LinkedIn permanently closed for all Batch 5 leads. Archive trigger fired 2026-05-19 EOD. Post-Day-14 reply window closes TONIGHT. Next LinkedIn candidates: Batch 6 leads (window opens Day 3 Fri 2026-06-05) — contingent on batch_6_leads.json received TODAY."
+      "reason": "LinkedIn permanently closed for all Batch 5 leads. Archive trigger fired 2026-05-19 EOD (Day 53). Next LinkedIn candidates: Batch 6 leads — activation Day 3 from Day-0 (Fri 2026-06-05 Scenario A or Fri 2026-06-12 Scenario B). Contingent on batch_6_leads.json received Sunday 2026-05-31 EOD."
     }
   },
 
   "linkedin_candidates_today": {
     "count": 0,
-    "batch_5_ryedale": "ARCHIVED_LOST_NO_RESPONSE — effective 2026-05-19 EOD",
-    "warm_pipeline_1_3_22": "ARCHIVED_LOST_NO_RESPONSE — effective 2026-05-08 EOD",
-    "all_other_prior_leads": "Sequence complete, suppressed, blocked, or never eligible",
-    "batch_6_leads": "PENDING — batch_6_leads.json STILL MISSING (63-session HANDS pattern). ABSOLUTE FINAL DEADLINE: TODAY FRIDAY 2026-05-29 — NO FURTHER EXTENSION. 19 placeholder queries pre-populated below — await name-specific replacement after HANDS completes scraping today."
+    "batch_5_ryedale": "ARCHIVED_LOST_NO_RESPONSE — effective 2026-05-19 EOD. Batch 5 formally closed 2026-05-29 evening.",
+    "warm_pipeline_1_3_22": "ARCHIVED_LOST_NO_RESPONSE — effective 2026-05-08 EOD. Final.",
+    "all_other_prior_leads": "Sequence complete, suppressed, blocked, or never eligible.",
+    "batch_6_leads": "PENDING — batch_6_leads.json MISSED FRIDAY ABSOLUTE DEADLINE (64-session HANDS pattern). Emergency revised deadline: Sunday 2026-05-31 EOD. 19 placeholder queries ready below — await name-specific replacement after HANDS writes batch_6_leads.json."
   },
 
-  "search_queries_note": "Sector-discovery placeholders for Batch 6 (Harrogate District + Craven District). 19 entries covering all projected leads. HANDS must replace each google_query with name-specific form using data from batch_6_leads.json. Execute queries Fri 2026-06-05 (Day 3). Write linkedin_profiles.json entry immediately after each search and connection attempt. Do NOT batch — write per lead, same session.",
+  "search_queries_note": "19 sector-discovery placeholders for Batch 6 (Harrogate District + Craven District). HANDS actions on receipt of batch_6_leads.json: (1) Replace each google_query with name-specific form: site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\" using actual data from batch_6_leads.json. (2) Execute queries on Day 3 ONLY (Fri 2026-06-05 Scenario A or Fri 2026-06-12 Scenario B) — NOT before Day 3. (3) Write linkedin_profiles.json entry immediately after each search and connection attempt — one entry per lead, same session. DO NOT BATCH. (4) Archive trigger fires Day 7 from Day-0 EOD unconditionally — no extensions.",
+
+  "orchestrator_py_requirement": {
+    "status": "NOT_IMPLEMENTED",
+    "file": "src/outlocal/linkedin/orchestrator.py",
+    "directory": "src/outlocal/linkedin/ — create directory first",
+    "build_deadline": "BEFORE 2026-06-05 — ABSOLUTE. 6 days remaining from today (Sat 2026-05-30).",
+    "reason": "64-session manual delivery failure. orchestrator.py is the ONLY mechanism that guarantees same-session profiles.json write. Without it: Batch 6 repeats the 64-session failure. Archive trigger fires unconditionally Tue 2026-06-10 EOD (Scenario A) or Tue 2026-06-17 EOD (Scenario B).",
+    "minimum_viable_features": [
+      "Read data/linkedin_search_plan.json → extract search_queries[]",
+      "Drive Playwright: Google search → extract LinkedIn profile URL",
+      "Confirm profile is business owner (not employee)",
+      "Check posts tab (last 60 days) → flag if post found",
+      "Read note template from data/linkedin_connection_notes.json → personalise using profile data",
+      "Drive LinkedIn: connect + note",
+      "Write data/linkedin_profiles.json entry IMMEDIATELY after each attempt — do NOT batch",
+      "Log errors + skip reasons — never crash silently"
+    ],
+    "available_build_days": ["Saturday 2026-05-31 (today)", "Sunday 2026-06-01", "Monday 2026-06-02", "Tuesday 2026-06-03", "Wednesday 2026-06-04"]
+  },
 
   "search_queries": [
     {
@@ -66,7 +81,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Knaresborough\" plumber OR \"heating engineer\" owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P002",
@@ -78,7 +93,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Knaresborough\" electrician owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P003",
@@ -90,7 +105,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Knaresborough\" joiner OR carpenter OR \"bespoke furniture\" owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P004",
@@ -102,7 +117,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Knaresborough\" builder OR \"building contractor\" owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P005",
@@ -114,7 +129,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Knaresborough\" \"estate agent\" owner OR director OR partner",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P006",
@@ -126,8 +141,8 @@
       "priority": 2,
       "google_query": "site:linkedin.com/in \"Ripon\" roofer OR roofing owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "exclusion_note": "DO NOT target lead 1 (Ripon Road Carpentry — Tom [surname unknown]) — ARCHIVED LOST_NO_RESPONSE. Confirm business name does not match before sending connection request.",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json. Verify this is NOT lead 1 / Ripon Road Carpentry."
+      "exclusion_note": "DO NOT target lead 1 (Ripon Road Carpentry — Tom) — ARCHIVED LOST_NO_RESPONSE unconditionally final. Confirm business name does not match before sending connection request.",
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json. Verify this is NOT lead 1 / Ripon Road Carpentry. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P007",
@@ -139,7 +154,7 @@
       "priority": 2,
       "google_query": "site:linkedin.com/in \"Ripon\" plumber owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P008",
@@ -151,7 +166,7 @@
       "priority": 2,
       "google_query": "site:linkedin.com/in \"Ripon\" solicitor partner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P009",
@@ -163,7 +178,7 @@
       "priority": 2,
       "google_query": "site:linkedin.com/in \"Ripon\" accountant OR \"chartered accountant\" partner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P010",
@@ -175,7 +190,7 @@
       "priority": 3,
       "google_query": "site:linkedin.com/in \"Boroughbridge\" builder OR contractor owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P011",
@@ -187,7 +202,7 @@
       "priority": 3,
       "google_query": "site:linkedin.com/in \"Boroughbridge\" plumber owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P012",
@@ -199,7 +214,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Skipton\" plumber OR \"heating engineer\" owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P013",
@@ -211,7 +226,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Skipton\" electrician owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P014",
@@ -223,7 +238,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Skipton\" joiner OR carpenter owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P015",
@@ -235,7 +250,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Skipton\" salon OR beauty OR hairdresser owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P016",
@@ -247,7 +262,7 @@
       "priority": 1,
       "google_query": "site:linkedin.com/in \"Skipton\" \"estate agent\" owner OR director OR partner",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P017",
@@ -259,107 +274,46 @@
       "priority": 2,
       "google_query": "site:linkedin.com/in \"Settle\" \"North Yorkshire\" builder OR contractor owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P018",
       "name": "[Owner Name TBD — from batch_6_leads.json]",
-      "company": "[Business Name TBD — B&B/hospitality, Settle]",
-      "town": "Settle",
+      "company": "[Business Name TBD — B&B or pub, Grassington]",
+      "town": "Grassington",
       "district": "Craven District",
-      "sector": "B&B / Guest House",
-      "priority": 2,
-      "google_query": "site:linkedin.com/in \"Settle\" \"B&B\" OR \"guest house\" OR \"bed and breakfast\" owner",
+      "sector": "B&B / Hospitality",
+      "priority": 3,
+      "google_query": "site:linkedin.com/in \"Grassington\" \"Yorkshire Dales\" B&B OR \"bed and breakfast\" OR pub owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Execute Day 3 only."
     },
     {
       "lead_id": "BATCH6_P019",
       "name": "[Owner Name TBD — from batch_6_leads.json]",
-      "company": "[Business Name TBD — pub/tearoom, Grassington]",
-      "town": "Grassington",
+      "company": "[Business Name TBD — Gargrave stretch lead]",
+      "town": "Gargrave",
       "district": "Craven District",
-      "sector": "Pub / Tearoom / Hospitality",
-      "priority": 3,
-      "google_query": "site:linkedin.com/in \"Grassington\" pub OR tearoom OR \"tea room\" OR \"village pub\" owner",
+      "sector": "Plumber / Builder / Electrician",
+      "priority": 4,
+      "google_query": "site:linkedin.com/in \"Gargrave\" plumber OR builder OR electrician owner OR director",
       "name_specific_query_template": "site:linkedin.com/in \"[Owner Name]\" \"[Business Name]\"",
-      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead."
+      "hands_instruction": "Replace google_query with name-specific query from batch_6_leads.json record for this lead. Only if Gargrave lead is scraped. Execute Day 3 only."
     }
   ],
 
-  "search_queries_count": 19,
-  "search_queries_status": "BATCH6_PRE_POPULATED — 19 sector-discovery placeholders. HANDS must replace each google_query with name-specific form once batch_6_leads.json is written TODAY (ABSOLUTE FINAL DEADLINE). Execute Fri 2026-06-05 (Day 3). Write linkedin_profiles.json entry per lead immediately after each search+connection attempt.",
-
-  "batch_6_execution_protocol": {
-    "day3_execution_date": "Friday 2026-06-05",
-    "day7_archive_trigger": "Tuesday 2026-06-10 EOD — UNCONDITIONAL",
-    "pre_execution_steps": [
-      "1. HANDS writes data/batch_6_leads.json from Harrogate + Craven scraping",
-      "2. BRAIN assigns signals + generates email copy (Mon 2026-06-01 or earlier)",
-      "3. Day-0 sends Tue 2026-06-02 — IMAP per lead before each send",
-      "4. HANDS replaces all BATCH6_P0xx google_query entries with name-specific queries from batch_6_leads.json",
-      "5. Day 3 (Fri 2026-06-05): execute LinkedIn searches + connection requests + write linkedin_profiles.json SAME SESSION",
-      "6. orchestrator.py executes all of step 5 automatically — MUST be deployed before 2026-06-05"
-    ],
-    "per_lead_protocol": [
-      "Read search query from this file (use name-specific query if available, sector-discovery if not)",
-      "Google search → extract LinkedIn profile URL → confirm is business owner",
-      "Check posts from last 60 days — flag if recent post found (enables post_reference note type)",
-      "Read connection note from linkedin_connection_notes.json (match by lead_id)",
-      "Send connection request via LinkedIn with note",
-      "Write entry to data/linkedin_profiles.json IMMEDIATELY (before moving to next lead)",
-      "Log errors and skip reasons — never crash silently"
-    ],
-    "archive_trigger_rule": "If linkedin_profiles.json does not contain at least one entry by Tue 2026-06-10 EOD — all Batch 6 leads archived LOST_NO_RESPONSE on LinkedIn. No exceptions. No extensions."
-  },
-
-  "orchestrator_status": {
-    "file": "src/outlocal/linkedin/orchestrator.py",
-    "status": "NOT_IMPLEMENTED — src/outlocal/linkedin/ directory does not exist",
-    "build_deadline": "BEFORE 2026-06-05 (Batch 6 Day 3). 7 days remaining.",
-    "build_urgency": "CRITICAL — 63-session manual delivery failure cannot repeat. orchestrator.py is the ONLY solution that guarantees same-session execution.",
-    "minimum_viable_implementation": [
-      "Read data/linkedin_search_plan.json — extract search_queries[]",
-      "Drive Playwright: Google search per query → extract LinkedIn profile URL",
-      "Confirm profile is business owner (not employee) before proceeding",
-      "Check posts tab for posts from last 60 days — flag if found",
-      "Read connection note template from data/linkedin_connection_notes.json — match by lead_id",
-      "Drive LinkedIn: send connection request + note (confirm note under 200 chars)",
-      "Write entry to data/linkedin_profiles.json IMMEDIATELY after each attempt (not batched)",
-      "Log errors and skip reasons — never crash silently",
-      "On completion: print summary count (sent / skipped / failed)"
-    ],
-    "data_dependencies": [
-      "data/linkedin_search_plan.json — source of search queries (this file)",
-      "data/linkedin_connection_notes.json — source of connection note templates",
-      "data/linkedin_profiles.json — output file (write per lead, not batched)"
-    ]
-  },
-
-  "do_not_linkedin": {
-    "permanently_blocked_all_channels": [2, 7, 19],
-    "unconditionally_archived_no_contact": [1, 3, 22],
-    "lost_unresolved_archived": [49, 51, 53, 54],
-    "batch_5_ryedale_archived_lost_no_response": "ALL — effective 2026-05-19 EOD (archive trigger fired Day 53)",
-    "sequence_complete_window_expired": [4, 5, 6, 8, 12, 30, 31, 32],
-    "sequence_complete_after_day14": "ALL Batch 5 Ryedale leads — assumed sequence_complete after yesterday's Day-14 sends. Reapproach 2026-11-26. LinkedIn permanently closed.",
-    "ripon_exclusion": "DO NOT target lead 1 (Ripon Road Carpentry) in Ripon scraping. Archived LOST_NO_RESPONSE. HANDS must confirm any Ripon lead is not lead 1 before LinkedIn approach."
-  },
-
   "summary": {
-    "run_date": "2026-05-29 (Friday — Day 63, Batch 5 Day 17 — Post-Day-14 72h FINAL Reply Peak — window closes tonight)",
-    "day_number": 63,
-    "linkedin_channel_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). 63-session failure.",
-    "linkedin_channel_batch6": "PRE_ACTIVATION — Day 3 window opens Fri 2026-06-05. Archive trigger Tue 2026-06-10 EOD. Contingent on batch_6_leads.json TODAY.",
-    "search_queries_today": 19,
-    "search_queries_status": "BATCH6_SECTOR_DISCOVERY_PLACEHOLDERS — batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY (FRIDAY 2026-05-29). HANDS must write file today for name-specific query replacement. No further extension.",
-    "execution_date": "Fri 2026-06-05 (Day 3) — MANDATORY. orchestrator.py must be deployed by then.",
-    "archive_trigger": "Tue 2026-06-10 EOD — unconditional",
-    "imap_gap_days": 55,
-    "post_day14_reply_window": "OPEN — 72h FINAL TODAY (Friday 2026-05-29). Closes this evening. PERMANENTLY CLOSED after tonight. Last IMAP sweep for Batch 5.",
-    "overnight_new_replies": 0,
-    "batch_5_sequences": "ASSUMED COMPLETE. Reapproach 2026-11-26.",
-    "orchestrator_py_build_deadline": "BEFORE 2026-06-05 — 7 days remaining — CRITICAL",
-    "consecutive_sessions_without_linkedin_execution": 63
+    "run_date": "2026-05-30 (Saturday — Day 64, Batch 5 Day 18 — Weekend Bridge — Batch 5 Formally Closed)",
+    "linkedin_candidates_today": 0,
+    "search_queries_batch6_count": 19,
+    "search_queries_status": "PLACEHOLDER — awaiting name-specific replacement from batch_6_leads.json",
+    "batch_6_leads_file_status": "MISSING — MISSED FRIDAY ABSOLUTE DEADLINE. Emergency revised deadline: Sunday 2026-05-31 EOD.",
+    "batch_6_scenario_a": "Day-0 Tue 2026-06-02 — IF batch_6_leads.json received Sunday EOD. LinkedIn Day 3 Fri 2026-06-05. Archive trigger Tue 2026-06-10 EOD.",
+    "batch_6_scenario_b": "Day-0 Tue 2026-06-09 — IF batch_6_leads.json NOT received Sunday EOD. LinkedIn Day 3 Fri 2026-06-12. Archive trigger Tue 2026-06-17 EOD.",
+    "batch_5_status": "FORMALLY CLOSED — 2026-05-29 evening. 0 confirmed replies. Reapproach 2026-11-26.",
+    "linkedin_batch5_status": "PERMANENTLY_CLOSED — archive trigger 2026-05-19 EOD. 64-session failure.",
+    "orchestrator_py_status": "NOT_IMPLEMENTED — 6 days to build deadline (BEFORE 2026-06-05)",
+    "changelog_overdue_days": "62+",
+    "next_linkedin_brain_run": "Sunday 2026-06-01 or Monday 2026-06-02 — ONLY if batch_6_leads.json received by Sunday EOD"
   }
 }
