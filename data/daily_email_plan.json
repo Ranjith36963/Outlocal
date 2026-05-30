@@ -1,31 +1,48 @@
 [
   {
-    "plan_date": "2026-05-29",
-    "generated_at": "2026-05-29T07:00:00Z",
-    "day_number": 63,
-    "batch_5_day": 17,
-    "note": "BRAIN layer — Day 63 (Friday 2026-05-29, Batch 5 Day 17 — Post-Day-14 72h FINAL Reply Peak — REPLY WINDOW CLOSES TODAY). NO SENDS TODAY. All Batch 5 sequences ASSUMED COMPLETE. Post-Day-14 72h FINAL peak is TODAY — window closes this evening. batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY (was due Wednesday — 63-session HANDS pattern — no further extension). Batch 6 email templates carried forward unchanged — ready for per-lead population once HANDS writes batch_6_leads.json TODAY. BRAIN review + copy finalisation: Monday 2026-06-01. Batch 6 Day-0: Tuesday 2026-06-02 (CONTINGENT on batch_6_leads.json received today).",
+    "plan_date": "2026-05-30",
+    "generated_at": "2026-05-30T07:00:00Z",
+    "day_number": 64,
+    "batch_5_day": 18,
+    "note": "BRAIN layer — Day 64 (Saturday 2026-05-30 — Weekend Bridge — Batch 5 Formally Closed). NO SENDS TODAY. All Batch 5 sequences ASSUMED COMPLETE. Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. batch_6_leads.json MISSED FRIDAY ABSOLUTE DEADLINE — emergency revised deadline: Sunday 2026-05-31 EOD. IF batch_6_leads.json received by Sunday EOD: BRAIN generates per-lead signal assignments and populated email copy during Sunday's weekly intelligence report run (Week 10 close) — Tuesday 2026-06-02 Day-0 can still proceed. IF not received by Sunday: Day-0 defers to Tuesday 2026-06-09. Batch 6 templates below remain production-ready with [bracketed placeholders] — awaiting per-lead population.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No sends today — post-Day-14 72h FINAL monitoring peak (window closes this evening). Weekend block starts tomorrow. Next send: Batch 6 Day-0 Tuesday 2026-06-02 (CONTINGENT on batch_6_leads.json received from HANDS TODAY).",
+    "new_sends_note": "No sends today — Saturday weekend block. Post-Day-14 window closed. Next send: Batch 6 Day-0 (Tue 2026-06-02 Scenario A or Tue 2026-06-09 Scenario B — depends on batch_6_leads.json delivery by Sunday EOD).",
 
     "batch_5_summary": {
-      "status": "SEQUENCE ASSUMED COMPLETE (UNCONFIRMED — all 4 touchpoints assumed sent)",
+      "status": "FORMALLY CLOSED — 2026-05-29 evening. Post-Day-14 window closed. 0 confirmed replies.",
       "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED SENT — UNCONFIRMED"},
       "day_3": {"date": "2026-05-15 (Friday)", "status": "ASSUMED SENT — UNCONFIRMED"},
       "day_7": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED SENT — UNCONFIRMED"},
-      "day_14": {"date": "2026-05-26 (Tuesday)", "status": "ASSUMED SENT — UNCONFIRMED"},
-      "post_day14_reply_window": "OPEN — 48h peak TODAY (Thu 2026-05-28). 72h FINAL Fri 29. Window closes Friday evening.",
+      "day_14": {"date": "2026-05-26 (Tuesday)", "status": "ASSUMED SENT — UNCONFIRMED. FINAL TOUCHPOINT."},
+      "post_day14_reply_window": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
+      "confirmed_replies": 0,
       "reapproach_date": "2026-11-26 minimum"
     },
 
+    "batch_6_scenario": {
+      "scenario_a": {
+        "condition": "batch_6_leads.json received Saturday 2026-05-30 or Sunday 2026-05-31 EOD",
+        "brain_copy_generation": "Sunday 2026-05-31 — during weekly intelligence report run (Week 10 close). BRAIN reads batch_6_leads.json, assigns signals per lead, populates [bracketed placeholders] in templates below, writes per-lead email copy.",
+        "day_0_send_date": "Tuesday 2026-06-02, 09:00-10:30",
+        "day_3_bump": "Friday 2026-06-05",
+        "linkedin_day3": "MANDATORY — execute AND write profiles.json SAME SESSION",
+        "linkedin_archive_trigger": "Tuesday 2026-06-10 EOD — unconditional"
+      },
+      "scenario_b": {
+        "condition": "batch_6_leads.json NOT received by Sunday 2026-05-31 EOD",
+        "brain_copy_generation": "Monday 2026-06-01 — BRAIN generates copy for deferred Day-0",
+        "day_0_send_date": "Tuesday 2026-06-09, 09:00-10:30",
+        "day_3_bump": "Friday 2026-06-12",
+        "linkedin_day3": "MANDATORY — execute AND write profiles.json SAME SESSION",
+        "linkedin_archive_trigger": "Tuesday 2026-06-17 EOD — unconditional"
+      }
+    },
+
     "batch_6_email_templates": {
-      "launch_date": "2026-06-02 (Tuesday)",
-      "territory": "Harrogate District + Craven District",
-      "send_window": "09:00-10:30",
-      "stagger": "10 minutes between sends",
-      "batch_6_leads_file_status": "MISSING — batch_6_leads.json not yet written by HANDS (63-session pattern). ABSOLUTE FINAL DEADLINE: TODAY FRIDAY 2026-05-29. No further extension. Templates below are production-ready with [bracketed placeholders]. Per-lead signal assignments and populated copy to be written Monday 2026-06-01 ONLY after HANDS writes batch_6_leads.json today. If not received today: Day-0 cannot proceed Tuesday 2026-06-02.",
+      "launch_territory": "Harrogate District + Craven District",
+      "batch_6_leads_file_status": "MISSING — batch_6_leads.json not written by HANDS (64-session pattern). MISSED FRIDAY DEADLINE. Emergency revised deadline: Sunday 2026-05-31 EOD. Templates below are production-ready with [bracketed placeholders]. Per-lead signal assignments and populated copy to be generated in Sunday's weekly report IF batch_6_leads.json received by Sunday EOD.",
       "signal_mix": {
         "ssl_pas": "60%",
         "mobile_pas": "20%",
@@ -79,7 +96,7 @@
         "framework": "BAB",
         "signal": "no_website",
         "allocation": "15%",
-        "condition": "4★+ AND 20+ Google reviews with confirmed owner name. Rural bar (same as Ryedale).",
+        "condition": "4★+ AND 20+ Google reviews with confirmed owner name. Rural bar.",
         "subject_primary": "[First name] — [town] [trade]: you're on Google Maps but not Google search",
         "subject_examples": [
           "Mark — your Knaresborough builder business isn't showing in Google search",
@@ -110,9 +127,10 @@
     },
 
     "batch_6_day3_templates": {
-      "note": "Day-3 bump templates — ready for Friday 2026-06-05. Thread reply to Day-0. 3-5 lines. Signal-specific. NOT a restatement of Day-0.",
-      "send_date": "2026-06-05 (Friday)",
-      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger Tue 2026-06-10 EOD unconditional.",
+      "note": "Day-3 bump templates — ready for Fri 2026-06-05 (Scenario A) or Fri 2026-06-12 (Scenario B). Thread reply to Day-0. 3-5 lines. Signal-specific.",
+      "send_date_scenario_a": "2026-06-05 (Friday)",
+      "send_date_scenario_b": "2026-06-12 (Friday)",
+      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger fires Day 7 from Day-0 unconditionally.",
       "ssl_bump": {
         "framework": "thread_reply",
         "signal": "ssl",
@@ -131,9 +149,10 @@
     },
 
     "batch_6_day7_templates": {
-      "note": "Day-7 new angle — STANDALONE new email. New subject. DIFFERENT pain point from Day-0. NOT a thread reply. Planned date: Tuesday 2026-06-09.",
-      "send_date": "2026-06-09 (Tuesday)",
-      "rule": "Day-7 MUST use a genuinely different pain point. A reframe of Day-0 produces 0% response. Proven pivot from SSL to Google ranking impact (Day-0 SSL → Day-7: ranking angle).",
+      "note": "Day-7 new angle — STANDALONE new email. New subject. DIFFERENT pain point from Day-0. NOT a thread reply.",
+      "send_date_scenario_a": "2026-06-09 (Tuesday)",
+      "send_date_scenario_b": "2026-06-16 (Tuesday)",
+      "rule": "Day-7 MUST use a genuinely different pain point. A reframe of Day-0 produces 0% response.",
       "ssl_to_ranking_pivot": {
         "signal_day0": "ssl",
         "signal_day7": "ranking",
@@ -155,8 +174,9 @@
     },
 
     "batch_6_day14_templates": {
-      "note": "Day-14 breakup — STANDALONE new email. 3 lines max. No pressure. Door open. Planned date: Tuesday 2026-06-16.",
-      "send_date": "2026-06-16 (Tuesday)",
+      "note": "Day-14 breakup — STANDALONE new email. 3 lines max. No pressure. Door open. Final touchpoint.",
+      "send_date_scenario_a": "2026-06-16 (Tuesday)",
+      "send_date_scenario_b": "2026-06-23 (Tuesday)",
       "rule": "3 lines maximum. No pressure language. No question marks. Leave door open. Final touchpoint — 4-touchpoint limit enforced.",
       "ssl_breakup": {
         "signal": "ssl",
@@ -176,14 +196,15 @@
     },
 
     "forward_plan": {
-      "today_friday_2026_05_29": "NO SENDS. FINAL post-Day-14 IMAP sweep (72h — window closes this evening). batch_6_leads.json ABSOLUTE FINAL DEADLINE — TODAY. CHANGELOG MANDATORY.",
-      "saturday_2026_05_30": "No sends, no IMAP. Weekend block. Post-Day-14 window closed after Friday evening.",
-      "sunday_2026_05_31": "Weekly intelligence report — Week 10 close. No sends, no IMAP.",
-      "monday_2026_06_01": "BRAIN reviews batch_6_leads.json (ONLY if received today). Assigns signals per lead. Writes populated per-lead copy in this file replacing [bracketed placeholders]. If batch_6_leads.json still missing Monday: no per-lead copy possible — BRAIN notifies HANDS immediately.",
-      "tuesday_2026_06_02": "BATCH 6 DAY-0 SENDS. 09:00-10:30. IMAP per lead before each send. Use ssl_pas_day0 / mobile_pas_day0 / no_website_bab_day0 / aida_day0 templates as assigned.",
-      "friday_2026_06_05": "Day-3 bumps using day3 templates. LinkedIn MANDATORY — execute AND write profiles.json SAME SESSION. Archive trigger Tue 2026-06-10 EOD.",
-      "tuesday_2026_06_09": "Day-7 new angle using day7 templates. IMAP per lead before each send.",
-      "tuesday_2026_06_16": "Day-14 breakup using day14 templates. IMAP per lead before each send. Final touchpoint."
+      "saturday_2026_05_30_today": "NO SENDS. No IMAP. Weekend block. Batch 5 FORMALLY CLOSED (0 replies, window closed Fri evening). batch_6_leads.json EMERGENCY REVISED DEADLINE: TODAY Saturday or Sunday EOD.",
+      "sunday_2026_05_31": "Weekly intelligence report (Week 10 close). IF batch_6_leads.json received by Sunday EOD: BRAIN generates signal assignments + populates per-lead email copy in this file, replacing all [bracketed placeholders]. Day-0 Tuesday 2026-06-02 CAN PROCEED.",
+      "monday_2026_06_01": "IF Scenario A: BRAIN confirms copy ready. HANDS prepares for Tuesday sends with IMAP per lead before each. IF Scenario B (batch_6_leads.json still missing): BRAIN generates copy for Tue 2026-06-09 deferred Day-0.",
+      "tuesday_2026_06_02": "Scenario A: BATCH 6 DAY-0 SENDS (09:00-10:30, IMAP per lead before each). Scenario B: NOT POSSIBLE — deferred.",
+      "friday_2026_06_05": "Scenario A: Day-3 bumps + LinkedIn (MANDATORY — profiles.json SAME SESSION). Archive trigger Tue 2026-06-10 EOD unconditional.",
+      "tuesday_2026_06_09": "Scenario A: Day-7 new angle. Scenario B: DAY-0 SENDS (deferred).",
+      "tuesday_2026_06_10_eod": "Scenario A: LinkedIn archive trigger fires unconditionally if profiles.json missing.",
+      "tuesday_2026_06_16": "Scenario A: Day-14 breakup. Scenario B: Day-7 new angle.",
+      "tuesday_2026_06_23": "Scenario B: Day-14 breakup."
     }
   }
 ]
