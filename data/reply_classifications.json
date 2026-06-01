@@ -1,30 +1,29 @@
 {
-  "classified_at": "2026-05-31T09:00:00Z",
-  "date": "2026-05-31",
-  "day_number": 65,
-  "week": 10,
-  "week_close": true,
-  "note": "BRAIN layer — Day 65 (Sunday 2026-05-31 — WEEK 10 CLOSE). new_replies.json CONFIRMED UNCHANGED from 2026-04-04 (57 days, zero overnight arrivals — 65-session HANDS pattern). IMAP gap: 57 days from last confirmed check. Batch 5 formally closed 2026-05-29 evening — 0 confirmed replies across full 4-touchpoint sequence. Post-Day-14 window CLOSED Friday 2026-05-29 evening — UNCONDITIONAL. No new replies to classify this run. Zero Batch 6 replies (Batch 6 not yet launched). Next IMAP obligation: Batch 6 leads only, per lead before each Day-0 send.",
+  "classified_at": "2026-06-01T08:00:00Z",
+  "date": "2026-06-01",
+  "day_number": 66,
+  "week": 11,
+  "week_start": true,
+  "note": "BRAIN layer — Day 66 (Monday 2026-06-01 — Week 11 Start). new_replies.json CONFIRMED UNCHANGED from 2026-04-04 (58 days, zero overnight arrivals — 66-session HANDS pattern). IMAP gap: 58 days from last confirmed check. Batch 5 formally closed 2026-05-29 evening — 0 confirmed replies across full 4-touchpoint sequence. Post-Day-14 window CLOSED Friday 2026-05-29 evening — UNCONDITIONAL. No new replies to classify this run. Zero Batch 6 replies (Batch 6 not yet launched). Scenario A CLOSED. Next IMAP obligation: Batch 6 leads only, per lead before each Day-0 send (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C).",
 
   "new_replies_this_run": 0,
   "overnight_new_replies": 0,
-  "imap_gap_days_from_confirmed_check": 57,
+  "imap_gap_days_from_confirmed_check": 58,
   "imap_last_confirmed_check": "2026-04-04",
   "batch_5_window_closed": "2026-05-29 evening — UNCONDITIONAL. No further Batch 5 monitoring.",
   "reply_wave_status": "POST-DAY-14 WINDOW CLOSED — effective Friday 2026-05-29 evening. Batch 5 formally closed with 0 confirmed replies. Batch 6 not yet launched — no reply wave open.",
 
-  "week_10_classification_summary": {
-    "week_dates": "2026-05-25 to 2026-05-31",
-    "new_replies_week_10": 0,
-    "imap_sweeps_confirmed_week_10": 0,
-    "post_day14_reply_window": "OPENED Wed 2026-05-27 (24h post-Day-14 assumed) — CLOSED Fri 2026-05-29 evening (72h). 0 confirmed replies during window.",
-    "note": "All Wed/Thu/Fri IMAP sweeps UNCONFIRMED (65-session HANDS pattern). Post-Day-14 window is closed regardless. No further monitoring of Batch 5."
+  "week_11_classification_summary": {
+    "week_dates": "2026-06-01 to 2026-06-07",
+    "new_replies_week_11_so_far": 0,
+    "imap_sweeps_confirmed_week_11": 0,
+    "note": "Week 11 start. No Batch 6 sends yet. No replies possible. IMAP not required today (Monday). Next IMAP: Batch 6 per-lead pre-send sweep (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C)."
   },
 
   "imap_today_required": {
-    "date": "NOT REQUIRED — Sunday 2026-05-31. Sunday block.",
+    "date": "NOT REQUIRED — Monday 2026-06-01. Monday block. No sends today.",
     "priority": "NOT REQUIRED",
-    "next_imap_obligation": "Batch 6 leads only — per lead before each Day-0 send (Tue 2026-06-02 Scenario A or Tue 2026-06-09 Scenario B).",
+    "next_imap_obligation": "Batch 6 leads only — per lead before each Day-0 send (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C).",
     "incidental_batch_5_reply_protocol": {
       "description": "If any Batch 5 reply found incidentally during Batch 6 pre-send IMAP: treat as new reply, classify below, 24h proposal SLA from discovery time (24/7 — NON-NEGOTIABLE). Sequence complete — no further email sends to Batch 5 lead.",
       "action": "Append to classifications[], write to new_replies.json, update value_delivery_queue.json + CHANGELOG same session."
@@ -36,7 +35,7 @@
   "batch_5_formal_close": {
     "window_closed": "2026-05-29 evening — unconditional",
     "final_reply_count": 0,
-    "model_verdict": "SOUND — 0% Batch 5 reply rate is execution failure (57-day IMAP gap, LinkedIn 65-session failure, no per-lead data file), not model failure. SSL-PAS 15% INTERESTED rate remains the proven baseline.",
+    "model_verdict": "SOUND — 0% Batch 5 reply rate is execution failure (58-day IMAP gap, LinkedIn 66-session failure, no per-lead data file), not model failure. SSL-PAS 15% INTERESTED rate remains the proven baseline.",
     "reapproach_date": "2026-11-26 minimum"
   },
 
@@ -131,24 +130,25 @@
   "batch_5_new_classifications_note": "No new Batch 5 classifications. Post-Day-14 window CLOSED 2026-05-29 evening. 0 confirmed Batch 5 replies across full sequence. Any incidentally discovered Batch 5 reply during Batch 6 IMAP: append to classifications[] immediately. 24h proposal SLA from discovery time (24/7 — NON-NEGOTIABLE).",
 
   "batch_6_classifications": [],
-  "batch_6_classifications_note": "Batch 6 not yet launched. No Batch 6 replies possible until after Day-0 sends (Tue 2026-06-02 Scenario A or Tue 2026-06-09 Scenario B). First Batch 6 reply wave opens Day-3 (Fri 2026-06-05 or Fri 2026-06-12).",
+  "batch_6_classifications_note": "Batch 6 not yet launched. No Batch 6 replies possible until after Day-0 sends (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C). First Batch 6 reply wave opens Day-3 (Fri 2026-06-12 or Fri 2026-06-19).",
 
   "summary": {
     "new_replies_today": 0,
     "overnight_new_replies": 0,
     "total_to_date": 11,
-    "week_10_new_replies": 0,
+    "week_11_new_replies": 0,
     "batch_5_replies_confirmed": 0,
     "post_day14_window_status": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
-    "imap_status_today": "NOT REQUIRED — Sunday block.",
-    "imap_status_next_obligation": "Batch 6 leads only — per lead before each Day-0 send.",
-    "imap_gap_days_from_confirmed": 57,
+    "scenario_a_status": "CONFIRMED CLOSED — Sunday EOD deadline passed",
+    "imap_status_today": "NOT REQUIRED — Monday block.",
+    "imap_status_next_obligation": "Batch 6 leads only — per lead before each Day-0 send (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C).",
+    "imap_gap_days_from_confirmed": 58,
     "INTERESTED_total": 3,
     "NOT_INTERESTED_total": 1,
     "OUT_OF_OFFICE_total": 1,
     "WRONG_PERSON_total": 0,
     "UNSUBSCRIBE_total": 0,
     "permanently_archived": [1, 3, 22],
-    "hands_instructions": "Sunday block — no IMAP today. Post-Day-14 window closed. Batch 5 formally closed 0 confirmed replies. CRITICAL: Write data/batch_6_leads.json TODAY Sunday EOD — absolute final deadline. BRAIN Monday generates per-lead copy if received tonight. CHANGELOG MANDATORY (63+ days overdue)."
+    "hands_instructions": "Monday block — no IMAP today. No sends. Post-Day-14 window closed. Batch 5 formally closed. CRITICAL: Write data/batch_6_leads.json TODAY Monday EOD for Scenario B (Day-0 Tue Jun 9). If not received today: Scenario C activates (Day-0 Tue Jun 16). CHANGELOG MANDATORY (64+ days overdue) — same session as Batch 6 Day-0. orchestrator.py — build before Day-3 LinkedIn window."
   }
 }

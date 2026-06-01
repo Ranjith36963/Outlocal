@@ -90,23 +90,25 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 | **2026-05-29** | **63** | **Daily LinkedIn research (Friday — Batch 5 Day 17 — Post-Day-14 72h FINAL Reply Peak — LAST LINKEDIN BRAIN RUN FOR BATCH 5)** | **All 3 LinkedIn output files updated to Day 63 (63-session failure). LinkedIn permanently closed for all Batch 5 leads — archive trigger fired 2026-05-19 EOD. Zero LinkedIn candidates. Post-Day-14 72h FINAL IMAP peak TODAY — window closes tonight — LAST BATCH 5 IMAP sweep. batch_6_leads.json ABSOLUTE FINAL DEADLINE TODAY (HANDS). 19 sector-discovery placeholders retained in search_plan (awaiting batch_6_leads.json). 5 sector templates + 19 placeholders retained in connection_notes (ready Day 3 execution Fri 2026-06-05). linkedin_coordination.json: 6 coordination decisions — COORD_63_002 (IMAP FINAL closes Batch 5 monitoring permanently tonight), COORD_63_003 (batch_6_leads.json absolute final deadline today), COORD_63_005 (orchestrator.py — 7 days remaining — CRITICAL), COORD_63_006 (CHANGELOG mandatory zero tolerance). Batch 6 LinkedIn activates Fri 2026-06-05 if batch_6_leads.json received today. Archive trigger Tue 2026-06-10 EOD unconditional. Commit + push completed.** |
 | **2026-05-31** | **65** | **Weekly intelligence report (Sunday — Week 10 close, Batch 5 Day 19)** | **week_2026-05-31.md + week_2026-05-31_summary.json written. active_strategy.md updated (Week 11, Scenario B active, valid to 2026-06-09). Key findings: Batch 5 FORMALLY CLOSED (2026-05-29 evening — 0 confirmed replies across full 4-touchpoint sequence). Post-Day-14 72h window opened and closed with 0 confirmed replies. batch_6_leads.json MISSED FRIDAY ABSOLUTE DEADLINE AND SUNDAY EMERGENCY DEADLINE — STILL MISSING at report generation. Scenario B active: Day-0 deferred to Tue 2026-06-09. IMAP gap 57 days. CHANGELOG 63+ days overdue. LinkedIn PERMANENTLY CLOSED (65-session failure). Expected Batch 6 INTERESTED: 1-3 (15% SSL-PAS × 18-22 leads, IMAP restored). Commit + push completed.** |
 | **2026-05-31** | **65** | **Daily LinkedIn research (Sunday evening — Week 10 close — SCENARIO B CONFIRMED)** | **All 3 LinkedIn output files updated to Day 65. SCENARIO B NOW CONFIRMED ACTIVE — Sunday EOD emergency deadline for batch_6_leads.json has expired (65-session HANDS pattern). Day-0 deferred to Tue 2026-06-09. LinkedIn Day 3 Fri 2026-06-12. Archive trigger Tue 2026-06-17 EOD unconditional. Zero LinkedIn candidates (LinkedIn permanently closed all Batch 5, Batch 6 not yet launched). 19 sector-discovery placeholder queries retained in search_plan (Scenario B tag added). 5 sector templates + 19 placeholders retained in connection_notes (activation Fri 2026-06-12). Coordination file: 6 decisions — COORD_65_002 (Scenario B confirmed), COORD_65_003 (multi-channel rules Scenario B), COORD_65_005 (orchestrator.py — 12 days remaining — build this week), COORD_65_006 (CHANGELOG mandatory Tue 2026-06-09 — absolute final). batch_6_leads.json last viable window: Monday 2026-06-02 morning. Commit + push completed.** |
+| **2026-06-01** | **66** | **Daily email + followup (Monday — Week 11 Start — SCENARIO A CONFIRMED CLOSED — batch_6_leads.json LAST VIABLE WINDOW TODAY EOD)** | **All 7 data files updated to Day 66. SCENARIO A CONFIRMED CLOSED — Sunday EOD deadline passed without batch_6_leads.json (66-session HANDS failure). TODAY Monday is the LAST VIABLE WINDOW for Scenario B (Day-0 Tue 2026-06-09). Scenario C introduced (Day-0 Tue 2026-06-16) — activates if file not received today EOD. Zero overnight replies (new_replies.json unchanged from 2026-04-04). IMAP gap: 58 days. CHANGELOG 64+ days overdue — mandatory same session as Batch 6 Day-0. orchestrator.py still NOT IMPLEMENTED — must be built before Fri 2026-06-12 (Scenario B) or Fri 2026-06-19 (Scenario C). Batch 5 FORMALLY CLOSED (0 confirmed replies, reapproach 2026-11-26). No sends today (Monday block). Commit + push completed.** |
 
 ---
 
-## CRITICAL STATE — 2026-05-31 (Day 65 — SUNDAY EVENING — WEEK 10 CLOSE — BATCH 5 FORMALLY CLOSED — BATCH 6 SCENARIO B CONFIRMED — batch_6_leads.json LAST VIABLE WINDOW MON MORNING — IMAP GAP 57 DAYS — CHANGELOG 63+ DAYS OVERDUE)
+## CRITICAL STATE — 2026-06-01 (Day 66 — MONDAY — WEEK 11 START — SCENARIO A CONFIRMED CLOSED — batch_6_leads.json LAST VIABLE WINDOW TODAY EOD — IMAP GAP 58 DAYS — CHANGELOG 64+ DAYS OVERDUE)
 
-### WEEK 10 CLOSE STATUS (Sunday 2026-05-31 Evening — Day 65 — LinkedIn Run Complete)
+### WEEK 11 START STATUS (Monday 2026-06-01 — Day 66 — Daily Email + Followup Run)
 
 | Status | Detail |
 |---|---|
 | **Batch 5** | **FORMALLY CLOSED — 2026-05-29 evening. 0 confirmed replies across full 4-touchpoint sequence. Reapproach: 2026-11-26.** |
 | **Post-Day-14 window** | **CLOSED — effective Friday 2026-05-29 evening. Unconditional. No further Batch 5 IMAP under any circumstances.** |
-| **batch_6_leads.json** | **STILL MISSING — Sunday EOD emergency deadline EXPIRED (65-session HANDS pattern). LAST VIABLE WINDOW: Monday 2026-06-02 morning. If not received Monday: Day-0 defers to Tue 2026-06-16.** |
-| **Batch 6 scenario** | **SCENARIO B CONFIRMED ACTIVE — Day-0 Tue 2026-06-09. LinkedIn Day 3 Fri 2026-06-12. Archive trigger Tue 2026-06-17 EOD unconditional.** |
-| **Overnight replies** | **ZERO** — new_replies.json unchanged from 2026-04-04. 65-session HANDS pattern. |
-| **IMAP gap** | **57 days** — last confirmed check 2026-04-04. No Batch 5 IMAP required (window closed). Next: Batch 6 per-lead before Day-0 sends (Tue 2026-06-09). |
-| **LinkedIn** | **PERMANENTLY CLOSED (Batch 5) — archive trigger fired 2026-05-19 EOD (65-session failure). MANDATORY for Batch 6 Day 3 (Fri 2026-06-12). Archive trigger Tue 2026-06-17 EOD unconditional. orchestrator.py NOT IMPLEMENTED — 12 days to deadline.** |
-| **CHANGELOG** | **63+ days overdue — MANDATORY SAME SESSION AS BATCH 6 DAY-0 SENDS (Tue 2026-06-09) — ABSOLUTE FINAL DEADLINE — ZERO TOLERANCE.** |
+| **Scenario A** | **CONFIRMED CLOSED — Sunday 2026-05-31 EOD deadline passed. Tue 2026-06-02 Day-0 not possible.** |
+| **batch_6_leads.json** | **STILL MISSING — 66-session HANDS pattern. LAST VIABLE WINDOW: TODAY Monday 2026-06-01 EOD for Scenario B (Day-0 Tue 2026-06-09). If not received today: Scenario C activates (Day-0 Tue 2026-06-16). No further extensions.** |
+| **Batch 6 scenario** | **SCENARIO B: Day-0 Tue 2026-06-09 (if file received TODAY EOD). SCENARIO C: Day-0 Tue 2026-06-16 (if not received today). LinkedIn archive trigger: Tue 2026-06-17 EOD (B) or Tue 2026-06-24 EOD (C) — unconditional.** |
+| **Overnight replies** | **ZERO** — new_replies.json unchanged from 2026-04-04. 66-session HANDS pattern. |
+| **IMAP gap** | **58 days** — last confirmed check 2026-04-04. No Batch 5 IMAP required (window closed). Next: Batch 6 per-lead before Day-0 sends (Tue 2026-06-09 or Tue 2026-06-16). |
+| **LinkedIn** | **PERMANENTLY CLOSED (Batch 5) — archive trigger fired 2026-05-19 EOD (66-session failure). MANDATORY for Batch 6 Day 3. orchestrator.py NOT IMPLEMENTED — must build before Fri 2026-06-12 (B) or Fri 2026-06-19 (C).** |
+| **CHANGELOG** | **64+ days overdue — MANDATORY SAME SESSION AS BATCH 6 DAY-0 SENDS — ABSOLUTE FINAL DEADLINE — ZERO TOLERANCE.** |
 
 **Incidental Batch 5 reply protocol: If any Batch 5 reply found incidentally during Batch 6 pre-send IMAP — 24h proposal SLA applies from discovery time (24/7 — NON-NEGOTIABLE). Sequence complete — no further sends. Use value_delivery_queue.json directly.**
 
@@ -129,13 +131,13 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 - Combined pipeline value written off: £800–1,175
 
 ### Active Data Files
-- `data/daily_signals.json` — **Day 64 (2026-05-30 SATURDAY — Weekend Bridge — Batch 5 Formally Closed) — UPDATED. IMAP gap 56 days. batch_6_leads.json MISSED FRIDAY DEADLINE. Emergency Sunday EOD deadline. CHANGELOG 62+ days overdue.**
-- `data/daily_email_plan.json` — **Day 64 (2026-05-30 SATURDAY) — UPDATED. No sends. Batch 6 email templates carried forward (4 signal variants, Day-0 through Day-14 — placeholders only, awaiting batch_6_leads.json).**
-- `data/daily_strategy.md` — **Day 64 (2026-05-30 SATURDAY) — UPDATED. Weekend bridge. Scenario A vs B analysis. batch_6_leads.json critical path.**
-- `data/followup_queue.json` — **Day 64 (2026-05-30 SATURDAY) — UPDATED. No active follow-ups. All Batch 5 sequences assumed complete. Next: Batch 6 Day-3 Fri 2026-06-12 (Scenario B).**
-- `data/reply_classifications.json` — **Day 64 (2026-05-30 SATURDAY) — UPDATED. IMAP gap 56 days. Post-Day-14 window CLOSED. 0 Batch 5 replies confirmed. Batch 5 formally closed.**
-- `data/value_delivery_queue.json` — **Day 64 (2026-05-30 SATURDAY) — UPDATED. Zero active INTERESTED leads. Batch 5 window closed. Batch 6 pipeline forecast updated.**
-- `data/active_strategy.md` — **Day 65 (2026-05-31 SUNDAY — Week 10 Close) — UPDATED. Scenario B active. Valid to 2026-06-09. Week 11 priorities.**
+- `data/daily_signals.json` — **Day 66 (2026-06-01 MONDAY — Week 11 Start — Scenario A CLOSED) — UPDATED. IMAP gap 58 days. batch_6_leads.json LAST VIABLE WINDOW TODAY EOD (Scenario B). Scenario C activates if not received today. CHANGELOG 64+ days overdue.**
+- `data/daily_email_plan.json` — **Day 66 (2026-06-01 MONDAY) — UPDATED. No sends. Batch 6 email templates ready (4 signal variants, Day-0 through Day-14). Scenario B/C dates updated. Awaiting batch_6_leads.json for per-lead population.**
+- `data/daily_strategy.md` — **Day 66 (2026-06-01 MONDAY) — UPDATED. Scenario A CLOSED. Scenario B last window today. Scenario C introduced. Three-scenario calendar. orchestrator.py build deadline noted.**
+- `data/followup_queue.json` — **Day 66 (2026-06-01 MONDAY) — UPDATED. No active follow-ups. All Batch 5 sequences assumed complete. Next: Batch 6 Day-3 Fri 2026-06-12 (B) or Fri 2026-06-19 (C).**
+- `data/reply_classifications.json` — **Day 66 (2026-06-01 MONDAY) — UPDATED. IMAP gap 58 days. Post-Day-14 window CLOSED. 0 Batch 5 replies confirmed. Batch 5 formally closed.**
+- `data/value_delivery_queue.json` — **Day 66 (2026-06-01 MONDAY) — UPDATED. Zero active INTERESTED leads. Batch 5 window closed. Batch 6 pipeline forecast updated for B/C scenarios.**
+- `data/active_strategy.md` — **Day 66 (2026-06-01 MONDAY — Week 11 Start) — UPDATED. Scenario A CLOSED. Scenario B/C active. Valid to Batch 6 Day-0 confirmed. Three-scenario calendar.**
 - `data/weekly_reports/week_2026-05-31.md` — **Day 65 (2026-05-31 SUNDAY) — WEEK 10 INTELLIGENCE REPORT COMPLETE. Batch 5 closed. Batch 6 Scenario B. IMAP 57 days. CHANGELOG 63+ days.**
 - `data/weekly_reports/week_2026-05-31_summary.json` — **Day 65 (2026-05-31 SUNDAY) — Week 10 summary JSON. Machine-readable KPIs and recommendations.**
 - `data/weekly_reports/week_2026-05-24.md` — **Day 58 (2026-05-24 SUNDAY) — WEEK 9 INTELLIGENCE REPORT. LinkedIn closed. Day-14 + Batch 6 Week 10 priorities.**
@@ -175,20 +177,21 @@ Free LLM failover: Groq → OpenRouter → Gemini.
 
 ---
 
-## HANDS Execution Order — WEEK 11 (Mon 2026-06-02 onwards — Batch 6 SCENARIO B CONFIRMED)
+## HANDS Execution Order — WEEK 11 (Mon 2026-06-01 — Scenario A CLOSED — Scenario B/C pending TODAY's file delivery)
 
 | Priority | Action | Condition |
 |---|---|---|
-| 1 | **batch_6_leads.json — WRITE MONDAY 2026-06-02 MORNING (ABSOLUTE LAST VIABLE WINDOW)** | 18-22 leads, Harrogate District + Craven District. See daily_signals.json → batch_6_scrape_plan. Sunday EOD deadline expired — Monday morning is the FINAL viable window for Tue 2026-06-09 Day-0. BRAIN generates copy Monday on receipt. If not received Monday: Day-0 defers to Tue 2026-06-16. No further extensions. |
-| 2 | **orchestrator.py — BUILD THIS WEEK** | src/outlocal/linkedin/orchestrator.py — create directory first. Build deadline: BEFORE Fri 2026-06-12 (12 days from Sunday 2026-05-31). 65-session manual failure — this is the only mechanism that guarantees profiles.json same-session write. See COORD_65_005 in linkedin_coordination.json for minimum viable features. |
-| 3 | **Update lead status → sequence_complete** — all Batch 5 Ryedale leads | Reapproach date: 2026-11-26 minimum. |
-| 4 | **Batch 6 Day-0 sends — TUESDAY 2026-06-09, 09:00–10:30** | IMAP per lead before each send (mandatory — 57-day gap). Use BRAIN-generated per-lead copy. 10-min stagger. If INTERESTED found in IMAP: prepare 3-option proposal within 24h (24/7 — NON-NEGOTIABLE). If UNSUBSCRIBE: suppress within 24h (GDPR Article 21), log audit_log + CHANGELOG. |
-| 5 | **CHANGELOG.md — MANDATORY SAME SESSION AS DAY-0 SENDS (TUE 2026-06-09)** | 63+ days overdue — ABSOLUTE FINAL DEADLINE. Log: all Batch 5 sends (assumed dates), fu_041-045, archive decisions, all IMAP gaps, LinkedIn outcome, Batch 5 closure, batch_6_leads.json delivery, Day-0 IMAP results per lead. CANNOT BE DEFERRED UNDER ANY CIRCUMSTANCES. |
-| 6 | **Batch 6 Day-3 bumps + LinkedIn — FRIDAY 2026-06-12** | Thread reply, 3–5 lines, signal-specific. LinkedIn: orchestrator.py executes connection notes AND writes profiles.json SAME SESSION. IMAP per lead before each connection. Archive trigger fires Tue 2026-06-17 EOD unconditionally if profiles.json missing. |
+| 1 | **batch_6_leads.json — WRITE TODAY MONDAY 2026-06-01 EOD (ABSOLUTE LAST VIABLE WINDOW FOR SCENARIO B)** | 18-22 leads, Harrogate District + Craven District. See daily_signals.json → batch_6_scrape_plan. Scenario A CLOSED. TODAY EOD is the FINAL viable window for Scenario B (Day-0 Tue 2026-06-09). BRAIN generates copy on receipt. If not received TODAY: Scenario C activates (Day-0 Tue 2026-06-16). No further extensions under any circumstances. |
+| 2 | **orchestrator.py — BUILD THIS WEEK** | src/outlocal/linkedin/orchestrator.py — create directory first. Build deadline: BEFORE Fri 2026-06-12 (Scenario B) or Fri 2026-06-19 (Scenario C). 66-session manual failure — this is the only mechanism that guarantees profiles.json same-session write. See COORD_65_005 in linkedin_coordination.json for minimum viable features. |
+| 3 | **Update lead status → sequence_complete** — all Batch 5 Ryedale leads | TODAY — OVERDUE. Reapproach date: 2026-11-26 minimum. |
+| 4 | **Batch 6 Day-0 sends** | Scenario B: TUESDAY 2026-06-09, 09:00–10:30 (if file received TODAY). Scenario C: TUESDAY 2026-06-16, 09:00–10:30 (if not). IMAP per lead before each send (mandatory — 58-day gap). Use BRAIN-generated per-lead copy. 10-min stagger. If INTERESTED found in IMAP: prepare 3-option proposal within 24h (24/7 — NON-NEGOTIABLE). If UNSUBSCRIBE: suppress within 24h (GDPR Article 21), log audit_log + CHANGELOG. |
+| 5 | **CHANGELOG.md — MANDATORY SAME SESSION AS DAY-0 SENDS** | 64+ days overdue — ABSOLUTE FINAL DEADLINE. Log: all Batch 5 sends (assumed dates), fu_041-045, archive decisions, all IMAP gaps, LinkedIn outcome, Batch 5 closure, batch_6_leads.json delivery, Day-0 IMAP results per lead. CANNOT BE DEFERRED UNDER ANY CIRCUMSTANCES. |
+| 6 | **Batch 6 Day-3 bumps + LinkedIn** | Scenario B: FRIDAY 2026-06-12. Scenario C: FRIDAY 2026-06-19. Thread reply, 3–5 lines, signal-specific. LinkedIn: orchestrator.py executes connection notes AND writes profiles.json SAME SESSION. IMAP per lead before each connection. Archive trigger fires Tue 2026-06-17 EOD (B) or Tue 2026-06-24 EOD (C) unconditionally if profiles.json missing. |
 
 ## Next BRAIN Runs
-- **MONDAY 2026-06-02 (Day 67)** — IF batch_6_leads.json received morning: BRAIN generates signal assignments + per-lead email copy for Batch 6 Day-0 (Tue 2026-06-09). IF still missing: BRAIN notifies HANDS — Day-0 defers to Tue 2026-06-16 (no further extensions).
-- **TUESDAY 2026-06-09 (Day 74)** — BATCH 6 DAY-0 SENDS (Scenario B CONFIRMED). Harrogate + Craven. IMAP per lead. 09:00–10:30. CHANGELOG MANDATORY THIS SESSION.
-- **FRIDAY 2026-06-12 (Day 77)** — Batch 6 Day-3 bumps. LinkedIn MANDATORY — orchestrator.py executes, profiles.json SAME SESSION. Archive trigger Tue 2026-06-17 EOD unconditional.
-- **SUNDAY 2026-06-07 (Day 72)** — Weekly intelligence report — Week 11 close. Pre-Day-0 review. batch_6_leads.json delivery status + copy readiness check.
+- **TODAY MONDAY 2026-06-01** — If batch_6_leads.json received by HANDS tonight: BRAIN generates per-lead signal assignments + email copy for Batch 6 Day-0 (Tue 2026-06-09, Scenario B). [This is a same-day BRAIN re-run if file arrives today.]
+- **TUESDAY 2026-06-09 (Day 74 — Scenario B)** — BATCH 6 DAY-0 SENDS. Harrogate + Craven. IMAP per lead. 09:00–10:30. CHANGELOG MANDATORY THIS SESSION.
+- **FRIDAY 2026-06-12 (Day 77 — Scenario B)** — Batch 6 Day-3 bumps. LinkedIn MANDATORY — orchestrator.py executes, profiles.json SAME SESSION. Archive trigger Tue 2026-06-17 EOD unconditional.
+- **TUESDAY 2026-06-16 (Day 81 — Scenario B: Day-7 / Scenario C: Day-0)** — Scenario B: Day-7 new angle. Scenario C: BATCH 6 DAY-0 SENDS. CHANGELOG mandatory if not done 2026-06-09.
+- **SUNDAY 2026-06-07 (Day 72)** — Weekly intelligence report — Week 11 close. Batch 6 launch status + copy readiness check.
 - **If INTERESTED reply found in Batch 6 IMAP** — 24h proposal SLA from discovery time (24/7 — NON-NEGOTIABLE). Use value_delivery_queue.json directly. Log CHANGELOG same session.

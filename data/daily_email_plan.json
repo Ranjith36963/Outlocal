@@ -1,15 +1,37 @@
 [
   {
-    "plan_date": "2026-05-31",
-    "generated_at": "2026-05-31T09:00:00Z",
-    "day_number": 65,
-    "week": 10,
-    "week_close": true,
-    "note": "BRAIN layer — Day 65 (Sunday 2026-05-31 — WEEK 10 CLOSE). NO SENDS TODAY. Sunday block. All Batch 5 sequences ASSUMED COMPLETE. Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. batch_6_leads.json STILL MISSING (65-session pattern) — emergency final deadline TODAY Sunday EOD. IF received tonight: BRAIN Monday 2026-06-01 reads file, assigns signals, populates [bracketed placeholders] in templates below, writes per-lead copy → Tuesday 2026-06-02 Day-0 CAN proceed (Scenario A). IF not received by Monday morning BRAIN run: Scenario B confirmed (Day-0 Tue 2026-06-09, BRAIN generates copy Monday). Templates below are production-ready awaiting per-lead population.",
+    "plan_date": "2026-06-01",
+    "generated_at": "2026-06-01T08:00:00Z",
+    "day_number": 66,
+    "week": 11,
+    "week_start": true,
+    "note": "BRAIN layer — Day 66 (Monday 2026-06-01 — Week 11 Start). SCENARIO A CONFIRMED CLOSED (Tue 2026-06-02 Day-0 not possible — Sunday EOD deadline passed). NO SENDS TODAY. batch_6_leads.json STILL MISSING (66-session pattern) — LAST VIABLE WINDOW TODAY EOD for Scenario B (Day-0 Tue 2026-06-09). If file received today: BRAIN populates [brackets] from per-lead data. Scenario C (Day-0 Tue 2026-06-16) activates if file not received today. Templates below are production-ready structure awaiting per-lead population. Signal mix: 60% SSL-PAS / 20% Mobile-PAS / 15% No-website BAB / 5% AIDA.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No sends today — Sunday block. Next send: Batch 6 Day-0 (Tue 2026-06-02 Scenario A or Tue 2026-06-09 Scenario B).",
+    "new_sends_note": "No sends today — Monday block. Next send: Batch 6 Day-0 (Tue 2026-06-09 Scenario B if file received TODAY EOD, or Tue 2026-06-16 Scenario C if not).",
+
+    "scenario_status": {
+      "scenario_a": {
+        "day_0_date": "2026-06-02",
+        "status": "CONFIRMED CLOSED — Sunday EOD deadline passed. 66-session HANDS failure. Not possible.",
+        "possible": false
+      },
+      "scenario_b": {
+        "condition": "batch_6_leads.json received TODAY Monday 2026-06-01 EOD",
+        "day_0_date": "2026-06-09 (Tuesday)",
+        "status": "LAST VIABLE WINDOW — TODAY EOD. HANDS must write file by tonight.",
+        "send_window": "09:00-10:30",
+        "possible": true
+      },
+      "scenario_c": {
+        "condition": "batch_6_leads.json NOT received by today EOD",
+        "day_0_date": "2026-06-16 (Tuesday)",
+        "status": "ACTIVATES if file not received today. No further extensions.",
+        "send_window": "09:00-10:30",
+        "possible": true
+      }
+    },
 
     "batch_5_summary": {
       "status": "FORMALLY CLOSED — 2026-05-29 evening. 0 confirmed replies.",
@@ -22,24 +44,9 @@
       "reapproach_date": "2026-11-26 minimum"
     },
 
-    "batch_6_scenario": {
-      "scenario_a": {
-        "condition": "batch_6_leads.json received TODAY Sunday 2026-05-31 EOD",
-        "brain_copy_generation": "Monday 2026-06-01 — BRAIN reads batch_6_leads.json, assigns signals per lead, populates [bracketed placeholders] in templates below, writes per-lead email copy in a new Monday run.",
-        "day_0_send_date": "Tuesday 2026-06-02, 09:00-10:30",
-        "still_possible": true
-      },
-      "scenario_b": {
-        "condition": "batch_6_leads.json NOT received by Monday morning BRAIN run",
-        "brain_copy_generation": "Monday 2026-06-01 — BRAIN generates copy for deferred Day-0 (Tue 2026-06-09)",
-        "day_0_send_date": "Tuesday 2026-06-09, 09:00-10:30",
-        "probability": "HIGH — 65-session HANDS failure pattern"
-      }
-    },
-
     "batch_6_email_templates": {
       "launch_territory": "Harrogate District + Craven District",
-      "batch_6_leads_file_status": "MISSING — emergency final deadline TODAY Sunday EOD. Per-lead population requires file. Templates ready with [bracketed placeholders].",
+      "batch_6_leads_file_status": "MISSING (66-session pattern) — last viable window TODAY Monday EOD for Scenario B. Per-lead [brackets] require file. Templates ready.",
       "signal_mix": {
         "ssl_pas": "60%",
         "mobile_pas": "20%",
@@ -59,7 +66,8 @@
           "Julie — your Skipton B&B website is flagged 'Not Secure'",
           "David — your Ripon estate agency site isn't secure",
           "Helen — your Boroughbridge joinery site is flagged 'Not Secure'",
-          "Sarah — your Settle builder website is flagged 'Not Secure'"
+          "Sarah — your Settle builder website is flagged 'Not Secure'",
+          "James — your Grassington joinery site is flagged 'Not Secure'"
         ],
         "body": "Hi [First name],\n\nI was looking up [trade] in [town] this morning and noticed [specific URL] comes up with a 'Not Secure' warning in Chrome.\n\nFor visitors searching for a [trade] in [town], that warning appears before they've even read your page — it's the first thing they see. A lot will click away immediately.\n\nThe fix is quick and doesn't touch your existing site or content. Would it be worth a quick chat?\n\n[Your name]",
         "personalisation_notes": [
@@ -83,9 +91,9 @@
         ],
         "body": "Hi [First name],\n\nI looked up [business name] on my phone this morning and the website was difficult to use — [specific issue: text too small / buttons too close together / layout broken / form not usable].\n\nMost people in [town] searching for a [trade] are on their phone. If they can't read or use your site easily, they'll go to the next result.\n\nThis is usually a straightforward fix. Worth a look?\n\n[Your name]",
         "personalisation_notes": [
-          "Must describe the SPECIFIC mobile failure you observed — not generic 'mobile issues'",
-          "Only use this signal if SSL is clean (HTTPS) — otherwise use SSL-PAS",
-          "Mention that you tested on your phone — shows credibility"
+          "Must describe the SPECIFIC mobile failure you observed — not generic",
+          "Only use this signal if SSL is clean (HTTPS)",
+          "Mention that you tested on your phone — credibility"
         ]
       },
 
@@ -102,8 +110,8 @@
         "body": "Hi [First name],\n\nI came across [business name] on Google Maps — [X] reviews, [rating] stars, impressive for a [trade] in [town].\n\nThe problem is that when someone searches for '[trade] [town]' on Google, [business name] doesn't come up. The Maps listing is there, but there's no website for Google to rank.\n\nA simple one-page site would change that — people searching for a [trade] in [town] would find you instead of your competitors.\n\nWould that be useful?\n\n[Your name]",
         "personalisation_notes": [
           "Lead with the strength (good reviews) BEFORE the gap",
-          "Quote the exact review count and star rating — shows you checked",
-          "Reference the specific search query they're missing: '[trade] [town]'",
+          "Quote exact review count and star rating — shows you checked",
+          "Reference the specific search query: '[trade] [town]'",
           "BAB: Before (good Maps presence) → After (ranking in search) → Bridge (simple site)"
         ]
       },
@@ -124,10 +132,10 @@
     },
 
     "batch_6_day3_templates": {
-      "note": "Day-3 bump templates — ready for Fri 2026-06-05 (Scenario A) or Fri 2026-06-12 (Scenario B). Thread reply to Day-0. 3-5 lines. Signal-specific.",
-      "send_date_scenario_a": "2026-06-05 (Friday)",
+      "note": "Day-3 bump templates — thread reply to Day-0. 3-5 lines. Signal-specific. NOT a new pitch.",
       "send_date_scenario_b": "2026-06-12 (Friday)",
-      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger fires Day 7 from Day-0 unconditionally.",
+      "send_date_scenario_c": "2026-06-19 (Friday)",
+      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger fires Day 7 from Day-0 unconditionally. orchestrator.py must be built before this date.",
       "ssl_bump": {
         "framework": "thread_reply",
         "signal": "ssl",
@@ -146,10 +154,9 @@
     },
 
     "batch_6_day7_templates": {
-      "note": "Day-7 new angle — STANDALONE new email. New subject. DIFFERENT pain point from Day-0. NOT a thread reply.",
-      "send_date_scenario_a": "2026-06-09 (Tuesday)",
+      "note": "Day-7 new angle — STANDALONE new email. New subject. DIFFERENT pain point from Day-0. NOT a thread reply. Rule: genuinely different pain point — reframe = 0% response.",
       "send_date_scenario_b": "2026-06-16 (Tuesday)",
-      "rule": "Day-7 MUST use a genuinely different pain point. A reframe of Day-0 produces 0% response.",
+      "send_date_scenario_c": "2026-06-23 (Tuesday)",
       "ssl_to_ranking_pivot": {
         "signal_day0": "ssl",
         "signal_day7": "ranking",
@@ -171,10 +178,9 @@
     },
 
     "batch_6_day14_templates": {
-      "note": "Day-14 breakup — STANDALONE new email. 3 lines max. No pressure. Door open. Final touchpoint.",
-      "send_date_scenario_a": "2026-06-16 (Tuesday)",
+      "note": "Day-14 breakup — STANDALONE new email. 3 lines max. No pressure. Door open. FINAL touchpoint — 4-touchpoint hard limit.",
       "send_date_scenario_b": "2026-06-23 (Tuesday)",
-      "rule": "3 lines maximum. No pressure language. No question marks. Leave door open. 4-touchpoint hard limit — no exceptions.",
+      "send_date_scenario_c": "2026-06-30 (Tuesday)",
       "ssl_breakup": {
         "signal": "ssl",
         "subject": "[First name] — leaving this with you",
@@ -193,13 +199,17 @@
     },
 
     "forward_plan": {
-      "sunday_2026_05_31_today": "NO SENDS. No IMAP. Sunday block. Week 10 close. batch_6_leads.json EMERGENCY FINAL DEADLINE: TODAY EOD.",
-      "monday_2026_06_01": "IF file received tonight: BRAIN generates per-lead signal assignments + populates templates + writes Monday email plan. HANDS prepares for Tuesday sends + IMAP per lead. IF file still missing: Scenario B confirmed. BRAIN generates copy for Tue 2026-06-09.",
-      "tuesday_2026_06_02": "Scenario A: BATCH 6 DAY-0 SENDS (09:00-10:30, IMAP per lead before each send). Scenario B: NOT POSSIBLE.",
-      "friday_2026_06_05": "Scenario A: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-10 EOD.",
-      "tuesday_2026_06_09": "Scenario A: Day-7 new angle. Scenario B: DAY-0 SENDS (deferred, 09:00-10:30, IMAP per lead).",
-      "tuesday_2026_06_10_eod": "Scenario A: LinkedIn archive trigger fires unconditionally.",
-      "friday_2026_06_12": "Scenario B: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-17 EOD."
+      "monday_2026_06_01_today": "NO SENDS. No IMAP. Monday block. Scenario A CLOSED. batch_6_leads.json LAST VIABLE WINDOW TODAY EOD for Scenario B.",
+      "tuesday_2026_06_09_scenario_b": "SCENARIO B: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead before each send. CHANGELOG mandatory this session. 10-min stagger.",
+      "friday_2026_06_12_scenario_b": "SCENARIO B: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-17 EOD unconditional.",
+      "tuesday_2026_06_16_scenario_b": "SCENARIO B: Day-7 new angle. IMAP per lead.",
+      "tuesday_2026_06_16_scenario_c": "SCENARIO C: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead. CHANGELOG mandatory.",
+      "tuesday_2026_06_17_eod_scenario_b": "SCENARIO B: LinkedIn archive trigger fires unconditionally if profiles.json missing.",
+      "friday_2026_06_19_scenario_c": "SCENARIO C: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-24 EOD.",
+      "tuesday_2026_06_23_scenario_b": "SCENARIO B: Day-14 breakup (final touchpoint).",
+      "tuesday_2026_06_23_scenario_c": "SCENARIO C: Day-7 new angle.",
+      "tuesday_2026_06_24_eod_scenario_c": "SCENARIO C: LinkedIn archive trigger fires unconditionally if profiles.json missing.",
+      "tuesday_2026_06_30_scenario_c": "SCENARIO C: Day-14 breakup (final touchpoint)."
     }
   }
 ]

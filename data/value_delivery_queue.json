@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-05-31T09:00:00Z",
-  "date": "2026-05-31",
-  "day_number": 65,
-  "week": 10,
-  "week_close": true,
-  "note": "BRAIN layer — Day 65 (Sunday 2026-05-31 — WEEK 10 CLOSE). Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. Batch 5 FORMALLY CLOSED — 0 confirmed replies. Zero active INTERESTED leads in queue. 24h proposal SLA applies to any incidentally discovered Batch 5 reply in future Batch 6 IMAP (24/7 — NON-NEGOTIABLE). Batch 6 pipeline activates after Day-0 sends (Tue 2026-06-02 Scenario A or Tue 2026-06-09 Scenario B, depending on batch_6_leads.json delivery by Sunday EOD).",
+  "generated_at": "2026-06-01T08:00:00Z",
+  "date": "2026-06-01",
+  "day_number": 66,
+  "week": 11,
+  "week_start": true,
+  "note": "BRAIN layer — Day 66 (Monday 2026-06-01 — Week 11 Start). Scenario A CONFIRMED CLOSED. Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. Batch 5 FORMALLY CLOSED — 0 confirmed replies. Zero active INTERESTED leads in queue. 24h proposal SLA applies to any incidentally discovered Batch 5 reply in future Batch 6 IMAP (24/7 — NON-NEGOTIABLE). Batch 6 pipeline activates after Day-0 sends (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C, depending on batch_6_leads.json delivery by TODAY Monday EOD).",
 
   "pipeline_summary": {
     "total_interested_to_date": 3,
     "outcomes_confirmed": 0,
     "archived_permanently": 3,
-    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 65+ sessions",
+    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 66+ sessions",
     "override_window": "CLOSED — 2026-05-08 EOD. Unconditionally final.",
     "email_channel_warm_pipeline": "CLOSED — permanently for leads 1, 3, 22",
     "email_channel_batch_5": "CLOSED — Day-14 assumed sent 2026-05-26. 4-touchpoint limit reached. Post-Day-14 window closed 2026-05-29 evening.",
-    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD (65-session failure).",
-    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: 0 confirmed replies, 57-day IMAP gap partially explains.",
+    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD (66-session failure).",
+    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: 0 confirmed replies, 58-day IMAP gap partially explains.",
     "post_day14_reply_window": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
     "batch_5_formal_close": "2026-05-29 evening. 0 confirmed replies. Reapproach: 2026-11-26.",
     "realistic_remaining_probability": {
       "warm_pipeline_leads_1_3_22": "ZERO. Permanently archived. No further action.",
       "batch_5_ryedale": "ZERO new. Window permanently closed. Any incidentally discovered reply triggers 24h proposal SLA from discovery time.",
-      "next_revenue_opportunity": "Batch 6 (Harrogate + Craven, Day-0 Tue 2026-06-02 Scenario A or Tue 2026-06-09 Scenario B). Expected INTERESTED: 1-3 (18-22 leads × 15% SSL-PAS historical rate, assuming IMAP discipline restored). Expected revenue per conversion: £150-1,600 depending on signal type and scope."
+      "next_revenue_opportunity": "Batch 6 (Harrogate + Craven, Day-0 Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C). Expected INTERESTED: 1-3 (18-22 leads × 15% SSL-PAS historical rate, assuming IMAP discipline restored). Expected revenue per conversion: £150-1,600 depending on signal type and scope."
     }
   },
 
@@ -123,15 +123,15 @@
   "batch_5_interested_note": "Zero Batch 5 INTERESTED replies confirmed. Queue empty. Post-Day-14 window CLOSED 2026-05-29 evening. Any incidentally discovered Batch 5 INTERESTED reply in future Batch 6 IMAP: write here immediately, prepare proposal within 24h from discovery time (24/7 — NON-NEGOTIABLE). Sequence complete — no further email sends.",
 
   "batch_6_pipeline_forecast": {
-    "scenario_a_send_date": "Tue 2026-06-02 — if batch_6_leads.json received TODAY Sunday EOD + BRAIN copy Monday",
-    "scenario_b_send_date": "Tue 2026-06-09 — if batch_6_leads.json not received by Monday morning",
+    "scenario_b_send_date": "Tue 2026-06-09 — if batch_6_leads.json received TODAY Monday EOD + BRAIN copy generated",
+    "scenario_c_send_date": "Tue 2026-06-16 — if batch_6_leads.json not received by today EOD",
     "expected_leads": "18-22",
     "expected_interested": "1-3 (18-22 leads × 15% SSL-PAS historical rate × execution quality — assumes IMAP discipline restored and weekly IMAP maintained)",
     "expected_revenue_range": "£150-1,600 per conversion depending on signal type and scope",
-    "pipeline_activates": "After Day-0 sends confirmed. Day-3 (Fri 2026-06-05 or Fri 2026-06-12) first reply window. Day-7 secondary peak.",
-    "note": "batch_6_leads.json STILL MISSING (65-session pattern). Emergency final deadline TODAY Sunday EOD.",
-    "linkedin_mandatory": "CRITICAL — LinkedIn failure was primary Batch 5 conversion blocker. HANDS must execute Day 3-7 and write profiles.json same session. Archive trigger unconditional Day 7 from Day-0.",
-    "imap_discipline_mandatory": "Weekly IMAP required for Batch 6 — 57-day gap was an operational failure. IMAP every 7 days minimum from Day-0."
+    "pipeline_activates": "After Day-0 sends confirmed. Day-3 (Fri 2026-06-12 or Fri 2026-06-19) first reply wave. Day-7 secondary peak.",
+    "note": "batch_6_leads.json STILL MISSING (66-session pattern). Last viable window TODAY Monday EOD for Scenario B.",
+    "linkedin_mandatory": "CRITICAL — LinkedIn failure was primary Batch 5 conversion blocker. Execute Day 3-7 and write profiles.json same session. orchestrator.py must be built before Day-3 window.",
+    "imap_discipline_mandatory": "Weekly IMAP required for Batch 6 — 58-day gap was an operational failure. IMAP every 7 days minimum from Day-0."
   },
 
   "batch_6_on_interested_protocol": {
@@ -146,10 +146,11 @@
     "active_interested_leads": 0,
     "pipeline_value_available": "£0 confirmed. Any incidentally discovered reply: 24h SLA applies.",
     "post_day14_window_status": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
+    "scenario_a_status": "CONFIRMED CLOSED — Sunday EOD deadline passed",
     "proposal_sla": "24h from IMAP discovery time — NON-NEGOTIABLE (24/7)",
     "archived_permanently": 3,
     "pipeline_written_off": "£800-1,175 (warm pipeline — FINAL) + Batch 5 Ryedale £0 confirmed",
-    "batch_6_pipeline": "Scenario A: Tue 2026-06-02 (if batch_6_leads.json received TODAY). Scenario B: Tue 2026-06-09 (if not). Expected INTERESTED: 1-3.",
-    "next_action": "Sunday block — no sends, no IMAP. HANDS: write batch_6_leads.json TODAY Sunday EOD — absolute final deadline. BRAIN Monday generates per-lead copy if received. CHANGELOG mandatory (63+ days overdue)."
+    "batch_6_pipeline": "Scenario B: Tue 2026-06-09 (if batch_6_leads.json received TODAY). Scenario C: Tue 2026-06-16 (if not). Expected INTERESTED: 1-3.",
+    "next_action": "Monday block — no sends, no IMAP. HANDS: write batch_6_leads.json TODAY Monday EOD — LAST VIABLE WINDOW for Scenario B. BRAIN generates copy on receipt. orchestrator.py — build before Day-3 LinkedIn window. CHANGELOG mandatory same session as Batch 6 Day-0 (64+ days overdue)."
   }
 }

@@ -1,38 +1,50 @@
-# OUTLOCAL Daily Strategy — Day 65 (Sunday 2026-05-31 — Week 10 Close)
+# OUTLOCAL Daily Strategy — Day 66 (Monday 2026-06-01 — Week 11 Start)
 
-**Updated:** 2026-05-31 (BRAIN Day 65 run — Sunday — Week 10 Close)  
-**Replaces:** 2026-05-30 strategy (Day 64 — Saturday — Weekend Bridge — Batch 5 Formally Closed)  
-**Key changes from Day 64:** Day advances to 65. Week 10 close. batch_6_leads.json STILL MISSING (emergency final deadline TODAY EOD). IMAP gap 57 days. Batch 5 FORMALLY CLOSED (0 confirmed replies, window closed Fri 2026-05-29 evening). Weekly intelligence report generated (week_2026-05-31.md).
+**Updated:** 2026-06-01 (BRAIN Day 66 run — Monday — Week 11 Start)  
+**Replaces:** 2026-05-31 strategy (Day 65 — Sunday — Week 10 Close)  
+**Key changes from Day 65:** Day advances to 66. Week 11 start. **Scenario A CONFIRMED CLOSED** (Sunday EOD deadline passed without file). **Scenario B last viable window: TODAY Monday EOD.** Scenario C introduced (Day-0 Tue 2026-06-16) if file not received today. IMAP gap 58 days. CHANGELOG 64+ days overdue.
 
 ---
 
 ## SITUATION
 
-**Campaign day 65 of 65 (Week 10 close).**
+**Campaign day 66 of ongoing (Week 11 start — Monday 2026-06-01).**
 
-Batch 5 Ryedale is formally closed as of Friday 2026-05-29 evening. Zero confirmed replies across a full 4-touchpoint sequence. The model is sound — the 0% result is an execution failure, not a copy or signal failure.
+Scenario A (Day-0 Tuesday 2026-06-02) is **CONFIRMED CLOSED**. Sunday EOD deadline passed without batch_6_leads.json. This is the 66th consecutive session without the file.
 
-The singular blocker for Batch 6 is **batch_6_leads.json**, which has now missed its Wednesday, Friday, and Saturday deadlines across 65 consecutive unwritten sessions. TODAY SUNDAY EOD is the absolute final window for **Scenario A** (Day-0 Tuesday 2026-06-02). If the file is not received by tonight, **Scenario B is confirmed**: Day-0 deferred to Tuesday 2026-06-09, with all subsequent dates shifting 7 days.
+**TODAY IS THE FINAL DECISION POINT.** The Monday window determines whether Scenario B (Day-0 Tue 2026-06-09) is still achievable, or whether it defers to Scenario C (Day-0 Tue 2026-06-16):
 
-No sends today. No IMAP today (Sunday block). This is a planning and reporting session only.
+- **Scenario B (Day-0 Tue 2026-06-09):** Requires batch_6_leads.json **by TODAY Monday EOD**. BRAIN generates per-lead copy tonight. HANDS executes IMAP + sends Tuesday Jun 9. LinkedIn Day 3 Fri Jun 12. Archive trigger Tue Jun 17 EOD.
+- **Scenario C (Day-0 Tue 2026-06-16):** Activates if batch_6_leads.json not received today. All touchpoints shift +7 days. LinkedIn archive trigger Tue Jun 24 EOD.
+
+No sends today. No IMAP today (Monday is not a send day). BRAIN run is a planning and template-generation session.
 
 ---
 
-## WEEK 10 VERDICT
+## SCENARIO A POST-MORTEM
 
-**What happened this week:**
-1. Day-14 breakup assumed sent Tuesday 2026-05-26 — final Batch 5 touchpoint
-2. Post-Day-14 reply window opened Wednesday (24h), peaked Thursday (48h), closed Friday evening (72h)
-3. Zero confirmed replies in the window (57-day IMAP gap means this may be incomplete)
-4. Batch 5 formally closed Friday 2026-05-29 evening
-5. batch_6_leads.json missed its Wednesday, Friday, and Saturday deadlines
-6. CHANGELOG remained at 63+ days with no new entries
+Scenario A closed without execution. Causes:
+1. batch_6_leads.json not written across 65+ consecutive sessions (HANDS failure)
+2. Sunday EOD absolute deadline passed — no further reprieve
+3. Day-0 Tue 2026-06-02 is not possible — insufficient time for per-lead IMAP before morning sends
 
-**Model performance review:**
-- SSL-PAS: 15% INTERESTED rate across Batches 1–3 — remains the strongest signal in the campaign
-- The three INTERESTED leads (Tom, Claire, Rob) all came from SSL-PAS Day-0 emails — confirmed playbook
-- Batch 5 0% is consistent with 65-session execution failure (IMAP gap, LinkedIn failure, no per-lead data)
-- Do not adjust copy or signal mix for Batch 6 — the playbook works when executed correctly
+**Result:** No revenue impact yet. Scenario B still viable if file received today.
+
+---
+
+## WEEK 10 CLOSE VERDICT
+
+**Final results (Days 59-65):**
+- Day-14 breakup assumed sent Tuesday 2026-05-26 — UNCONFIRMED (66-session HANDS pattern)
+- Post-Day-14 reply window opened Wed 2026-05-27 (24h), peaked Thu (48h), closed Fri 2026-05-29 evening (72h)
+- Zero confirmed replies in the window (58-day IMAP gap means sweep results unknown)
+- Batch 5 formally closed Friday 2026-05-29 evening — 0 confirmed replies across full 4-touchpoint sequence
+- batch_6_leads.json missed Wednesday, Friday, Saturday, Sunday, and now Monday morning deadlines
+
+**Model performance:**
+- SSL-PAS: 15% INTERESTED rate (Batches 1–3) — non-negotiable, unchanged for Batch 6
+- Batch 5 0% = execution failure (58-day IMAP gap, LinkedIn 66-session failure, no per-lead data file)
+- Do not adjust copy or signal mix — the playbook works when executed correctly
 
 ---
 
@@ -43,11 +55,11 @@ All 3 INTERESTED replies from identical subject structure:
 > `[First name] — your [town] [business type] site is flagged 'Not Secure'`
 
 **Confirmed rules:**
-- First name in subject — outperforms business name only (3/3 INTERESTED had known first names)
+- First name in subject — 3/3 INTERESTED had known first names
 - Town name — local credibility, confirmed trust signal
-- `'Not Secure'` — Chrome's exact wording, not "unsecured" or "security issue"
+- `'Not Secure'` — Chrome's exact wording (not "unsecured" or "security issue")
 - No question marks — statement of fact beats question hook every time
-- Post-bank-holiday Tuesday AM — all 3 INTERESTED replied to sends adjacent to bank holidays
+- Post-bank-holiday Tuesday AM — all 3 INTERESTED replied adjacent to bank holidays
 
 **Batch 6 subject line examples (ready to use):**
 - "Mark — your Knaresborough plumbing site is flagged 'Not Secure'"
@@ -55,30 +67,47 @@ All 3 INTERESTED replies from identical subject structure:
 - "David — your Ripon estate agency site isn't secure"
 - "Sarah — your Settle builder website is flagged 'Not Secure'"
 - "Helen — your Boroughbridge joinery site is flagged 'Not Secure'"
+- "James — your Grassington joinery site is flagged 'Not Secure'"
+- "Karen — your Ripon solicitor website isn't secure"
 
 ---
 
 ## BATCH 6 STRATEGIC BRIEF
 
 **Territory:** Harrogate District + Craven District  
+**Day-0 date:** Scenario B — Tue 2026-06-09 (if batch_6_leads.json received TODAY EOD). Scenario C — Tue 2026-06-16 (if not).
+
 **Why this territory:**
 - North Yorkshire continuation — consistent with Batches 1–5 geographic focus
-- Harrogate District: Knaresborough (market town, high trades density), Ripon (cathedral city heritage), Boroughbridge (A1 corridor)
-- Craven District: Skipton (largest market town, broadest sector mix), Settle (Dales gateway, hospitality), Grassington (tourist village, no-website angle), Gargrave (low competition)
-- Both districts have strong trades economies with expected high SSL site density (small businesses, built mid-2000s to mid-2010s, rarely updated)
+- Harrogate District: Knaresborough (market town, high trades density), Ripon (cathedral city, new leads only — do NOT reapproach lead 1), Boroughbridge (A1 corridor trades)
+- Craven District: Skipton (largest market town, broadest sector mix), Settle (Dales gateway, hospitality + trades), Grassington (tourist village, strong no-website BAB angle), Gargrave (low competition)
 
 **Signal priority for Batch 6:**
-1. SSL-PAS (60%) — lead with this. Non-negotiable. Every HTTP site in target sectors.
-2. Mobile-PAS (20%) — only if SSL is clean AND mobile is clearly broken (test it personally, document specific failure)
-3. No-website BAB (15%) — 4★+ AND 20+ reviews, confirmed owner name. Grassington and Gargrave are the strongest candidates.
-4. AIDA (5%) — 4.5★+ AND 100+ reviews only, verifiable keyword gap confirmed
+1. SSL-PAS (60%) — every HTTP site in target sectors. Non-negotiable.
+2. Mobile-PAS (20%) — only if SSL is CLEAN AND mobile is clearly broken. Test personally. Document specific failure.
+3. No-website BAB (15%) — 4★+ AND 20+ reviews, confirmed owner name. Grassington/Gargrave strongest candidates.
+4. AIDA (5%) — 4.5★+ AND 100+ reviews ONLY. Verifiable keyword gap confirmed.
 
 **Sector framing for Harrogate + Craven:**
 - Trades (plumber, electrician, joiner, builder, roofer): "Customers search for you online before calling — the Not Secure warning stops them." Trust framing.
-- B&B/hospitality: First-impression and booking angle. "Booking sites charge 15–18% per night. A site with a direct booking form captures that back."
-- Estate agents: Trust and local SEO framing. "Buyers and sellers both check your credibility online before they call."
+- B&B/hospitality: First-impression and booking angle.
+- Estate agents: Trust and local SEO framing.
 - Solicitors/accountants: Professional credibility framing. "HTTPS is the baseline expectation for any professional services firm in 2026."
-- Beauty/salon (Skipton): Trust + booking gap. Lead with booking, not SSL deficit.
+- Beauty/salon (Skipton only): Lead with booking gap, NOT SSL deficit.
+
+---
+
+## THREE-SCENARIO CALENDAR
+
+| Milestone | Scenario B (file received TODAY) | Scenario C (file not received today) |
+|---|---|---|
+| batch_6_leads.json deadline | **TODAY Mon 2026-06-01 EOD** | MISSED |
+| BRAIN copy generation | Tonight/tomorrow | Thu 2026-06-11 (on receipt) |
+| **Day-0 sends** | **Tue 2026-06-09, 09:00-10:30** | **Tue 2026-06-16, 09:00-10:30** |
+| Day-3 bumps + LinkedIn | Fri 2026-06-12 | Fri 2026-06-19 |
+| LinkedIn archive trigger | **Tue 2026-06-17 EOD** | **Tue 2026-06-24 EOD** |
+| Day-7 new angle | Tue 2026-06-16 | Tue 2026-06-23 |
+| Day-14 breakup | Tue 2026-06-23 | Tue 2026-06-30 |
 
 ---
 
@@ -94,41 +123,37 @@ These are the specific failure modes from Batches 1–5 that MUST be fixed:
 - Any INTERESTED found: 24h proposal SLA (24/7, including weekends)
 
 ### 2. LinkedIn (Execute Day 3–7 or lose the channel)
-- LinkedIn is MANDATORY for Batch 6 — it was the primary conversion channel missed across all 65 sessions
-- **Execute within Day 3–7 from Day-0 — zero tolerance for deferral**
-- **Write profiles.json same session** — if not written, LinkedIn did not happen for BRAIN purposes
-- **Archive trigger fires Day 7 from Day-0 unconditionally** — regardless of reason for non-execution
+- LinkedIn MANDATORY for Batch 6 — it was the primary conversion channel missed across all 66 sessions
+- Execute within Day 3–7 from Day-0 — zero tolerance for deferral
+- Write profiles.json same session — if not written, LinkedIn did not happen for BRAIN purposes
+- Archive trigger fires Day 7 from Day-0 unconditionally — regardless of reason for non-execution
+- **orchestrator.py still NOT IMPLEMENTED** — must be built before Fri Jun 12 (Scenario B) or Fri Jun 19 (Scenario C)
 - Connection note: 200-char hard limit, start with name, mention specific business, end low-pressure
-- After acceptance: 3–5 day wait, ONE short value message (no pitch, no email reference)
 
-### 3. Per-lead data (HANDS must write file before BRAIN can run copy)
-- BRAIN cannot personalise copy without knowing: owner_name, business_name, URL, ssl_status, town, review_count, star_rating
-- batch_6_leads.json MUST be written by HANDS before BRAIN's Monday copy run
-- Minimum fields per lead: lead_id, business_name, owner_name (if findable), email, website_url, ssl_status, mobile_score, review_count, star_rating, signal_type, signal_notes, lead_score
-- Without this file: BRAIN writes generic templates. Personalisation is lost. INTERESTED rate drops.
+### 3. Per-lead data file
+- BRAIN cannot personalise copy without: owner_name, business_name, URL, ssl_status, town, review_count, star_rating
+- batch_6_leads.json minimum fields per lead: lead_id, business_name, owner_name, email, website_url, ssl_status, mobile_score, review_count, star_rating, signal_type, signal_notes, lead_score
+- Without this file: only generic templates are possible — INTERESTED rate drops significantly
 
-### 4. CHANGELOG (Write after every send day)
+### 4. CHANGELOG (Write at every send day)
 - Mandatory entry after: every Day-0, Day-3, Day-7, Day-14 send session
-- Minimum per entry: date, sends completed (with lead IDs), IMAP results, LinkedIn status, any replies found
-- This is a compliance audit trail, not optional
+- CHANGELOG currently 64+ days overdue — MANDATORY same session as Batch 6 Day-0 sends — ABSOLUTE FINAL DEADLINE
 
 ---
 
 ## ANALYTICS PATTERNS — WINNING ANGLES FOR BATCH 6
 
-Based on all confirmed INTERESTED replies and observed patterns:
-
 **Body copy patterns that worked:**
 - Opening with "I was looking up [trade] in [town] this morning" — shows local knowledge, specific research
-- Including the specific URL with the 'Not Secure' label — builds credibility, shows you actually checked
-- One pain point per email — never list multiple issues in a single email
+- Including the specific URL with the 'Not Secure' label — credibility, shows you actually checked
+- One pain point per email — never list multiple issues
 - Soft close: "Would it be worth a quick chat?" — low commitment, low friction
 
 **Body copy patterns that failed (0 replies):**
-- Generic "your website could be better" framing — no specificity, no signal
+- Generic "your website could be better" framing — no specificity
 - Multiple issues listed in one email — dilutes the single hook
-- Question mark in subject line — weaker than a statement every time
-- Day-7 that reframes Day-0 instead of introducing a genuinely new angle — 0% response confirmed
+- Question mark in subject line — weaker than statement every time
+- Day-7 that reframes Day-0 instead of genuinely new angle — 0% response confirmed
 
 **Day sequence dynamics:**
 - Day-0: SSL-PAS primary. Tuesday AM. First-name subject. Specific URL.
@@ -138,38 +163,20 @@ Based on all confirmed INTERESTED replies and observed patterns:
 
 ---
 
-## SCENARIO PLANNING
-
-### If batch_6_leads.json received TODAY Sunday EOD:
-1. BRAIN runs Monday 2026-06-01 — reads file, assigns signals, generates per-lead copy
-2. HANDS confirms copy Monday afternoon
-3. Tuesday 2026-06-02, 09:00: IMAP per lead (pre-send sweep)
-4. Tuesday 2026-06-02, 09:00–10:30: Batch 6 Day-0 sends (18–22 leads, stagger 10 min)
-5. Friday 2026-06-05: Day-3 bumps + LinkedIn execution + profiles.json same session
-6. Tuesday 2026-06-10 EOD: LinkedIn archive trigger fires unconditionally
-
-### If batch_6_leads.json NOT received by Monday morning BRAIN run:
-1. BRAIN Monday confirms Scenario B
-2. BRAIN generates framework copy for deferred Day-0 (awaiting per-lead population)
-3. HANDS writes file Monday → Tuesday 2026-06-09 Day-0 is the new target
-4. 7-day schedule shift across all touchpoints and LinkedIn trigger
-
----
-
 ## FORWARD DECISIONS
 
 | Decision | Owner | Deadline | Status |
 |---|---|---|---|
-| Write batch_6_leads.json | HANDS | TODAY Sunday EOD | PENDING — 65-session failure |
-| BRAIN copy generation | BRAIN | Monday 2026-06-01 | Upcoming |
-| Update Batch 5 leads → sequence_complete | HANDS | Monday | DUE |
-| CHANGELOG | HANDS | Monday | 63+ days overdue |
-| Batch 6 Day-0 sends | HANDS | Tue 2026-06-02 (A) or Tue 2026-06-09 (B) | Upcoming |
-| LinkedIn Day 3 execution + profiles.json | HANDS | Fri 2026-06-05 (A) or Fri 2026-06-12 (B) | Upcoming |
+| Write batch_6_leads.json | HANDS | **TODAY Mon 2026-06-01 EOD — ABSOLUTE LAST VIABLE WINDOW FOR SCENARIO B** | MISSING — 66 sessions |
+| BRAIN copy generation | BRAIN | Tonight/tomorrow (on file receipt) | Pending file |
+| Update Batch 5 leads → sequence_complete | HANDS | Mon 2026-06-01 | OVERDUE |
+| Build orchestrator.py | HANDS | Before Fri 2026-06-12 (B) or Fri 2026-06-19 (C) | NOT IMPLEMENTED |
+| CHANGELOG | HANDS | Same session as Batch 6 Day-0 | 64+ DAYS OVERDUE — ABSOLUTE FINAL |
+| Batch 6 Day-0 sends | HANDS | Tue 2026-06-09 (B) or Tue 2026-06-16 (C) | Upcoming |
+| LinkedIn Day 3 + profiles.json | HANDS | Fri 2026-06-12 (B) or Fri 2026-06-19 (C) | Upcoming |
 
 ---
 
 *Strategy maintained by OUTLOCAL BRAIN layer.*  
-*Day 65 — Sunday 2026-05-31 — Week 10 close.*  
-*HANDS: Read the Week 10 intelligence report (data/weekly_reports/week_2026-05-31.md) before your Monday session.*  
-*Single most important action: write data/batch_6_leads.json TODAY Sunday EOD.*
+*Day 66 — Monday 2026-06-01 — Week 11 start.*  
+*HANDS: TODAY is the LAST VIABLE WINDOW for batch_6_leads.json (Scenario B — Day-0 Tue 2026-06-09). Write the file TODAY EOD. If not received by today EOD: Day-0 defers to Tue 2026-06-16. CHANGELOG mandatory same session as Day-0 sends.*
