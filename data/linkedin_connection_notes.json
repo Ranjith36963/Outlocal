@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-31T20:00:00Z",
+  "generated_at": "2026-06-01T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-05-31",
-  "day_number": 65,
-  "run_type": "DAY_65_SUNDAY_LINKEDIN_RESEARCH — Sunday 2026-05-31. SCENARIO B NOW CONFIRMED ACTIVE — Sunday EOD emergency deadline for batch_6_leads.json has expired (65-session HANDS pattern). Day-0 deferred to Tue 2026-06-09. LinkedIn Day 3: Fri 2026-06-12. Archive trigger: Tue 2026-06-17 EOD unconditional. Zero active notes. 5 sector templates + 19 placeholder lead entries retained — ready for Day 3 execution Fri 2026-06-12. orchestrator.py: NOT IMPLEMENTED — 12 days to execution deadline. CHANGELOG: 63+ days overdue.",
+  "run_date": "2026-06-01",
+  "day_number": 66,
+  "run_type": "DAY_66_MONDAY_LINKEDIN_CONNECTION_NOTES — Monday 2026-06-01. Week 11 Start. SCENARIO A CONFIRMED CLOSED. SCENARIO B LAST VIABLE WINDOW TODAY EOD — batch_6_leads.json must arrive tonight for Day-0 Tue 2026-06-09. SCENARIO C activates tonight if not received. Zero active notes. 5 sector templates + 19 placeholder lead entries retained — ready for Day 3 execution Fri 2026-06-12 (B) or Fri 2026-06-19 (C). orchestrator.py: NOT IMPLEMENTED — 11 days to execution deadline. CHANGELOG: 64+ days overdue.",
 
-  "note": "Day 65 (Sunday 2026-05-31 — Week 10 Close). SCENARIO B IS NOW CONFIRMED ACTIVE: batch_6_leads.json has missed ALL delivery deadlines (Wednesday 2026-05-27, Friday 2026-05-29, Sunday 2026-05-31 EOD — 65-session HANDS pattern). Day-0 deferred to Tuesday 2026-06-09. LinkedIn window opens Day 3 = Friday 2026-06-12. Archive trigger fires Tuesday 2026-06-17 EOD unconditionally if linkedin_profiles.json not written same session. HANDS must deliver batch_6_leads.json by Monday 2026-06-02 morning (final viable window for Tue 2026-06-09 Day-0). LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 65 consecutive sessions without a single connection request sent). linkedin_profiles.json was never written. Zero active connection notes. This file contains: (1) 5 sector-level connection note templates ready for Day 3 execution, (2) 19 placeholder lead entries matching linkedin_search_plan.json BATCH6_P0xx IDs — HANDS personalises each note using actual profile data (posts, headline, interests) on Day 3 Fri 2026-06-12, (3) note strategy ('slightly awkward compliment'), (4) post-breakup contingency notes for leads 50/52/55/56. orchestrator.py MUST be built and deployed BEFORE Fri 2026-06-12 — 12 days from today. CHANGELOG: 63+ days overdue — mandatory same session as Batch 6 Day-0 sends (Tue 2026-06-09) — zero tolerance.",
+  "note": "Day 66 (Monday 2026-06-01 — Week 11 Start). SCENARIO A CONFIRMED CLOSED. TODAY Monday is the ABSOLUTE LAST VIABLE WINDOW for Scenario B (Day-0 Tue 2026-06-09). SCENARIO C activates tonight if batch_6_leads.json not received. LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 66 consecutive sessions without a single connection request sent). linkedin_profiles.json was never written. Zero active connection notes today. This file contains: (1) 5 sector-level connection note templates ready for Day 3 execution, (2) 19 placeholder lead entries matching linkedin_search_plan.json BATCH6_P0xx IDs — HANDS personalises each note using actual profile data (posts, headline, interests) on Day 3, (3) note strategy ('slightly awkward compliment'), (4) post-breakup contingency notes for leads 50/52/55/56. orchestrator.py MUST be built and deployed BEFORE Day 3 execution — 11 days from today (Mon 2026-06-01). CHANGELOG: 64+ days overdue — mandatory same session as Batch 6 Day-0 sends — zero further tolerance.",
 
   "channel_status": {
-    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (65-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
-    "linkedin_batch6": "PRE_ACTIVATION — SCENARIO B CONFIRMED. 5 sector templates + 19 placeholders READY. Activation Day 3: Fri 2026-06-12 (Day 3 from Day-0 Tue 2026-06-09). Archive trigger: Tue 2026-06-17 EOD — unconditional. orchestrator.py MUST be deployed before activation.",
-    "session_failure_count": 65,
+    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (66-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
+    "linkedin_batch6": "PRE_ACTIVATION — Scenario B: Day 3 Fri 2026-06-12. Scenario C: Day 3 Fri 2026-06-19. Archive trigger Tue 2026-06-17 EOD (B) or Tue 2026-06-24 EOD (C) — unconditional. 5 sector templates + 19 placeholders READY. orchestrator.py MUST be deployed before activation.",
+    "session_failure_count": 66,
     "linkedin_profiles_json_ever_written": false,
     "campaign_notes_ever_sent": 0
   },
@@ -40,7 +40,7 @@
 
   "active_notes": [],
   "active_notes_count": 0,
-  "active_notes_note": "Zero active notes. LinkedIn permanently closed for all Batch 5 leads. No active leads with LinkedIn profile data (linkedin_profiles.json never written in 65 campaign sessions). Batch 6 note templates below — activated Day 3 (Fri 2026-06-12, Scenario B confirmed) once HANDS writes batch_6_leads.json (due Mon 2026-06-02 morning — last viable window) and finds LinkedIn profiles.",
+  "active_notes_note": "Zero active notes. LinkedIn permanently closed for all Batch 5 leads. linkedin_profiles.json never written in 66 campaign sessions. No active leads with profile data. Batch 6 note templates below — activated Day 3 (Fri 2026-06-12 Scenario B, or Fri 2026-06-19 Scenario C) once HANDS writes batch_6_leads.json (LAST VIABLE WINDOW TODAY Monday EOD for Scenario B) and finds LinkedIn profiles via orchestrator.py.",
 
   "sector_templates": {
     "note": "5 sector-level templates. HANDS selects the most appropriate for each lead, then personalises using actual profile data (post topic, headline text, interest). Confirm under 200 chars before sending. Templates are the starting point — not the final note.",
@@ -78,11 +78,11 @@
       "applicable_sectors": ["Plumber", "Heating Engineer", "Electrician", "Joiner", "Carpenter", "Builder", "Roofer"],
       "note_type": "generic",
       "template": "Based in [town], working with local trades businesses. Thought it worth connecting — [Name], always good to know the decent [trade]s in [area].",
-      "example": "Based in North Yorkshire, working with local trades businesses. Thought it worth connecting — Mark, always good to know the decent joiners in Knaresborough.",
-      "char_count_example": 174,
+      "example": "Based in Knaresborough, working with local trades businesses. Thought it worth connecting — Mark, always good to know the decent plumbers in the area.",
+      "char_count_example": 163,
       "personalisation_notes": [
-        "Use only as fallback — post_reference and headline are always preferred.",
-        "Area can be the town or district — pick whichever sounds more natural."
+        "Fallback only — use post_reference or headline templates if any profile data available.",
+        "Keep the [area] vague enough to feel natural ('the area', 'North Yorkshire', not 'Knaresborough and surrounding villages')."
       ]
     },
 
@@ -90,84 +90,86 @@
       "template_key": "professional_services_post_reference",
       "applicable_sectors": ["Solicitor", "Accountant", "Estate Agent"],
       "note_type": "post_reference",
-      "template": "Your post on [specific topic] was more direct than most [profession] posts tend to be. Appreciated the straightforwardness. [Name], good to connect.",
-      "example": "Your post on why small businesses delay getting a will in place was more direct than most solicitor posts tend to be. Appreciated the straightforwardness. Helen, good to connect.",
+      "template": "Your post about [specific topic] was the most honest take on [topic area] I've seen from a [profession] in a while. [Name], good to connect.",
+      "example": "Your post about conveyancing delays in the current market was the most honest take on the issue I've seen from a solicitor in a while. Sarah, good to connect.",
       "char_count_example": 187,
       "personalisation_notes": [
-        "Professional services posts are often dry — if they've written something direct or opinion-led, highlight that.",
-        "Avoid commenting on 'expertise' or 'knowledge' — sounds sycophantic.",
-        "If the post is about a local market topic (Ripon property, Skipton business growth), reference the local angle."
+        "Professional services contacts value being seen as thoughtful, not just skilled.",
+        "The 'most honest take' framing is the slightly awkward compliment — implies others aren't honest.",
+        "Only use if the post is genuinely substantive (opinion/insight, not just sharing news)."
       ]
     },
 
-    "hospitality_bab_generic": {
-      "template_key": "hospitality_bab_generic",
-      "applicable_sectors": ["B&B", "Pub", "Tearoom", "Restaurant", "Hotel"],
-      "note_type": "generic",
-      "template": "Running a [hospitality type] in [town] is properly hard work — especially in a destination area. [Name], good to connect with local owners.",
-      "example": "Running a B&B in Grassington is properly hard work — especially in a destination area. Susan, good to connect with local owners.",
-      "char_count_example": 148,
+    "hospitality_post_reference": {
+      "template_key": "hospitality_post_reference",
+      "applicable_sectors": ["B&B", "Pub", "Restaurant", "Tearoom"],
+      "note_type": "post_reference",
+      "template": "Saw your post about [specific topic]. Running a [business type] in [town] and still finding time to write that — respect. [Name], good to connect.",
+      "example": "Saw your post about the August bank holiday rush and how you handle it solo. Running a B&B in Grassington and still finding time to write that — respect. Julie, good to connect.",
+      "char_count_example": 196,
       "personalisation_notes": [
-        "Grassington, Settle, and Skipton all have strong destination/tourism identity — use it.",
-        "Acknowledge the difficulty without being patronising.",
-        "If they have a post about a specific challenge (Dales flooding, summer bookings, energy bills), use post_reference instead."
+        "Hospitality owners post rarely — if they do, acknowledge the effort explicitly.",
+        "The 'respect' line is slightly awkward in a good way — unpretentious.",
+        "Stay under 200 chars — this template runs long with specific post topics."
       ]
     }
   },
 
-  "batch_6_lead_notes": {
-    "status": "BATCH6_PLACEHOLDER — SCENARIO B CONFIRMED. 19 entries pre-populated matching linkedin_search_plan.json BATCH6_P0xx IDs. Activated on Day 3 execution only (Fri 2026-06-12). HANDS must: (1) find LinkedIn profile for each lead during Day 3 search execution, (2) select correct sector template, (3) personalise the note using actual profile data (post topic, headline text, or interest), (4) confirm note is under 200 chars before sending, (5) write entry to linkedin_profiles.json immediately after sending — NOT batched.",
-    "activation_date": "Friday 2026-06-12 (Scenario B Day 3)",
-    "archive_trigger": "Tuesday 2026-06-17 EOD — unconditional",
-    "notes": [
-      {"lead_id": "BATCH6_P001", "town": "Knaresborough", "sector": "Plumber / Heating Engineer", "linkedin_url": "[TBD]", "note": "[TBD — use trades_post_reference or trades_generic]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P002", "town": "Knaresborough", "sector": "Electrician", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P003", "town": "Knaresborough", "sector": "Joiner / Carpenter", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P004", "town": "Knaresborough", "sector": "Builder / General Contractor", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P005", "town": "Knaresborough", "sector": "Estate Agent", "linkedin_url": "[TBD]", "note": "[TBD — use professional_services template]", "note_type": "[TBD]", "template_key": "professional_services", "scenario": "B"},
-      {"lead_id": "BATCH6_P006", "town": "Ripon", "sector": "Roofer", "linkedin_url": "[TBD]", "note": "[TBD — use trades template. Verify NOT lead 1 / Ripon Road Carpentry before sending]", "note_type": "[TBD]", "template_key": "trades", "exclusion_check": "MANDATORY — confirm business name is NOT Ripon Road Carpentry before sending", "scenario": "B"},
-      {"lead_id": "BATCH6_P007", "town": "Ripon", "sector": "Plumber", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P008", "town": "Ripon", "sector": "Solicitor", "linkedin_url": "[TBD]", "note": "[TBD — use professional_services template]", "note_type": "[TBD]", "template_key": "professional_services", "scenario": "B"},
-      {"lead_id": "BATCH6_P009", "town": "Ripon", "sector": "Accountant", "linkedin_url": "[TBD]", "note": "[TBD — use professional_services template]", "note_type": "[TBD]", "template_key": "professional_services", "scenario": "B"},
-      {"lead_id": "BATCH6_P010", "town": "Boroughbridge", "sector": "Builder / General Contractor", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P011", "town": "Boroughbridge", "sector": "Plumber", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P012", "town": "Skipton", "sector": "Plumber", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P013", "town": "Skipton", "sector": "Electrician", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P014", "town": "Skipton", "sector": "Joiner / Carpenter", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P015", "town": "Skipton", "sector": "Beauty Salon / Hair", "linkedin_url": "[TBD]", "note": "[TBD — use trades_generic adapted for beauty sector]", "note_type": "[TBD]", "template_key": "trades_generic_adapted", "scenario": "B"},
-      {"lead_id": "BATCH6_P016", "town": "Skipton", "sector": "Estate Agent", "linkedin_url": "[TBD]", "note": "[TBD — use professional_services template]", "note_type": "[TBD]", "template_key": "professional_services", "scenario": "B"},
-      {"lead_id": "BATCH6_P017", "town": "Settle", "sector": "Builder / General Contractor", "linkedin_url": "[TBD]", "note": "[TBD — use trades template, reference Dales build context]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"},
-      {"lead_id": "BATCH6_P018", "town": "Grassington", "sector": "B&B / Hospitality", "linkedin_url": "[TBD]", "note": "[TBD — use hospitality_bab_generic]", "note_type": "[TBD]", "template_key": "hospitality_bab_generic", "scenario": "B"},
-      {"lead_id": "BATCH6_P019", "town": "Gargrave", "sector": "Plumber / Builder / Electrician", "linkedin_url": "[TBD]", "note": "[TBD — use trades template]", "note_type": "[TBD]", "template_key": "trades", "scenario": "B"}
+  "batch6_placeholder_notes": {
+    "note": "19 placeholder entries for Batch 6 leads (BATCH6_P001-P019). HANDS populates each with actual LinkedIn profile data on Day 3 execution (Fri 2026-06-12 Scenario B, or Fri 2026-06-19 Scenario C). Process per lead: (1) Run google_query from linkedin_search_plan.json. (2) Identify profile — confirm owner not employee. (3) Check posts tab (last 60 days). (4) Select appropriate sector_template above. (5) Personalise using profile data. (6) Confirm under 200 chars. (7) Send note via orchestrator.py. (8) Write linkedin_profiles.json entry IMMEDIATELY — do NOT batch.",
+    "leads": [
+      {"lead_id": "BATCH6_P001", "town": "Knaresborough", "sector": "Plumber/Heating", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P002", "town": "Knaresborough", "sector": "Electrician", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P003", "town": "Knaresborough", "sector": "Joiner/Carpenter", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P004", "town": "Knaresborough", "sector": "Builder", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P005", "town": "Knaresborough", "sector": "Estate Agent", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P006", "town": "Ripon", "sector": "Roofer", "ripon_exclusion": true, "exclusion_note": "VERIFY: NOT Ripon Road Carpentry (lead 1). Check before sending.", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P007", "town": "Ripon", "sector": "Plumber", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P008", "town": "Ripon", "sector": "Solicitor", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P009", "town": "Ripon", "sector": "Accountant", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P010", "town": "Boroughbridge", "sector": "Builder", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P011", "town": "Boroughbridge", "sector": "Plumber", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P012", "town": "Skipton", "sector": "Plumber", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P013", "town": "Skipton", "sector": "Electrician", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P014", "town": "Skipton", "sector": "Joiner/Carpenter", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P015", "town": "Skipton", "sector": "Beauty Salon/Hair", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P016", "town": "Skipton", "sector": "Estate Agent", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P017", "town": "Settle", "sector": "Builder", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P018", "town": "Grassington", "sector": "B&B/Hospitality", "note_template": "hospitality_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P019", "town": "Gargrave", "sector": "Plumber/Builder/Electrician", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA_CONTINGENT"}
     ]
   },
 
   "post_breakup_contingency_notes": {
-    "note": "Leads 50/52/55/56 — sent Day-14 breakup emails assumed Monday 2026-05-11 (fu_041-045 sequence). LinkedIn window expired. However, if any pending connection request from prior campaign was accepted spontaneously (before archive trigger), the following warm-nurture messages are ready. IMAP check mandatory before sending. Do NOT pitch.",
+    "note": "Pre-written notes for leads 50/52/55/56 ONLY — use if they spontaneously accept a LinkedIn connection request that was sent during the warm pipeline window (pre-2026-05-06). These leads completed the email sequence and are in 'sequence_complete' status. No further proactive LinkedIn approach — only respond if they initiate.",
     "leads": [
       {
         "lead_id": 50,
-        "status": "SEQUENCE_COMPLETE — sequence assumed complete. LinkedIn window EXPIRED. Only action if connection request accepted spontaneously AND incidental IMAP shows no NOT_INTERESTED/UNSUBSCRIBE reply.",
-        "warm_nurture_message": "Hi [Name], glad we're connected. I work with local tradespeople in North Yorkshire — happy to share a useful resource if relevant sometime. No agenda. [Your name]",
-        "char_count": 166
+        "note_type": "generic",
+        "note": "Good to connect, [Name]. Happy to pick up the conversation whenever suits. No pressure at all.",
+        "char_count": 83,
+        "instruction": "Only send this if lead 50 has accepted a previously-sent connection request. Do NOT send a new connection request — sequence is complete."
       },
       {
         "lead_id": 52,
-        "status": "SEQUENCE_COMPLETE — same as lead 50.",
-        "warm_nurture_message": "Hi [Name], glad we're connected. I work with local businesses in Yorkshire — happy to share something useful if it's relevant. No agenda at all. [Your name]",
-        "char_count": 163
+        "note_type": "generic",
+        "note": "Good to connect, [Name]. Happy to pick up the conversation whenever suits. No pressure at all.",
+        "char_count": 83,
+        "instruction": "Only send if lead 52 accepts a previously-sent connection request. Sequence complete — no new outreach."
       },
       {
         "lead_id": 55,
-        "status": "SEQUENCE_COMPLETE — same as lead 50.",
-        "warm_nurture_message": "Hi [Name], glad we're connected. I work with local businesses in the area — happy to share a useful resource if it ever seems relevant. [Your name]",
-        "char_count": 152
+        "note_type": "generic",
+        "note": "Good to connect, [Name]. Happy to pick up the conversation whenever suits. No pressure at all.",
+        "char_count": 83,
+        "instruction": "Only send if lead 55 accepts a previously-sent connection request. Sequence complete — no new outreach."
       },
       {
         "lead_id": 56,
-        "status": "SEQUENCE_COMPLETE — same as lead 50.",
-        "warm_nurture_message": "Hi [Name], glad we're connected. I work with North Yorkshire businesses on their online presence — happy to share something useful if relevant. [Your name]",
-        "char_count": 162
+        "note_type": "generic",
+        "note": "Good to connect, [Name]. Happy to pick up the conversation whenever suits. No pressure at all.",
+        "char_count": 83,
+        "instruction": "Only send if lead 56 accepts a previously-sent connection request. Sequence complete — no new outreach."
       }
     ]
   },
@@ -176,25 +178,34 @@
     "status": "NOT_IMPLEMENTED — CRITICAL",
     "file": "src/outlocal/linkedin/orchestrator.py",
     "directory": "src/outlocal/linkedin/ — create directory first",
-    "build_deadline": "BEFORE Fri 2026-06-12 — ABSOLUTE. 12 days remaining from today (Sun 2026-05-31). Build this week — do NOT wait until the final days.",
-    "reason": "65-session manual delivery failure. Without orchestrator.py: Batch 6 repeats the 65-session failure. Archive trigger fires unconditionally Tue 2026-06-17 EOD.",
-    "note_personalisation_requirement": "orchestrator.py must: (1) find LinkedIn profile, (2) check posts tab (last 60 days), (3) select appropriate sector template from this file, (4) personalise note using actual profile data, (5) confirm under 200 chars, (6) send connection request with note, (7) write linkedin_profiles.json entry IMMEDIATELY — per lead, same session, no batching."
+    "build_deadline": "BEFORE Fri 2026-06-12 — ABSOLUTE. 11 days remaining from today (Mon 2026-06-01).",
+    "days_remaining": 11,
+    "reason": "66-session manual delivery failure — 0 connection notes ever sent. orchestrator.py is the only mechanism that writes linkedin_profiles.json in the same session as execution.",
+    "minimum_viable_features": [
+      "Read data/linkedin_search_plan.json → extract search_queries[]",
+      "Drive Playwright: Google search → extract LinkedIn profile URL",
+      "Confirm profile is business owner (not employee)",
+      "Check posts tab (last 60 days) → flag if post found",
+      "Read note template from data/linkedin_connection_notes.json → personalise using profile data",
+      "Drive LinkedIn: connect + note",
+      "Write data/linkedin_profiles.json entry IMMEDIATELY after each attempt — do NOT batch",
+      "Log errors + skip reasons — never crash silently"
+    ]
   },
 
   "summary": {
-    "run_date": "2026-05-31 (Sunday — Day 65, Week 10 Close — SCENARIO B CONFIRMED)",
+    "run_date": "2026-06-01 (Monday — Day 66, Week 11 Start)",
     "active_notes_count": 0,
-    "batch_6_templates_ready": 5,
-    "batch_6_placeholder_leads": 19,
-    "batch_6_activation_day": "Day 3 from Day-0 — SCENARIO B: Fri 2026-06-12",
-    "batch_6_scenario_a_date": "EXPIRED — Day-0 Tue 2026-06-02 no longer possible",
-    "batch_6_scenario_b_date": "Fri 2026-06-12 — CONFIRMED ACTIVE",
-    "batch_6_archive_trigger": "Tue 2026-06-17 EOD — unconditional",
-    "batch_6_leads_deadline": "Mon 2026-06-02 morning — LAST VIABLE WINDOW",
-    "linkedin_profiles_json_written": false,
-    "campaign_notes_ever_sent": 0,
-    "consecutive_sessions_no_execution": 65,
-    "orchestrator_py_status": "NOT_IMPLEMENTED — 12 days to absolute deadline Fri 2026-06-12",
-    "changelog_overdue_days": "63+"
+    "sector_templates_count": 5,
+    "batch6_placeholder_notes_count": 19,
+    "linkedin_profiles_json_status": "NEVER WRITTEN — 66-session failure",
+    "scenario_a_status": "CONFIRMED CLOSED",
+    "scenario_b_status": "LAST VIABLE WINDOW TODAY Monday EOD",
+    "scenario_c_status": "Activates tonight if file not received",
+    "batch6_note_activation_date_b": "Fri 2026-06-12 (Day 3, Scenario B)",
+    "batch6_note_activation_date_c": "Fri 2026-06-19 (Day 3, Scenario C)",
+    "orchestrator_py_status": "NOT_IMPLEMENTED — 11 days to deadline",
+    "changelog_overdue_days": "64+",
+    "consecutive_sessions_without_note_sent": 66
   }
 }
