@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-01T08:00:00Z",
+  "generated_at": "2026-06-02T08:00:00Z",
   "generated_by": "linkedin-brain-agent",
-  "run_date": "2026-06-01",
-  "day_number": 66,
-  "run_type": "DAY_66_MONDAY_LINKEDIN_CONNECTION_NOTES — Monday 2026-06-01. Week 11 Start. SCENARIO A CONFIRMED CLOSED. SCENARIO B LAST VIABLE WINDOW TODAY EOD — batch_6_leads.json must arrive tonight for Day-0 Tue 2026-06-09. SCENARIO C activates tonight if not received. Zero active notes. 5 sector templates + 19 placeholder lead entries retained — ready for Day 3 execution Fri 2026-06-12 (B) or Fri 2026-06-19 (C). orchestrator.py: NOT IMPLEMENTED — 11 days to execution deadline. CHANGELOG: 64+ days overdue.",
+  "run_date": "2026-06-02",
+  "day_number": 67,
+  "run_type": "DAY_67_TUESDAY_LINKEDIN_CONNECTION_NOTES — Tuesday 2026-06-02. Week 11. SCENARIO B CONFIRMED CLOSED — Monday EOD deadline passed (67-session HANDS pattern). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. LinkedIn Day-3 Fri 2026-06-19. Archive trigger Tue 2026-06-24 EOD unconditional. Zero active notes. 5 sector templates + 19 placeholder lead entries retained — ready for Day-3 execution Fri 2026-06-19. orchestrator.py: NOT IMPLEMENTED — 17 days to execution deadline. CHANGELOG: 65+ days overdue.",
 
-  "note": "Day 66 (Monday 2026-06-01 — Week 11 Start). SCENARIO A CONFIRMED CLOSED. TODAY Monday is the ABSOLUTE LAST VIABLE WINDOW for Scenario B (Day-0 Tue 2026-06-09). SCENARIO C activates tonight if batch_6_leads.json not received. LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 66 consecutive sessions without a single connection request sent). linkedin_profiles.json was never written. Zero active connection notes today. This file contains: (1) 5 sector-level connection note templates ready for Day 3 execution, (2) 19 placeholder lead entries matching linkedin_search_plan.json BATCH6_P0xx IDs — HANDS personalises each note using actual profile data (posts, headline, interests) on Day 3, (3) note strategy ('slightly awkward compliment'), (4) post-breakup contingency notes for leads 50/52/55/56. orchestrator.py MUST be built and deployed BEFORE Day 3 execution — 11 days from today (Mon 2026-06-01). CHANGELOG: 64+ days overdue — mandatory same session as Batch 6 Day-0 sends — zero further tolerance.",
+  "note": "Day 67 (Tuesday 2026-06-02 — Week 11). SCENARIO B CONFIRMED CLOSED: Monday 2026-06-01 EOD deadline passed without batch_6_leads.json (67 consecutive sessions without a single file delivery from HANDS). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16, LinkedIn Day-3 Fri 2026-06-19, archive trigger Tue 2026-06-24 EOD — unconditional. No further scenarios exist. LinkedIn permanently closed for all Batch 5 Ryedale leads (archive trigger fired 2026-05-19 EOD — 67 consecutive sessions without a single connection request sent). linkedin_profiles.json was never written. Zero active connection notes today. This file contains: (1) 5 sector-level connection note templates ready for Day-3 execution Fri 2026-06-19, (2) 19 placeholder lead entries matching linkedin_search_plan.json BATCH6_P0xx IDs — HANDS personalises each note using actual profile data (posts, headline, interests) on Day-3, (3) note strategy ('slightly awkward compliment'), (4) post-breakup contingency notes for leads 50/52/55/56. orchestrator.py MUST be built and deployed BEFORE Day-3 execution — 17 days from today (Tue 2026-06-02). CHANGELOG: 65+ days overdue — mandatory same session as Batch 6 Day-0 sends — zero further tolerance.",
 
   "channel_status": {
-    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (66-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
-    "linkedin_batch6": "PRE_ACTIVATION — Scenario B: Day 3 Fri 2026-06-12. Scenario C: Day 3 Fri 2026-06-19. Archive trigger Tue 2026-06-17 EOD (B) or Tue 2026-06-24 EOD (C) — unconditional. 5 sector templates + 19 placeholders READY. orchestrator.py MUST be deployed before activation.",
-    "session_failure_count": 66,
+    "linkedin_batch5": "PERMANENTLY_CLOSED — archive trigger fired 2026-05-19 EOD (Day 53). linkedin_profiles.json never written (67-session failure). All Batch 5 Ryedale leads archived LOST_NO_RESPONSE on LinkedIn. No further LinkedIn for any Batch 5 lead under any circumstances.",
+    "linkedin_batch6": "PRE_ACTIVATION — Scenario C CONFIRMED ACTIVE. Day-3 Fri 2026-06-19. Archive trigger Tue 2026-06-24 EOD unconditional. 5 sector templates + 19 placeholders READY. orchestrator.py MUST be deployed before Fri 2026-06-19.",
+    "session_failure_count": 67,
     "linkedin_profiles_json_ever_written": false,
     "campaign_notes_ever_sent": 0
   },
@@ -40,7 +40,7 @@
 
   "active_notes": [],
   "active_notes_count": 0,
-  "active_notes_note": "Zero active notes. LinkedIn permanently closed for all Batch 5 leads. linkedin_profiles.json never written in 66 campaign sessions. No active leads with profile data. Batch 6 note templates below — activated Day 3 (Fri 2026-06-12 Scenario B, or Fri 2026-06-19 Scenario C) once HANDS writes batch_6_leads.json (LAST VIABLE WINDOW TODAY Monday EOD for Scenario B) and finds LinkedIn profiles via orchestrator.py.",
+  "active_notes_note": "Zero active notes. LinkedIn permanently closed for all Batch 5 leads. linkedin_profiles.json never written in 67 campaign sessions. No active leads with profile data. Batch 6 note templates below — activated Day-3 (Fri 2026-06-19 Scenario C) once HANDS writes batch_6_leads.json (recommended Thu 2026-06-11 EOD) and finds LinkedIn profiles via orchestrator.py.",
 
   "sector_templates": {
     "note": "5 sector-level templates. HANDS selects the most appropriate for each lead, then personalises using actual profile data (post topic, headline text, interest). Confirm under 200 chars before sending. Templates are the starting point — not the final note.",
@@ -116,15 +116,17 @@
   },
 
   "batch6_placeholder_notes": {
-    "note": "19 placeholder entries for Batch 6 leads (BATCH6_P001-P019). HANDS populates each with actual LinkedIn profile data on Day 3 execution (Fri 2026-06-12 Scenario B, or Fri 2026-06-19 Scenario C). Process per lead: (1) Run google_query from linkedin_search_plan.json. (2) Identify profile — confirm owner not employee. (3) Check posts tab (last 60 days). (4) Select appropriate sector_template above. (5) Personalise using profile data. (6) Confirm under 200 chars. (7) Send note via orchestrator.py. (8) Write linkedin_profiles.json entry IMMEDIATELY — do NOT batch.",
+    "note": "19 placeholder entries for Batch 6 leads (BATCH6_P001-P019). HANDS populates each with actual LinkedIn profile data on Day-3 execution (Fri 2026-06-19 Scenario C). Process per lead: (1) Run google_query from linkedin_search_plan.json. (2) Identify profile — confirm owner not employee. (3) Check posts tab (last 60 days). (4) Select appropriate sector_template above. (5) Personalise using profile data. (6) Confirm under 200 chars. (7) Send note via orchestrator.py. (8) Write linkedin_profiles.json entry IMMEDIATELY — do NOT batch.",
+    "execution_date": "Fri 2026-06-19 (Day-3, Scenario C)",
+    "archive_trigger": "Tue 2026-06-24 EOD — fires unconditionally if profiles.json not written this session",
     "leads": [
       {"lead_id": "BATCH6_P001", "town": "Knaresborough", "sector": "Plumber/Heating", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
       {"lead_id": "BATCH6_P002", "town": "Knaresborough", "sector": "Electrician", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
       {"lead_id": "BATCH6_P003", "town": "Knaresborough", "sector": "Joiner/Carpenter", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
       {"lead_id": "BATCH6_P004", "town": "Knaresborough", "sector": "Builder", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
       {"lead_id": "BATCH6_P005", "town": "Knaresborough", "sector": "Estate Agent", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
-      {"lead_id": "BATCH6_P006", "town": "Ripon", "sector": "Roofer", "ripon_exclusion": true, "exclusion_note": "VERIFY: NOT Ripon Road Carpentry (lead 1). Check before sending.", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
-      {"lead_id": "BATCH6_P007", "town": "Ripon", "sector": "Plumber", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P006", "town": "Ripon", "sector": "Roofer", "ripon_exclusion": true, "exclusion_note": "VERIFY: NOT Ripon Road Carpentry (lead 1) — ARCHIVED UNCONDITIONALLY FINAL. Check before sending.", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
+      {"lead_id": "BATCH6_P007", "town": "Ripon", "sector": "Plumber", "ripon_exclusion_check": true, "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
       {"lead_id": "BATCH6_P008", "town": "Ripon", "sector": "Solicitor", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
       {"lead_id": "BATCH6_P009", "town": "Ripon", "sector": "Accountant", "note_template": "professional_services_post_reference OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
       {"lead_id": "BATCH6_P010", "town": "Boroughbridge", "sector": "Builder", "note_template": "trades_post_reference OR trades_headline OR trades_generic", "note": null, "status": "PENDING_PROFILE_DATA"},
@@ -141,7 +143,7 @@
   },
 
   "post_breakup_contingency_notes": {
-    "note": "Pre-written notes for leads 50/52/55/56 ONLY — use if they spontaneously accept a LinkedIn connection request that was sent during the warm pipeline window (pre-2026-05-06). These leads completed the email sequence and are in 'sequence_complete' status. No further proactive LinkedIn approach — only respond if they initiate.",
+    "note": "Pre-written notes for leads 50/52/55/56 ONLY — use ONLY if they spontaneously accept a LinkedIn connection request that was sent during the warm pipeline window (pre-2026-05-06). These leads completed the email sequence and are in 'sequence_complete' status. No further proactive LinkedIn approach — only respond if they initiate.",
     "leads": [
       {
         "lead_id": 50,
@@ -177,10 +179,10 @@
   "orchestrator_py_requirement": {
     "status": "NOT_IMPLEMENTED — CRITICAL",
     "file": "src/outlocal/linkedin/orchestrator.py",
-    "directory": "src/outlocal/linkedin/ — create directory first",
-    "build_deadline": "BEFORE Fri 2026-06-12 — ABSOLUTE. 11 days remaining from today (Mon 2026-06-01).",
-    "days_remaining": 11,
-    "reason": "66-session manual delivery failure — 0 connection notes ever sent. orchestrator.py is the only mechanism that writes linkedin_profiles.json in the same session as execution.",
+    "directory": "src/outlocal/linkedin/ — create directory first (does not exist)",
+    "build_deadline": "BEFORE Fri 2026-06-19 — ABSOLUTE. 17 days remaining from today (Tue 2026-06-02). Build this week.",
+    "days_remaining": 17,
+    "reason": "67-session manual delivery failure — 0 connection notes ever sent. orchestrator.py is the only mechanism that writes linkedin_profiles.json in the same session as execution.",
     "minimum_viable_features": [
       "Read data/linkedin_search_plan.json → extract search_queries[]",
       "Drive Playwright: Google search → extract LinkedIn profile URL",
@@ -194,18 +196,18 @@
   },
 
   "summary": {
-    "run_date": "2026-06-01 (Monday — Day 66, Week 11 Start)",
+    "run_date": "2026-06-02 (Tuesday — Day 67, Week 11)",
     "active_notes_count": 0,
     "sector_templates_count": 5,
     "batch6_placeholder_notes_count": 19,
-    "linkedin_profiles_json_status": "NEVER WRITTEN — 66-session failure",
-    "scenario_a_status": "CONFIRMED CLOSED",
-    "scenario_b_status": "LAST VIABLE WINDOW TODAY Monday EOD",
-    "scenario_c_status": "Activates tonight if file not received",
-    "batch6_note_activation_date_b": "Fri 2026-06-12 (Day 3, Scenario B)",
-    "batch6_note_activation_date_c": "Fri 2026-06-19 (Day 3, Scenario C)",
-    "orchestrator_py_status": "NOT_IMPLEMENTED — 11 days to deadline",
-    "changelog_overdue_days": "64+",
-    "consecutive_sessions_without_note_sent": 66
+    "linkedin_profiles_json_status": "NEVER WRITTEN — 67-session failure",
+    "scenario_a_status": "CONFIRMED CLOSED — Day-0 Tue 2026-06-02 (TODAY) never executed",
+    "scenario_b_status": "CONFIRMED CLOSED — Monday EOD deadline passed",
+    "scenario_c_status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16, LinkedIn Day-3 Fri 2026-06-19. No further extensions.",
+    "batch6_note_activation_date_c": "Fri 2026-06-19 (Day-3, Scenario C)",
+    "batch6_archive_trigger_c": "Tue 2026-06-24 EOD — unconditional",
+    "orchestrator_py_status": "NOT_IMPLEMENTED — 17 days to deadline Fri 2026-06-19",
+    "changelog_overdue_days": "65+",
+    "consecutive_sessions_without_note_sent": 67
   }
 }
