@@ -1,44 +1,47 @@
 {
-  "generated_at": "2026-06-01T08:00:00Z",
-  "date": "2026-06-01",
-  "day_number": 66,
+  "generated_at": "2026-06-02T08:00:00Z",
+  "date": "2026-06-02",
+  "day_number": 67,
   "week": 11,
-  "week_start": true,
-  "note": "BRAIN layer — Day 66 (Monday 2026-06-01 — Week 11 Start). SCENARIO A CONFIRMED CLOSED — Sunday EOD deadline passed without batch_6_leads.json (66-session HANDS pattern). TODAY Monday is the ABSOLUTE LAST VIABLE WINDOW for Scenario B (Day-0 Tue 2026-06-09). If batch_6_leads.json NOT received by TODAY EOD: Scenario C activates (Day-0 Tue 2026-06-16). Zero new signals (no lead data from HANDS, 66 consecutive sessions). IMAP gap: 58 days. CHANGELOG 64+ days overdue. Batch 5 FORMALLY CLOSED.",
+  "week_start": false,
+  "note": "BRAIN layer — Day 67 (Tuesday 2026-06-02 — Week 11). SCENARIO B CLOSED — Monday EOD deadline passed without batch_6_leads.json (67-session HANDS pattern). SCENARIO C NOW CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. This was Scenario A's original Day-0 date (Tue Jun 2) — never executed. Zero new signals (no lead data from HANDS, 67 consecutive sessions). IMAP gap: 59 days. CHANGELOG 65+ days overdue. Batch 5 FORMALLY CLOSED. batch_6_leads.json recommended receipt by Thu 2026-06-11 to allow BRAIN per-lead copy generation before Scenario C Day-0.",
 
   "day_assessment": {
-    "today_monday": {
-      "date": "2026-06-01",
-      "day_of_week": "Monday",
-      "campaign_day": 66,
+    "today_tuesday": {
+      "date": "2026-06-02",
+      "day_of_week": "Tuesday",
+      "campaign_day": 67,
       "week_number": 11,
       "is_uk_bank_holiday": false,
       "is_send_day": false,
-      "send_type": "NO SENDS TODAY. Monday is not a send day. Week 11 start. batch_6_leads.json LAST VIABLE WINDOW TODAY EOD.",
+      "send_type": "NO SENDS TODAY. Scenario B closed — batch_6_leads.json not received by Monday EOD. Scenario C Day-0: Tue 2026-06-16. Today was Scenario A's original Day-0 date — never executed.",
       "primary_actions_today": [
-        "SCENARIO A CONFIRMED CLOSED — Tue 2026-06-02 Day-0 not possible. Sunday EOD deadline passed. 66-session HANDS failure.",
-        "batch_6_leads.json — LAST VIABLE WINDOW TODAY EOD for Scenario B (Day-0 Tue 2026-06-09). If not received today: Scenario C activates (Day-0 Tue 2026-06-16). No further extensions after today.",
-        "BRAIN generates Scenario B + C framework templates (awaiting per-lead population). Copy is production-ready structure — only [brackets] need filling from batch_6_leads.json data.",
-        "NO IMAP TODAY — Monday is not a send day. Next IMAP obligation: Batch 6 leads only, per lead before each Day-0 send (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C).",
-        "CHANGELOG.md — 64+ days overdue. MANDATORY same session as Batch 6 Day-0 sends — ABSOLUTE FINAL DEADLINE.",
-        "HANDS: Update all Batch 5 Ryedale leads → sequence_complete in database. Reapproach: 2026-11-26 minimum."
+        "SCENARIO B CLOSED — Monday EOD deadline passed. 67-session HANDS failure. Day-0 Tue 2026-06-09 is no longer possible.",
+        "SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16, 09:00-10:30. This is the only remaining active scenario. No further extensions possible under any circumstances.",
+        "batch_6_leads.json — STILL MISSING (67-session pattern). Recommended receipt: Thu 2026-06-11 EOD (gives BRAIN ~4 days to generate per-lead copy before Scenario C Day-0 Jun 16). Absolute minimum: Mon 2026-06-15 (same-day BRAIN run before Jun 16 sends — not recommended).",
+        "NO IMAP TODAY — Tuesday is not a send day in isolation (Batch 6 not launched). Next IMAP obligation: Batch 6 leads only, per lead before each Day-0 send (Tue 2026-06-16 Scenario C).",
+        "CHANGELOG.md — 65+ days overdue. MANDATORY same session as Batch 6 Day-0 sends (Tue 2026-06-16) — ABSOLUTE FINAL DEADLINE.",
+        "orchestrator.py — NOT IMPLEMENTED. 17 days remaining before Day-3 LinkedIn window (Fri 2026-06-19). Build this week.",
+        "HANDS: Update all Batch 5 Ryedale leads → sequence_complete in database. Reapproach: 2026-11-26 minimum. OVERDUE."
       ],
       "overnight_check": {
         "new_replies_received": false,
-        "new_replies_json_status": "UNCHANGED from 2026-04-04 — 5 historical replies only. Zero overnight arrivals. 66-session HANDS pattern.",
-        "scenario_a_status": "CONFIRMED CLOSED — Sunday EOD deadline passed. Tue 2026-06-02 Day-0 not possible.",
+        "new_replies_json_status": "UNCHANGED from 2026-04-04 — 5 historical replies only. Zero overnight arrivals. 67-session HANDS pattern.",
+        "scenario_a_status": "CONFIRMED CLOSED — Day-0 Tue 2026-06-02 not executed. This is that date. Final.",
+        "scenario_b_status": "CONFIRMED CLOSED — Monday 2026-06-01 EOD deadline passed without batch_6_leads.json. 67-session failure.",
+        "scenario_c_status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16, 09:00-10:30. The only remaining scenario.",
         "batch_5_status": "FORMALLY CLOSED — 2026-05-29 evening. 0 confirmed replies. Reapproach: 2026-11-26 minimum.",
-        "consequence": "Scenario A closed. Scenario B active if file received today EOD. Scenario C activates if not."
+        "consequence": "Scenario C confirmed active. Day-0 Jun 16. Day-3 + LinkedIn Fri Jun 19. Archive trigger Tue Jun 24 EOD."
       }
     }
   },
 
   "imap_status": {
-    "gap_days_from_confirmed_check": 58,
+    "gap_days_from_confirmed_check": 59,
     "last_confirmed_check": "2026-04-04",
     "batch_5_window_closed": "2026-05-29 evening — FINAL. No further IMAP for any Batch 5 lead.",
-    "today_requirement": "NOT REQUIRED — Monday. Not a send day.",
-    "next_imap_obligation": "Batch 6 leads only — per lead before each Day-0 send (Tue 2026-06-09 Scenario B or Tue 2026-06-16 Scenario C).",
+    "today_requirement": "NOT REQUIRED — Batch 6 not launched. No sends today.",
+    "next_imap_obligation": "Batch 6 leads only — per lead before each Day-0 send (Tue 2026-06-16 Scenario C).",
     "leads_never_to_sweep": [1, 3, 22],
     "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No exceptions.",
     "new_replies_since_april": 0,
@@ -52,30 +55,27 @@
     "scenario_a": {
       "condition": "batch_6_leads.json received Sunday 2026-05-31 EOD",
       "day_0_send_date": "Tuesday 2026-06-02",
-      "status": "CONFIRMED CLOSED — Sunday EOD deadline passed. 66-session HANDS failure.",
+      "status": "CONFIRMED CLOSED — TODAY is Scenario A's planned Day-0 date. Never executed. 67-session HANDS failure.",
       "possible": false
     },
     "scenario_b": {
-      "condition": "batch_6_leads.json received TODAY Monday 2026-06-01 EOD",
-      "brain_copy_generation": "Tonight/tomorrow — BRAIN reads batch_6_leads.json, assigns signals per lead, generates per-lead email copy.",
-      "day_0_send_date": "Tuesday 2026-06-09, 09:00-10:30",
-      "day_3_bump_and_linkedin": "Friday 2026-06-12",
-      "linkedin_archive_trigger": "Tuesday 2026-06-17 EOD — fires unconditionally if profiles.json missing",
-      "day_7_new_angle": "Tuesday 2026-06-16",
-      "day_14_breakup": "Tuesday 2026-06-23",
-      "status": "LAST VIABLE WINDOW — TODAY Monday EOD. HANDS must write batch_6_leads.json before end of day.",
-      "possible": true
+      "condition": "batch_6_leads.json received Monday 2026-06-01 EOD",
+      "day_0_date": "Tuesday 2026-06-09",
+      "status": "CONFIRMED CLOSED — Monday EOD deadline passed without file. 67-session HANDS failure. Day-0 Tue 2026-06-09 is no longer possible.",
+      "possible": false
     },
     "scenario_c": {
-      "condition": "batch_6_leads.json NOT received by Monday 2026-06-01 EOD",
-      "brain_copy_generation": "On file receipt (any day this week). BRAIN generates per-lead copy on receipt.",
+      "condition": "batch_6_leads.json NOT received by Monday 2026-06-01 EOD — CONFIRMED",
+      "brain_copy_generation": "On file receipt (any day this week through ~Thu Jun 11 recommended). BRAIN generates per-lead copy on receipt.",
       "day_0_send_date": "Tuesday 2026-06-16, 09:00-10:30",
       "day_3_bump_and_linkedin": "Friday 2026-06-19",
       "linkedin_archive_trigger": "Tuesday 2026-06-24 EOD — fires unconditionally if profiles.json missing",
       "day_7_new_angle": "Tuesday 2026-06-23",
       "day_14_breakup": "Tuesday 2026-06-30",
-      "status": "ACTIVATES if batch_6_leads.json not received today. No further deadline extensions after today.",
-      "possible": true
+      "batch_6_leads_recommended_receipt": "Thu 2026-06-11 EOD — gives BRAIN ~4 days for per-lead copy generation. Absolute minimum: Mon 2026-06-15.",
+      "status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. The only active scenario. No further extensions under any circumstances.",
+      "possible": true,
+      "confirmed": true
     }
   },
 
@@ -89,24 +89,25 @@
       "day_14": "Tue 2026-05-26 — ASSUMED SENT (UNCONFIRMED). FINAL TOUCHPOINT."
     },
     "confirmed_replies": 0,
-    "model_verdict": "SOUND — SSL-PAS 15% INTERESTED rate confirmed Batches 1-4. Batch 5 0% = execution failure (58-day IMAP gap, LinkedIn 66-session failure, no per-lead data file), not model failure.",
+    "model_verdict": "SOUND — SSL-PAS 15% INTERESTED rate confirmed Batches 1-4. Batch 5 0% = execution failure (59-day IMAP gap, LinkedIn 67-session failure, no per-lead data file), not model failure.",
     "reapproach_date": "2026-11-26 minimum",
-    "linkedin_outcome": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. linkedin_profiles.json never written (66-session failure)."
+    "linkedin_outcome": "PERMANENTLY CLOSED — archive trigger fired 2026-05-19 EOD. linkedin_profiles.json never written (67-session failure)."
   },
 
   "batch_6_scrape_plan": {
     "decision": "CONFIRMED LAUNCH — proceeds regardless of Batch 5 reply count",
     "territory": "Harrogate District + Craven District",
-    "batch_6_leads_file_status": "MISSING — batch_6_leads.json NOT WRITTEN (66-session HANDS pattern). LAST VIABLE WINDOW: TODAY Monday 2026-06-01 EOD.",
-    "scenario_b_last_window": "HANDS must write file TODAY by EOD. BRAIN generates copy tonight/tomorrow. Day-0 Tue 2026-06-09.",
-    "scenario_c_activates": "If not received today: Day-0 defers to Tue 2026-06-16. No further extensions.",
+    "batch_6_leads_file_status": "MISSING — batch_6_leads.json NOT WRITTEN (67-session HANDS pattern). Scenario C active — Day-0 Tue 2026-06-16. Recommended receipt: Thu 2026-06-11 EOD.",
+    "scenario_c_confirmed": "Day-0 Tue 2026-06-16. Absolute. No further deadline extensions.",
+    "batch_6_leads_recommended_window": "Any day this week through Thu 2026-06-11. Earlier = more BRAIN preparation time. Absolute minimum: Mon 2026-06-15 (same-day tight run).",
 
     "target_leads": 18,
     "target_range": "18-22",
     "linkedin_mandatory": true,
-    "linkedin_window": "Day 3-7 from Day-0",
-    "linkedin_archive_trigger": "Day 7 from Day-0 — fires unconditionally if profiles.json missing",
-    "orchestrator_py_status": "NOT IMPLEMENTED — CRITICAL. Must be built before Fri 2026-06-12 (Scenario B) or Fri 2026-06-19 (Scenario C).",
+    "linkedin_window": "Day 3-7 from Day-0 (Fri 2026-06-19 through Tue 2026-06-24)",
+    "linkedin_archive_trigger": "Tue 2026-06-24 EOD — fires unconditionally if profiles.json missing",
+    "orchestrator_py_status": "NOT IMPLEMENTED — 17 days remaining. Must be built before Fri 2026-06-19 (Day-3 window).",
+    "orchestrator_py_build_deadline": "Fri 2026-06-19 (Day-3 LinkedIn window opens) — absolute. Build this week.",
 
     "target_towns": {
       "harrogate_district": [
@@ -179,7 +180,7 @@
   "new_signals_today": 0,
   "new_leads_today": 0,
   "signal_assignments": [],
-  "signal_assignment_note": "No new lead data received from HANDS (66 consecutive sessions). batch_6_leads.json last viable window TODAY Monday EOD. If file received today: BRAIN generates per-lead signal assignments tonight/tomorrow. If still missing today: Scenario C activates (Day-0 Tue 2026-06-16), BRAIN generates copy on receipt.",
+  "signal_assignment_note": "No new lead data received from HANDS (67 consecutive sessions). batch_6_leads.json now needed for Scenario C — recommended by Thu 2026-06-11 EOD. BRAIN generates per-lead signal assignments on receipt. Absolute minimum receipt date: Mon 2026-06-15 (same-day tight BRAIN run before Jun 16 sends — not recommended).",
 
   "do_not_email": [1, 2, 3, 7, 19, 22],
   "suppressed_lead_ids": [7, 19],
@@ -189,29 +190,36 @@
   "batch_5_sequences_complete_after_day14": "All Batch 5 Ryedale leads assumed sequence_complete after Day-14 (UNCONFIRMED). HANDS: update lead status to sequence_complete in database. Reapproach: 2026-11-26 minimum.",
 
   "forward_calendar": {
-    "monday_2026_06_01_today": {
-      "action": "Week 11 start. No sends. No IMAP. batch_6_leads.json LAST VIABLE WINDOW TODAY EOD for Scenario B. BRAIN generates copy on receipt. Scenario C activates if not received today."
+    "tuesday_2026_06_02_today": {
+      "action": "Day 67. No sends. No IMAP. Scenario B confirmed CLOSED. Scenario C CONFIRMED ACTIVE. This was Scenario A's planned Day-0 — never executed. batch_6_leads.json recommended by Thu Jun 11."
     },
-    "tuesday_2026_06_09_scenario_b": {
-      "action": "SCENARIO B: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead before each send. CHANGELOG mandatory this session. 10-min stagger."
+    "thursday_2026_06_11_recommended": {
+      "action": "Recommended deadline for batch_6_leads.json receipt — allows BRAIN ~4 days per-lead copy generation before Scenario C Day-0 Jun 16.",
+      "note": "Not absolute — absolute minimum is Mon Jun 15. But Thu Jun 11 gives the best execution quality."
     },
-    "friday_2026_06_12_scenario_b": {
-      "action": "SCENARIO B: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-17 EOD unconditional."
+    "monday_2026_06_15_absolute_minimum": {
+      "action": "Absolute minimum batch_6_leads.json receipt for Scenario C Day-0 to proceed Tuesday Jun 16. Same-day BRAIN run. Not recommended — tight margin."
     },
-    "tuesday_2026_06_16_scenario_b_and_c": {
-      "action": "SCENARIO B: Day-7 new angle. SCENARIO C: BATCH 6 DAY-0 SENDS (09:00-10:30, IMAP per lead). CHANGELOG mandatory if not done 2026-06-09."
-    },
-    "tuesday_2026_06_17_eod_scenario_b": {
-      "action": "SCENARIO B: LinkedIn archive trigger fires unconditionally if profiles.json missing."
+    "tuesday_2026_06_16_scenario_c": {
+      "action": "SCENARIO C: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead before each send. CHANGELOG MANDATORY this session (65+ days overdue — ABSOLUTE FINAL DEADLINE). 10-min stagger."
     },
     "friday_2026_06_19_scenario_c": {
-      "action": "SCENARIO C: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-24 EOD."
+      "action": "SCENARIO C: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-24 EOD unconditional. orchestrator.py must be built before this date."
+    },
+    "tuesday_2026_06_23_scenario_c": {
+      "action": "SCENARIO C: Day-7 new angle. IMAP per lead."
+    },
+    "tuesday_2026_06_24_eod_scenario_c": {
+      "action": "SCENARIO C: LinkedIn archive trigger fires unconditionally if profiles.json missing."
+    },
+    "tuesday_2026_06_30_scenario_c": {
+      "action": "SCENARIO C: Day-14 breakup (final touchpoint — 4-touchpoint hard limit)."
     }
   },
 
   "changelog_status": {
-    "days_overdue": "64+",
-    "current_status": "ABSOLUTE FINAL TOLERANCE — mandatory same session as Batch 6 Day-0 sends. Zero further tolerance.",
+    "days_overdue": "65+",
+    "current_status": "ABSOLUTE FINAL TOLERANCE — mandatory same session as Batch 6 Day-0 sends (Tue 2026-06-16). Zero further tolerance.",
     "minimum_entries_required": [
       "Batch 5 Day-0 sends (assumed 2026-05-12) — include per-lead results if available",
       "Batch 5 Day-3 bumps (assumed 2026-05-15)",
@@ -219,27 +227,34 @@
       "Batch 5 Day-14 sends (assumed 2026-05-26) — final touchpoint",
       "fu_041-045 outcomes (assumed sent Mon 2026-05-11) — leads 30/31/32/58/59",
       "Archive decisions: leads 1/3/22 (LOST_NO_RESPONSE), leads 49/51 (LOST_UNRESOLVED), leads 53/54 (LOST_UNRESOLVED)",
-      "All IMAP gaps since 2026-04-04 (58 days — all sweeps UNCONFIRMED)",
-      "LinkedIn archive outcome (66-session failure, trigger fired 2026-05-19 EOD)",
+      "All IMAP gaps since 2026-04-04 (59 days — all sweeps UNCONFIRMED)",
+      "LinkedIn archive outcome (67-session failure, trigger fired 2026-05-19 EOD)",
       "Batch 5 formal closure (0 confirmed replies — 2026-05-29 evening)",
-      "batch_6_leads.json delivery status (missed all deadlines through Mon 2026-06-01)"
+      "batch_6_leads.json delivery status (missed Scenarios A, B, and counting)",
+      "Scenario A non-execution (Day-0 Tue Jun 2 — today — never happened)",
+      "Scenario B closure (Monday EOD deadline passed)"
     ]
   },
 
   "summary": {
-    "day": 66,
-    "date": "2026-06-01 (Monday — Week 11 Start)",
-    "today_primary_action": "Scenario A CLOSED. Scenario B last window TODAY EOD. Scenario C activates if file not received today.",
-    "imap_gap_days": 58,
+    "day": 67,
+    "date": "2026-06-02 (Tuesday — Week 11 — Scenario C Day-0 minus 14 days)",
+    "today_primary_action": "Scenario B CLOSED. Scenario C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. batch_6_leads.json recommended by Thu Jun 11.",
+    "imap_gap_days": 59,
     "last_confirmed_check": "2026-04-04",
-    "scenario_a_status": "CONFIRMED CLOSED — Sunday EOD deadline passed",
-    "scenario_b_status": "LAST VIABLE WINDOW TODAY EOD — batch_6_leads.json required by tonight",
-    "scenario_c_status": "Activates if batch_6_leads.json not received today",
-    "batch_6_day0_scenario_b": "Tuesday 2026-06-09 — IF batch_6_leads.json received TODAY + BRAIN copy generated",
-    "batch_6_day0_scenario_c": "Tuesday 2026-06-16 — IF batch_6_leads.json not received by today EOD",
+    "scenario_a_status": "CONFIRMED CLOSED — planned Day-0 today (Tue Jun 2). Never executed.",
+    "scenario_b_status": "CONFIRMED CLOSED — Monday EOD deadline passed. 67-session failure.",
+    "scenario_c_status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16, 09:00-10:30.",
+    "batch_6_day0": "Tuesday 2026-06-16",
+    "batch_6_day3_linkedin": "Friday 2026-06-19",
+    "linkedin_archive_trigger": "Tuesday 2026-06-24 EOD — unconditional",
+    "batch_6_day7": "Tuesday 2026-06-23",
+    "batch_6_day14": "Tuesday 2026-06-30",
     "linkedin_channel": "PERMANENTLY CLOSED for Batch 5 and all prior. MANDATORY for Batch 6 Day 3-7.",
-    "changelog_overdue_days": "64+",
-    "changelog_mandatory": "Same session as Batch 6 Day-0 sends — absolute final deadline",
+    "orchestrator_py_days_remaining": 17,
+    "orchestrator_py_deadline": "Fri 2026-06-19 (Day-3 LinkedIn window)",
+    "changelog_overdue_days": "65+",
+    "changelog_mandatory": "Same session as Batch 6 Day-0 sends (Tue 2026-06-16) — absolute final deadline",
     "new_leads": 0,
     "new_signals": 0,
     "overnight_new_replies": 0

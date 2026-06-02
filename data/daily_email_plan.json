@@ -1,35 +1,36 @@
 [
   {
-    "plan_date": "2026-06-01",
-    "generated_at": "2026-06-01T08:00:00Z",
-    "day_number": 66,
+    "plan_date": "2026-06-02",
+    "generated_at": "2026-06-02T08:00:00Z",
+    "day_number": 67,
     "week": 11,
-    "week_start": true,
-    "note": "BRAIN layer — Day 66 (Monday 2026-06-01 — Week 11 Start). SCENARIO A CONFIRMED CLOSED (Tue 2026-06-02 Day-0 not possible — Sunday EOD deadline passed). NO SENDS TODAY. batch_6_leads.json STILL MISSING (66-session pattern) — LAST VIABLE WINDOW TODAY EOD for Scenario B (Day-0 Tue 2026-06-09). If file received today: BRAIN populates [brackets] from per-lead data. Scenario C (Day-0 Tue 2026-06-16) activates if file not received today. Templates below are production-ready structure awaiting per-lead population. Signal mix: 60% SSL-PAS / 20% Mobile-PAS / 15% No-website BAB / 5% AIDA.",
+    "week_start": false,
+    "note": "BRAIN layer — Day 67 (Tuesday 2026-06-02 — Week 11). SCENARIO B CONFIRMED CLOSED — Monday EOD deadline passed without batch_6_leads.json (67-session HANDS pattern). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. This is Scenario A's original Day-0 date (never executed). NO SENDS TODAY. batch_6_leads.json recommended receipt: Thu 2026-06-11 EOD (allows ~4 days BRAIN per-lead copy generation). Templates below are production-ready awaiting per-lead population. Signal mix: 60% SSL-PAS / 20% Mobile-PAS / 15% No-website BAB / 5% AIDA.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No sends today — Monday block. Next send: Batch 6 Day-0 (Tue 2026-06-09 Scenario B if file received TODAY EOD, or Tue 2026-06-16 Scenario C if not).",
+    "new_sends_note": "No sends today. Scenario C Day-0: Tue 2026-06-16. batch_6_leads.json still missing — recommended by Thu 2026-06-11 for BRAIN copy generation lead time.",
 
     "scenario_status": {
       "scenario_a": {
-        "day_0_date": "2026-06-02",
-        "status": "CONFIRMED CLOSED — Sunday EOD deadline passed. 66-session HANDS failure. Not possible.",
+        "day_0_date": "2026-06-02 (TODAY — this date)",
+        "status": "CONFIRMED CLOSED — planned Day-0 date was today (Tue Jun 2). Never executed. 67-session HANDS failure.",
         "possible": false
       },
       "scenario_b": {
-        "condition": "batch_6_leads.json received TODAY Monday 2026-06-01 EOD",
+        "condition": "batch_6_leads.json received Monday 2026-06-01 EOD",
         "day_0_date": "2026-06-09 (Tuesday)",
-        "status": "LAST VIABLE WINDOW — TODAY EOD. HANDS must write file by tonight.",
-        "send_window": "09:00-10:30",
-        "possible": true
+        "status": "CONFIRMED CLOSED — Monday EOD deadline passed without file. 67-session HANDS failure. Day-0 Tue 2026-06-09 no longer possible.",
+        "possible": false
       },
       "scenario_c": {
-        "condition": "batch_6_leads.json NOT received by today EOD",
+        "condition": "CONFIRMED — batch_6_leads.json not received by Monday 2026-06-01 EOD",
         "day_0_date": "2026-06-16 (Tuesday)",
-        "status": "ACTIVATES if file not received today. No further extensions.",
+        "status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16, 09:00-10:30. The only active scenario. No further extensions.",
         "send_window": "09:00-10:30",
-        "possible": true
+        "batch_6_leads_recommended": "Thu 2026-06-11 EOD — allows ~4 days BRAIN per-lead copy generation. Absolute minimum: Mon 2026-06-15.",
+        "possible": true,
+        "confirmed": true
       }
     },
 
@@ -46,7 +47,7 @@
 
     "batch_6_email_templates": {
       "launch_territory": "Harrogate District + Craven District",
-      "batch_6_leads_file_status": "MISSING (66-session pattern) — last viable window TODAY Monday EOD for Scenario B. Per-lead [brackets] require file. Templates ready.",
+      "batch_6_leads_file_status": "MISSING (67-session pattern) — Scenario C confirmed active. Recommended receipt: Thu 2026-06-11 EOD. Templates ready — per-lead [brackets] require file.",
       "signal_mix": {
         "ssl_pas": "60%",
         "mobile_pas": "20%",
@@ -133,9 +134,8 @@
 
     "batch_6_day3_templates": {
       "note": "Day-3 bump templates — thread reply to Day-0. 3-5 lines. Signal-specific. NOT a new pitch.",
-      "send_date_scenario_b": "2026-06-12 (Friday)",
       "send_date_scenario_c": "2026-06-19 (Friday)",
-      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger fires Day 7 from Day-0 unconditionally. orchestrator.py must be built before this date.",
+      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger fires Tue 2026-06-24 EOD unconditionally. orchestrator.py must be built before this date (17 days remaining).",
       "ssl_bump": {
         "framework": "thread_reply",
         "signal": "ssl",
@@ -155,7 +155,6 @@
 
     "batch_6_day7_templates": {
       "note": "Day-7 new angle — STANDALONE new email. New subject. DIFFERENT pain point from Day-0. NOT a thread reply. Rule: genuinely different pain point — reframe = 0% response.",
-      "send_date_scenario_b": "2026-06-16 (Tuesday)",
       "send_date_scenario_c": "2026-06-23 (Tuesday)",
       "ssl_to_ranking_pivot": {
         "signal_day0": "ssl",
@@ -179,7 +178,6 @@
 
     "batch_6_day14_templates": {
       "note": "Day-14 breakup — STANDALONE new email. 3 lines max. No pressure. Door open. FINAL touchpoint — 4-touchpoint hard limit.",
-      "send_date_scenario_b": "2026-06-23 (Tuesday)",
       "send_date_scenario_c": "2026-06-30 (Tuesday)",
       "ssl_breakup": {
         "signal": "ssl",
@@ -199,17 +197,14 @@
     },
 
     "forward_plan": {
-      "monday_2026_06_01_today": "NO SENDS. No IMAP. Monday block. Scenario A CLOSED. batch_6_leads.json LAST VIABLE WINDOW TODAY EOD for Scenario B.",
-      "tuesday_2026_06_09_scenario_b": "SCENARIO B: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead before each send. CHANGELOG mandatory this session. 10-min stagger.",
-      "friday_2026_06_12_scenario_b": "SCENARIO B: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-17 EOD unconditional.",
-      "tuesday_2026_06_16_scenario_b": "SCENARIO B: Day-7 new angle. IMAP per lead.",
-      "tuesday_2026_06_16_scenario_c": "SCENARIO C: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead. CHANGELOG mandatory.",
-      "tuesday_2026_06_17_eod_scenario_b": "SCENARIO B: LinkedIn archive trigger fires unconditionally if profiles.json missing.",
-      "friday_2026_06_19_scenario_c": "SCENARIO C: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-24 EOD.",
-      "tuesday_2026_06_23_scenario_b": "SCENARIO B: Day-14 breakup (final touchpoint).",
-      "tuesday_2026_06_23_scenario_c": "SCENARIO C: Day-7 new angle.",
+      "tuesday_2026_06_02_today": "NO SENDS. No IMAP. Scenario A's original Day-0 — never executed. Scenario B CLOSED. Scenario C CONFIRMED ACTIVE. batch_6_leads.json recommended by Thu Jun 11.",
+      "thursday_2026_06_11_recommended": "Recommended batch_6_leads.json receipt deadline. Gives BRAIN ~4 days to generate per-lead copy before Scenario C Day-0 Jun 16.",
+      "monday_2026_06_15_minimum": "Absolute minimum batch_6_leads.json receipt for BRAIN same-day run. Not recommended — tight margin.",
+      "tuesday_2026_06_16_scenario_c": "SCENARIO C: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead before each send. CHANGELOG MANDATORY this session (65+ days overdue — ABSOLUTE FINAL DEADLINE). 10-min stagger.",
+      "friday_2026_06_19_scenario_c": "SCENARIO C: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-24 EOD unconditional. orchestrator.py must be built before this date.",
+      "tuesday_2026_06_23_scenario_c": "SCENARIO C: Day-7 new angle. IMAP per lead.",
       "tuesday_2026_06_24_eod_scenario_c": "SCENARIO C: LinkedIn archive trigger fires unconditionally if profiles.json missing.",
-      "tuesday_2026_06_30_scenario_c": "SCENARIO C: Day-14 breakup (final touchpoint)."
+      "tuesday_2026_06_30_scenario_c": "SCENARIO C: Day-14 breakup (final touchpoint — 4-touchpoint hard limit)."
     }
   }
 ]

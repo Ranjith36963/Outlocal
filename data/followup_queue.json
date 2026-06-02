@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-06-01T08:00:00Z",
-  "date": "2026-06-01",
-  "day_number": 66,
+  "generated_at": "2026-06-02T08:00:00Z",
+  "date": "2026-06-02",
+  "day_number": 67,
   "week": 11,
-  "week_start": true,
-  "note": "BRAIN layer — Day 66 (Monday 2026-06-01 — Week 11 Start). Scenario A CONFIRMED CLOSED. No active follow-ups today. All Batch 5 sequences assumed complete. Monday is not a send day. Next follow-up obligation: Batch 6 Day-3 bump — Fri 2026-06-12 (Scenario B) or Fri 2026-06-19 (Scenario C). batch_6_leads.json STILL MISSING — last viable window TODAY EOD for Scenario B.",
+  "week_start": false,
+  "note": "BRAIN layer — Day 67 (Tuesday 2026-06-02 — Week 11). SCENARIO B CONFIRMED CLOSED — Monday EOD deadline passed (67-session HANDS failure). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. No active follow-ups today. All Batch 5 sequences assumed complete. Batch 6 not yet launched. Next follow-up obligation: Batch 6 Day-3 bump + LinkedIn — Fri 2026-06-19 (Scenario C).",
 
   "active_followups_today": [],
   "active_followups_count": 0,
-  "followup_note": "No follow-ups due today. Monday block. All Batch 5 sequences assumed complete. Post-Day-14 window CLOSED Fri 2026-05-29 evening. Batch 6 not yet launched. Scenario A CLOSED.",
+  "followup_note": "No follow-ups due today. Scenario C Day-0: Tue 2026-06-16. All Batch 5 sequences assumed complete. Post-Day-14 window CLOSED Fri 2026-05-29 evening. Batch 6 not yet launched.",
 
   "send_today": {
     "send_today": false,
-    "reason": "Monday block. Scenario A CLOSED. Next send: Batch 6 Day-0 — Tue 2026-06-09 (Scenario B, if batch_6_leads.json received TODAY EOD) or Tue 2026-06-16 (Scenario C, if not received today)."
+    "reason": "Scenario C confirmed active. Next send: Batch 6 Day-0 — Tue 2026-06-16, 09:00-10:30 (if batch_6_leads.json received by ~Thu 2026-06-11 for BRAIN copy generation)."
   },
 
   "batch_5_sequence_status": {
     "territory": "Ryedale District — Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent",
     "formal_closure_date": "2026-05-29 evening (post-Day-14 72h window closed)",
-    "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 20},
-    "day_3_bump": {"date": "2026-05-15 (Friday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 17},
-    "day_7_new_angle": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 13},
+    "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 21},
+    "day_3_bump": {"date": "2026-05-15 (Friday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 18},
+    "day_7_new_angle": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 14},
     "day_14_breakup": {
       "date": "2026-05-26 (Tuesday)",
-      "status": "ASSUMED SENT — UNCONFIRMED (66-session HANDS pattern)",
-      "days_ago": 6,
+      "status": "ASSUMED SENT — UNCONFIRMED (67-session HANDS pattern)",
+      "days_ago": 7,
       "note": "Day-14 was the FINAL touchpoint. 4-touchpoint hard limit enforced. No further email sends to any Batch 5 lead. Reapproach: 2026-11-26 minimum."
     },
     "sequence_complete": "ASSUMED — all 4 touchpoints assumed sent. FORMALLY CLOSED 2026-05-29 evening. No further email sends. No further IMAP.",
@@ -53,69 +53,52 @@
   },
 
   "batch_6_followup_schedule": {
-    "note": "Batch 6 follow-up schedule — active date depends on batch_6_leads.json delivery. TODAY Monday EOD is the last window for Scenario B (Day-0 Tue Jun 9). Scenario C (Day-0 Tue Jun 16) activates if not received today.",
+    "note": "Batch 6 follow-up schedule — Scenario C confirmed active. Day-0 Tue 2026-06-16 (if batch_6_leads.json received by ~Thu 2026-06-11 for BRAIN per-lead copy).",
 
-    "scenario_b_day0_tue_2026_06_09": {
-      "condition": "batch_6_leads.json received TODAY Monday 2026-06-01 EOD AND BRAIN copy generated tonight/tomorrow",
+    "scenario_c_day0_tue_2026_06_16": {
+      "condition": "CONFIRMED ACTIVE — batch_6_leads.json NOT received by Monday 2026-06-01 EOD",
       "day_0": {
-        "planned_date": "2026-06-09 (Tuesday)",
+        "planned_date": "2026-06-16 (Tuesday)",
         "territory": "Harrogate District + Craven District",
-        "status": "CONTINGENT — batch_6_leads.json must be received TONIGHT Monday by EOD",
+        "status": "CONFIRMED — Scenario C Day-0",
         "send_window": "09:00-10:30",
         "stagger": "10 minutes between sends",
-        "imap_precondition": "MANDATORY per lead before each send — no exceptions"
+        "imap_precondition": "MANDATORY per lead before each send — no exceptions",
+        "batch_6_leads_recommended": "Thu 2026-06-11 EOD for BRAIN per-lead copy generation"
       },
       "day_3_bump": {
-        "planned_date": "2026-06-12 (Friday)",
+        "planned_date": "2026-06-19 (Friday)",
         "status": "Activates after Day-0 confirmed",
         "type": "Thread reply — 3-5 lines. Signal-specific.",
         "imap_precondition": "MANDATORY per lead before bump",
-        "linkedin_note": "LINKEDIN MANDATORY DAY 3 — execute AND write profiles.json SAME SESSION. Archive trigger Tue 2026-06-17 EOD unconditional. orchestrator.py must be built before this date."
+        "linkedin_note": "LINKEDIN MANDATORY DAY 3 — execute AND write profiles.json SAME SESSION. Archive trigger Tue 2026-06-24 EOD unconditional. orchestrator.py must be built before this date (17 days remaining)."
       },
       "day_7_new_angle": {
-        "planned_date": "2026-06-16 (Tuesday)",
+        "planned_date": "2026-06-23 (Tuesday)",
         "type": "Standalone NEW email. New subject. New pain point.",
         "imap_precondition": "MANDATORY per lead"
       },
       "day_14_breakup": {
-        "planned_date": "2026-06-23 (Tuesday)",
+        "planned_date": "2026-06-30 (Tuesday)",
         "type": "Standalone NEW email. 3 lines max. No pressure. Door open. FINAL touchpoint.",
         "imap_precondition": "MANDATORY per lead"
       },
-      "linkedin_archive_trigger": "2026-06-17 EOD (Tue) — fires unconditionally if profiles.json missing"
-    },
-
-    "scenario_c_day0_deferred_tue_2026_06_16": {
-      "condition": "batch_6_leads.json NOT received by Monday 2026-06-01 EOD",
-      "day_0": {
-        "planned_date": "2026-06-16 (Tuesday)",
-        "territory": "Harrogate District + Craven District",
-        "status": "ACTIVATES if batch_6_leads.json not received today Monday",
-        "send_window": "09:00-10:30"
-      },
-      "day_3_bump": {
-        "planned_date": "2026-06-19 (Friday)",
-        "linkedin_note": "LINKEDIN MANDATORY DAY 3 — execute AND write profiles.json SAME SESSION. Archive trigger Tue 2026-06-24 EOD."
-      },
-      "day_7_new_angle": {"planned_date": "2026-06-23 (Tuesday)"},
-      "day_14_breakup": {"planned_date": "2026-06-30 (Tuesday)"},
       "linkedin_archive_trigger": "2026-06-24 EOD (Tue) — fires unconditionally if profiles.json missing"
     }
   },
 
   "imap_monitoring_schedule": {
-    "monday_2026_06_01_today": {
-      "requirement": "NOT REQUIRED — Monday block. No sends. BRAIN copy generation run only."
-    },
-    "tuesday_2026_06_09_scenario_b": {
-      "requirement": "IMAP per Batch 6 lead before each Day-0 send. Standard pre-send IMAP protocol.",
-      "note": "Only applies if batch_6_leads.json received TODAY Monday EOD + BRAIN copy confirmed tonight/tomorrow."
+    "tuesday_2026_06_02_today": {
+      "requirement": "NOT REQUIRED — Tuesday 2026-06-02. Batch 6 not launched. No sends today."
     },
     "tuesday_2026_06_16_scenario_c": {
-      "requirement": "IMAP per Batch 6 lead before each Day-0 send (Scenario C deferred Day-0)."
+      "requirement": "IMAP per Batch 6 lead before each Day-0 send (Scenario C Day-0). Per-lead, pre-send. No exceptions."
+    },
+    "friday_2026_06_19_scenario_c": {
+      "requirement": "IMAP per Batch 6 lead before each Day-3 bump. LinkedIn MANDATORY same session."
     },
     "ongoing_from_day_0": {
-      "requirement": "Weekly IMAP minimum — every 7 days from Day-0 send date. 58-day gap was an operational failure that must not recur."
+      "requirement": "Weekly IMAP minimum — every 7 days from Day-0 send date. 59-day gap was an operational failure that must not recur for Batch 6."
     }
   },
 
@@ -123,17 +106,17 @@
     "active_followups_today": 0,
     "send_today": false,
     "batch_5_status": "FORMALLY CLOSED — 0 confirmed replies. Window closed 2026-05-29 evening.",
-    "scenario_a_status": "CONFIRMED CLOSED — Sunday EOD deadline passed",
-    "scenario_b_status": "LAST VIABLE WINDOW TODAY EOD — batch_6_leads.json required by tonight",
-    "scenario_c_status": "Activates if batch_6_leads.json not received today",
+    "scenario_b_status": "CONFIRMED CLOSED — Monday EOD deadline passed",
+    "scenario_c_status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16",
     "post_day14_window": "CLOSED — effective Friday 2026-05-29 evening.",
-    "imap_gap_days": 58,
+    "imap_gap_days": 59,
     "imap_mandatory_today": false,
-    "next_followup_obligation": "Batch 6 Day-3 bump — Fri 2026-06-12 (Scenario B) or Fri 2026-06-19 (Scenario C)",
+    "next_followup_obligation": "Batch 6 Day-3 bump + LinkedIn — Fri 2026-06-19 (Scenario C)",
+    "next_send_obligation": "Batch 6 Day-0 — Tue 2026-06-16 (Scenario C)",
     "legacy_sequences": "ALL ASSUMED COMPLETE",
-    "changelog_overdue_days": "64+",
-    "batch_6_leads_file": "STILL MISSING — last viable window TODAY Monday EOD (Scenario B). Scenario C activates if not received.",
-    "batch_6_scenario_b": "Day-0 Tue 2026-06-09 — CONTINGENT on file received TODAY EOD",
-    "batch_6_scenario_c": "Day-0 Tue 2026-06-16 — ACTIVATES if file not received today"
+    "changelog_overdue_days": "65+",
+    "batch_6_leads_file": "STILL MISSING — 67-session pattern. Recommended by Thu 2026-06-11. Scenario C Day-0 Tue 2026-06-16.",
+    "orchestrator_py_days_remaining": 17,
+    "orchestrator_py_deadline": "Fri 2026-06-19 (Day-3 LinkedIn window)"
   }
 }
