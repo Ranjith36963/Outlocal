@@ -1,41 +1,41 @@
 {
-  "classified_at": "2026-06-02T08:00:00Z",
-  "date": "2026-06-02",
-  "day_number": 67,
+  "classified_at": "2026-06-03T08:00:00Z",
+  "date": "2026-06-03",
+  "day_number": 68,
   "week": 11,
   "week_start": false,
-  "note": "BRAIN layer — Day 67 (Tuesday 2026-06-02 — Week 11). new_replies.json CONFIRMED UNCHANGED from 2026-04-04 (59 days, zero overnight arrivals — 67-session HANDS pattern). SCENARIO B CONFIRMED CLOSED. SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. IMAP gap: 59 days from last confirmed check. Batch 5 formally closed 2026-05-29 evening — 0 confirmed replies across full 4-touchpoint sequence. Post-Day-14 window CLOSED Friday 2026-05-29 evening — UNCONDITIONAL. No new replies to classify this run. Zero Batch 6 replies (Batch 6 not yet launched). Next IMAP obligation: Batch 6 leads only, per lead before each Day-0 send (Tue 2026-06-16 Scenario C).",
+  "note": "BRAIN layer — Day 68 (Wednesday 2026-06-03 — Week 11). new_replies.json CONFIRMED UNCHANGED from 2026-04-04 (60 days, zero overnight arrivals — 68-session HANDS pattern). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16 (13 days). IMAP gap: 60 days from last confirmed check. Batch 5 formally closed 2026-05-29 evening — 0 confirmed replies. Post-Day-14 window CLOSED Friday 2026-05-29 evening — UNCONDITIONAL. No new replies to classify this run. Zero Batch 6 replies (Batch 6 not yet launched). Next IMAP obligation: Batch 6 leads only, per lead before each Day-0 send (Tue 2026-06-16 Scenario C).",
 
   "new_replies_this_run": 0,
   "overnight_new_replies": 0,
-  "imap_gap_days_from_confirmed_check": 59,
+  "imap_gap_days_from_confirmed_check": 60,
   "imap_last_confirmed_check": "2026-04-04",
   "batch_5_window_closed": "2026-05-29 evening — UNCONDITIONAL. No further Batch 5 monitoring.",
-  "reply_wave_status": "POST-DAY-14 WINDOW CLOSED — effective Friday 2026-05-29 evening. Batch 5 formally closed with 0 confirmed replies. Batch 6 not yet launched — no reply wave open.",
+  "reply_wave_status": "POST-DAY-14 WINDOW CLOSED — effective Friday 2026-05-29 evening. Batch 5 formally closed with 0 confirmed replies. Batch 6 not yet launched.",
 
   "week_11_classification_summary": {
     "week_dates": "2026-06-01 to 2026-06-07",
     "new_replies_week_11_so_far": 0,
     "imap_sweeps_confirmed_week_11": 0,
-    "note": "Week 11 Day 2 (Tuesday). Scenario B closed — Day-0 Tue Jun 9 not possible. Scenario C active — Day-0 Tue Jun 16. No replies possible until Batch 6 launches. IMAP not required today."
+    "note": "Week 11 Day 3 (Wednesday). Scenario C active — Day-0 Tue Jun 16 (13 days). No replies possible until Batch 6 launches. IMAP not required today."
   },
 
   "imap_today_required": {
-    "date": "NOT REQUIRED — Tuesday 2026-06-02. Batch 6 not launched. No sends today.",
+    "date": "NOT REQUIRED — Wednesday 2026-06-03. Batch 6 not launched. No sends today.",
     "priority": "NOT REQUIRED",
     "next_imap_obligation": "Batch 6 leads only — per lead before each Day-0 send (Tue 2026-06-16 Scenario C).",
     "incidental_batch_5_reply_protocol": {
-      "description": "If any Batch 5 reply found incidentally during Batch 6 pre-send IMAP: treat as new reply, classify below, 24h proposal SLA from discovery time (24/7 — NON-NEGOTIABLE). Sequence complete — no further email sends to Batch 5 lead.",
+      "description": "If any Batch 5 reply found incidentally during Batch 6 pre-send IMAP: classify below, 24h proposal SLA from discovery time (24/7 — NON-NEGOTIABLE). Sequence complete — no further email sends.",
       "action": "Append to classifications[], write to new_replies.json, update value_delivery_queue.json + CHANGELOG same session."
     },
     "leads_never_to_sweep": [1, 3, 22],
-    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD. No further IMAP for these leads ever."
+    "leads_never_to_sweep_reason": "Archive UNCONDITIONALLY FINAL from 2026-05-08 EOD."
   },
 
   "batch_5_formal_close": {
     "window_closed": "2026-05-29 evening — unconditional",
     "final_reply_count": 0,
-    "model_verdict": "SOUND — 0% Batch 5 reply rate is execution failure (59-day IMAP gap, LinkedIn 67-session failure, no per-lead data file), not model failure. SSL-PAS 15% INTERESTED rate remains the proven baseline.",
+    "model_verdict": "SOUND — 0% Batch 5 reply rate is execution failure (60-day IMAP gap, LinkedIn 68-session failure, no per-lead data file), not model failure.",
     "reapproach_date": "2026-11-26 minimum"
   },
 
@@ -48,108 +48,68 @@
   "classifications": [
     {
       "reply_id": 7,
-      "email_id": 3,
       "lead_id": 3,
       "business_name": "Westfield Hair & Beauty",
       "town": "Leeds",
-      "received_at": "2026-04-04T10:14:00Z",
       "classification": "INTERESTED",
-      "confidence": "high",
-      "reasoning": "Confirmed call for Tuesday 2pm. Volunteered booking gap independently — strong buying signal.",
-      "current_status": "PERMANENTLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. Override window closed 2026-05-08 EOD. UNCONDITIONALLY FINAL.",
-      "lead_status_update": "lost_no_response",
-      "block_all_email_followups": true,
-      "linkedin_available": false,
-      "imap_override": "CLOSED — no further override attempts under any circumstances"
+      "received_at": "2026-04-04T10:14:00Z",
+      "classified_at": "2026-04-04T10:14:00Z",
+      "confidence": "HIGH",
+      "key_signal": "Confirmed meeting time, acknowledged booking problem as biggest issue",
+      "status": "ARCHIVED_LOST_NO_RESPONSE — LinkedIn never activated. Archive unconditional from 2026-05-08 EOD.",
+      "reapproach_date": "2026-10-26"
     },
     {
       "reply_id": 8,
-      "email_id": 22,
       "lead_id": 22,
       "business_name": "Pennine Print & Design",
       "town": "Sowerby Bridge",
-      "received_at": "2026-04-04T14:32:00Z",
       "classification": "INTERESTED",
-      "confidence": "high",
-      "reasoning": "Asked to bundle fixes into redesign — buyer's question. 'Sort the whole thing in one go' is the strongest upsell signal in the campaign.",
-      "current_status": "PERMANENTLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. Override window closed 2026-05-08 EOD. UNCONDITIONALLY FINAL.",
-      "lead_status_update": "lost_no_response",
-      "upsell_signal": true,
-      "block_all_email_followups": true,
-      "linkedin_available": false,
-      "imap_override": "CLOSED — no further override attempts under any circumstances"
+      "received_at": "2026-04-04T14:32:00Z",
+      "classified_at": "2026-04-04T14:32:00Z",
+      "confidence": "HIGH",
+      "key_signal": "Pricing receptive, asking about scope, considering full redesign",
+      "status": "ARCHIVED_LOST_NO_RESPONSE — LinkedIn never activated. Archive unconditional from 2026-05-08 EOD.",
+      "reapproach_date": "2026-10-26"
     },
     {
       "reply_id": 9,
-      "email_id": 1,
       "lead_id": 1,
       "business_name": "Ripon Road Carpentry",
       "town": "Ripon",
-      "received_at": "2026-04-04T09:05:00Z",
       "classification": "INTERESTED",
-      "confidence": "high",
-      "reasoning": "Acknowledged pain unprompted, confirmed workflow problem (no quote form), asked for pricing.",
-      "current_status": "PERMANENTLY_ARCHIVED_LOST_NO_RESPONSE — declared 2026-05-07. Override window closed 2026-05-08 EOD. UNCONDITIONALLY FINAL.",
-      "lead_status_update": "lost_no_response",
-      "block_all_email_followups": true,
-      "linkedin_available": false,
-      "imap_override": "CLOSED — no further override attempts under any circumstances"
+      "received_at": "2026-04-04T09:05:00Z",
+      "classified_at": "2026-04-04T09:05:00Z",
+      "confidence": "HIGH",
+      "key_signal": "Confirmed pain point (no quote form), asked about cost — direct buying signal",
+      "status": "ARCHIVED_LOST_NO_RESPONSE — LinkedIn never activated. Archive unconditional from 2026-05-08 EOD.",
+      "reapproach_date": "2026-10-26"
     },
     {
       "reply_id": 10,
-      "email_id": 2,
       "lead_id": 2,
       "business_name": "Nidderdale Pet Supplies",
       "town": "Pateley Bridge",
-      "received_at": "2026-04-04T11:47:00Z",
       "classification": "NOT_INTERESTED",
-      "confidence": "high",
-      "reasoning": "Polite but clear rejection: 'happy with how things are at the moment.' No further contact on any channel.",
-      "lead_status_update": "lost",
-      "block_all_followups": true,
-      "linkedin_available": false,
+      "received_at": "2026-04-04T11:47:00Z",
+      "classified_at": "2026-04-04T11:47:00Z",
+      "confidence": "HIGH",
+      "key_signal": "Polite but explicit — 'happy with how things are at the moment'",
+      "status": "SUPPRESSED — do not reapproach before 2026-10-06",
       "reapproach_date": "2026-10-06"
     },
     {
       "reply_id": 11,
-      "email_id": 5,
       "lead_id": 5,
       "business_name": "Harewood Accountants",
       "town": "Wetherby",
-      "received_at": "2026-04-04T08:22:00Z",
       "classification": "OUT_OF_OFFICE",
-      "confidence": "high",
-      "reasoning": "Standard OOO. Returned 6 April 2026. Sequence complete — Day-14 breakup assumed sent ~2026-04-14.",
-      "ooo_expired": true,
-      "sequence_complete": true,
-      "lead_status_update": null
+      "received_at": "2026-04-04T08:22:00Z",
+      "classified_at": "2026-04-04T08:22:00Z",
+      "confidence": "HIGH",
+      "key_signal": "Auto-reply — OOO until Monday 6th April",
+      "status": "SEQUENCE_COMPLETE — no incidental reply since OOO. No further contact.",
+      "reapproach_date": "N/A — sequence complete assumed"
     }
-  ],
-
-  "batch_5_new_classifications": [],
-  "batch_5_new_classifications_note": "No new Batch 5 classifications. Post-Day-14 window CLOSED 2026-05-29 evening. 0 confirmed Batch 5 replies across full sequence. Any incidentally discovered Batch 5 reply during Batch 6 IMAP: append to classifications[] immediately. 24h proposal SLA from discovery time (24/7 — NON-NEGOTIABLE).",
-
-  "batch_6_classifications": [],
-  "batch_6_classifications_note": "Batch 6 not yet launched (Scenario C — Day-0 Tue 2026-06-16). No Batch 6 replies possible until after Day-0 sends. First Batch 6 reply wave opens Day-3 (Fri 2026-06-19). Weekly IMAP mandatory from Day-0.",
-
-  "summary": {
-    "new_replies_today": 0,
-    "overnight_new_replies": 0,
-    "total_to_date": 11,
-    "week_11_new_replies": 0,
-    "batch_5_replies_confirmed": 0,
-    "post_day14_window_status": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
-    "scenario_b_status": "CONFIRMED CLOSED — Monday EOD deadline passed",
-    "scenario_c_status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16",
-    "imap_status_today": "NOT REQUIRED — Batch 6 not launched. No sends today.",
-    "imap_status_next_obligation": "Batch 6 leads only — per lead before each Day-0 send (Tue 2026-06-16 Scenario C).",
-    "imap_gap_days_from_confirmed": 59,
-    "INTERESTED_total": 3,
-    "NOT_INTERESTED_total": 1,
-    "OUT_OF_OFFICE_total": 1,
-    "WRONG_PERSON_total": 0,
-    "UNSUBSCRIBE_total": 0,
-    "permanently_archived": [1, 3, 22],
-    "hands_instructions": "Scenario C confirmed active — Day-0 Tue 2026-06-16. batch_6_leads.json recommended by Thu 2026-06-11. CHANGELOG MANDATORY (65+ days overdue) — same session as Batch 6 Day-0. orchestrator.py — build before Day-3 LinkedIn window Fri Jun 19 (17 days). No sends today. No IMAP today."
-  }
+  ]
 }

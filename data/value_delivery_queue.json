@@ -1,157 +1,79 @@
 {
-  "generated_at": "2026-06-02T08:00:00Z",
-  "date": "2026-06-02",
-  "day_number": 67,
+  "generated_at": "2026-06-03T08:00:00Z",
+  "date": "2026-06-03",
+  "day_number": 68,
   "week": 11,
   "week_start": false,
-  "note": "BRAIN layer — Day 67 (Tuesday 2026-06-02 — Week 11). SCENARIO B CONFIRMED CLOSED. SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16. Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. Batch 5 FORMALLY CLOSED — 0 confirmed replies. Zero active INTERESTED leads in queue. 24h proposal SLA applies to any incidentally discovered reply in future Batch 6 IMAP (24/7 — NON-NEGOTIABLE). Batch 6 pipeline activates after Day-0 sends (Tue 2026-06-16 Scenario C, if batch_6_leads.json received by ~Thu 2026-06-11).",
+  "note": "BRAIN layer — Day 68 (Wednesday 2026-06-03 — Week 11). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16 (13 days). Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. Batch 5 FORMALLY CLOSED — 0 confirmed replies. Zero active INTERESTED leads in queue. 24h proposal SLA applies to any incidentally discovered reply in future Batch 6 IMAP (24/7 — NON-NEGOTIABLE). Batch 6 pipeline activates after Day-0 sends (Tue 2026-06-16 Scenario C).",
 
   "pipeline_summary": {
     "total_interested_to_date": 3,
     "outcomes_confirmed": 0,
     "archived_permanently": 3,
-    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 67+ sessions",
+    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 68+ sessions",
     "override_window": "CLOSED — 2026-05-08 EOD. Unconditionally final.",
     "email_channel_warm_pipeline": "CLOSED — permanently for leads 1, 3, 22",
     "email_channel_batch_5": "CLOSED — Day-14 assumed sent 2026-05-26. 4-touchpoint limit reached. Post-Day-14 window closed 2026-05-29 evening.",
-    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD (67-session failure).",
-    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: 0 confirmed replies, 59-day IMAP gap partially explains.",
+    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD (68-session failure).",
+    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: 0 confirmed replies, 60-day IMAP gap partially explains.",
     "post_day14_reply_window": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
     "batch_5_formal_close": "2026-05-29 evening. 0 confirmed replies. Reapproach: 2026-11-26.",
     "realistic_remaining_probability": {
       "warm_pipeline_leads_1_3_22": "ZERO. Permanently archived. No further action.",
       "batch_5_ryedale": "ZERO new. Window permanently closed. Any incidentally discovered reply triggers 24h proposal SLA from discovery time.",
-      "next_revenue_opportunity": "Batch 6 (Harrogate + Craven, Day-0 Tue 2026-06-16 Scenario C). Expected INTERESTED: 1-3 (18-22 leads × 15% SSL-PAS historical rate, assuming IMAP discipline restored). Expected revenue per conversion: £150-1,600 depending on signal type and scope."
+      "next_revenue_opportunity": "Batch 6 (Harrogate + Craven, Day-0 Tue 2026-06-16 Scenario C). Expected INTERESTED: 2-3 (18-22 leads × 15% SSL-PAS historical rate, assuming IMAP discipline restored). Expected revenue per conversion: £150-1,600."
     }
   },
 
   "value_delivery_on_interested": {
     "sla": "24 HOURS from IMAP discovery time — NON-NEGOTIABLE. Applies 24/7 including weekends and evenings.",
-    "trigger": "Any incidentally discovered Batch 5 reply in future IMAP (during Batch 6 Day-0 pre-send sweep on Tue Jun 16). Or any Batch 6 INTERESTED reply surfaced during Batch 6 Day-3/7/14 IMAP sweep.",
+    "trigger": "Any incidentally discovered Batch 5 reply in future IMAP (during Batch 6 Day-0 pre-send sweep Tue Jun 16). Or any Batch 6 INTERESTED reply surfaced during Batch 6 Day-3/7/14 IMAP sweep.",
     "batch_5_trigger_note": "Post-Day-14 window closed 2026-05-29 evening. Any Batch 5 INTERESTED reply found incidentally during Batch 6 IMAP is still actionable — 24h SLA applies from discovery time (24/7). Sequence complete — no further email sends. Propose by email only.",
-    "proposal_structure": "3-option pricing. Presented by email within 24h of IMAP discovery (or phone call if lead has called). Follow up with call if no response within 48h.",
+    "proposal_structure": "3-option pricing. Presented by email within 24h of IMAP discovery. Follow up with call if no response within 48h.",
 
     "pricing_options_by_signal": {
       "ssl_only_fix": {
         "trigger": "Lead's stated concern is ONLY the SSL / 'Not Secure' warning",
-        "option_1": {"name": "SSL Certificate Fix", "scope": "Install + configure SSL certificate, redirect HTTP to HTTPS, fix mixed content warnings", "price": "£150-£200", "timeline": "1-2 working days"},
-        "option_2": {"name": "SSL + Speed Optimisation", "scope": "SSL fix + basic speed improvements (image compression, caching) + Google Search Console setup", "price": "£250-£350", "timeline": "2-3 working days"},
-        "option_3": {"name": "SSL + Full Performance Audit + Fix", "scope": "SSL + speed + mobile + Google Business Profile audit and fixes + 30-day monitoring", "price": "£450-£600", "timeline": "5-7 working days"}
+        "option_1": {"name": "SSL Certificate Fix", "scope": "Install + configure SSL, redirect HTTP to HTTPS, fix mixed content", "price": "£150-£200", "timeline": "1-2 working days"},
+        "option_2": {"name": "SSL + Speed Optimisation", "scope": "SSL fix + speed improvements + Google Search Console setup", "price": "£250-£350", "timeline": "2-3 working days"},
+        "option_3": {"name": "SSL + Full Performance Audit + Fix", "scope": "SSL + speed + mobile + GBP audit + 30-day monitoring", "price": "£450-£600", "timeline": "5-7 working days"}
       },
-      "ssl_plus_mobile": {
-        "trigger": "Lead has both SSL and mobile issues, or Day-7 new angle landed",
-        "option_1": {"name": "SSL + Mobile Fix", "scope": "SSL certificate + mobile responsiveness fix (existing site framework)", "price": "£250-£350", "timeline": "2-4 working days"},
-        "option_2": {"name": "SSL + Mobile + Speed Package", "scope": "SSL + mobile + basic speed + Google Business Profile setup", "price": "£400-£550", "timeline": "5-7 working days"},
-        "option_3": {"name": "New Mobile-First Site", "scope": "New clean site: mobile-first, HTTPS, fast, with contact form / booking link. Migrate existing content.", "price": "£800-£1,200", "timeline": "2-3 weeks"}
+      "mobile_fix": {
+        "trigger": "Lead's concern is mobile layout / usability",
+        "option_1": {"name": "Mobile Responsiveness Fix", "scope": "Fix layout for phones and tablets, test across 3 device sizes", "price": "£150-£250", "timeline": "1-2 working days"},
+        "option_2": {"name": "Mobile Fix + Speed", "scope": "Mobile fix + speed optimisation + Google Search Console", "price": "£300-£450", "timeline": "3-4 working days"},
+        "option_3": {"name": "Full Mobile + Performance Overhaul", "scope": "Mobile + speed + SSL (if needed) + GBP audit + 30-day monitoring", "price": "£500-£750", "timeline": "5-7 working days"}
       },
-      "no_website": {
-        "trigger": "Lead has no website at all (BAB signal — 4★+ 20+ reviews)",
-        "option_1": {"name": "Single-Page Starter Site", "scope": "1-page site: services, area covered, contact form, mobile-first, HTTPS. Live within 5 working days.", "price": "£400-£500", "timeline": "5 working days"},
-        "option_2": {"name": "3-Page Local Business Site", "scope": "Home + Services + Contact. Google Business Profile integration. Mobile-first, HTTPS, basic SEO.", "price": "£650-£850", "timeline": "7-10 working days"},
-        "option_3": {"name": "Full Local Business Website", "scope": "5+ pages, portfolio/gallery, booking/quote form, Google Business Profile + local SEO setup.", "price": "£1,100-£1,600", "timeline": "2-3 weeks"}
+      "no_website_build": {
+        "trigger": "Lead has no website (BAB signal)",
+        "option_1": {"name": "One-Page Site", "scope": "Professional one-page site: services, contact, Google Maps embed, mobile-responsive, SSL included", "price": "£350-£500", "timeline": "3-5 working days"},
+        "option_2": {"name": "3-5 Page Business Site", "scope": "Home, About, Services, Contact + basic SEO + Google Search Console setup", "price": "£650-£950", "timeline": "5-10 working days"},
+        "option_3": {"name": "Full Web Presence Package", "scope": "5-page site + local SEO + GBP setup + 3-month ranking report", "price": "£1,200-£1,600", "timeline": "10-14 working days"}
+      },
+      "seo_ranking": {
+        "trigger": "Lead is interested in ranking improvement (AIDA signal or Day-7 ranking pivot)",
+        "option_1": {"name": "Local SEO Audit Report", "scope": "Keyword gap analysis, GBP audit, competitor ranking breakdown — PDF", "price": "£150-£200", "timeline": "2-3 working days"},
+        "option_2": {"name": "Local SEO Fix", "scope": "SSL fix (if needed) + on-page SEO + GBP optimisation + Search Console setup", "price": "£400-£600", "timeline": "5-7 working days"},
+        "option_3": {"name": "Local SEO Monthly Retainer", "scope": "Monthly reporting, content additions, GBP management, rank tracking", "price": "£200-£350/month", "timeline": "3-month minimum"}
       }
-    },
-
-    "proposal_email_template": {
-      "subject": "[First name] — [business name]: three options to fix this",
-      "body": "Hi [First name],\n\nThanks for getting back to me — glad the timing works.\n\nI've put together three options for [business name] depending on how far you'd like to go with it:\n\n**Option 1 — [Name]:** [Scope] — £[price]. [Timeline].\n**Option 2 — [Name]:** [Scope] — £[price]. [Timeline].\n**Option 3 — [Name]:** [Scope] — £[price]. [Timeline].\n\nMost clients in [town] start with Option [recommended] and add more later once they've seen the results.\n\nHappy to jump on a quick call to talk through which makes most sense for you — what does your diary look like this week?\n\n[Your name]",
-      "rules": [
-        "Send within 24h of IMAP discovery time — NON-NEGOTIABLE (24/7 including weekends)",
-        "Fill all [brackets] from lead data and IMAP context",
-        "Option 2 is typically the recommended anchor price (middle option closes best)",
-        "Keep tone warm and low-pressure",
-        "Follow up with call within 48h if no reply to proposal email"
-      ]
     }
   },
 
-  "archived_items": [
-    {
-      "queue_id": "vd_001",
-      "lead_id": 3,
-      "business_name": "Westfield Hair & Beauty",
-      "owner_name": "Claire",
-      "town": "Leeds",
-      "classification": "INTERESTED",
-      "original_reply_date": "2026-04-04",
-      "brain_status": "PERMANENTLY_CLOSED — UNCONDITIONALLY_FINAL",
-      "archive_date": "2026-05-07",
-      "override_window_closed": "2026-05-08 EOD",
-      "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
-      "no_further_action": "NONE. All channels closed. Historical record only.",
-      "pipeline_value_lost": "£350 estimated",
-      "block_all_email_followups": true,
-      "linkedin_available": false
-    },
-    {
-      "queue_id": "vd_002",
-      "lead_id": 22,
-      "business_name": "Pennine Print & Design",
-      "owner_name": "Rob",
-      "town": "Sowerby Bridge",
-      "classification": "INTERESTED",
-      "original_reply_date": "2026-04-04",
-      "brain_status": "PERMANENTLY_CLOSED — UNCONDITIONALLY_FINAL",
-      "archive_date": "2026-05-07",
-      "override_window_closed": "2026-05-08 EOD",
-      "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
-      "no_further_action": "NONE. All channels closed. Historical record only.",
-      "pipeline_value_lost": "£550-675 estimated (full redesign)",
-      "block_all_email_followups": true,
-      "linkedin_available": false
-    },
-    {
-      "queue_id": "vd_003",
-      "lead_id": 1,
-      "business_name": "Ripon Road Carpentry",
-      "owner_name": "Tom",
-      "town": "Ripon",
-      "classification": "INTERESTED",
-      "original_reply_date": "2026-04-04",
-      "brain_status": "PERMANENTLY_CLOSED — UNCONDITIONALLY_FINAL",
-      "archive_date": "2026-05-07",
-      "override_window_closed": "2026-05-08 EOD",
-      "archive_reason": "LinkedIn never executed. Archive trigger fired 2026-05-06. Override window closed 2026-05-08.",
-      "no_further_action": "NONE. All channels closed. Historical record only.",
-      "pipeline_value_lost": "£100-150 estimated",
-      "block_all_email_followups": true,
-      "linkedin_available": false
-    }
-  ],
+  "active_interested_leads": [],
+  "active_interested_count": 0,
+  "active_interested_note": "Zero active INTERESTED leads. Batch 5 window closed. Warm pipeline archived. Batch 6 not yet launched.",
 
-  "batch_5_interested_queue": [],
-  "batch_5_interested_note": "Zero Batch 5 INTERESTED replies confirmed. Queue empty. Post-Day-14 window CLOSED 2026-05-29 evening. Any incidentally discovered Batch 5 INTERESTED reply in future Batch 6 IMAP: write here immediately, prepare proposal within 24h from discovery time (24/7 — NON-NEGOTIABLE). Sequence complete — no further email sends.",
+  "audit_request_queue": [],
+  "audit_request_count": 0,
+  "audit_request_note": "No audit requests pending. Activate on first Batch 6 INTERESTED reply (Day-0: Tue 2026-06-16 Scenario C).",
 
   "batch_6_pipeline_forecast": {
-    "scenario_c_send_date": "Tue 2026-06-16 — Scenario C confirmed active",
-    "batch_6_leads_recommended_receipt": "Thu 2026-06-11 EOD — gives BRAIN ~4 days per-lead copy generation",
+    "scenario_c_day_0": "Tue 2026-06-16",
     "expected_leads": "18-22",
-    "expected_interested": "1-3 (18-22 leads × 15% SSL-PAS historical rate × execution quality — assumes IMAP discipline restored and weekly IMAP maintained)",
-    "expected_revenue_range": "£150-1,600 per conversion depending on signal type and scope",
-    "pipeline_activates": "After Day-0 sends confirmed. Day-3 (Fri 2026-06-19) first reply wave. Day-7 secondary peak.",
-    "note": "batch_6_leads.json STILL MISSING (67-session pattern). Scenario C confirmed active — Day-0 Tue 2026-06-16.",
-    "linkedin_mandatory": "CRITICAL — LinkedIn failure was primary Batch 5 conversion blocker. Execute Day 3-7 (Fri Jun 19) and write profiles.json same session. orchestrator.py must be built before Day-3 window (17 days).",
-    "imap_discipline_mandatory": "Weekly IMAP required for Batch 6 — 59-day gap was an operational failure. IMAP every 7 days minimum from Day-0 (Tue Jun 16)."
-  },
-
-  "batch_6_on_interested_protocol": {
-    "discovery_trigger": "IMAP sweep before Batch 6 send (per lead, pre-send, Tue Jun 16)",
-    "sla": "24h from IMAP discovery time — NON-NEGOTIABLE (24/7)",
-    "action": "Classify in reply_classifications.json, write to new_replies.json, select pricing option by signal type, use proposal_email_template above (fill all brackets), send within 24h. Log CHANGELOG same session.",
-    "linkedin_note": "If lead also on LinkedIn (profiles.json entry exists, note_sent: true): coordinate email and LinkedIn timing. Do not pitch on LinkedIn — warm only.",
-    "escalation": "If INTERESTED reply comes in after Day-14 final touchpoint (breakup email sent): respond to that reply thread with proposal. 24h SLA applies."
-  },
-
-  "summary": {
-    "active_interested_leads": 0,
-    "pipeline_value_available": "£0 confirmed. Any incidentally discovered reply: 24h SLA applies.",
-    "post_day14_window_status": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
-    "scenario_b_status": "CONFIRMED CLOSED — Monday EOD deadline passed",
-    "scenario_c_status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16",
-    "proposal_sla": "24h from IMAP discovery time — NON-NEGOTIABLE (24/7)",
-    "archived_permanently": 3,
-    "pipeline_written_off": "£800-1,175 (warm pipeline — FINAL) + Batch 5 Ryedale £0 confirmed",
-    "batch_6_pipeline": "Scenario C: Tue 2026-06-16 (confirmed). Expected INTERESTED: 1-3. batch_6_leads.json recommended by Thu Jun 11.",
-    "next_action": "No sends today. No IMAP today. HANDS: write batch_6_leads.json recommended by Thu 2026-06-11. BRAIN generates per-lead copy on receipt. orchestrator.py — build before Fri 2026-06-19 (Day-3 LinkedIn window — 17 days). CHANGELOG mandatory same session as Batch 6 Day-0 Tue Jun 16 (65+ days overdue)."
+    "expected_ssl_leads": "10-14 (60% allocation)",
+    "expected_interested_at_15pct": "2-3 INTERESTED leads",
+    "expected_revenue_range": "£300-£4,800 (2-3 conversions × £150-£1,600 per conversion)",
+    "linkedin_multiplier": "orchestrator.py execution on Fri 2026-06-19 could add 1-2 additional warm leads (Day-3 LinkedIn parallel channel)",
+    "note": "Forecast assumes: IMAP discipline restored (per-lead before each send), orchestrator.py built before Fri 2026-06-19, batch_6_leads.json received by Thu 2026-06-11."
   }
 }
