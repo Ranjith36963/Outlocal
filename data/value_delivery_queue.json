@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-06-03T08:00:00Z",
-  "date": "2026-06-03",
-  "day_number": 68,
+  "generated_at": "2026-06-04T08:00:00Z",
+  "date": "2026-06-04",
+  "day_number": 69,
   "week": 11,
   "week_start": false,
-  "note": "BRAIN layer — Day 68 (Wednesday 2026-06-03 — Week 11). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16 (13 days). Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. Batch 5 FORMALLY CLOSED — 0 confirmed replies. Zero active INTERESTED leads in queue. 24h proposal SLA applies to any incidentally discovered reply in future Batch 6 IMAP (24/7 — NON-NEGOTIABLE). Batch 6 pipeline activates after Day-0 sends (Tue 2026-06-16 Scenario C).",
+  "note": "BRAIN layer — Day 69 (Thursday 2026-06-04 — Week 11). SCENARIO C CONFIRMED ACTIVE — Day-0 Tue 2026-06-16 (12 days). Post-Day-14 reply window CLOSED Friday 2026-05-29 evening. Batch 5 FORMALLY CLOSED — 0 confirmed replies. Zero active INTERESTED leads in queue. 24h proposal SLA applies to any incidentally discovered reply in future Batch 6 IMAP (24/7 — NON-NEGOTIABLE). Batch 6 pipeline activates after Day-0 sends (Tue 2026-06-16 Scenario C).",
 
   "pipeline_summary": {
     "total_interested_to_date": 3,
     "outcomes_confirmed": 0,
     "archived_permanently": 3,
-    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 68+ sessions",
+    "archive_declaration": "LOST_NO_RESPONSE — LinkedIn never activated across 69+ sessions",
     "override_window": "CLOSED — 2026-05-08 EOD. Unconditionally final.",
     "email_channel_warm_pipeline": "CLOSED — permanently for leads 1, 3, 22",
     "email_channel_batch_5": "CLOSED — Day-14 assumed sent 2026-05-26. 4-touchpoint limit reached. Post-Day-14 window closed 2026-05-29 evening.",
-    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD (68-session failure).",
-    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: 0 confirmed replies, 60-day IMAP gap partially explains.",
+    "linkedin_channel": "PERMANENTLY CLOSED — for ALL leads. Archive trigger fired 2026-05-19 EOD (69-session failure).",
+    "pipeline_value_written_off": "£800-1,175 confirmed (Claire £350 + Rob £550-675 + Tom £100-150). Batch 5 Ryedale: 0 confirmed replies, 61-day IMAP gap partially explains.",
     "post_day14_reply_window": "CLOSED — effective Friday 2026-05-29 evening. Unconditional.",
     "batch_5_formal_close": "2026-05-29 evening. 0 confirmed replies. Reapproach: 2026-11-26.",
     "realistic_remaining_probability": {

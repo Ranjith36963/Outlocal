@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-03T08:00:00Z",
-  "date": "2026-06-03",
-  "day_number": 68,
+  "generated_at": "2026-06-04T08:00:00Z",
+  "date": "2026-06-04",
+  "day_number": 69,
   "week": 11,
   "week_start": false,
-  "note": "BRAIN layer — Day 68 (Wednesday 2026-06-03 — Week 11). SCENARIO C ACTIVE — Day-0 Tue 2026-06-16 (13 days). No active follow-ups today. All Batch 5 sequences assumed complete. Batch 6 not yet launched. Next follow-up obligation: Batch 6 Day-3 bump + LinkedIn — Fri 2026-06-19 (16 days).",
+  "note": "BRAIN layer — Day 69 (Thursday 2026-06-04 — Week 11). SCENARIO C ACTIVE — Day-0 Tue 2026-06-16 (12 days). No active follow-ups today. All Batch 5 sequences assumed complete. Batch 6 not yet launched. Next follow-up obligation: Batch 6 Day-3 bump + LinkedIn — Fri 2026-06-19 (15 days).",
 
   "active_followups_today": [],
   "active_followups_count": 0,
-  "followup_note": "No follow-ups due today. Wednesday inter-batch holding. Scenario C Day-0: Tue 2026-06-16. All Batch 5 sequences assumed complete. Post-Day-14 window CLOSED Fri 2026-05-29 evening. Batch 6 not yet launched.",
+  "followup_note": "No follow-ups due today. Thursday inter-batch holding. Scenario C Day-0: Tue 2026-06-16. All Batch 5 sequences assumed complete. Post-Day-14 window CLOSED Fri 2026-05-29 evening. Batch 6 not yet launched.",
 
   "send_today": {
     "send_today": false,
@@ -18,13 +18,13 @@
   "batch_5_sequence_status": {
     "territory": "Ryedale District — Malton, Pickering, Helmsley, Kirkbymoorside, Hovingham, Norton-on-Derwent",
     "formal_closure_date": "2026-05-29 evening (post-Day-14 72h window closed)",
-    "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 22},
-    "day_3_bump": {"date": "2026-05-15 (Friday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 19},
-    "day_7_new_angle": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 15},
+    "day_0": {"date": "2026-05-12 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 23},
+    "day_3_bump": {"date": "2026-05-15 (Friday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 20},
+    "day_7_new_angle": {"date": "2026-05-19 (Tuesday)", "status": "ASSUMED_SENT — UNCONFIRMED", "days_ago": 16},
     "day_14_breakup": {
       "date": "2026-05-26 (Tuesday)",
-      "status": "ASSUMED SENT — UNCONFIRMED (68-session HANDS pattern)",
-      "days_ago": 8,
+      "status": "ASSUMED SENT — UNCONFIRMED (69-session HANDS pattern)",
+      "days_ago": 9,
       "note": "Day-14 was the FINAL touchpoint. 4-touchpoint hard limit enforced. No further email sends to any Batch 5 lead. Reapproach: 2026-11-26 minimum."
     },
     "sequence_complete": "ASSUMED — all 4 touchpoints assumed sent. FORMALLY CLOSED 2026-05-29 evening. No further email sends. No further IMAP.",
@@ -54,7 +54,7 @@
 
   "batch_6_upcoming_followups": {
     "territory": "Harrogate District + Craven District",
-    "batch_6_leads_file_status": "MISSING (68-session pattern)",
+    "batch_6_leads_file_status": "MISSING (69-session pattern)",
     "scenario_c_calendar": {
       "day_0_sends": "Tue 2026-06-16, 09:00-10:30 — IMAP per lead before each send",
       "day_3_bump_linkedin": "Fri 2026-06-19 — thread reply + LinkedIn MANDATORY (profiles.json SAME SESSION)",

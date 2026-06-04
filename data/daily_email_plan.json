@@ -1,35 +1,35 @@
 [
   {
-    "plan_date": "2026-06-03",
-    "generated_at": "2026-06-03T08:00:00Z",
-    "day_number": 68,
+    "plan_date": "2026-06-04",
+    "generated_at": "2026-06-04T08:00:00Z",
+    "day_number": 69,
     "week": 11,
     "week_start": false,
-    "note": "BRAIN layer — Day 68 (Wednesday 2026-06-03 — Week 11). SCENARIO C ACTIVE — Day-0 Tue 2026-06-16 (13 days). batch_6_leads.json STILL MISSING (68-session HANDS pattern). Recommended receipt: Thu 2026-06-11 EOD (8 days). NO SENDS TODAY. Templates below are production-ready awaiting per-lead population from batch_6_leads.json. Signal mix: 60% SSL-PAS / 20% Mobile-PAS / 15% No-website BAB / 5% AIDA.",
+    "note": "BRAIN layer — Day 69 (Thursday 2026-06-04 — Week 11). SCENARIO C ACTIVE — Day-0 Tue 2026-06-16 (12 days). batch_6_leads.json STILL MISSING (69-session HANDS pattern). Recommended receipt: Thu 2026-06-11 EOD (7 days — FINAL WEEK BEGINS TODAY). NO SENDS TODAY. Templates below are production-ready awaiting per-lead population from batch_6_leads.json. Signal mix: 60% SSL-PAS / 20% Mobile-PAS / 15% No-website BAB / 5% AIDA.",
 
     "new_sends_today": [],
     "new_sends_count": 0,
-    "new_sends_note": "No sends today (Wednesday — inter-batch holding). Scenario C Day-0: Tue 2026-06-16 (13 days). batch_6_leads.json still missing — recommended by Thu 2026-06-11 for BRAIN copy generation lead time.",
+    "new_sends_note": "No sends today (Thursday — inter-batch holding). Scenario C Day-0: Tue 2026-06-16 (12 days). batch_6_leads.json still missing — recommended by Thu 2026-06-11 (7 days) for BRAIN copy generation lead time.",
 
     "scenario_status": {
       "scenario_a": {
-        "day_0_date": "2026-06-02 (yesterday)",
-        "status": "CONFIRMED CLOSED — Day-0 was yesterday. Never executed. 68-session HANDS failure.",
+        "day_0_date": "2026-06-02 (passed)",
+        "status": "CONFIRMED CLOSED — Day-0 passed. Never executed. 69-session HANDS failure.",
         "possible": false
       },
       "scenario_b": {
         "condition": "batch_6_leads.json received Monday 2026-06-01 EOD",
         "day_0_date": "2026-06-09 (Tuesday)",
-        "status": "CONFIRMED CLOSED — Monday EOD deadline passed without file. 68-session HANDS failure.",
+        "status": "CONFIRMED CLOSED — Monday EOD deadline passed without file. 69-session HANDS failure.",
         "possible": false
       },
       "scenario_c": {
         "condition": "CONFIRMED — batch_6_leads.json not received by Monday 2026-06-01 EOD",
         "day_0_date": "2026-06-16 (Tuesday)",
-        "day_0_days_away": 13,
+        "day_0_days_away": 12,
         "status": "CONFIRMED ACTIVE — Day-0 Tue 2026-06-16, 09:00-10:30. The only active scenario. No further extensions.",
         "send_window": "09:00-10:30",
-        "batch_6_leads_recommended": "Thu 2026-06-11 EOD (8 days) — allows ~4 days BRAIN per-lead copy generation. Absolute minimum: Mon 2026-06-15.",
+        "batch_6_leads_recommended": "Thu 2026-06-11 EOD (7 days — FINAL WEEK BEGINS TODAY) — allows ~4 days BRAIN per-lead copy generation. Absolute minimum: Mon 2026-06-15.",
         "possible": true,
         "confirmed": true
       }
@@ -48,7 +48,7 @@
 
     "batch_6_email_templates": {
       "launch_territory": "Harrogate District + Craven District",
-      "batch_6_leads_file_status": "MISSING (68-session pattern) — Scenario C confirmed active. Recommended receipt: Thu 2026-06-11 EOD (8 days). Templates ready — per-lead [brackets] require file.",
+      "batch_6_leads_file_status": "MISSING (69-session pattern) — Scenario C confirmed active. Recommended receipt: Thu 2026-06-11 EOD (7 days). Templates ready — per-lead [brackets] require file.",
       "signal_mix": {
         "ssl_pas": "60%",
         "mobile_pas": "20%",
@@ -136,7 +136,7 @@
     "batch_6_day3_templates": {
       "note": "Day-3 bump templates — thread reply to Day-0. 3-5 lines. Signal-specific. NOT a new pitch.",
       "send_date_scenario_c": "2026-06-19 (Friday)",
-      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger fires Tue 2026-06-24 EOD unconditionally. orchestrator.py must be built before this date (16 days remaining).",
+      "linkedin_note": "LinkedIn MANDATORY Day 3 — execute AND write profiles.json SAME SESSION. Archive trigger fires Tue 2026-06-24 EOD unconditionally. orchestrator.py must be built before this date (15 days remaining — build this week).",
       "ssl_bump": {
         "framework": "thread_reply",
         "signal": "ssl",
@@ -198,11 +198,12 @@
     },
 
     "forward_plan": {
-      "wednesday_2026_06_03_today": "NO SENDS. No IMAP. Mid-week state check. orchestrator.py build priority (16 days to Day-3 LinkedIn window).",
-      "sunday_2026_06_07": "Weekly intelligence report — Week 11 close. BRAIN run. Batch 6 copy readiness review.",
-      "thursday_2026_06_11_recommended": "Recommended batch_6_leads.json receipt deadline (8 days). Gives BRAIN ~4 days per-lead copy gen before Scenario C Day-0 Jun 16.",
+      "thursday_2026_06_04_today": "NO SENDS. No IMAP. orchestrator.py build priority (15 days to Day-3 LinkedIn window). FINAL WEEK before recommended file receipt begins today.",
+      "friday_2026_06_05": "No sends. No IMAP. Continue orchestrator.py build.",
+      "sunday_2026_06_07": "Weekly intelligence report — Week 11 close. BRAIN run. Batch 6 copy readiness + orchestrator.py progress check.",
+      "thursday_2026_06_11_recommended": "Recommended batch_6_leads.json receipt deadline (7 days). Gives BRAIN ~4 days per-lead copy gen before Scenario C Day-0 Jun 16.",
       "monday_2026_06_15_minimum": "Absolute minimum batch_6_leads.json receipt for BRAIN same-day run. Not recommended — tight margin.",
-      "tuesday_2026_06_16_scenario_c": "SCENARIO C: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead before each send. CHANGELOG MANDATORY this session (66+ days overdue). 10-min stagger.",
+      "tuesday_2026_06_16_scenario_c": "SCENARIO C: BATCH 6 DAY-0 SENDS (09:00-10:30). IMAP per lead before each send. CHANGELOG MANDATORY this session (67+ days overdue). 10-min stagger.",
       "friday_2026_06_19_scenario_c": "SCENARIO C: Day-3 bumps + LinkedIn MANDATORY (profiles.json SAME SESSION). Archive trigger Tue 2026-06-24 EOD unconditional.",
       "tuesday_2026_06_23_scenario_c": "SCENARIO C: Day-7 new angle. IMAP per lead.",
       "tuesday_2026_06_24_eod_scenario_c": "SCENARIO C: LinkedIn archive trigger fires unconditionally if profiles.json missing.",
